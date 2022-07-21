@@ -49,7 +49,7 @@ let appHeader = `
                         </li>
                     </ul>
                 </nav><!-- .nk-nav-menu -->
-            </div><!-- .header-warp-->
+            </div><!-- .header-wrap-->
         </div><!-- .container-->
     </div><!-- .header-main-->
 `;
