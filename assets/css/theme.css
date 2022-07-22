@@ -3303,3 +3303,12 @@
   width: 32px;
   font-size: 1rem;
 }
+
+.brandPic {
+  max-width: 190px;
+  height: 100%;
+}
+
+.botonPrecio {
+  width: auto;
+}

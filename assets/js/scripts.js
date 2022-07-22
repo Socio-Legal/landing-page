@@ -987,3 +987,10 @@
   NioApp.init();
   return NioApp;
 }(NioApp, jQuery);
+
+function openMenuLink(actualPage, page, section) {
+  if (actualPage != page && page != "") {
+    window.location.assign(page + section);
+    window.location.refresh();
+  }
+}

@@ -35,28 +35,28 @@ let headerIndex = `
         <div class="header-brand pb-4 pt-2 pb-lg-5">
         <div class="container">
             <div class="row align-items-center g-gs">
-                <div class="col-4 col-md-2">
+                <div class="col-4 col-md-2 brandPic">
                     <div class="brand-item">
                         <img src="./images/brand/logo_2x.png" alt="">
                     </div>
                 </div><!-- .col -->
-                <div class="col-4 col-md-2">
+                <div class="col-4 col-md-2 brandPic">
                     <div class="brand-item">
                         <img src="./images/brand/hubtype.jpg" alt="Hubtype utiliza Sttok">
 
                     </div>
                 </div><!-- .col -->
-                <div class="col-4 col-md-2">
+                <div class="col-4 col-md-2 brandPic">
                     <div class="brand-item">
                         <img src="./images/cabiedes-partners.png" alt="cabiedes & Partners">
                     </div>
                 </div><!-- .col -->
-                <div class="col-4 col-md-2">
+                <div class="col-4 col-md-2 brandPic">
                     <div class="brand-item">
                         <img src="./images/brand/derecho-com-r.png" alt="">
                     </div>
                 </div><!-- .col -->
-                <div class="col-4 col-md-2">
+                <div class="col-4 col-md-2 brandPic">
                     <div class="brand-item">
                         <img src="./images/brand/legal-pigeon.png" alt="">
                     </div>

@@ -22,10 +22,10 @@ let appHeader = `
                 </div>
                 <nav class="header-menu" data-content="mainNav">
                     <ul class="menu-list ml-lg-auto">
-                        <li class="menu-item"><a href="${page}#service" class="menu-link nav-link">Servicio</a></li>
-                        <li class="menu-item"><a href="${page}#feature" class="menu-link nav-link">Funcionalidades</a></li>
-                        <li class="menu-item"><a href="${page}#users" class="menu-link nav-link">¿Quién nos utiliza?</a></li>
-                        <li class="menu-item"><a href="${page}#pricing" class="menu-link nav-link">Precios</a></li>
+                        <li class="menu-item"><a href="${page}#service" onclick="openMenuLink(location.pathname, '${page}', '#service')" class="menu-link nav-link">Servicio</a></li>
+                        <li class="menu-item"><a href="${page}#feature" onclick="openMenuLink(location.pathname, '${page}', '#feature')" class="menu-link nav-link">Funcionalidades</a></li>
+                        <li class="menu-item"><a href="${page}#users" onclick="openMenuLink(location.pathname, '${page}', '#users')" class="menu-link nav-link">¿Quién nos utiliza?</a></li>
+                        <li class="menu-item"><a href="${page}#pricing" onclick="openMenuLink(location.pathname, '${page}', '#pricing')" class="menu-link nav-link">Precios</a></li>
                         <li class="menu-item has-sub">
                             <a href="#" class="menu-link menu-toggle">Partners</a>
                             <div class="menu-sub">

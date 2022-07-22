@@ -12636,7 +12636,7 @@ body.toggle-shown { overflow: hidden; }
 
 .pricing-title { margin: 1.25rem 0; }
 
-.pricing-action { margin-top: 1.75rem; }
+.pricing-action { margin-top: 1.75rem; text-align: center; }
 
 .pricing-badge { position: absolute; background: #6576ff; color: #fff; top: 0; right: -50%; transform: rotate(45deg); transform-origin: 50% 0; padding: 2rem 0 .5rem; width: 100%; text-align: center; }
 
