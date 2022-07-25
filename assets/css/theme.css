@@ -3317,13 +3317,13 @@
   padding-bottom: 4rem;
 }
 
-@media (max-width: 570px) {
+@media (max-width: 992px) {
   .faqNav {
     display: none !important;
   }
 }
 
-@media (min-width: 570px) {
+@media (min-width: 576px) {
   .faqMenuItem {
     display: none !important;
   }
