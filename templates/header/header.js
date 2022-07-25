@@ -42,6 +42,9 @@ let appHeader = `
                                 </ul>
                             </div>
                         </li>
+                        <li class="menu-item faqMenuItem">
+                            <a a href="../faq/faq.html" class="menu-link nav-link">FAQ</a>
+                        </li>
                     </ul>
                     <ul class="menu-btns">
                         <li>
