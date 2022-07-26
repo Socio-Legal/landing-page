@@ -4,7 +4,7 @@ let headerInversores = `
             <div class="row flex-lg-row-reverse align-items-center justify-content-between g-gs">
                 <div class="col-lg-6 mb-n3 mb-lg-0">
                     <div class="header-image header-image-s2">
-                        <img src="./images/header/inversores-sttok.png" alt="">
+                        <img src="/images/header/inversores-sttok.png" alt="">
                     </div><!-- .header-image -->
                 </div><!-- .col- -->
                 <div class="col-lg-5 col-md-10">

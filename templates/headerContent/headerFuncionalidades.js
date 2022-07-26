@@ -4,7 +4,7 @@ let headerFuncionalidades = `
             <div class="row flex-lg-row-reverse align-items-center justify-content-between g-gs">
                 <div class="col-lg-6 mb-n3 mb-lg-0">
                     <div class="header-image header-image-s2">
-                        <img src="./images/gfx/sttok-planificar-vanta.png" alt="Funcionalidades de Sttok">
+                        <img src="/images/gfx/sttok-planificar-vanta.png" alt="Funcionalidades de Sttok">
                     </div><!-- .header-image -->
                 </div><!-- .col- -->
                 <div class="col-lg-5 col-md-10">

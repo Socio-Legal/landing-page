@@ -9,9 +9,9 @@ let appHeader = `
         <div class="container header-container">
             <div class="header-wrap">
                 <div class="header-logo">
-                    <a href="../../index.html" class="logo-link">
-                        <img class="logo-light logo-img" src="../../images/logo.png" srcset="../../images/logo2x.png 2x" alt="Logo Sttok">
-                        <img class="logo-dark logo-img" src="../../images/logo-dark.png" srcset="../../images/logo-dark2x.png 2x" alt="Sttok Logo">
+                    <a href="/index.html" class="logo-link">
+                        <img class="logo-light logo-img" src="/images/logo.png" srcset="/images/logo2x.png 2x" alt="Logo Sttok">
+                        <img class="logo-dark logo-img" src="/images/logo-dark.png" srcset="/images/logo-dark2x.png 2x" alt="Sttok Logo">
                     </a>
                 </div>
                 <div class="header-toggle">
@@ -43,7 +43,7 @@ let appHeader = `
                             </div>
                         </li>
                         <li class="menu-item faqMenuItem">
-                            <a a href="../faq/faq.html" class="menu-link nav-link">FAQ</a>
+                            <a a href="/faq/faq.html" class="menu-link nav-link">FAQ</a>
                         </li>
                     </ul>
                     <ul class="menu-btns">

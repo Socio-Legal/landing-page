@@ -4,7 +4,7 @@ let headerIndex = `
             <div class="row flex-lg-row-reverse align-items-center justify-content-between g-gs">
                 <div class="col-lg-6 mb-n3 mb-lg-0">
                     <div class="header-image header-image-s2">
-                        <img src="./images/header/sttok-2.png" alt="sttok">
+                        <img src="/images/header/sttok-2.png" alt="sttok">
                     </div><!-- .header-image -->
                 </div><!-- .col- -->
                 <div class="col-lg-5 col-md-10">
@@ -25,7 +25,6 @@ let headerIndex = `
                         </div>
                         <ul class="header-action btns-inline">
                             <li><a href="https://app.sttok.com/" class="btn btn-primary btn-lg"><span>Empezar ahora gratis</span></a></li>
-                        
                         </ul>
                     </div><!-- .header-caption -->
                 </div><!-- .col -->
@@ -35,33 +34,31 @@ let headerIndex = `
         <div class="header-brand pb-4 pt-2 pb-lg-5">
         <div class="container">
             <div class="row align-items-center g-gs">
-                <div class="col-4 col-md-2 brandPic">
+                <div class="col-4 col-md-2">
                     <div class="brand-item">
-                        <img src="./images/brand/logo_2x.png" alt="">
+                        <img class="brandPic" src="/images/brand/logo_2x.png" alt="">
                     </div>
                 </div><!-- .col -->
-                <div class="col-4 col-md-2 brandPic">
+                <div class="col-4 col-md-2">
                     <div class="brand-item">
-                        <img src="./images/brand/hubtype.jpg" alt="Hubtype utiliza Sttok">
-
+                        <img class="brandPic" src="/images/brand/hubtype.jpg" alt="Hubtype utiliza Sttok">
                     </div>
                 </div><!-- .col -->
-                <div class="col-4 col-md-2 brandPic">
+                <div class="col-4 col-md-2">
                     <div class="brand-item">
-                        <img src="./images/cabiedes-partners.png" alt="cabiedes & Partners">
+                        <img class="brandPic" src="/images/cabiedes-partners.png" alt="cabiedes & Partners">
                     </div>
                 </div><!-- .col -->
-                <div class="col-4 col-md-2 brandPic">
+                <div class="col-4 col-md-2">
                     <div class="brand-item">
-                        <img src="./images/brand/derecho-com-r.png" alt="">
+                        <img class="brandPic" src="/images/brand/derecho-com-r.png" alt="">
                     </div>
                 </div><!-- .col -->
-                <div class="col-4 col-md-2 brandPic">
+                <div class="col-4 col-md-2">
                     <div class="brand-item">
-                        <img src="./images/brand/legal-pigeon.png" alt="">
+                        <img class="brandPic" src="/images/brand/legal-pigeon.png" alt="">
                     </div>
                 </div><!-- .col -->
-                
             </div><!-- .row -->
         </div><!-- .header-brand -->
     </div><!-- .container -->
