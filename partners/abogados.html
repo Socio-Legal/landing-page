@@ -13,22 +13,21 @@
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="../assets/css/2.9.0.dashlite.css">
     <link id="skin-default" rel="stylesheet" href="../assets/css/theme.css">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LWNDHYBY2N"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-LWNDHYBY2N');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-LWNDHYBY2N"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-LWNDHYBY2N');
+    </script>
 </head>
 
 <body class="nk-body bg-white npc-landing ">
     <div class="nk-app-root">
         <div class="nk-main ">
             <!-- HEADER -->
-            <script defer src="../templates/header/header.js" data-page="/partners/abogados.html"></script>
-            <script defer src="../templates/headerContent/headerAbogados.js"></script>
+            <script defer src="../templates/header/header.js" data-page="/partners/abogados.html" data-headerRoot="../"></script>
+            <script defer src="../templates/headerContent/headerAbogados.js" data-headerRoot="../"></script>
             <header class="header has-header-main-s1 bg-lighter headerAbogados" id="appHeader"></header>
             <!-- CONTENT -->
             <section class="section section-service pb-0" id="service">
@@ -564,7 +563,7 @@
                 </div><!-- .container -->
             </section><!-- .section -->
             <!-- FOOTER -->
-            <script defer src="../templates/footer/footer.js"></script>
+            <script defer src="../templates/footer/footer.js" data-footerRoot="../"></script>
             <footer class="footer bg-lighter" id="appFooter"></footer>
         </div>
     </div>

@@ -4,7 +4,7 @@ let headerIndex = `
             <div class="row flex-lg-row-reverse align-items-center justify-content-between g-gs">
                 <div class="col-lg-6 mb-n3 mb-lg-0">
                     <div class="header-image header-image-s2">
-                        <img src="/images/header/sttok-2.png" alt="sttok">
+                        <img src="${headerRoot}images/header/sttok-2.png" alt="sttok">
                     </div><!-- .header-image -->
                 </div><!-- .col- -->
                 <div class="col-lg-5 col-md-10">
@@ -36,27 +36,27 @@ let headerIndex = `
             <div class="row align-items-center g-gs">
                 <div class="col-4 col-md-2">
                     <div class="brand-item">
-                        <img class="brandPic" src="/images/brand/logo_2x.png" alt="">
+                        <img class="brandPic" src="${headerRoot}images/brand/logo_2x.png" alt="">
                     </div>
                 </div><!-- .col -->
                 <div class="col-4 col-md-2">
                     <div class="brand-item">
-                        <img class="brandPic" src="/images/brand/hubtype.jpg" alt="Hubtype utiliza Sttok">
+                        <img class="brandPic" src="${headerRoot}images/brand/hubtype.jpg" alt="Hubtype utiliza Sttok">
                     </div>
                 </div><!-- .col -->
                 <div class="col-4 col-md-2">
                     <div class="brand-item">
-                        <img class="brandPic" src="/images/cabiedes-partners.png" alt="cabiedes & Partners">
+                        <img class="brandPic" src="${headerRoot}images/cabiedes-partners.png" alt="cabiedes & Partners">
                     </div>
                 </div><!-- .col -->
                 <div class="col-4 col-md-2">
                     <div class="brand-item">
-                        <img class="brandPic" src="/images/brand/derecho-com-r.png" alt="">
+                        <img class="brandPic" src="${headerRoot}images/brand/derecho-com-r.png" alt="">
                     </div>
                 </div><!-- .col -->
                 <div class="col-4 col-md-2">
                     <div class="brand-item">
-                        <img class="brandPic" src="/images/brand/legal-pigeon.png" alt="">
+                        <img class="brandPic" src="${headerRoot}images/brand/legal-pigeon.png" alt="">
                     </div>
                 </div><!-- .col -->
             </div><!-- .row -->

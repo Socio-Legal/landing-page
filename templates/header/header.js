@@ -3,15 +3,19 @@ let page = header.attr('data-page');
 if (page === undefined) {
     page = 'index.html';
 }
+let headerRoot = header.attr('data-headerRoot');
+if (headerRoot === undefined) {
+    headerRoot = './';
+}
 
 let appHeader = `
     <div class="header-main header-main-s1 is-sticky is-transparent">
         <div class="container header-container">
             <div class="header-wrap">
                 <div class="header-logo">
-                    <a href="/index.html" class="logo-link">
-                        <img class="logo-light logo-img" src="/images/logo.png" srcset="/images/logo2x.png 2x" alt="Logo Sttok">
-                        <img class="logo-dark logo-img" src="/images/logo-dark.png" srcset="/images/logo-dark2x.png 2x" alt="Sttok Logo">
+                    <a href="${headerRoot}index.html" class="logo-link">
+                        <img class="logo-light logo-img" src="${headerRoot}images/logo.png" srcset="${headerRoot}images/logo2x.png 2x" alt="Logo Sttok">
+                        <img class="logo-dark logo-img" src="${headerRoot}images/logo-dark.png" srcset="${headerRoot}images/logo-dark2x.png 2x" alt="Sttok Logo">
                     </a>
                 </div>
                 <div class="header-toggle">
@@ -31,19 +35,19 @@ let appHeader = `
                             <div class="menu-sub">
                                 <ul class="menu-list">
                                     <li class="menu-item has-sub">
-                                        <a href="/partners/abogados.html" class="menu-link">Abogados</a>
+                                        <a href="${headerRoot}partners/abogados.html" class="menu-link">Abogados</a>
                                     </li>
                                     <li class="menu-item has-sub">
-                                        <a href="/partners/inversores.html" class="menu-link">Fondos/Inversores</a>
+                                        <a href="${headerRoot}partners/inversores.html" class="menu-link">Fondos/Inversores</a>
                                     </li>
                                     <li class="menu-item has-sub">
-                                        <a href="/partners/aceleradoras.html" class="menu-link">Venture builders</a>
+                                        <a href="${headerRoot}partners/aceleradoras.html" class="menu-link">Venture builders</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                         <li class="menu-item faqMenuItem">
-                            <a a href="/faq/faq.html" class="menu-link nav-link">FAQ</a>
+                            <a a href="${headerRoot}faq/faq.html" class="menu-link nav-link">FAQ</a>
                         </li>
                     </ul>
                     <ul class="menu-btns">
