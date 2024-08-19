@@ -1,0 +1,161 @@
+.pricing-grid {
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0.06)
+  );
+  opacity: 0.3;
+}
+
+.pricing-grid-border {
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-image-source: linear-gradient(
+    270deg,
+    hsla(0, 0%, 100%, 0.075),
+    hsla(0, 0%, 100%, 0)
+  );
+  border-image-slice: 1;
+}
+
+.pricing-circle::before {
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 100%, 0.3),
+    hsla(0, 0%, 100%, 0) 28.19%
+  );
+}
+
+.pricing-circle::before,
+.pricing-item-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+.pricing-item-border::before {
+  background: linear-gradient(
+    47deg,
+    hsla(0, 0%, 100%, 0.1),
+    hsla(0, 0%, 100%, 0)
+  );
+}
+
+.pricing-gradient-text {
+  background: -webkit-linear-gradient(
+      0deg,
+      #e59cff 0.01%,
+      #ba9cff 50.01%,
+      #9cb2ff
+    ),
+    -webkit-linear-gradient(0deg, hsla(0, 0%, 100%, 0.4), hsla(0, 0%, 100%, 0.4));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pricing-gradient-divider {
+  background: linear-gradient(
+    270deg,
+    hsla(0, 0%, 100%, 0),
+    hsla(0, 0%, 100%, 0.12) 49.48%,
+    hsla(0, 0%, 100%, 0)
+  );
+}
+
+.pricing-button-gradient {
+  background: linear-gradient(
+    180deg,
+    hsla(0, 0%, 100%, 0.1),
+    hsla(0, 0%, 100%, 0)
+  );
+}
+
+.pricing-button-gradient::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+  background-image: linear-gradient(
+    90deg,
+    #e59cff 0.01%,
+    #ba9cff 50.01%,
+    #9cb2ff
+  );
+}
+
+.pricing-button-gradient:hover::before {
+  background-image: linear-gradient(251.09deg, #701efc 5.04%, #cbb3f3 96.95%);
+}
+
+.bg-dark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 0 20 / var(--tw-bg-opacity));
+}
+
+.bg-dark-6 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(25 22 37 / var(--tw-bg-opacity));
+}
+
+.bg-dark-7 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 12 31 / var(--tw-bg-opacity));
+}
+
+.bg-dark-8 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 13 32 / var(--tw-bg-opacity));
+}
+
+.bg-dark\/70 {
+  background-color: rgba(3, 0, 20, 0.7);
+}
+
+.bg-purple {
+  --tw-bg-opacity: 1;
+  background-color: rgb(134 70 244 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-white\/10 {
+  background-color: hsla(0, 0%, 100%, 0.1);
+}
+
+.bg-white\/5 {
+  background-color: hsla(0, 0%, 100%, 0.05);
+}
+
+.bg-white\/\[0\.04\] {
+  background-color: hsla(0, 0%, 100%, 0.04);
+}
+
+.bg-white\/\[0\.05\] {
+  background-color: hsla(0, 0%, 100%, 0.05);
+}
+
+.bg-white\/\[0\.07\] {
+  background-color: hsla(0, 0%, 100%, 0.07);
+}
+
+.bg-white\/\[0\.12\] {
+  background-color: hsla(0, 0%, 100%, 0.12);
+}
