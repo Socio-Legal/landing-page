@@ -10,8 +10,7 @@ import React, {
 import * as Accordion from "@radix-ui/react-accordion";
 import { motion, useInView } from "framer-motion";
 
-import Image, { StaticImageData } from "next/legacy/image";
-import usesCompanies from "@/public/uses-companies.png";
+import { StaticImageData } from "next/legacy/image";
 
 import { cn } from "@/lib/utils";
 
@@ -35,8 +34,6 @@ const AccordionItem = forwardRef<HTMLDivElement, AccordionItemProps>(
   )
 );
 
-AccordionItem.displayName = "AccordionItem";
-
 type AccordionTriggerProps = {
   children: React.ReactNode;
   className?: string;
@@ -59,8 +56,6 @@ const AccordionTrigger = forwardRef<HTMLButtonElement, AccordionTriggerProps>(
   )
 );
 
-AccordionTrigger.displayName = "AccordionTrigger";
-
 type AccordionContentProps = {
   children: ReactNode;
   className?: string;
@@ -80,8 +75,6 @@ const AccordionContent = forwardRef<HTMLDivElement, AccordionContentProps>(
     </Accordion.Content>
   )
 );
-
-AccordionContent.displayName = "AccordionContent";
 
 type CardDataProps = {
   id: number;
@@ -341,6 +334,9 @@ const Feature = ({
   );
 };
 
+AccordionItem.displayName = "AccordionItem";
+AccordionTrigger.displayName = "AccordionTrigger";
+AccordionContent.displayName = "AccordionContent";
 UsesSection.displayName = "UsesSection";
 
 export function UsesSection() {
