@@ -10,7 +10,7 @@ import React, {
 import * as Accordion from "@radix-ui/react-accordion";
 import { motion, useInView } from "framer-motion";
 
-import Image, { StaticImageData } from "next/image";
+import Image, { StaticImageData } from "next/legacy/image";
 import usesCompanies from "@/public/uses-companies.png";
 
 import { cn } from "@/lib/utils";
@@ -35,6 +35,8 @@ const AccordionItem = forwardRef<HTMLDivElement, AccordionItemProps>(
   )
 );
 
+AccordionItem.displayName = "AccordionItem";
+
 type AccordionTriggerProps = {
   children: React.ReactNode;
   className?: string;
@@ -57,6 +59,8 @@ const AccordionTrigger = forwardRef<HTMLButtonElement, AccordionTriggerProps>(
   )
 );
 
+AccordionTrigger.displayName = "AccordionTrigger";
+
 type AccordionContentProps = {
   children: ReactNode;
   className?: string;
@@ -76,6 +80,8 @@ const AccordionContent = forwardRef<HTMLDivElement, AccordionContentProps>(
     </Accordion.Content>
   )
 );
+
+AccordionContent.displayName = "AccordionContent";
 
 type CardDataProps = {
   id: number;
@@ -272,7 +278,7 @@ const Feature = ({
               {cardData[currentIndex]?.image ? (
                 <motion.img
                   key={currentIndex}
-                  src={cardData[currentIndex].image}
+                  src={cardData[currentIndex].image as string}
                   alt="feature"
                   className="aspect-auto h-full w-full rounded-xl border border-neutral-300/50 object-cover p-1"
                   initial={{ opacity: 0, scale: 0.98 }}
@@ -334,6 +340,8 @@ const Feature = ({
     </section>
   );
 };
+
+UsesSection.displayName = "UsesSection";
 
 export function UsesSection() {
   return <Feature collapseDelay={5000} linePosition="left" ltr />;

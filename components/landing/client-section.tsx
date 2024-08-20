@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 import Factorial from "@/public/logo-factorial.png";
 import Yaba from "@/public/logo-yaba.png";

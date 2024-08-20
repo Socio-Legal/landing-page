@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 import Icon01 from "@/public/icon-01.svg";
 import Icon02 from "@/public/icon-02.svg";
