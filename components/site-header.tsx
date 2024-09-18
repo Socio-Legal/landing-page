@@ -30,19 +30,15 @@ export function SiteHeader() {
   }, []);
 
   return (
-    <header
-      className={
-        "relative sticky top-0 z-50 py-2 bg-background/60 backdrop-blur"
-      }
-    >
+    <header className={"relative sticky top-0 z-50 py-2 backdrop-blur"}>
       <div className="flex justify-between items-center container">
         <Link
           href="/"
           title="brand-logo"
           className="relative mr-6 flex items-center space-x-2"
         >
-          <Icons.logo className="w-auto h-[40px]" />
-          <span className="font-bold text-xl">{siteConfig.name}</span>
+          <Icons.logo className="w-auto h-[30px]" />
+          <span className="font-bold text-xl hidden">{siteConfig.name}</span>
         </Link>
 
         <div className="hidden lg:block">
@@ -54,7 +50,7 @@ export function SiteHeader() {
             <div className="gap-2 flex">
               <Link
                 href="/login"
-                className={buttonVariants({ variant: "outline" })}
+                className={buttonVariants({ variant: "ghost" })}
               >
                 Iniciar sesión
               </Link>
@@ -65,7 +61,7 @@ export function SiteHeader() {
                   "w-full sm:w-auto text-background flex gap-2"
                 )}
               >
-                <Icons.logo className="h-6 w-6" />
+                <Icons.logoMin className="h-6 w-6" />
                 Solicitar demo
               </Link>
             </div>
