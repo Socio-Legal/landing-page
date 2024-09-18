@@ -3,7 +3,7 @@ import CallToActionSection from "@/components/landing/cta-section";
 import CallToActionSideSection from "@/components/landing/cta-side-section";
 import Features2Section from "@/components/landing/features-2-section";
 import FeaturesSection from "@/components/landing/features-section";
-import HeroSection from "@/components/landing/hero-section";
+import HeroSection from "@/components/landing/hero-3-section";
 import PlanetStarsSection from "@/components/landing/planet-stars-section";
 import PricingSection from "@/components/landing/pricing-section";
 import { MarqueeDemo } from "@/components/landing/reviews-section";
