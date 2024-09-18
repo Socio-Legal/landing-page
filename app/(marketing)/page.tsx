@@ -1,5 +1,5 @@
 import ClientSection from "@/components/landing/client-section";
-import CallToActionSection from "@/components/landing/cta-section";
+import CallToActionSection from "@/components/landing/cta-8-section";
 import CallToActionSideSection from "@/components/landing/cta-side-section";
 import Features2Section from "@/components/landing/features-2-section";
 import FeaturesSection from "@/components/landing/features-section";
