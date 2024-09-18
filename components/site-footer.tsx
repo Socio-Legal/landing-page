@@ -1,139 +1,123 @@
-import { DiscordLogoIcon, TwitterLogoIcon } from "@radix-ui/react-icons";
-import Link from "next/link";
+import {
+  InstagramLogoIcon,
+  LinkedInLogoIcon,
+  TwitterLogoIcon,
+  ChevronRightIcon,
+} from "@radix-ui/react-icons";
+import { Icons } from "./icons";
 
-const footerNavs = [
-  // {
-  //   label: "Product",
-  //   items: [
-  //     {
-  //       href: "/",
-  //       name: "Email Collection",
-  //     },
-  //     {
-  //       href: "/pricing",
-  //       name: "Pricing",
-  //     },
-  //     {
-  //       href: "/faq",
-  //       name: "FAQ",
-  //     },
-  //   ],
-  // },
+interface Icon {
+  icon: JSX.Element;
+  url: string;
+}
 
-  // {
-  //   label: "Community",
-  //   items: [
-  //     {
-  //       href: "/",
-  //       name: "Discord",
-  //     },
-  //     {
-  //       href: "/",
-  //       name: "Twitter",
-  //     },
-  //     {
-  //       href: "mailto:hello@chatcollect.com",
-  //       name: "Email",
-  //     },
-  //   ],
-  // },
-  { label: "", items: [] },
-  { label: "", items: [] },
-  {
-    label: "Legal",
-    items: [
-      {
-        href: "/terms",
-        name: "Aviso Legal y CGC",
-      },
-      {
-        href: "/privacy",
-        name: "Privacidad y Cookies",
-      },
-      {
-        href: "/policy",
-        name: "Política Seguridad",
-      },
-    ],
-  },
+const icons: Icon[] = [
+  { icon: <InstagramLogoIcon />, url: "https://www.instagram.com" },
+  { icon: <LinkedInLogoIcon />, url: "https://www.linkedin.com" },
+  { icon: <TwitterLogoIcon />, url: "https://www.twitter.com" },
 ];
 
-const footerSocials = [
-  {
-    href: "",
-    name: "Discord",
-    icon: <DiscordLogoIcon className="h-4 w-4" />,
-  },
-  {
-    href: "",
-    name: "Twitter",
-    icon: <TwitterLogoIcon className="h-4 w-4" />,
-  },
+const securityLogos: string[] = [
+  "https://www.sttok.com/images/logo-gdpr-compliant.png",
+  "https://www.sttok.com/images/logo-iso-27001.png",
+  "https://www.sttok.com/images/logo-ssl.png",
+];
+
+type FooterLink = {
+  id: number;
+  title: string;
+  url: string;
+  isHeader?: boolean;
+};
+
+const footerLinks: FooterLink[][] = [
+  [
+    { id: 0, title: "Producto", url: "#", isHeader: true },
+    { id: 1, title: "Libro de Socios", url: "#" },
+    { id: 2, title: "Planes de Incentivos", url: "#" },
+    { id: 3, title: "Simulador Operaciones", url: "#" },
+    { id: 4, title: "Juntas y Consejos", url: "#" },
+  ],
+  [
+    { id: 5, title: "Soluciones", url: "#", isHeader: true },
+    { id: 6, title: "Empresa y Grupos Societarios", url: "#" },
+    { id: 7, title: "Abogados", url: "#" },
+    { id: 8, title: "Portal del Inversor", url: "#" },
+    { id: 9, title: "Inversores", url: "#" },
+  ],
+  [
+    { id: 10, title: "Otros", url: "#", isHeader: true },
+    { id: 11, title: "Testimonios", url: "#" },
+    { id: 12, title: "Precios", url: "#" },
+  ],
 ];
 
 export function SiteFooter() {
   return (
-    <footer>
-      <div className="mx-auto w-full max-w-screen-xl xl:pb-2">
-        <div className="md:flex md:justify-between px-8 p-4 py-16 sm:pb-16 gap-4">
-          <div className="mb-12 flex-col flex gap-4">
-            <Link href="/" className="flex items-center gap-2">
-              {/* <img
-                src="https://magicui.design/icon.png"
-                className="h-8 w-8 text-primary"
-              /> */}
-              <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-                Sttok
-              </span>
-            </Link>
-            <p className="max-w-xs">Gestión de Sociedades</p>
-          </div>
-          <div className="grid grid-cols-1 gap-8 sm:gap-10 sm:grid-cols-3">
-            {footerNavs.map((nav) => (
-              <div key={nav.label}>
-                <h2 className="mb-6 text-sm tracking-tighter font-medium text-gray-900 uppercase dark:text-white">
-                  {nav.label}
-                </h2>
-                <ul className="gap-2 grid">
-                  {nav.items.map((item) => (
-                    <li key={item.name}>
-                      <Link
-                        href={item.href}
-                        className="cursor-pointer text-gray-400 hover:text-gray-200 duration-200 font-[450] text-sm"
-                      >
-                        {item.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
+    <footer className="px-7 md:px-10">
+      <div className="flex flex-col py-10 md:flex-row md:items-center md:justify-between">
+        <div className="flex flex-col items-start justify-start gap-y-5">
+          <a href="#" className="flex items-center gap-x-2.5">
+            <Icons.logo className="w-auto h-[30px]" />
+            <h1 className="text-xl font-bold text-neutral-900 dark:text-white hidden">
+              Sttok
+            </h1>
+          </a>
+          <p className="tracking-tight text-neutral-900 dark:text-white">
+            Software de Gestión de Sociedades
+          </p>
+          <p className="text-sm tracking-tight text-neutral-500 dark:text-neutral-400 sm:text-center">
+            Todos los derechos reservados.
+          </p>
         </div>
-
-        <div className="flex flex-col sm:flex-row sm:flex sm:items-center sm:justify-between rounded-md border-neutral-700/20 py-4 px-8 gap-2">
-          <div className="flex space-x-5 sm:justify-center sm:mt-0">
-            {footerSocials.map((social) => (
-              <Link
-                key={social.name}
-                href={social.href}
-                className="text-gray-500 hover:text-gray-900 dark:hover:text-gray-600 fill-gray-500 hover:fill-gray-900 dark:hover:fill-gray-600"
-              >
-                {social.icon}
-                <span className="sr-only">{social.name}</span>
-              </Link>
+        <div className="pt-5 md:w-1/2">
+          <div className="flex items-start justify-between gap-x-3 lg:pl-10">
+            {footerLinks.map((column, columnIndex) => (
+              <ul key={columnIndex} className="flex flex-col gap-y-2">
+                {column.map((link) => (
+                  <li
+                    key={link.id}
+                    className="group inline-flex cursor-pointer items-center justify-start gap-1 text-[15px]/snug font-medium text-neutral-400 duration-200 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200"
+                  >
+                    {link.isHeader ? (
+                      <h2 className="text-sm font-semibold uppercase text-white">
+                        {link.title}
+                      </h2>
+                    ) : (
+                      <a href={link.url}>{link.title}</a>
+                    )}
+                    <ChevronRightIcon className="h-4 w-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100" />
+                  </li>
+                ))}
+              </ul>
             ))}
           </div>
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            Copyright © {new Date().getFullYear()}{" "}
-            <Link href="/" className="cursor-pointer">
-              Sttok Barcelona S.L
-            </Link>
-            . Todos los derechos reservados.
-          </span>
         </div>
       </div>
-      {/*   <SiteBanner /> */}
+      <div className="flex flex-col justify-between gap-y-10 border-t border-dashed py-10 md:flex-row md:items-center">
+        <div className="flex items-center gap-x-4">
+          {securityLogos.map((logo, index) => (
+            <img
+              key={index}
+              src={logo}
+              alt="security"
+              className="w-auto h-12"
+            />
+          ))}
+        </div>
+
+        <div className="flex items-center gap-x-4">
+          {icons.map((icon, index) => (
+            <a
+              key={index}
+              href={icon.url}
+              className="text-xl text-neutral-500 hover:text-neutral-900 hover:dark:text-white"
+            >
+              {icon.icon}
+            </a>
+          ))}
+        </div>
+      </div>
     </footer>
   );
 }
