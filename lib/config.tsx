@@ -31,62 +31,83 @@ export const siteConfig = {
           {
             href: "https://www.sttok.com/libro-de-socios/",
             title: "Libro Oficial",
+            description: "Mantenimiento del libro oficial de socios",
           },
           {
             href: "https://www.sttok.com/libro-de-socios/",
             title: "Datos Actualizados",
+            description: "Acceso a información actualizada de los socios",
           },
           {
             href: "https://www.sttok.com/libro-de-socios/",
             title: "% Non Diluted y FD actualizados",
+            description: "Porcentajes actualizados de participación",
           },
           {
             href: "https://www.sttok.com/libro-de-socios/",
             title: "Acceso de los socios",
+            description: "Portal de acceso para los accionistas",
           },
           {
             href: "https://www.sttok.com/planes-de-incentivos/",
             title: "Phantoms y Stock Options",
+            description: "Administración de opciones sobre acciones y phantoms",
           },
           {
             href: "https://www.sttok.com/planes-de-incentivos/",
             title: "Acceso para empleados",
+            description:
+              "Portal de acceso para empleados a sus planes de incentivos",
           },
           {
             href: "https://www.sttok.com/planes-de-incentivos/",
             title: "Vesting automatizado",
+            description: "Sistema de consolidación automática de opciones",
           },
           {
             href: "https://www.sttok.com/simulador/",
             title: "Cálculo automático rondas",
+            description:
+              "Herramienta para calcular automáticamente rondas de financiación",
           },
           {
             href: "https://www.sttok.com/simulador/",
             title: "Múltiples escenarios",
+            description:
+              "Creación y comparación de diferentes escenarios financieros",
           },
           {
             href: "https://www.sttok.com/simulador/",
             title: "Ampliaciones capital",
+            description: "Simulación de ampliaciones de capital",
           },
           {
             href: "https://www.sttok.com/simulador/",
             title: "Datos y % exactos",
+            description: "Cálculos precisos de datos y porcentajes",
           },
           {
             href: "https://www.sttok.com/juntas-consejos/",
             title: "Convocatoria digital",
+            description:
+              "Sistema de convocatorias digitales para juntas y consejos",
           },
           {
             href: "https://www.sttok.com/juntas-consejos/",
             title: "Delegación / proxy",
+            description: "Gestión de delegaciones y representaciones",
           },
           {
             href: "https://www.sttok.com/juntas-consejos/",
             title: "Votación digital",
+            description:
+              "Sistema de votación electrónica para juntas y consejos",
           },
           {
             href: "https://www.sttok.com/juntas-consejos/",
             title: "Documentación automática",
+            description:
+              "Generación automática de documentación para juntas y consejos",
           },
         ],
       },
