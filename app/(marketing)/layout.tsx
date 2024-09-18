@@ -12,7 +12,12 @@ export default async function MarketingLayout({
     <>
       {/* <SiteBanner /> */}
       <SiteHeader />
-      <main className="mx-auto flex-1 overflow-hidden">{children}</main>
+      <main
+        className="mx-auto flex-1 overflow-hidden"
+        style={{ marginTop: "-56px" }}
+      >
+        {children}
+      </main>
       <SiteFooter />
     </>
   );

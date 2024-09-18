@@ -1,182 +1,82 @@
 "use client";
 
+import Drawer from "@/components/drawer";
+import { Icons } from "@/components/icons";
+import Menu from "@/components/menu";
 import { buttonVariants } from "@/components/ui/button";
+import { siteConfig } from "@/lib/config";
+
 import { cn } from "@/lib/utils";
-import { AnimatePresence, motion } from "framer-motion";
-import { AlignJustify, XIcon } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-const menuItem = [
-  {
-    id: 1,
-    label: "Producto",
-    href: "/features",
-  },
-  {
-    id: 2,
-    label: "Soluciones",
-    href: "#",
-  },
-  {
-    id: 3,
-    label: "Testimonios",
-    href: "#",
-  },
-  {
-    id: 4,
-    label: "Precios",
-    href: "#",
-  },
-];
-
 export function SiteHeader() {
-  const mobilenavbarVariant = {
-    initial: {
-      opacity: 0,
-      scale: 1,
-    },
-    animate: {
-      scale: 1,
-      opacity: 1,
-      transition: {
-        duration: 0.2,
-        ease: "easeOut",
-      },
-    },
-    exit: {
-      opacity: 0,
-      transition: {
-        duration: 0.2,
-        delay: 0.2,
-        ease: "easeOut",
-      },
-    },
-  };
-
-  const mobileLinkVar = {
-    initial: {
-      y: "-20px",
-      opacity: 0,
-    },
-    open: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.3,
-        ease: "easeOut",
-      },
-    },
-  };
-
-  const containerVariants = {
-    open: {
-      transition: {
-        staggerChildren: 0.06,
-      },
-    },
-  };
-
-  const [hamburgerMenuIsOpen, setHamburgerMenuIsOpen] = useState(false);
+  const [addBorder, setAddBorder] = useState(false);
 
   useEffect(() => {
-    const html = document.querySelector("html");
-    if (html) html.classList.toggle("overflow-hidden", hamburgerMenuIsOpen);
-  }, [hamburgerMenuIsOpen]);
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setAddBorder(true);
+      } else {
+        setAddBorder(false);
+      }
+    };
 
-  useEffect(() => {
-    const closeHamburgerNavigation = () => setHamburgerMenuIsOpen(false);
-    window.addEventListener("orientationchange", closeHamburgerNavigation);
-    window.addEventListener("resize", closeHamburgerNavigation);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("orientationchange", closeHamburgerNavigation);
-      window.removeEventListener("resize", closeHamburgerNavigation);
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, [setHamburgerMenuIsOpen]);
+  }, []);
 
   return (
-    <>
-      <header className="fixed left-0 top-0 z-50 w-full translate-y-[-1rem] animate-fade-in border-b opacity-0 backdrop-blur-[12px] [--animation-delay:600ms]">
-        <div className="container flex h-[3.5rem] items-center justify-between">
-          <Link className="text-md flex items-center" href="/">
-            Sttok
-          </Link>
-
-          <div className="ml-auto flex h-full items-center">
-            <Link className="mr-6 text-sm" href="/signin">
-              Iniciar sesión
-            </Link>
-            <Link
-              className={cn(
-                buttonVariants({ variant: "secondary" }),
-                "mr-6 text-sm"
-              )}
-              href="/signup"
-            >
-              Solicitar demo
-            </Link>
-          </div>
-          <button
-            className="ml-6 md:hidden"
-            onClick={() => setHamburgerMenuIsOpen((open) => !open)}
-          >
-            <span className="sr-only">Toggle menu</span>
-            {hamburgerMenuIsOpen ? <XIcon /> : <AlignJustify />}
-          </button>
-        </div>
-      </header>
-      <AnimatePresence>
-        <motion.nav
-          initial="initial"
-          exit="exit"
-          variants={mobilenavbarVariant}
-          animate={hamburgerMenuIsOpen ? "animate" : "exit"}
-          className={cn(
-            `fixed left-0 top-0 z-50 h-screen w-full overflow-auto bg-background/70 backdrop-blur-[12px] `,
-            {
-              "pointer-events-none": !hamburgerMenuIsOpen,
-            }
-          )}
+    <header className={"relative sticky top-0 z-50 py-2 backdrop-blur"}>
+      <div className="flex justify-between items-center container">
+        <Link
+          href="/"
+          title="brand-logo"
+          className="relative mr-6 flex items-center space-x-2"
         >
-          <div className="container flex h-[3.5rem] items-center justify-between">
-            <Link className="text-md flex items-center" href="/">
-              Magic UI
-            </Link>
+          <Icons.logo className="w-auto h-[30px]" />
+          <span className="font-bold text-xl hidden">{siteConfig.name}</span>
+        </Link>
 
-            <button
-              className="ml-6 md:hidden"
-              onClick={() => setHamburgerMenuIsOpen((open) => !open)}
-            >
-              <span className="sr-only">Toggle menu</span>
-              {hamburgerMenuIsOpen ? <XIcon /> : <AlignJustify />}
-            </button>
-          </div>
-          <motion.ul
-            className={`flex flex-col md:flex-row md:items-center uppercase md:normal-case ease-in`}
-            variants={containerVariants}
-            initial="initial"
-            animate={hamburgerMenuIsOpen ? "open" : "exit"}
-          >
-            {menuItem.map((item) => (
-              <motion.li
-                variants={mobileLinkVar}
-                key={item.id}
-                className="border-grey-dark pl-6 py-0.5 border-b md:border-none"
+        <div className="hidden lg:block">
+          <div className="flex items-center ">
+            <nav className="mr-10">
+              <Menu />
+            </nav>
+
+            <div className="gap-2 flex">
+              <Link
+                href="/login"
+                className={buttonVariants({ variant: "ghost" })}
               >
-                <Link
-                  className={`hover:text-grey flex h-[var(--navigation-height)] w-full items-center text-xl transition-[color,transform] duration-300 md:translate-y-0 md:text-sm md:transition-colors ${
-                    hamburgerMenuIsOpen ? "[&_a]:translate-y-0" : ""
-                  }`}
-                  href={item.href}
-                >
-                  {item.label}
-                </Link>
-              </motion.li>
-            ))}
-          </motion.ul>
-        </motion.nav>
-      </AnimatePresence>
-    </>
+                Iniciar sesión
+              </Link>
+              <Link
+                href="/signup"
+                className={cn(
+                  buttonVariants({ variant: "default" }),
+                  "w-full sm:w-auto text-background flex gap-2"
+                )}
+              >
+                <Icons.logoMin className="h-6 w-6" />
+                Solicitar demo
+              </Link>
+            </div>
+          </div>
+        </div>
+        <div className="mt-2 cursor-pointer block lg:hidden">
+          <Drawer />
+        </div>
+      </div>
+      <hr
+        className={cn(
+          "absolute w-full bottom-0 transition-opacity duration-300 ease-in-out",
+          addBorder ? "opacity-100" : "opacity-0"
+        )}
+      />
+    </header>
   );
 }
