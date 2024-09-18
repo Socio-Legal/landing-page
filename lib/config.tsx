@@ -150,8 +150,8 @@ export const siteConfig = {
       },
     },
     {
-      href: "/blog",
-      label: "Blog",
+      href: "/testimonios",
+      label: "Testimonios",
     },
   ],
   pricing: [
