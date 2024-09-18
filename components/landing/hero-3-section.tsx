@@ -104,7 +104,7 @@ export default function HeroSection() {
               <Image
                 alt="Hero image"
                 className="aspect-video object-cover rounded-lg hidden relative w-full h-full rounded-[inherit] border object-contain dark:block"
-                height="550"
+                height="420"
                 src="/hero-dark.png"
                 width="550"
               />
