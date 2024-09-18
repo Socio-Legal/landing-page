@@ -52,16 +52,18 @@ export default function NavigationMenuDemo() {
                         </NavigationMenuLink>
                       </li>
                     )} */}
-                    {item.content.items.map((subItem, subIndex) => (
-                      <ListItem
-                        key={subIndex}
-                        href={subItem.href}
-                        title={subItem.title}
-                        className="hover:bg-primary/10"
-                      >
-                        {subItem.description}
-                      </ListItem>
-                    ))}
+                    {item.content.items.map(
+                      (subItem: any, subIndex: number) => (
+                        <ListItem
+                          key={subIndex}
+                          href={subItem.href}
+                          title={subItem.title}
+                          className="hover:bg-primary/10"
+                        >
+                          {subItem.description}
+                        </ListItem>
+                      )
+                    )}
                   </ul>
                 </NavigationMenuContent>
               </>
