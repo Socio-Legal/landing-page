@@ -113,39 +113,38 @@ export const siteConfig = {
       },
     },
     {
-      trigger: "Solutions",
+      trigger: "Soluciones",
       content: {
         items: [
           {
-            title: "For Small Businesses",
-            href: "#",
-            description: "Tailored automation solutions for growing companies.",
-          },
-          {
-            title: "Enterprise",
-            href: "#",
-            description: "Scalable AI automation for large organizations.",
-          },
-          {
-            title: "Developers",
-            href: "#",
-            description: "API access and integration tools for developers.",
-          },
-          {
-            title: "Healthcare",
-            href: "#",
-            description: "Specialized automation for healthcare workflows.",
-          },
-          {
-            title: "Finance",
-            href: "#",
-            description: "AI-driven process automation for financial services.",
-          },
-          {
-            title: "Education",
-            href: "#",
+            href: "https://www.sttok.com/landing/empresas/",
+            title: "Empresa y Grupos Societarios",
             description:
-              "Streamline administrative tasks in educational institutions.",
+              "Digitaliza la gestión societaria de la Sociedad: Libro de socios, Juntas de Accionistas, Documentación Societaria, Apoderados, etc.",
+          },
+          {
+            href: "https://www.sttok.com/landing/abogados/",
+            title: "Abogados",
+            description:
+              "Optimiza tu tiempo con la gestión digital de sociedades. Ahorra tiempo y evita errores. Automatiza tareas manuales e incrementa la productividad.",
+          },
+          {
+            href: "https://www.sttok.com/landing/startups/",
+            title: "Startups",
+            description:
+              "Captable, Planes de Incentivos, Simulador de ampliaciones, notas convertibles, juntas de accionistas, sindicación de socios, etc.",
+          },
+          {
+            href: "https://www.sttok.com/landing/portal-del-inversor/",
+            title: "Portal del Inversor",
+            description:
+              "Da acceso a tus inversores acceso a una plataforma donde dispondrán de toda la informacion que les quieras facilitar.",
+          },
+          {
+            href: "https://www.sttok.com/landing/inversores/",
+            title: "Inversores",
+            description:
+              "Acceso desde una única plataforma a los datos de sociedades participadas. Información real sin utilizar excels desactualizados.",
           },
         ],
       },
