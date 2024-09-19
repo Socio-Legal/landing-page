@@ -1,9 +1,4 @@
-import {
-  InstagramLogoIcon,
-  LinkedInLogoIcon,
-  TwitterLogoIcon,
-  ChevronRightIcon,
-} from "@radix-ui/react-icons";
+import { LinkedInLogoIcon, ChevronRightIcon } from "@radix-ui/react-icons";
 import { Icons } from "./icons";
 
 interface Icon {
@@ -12,9 +7,10 @@ interface Icon {
 }
 
 const icons: Icon[] = [
-  { icon: <InstagramLogoIcon />, url: "https://www.instagram.com" },
-  { icon: <LinkedInLogoIcon />, url: "https://www.linkedin.com" },
-  { icon: <TwitterLogoIcon />, url: "https://www.twitter.com" },
+  {
+    icon: <LinkedInLogoIcon />,
+    url: "https://www.linkedin.com/company/sttok/",
+  },
 ];
 
 const securityLogos: string[] = [
@@ -55,7 +51,7 @@ const footerLinks: FooterLink[][] = [
 export function SiteFooter() {
   return (
     <footer className="px-7 md:px-10">
-      <div className="flex flex-col py-10 md:flex-row md:items-center md:justify-between">
+      <div className="flex flex-col py-10 md:flex-row md:items-center md:justify-between container">
         <div className="flex flex-col items-start justify-start gap-y-5">
           <a href="#" className="flex items-center gap-x-2.5">
             <Icons.logo className="w-auto h-[30px]" />
@@ -94,7 +90,8 @@ export function SiteFooter() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-between gap-y-10 border-t border-dashed py-10 md:flex-row md:items-center">
+
+      <div className="flex flex-col justify-between gap-y-10 border-t border-dashed py-10 md:flex-row md:items-center container">
         <div className="flex items-center gap-x-4">
           {securityLogos.map((logo, index) => (
             <img
