@@ -4,7 +4,7 @@ import Drawer from "@/components/drawer";
 import { Icons } from "@/components/icons";
 import Menu from "@/components/menu";
 import { buttonVariants } from "@/components/ui/button";
-import { siteConfig } from "@/lib/config";
+import { siteConfig } from "@/config/site-config";
 
 import { cn } from "@/lib/utils";
 import Link from "next/link";
@@ -48,25 +48,25 @@ export function SiteHeader() {
             </nav>
 
             <div className="gap-2 flex">
-              <Link
-                href="/login"
-                className={buttonVariants({ variant: "ghost" })}
-              >
-                Iniciar sesión
-              </Link>
-              <Link
-                href="/signup"
-                className={cn(
-                  buttonVariants({ variant: "default" }),
-                  "w-full sm:w-auto text-background flex gap-2"
-                )}
-              >
-                <Icons.logoMin className="h-6 w-6" />
-                Solicitar demo
-              </Link>
+              {siteConfig.cta?.map((cta, index) => (
+                <Link
+                  key={index}
+                  href={cta.link}
+                  className={cn(
+                    buttonVariants({
+                      variant: cta.variant as keyof typeof buttonVariants,
+                    }),
+                    cta.className || ""
+                  )}
+                >
+                  {cta?.hasIcon && <Icons.logoMin className="h-6 w-6" />}
+                  {cta.text}
+                </Link>
+              ))}
             </div>
           </div>
         </div>
+
         <div className="mt-2 cursor-pointer block lg:hidden">
           <Drawer />
         </div>

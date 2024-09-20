@@ -12,8 +12,14 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { siteConfig } from "@/lib/config";
+import { siteConfig } from "@/config/site-config";
 import { cn } from "@/lib/utils";
+
+import { Icons } from "./icons";
+
+const MenuIcons = {
+  Stars: <Icons.stars className="h-6 w-6" />,
+};
 
 export default function NavigationMenuDemo() {
   return (

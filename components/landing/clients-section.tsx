@@ -1,4 +1,7 @@
+import { FC } from "react";
 import Image from "next/legacy/image";
+
+import { items as companies, header } from "@/config/clients-section";
 
 import Factorial from "@/public/logo-factorial.png";
 import Yaba from "@/public/logo-yaba.png";
@@ -21,68 +24,51 @@ import Horizm from "@/public/logo-horizm.png";
 import Psonrie from "@/public/logo-psonrie.png";
 import Pwc from "@/public/logo-pwc.png";
 
-const companies = [
-  "Factorial",
-  "Yaba",
-  "Mailtrack",
-  "Broseta",
-  "DerechoCom",
-  "Taxdown",
-  "Deale",
-  "PldSpace",
-  "Keybotic",
-  "MyInvestor",
-  "Shakers",
-  "Caballero",
-  "MasterChef",
-  "Cabiedes",
-  "Incapto",
-  "LegalPigeon",
-  "Criptan",
-  "Horizm",
-  "Psonrie",
-  "Pwc",
-];
+import SectionHeader from "../section-header";
 
-const localImages = {
-  Factorial,
-  Yaba,
-  Mailtrack,
-  Broseta,
-  DerechoCom,
-  Taxdown,
-  Deale,
-  PldSpace,
-  Keybotic,
-  MyInvestor,
-  Shakers,
-  Caballero,
-  MasterChef,
-  Cabiedes,
-  Incapto,
-  LegalPigeon,
-  Criptan,
-  Horizm,
-  Psonrie,
-  Pwc,
+const ClientLogos = {
+  Factorial: Factorial,
+  Yaba: Yaba,
+  Mailtrack: Mailtrack,
+  Broseta: Broseta,
+  DerechoCom: DerechoCom,
+  Taxdown: Taxdown,
+  Deale: Deale,
+  PldSpace: PldSpace,
+  Keybotic: Keybotic,
+  MyInvestor: MyInvestor,
+  Shakers: Shakers,
+  Caballero: Caballero,
+  MasterChef: MasterChef,
+  Cabiedes: Cabiedes,
+  Incapto: Incapto,
+  LegalPigeon: LegalPigeon,
+  Criptan: Criptan,
+  Horizm: Horizm,
+  Psonrie: Psonrie,
+  Pwc: Pwc,
 };
 
-const getLogo = (logo: keyof typeof localImages) => {
-  if (Object.keys(localImages).includes(logo)) {
-    return localImages[logo];
+const getLogo = (logo: keyof typeof ClientLogos) => {
+  if (Object.keys(ClientLogos).includes(logo)) {
+    return ClientLogos[logo];
   }
-
   return `https://cdn.magicui.design/companies/${logo}.svg`;
 };
 
-export default function ClientSection() {
+const ClientsSection: FC = () => {
   return (
     <section id="companies">
       <div className="py-14">
         <div className="container mx-auto px-4 md:px-8">
-          <h3 className="text-center text-sm font-semibold text-gray-500">
-            ALGUNOS DE NUESTROS CLIENTES
-          </h3>
+          <SectionHeader
+            slogan={header.slogan}
+            title={header.title}
+            description={header.description}
+            buttonText={header.buttonText}
+            buttonLink={header.buttonLink}
+          />
+
           <div className="relative mt-6">
             <div className="grid grid-cols-2 place-items-center gap-2 md:grid-cols-4 xl:grid-cols-6 xl:gap-4">
               {companies.map((logo, index) => (
@@ -100,7 +86,7 @@ export default function ClientSection() {
                   `}
                 >
                   <Image
-                    src={getLogo(logo as keyof typeof localImages)}
+                    src={getLogo(logo as keyof typeof ClientLogos)}
                     alt={logo}
                     layout="fill"
                     objectFit="contain"
@@ -114,4 +100,6 @@ export default function ClientSection() {
       </div>
     </section>
   );
-}
+};
+
+export default ClientsSection;

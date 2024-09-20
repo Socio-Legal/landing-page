@@ -1,0 +1,35 @@
+export const header = {
+  slogan: "Usuarios",
+  title: "¿Quién utiliza Sttok?",
+  description:
+    "Sttok es una plataforma diseñada para empresas, abogados y startups que buscan una solución integral para la gestión de sociedades.",
+  buttonText: null,
+  buttonLink: null,
+};
+
+export const items = [
+  {
+    id: 1,
+    title: "Empresas y Sociedades",
+    content:
+      "Gestión digital de sociedades. Libro de socio actualizado. Generación automática de documentos. Ahorra tiempo y evita errores.",
+    image: "/who-uses-sttok-companies.png",
+    icon: "Building2",
+  },
+  {
+    id: 2,
+    title: "Abogados",
+    content:
+      "Para Abogados que gestionan Sociedades y Consejos. Servicio profesional sin errores. Ahorra tiempo sin excels desactualizados.",
+    image: "who-uses-sttok-lawyers.png",
+    icon: "Scale",
+  },
+  {
+    id: 3,
+    title: "Startups",
+    content:
+      "Para startups e inversores. Detalles de socios y participaciones. Planifica rondas y ampliaciones. Gestiona incentivos para empleados.",
+    image: "/who-uses-sttok-startups.png",
+    icon: "Handshake",
+  },
+];

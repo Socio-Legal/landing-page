@@ -162,3 +162,136 @@
 .z-9999 {
   z-index: 9999;
 }
+
+/* Typography */
+.text-center {
+  text-align: center;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.text-\[22px\] {
+  font-size: 22px;
+}
+
+.text-\[34px\] {
+  font-size: 34px;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.text-custom-1 {
+  font-size: 45px;
+  line-height: 55px;
+}
+
+.text-heading-2 {
+  background-color: red;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.text-heading-3 {
+  font-size: 40px;
+  line-height: 48px;
+}
+
+.text-heading-4 {
+  font-size: 30px;
+  line-height: 38px;
+}
+
+.text-heading-5 {
+  font-size: 28px;
+  line-height: 40px;
+}
+
+.text-heading-6 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-extrabold {
+  font-weight: 800;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.leading-\[28px\] {
+  line-height: 28px;
+}
+
+.leading-\[45px\] {
+  line-height: 45px;
+}
+
+.text-purple {
+  --tw-text-opacity: 1;
+  color: rgb(134 70 244 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-white\/70 {
+  color: hsla(0, 0%, 100%, 0.7);
+}
+
+.text-white\/80 {
+  color: hsla(0, 0%, 100%, 0.8);
+}
+
+.text-opacity-10 {
+  --tw-text-opacity: 0.1;
+}
+
+.underline {
+  text-decoration-line: underline;
+}

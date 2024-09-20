@@ -1,6 +1,9 @@
 import { LinkedInLogoIcon, ChevronRightIcon } from "@radix-ui/react-icons";
 import { Icons } from "./icons";
 
+import Blur01 from "@/public/blur-01.svg";
+import Blur02 from "@/public/blur-02.svg";
+
 interface Icon {
   icon: JSX.Element;
   url: string;
@@ -50,7 +53,14 @@ const footerLinks: FooterLink[][] = [
 
 export function SiteFooter() {
   return (
-    <footer className="px-7 md:px-10">
+    <footer
+      className="px-7 md:px-10 bg-dark"
+      style={{
+        backgroundImage: `url(${Blur02.src})`,
+        backgroundSize: "cover",
+        backgroundPosition: "bottom",
+      }}
+    >
       <div className="flex flex-col py-10 md:flex-row md:items-center md:justify-between container">
         <div className="flex flex-col items-start justify-start gap-y-5">
           <a href="#" className="flex items-center gap-x-2.5">

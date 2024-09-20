@@ -1,5 +1,7 @@
 "use client";
 
+import * as Accordion from "@radix-ui/react-accordion";
+import { motion, useInView } from "framer-motion";
 import React, {
   forwardRef,
   ReactNode,
@@ -7,10 +9,6 @@ import React, {
   useRef,
   useState,
 } from "react";
-import * as Accordion from "@radix-ui/react-accordion";
-import { motion, useInView } from "framer-motion";
-
-import { StaticImageData } from "next/legacy/image";
 
 import { cn } from "@/lib/utils";
 
@@ -33,6 +31,7 @@ const AccordionItem = forwardRef<HTMLDivElement, AccordionItemProps>(
     </Accordion.Item>
   )
 );
+AccordionItem.displayName = "AccordionItem";
 
 type AccordionTriggerProps = {
   children: React.ReactNode;
@@ -44,7 +43,7 @@ const AccordionTrigger = forwardRef<HTMLButtonElement, AccordionTriggerProps>(
     <Accordion.Header className="flex">
       <Accordion.Trigger
         className={cn(
-          "group flex h-[45px] flex-1 cursor-pointer items-center justify-between px-5 text-[15px] leading-none outline-none",
+          "group flex flex-1 cursor-pointer items-center justify-between px-5 text-[15px] leading-none outline-none",
           className
         )}
         {...props}
@@ -55,7 +54,7 @@ const AccordionTrigger = forwardRef<HTMLButtonElement, AccordionTriggerProps>(
     </Accordion.Header>
   )
 );
-
+AccordionTrigger.displayName = "AccordionTrigger";
 type AccordionContentProps = {
   children: ReactNode;
   className?: string;
@@ -75,55 +74,31 @@ const AccordionContent = forwardRef<HTMLDivElement, AccordionContentProps>(
     </Accordion.Content>
   )
 );
+AccordionContent.displayName = "AccordionContent";
 
-type CardDataProps = {
+export type FeaturesDataProps = {
   id: number;
   title: string;
   content: string;
-  image?: string | StaticImageData;
+  image?: string;
   video?: string;
+  icon?: React.ReactNode;
 };
 
-const cardData: CardDataProps[] = [
-  {
-    id: 1,
-    title: "Empresas y Sociedades",
-    content:
-      "Gestiona digitalmente sociedades o grupos empresariales. Libro de socio digital actualizado. Gestión digital de Juntas y Consejos. Generación automática de actas, certificados, convocatorias, delegaciones, etc. Evita errores y ahorra tiempo.",
-    image:
-      "https://www.sttok.com/wp-content/uploads/2024/08/uses-companies-2.png",
-  },
-  {
-    id: 2,
-    title: "Abogados",
-    content:
-      "Para Abogados que gestionan Sociedades, Secretarias de Consejos, Ampliaciones, Juntas o Consejos, etc. Podrás dar un servicio profesional a tus clientes y evitar errores. No tendrás que utilizar excels desactualizados y ahorrarás más del 50% de tiempo.",
-    image:
-      "https://www.sttok.com/wp-content/uploads/2024/08/uses-lawyers-1.png",
-  },
-  {
-    id: 3,
-    title: "Startups",
-    content:
-      "Ideal para startups e inversores. Accede al detalle de socios, nº de participaciones, % FD y ND, etc. Planifica diferentes escenarios de rondas, ampliaciones y notas convertibles con datos y % exactos. Administra planes de incentivos para los empleados.",
-    image:
-      "https://www.sttok.com/wp-content/uploads/2024/08/uses-startups-1.png",
-  },
-];
-
-type FeatureProps = {
+export type FeaturesProps = {
   collapseDelay?: number;
   ltr?: boolean;
-  linePosition?: "left" | "right";
+  linePosition?: "left" | "right" | "top" | "bottom";
+  data: FeaturesDataProps[];
 };
 
-const Feature = ({
+export default function Features({
   collapseDelay = 5000,
   ltr = false,
   linePosition = "left",
-}: FeatureProps) => {
+  data = [],
+}: FeaturesProps) {
   const [currentIndex, setCurrentIndex] = useState<number>(-1);
-
   const carouselRef = useRef<HTMLUListElement>(null);
   const ref = useRef(null);
   const isInView = useInView(ref, {
@@ -166,24 +141,24 @@ const Feature = ({
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentIndex((prevIndex) =>
-        prevIndex !== undefined ? (prevIndex + 1) % cardData.length : 0
+        prevIndex !== undefined ? (prevIndex + 1) % data.length : 0
       );
     }, collapseDelay);
 
     return () => clearInterval(timer);
-  }, [currentIndex]);
+  }, [collapseDelay, data.length]);
 
   useEffect(() => {
     const handleAutoScroll = () => {
       const nextIndex =
-        (currentIndex !== undefined ? currentIndex + 1 : 0) % cardData.length;
+        (currentIndex !== undefined ? currentIndex + 1 : 0) % data.length;
       scrollToIndex(nextIndex);
     };
 
     const autoScrollTimer = setInterval(handleAutoScroll, collapseDelay);
 
     return () => clearInterval(autoScrollTimer);
-  }, [currentIndex]);
+  }, [currentIndex, collapseDelay, data.length]);
 
   useEffect(() => {
     const carousel = carouselRef.current;
@@ -193,7 +168,7 @@ const Feature = ({
         const cardWidth = carousel.querySelector(".card")?.clientWidth || 0;
         const newIndex = Math.min(
           Math.floor(scrollLeft / cardWidth),
-          cardData.length - 1
+          data.length - 1
         );
         setCurrentIndex(newIndex);
       };
@@ -204,25 +179,17 @@ const Feature = ({
   }, []);
 
   return (
-    <section ref={ref} id="uses-section">
-      <div className="py-14">
-        <div className="container flex w-full flex-col items-center justify-center p-4">
-          <div className="mx-auto max-w-5xl text-center">
-            <h4 className="text-xl font-bold tracking-tight text-black dark:text-white">
-              Features
-            </h4>
-            <h2 className="text-4xl font-bold tracking-tight text-black dark:text-white sm:text-6xl">
-              ¿Quién utiliza Sttok?
-            </h2>
-          </div>
-          <div className="mx-auto my-12 grid h-full max-w-5xl grid-cols-5 gap-x-10">
+    <section ref={ref} id="features">
+      <div className="container">
+        <div className="max-w-6xl mx-auto">
+          <div className="mx-auto my-12 h-full grid lg:grid-cols-2 gap-10 items-center">
             <div
-              className={`col-span-2 hidden md:flex ${
-                ltr ? "md:order-2 md:justify-end" : "justify-start"
+              className={` hidden lg:flex order-1 lg:order-[0] ${
+                ltr ? "lg:order-2 lg:justify-end" : "justify-start"
               }`}
             >
               <Accordion.Root
-                className="w-[300px]"
+                className=""
                 type="single"
                 defaultValue={`item-${currentIndex}`}
                 value={`item-${currentIndex}`}
@@ -230,60 +197,96 @@ const Feature = ({
                   setCurrentIndex(Number(value.split("-")[1]))
                 }
               >
-                {cardData.map((item, index) => (
+                {data.map((item, index) => (
                   <AccordionItem
                     key={item.id}
                     className="relative mb-8 last:mb-0"
                     value={`item-${index}`}
                   >
-                    <div
-                      className={`absolute bottom-0 top-0 h-full w-0.5 overflow-hidden rounded-lg bg-neutral-300/50 dark:bg-neutral-300/30 ${
-                        linePosition === "right"
-                          ? "left-auto right-0"
-                          : "left-0 right-auto"
-                      }`}
-                    >
+                    {linePosition === "left" || linePosition === "right" ? (
                       <div
-                        className={`absolute left-0 top-0 w-full ${
-                          currentIndex === index ? "h-full" : "h-0"
-                        } origin-top bg-neutral-500 transition-all ease-linear dark:bg-white`}
-                        style={{
-                          transitionDuration:
-                            currentIndex === index
-                              ? `${collapseDelay}ms`
-                              : "0s",
-                        }}
-                      ></div>
+                        className={`absolute bottom-0 top-0 h-full w-0.5 overflow-hidden rounded-lg bg-neutral-300/50 dark:bg-neutral-300/30 ${
+                          linePosition === "right"
+                            ? "left-auto right-0"
+                            : "left-0 right-auto"
+                        }`}
+                      >
+                        <div
+                          className={`absolute left-0 top-0 w-full ${
+                            currentIndex === index ? "h-full" : "h-0"
+                          } origin-top bg-primary transition-all ease-linear dark:bg-white`}
+                          style={{
+                            transitionDuration:
+                              currentIndex === index
+                                ? `${collapseDelay}ms`
+                                : "0s",
+                          }}
+                        ></div>
+                      </div>
+                    ) : null}
+
+                    {linePosition === "top" || linePosition === "bottom" ? (
+                      <div
+                        className={`absolute left-0 right-0 w-full h-0.5 overflow-hidden rounded-lg bg-neutral-300/50 dark:bg-neutral-300/30 ${
+                          linePosition === "bottom" ? "bottom-0" : "top-0"
+                        }`}
+                      >
+                        <div
+                          className={`absolute left-0 ${
+                            linePosition === "bottom" ? "bottom-0" : "top-0"
+                          } h-full ${
+                            currentIndex === index ? "w-full" : "w-0"
+                          } origin-left bg-primary transition-all ease-linear dark:bg-white`}
+                          style={{
+                            transitionDuration:
+                              currentIndex === index
+                                ? `${collapseDelay}ms`
+                                : "0s",
+                          }}
+                        ></div>
+                      </div>
+                    ) : null}
+
+                    <div className="flex items-center relative">
+                      <div className="item-box w-12 h-12 bg-primary/10 rounded-full sm:mx-6 mx-2 shrink-0 flex items-center justify-center">
+                        {item.icon}
+                      </div>
+
+                      <div>
+                        <AccordionTrigger className="text-xl font-bold">
+                          {item.title}
+                        </AccordionTrigger>
+
+                        <AccordionTrigger className="justify-start text-left leading-4 font-sans text-[16px]">
+                          {item.content}
+                        </AccordionTrigger>
+                      </div>
                     </div>
-                    <AccordionTrigger className="text-xl font-bold">
-                      {item.title}
-                    </AccordionTrigger>
-                    <AccordionContent>{item.content}</AccordionContent>
                   </AccordionItem>
                 ))}
               </Accordion.Root>
             </div>
             <div
-              className={`col-span-5 h-[400px] min-h-[200px] w-auto md:col-span-3 ${
-                ltr && "md:order-1"
+              className={`h-[350px] min-h-[200px] w-auto  ${
+                ltr && "lg:order-1"
               }`}
             >
-              {cardData[currentIndex]?.image ? (
+              {data[currentIndex]?.image ? (
                 <motion.img
                   key={currentIndex}
-                  src={cardData[currentIndex].image as string}
+                  src={data[currentIndex].image}
                   alt="feature"
-                  className="aspect-auto h-full w-full rounded-xl border border-neutral-300/50 object-cover p-1"
+                  className="aspect-auto h-full w-full rounded-xl border border-neutral-300/50 object-cover object-left-top p-1 shadow-lg"
                   initial={{ opacity: 0, scale: 0.98 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.98 }}
                   transition={{ duration: 0.25, ease: "easeOut" }}
                 />
-              ) : cardData[currentIndex]?.video ? (
+              ) : data[currentIndex]?.video ? (
                 <video
                   preload="auto"
-                  src={cardData[currentIndex].video}
-                  className="aspect-auto h-full w-full rounded-lg object-cover"
+                  src={data[currentIndex].video}
+                  className="aspect-auto h-full w-full rounded-lg object-cover shadow-lg"
                   autoPlay
                   loop
                   muted
@@ -295,13 +298,13 @@ const Feature = ({
 
             <ul
               ref={carouselRef}
-              className="col-span-5 flex h-full snap-x flex-nowrap overflow-x-auto py-10 [-ms-overflow-style:none] [-webkit-mask-image:linear-gradient(90deg,transparent,black_20%,white_80%,transparent)] [mask-image:linear-gradient(90deg,transparent,black_20%,white_80%,transparent)] [scrollbar-width:none] md:hidden [&::-webkit-scrollbar]:hidden snap-mandatory"
+              className=" flex h-full snap-x flex-nowrap overflow-x-auto py-10 [-ms-overflow-style:none] [-webkit-mask-image:linear-gradient(90deg,transparent,black_20%,white_80%,transparent)] [mask-image:linear-gradient(90deg,transparent,black_20%,white_80%,transparent)] [scrollbar-width:none] lg:hidden [&::-webkit-scrollbar]:hidden snap-mandatory"
               style={{
                 padding: "50px calc(50%)",
               }}
             >
-              {cardData.map((item, index) => (
-                <a
+              {data.map((item, index) => (
+                <div
                   key={item.id}
                   className="card relative mr-8 grid h-full max-w-60 shrink-0 items-start justify-center py-4 last:mr-0"
                   onClick={() => setCurrentIndex(index)}
@@ -313,7 +316,7 @@ const Feature = ({
                     <div
                       className={`absolute left-0 top-0 h-full ${
                         currentIndex === index ? "w-full" : "w-0"
-                      } origin-top bg-neutral-500 transition-all ease-linear dark:bg-white`}
+                      } origin-top bg-primary transition-all ease-linear`}
                       style={{
                         transitionDuration:
                           currentIndex === index ? `${collapseDelay}ms` : "0s",
@@ -324,7 +327,7 @@ const Feature = ({
                   <p className="mx-0 max-w-sm text-balance text-sm">
                     {item.content}
                   </p>
-                </a>
+                </div>
               ))}
             </ul>
           </div>
@@ -332,13 +335,4 @@ const Feature = ({
       </div>
     </section>
   );
-};
-
-AccordionItem.displayName = "AccordionItem";
-AccordionTrigger.displayName = "AccordionTrigger";
-AccordionContent.displayName = "AccordionContent";
-UsesSection.displayName = "UsesSection";
-
-export function UsesSection() {
-  return <Feature collapseDelay={5000} linePosition="left" ltr />;
 }
