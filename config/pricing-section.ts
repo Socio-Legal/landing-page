@@ -8,7 +8,7 @@ export const header = {
 };
 
 export const config = {
-  switchLabel: "",
+  switchLabel: "2 MESES GRATIS",
 };
 
 export const items = [
