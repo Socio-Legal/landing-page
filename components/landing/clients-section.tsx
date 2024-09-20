@@ -56,25 +56,28 @@ const getLogo = (logo: keyof typeof ClientLogos) => {
   return `https://cdn.magicui.design/companies/${logo}.svg`;
 };
 
+const ClientsHeader: FC = () => (
+  <SectionHeader
+    slogan={header.slogan}
+    title={header.title}
+    description={header.description}
+    buttonText={header.buttonText}
+    buttonLink={header.buttonLink}
+  />
+);
+
 const ClientsSection: FC = () => {
   return (
     <section id="companies">
-      <div className="py-14">
-        <div className="container mx-auto px-4 md:px-8">
-          <SectionHeader
-            slogan={header.slogan}
-            title={header.title}
-            description={header.description}
-            buttonText={header.buttonText}
-            buttonLink={header.buttonLink}
-          />
+      <div className="container mx-auto px-4 md:px-8 py-12 md:py-24 lg:py-32">
+        <ClientsHeader />
 
-          <div className="relative mt-6">
-            <div className="grid grid-cols-2 place-items-center gap-2 md:grid-cols-4 xl:grid-cols-6 xl:gap-4">
-              {companies.map((logo, index) => (
-                <div
-                  key={index}
-                  className={`h-10 w-40 px-2 dark:brightness-0 dark:invert mb-8
+        <div className="relative mt-6">
+          <div className="grid grid-cols-2 place-items-center gap-2 md:grid-cols-4 xl:grid-cols-6 xl:gap-4">
+            {companies.map((logo, index) => (
+              <div
+                key={index}
+                className={`h-10 w-40 px-2 dark:brightness-0 dark:invert mb-8
                     ${
                       companies.length % 6 === 2 &&
                       index >= companies.length - 2
@@ -84,18 +87,17 @@ const ClientsSection: FC = () => {
                         : ""
                     }
                   `}
-                >
-                  <Image
-                    src={getLogo(logo as keyof typeof ClientLogos)}
-                    alt={logo}
-                    layout="fill"
-                    objectFit="contain"
-                  />
-                </div>
-              ))}
-            </div>
-            {/* <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 w-full bg-gradient-to-t from-white from-20% dark:from-black"></div> */}
+              >
+                <Image
+                  src={getLogo(logo as keyof typeof ClientLogos)}
+                  alt={logo}
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </div>
+            ))}
           </div>
+          {/* <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 w-full bg-gradient-to-t from-white from-20% dark:from-black"></div> */}
         </div>
       </div>
     </section>

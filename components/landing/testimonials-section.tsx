@@ -108,33 +108,31 @@ const TestimonialsSection = () => {
       id="testimonials"
       className="bg-gradient-to-b from-white from-40% dark:from-black"
     >
-      <div className="py-14">
-        <div className="container mx-auto px-4 md:px-8">
-          <TestimonialsHeader />
+      <div className="container mx-auto px-4 md:px-8 py-12 md:py-24 lg:py-32">
+        <TestimonialsHeader />
 
-          <div className="relative mt-6 max-h-[650px] overflow-hidden">
-            <div className="gap-4 md:columns-2 xl:columns-3 2xl:columns-3">
-              {Array(Math.ceil(testimonials.length / 3))
-                .fill(0)
-                .map((_, i) => (
-                  <Marquee
-                    vertical
-                    key={i}
-                    className={cn({
-                      "[--duration:60s]": i === 1,
-                      "[--duration:30s]": i === 2,
-                      "[--duration:70s]": i === 3,
-                    })}
-                  >
-                    {testimonials.slice(i * 3, (i + 1) * 3).map((card, idx) => (
-                      <TestimonialCard {...card} key={idx} />
-                    ))}
-                  </Marquee>
-                ))}
-            </div>
-            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 w-full bg-gradient-to-t from-white from-20% dark:from-black"></div>
-            <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 w-full bg-gradient-to-b from-white from-20% dark:from-black"></div>
+        <div className="relative mt-6 max-h-[650px] overflow-hidden">
+          <div className="gap-4 md:columns-2 xl:columns-3 2xl:columns-3">
+            {Array(Math.ceil(testimonials.length / 3))
+              .fill(0)
+              .map((_, i) => (
+                <Marquee
+                  vertical
+                  key={i}
+                  className={cn({
+                    "[--duration:60s]": i === 1,
+                    "[--duration:30s]": i === 2,
+                    "[--duration:70s]": i === 3,
+                  })}
+                >
+                  {testimonials.slice(i * 3, (i + 1) * 3).map((card, idx) => (
+                    <TestimonialCard {...card} key={idx} />
+                  ))}
+                </Marquee>
+              ))}
           </div>
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 w-full bg-gradient-to-t from-white from-20% dark:from-black"></div>
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 w-full bg-gradient-to-b from-white from-20% dark:from-black"></div>
         </div>
       </div>
     </section>

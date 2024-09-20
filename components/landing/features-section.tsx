@@ -78,9 +78,9 @@ const FeaturesSection: FC = () => {
   return (
     <section
       id="features-section"
-      className="scroll-mt-17 overflow-hidden pt-17.5 lg:pt-22.5 xl:pt-27.5 bg-dark"
+      className="scroll-mt-17 overflow-hidden pt-17.5 lg:pt-22.5 xl:pt-27.5 bg-black"
     >
-      <div className="mx-auto max-w-[1222px] px-4 sm:px-8 xl:px-0">
+      <div className="mx-auto max-w-[1222px] px-4 sm:px-8 xl:px-0 py-12 md:py-24 lg:py-32">
         <FeaturesHeader />
 
         <div className="relative">

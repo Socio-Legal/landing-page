@@ -28,7 +28,7 @@ const ProductsHeader = () => (
   />
 );
 
-const ProducsSection = () => {
+const ProductsSection = () => {
   const parsedProducts = (items: ProductProps[]) => {
     return items.map((item) => ({
       ...item,
@@ -38,7 +38,7 @@ const ProducsSection = () => {
 
   return (
     <section id="products" className="bg-dark">
-      <div className="container mx-auto px-4 py-12 md:py-24 lg:py-32">
+      <div className="container mx-auto px-4 py-12 md:py-24 lg:py-32 pb-0 md:pb-0 lg:pb-0">
         <ProductsHeader />
         <Features
           collapseDelay={5000}
@@ -50,4 +50,4 @@ const ProducsSection = () => {
   );
 };
 
-export default ProducsSection;
+export default ProductsSection;
