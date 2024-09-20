@@ -2,7 +2,7 @@
 import React from "react";
 
 import "@/components/ui/stars.css";
-import "./planet-stars-section.css";
+import "@/components/styles/planet-stars-section.css";
 
 import Blur13 from "@/public/blur-13.svg";
 import Blur14 from "@/public/blur-14.svg";
