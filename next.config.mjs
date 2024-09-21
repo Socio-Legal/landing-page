@@ -9,6 +9,12 @@ const nextConfig = {
         port: "",
         pathname: "/wp-content/uploads/**",
       },
+      {
+        protocol: "https",
+        hostname: "www.sttok.com",
+        port: "",
+        pathname: "/images/**",
+      },
     ],
   },
 };
