@@ -17,7 +17,7 @@ export default function HeroSection() {
 
   return (
     <section id="hero">
-      <div className="container mx-auto px-4 py-12 md:py-24 lg:py-32">
+      <div className="container mx-auto px-7 py-12 md:py-24 lg:py-32">
         <div className="mx-auto max-w-7xl">
           <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
             <div className="-u-z-10 hero-circle-gradient absolute -top-[128%] left-1/2 -z-1 h-[1282px] w-full max-w-[1282px] -translate-x-1/2 rounded-full sm:-top-[107%] xl:-top-[73%]"></div>
