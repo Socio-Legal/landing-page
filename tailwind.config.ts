@@ -29,8 +29,8 @@ const config = {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         brand: {
-          DEFAULT: "var(--color-brand)",
-          foreground: "var(--color-brand)",
+          DEFAULT: "hsl(var(--brand))",
+          foreground: "hsl(var(--brand-foreground))",
         },
         primary: {
           DEFAULT: "hsl(var(--primary))",

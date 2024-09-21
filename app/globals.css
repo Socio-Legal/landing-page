@@ -13,6 +13,9 @@
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 3.9%;
 
+    --brand: 231 100% 70%;
+    --brand-foreground: 231 100% 70%;
+
     --primary: 0 0% 9%;
     --primary-foreground: 0 0% 98%;
 
@@ -57,6 +60,9 @@
 
     --popover: 0 0% 3.9%;
     --popover-foreground: 0 0% 98%;
+
+    --brand: 231 100% 70%;
+    --brand-foreground: 231 100% 70%;
 
     --primary: 0 0% 98%;
     --primary-foreground: 0 0% 9%;
@@ -198,7 +204,6 @@
 }
 
 .text-heading-2 {
-  background-color: red;
   font-size: 48px;
   line-height: 58px;
 }
