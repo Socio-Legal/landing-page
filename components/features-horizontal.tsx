@@ -84,7 +84,7 @@ type CardDataProps = {
   id: number;
   title: string;
   content: string;
-  image?: ImageByThemeProps;
+  image: ImageByThemeProps;
   video?: string;
   icon?: React.ReactNode;
 };
