@@ -99,12 +99,14 @@ export const siteConfig = {
       link: "/login",
       variant: "ghost",
       className: "",
+      hasIcon: false,
     },
     {
       text: "Solicitar demo",
       link: "/signup",
       variant: "default",
       className: "w-full sm:w-auto text-background flex gap-2",
+      hasIcon: false,
     },
   ],
   footer: {
