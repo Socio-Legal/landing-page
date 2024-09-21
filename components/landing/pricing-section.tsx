@@ -4,7 +4,11 @@ import React, { useState } from "react";
 import { Loader } from "lucide-react";
 import { motion } from "framer-motion";
 
-import { config, header, items as prices } from "@/config/pricing-section";
+import {
+  config,
+  header,
+  items as prices,
+} from "@/config/landing/pricing-section";
 import { CheckIcon } from "@radix-ui/react-icons";
 import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";

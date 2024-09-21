@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useRef } from "react";
+import { FC, useRef } from "react";
 import { useInView } from "framer-motion";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 
@@ -9,11 +9,19 @@ import { BorderBeam } from "@/components/magicui/border-beam";
 import { Button } from "@/components/ui/button";
 import Blur01 from "@/public/blur-01.svg";
 import Blur02 from "@/public/blur-02.svg";
-import { hero } from "@/config/landing/hero-section";
+import { Hero } from "@/types/Hero";
 
-export default function HeroSection() {
+type HeroSectionProps = {
+  hero: Hero;
+};
+
+const HeroSection: FC<HeroSectionProps> = ({ hero }) => {
+  const { title, description, button, image } = hero;
+
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
+
+  const hasButton = button.text && button.link;
 
   return (
     <section id="hero">
@@ -55,22 +63,25 @@ export default function HeroSection() {
           <div className="space-y-2">
             <div className="text-left space-y-2 mx-auto lg:text-left lg:mx-0">
               <h1 className="bg-gradient-to-br dark:from-white from-black from-30% dark:to-white/40 to-black/40 bg-clip-text py-6 text-4xl text-left font-medium leading-none tracking-tighter text-transparent text-balance sm:text-5xl md:text-6xl lg:text-7xl translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
-                {hero.title}
+                {title}
               </h1>
             </div>
 
             <p className="mb-2 text-lg tracking-tight text-gray-400 md:text-xl text-balance translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
-              {hero.description}
+              {description}
             </p>
 
-            <br />
-
-            <div className="flex justify-center lg:justify-start mt-12">
-              <Button className="translate-y-[-1rem] animate-fade-in gap-1 rounded-lg text-white dark:text-black opacity-0 ease-in-out [--animation-delay:600ms]">
-                <span>{hero.button.text} </span>
-                <ArrowRightIcon className="ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
-              </Button>
-            </div>
+            {hasButton && (
+              <>
+                <br />
+                <div className="flex justify-center lg:justify-start mt-12">
+                  <Button className="translate-y-[-1rem] animate-fade-in gap-1 rounded-lg text-white dark:text-black opacity-0 ease-in-out [--animation-delay:600ms]">
+                    <span>{button.text} </span>
+                    <ArrowRightIcon className="ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
+                  </Button>
+                </div>
+              </>
+            )}
           </div>
 
           <div
@@ -94,14 +105,14 @@ export default function HeroSection() {
                 alt="Hero image"
                 className="aspect-video object-cover rounded-lg hidden relative w-full h-full rounded-[inherit] border object-contain dark:block"
                 height="420"
-                src={hero.image.dark}
+                src={image.dark}
                 width="550"
               />
               <Image
                 alt="Hero image"
                 className="aspect-video object-cover rounded-lg block relative w-full h-full  rounded-[inherit] border object-contain dark:hidden"
                 height="420"
-                src={hero.image.light}
+                src={image.light}
                 width="550"
               />
             </div>
@@ -110,4 +121,6 @@ export default function HeroSection() {
       </div>
     </section>
   );
-}
+};
+
+export default HeroSection;

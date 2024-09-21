@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { header } from "@/config/cta-section";
+import { header } from "@/config/landing/cta-section";
 import Blur01 from "@/public/blur-01.svg";
 
 import SectionHeader from "../section-header";

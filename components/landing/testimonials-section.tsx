@@ -3,7 +3,10 @@ import React, { FC, ReactNode } from "react";
 import { StarFilledIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 
-import { header, items as testimonials } from "@/config/testimonials-section";
+import {
+  header,
+  items as testimonials,
+} from "@/config/landing/testimonials-section";
 import Marquee from "@/components/magicui/marquee";
 import { cn } from "@/lib/utils";
 

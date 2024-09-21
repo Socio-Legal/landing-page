@@ -30,7 +30,7 @@ export const siteConfig = {
         },
         items: [
           {
-            href: "https://www.sttok.com/libro-de-socios/",
+            href: "/libro-de-socios/",
             title: "Socios",
             description:
               "Captable, Libro de Socios oficial, %, acceso de los socios",

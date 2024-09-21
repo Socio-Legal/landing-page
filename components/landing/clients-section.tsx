@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Image from "next/legacy/image";
 
-import { items as companies, header } from "@/config/clients-section";
+import { items as companies, header } from "@/config/landing/clients-section";
 
 import Factorial from "@/public/logo-factorial.png";
 import Yaba from "@/public/logo-yaba.png";

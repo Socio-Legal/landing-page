@@ -1,6 +1,6 @@
 import { Building2, Scale, Handshake } from "lucide-react";
 
-import { header, items as uses } from "@/config/uses-section";
+import { header, items as uses } from "@/config/landing/uses-section";
 
 import SectionHeader from "../section-header";
 import Features from "../features-vertical";

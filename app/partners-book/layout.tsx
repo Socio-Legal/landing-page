@@ -2,25 +2,18 @@ import { SiteBanner } from "@/components/site-banner";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
-import { siteConfig } from "@/config/site-config";
-
-interface MarketingLayoutProps {
+interface PartnerBookLayoutProps {
   children: React.ReactNode;
 }
 
-export default async function MarketingLayout({
+export default async function PartnerBookLayout({
   children,
-}: MarketingLayoutProps) {
+}: PartnerBookLayoutProps) {
   return (
     <>
       <SiteBanner />
       <SiteHeader />
-      <main
-        className="mx-auto flex-1 overflow-hidden"
-        style={{ marginTop: "-56px" }}
-      >
-        {children}
-      </main>
+      <main className="mx-auto flex-1 overflow-hidden">{children}</main>
       <SiteFooter />
     </>
   );

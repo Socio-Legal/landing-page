@@ -1,6 +1,6 @@
 import { FC } from "react";
 
-import { header, items as features } from "@/config/features-section";
+import { header, items as features } from "@/config/landing/features-section";
 
 import "@/components/styles/features-section.css";
 

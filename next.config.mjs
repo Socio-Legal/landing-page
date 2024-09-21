@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // allow images from https://www.sttok.com
+  async rewrites() {
+    return [{ source: "/libro-de-socios", destination: "/partners-book" }];
+  },
   images: {
     remotePatterns: [
       {

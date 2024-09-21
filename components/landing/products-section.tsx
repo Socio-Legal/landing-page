@@ -1,6 +1,6 @@
 import { BarChart3, Brain, FileText, LineChart } from "lucide-react";
 
-import { header, items as products } from "@/config/products-section";
+import { header, items as products } from "@/config/landing/products-section";
 import Features from "@/components/features-horizontal";
 
 import SectionHeader from "../section-header";
