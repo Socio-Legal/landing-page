@@ -1,14 +1,16 @@
 "use client";
 
-import Drawer from "@/components/drawer";
-import { Icons } from "@/components/icons";
-import Menu from "@/components/menu";
+import { useEffect, useState } from "react";
+import Link from "next/link";
+
 import { buttonVariants } from "@/components/ui/button";
 import { siteConfig } from "@/config/site-config";
-
+import { Icons } from "@/components/icons";
+import Drawer from "@/components/drawer";
+import Menu from "@/components/menu";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
-import { useEffect, useState } from "react";
+
+import ThemeToggler from "./ui/theme-toggler";
 
 export function SiteHeader() {
   const [addBorder, setAddBorder] = useState(false);
@@ -63,6 +65,8 @@ export function SiteHeader() {
                   {cta.text}
                 </Link>
               ))}
+
+              <ThemeToggler />
             </div>
           </div>
         </div>
