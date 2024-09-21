@@ -1,29 +1,32 @@
-import Image from "next/legacy/image";
 import { FC } from "react";
 
 import { header, items as features } from "@/config/features-section";
-import Icon01 from "@/public/icon-01.svg";
-import Icon02 from "@/public/icon-02.svg";
-import Icon03 from "@/public/icon-03.svg";
-import Icon04 from "@/public/icon-04.svg";
-import Icon05 from "@/public/icon-05.svg";
-import Icon06 from "@/public/icon-06.svg";
-import Icon07 from "@/public/icon-07.svg";
-import Icon08 from "@/public/icon-08.svg";
 
 import "@/components/styles/features-section.css";
 
 import SectionHeader from "../section-header";
+import {
+  BadgeEuro,
+  BookOpenText,
+  Building2,
+  Calculator,
+  FileSignature,
+  FileText,
+  HandCoins,
+  Users,
+  Vote,
+} from "lucide-react";
 
 const FeatureIcons = {
-  Icon01: Icon01,
-  Icon02: Icon02,
-  Icon03: Icon03,
-  Icon04: Icon04,
-  Icon05: Icon05,
-  Icon06: Icon06,
-  Icon07: Icon07,
-  Icon08: Icon08,
+  Icon01: <BookOpenText className="w-6 h-6 text-primary" />,
+  Icon02: <HandCoins className="w-6 h-6 text-primary" />,
+  Icon03: <Calculator className="w-6 h-6 text-primary" />,
+  Icon04: <Vote className="w-6 h-6 text-primary" />,
+  Icon05: <BadgeEuro className="w-6 h-6 text-primary" />,
+  Icon06: <FileText className="w-6 h-6 text-primary" />,
+  Icon07: <Building2 className="w-6 h-6 text-primary" />,
+  Icon08: <Users className="w-6 h-6 text-primary" />,
+  Icon09: <FileSignature className="w-6 h-6 text-primary" />,
 };
 
 interface FeatureProps {
@@ -37,27 +40,29 @@ interface FeatureProps {
 
 const Feature: FC<FeatureProps> = ({ index, feature }) => (
   <>
-    <div key={index} className="w-full sm:w-1/2 lg:w-1/3">
-      <div className="group relative overflow-hidden px-4 py-8 text-center sm:py-10 lg:px-8 xl:px-13 xl:py-15">
+    <div key={index} className="w-full sm:w-1/2 lg:w-1/3 text-left">
+      <div className="group relative overflow-hidden px-6 py-8 text-center sm:py-10 lg:px-8 xl:px-13 xl:py-15">
         <span
           className={`features-bg absolute left-0 top-0 -z-1 h-full w-full opacity-0 group-hover:opacity-100 ${
             index >= 3 ? "rotate-180" : "undefined"
           }`}
         ></span>
-        <span className="icon-border relative mx-auto mb-8 inline-flex h-20 w-full max-w-[80px] items-center justify-center rounded-full">
-          <Image
-            src={FeatureIcons[feature.icon as keyof typeof FeatureIcons]}
-            alt="icon"
-            width={32}
-            height={32}
-          />
-        </span>
-        <h3 className="mb-4 text-lg font-semibold text-white">
-          {feature.title}
-        </h3>
-        <p className="font-medium text-white/70">{feature.description}</p>
+
+        <div className="flex items-center mb-4 gap-x-2">
+          <div className="item-box w-12 h-12 bg-primary/10 rounded-full sm:mr-2 mr-2 shrink-0 flex items-center justify-center">
+            {FeatureIcons[feature.icon as keyof typeof FeatureIcons]}
+          </div>
+          <h3 className="text-lg font-semibold text-primary text-left">
+            <span>{feature.title}</span>
+          </h3>
+        </div>
+
+        <p className="font-medium text-black/50 dark:text-white/70 text-left">
+          {feature.description}
+        </p>
       </div>
     </div>
+
     {index % 3 === 2 && (
       <div className="features-row-border h-[1px] w-full"></div>
     )}
@@ -78,7 +83,7 @@ const FeaturesSection: FC = () => {
   return (
     <section
       id="features-section"
-      className="scroll-mt-17 overflow-hidden pt-17.5 lg:pt-22.5 xl:pt-27.5 bg-black"
+      className="scroll-mt-17 overflow-hidden pt-17.5 lg:pt-22.5 xl:pt-27.5 bg-white dark:bg-black"
     >
       <div className="mx-auto max-w-[1222px] px-4 sm:px-8 xl:px-0 py-12 md:py-24 lg:py-32">
         <FeaturesHeader />

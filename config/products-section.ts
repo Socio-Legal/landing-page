@@ -12,28 +12,40 @@ export const items = [
     id: 1,
     title: "Socios",
     content: "Captable, Libro de Socios oficial, %, acceso de los socios, etc",
-    image: "/sttok-products-shareholders.png",
+    image: {
+      light: "/sttok-products-shareholders-dark.png",
+      dark: "/sttok-products-shareholders-dark.png",
+    },
     icon: "BarChart3",
   },
   {
     id: 2,
     title: "Planes de Incentivos",
     content: "Phantoms, stock options, acceso empleados, vesting, etc",
-    image: "/sttok-products-incentive-plans.png",
+    image: {
+      light: "/sttok-products-incentive-plans-dark.png",
+      dark: "/sttok-products-incentive-plans-dark.png",
+    },
     icon: "Brain",
   },
   {
     id: 3,
     title: "Juntas y Consejos",
     content: "Convocatoria digital, delegaciones, votaciones, etc",
-    image: "/sttok-products-boards.png",
+    image: {
+      light: "/sttok-products-boards-dark.png",
+      dark: "/sttok-products-boards-dark.png",
+    },
     icon: "LineChart",
   },
   {
     id: 4,
     title: "Simulador de Operaciones",
     content: "Cálculo de rondas, ampliaciones, notas convertibles, etc",
-    image: "/sttok-products-simulator.png",
+    image: {
+      light: "/sttok-products-simulator-dark.png",
+      dark: "/sttok-products-simulator-dark.png",
+    },
     icon: "FileText",
   },
 ];

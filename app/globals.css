@@ -4,8 +4,11 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 231 100% 95%;
     --foreground: 0 0% 3.9%;
+
+    --backgroundbrand: 235 100% 95%;
+    --backgroundbrand-foreground: 235 100% 95%;
 
     --card: 0 0% 100%;
     --card-foreground: 0 0% 3.9%;
@@ -55,6 +58,9 @@
     --background: 0 0% 0%;
     --foreground: 0 0% 98%;
 
+    --backgroundbrand: 232 45% 16%;
+    --backgroundbrand-foreground: 232 45% 16%;
+
     --card: 0 0% 3.9%;
     --card-foreground: 0 0% 98%;
 
@@ -92,6 +98,58 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.bg-dark-6 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(25 22 37 / var(--tw-bg-opacity));
+}
+
+.bg-dark-7 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 12 31 / var(--tw-bg-opacity));
+}
+
+.bg-dark-8 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 13 32 / var(--tw-bg-opacity));
+}
+
+.bg-dark\/70 {
+  background-color: rgba(3, 0, 20, 0.7);
+}
+
+.bg-purple {
+  --tw-bg-opacity: 1;
+  background-color: rgb(134 70 244 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-white\/10 {
+  background-color: hsla(0, 0%, 100%, 0.1);
+}
+
+.bg-white\/5 {
+  background-color: hsla(0, 0%, 100%, 0.05);
+}
+
+.bg-white\/\[0\.04\] {
+  background-color: hsla(0, 0%, 100%, 0.04);
+}
+
+.bg-white\/\[0\.05\] {
+  background-color: hsla(0, 0%, 100%, 0.05);
+}
+
+.bg-white\/\[0\.07\] {
+  background-color: hsla(0, 0%, 100%, 0.07);
+}
+
+.bg-white\/\[0\.12\] {
+  background-color: hsla(0, 0%, 100%, 0.12);
 }
 
 .top-0 {

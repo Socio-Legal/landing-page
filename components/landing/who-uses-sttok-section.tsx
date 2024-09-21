@@ -36,7 +36,7 @@ const WhoUsesSttokSection = () => {
   };
 
   return (
-    <section id="who-uses-sttok" className="bg-dark">
+    <section id="who-uses-sttok" className="bg-backgroundbrand">
       <div className="container mx-auto px-4 py-12 md:py-24 lg:py-32">
         <WhoUsesHeader />
         <Features data={parsedUses(uses)} />

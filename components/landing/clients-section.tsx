@@ -77,7 +77,7 @@ const ClientsSection: FC = () => {
             {companies.map((logo, index) => (
               <div
                 key={index}
-                className={`h-10 w-40 px-2 dark:brightness-0 dark:invert mb-8
+                className={`h-10 w-40 px-2 brightness-0 dark:brightness-0 dark:invert mb-8
                     ${
                       companies.length % 6 === 2 &&
                       index >= companies.length - 2

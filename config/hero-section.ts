@@ -7,7 +7,7 @@ export const hero = {
     link: "#",
   },
   image: {
-    light: "/hero-light.png",
+    light: "/hero-dark.png",
     dark: "/hero-dark.png",
   },
 };

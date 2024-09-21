@@ -3,63 +3,43 @@ import { Icons } from "./icons";
 
 import Blur01 from "@/public/blur-01.svg";
 import Blur02 from "@/public/blur-02.svg";
+import { siteConfig } from "@/config/site-config";
 
 interface Icon {
   icon: JSX.Element;
   url: string;
 }
 
-const icons: Icon[] = [
-  {
-    icon: <LinkedInLogoIcon />,
-    url: "https://www.linkedin.com/company/sttok/",
-  },
-];
-
-const securityLogos: string[] = [
-  "https://www.sttok.com/images/logo-gdpr-compliant.png",
-  "https://www.sttok.com/images/logo-iso-27001.png",
-  "https://www.sttok.com/images/logo-ssl.png",
-];
-
-type FooterLink = {
+interface FooterLink {
   id: number;
   title: string;
   url: string;
   isHeader?: boolean;
+}
+
+const FooterIcons = {
+  LinkedIn: <LinkedInLogoIcon className="h-6 w-6" />,
 };
 
-const footerLinks: FooterLink[][] = [
-  [
-    { id: 0, title: "Producto", url: "#", isHeader: true },
-    { id: 1, title: "Libro de Socios", url: "#" },
-    { id: 2, title: "Planes de Incentivos", url: "#" },
-    { id: 3, title: "Simulador Operaciones", url: "#" },
-    { id: 4, title: "Juntas y Consejos", url: "#" },
-  ],
-  [
-    { id: 5, title: "Soluciones", url: "#", isHeader: true },
-    { id: 6, title: "Empresa y Grupos Societarios", url: "#" },
-    { id: 7, title: "Abogados", url: "#" },
-    { id: 8, title: "Portal del Inversor", url: "#" },
-    { id: 9, title: "Inversores", url: "#" },
-  ],
-  [
-    { id: 10, title: "Otros", url: "#", isHeader: true },
-    { id: 11, title: "Testimonios", url: "#" },
-    { id: 12, title: "Precios", url: "#" },
-  ],
-];
+const icons: Icon[] = siteConfig.footer.social.map((social) => ({
+  icon: FooterIcons[social.icon as keyof typeof FooterIcons],
+  url: social.url,
+}));
+
+const footerLinks: FooterLink[][] = siteConfig.footer.menu;
+const securityLogos: string[] = siteConfig.footer.logos;
+
+const footerStyle = {
+  backgroundImage: `url(${Blur02.src})`,
+  backgroundSize: "cover",
+  backgroundPosition: "bottom",
+};
 
 export function SiteFooter() {
   return (
     <footer
-      className="px-7 md:px-10 bg-dark"
-      style={{
-        backgroundImage: `url(${Blur02.src})`,
-        backgroundSize: "cover",
-        backgroundPosition: "bottom",
-      }}
+      className="px-7 md:px-10 bg-white dark:bg-black"
+      style={footerStyle}
     >
       <div className="flex flex-col py-10 md:flex-row md:items-center md:justify-between container">
         <div className="flex flex-col items-start justify-start gap-y-5">
@@ -76,6 +56,7 @@ export function SiteFooter() {
             Todos los derechos reservados.
           </p>
         </div>
+
         <div className="pt-5 md:w-1/2">
           <div className="flex items-start justify-between gap-x-3 lg:pl-10">
             {footerLinks.map((column, columnIndex) => (
@@ -86,7 +67,7 @@ export function SiteFooter() {
                     className="group inline-flex cursor-pointer items-center justify-start gap-1 text-[15px]/snug font-medium text-neutral-400 duration-200 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200"
                   >
                     {link.isHeader ? (
-                      <h2 className="text-sm font-semibold uppercase text-white">
+                      <h2 className="text-sm font-semibold uppercase text-black dark:text-white">
                         {link.title}
                       </h2>
                     ) : (

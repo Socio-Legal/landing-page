@@ -105,9 +105,42 @@ export const siteConfig = {
       link: "/signup",
       variant: "default",
       className: "w-full sm:w-auto text-background flex gap-2",
-      hasIcon: true,
     },
   ],
+  footer: {
+    menu: [
+      [
+        { id: 0, title: "Producto", url: "#", isHeader: true },
+        { id: 1, title: "Libro de Socios", url: "#" },
+        { id: 2, title: "Planes de Incentivos", url: "#" },
+        { id: 3, title: "Simulador Operaciones", url: "#" },
+        { id: 4, title: "Juntas y Consejos", url: "#" },
+      ],
+      [
+        { id: 5, title: "Soluciones", url: "#", isHeader: true },
+        { id: 6, title: "Empresa y Grupos Societarios", url: "#" },
+        { id: 7, title: "Abogados", url: "#" },
+        { id: 8, title: "Portal del Inversor", url: "#" },
+        { id: 9, title: "Inversores", url: "#" },
+      ],
+      [
+        { id: 10, title: "Otros", url: "#", isHeader: true },
+        { id: 11, title: "Testimonios", url: "#" },
+        { id: 12, title: "Precios", url: "#" },
+      ],
+    ],
+    logos: [
+      "https://www.sttok.com/images/logo-gdpr-compliant.png",
+      "https://www.sttok.com/images/logo-iso-27001.png",
+      "https://www.sttok.com/images/logo-ssl.png",
+    ],
+    social: [
+      {
+        icon: "LinkedIn",
+        url: "https://www.linkedin.com/company/sttok/",
+      },
+    ],
+  },
 };
 
 export type SiteConfig = typeof siteConfig;

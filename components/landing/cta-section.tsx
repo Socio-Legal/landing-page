@@ -6,7 +6,6 @@ import Blur01 from "@/public/blur-01.svg";
 import SectionHeader from "../section-header";
 
 const sectionStyle = {
-  paddingTop: "6rem",
   backgroundImage: `url(${Blur01.src})`,
   backgroundSize: "cover",
   backgroundPosition: "top",
@@ -26,8 +25,8 @@ const CallToActionHeader = () => (
 
 const CallToActionSection: FC = () => {
   return (
-    <section id="cta" className="bg-dark" style={sectionStyle}>
-      <div className="container mx-auto px-4 py-12 md:py-24 lg:py-32">
+    <section id="cta" className="bg-backgroundbrand" style={sectionStyle}>
+      <div className="container mx-auto px-4 pb-12 md:pb-24 lg:pb-32 pt-20 md:pt-32 lg:pt-40">
         <CallToActionHeader />
       </div>
     </section>

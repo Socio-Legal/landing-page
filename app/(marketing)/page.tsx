@@ -17,12 +17,12 @@ export default async function Page() {
       <ClientsSection />
 
       <SphereMask />
+      <ProductsSection />
 
       <FeaturesSection />
       <WhoUsesSttokSection />
       <TestimonialsSection />
-      <ProductsSection />
-      <PricingSection />
+      {/* <PricingSection /> */}
       <CallToActionSection />
 
       <Particles

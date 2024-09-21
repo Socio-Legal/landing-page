@@ -208,10 +208,10 @@ export default function PricingSection() {
 
   return (
     <>
-      <section id="pricing" className="bg-black">
+      <section id="pricing" className="bg-white dark:bg-black">
         <PricingHeader />
 
-        <div className="mx-auto flex max-w-screen-xl flex-col gap-8 px-4 md:px-8 py-12 md:py-24 lg:py-32">
+        <div className="mx-auto flex max-w-screen-xl flex-col gap-8 px-4 md:px-8 pb-12 md:pb-24 lg:pb-32 pt-4 md:pt-8 lg:pt-12">
           <PricingSwitch onChangeInterval={setInterval} />
 
           <div className="mx-auto grid w-full justify-center sm:grid-cols-2 lg:grid-cols-4 flex-col gap-4">

@@ -106,7 +106,7 @@ const TestimonialsSection = () => {
   return (
     <section
       id="testimonials"
-      className="bg-gradient-to-b from-white from-40% dark:from-black"
+      className="bg-gradient-to-b bg-white dark:bg-black from-white from-40% dark:from-black"
     >
       <div className="container mx-auto px-4 md:px-8 py-12 md:py-24 lg:py-32">
         <TestimonialsHeader />

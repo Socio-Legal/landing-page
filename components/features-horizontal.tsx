@@ -12,6 +12,7 @@ import React, {
 } from "react";
 
 import { cn } from "@/lib/utils";
+import { useTheme } from "next-themes";
 
 type AccordionItemProps = {
   children: React.ReactNode;
@@ -74,11 +75,16 @@ const AccordionContent = forwardRef<HTMLDivElement, AccordionContentProps>(
 );
 AccordionContent.displayName = "AccordionContent";
 
+type ImageByThemeProps = {
+  light: string;
+  dark: string;
+};
+
 type CardDataProps = {
   id: number;
   title: string;
   content: string;
-  image?: string;
+  image?: ImageByThemeProps;
   video?: string;
   icon?: React.ReactNode;
 };
@@ -96,6 +102,8 @@ export default function Features({
   linePosition = "left",
   data = [],
 }: FeaturesProps) {
+  const { theme } = useTheme();
+
   const [currentIndex, setCurrentIndex] = useState<number>(-1);
 
   const carouselRef = useRef<HTMLUListElement>(null);
@@ -252,7 +260,7 @@ export default function Features({
                       <div className="font-bold text-xl my-3 ">
                         {item.title}
                       </div>
-                      <div className="justify-center text-center mb-4">
+                      <div className="justify-center text-center mb-4 text-black/50 dark:text-white/70">
                         {item.content}
                       </div>
                     </div>
@@ -279,7 +287,11 @@ export default function Features({
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                   >
                     <img
-                      src={data[currentIndex].image}
+                      src={
+                        data[currentIndex].image[
+                          theme as keyof ImageByThemeProps
+                        ]
+                      }
                       alt="feature"
                       className="aspect-auto w-full h-full object-cover rounded-lg shadow-lg relative border"
                     />
@@ -346,8 +358,10 @@ export default function Features({
                     }}
                   ></div>
                 </div>
+
                 <h2 className="text-xl font-bold">{item.title}</h2>
-                <p className="mx-0 max-w-sm text-balance text-sm">
+
+                <p className="mx-0 max-w-sm text-balance text-sm text-black/50 dark:text-white/70">
                   {item.content}
                 </p>
               </div>

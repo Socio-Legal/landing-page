@@ -9,7 +9,10 @@ interface ProductProps {
   id: number;
   title: string;
   content: string;
-  image: string;
+  image: {
+    light: string;
+    dark: string;
+  };
   icon: string;
 }
 
@@ -37,8 +40,11 @@ const ProductsSection = () => {
   };
 
   return (
-    <section id="products" className="bg-dark">
-      <div className="container mx-auto px-4 py-12 md:py-24 lg:py-32 pb-0 md:pb-0 lg:pb-0">
+    <section
+      id="products"
+      className="bg-gradient-to-b from-background bg-white dark:bg-black"
+    >
+      <div className="container mx-auto px-4 py-12 md:py-24 lg:py-32">
         <ProductsHeader />
         <Features
           collapseDelay={5000}

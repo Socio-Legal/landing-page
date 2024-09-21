@@ -16,7 +16,7 @@ const PlanetStarsSection: React.FC<PlanetStarsProps> = ({ children }) => {
   return (
     <section
       id="pricing"
-      className="relative z-20 scroll-mt-17 overflow-hidden pt-24 lg:pt-28 xl:pt-32 bg-dark bg-gradient-to-t from-[#000000] to-dark to-100% bg-[length:100%_500px] bg-bottom bg-no-repeat"
+      className="relative z-20 scroll-mt-17 overflow-hidden pt-24 lg:pt-28 xl:pt-32 bg-backgroundbrand bg-gradient-to-t from-[white] dark:from-[black] to-light dark:to-dark to-100% bg-[length:100%_500px] bg-bottom bg-no-repeat"
     >
       <div className="mx-auto max-w-[1170px] px-4 sm:px-8 xl:px-0">
         <div className="relative top-18">
@@ -82,7 +82,7 @@ const PlanetStarsSection: React.FC<PlanetStarsProps> = ({ children }) => {
               />
             </div>
           </div>
-          <div className="pricing-circle absolute left-1/2 top-0 h-[830px] w-full max-w-[830px] -translate-x-1/2 rounded-full bg-black"></div>
+          <div className="pricing-circle absolute left-1/2 top-0 h-[830px] w-full max-w-[830px] -translate-x-1/2 rounded-full bg-white dark:bg-black"></div>
 
           <div className="absolute -top-30 left-1/2 -z-1 h-60 w-full max-w-[482px] -translate-x-1/2 overflow-hidden">
             <div className="stars"></div>

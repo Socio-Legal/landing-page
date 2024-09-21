@@ -53,4 +53,10 @@ export const items = [
     description:
       "Gestiona digitalmente la convocatoria, delegaciones, votos, etc.",
   },
+  {
+    icon: "Icon09",
+    title: "Firma Electrónica Integrada",
+    description:
+      "Firma electrónica integrada para todos los documentos y operaciones.",
+  },
 ];
