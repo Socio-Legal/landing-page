@@ -13,6 +13,11 @@ export const siteConfig = {
   links: {
     email: "info@sttok.com",
   },
+  banner: {
+    title: "Sttok ya disponible en AWS Marketplace",
+    text: "Descubre la nueva forma de gestionar tu sociedad",
+    link: "https://app.sttok.com/#/",
+  },
   header: [
     {
       trigger: "Producto",
