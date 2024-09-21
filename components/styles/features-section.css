@@ -216,12 +216,21 @@
   }
 
   /* Feature-specific styles */
-  .features-row-border {
+  .features-row-border-dark {
     background: linear-gradient(
       270deg,
       hsla(0, 0%, 100%, 0),
       hsla(0, 0%, 100%, 0.12) 49.48%,
       hsla(0, 0%, 100%, 0)
+    );
+  }
+
+  .features-row-border-light {
+    background: linear-gradient(
+      270deg,
+      hsla(241, 85%, 67%, 0.15),
+      hsla(241, 85%, 67%, 0.25) 49.48%,
+      hsla(241, 85%, 67%, 0.15)
     );
   }
 

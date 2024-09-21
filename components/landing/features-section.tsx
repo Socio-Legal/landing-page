@@ -64,7 +64,7 @@ const Feature: FC<FeatureProps> = ({ index, feature }) => (
     </div>
 
     {index % 3 === 2 && (
-      <div className="features-row-border h-[1px] w-full"></div>
+      <div className="features-row-border-light dark:features-row-border-dark block h-[1px] w-full"></div>
     )}
   </>
 );
@@ -89,8 +89,8 @@ const FeaturesSection: FC = () => {
         <FeaturesHeader />
 
         <div className="relative">
-          <div className="features-row-border absolute left-1/2 top-1/2 hidden h-[1px] w-1/2 -translate-y-1/2 rotate-90 lg:left-1/4 lg:block lg:-translate-x-1/3"></div>
-          <div className="features-row-border absolute right-1/2 top-1/2 hidden h-[1px] w-1/2 -translate-y-1/2 rotate-90 lg:right-[8.3%] lg:block"></div>
+          <div className="features-row-border-light dark:features-row-border-dark absolute left-1/2 top-1/2 block h-[1px] w-1/2 -translate-y-1/2 rotate-90 lg:left-1/4 lg:block lg:-translate-x-1/3"></div>
+          <div className="features-row-border-light dark:features-row-border-dark absolute right-1/2 top-1/2 block h-[1px] w-1/2 -translate-y-1/2 rotate-90 lg:right-[8.3%] lg:block"></div>
 
           <div className="flex flex-wrap justify-center">
             {features.map((feature, index) => (
