@@ -3,4 +3,5 @@ export type Testimonial = {
   role: string;
   img: string;
   description: string;
+  stars?: number;
 };

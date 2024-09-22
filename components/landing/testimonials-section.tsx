@@ -31,9 +31,19 @@ const Highlight = ({
   );
 };
 
-interface TestimonialStarsProps {
+type TestimonialStarsProps = {
   stars: number;
-}
+};
+
+type TestimonialCardProps = {
+  name: string;
+  role: string;
+  img: string;
+  description: string;
+  className?: string;
+  stars?: number;
+  [key: string]: any;
+};
 
 const TestimonialStars: FC<TestimonialStarsProps> = ({ stars }) => (
   <div className="flex flex-row py-1">
@@ -45,17 +55,7 @@ const TestimonialStars: FC<TestimonialStarsProps> = ({ stars }) => (
   </div>
 );
 
-interface TestimonialCardProps {
-  name: string;
-  role: string;
-  img: string;
-  description: string;
-  className?: string;
-  stars?: number;
-  [key: string]: any;
-}
-
-const TestimonialCard = ({
+const TestimonialCard: FC<TestimonialCardProps> = ({
   description,
   name,
   img,
@@ -63,7 +63,7 @@ const TestimonialCard = ({
   stars,
   className,
   ...props
-}: TestimonialCardProps) => (
+}) => (
   <div
     className={cn(
       "mb-4 flex w-full cursor-pointer break-inside-avoid flex-col items-center justify-between gap-6 rounded-xl p-4",
@@ -97,7 +97,7 @@ const TestimonialCard = ({
   </div>
 );
 
-const TestimonialsHeader = () => (
+const TestimonialsHeader: FC = () => (
   <SectionHeader
     slogan={header.slogan}
     title={header.title}
@@ -105,7 +105,7 @@ const TestimonialsHeader = () => (
   />
 );
 
-const TestimonialsSection = () => {
+const TestimonialsSection: FC = () => {
   return (
     <section
       id="testimonials"

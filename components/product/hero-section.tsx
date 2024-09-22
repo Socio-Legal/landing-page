@@ -24,7 +24,7 @@ const HeroSection: FC<HeroSectionProps> = ({ hero }) => {
   const hasButton = button.text && button.link;
 
   return (
-    <section id="hero">
+    <section id="product-hero">
       <div className="container mx-auto px-7 py-12 md:py-24 lg:py-32">
         <div className="mx-auto max-w-7xl">
           <div className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
