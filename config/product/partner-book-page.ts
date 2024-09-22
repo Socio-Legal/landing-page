@@ -44,14 +44,12 @@ export const topFeatures = {
 export const clients = {
   title: "CLIENTES QUE UTILIZAN EL LIBRO DE SOCIOS",
   clients: [
-    "TheNewYorkTimes",
-    "TheWashingtonPost",
-    "Forbes",
-    "Bloomberg",
-    "BusinessInsider",
-    "TechCrunch",
-    "TheGuardian",
-    "Wired",
+    "Factorial",
+    "DerechoCom",
+    "Mailtrack",
+    "Taxdown",
+    "PldSpace",
+    "Broseta",
   ],
 };
 

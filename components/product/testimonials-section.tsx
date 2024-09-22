@@ -1,4 +1,6 @@
-import BlurFade from "@/components/magicui/blur-fade";
+import { FC } from "react";
+import Image from "next/image";
+import { MdOutlineFormatQuote } from "react-icons/md";
 
 import {
   Carousel,
@@ -7,23 +9,10 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Image from "next/image";
-import { MdOutlineFormatQuote } from "react-icons/md";
-import ProductSectionHeader from "../product-section-header";
-import { testimonials } from "@/config/product/partner-book-page";
-import { FC } from "react";
+import BlurFade from "@/components/magicui/blur-fade";
 import { Testimonial } from "@/types/Testimonial";
 
-const companies = [
-  "Google",
-  "Microsoft",
-  "Amazon",
-  "Netflix",
-  "YouTube",
-  "Instagram",
-  "Uber",
-  "Spotify",
-];
+import ProductSectionHeader from "../product-section-header";
 
 type TestimonialsHeaderProps = {
   title: string;

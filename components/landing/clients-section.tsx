@@ -2,59 +2,9 @@ import { FC } from "react";
 import Image from "next/legacy/image";
 
 import { items as companies, header } from "@/config/landing/clients-section";
-
-import Factorial from "@/public/logo-factorial.png";
-import Yaba from "@/public/logo-yaba.png";
-import Mailtrack from "@/public/logo-mailtrack.png";
-import Broseta from "@/public/logo-broseta.png";
-import DerechoCom from "@/public/logo-derechocom.png";
-import Taxdown from "@/public/logo-taxdown.png";
-import Deale from "@/public/logo-deale.png";
-import PldSpace from "@/public/logo-pldspace.png";
-import Keybotic from "@/public/logo-keybotic.png";
-import MyInvestor from "@/public/logo-myinvestor.png";
-import Shakers from "@/public/logo-shakers.png";
-import Caballero from "@/public/logo-caballero1830.png";
-import MasterChef from "@/public/logo-masterchefworld.png";
-import Cabiedes from "@/public/logo-cabiedespartners.png";
-import Incapto from "@/public/logo-incapto.png";
-import LegalPigeon from "@/public/logo-legalpigeon.png";
-import Criptan from "@/public/logo-criptan.png";
-import Horizm from "@/public/logo-horizm.png";
-import Psonrie from "@/public/logo-psonrie.png";
-import Pwc from "@/public/logo-pwc.png";
+import { clientLogos, getClientLogo } from "@/config/client-logos";
 
 import SectionHeader from "../section-header";
-
-const ClientLogos = {
-  Factorial: Factorial,
-  Yaba: Yaba,
-  Mailtrack: Mailtrack,
-  Broseta: Broseta,
-  DerechoCom: DerechoCom,
-  Taxdown: Taxdown,
-  Deale: Deale,
-  PldSpace: PldSpace,
-  Keybotic: Keybotic,
-  MyInvestor: MyInvestor,
-  Shakers: Shakers,
-  Caballero: Caballero,
-  MasterChef: MasterChef,
-  Cabiedes: Cabiedes,
-  Incapto: Incapto,
-  LegalPigeon: LegalPigeon,
-  Criptan: Criptan,
-  Horizm: Horizm,
-  Psonrie: Psonrie,
-  Pwc: Pwc,
-};
-
-const getLogo = (logo: keyof typeof ClientLogos) => {
-  if (Object.keys(ClientLogos).includes(logo)) {
-    return ClientLogos[logo];
-  }
-  return `https://cdn.magicui.design/companies/${logo}.svg`;
-};
 
 const ClientsHeader: FC = () => (
   <SectionHeader
@@ -89,7 +39,7 @@ const ClientsSection: FC = () => {
                   `}
               >
                 <Image
-                  src={getLogo(logo as keyof typeof ClientLogos)}
+                  src={getClientLogo(logo as keyof typeof clientLogos)}
                   alt={logo}
                   layout="fill"
                   objectFit="contain"
@@ -97,7 +47,6 @@ const ClientsSection: FC = () => {
               </div>
             ))}
           </div>
-          {/* <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 w-full bg-gradient-to-t from-white from-20% dark:from-black"></div> */}
         </div>
       </div>
     </section>

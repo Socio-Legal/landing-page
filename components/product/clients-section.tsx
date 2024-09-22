@@ -1,6 +1,10 @@
-import Marquee from "@/components/magicui/marquee";
-import ProductSectionHeader from "../product-section-header";
 import { FC } from "react";
+import Image from "next/legacy/image";
+
+import Marquee from "@/components/magicui/marquee";
+import { clientLogos, getClientLogo } from "@/config/client-logos";
+
+import ProductSectionHeader from "../product-section-header";
 
 type ClientsSectionProps = {
   title: string;
@@ -15,13 +19,18 @@ const ClientsSection: FC<ClientsSectionProps> = ({ title, clients }) => {
 
         <div className="relative mt-6">
           <Marquee className="max-w-full [--duration:40s]">
-            {clients.map((logo: string, idx: number) => (
-              <img
-                key={idx}
-                src={`https://cdn.magicui.design/press/${logo}.svg`}
-                className="h-10 w-40 px-2 dark:brightness-0 dark:invert"
-                alt={`logo-${logo}`}
-              />
+            {clients.map((logo, index) => (
+              <div
+                key={index}
+                className={`h-10 w-40 mx-4 brightness-0 dark:brightness-0 dark:invert mb-8`}
+              >
+                <Image
+                  src={getClientLogo(logo as keyof typeof clientLogos)}
+                  alt={logo}
+                  layout="fill"
+                  objectFit="contain"
+                />
+              </div>
             ))}
           </Marquee>
 

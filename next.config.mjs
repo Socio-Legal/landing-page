@@ -17,6 +17,12 @@ const nextConfig = {
         port: "",
         pathname: "/images/**",
       },
+      {
+        protocol: "https",
+        hostname: "cdn.magicui.design",
+        port: "",
+        pathname: "/companies/**",
+      },
     ],
   },
 };
