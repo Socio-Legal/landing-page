@@ -1,3 +1,10 @@
+export const metadata = {
+  title: "Libro de Socios",
+  description:
+    "Libro de Socios oficial, actualizado y sin errores. Deja de utilizar excel ineficientes. Un único libro de socios listo para presentar al Registro y para poder calcular operaciones fácilmente.",
+  keywords: "Libro de Socios, Socios, Registro, Operaciones, Excel",
+};
+
 export const hero = {
   title: "Libro de Socios",
   description:

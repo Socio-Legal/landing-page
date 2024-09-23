@@ -12,12 +12,24 @@ import Blur02 from "@/public/blur-02.svg";
 import { Hero } from "@/types/Hero";
 
 type HeroSectionProps = {
-  hero: Hero;
+  title: string;
+  description: string;
+  button: {
+    text: string;
+    link: string;
+  };
+  image: {
+    light: string;
+    dark: string;
+  };
 };
 
-const HeroSection: FC<HeroSectionProps> = ({ hero }) => {
-  const { title, description, button, image } = hero;
-
+const HeroSection: FC<HeroSectionProps> = ({
+  title,
+  description,
+  button,
+  image,
+}) => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
