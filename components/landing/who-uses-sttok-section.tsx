@@ -4,6 +4,7 @@ import { header, items as uses } from "@/config/landing/uses-section";
 
 import SectionHeader from "../section-header";
 import Features from "../features-vertical";
+import { blurStyle01 } from "../styles/blur-styles";
 
 interface UseProps {
   id: number;
@@ -36,7 +37,11 @@ const WhoUsesSttokSection = () => {
   };
 
   return (
-    <section id="who-uses-sttok" className="bg-backgroundbrand">
+    <section
+      id="who-uses-sttok"
+      className="bg-backgroundbrand"
+      style={blurStyle01}
+    >
       <div className="container mx-auto px-4 py-12 md:py-24 lg:py-32">
         <WhoUsesHeader />
         <Features data={parsedUses(uses)} />

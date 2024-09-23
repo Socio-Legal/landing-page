@@ -16,6 +16,14 @@ const ClientsHeader: FC = () => (
   />
 );
 
+const getColStarts = (index: number, companies: string[]) => {
+  if (companies.length === 16) {
+    if (index === companies.length - 4) return "lg:col-start-2 xl:col-start-2";
+    if (index === companies.length - 1) return "lg:col-start-5 xl:col-start-5";
+  }
+  return "";
+};
+
 const ClientsSection: FC = () => {
   return (
     <section id="companies">
@@ -28,15 +36,8 @@ const ClientsSection: FC = () => {
               <div
                 key={index}
                 className={`h-10 w-40 px-2 brightness-0 dark:brightness-0 dark:invert mb-8
-                    ${
-                      companies.length % 6 === 2 &&
-                      index >= companies.length - 2
-                        ? index === companies.length - 2
-                          ? "xl:col-start-3"
-                          : "xl:col-start-4"
-                        : ""
-                    }
-                  `}
+                  ${getColStarts(index, companies)}
+                `}
               >
                 <Image
                   src={getClientLogo(logo as keyof typeof clientLogos)}

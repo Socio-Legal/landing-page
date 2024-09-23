@@ -9,7 +9,6 @@ export const header = {
 export const items = [
   "Factorial",
   "Yaba",
-  "Mailtrack",
   "Broseta",
   "DerechoCom",
   "Taxdown",
@@ -24,7 +23,4 @@ export const items = [
   "Incapto",
   "LegalPigeon",
   "Criptan",
-  "Horizm",
-  "Psonrie",
-  "Pwc",
 ];
