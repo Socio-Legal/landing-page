@@ -1,7 +1,6 @@
 import { LinkedInLogoIcon, ChevronRightIcon } from "@radix-ui/react-icons";
 import { Icons } from "./icons";
 
-import Blur01 from "@/public/blur-01.svg";
 import Blur02 from "@/public/blur-02.svg";
 import { siteConfig } from "@/config/site-config";
 

@@ -135,6 +135,24 @@ export const siteConfig = {
         { id: 11, title: "Testimonios", url: "#" },
         { id: 12, title: "Precios", url: "#" },
       ],
+      [
+        { id: 13, title: "Legal", url: "#", isHeader: true },
+        {
+          id: 14,
+          title: "Aviso Legal y CGC",
+          url: "https://www.sttok.com/aviso-legal/",
+        },
+        {
+          id: 15,
+          title: "Privacidad y Cookies",
+          url: "https://www.sttok.com/privacidad/",
+        },
+        {
+          id: 16,
+          title: "Política de Seguridad",
+          url: "https://www.sttok.com/politica-seguridad/",
+        },
+      ],
     ],
     logos: [
       "https://www.sttok.com/images/logo-gdpr-compliant.png",
