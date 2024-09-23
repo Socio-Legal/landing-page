@@ -28,21 +28,24 @@ export const topFeatures = {
       title: "Data Overload",
       description:
         "Businesses struggle to make sense of vast amounts of complex data, missing out on valuable insights that could drive growth and innovation.",
-      icon: "Brain",
+      // icon: "Brain",
+      animation: "AnimatedBeam01",
       image: "Feature1",
     },
     {
       title: "Slow Decision-Making",
       description:
         "Traditional data processing methods are too slow, causing businesses to lag behind market changes and miss crucial opportunities.",
-      icon: "Zap",
+      // icon: "Zap",
+      animation: "AnimatedBeam03",
       image: "Feature2",
     },
     {
       title: "Data Security Concerns",
       description:
         "With increasing cyber threats, businesses worry about the safety of their sensitive information when adopting new technologies.",
-      icon: "Shield",
+      // icon: "Shield",
+      animation: "AnimatedBeam02",
       image: "Feature3",
     },
   ],

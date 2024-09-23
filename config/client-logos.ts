@@ -46,8 +46,6 @@ export const clientLogos = {
 
 export const getClientLogo = (logo: ClientLogo) => {
   if (Object.keys(clientLogos).includes(logo)) {
-    console.log("🚀 cclog  ~ getClientLogo ~ logo:", logo);
-
     return clientLogos[logo as keyof typeof clientLogos];
   }
   return `https://cdn.magicui.design/companies/${logo}.svg`;

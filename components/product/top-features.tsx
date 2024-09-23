@@ -3,11 +3,14 @@ import BlurFade from "../magicui/blur-fade";
 import { Card, CardContent } from "../ui/card";
 import { Brain, Shield, Zap } from "lucide-react";
 import ProductSectionHeader from "../product-section-header";
+import { AnimatedBeamMultiToMulti } from "../animated/animated-beam-multi-to-multi";
+import { getAnimatedBeam } from "../animated/animated-beams";
 
 type Feature = {
   title: string;
   description: string;
-  icon: string;
+  icon?: string;
+  animation?: string;
   image: string;
 };
 
@@ -33,9 +36,15 @@ const TopFeature: FC<TopFeatureProps> = ({ feature, index }) => {
     <BlurFade key={index} delay={0.2 + index * 0.2} inView>
       <Card className="bg-background border-none shadow-none">
         <CardContent className="p-6 space-y-4">
-          <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-            {TopFeatureIcons[feature.icon as keyof typeof TopFeatureIcons]}
-          </div>
+          {feature.icon && (
+            <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+              {TopFeatureIcons[feature.icon as keyof typeof TopFeatureIcons]}
+            </div>
+          )}
+
+          {feature.animation &&
+            getAnimatedBeam(feature.animation as keyof typeof getAnimatedBeam)}
+
           <h3 className="text-xl font-semibold">{feature.title}</h3>
           <p className="text-muted-foreground">{feature.description}</p>
         </CardContent>
