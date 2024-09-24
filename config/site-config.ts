@@ -36,19 +36,19 @@ export const siteConfig = {
               "Captable, Libro de Socios oficial, %, acceso de los socios",
           },
           {
-            href: "https://www.sttok.com/libro-de-socios/",
+            href: "/planes-de-incentivos/",
             title: "Planes de Incentivos",
             description:
               "Phantoms, stock options, acceso empleados, vesting, etc",
           },
           {
-            href: "https://www.sttok.com/libro-de-socios/",
+            href: "/juntas-consejos/",
             title: "Juntas y Consejos",
             description:
               "Convocatoria digital, delegaciones, votaciones, firma de documentos, etc",
           },
           {
-            href: "https://www.sttok.com/libro-de-socios/",
+            href: "/simulador/",
             title: "Simulador de Operaciones",
             description:
               "Cálculo de rondas, ampliaciones, notas convertibles, etc",
@@ -118,10 +118,10 @@ export const siteConfig = {
     menu: [
       [
         { id: 0, title: "Producto", url: "#", isHeader: true },
-        { id: 1, title: "Libro de Socios", url: "#" },
-        { id: 2, title: "Planes de Incentivos", url: "#" },
-        { id: 3, title: "Simulador Operaciones", url: "#" },
-        { id: 4, title: "Juntas y Consejos", url: "#" },
+        { id: 1, title: "Libro de Socios", url: "/libro-de-socios/" },
+        { id: 2, title: "Planes de Incentivos", url: "/planes-de-incentivos/" },
+        { id: 3, title: "Simulador Operaciones", url: "/simulador/" },
+        { id: 4, title: "Juntas y Consejos", url: "/juntas-consejos/" },
       ],
       [
         { id: 5, title: "Soluciones", url: "#", isHeader: true },

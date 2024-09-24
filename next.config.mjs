@@ -1,7 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   async rewrites() {
-    return [{ source: "/libro-de-socios", destination: "/partners-book" }];
+    return [
+      { source: "/libro-de-socios", destination: "/partners-book" },
+      { source: "/planes-de-incentivos", destination: "/incentive-plans" },
+      { source: "/juntas-consejos", destination: "/shareholder-meetings" },
+      { source: "/simulador", destination: "/operation-drafts" },
+    ];
   },
   images: {
     remotePatterns: [
