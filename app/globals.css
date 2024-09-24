@@ -359,3 +359,18 @@
 .underline {
   text-decoration-line: underline;
 }
+
+.span-hidden-on-hover {
+  span {
+    display: none;
+  }
+}
+
+.span-hidden-on-hover:hover {
+  background-color: #ffffff20;
+  cursor: pointer;
+
+  span {
+    display: block;
+  }
+}

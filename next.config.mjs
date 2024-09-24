@@ -6,6 +6,7 @@ const nextConfig = {
       { source: "/planes-de-incentivos", destination: "/incentive-plans" },
       { source: "/juntas-consejos", destination: "/shareholder-meetings" },
       { source: "/simulador", destination: "/operation-drafts" },
+      { source: "/recursos", destination: "/resources" },
     ];
   },
   images: {
@@ -27,6 +28,12 @@ const nextConfig = {
         hostname: "cdn.magicui.design",
         port: "",
         pathname: "/companies/**",
+      },
+      {
+        protocol: "https",
+        hostname: "ik.imagekit.io",
+        port: "",
+        pathname: "/ably/ghost/prod/**",
       },
     ],
   },
