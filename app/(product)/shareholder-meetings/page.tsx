@@ -13,7 +13,7 @@ import {
   hero,
   features,
   testimonials,
-} from "@/config/product/shareholder-meetings";
+} from "@/config/product/shareholder-meetings-page";
 
 export const metadata = {
   title: page.title,

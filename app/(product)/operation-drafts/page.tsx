@@ -13,7 +13,7 @@ import {
   hero,
   features,
   testimonials,
-} from "@/config/product/operation-drafts";
+} from "@/config/product/operation-drafts-page";
 
 export const metadata = {
   title: page.title,
