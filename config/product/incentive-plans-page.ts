@@ -1,16 +1,18 @@
 export const metadata = {
   title: "Planes de Incentivos", // ej., "Nombre del Producto"
-  description: "", // ej., "Una breve descripción del producto o servicio"
-  keywords: "", // ej., "palabra_clave1, palabra_clave2, palabra_clave3"
+  description:
+    "Gestiona los planes de incentivos (phantom share plan, stock option plans, etc.), de tu empresa de manera eficiente y profesional.", // ej., "Una breve descripción del producto o servicio"
+  keywords:
+    "planes de incentivos, phantoms, opciones sobre acciones, compensación flexible, gestión de incentivos, vesting", // ej., "palabra_clave1, palabra_clave2, palabra_clave3"
 };
 
 export const hero = {
   title: "Planes de Incentivos", // ej., "Título Principal del Producto"
   description:
-    "La forma más profesional de crear y mantener planes de phantoms y opciones sobre acciones. Sttok te hace todos los cláculos, documentos y calendario. Además, podrás dar acceso a los beneficiario a su plan.", // ej., "Una descripción convincente del principal beneficio de tu producto"
+    "La forma más profesional de crear y mantener planes de phantoms y opciones sobre acciones. Sttok te hace todos los cálculos, documentos y calendario. Además, podrás dar acceso a los beneficiarios a su plan.", // ej., "Una descripción convincente del principal beneficio de tu producto"
   button: {
-    text: "", // ej., "Comenzar"
-    link: "", // ej., "/registro"
+    text: "Empieza ahora", // ej., "Comenzar"
+    link: "/registro", // ej., "/registro"
   },
   image: {
     light:
@@ -20,106 +22,127 @@ export const hero = {
 };
 
 export const topFeatures = {
-  title: "", // ej., "Características Principales"
-  description: "", // ej., "Descubre lo que hace destacar a nuestro producto"
+  title: "Características Principales", // ej., "Características Principales"
+  description:
+    "Conoce cómo la gestión de Planes de Incentivos con Sttok te permiten optimizar la gestión y dar acceso a tu equipo.", // ej., "Descubre lo que hace destacar a nuestro producto"
   items: [
     {
-      title: "", // ej., "Característica 1"
-      description: "", // ej., "Descripción de la característica 1"
-      icon: "", // ej., "Utilizar este o Animation"
+      title: "Personalización de Planes", // ej., "Característica 1"
+      description:
+        "Crea planes de incentivos adaptados a las necesidades de tu organización.", // ej., "Descripción de la característica 1"
+      icon: "icon1", // ej., "Utilizar este o Animation"
       animation: "", // ej., "Utilizar este o Icon"
-      image: "", // ej., "ImagenCaracteristica1"
+      image:
+        "https://www.sttok.com/wp-content/uploads/2023/11/customization.png", // ej., "ImagenCaracteristica1"
     },
     {
-      title: "", // ej., "Característica 2"
-      description: "", // ej., "Descripción de la característica 2"
-      icon: "", // ej., "Utilizar este o Animation"
+      title: "Automatización de Cálculos", // ej., "Característica 2"
+      description:
+        "Automatiza la firma, el cálculo, el vesting y el seguimiento de los planes para cada empleado.", // ej., "Descripción de la característica 2"
+      icon: "icon2", // ej., "Utilizar este o Animation"
       animation: "", // ej., "Utilizar este o Icon"
-      image: "", // ej., "ImagenCaracteristica2"
+      image: "https://www.sttok.com/wp-content/uploads/2023/11/automation.png", // ej., "ImagenCaracteristica2"
     },
     {
-      title: "", // ej., "Característica 3"
-      description: "", // ej., "Descripción de la característica 3"
-      icon: "", // ej., "Utilizar este o Animation"
+      title: "Acceso para beneficiarios", // ej., "Característica 3"
+      description:
+        "Los empleados pueden visualizar y seguir el estado de sus incentivos.", // ej., "Descripción de la característica 3"
+      icon: "icon3", // ej., "Utilizar este o Animation"
       animation: "", // ej., "Utilizar este o Icon"
-      image: "", // ej., "ImagenCaracteristica3"
+      image:
+        "https://www.sttok.com/wp-content/uploads/2023/11/transparency.png", // ej., "ImagenCaracteristica3"
     },
   ],
 };
 
 export const clients = {
-  title: "", // ej., "Nuestros Clientes de Confianza"
-  clients: [], // ej., ["Cliente1", "Cliente2", "Cliente3"]
+  title: "CLIENTES QUE UTILIZAN EL LIBRO DE SOCIOS",
+  clients: [
+    "Factorial",
+    "DerechoCom",
+    "Mailtrack",
+    "Taxdown",
+    "PldSpace",
+    "Broseta",
+  ],
 };
 
 export const features = {
-  title: "", // ej., "Todas las Características"
-  description: "", // ej., "Explora todas las características que hacen único a nuestro producto"
+  title: "Planes de Incentivos",
+  description:
+    "Sttok ofrece una gestión completa y profesional de planes de incentivos para empleados y colaboradores. Descubre todas las funcionalidades que te ofrece.",
   items: [
     {
-      icon: "", // ej., "Icono1"
-      title: "", // ej., "Característica 1"
-      description: "", // ej., "Descripción detallada de la característica 1"
+      icon: "Icon01",
+      title: "Múltiples Tipos de Planes",
+      description:
+        "Crea y gestiona diversos tipos de planes como Stock Options, Phantom Shares, Stock Options y más, adaptándose a tus necesidades específicas.",
     },
     {
-      icon: "", // ej., "Icono2"
-      title: "", // ej., "Característica 2"
-      description: "", // ej., "Descripción detallada de la característica 2"
+      icon: "Icon02",
+      title: "Configuración Personalizada",
+      description:
+        "Configura períodos de vesting y cliff flexibles para cada plan, precios de ejercicio o incluso condiciones individuales.",
     },
     {
-      icon: "", // ej., "Icono3"
-      title: "", // ej., "Característica 3"
-      description: "", // ej., "Descripción detallada de la característica 3"
+      icon: "Icon03",
+      title: "Acceso para Beneficiarios",
+      description:
+        "Cada beneficiario tendrá acceso a su ficha con todos los datos actualizados con detalle de calendarios, documentos y simulaciones.",
     },
     {
-      icon: "", // ej., "Icono4"
-      title: "", // ej., "Característica 4"
-      description: "", // ej., "Descripción detallada de la característica 4"
+      icon: "Icon04",
+      title: "Informes en Tiempo Real",
+      description:
+        "Monitorea de forma automatizada el estado de todas las opciones; otorgadas, 'vesteadas' y ejercitadas, con actualizaciones instantáneas.",
     },
     {
-      icon: "", // ej., "Icono5"
-      title: "", // ej., "Característica 5"
-      description: "", // ej., "Descripción detallada de la característica 5"
+      icon: "Icon05",
+      title: "Cálculos Automáticos",
+      description:
+        "Realiza cálculos automáticos de dilución y ajustes en el captable cada vez que se producen cambios en los planes de incentivos.",
     },
     {
-      icon: "", // ej., "Icono6"
-      title: "", // ej., "Característica 6"
-      description: "", // ej., "Descripción detallada de la característica 6"
+      icon: "Icon06",
+      title: "Generación de Documentos y Firma",
+      description:
+        "Crea automáticamente todos los documentos legales necesarios relacionados con los planes de incentivos así como su firma digital.",
+    },
+    {
+      icon: "Icon07",
+      title: "Sistema de Notificaciones",
+      description:
+        "Envía notificaciones automáticas a los beneficiarios sobre hitos importantes, como vestings próximos o opciones a punto de expirar.",
+    },
+    {
+      icon: "Icon08",
+      title: "Simulaciones y Proyecciones",
+      description:
+        "Integración con el módulo de simulación para realizar proyecciones futuras y analizar diferentes escenarios de planes de incentivos.",
     },
   ],
 };
 
 export const testimonials = {
-  title: "", // ej., "Lo que Dicen Nuestros Clientes"
-  description: "", // ej., "Lee testimonios de clientes satisfechos"
+  title: "Lo que Dicen Nuestros Clientes", // ej., "Lo que Dicen Nuestros Clientes"
+  description:
+    "Conoce cómo nuestros planes de incentivos han transformado la gestión de incentivos en otras empresas.", // ej., "Lee testimonios de clientes satisfechos"
   items: [
     {
-      name: "", // ej., "Juan Pérez"
-      role: "", // ej., "CEO de Empresa A"
-      img: "", // ej., "https://ejemplo.com/juan-perez.jpg"
-      description: "", // ej., "Un testimonio brillante de Juan Pérez sobre nuestro producto"
-      stars: 0, // ej., 5
+      name: "Lucía Bouzá", // ej., "Juan Pérez"
+      role: "Head of Legal & Compliance  | Factorial", // ej., "CEO de Empresa A"
+      img: "https://www.sttok.com/images/logos/logo-factorial-mini.png", // ej., "https://ejemplo.com/juan-perez.jpg"
+      description:
+        "Para gestionar toda la documentación de planes de incentivos nos ha ayudado a digitalizar el proceso de creación, firma y control de los beneficiarios.", // ej., "Un testimonio brillante de Juan Pérez sobre nuestro producto"
+      stars: 5, // ej., 5
     },
     {
-      name: "", // ej., "María García"
-      role: "", // ej., "CTO de Empresa B"
-      img: "", // ej., "https://ejemplo.com/maria-garcia.jpg"
-      description: "", // ej., "La experiencia positiva de María García con nuestro servicio"
-      stars: 0, // ej., 4
-    },
-    {
-      name: "", // ej., "Roberto Rodríguez"
-      role: "", // ej., "Fundador de Startup C"
-      img: "", // ej., "https://ejemplo.com/roberto-rodriguez.jpg"
-      description: "", // ej., "Cómo nuestro producto ayudó a crecer la startup de Roberto Rodríguez"
-      stars: 0, // ej., 5
-    },
-    {
-      name: "", // ej., "Ana Martínez"
-      role: "", // ej., "Directora de Marketing en Empresa D"
-      img: "", // ej., "https://ejemplo.com/ana-martinez.jpg"
-      description: "", // ej., "Las opiniones de Ana Martínez sobre el impacto de nuestro producto"
-      stars: 0, // ej., 5
+      name: "Amalia Riboldi", // ej., "María García"
+      role: "Head of People & Culture | YABA", // ej., "CTO de Empresa B"
+      img: "https://www.sttok.com/wp-content/uploads/2023/07/logo-yaba-bg-122x122.jpg", // ej., "https://ejemplo.com/maria-garcia.jpg"
+      description:
+        "Sttok definitivamente fue nuestra mejor opción y nos está ayudando con la gestión de los Planes de Incentivos y con la transparencia de la información societaria con los Socios",
+      stars: 5, // ej., 5
     },
   ],
 };

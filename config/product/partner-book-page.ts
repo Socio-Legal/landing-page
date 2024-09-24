@@ -113,6 +113,14 @@ export const testimonials = {
     "Descubre lo que dicen nuestros clientes sobre el Libro de Socios.",
   items: [
     {
+      name: "Lucía Bouzá",
+      role: "Head of Legal & Compliance | Factorial",
+      img: "https://www.sttok.com/images/logos/logo-factorial-mini.png",
+      description:
+        "Sttok nos permite tener toda la información de socios y planes de incentivos centralizada y actualizada. Nos facilita la gestión de juntas y la relación con los inversores.",
+      stars: 5,
+    },
+    {
       name: "Gerard Garcia",
       role: "CEO | Deale",
       img: "https://www.sttok.com/images/logos/logo-deale-mini.png",
@@ -121,19 +129,11 @@ export const testimonials = {
       stars: 5,
     },
     {
-      name: "Eduardo Manchón",
-      role: "CEO | Mailtrack",
-      img: "https://www.sttok.com/images/logos/logo-mailtrack-mini.png",
+      name: "Johan Longo",
+      role: "Contract Manager | PLD Space",
+      img: "https://www.sttok.com/images/logos/logo-pld-mini.png",
       description:
-        "Sttok nos sirve para poder tener organizada toda la información sobre socios, escrituras y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
-      stars: 5,
-    },
-    {
-      name: "Jordi Romero",
-      role: "CEO | Factorial",
-      img: "https://www.sttok.com/images/logos/logo-factorial-mini.png",
-      description:
-        "Sttok nos permite tener toda la información de socios y planes de incentivos centralizada y actualizada. Nos facilita la gestión de juntas y la relación con los inversores.",
+        "Sttok nos sirve para poder tener organizada toda la información sobre socios, junas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
       stars: 5,
     },
     {

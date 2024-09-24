@@ -1,7 +1,9 @@
 export const metadata = {
   title: "Simulador de Operaciones", // ej., "Nombre del Producto"
-  description: "", // ej., "Una breve descripción del producto o servicio"
-  keywords: "", // ej., "palabra_clave1, palabra_clave2, palabra_clave3"
+  description:
+    "Simula y calcula cualquier operación corporativa con precisión en segundos, incluyendo rondas de inversión, ampliaciones de capital y más.", // ej., "Una breve descripción del producto o servicio"
+  keywords:
+    "simulador de operaciones, rondas de inversión, ampliaciones de capital, notas convertibles, simulaciones corporativas", // ej., "palabra_clave1, palabra_clave2, palabra_clave3"
 };
 
 export const hero = {
@@ -9,8 +11,8 @@ export const hero = {
   description:
     "Calcula fácilmente en pocos segundos todo tipo de operaciones y escenarios. Calcula rondas, ampliaciones, ventas, notas convertibles, etc. Además genera la documentación de las simulaciones en pocos minutos.", // ej., "Una descripción convincente del principal beneficio de tu producto"
   button: {
-    text: "", // ej., "Comenzar"
-    link: "", // ej., "/registro"
+    text: "Empieza a Simular", // ej., "Comenzar"
+    link: "/registro", // ej., "/registro"
   },
   image: {
     light:
@@ -20,106 +22,125 @@ export const hero = {
 };
 
 export const topFeatures = {
-  title: "", // ej., "Características Principales"
-  description: "", // ej., "Descubre lo que hace destacar a nuestro producto"
+  title: "Características Principales", // ej., "Características Principales"
+  description:
+    "Descubre las herramientas más avanzadas para calcular cualquier tipo de operación corporativa.", // ej., "Descubre lo que hace destacar a nuestro producto"
   items: [
     {
-      title: "", // ej., "Característica 1"
-      description: "", // ej., "Descripción de la característica 1"
-      icon: "", // ej., "Utilizar este o Animation"
+      title: "Cálculos Automáticos", // ej., "Característica 1"
+      description:
+        "Automatiza el cálculo de operaciones como rondas de inversión, ampliaciones de capital y ventas de acciones.",
+      icon: "icon1", // ej., "Utilizar este o Animation"
       animation: "", // ej., "Utilizar este o Icon"
-      image: "", // ej., "ImagenCaracteristica1"
+      image:
+        "https://www.sttok.com/wp-content/uploads/2023/11/automatic-calculation.png", // ej., "ImagenCaracteristica1"
     },
     {
-      title: "", // ej., "Característica 2"
-      description: "", // ej., "Descripción de la característica 2"
-      icon: "", // ej., "Utilizar este o Animation"
+      title: "Simulaciones en Tiempo Real", // ej., "Característica 2"
+      description:
+        "Simula escenarios financieros complejos automáticamente, permitiéndote tomar decisiones con datos precisos.",
+      icon: "icon2", // ej., "Utilizar este o Animation"
       animation: "", // ej., "Utilizar este o Icon"
-      image: "", // ej., "ImagenCaracteristica2"
+      image:
+        "https://www.sttok.com/wp-content/uploads/2023/11/scenario-simulation.png", // ej., "ImagenCaracteristica2"
     },
     {
-      title: "", // ej., "Característica 3"
-      description: "", // ej., "Descripción de la característica 3"
-      icon: "", // ej., "Utilizar este o Animation"
+      title: "Documentación Automática", // ej., "Característica 3"
+      description:
+        "Genera todos los documentos necesarios para tus operaciones en cuestión de minutos.",
+      icon: "icon3", // ej., "Utilizar este o Animation"
       animation: "", // ej., "Utilizar este o Icon"
-      image: "", // ej., "ImagenCaracteristica3"
+      image:
+        "https://www.sttok.com/wp-content/uploads/2023/11/documentation-generation.png", // ej., "ImagenCaracteristica3"
     },
   ],
 };
 
 export const clients = {
-  title: "", // ej., "Nuestros Clientes de Confianza"
-  clients: [], // ej., ["Cliente1", "Cliente2", "Cliente3"]
+  title: "Nuestros Clientes de Confianza", // ej., "Nuestros Clientes de Confianza"
+  clients: ["FinTech Corp", "Startup XYZ", "ABC Ventures", "Innovatech"], // ej., ["Cliente1", "Cliente2", "Cliente3"]
 };
 
 export const features = {
-  title: "", // ej., "Todas las Características"
-  description: "", // ej., "Explora todas las características que hacen único a nuestro producto"
+  title: "Todas las Características", // ej., "Todas las Características"
+  description:
+    "Explora todas las características que hacen único a nuestro producto.", // ej., "Explora todas las características que hacen único a nuestro producto"
   items: [
     {
-      icon: "", // ej., "Icono1"
-      title: "", // ej., "Característica 1"
-      description: "", // ej., "Descripción detallada de la característica 1"
+      icon: "Icon01", // ej., "Icono1"
+      title: "Cálculos de Rondas de Inversión", // ej., "Característica 1"
+      description:
+        "Calcula el impacto de las rondas de inversión en la estructura de capital de tu empresa de manera automática.", // ej., "Descripción detallada de la característica 1"
     },
     {
-      icon: "", // ej., "Icono2"
-      title: "", // ej., "Característica 2"
-      description: "", // ej., "Descripción detallada de la característica 2"
+      icon: "Icon02", // ej., "Icono2"
+      title: "Ampliaciones de Capital", // ej., "Característica 2"
+      description:
+        "Simula ampliaciones de capital y genera la documentación necesaria en minutos.", // ej., "Descripción detallada de la característica 2"
     },
     {
-      icon: "", // ej., "Icono3"
-      title: "", // ej., "Característica 3"
-      description: "", // ej., "Descripción detallada de la característica 3"
+      icon: "Icon03", // ej., "Icono3"
+      title: "Notas Convertibles", // ej., "Característica 3"
+      description:
+        "Gestiona y simula las conversiones de notas convertibles con facilidad.", // ej., "Descripción detallada de la característica 3"
     },
     {
-      icon: "", // ej., "Icono4"
-      title: "", // ej., "Característica 4"
-      description: "", // ej., "Descripción detallada de la característica 4"
+      icon: "Icon04", // ej., "Icono4"
+      title: "Escenarios de Venta", // ej., "Característica 4"
+      description:
+        "Simula escenarios de venta de acciones y sus efectos sobre los socios y la estructura accionarial.", // ej., "Descripción detallada de la característica 4"
     },
     {
-      icon: "", // ej., "Icono5"
-      title: "", // ej., "Característica 5"
-      description: "", // ej., "Descripción detallada de la característica 5"
+      icon: "Icon05", // ej., "Icono5"
+      title: "Generación Automática de Documentos", // ej., "Característica 5"
+      description:
+        "Crea automáticamente actas, contratos y otros documentos para todas tus operaciones corporativas.", // ej., "Descripción detallada de la característica 5"
     },
     {
-      icon: "", // ej., "Icono6"
-      title: "", // ej., "Característica 6"
-      description: "", // ej., "Descripción detallada de la característica 6"
+      icon: "Icon06", // ej., "Icono6"
+      title: "Datos exactos y reales", // ej., "Característica 6"
+      description:
+        "Accede a cálculos actualizados en tiempo real para todas tus operaciones y toma decisiones informadas.", // ej., "Descripción detallada de la característica 6"
     },
   ],
 };
 
 export const testimonials = {
-  title: "", // ej., "Lo que Dicen Nuestros Clientes"
-  description: "", // ej., "Lee testimonios de clientes satisfechos"
+  title: "Lo que Dicen Nuestros Clientes", // ej., "Lo que Dicen Nuestros Clientes"
+  description:
+    "Lee testimonios de clientes satisfechos que usan nuestro simulador para mejorar su gestión de operaciones.", // ej., "Lee testimonios de clientes satisfechos"
   items: [
     {
-      name: "", // ej., "Juan Pérez"
-      role: "", // ej., "CEO de Empresa A"
-      img: "", // ej., "https://ejemplo.com/juan-perez.jpg"
-      description: "", // ej., "Un testimonio brillante de Juan Pérez sobre nuestro producto"
-      stars: 0, // ej., 5
+      name: "Lucía Bouzá",
+      role: "Head of Legal & Compliance | Factorial",
+      img: "https://www.sttok.com/images/logos/logo-factorial-mini.png",
+      description:
+        "Sttok nos permite tener toda la información de socios y planes de incentivos centralizada y actualizada. Nos facilita la gestión de juntas y la relación con los inversores.",
+      stars: 5,
     },
     {
-      name: "", // ej., "María García"
-      role: "", // ej., "CTO de Empresa B"
-      img: "", // ej., "https://ejemplo.com/maria-garcia.jpg"
-      description: "", // ej., "La experiencia positiva de María García con nuestro servicio"
-      stars: 0, // ej., 4
+      name: "Oriol Miralbell", // ej., "María García"
+      role: "CEO | Legalpigeon", // ej., "CTO de Empresa B"
+      img: "https://www.sttok.com/wp-content/uploads/2023/11/maria-garcia.jpg", // ej., "https://ejemplo.com/maria-garcia.jpg"
+      description:
+        "Sttok te permite calcular valoraciones, rondas de inversión y simulaciones fácilmente. La interfaz de la aplicación es sencilla e intuitiva, lo que  te permite tomar decisiones de manera más ágil y eficaz.",
+      stars: 4, // ej., 4
     },
     {
-      name: "", // ej., "Roberto Rodríguez"
-      role: "", // ej., "Fundador de Startup C"
-      img: "", // ej., "https://ejemplo.com/roberto-rodriguez.jpg"
-      description: "", // ej., "Cómo nuestro producto ayudó a crecer la startup de Roberto Rodríguez"
-      stars: 0, // ej., 5
+      name: "Nacho González",
+      role: "CEO y Fundador | Banktrack",
+      img: "https://www.sttok.com/images/logos/logo-banktrack-mini.png",
+      description:
+        "Ahora con Sttok puedes realizar simulaciones de ampliaciones o notas convertibles. Además también gestionamos las phantoms de nuestro equipo fácilmente. Finalmente como inversor tengo organizadas mis participadas y conozco claramente qué es lo que tengo.",
+      stars: 5,
     },
     {
-      name: "", // ej., "Ana Martínez"
-      role: "", // ej., "Directora de Marketing en Empresa D"
-      img: "", // ej., "https://ejemplo.com/ana-martinez.jpg"
-      description: "", // ej., "Las opiniones de Ana Martínez sobre el impacto de nuestro producto"
-      stars: 0, // ej., 5
+      name: "Johan Longo",
+      role: "Contract Manager | PLD Space",
+      img: "https://www.sttok.com/images/logos/logo-pld-mini.png",
+      description:
+        "Sttok nos sirve para poder tener organizada toda la información sobre socios, junas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
+      stars: 5,
     },
   ],
 };
