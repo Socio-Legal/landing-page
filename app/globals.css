@@ -374,3 +374,14 @@
     display: block;
   }
 }
+
+.span-visible-on-hover {
+  span {
+    display: block;
+  }
+}
+
+.span-visible-on-hover:hover {
+  background-color: #ffffff20;
+  cursor: pointer;
+}

@@ -8,6 +8,7 @@ import HeroSection from "@/components/product/hero-section";
 import TopFeatures from "@/components/product/top-features";
 import { metadata as page, hero } from "@/config/resources";
 import ResourcesIcons from "@/components/resources/resources-icons";
+import ResourcesAnimations from "@/components/resources/resources-animations";
 
 export const metadata = {
   title: page.title,
@@ -19,6 +20,8 @@ const Page = () => {
   return (
     <>
       <HeroSection {...hero} />
+
+      <ResourcesAnimations />
       <ResourcesIcons />
     </>
   );
