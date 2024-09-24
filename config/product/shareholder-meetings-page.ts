@@ -1,7 +1,9 @@
 export const metadata = {
   title: "Juntas y Consejos", // ej., "Nombre del Producto"
-  description: "", // ej., "Una breve descripción del producto o servicio"
-  keywords: "", // ej., "palabra_clave1, palabra_clave2, palabra_clave3"
+  description:
+    "Gestiona juntas y consejos de administración de manera eficiente con Sttok, incluyendo convocatorias, delegaciones, votos y actas.", // ej., "Una breve descripción del producto o servicio"
+  keywords:
+    "juntas de socios, consejos de administración, gestión digital de juntas, convocatorias, delegaciones de voto, actas digitales", // ej., "palabra_clave1, palabra_clave2, palabra_clave3"
 };
 
 export const hero = {
@@ -9,8 +11,8 @@ export const hero = {
   description:
     "En Sttok, entendemos la importancia de las juntas y consejos para el buen funcionamiento y toma de decisiones en una empresa. Con Sttok podrás convocar, gestionar delegaciones, votaciones y generar las actas y certificados de forma digital y en pocos minutos.", // ej., "Una descripción convincente del principal beneficio de tu producto"
   button: {
-    text: "", // ej., "Comenzar"
-    link: "", // ej., "/registro"
+    text: "Gestiona tu Junta", // ej., "Comenzar"
+    link: "/registro", // ej., "/registro"
   },
   image: {
     light: "https://www.sttok.com/wp-content/uploads/2023/11/14shots_so.jpg", // ej., "https://ejemplo.com/imagen-hero-clara.jpg"
@@ -19,106 +21,133 @@ export const hero = {
 };
 
 export const topFeatures = {
-  title: "", // ej., "Características Principales"
-  description: "", // ej., "Descubre lo que hace destacar a nuestro producto"
+  title: "Características Principales", // ej., "Características Principales"
+  description:
+    "Optimiza la gestión de juntas y consejos con herramientas que simplifican cada paso del proceso.", // ej., "Descubre lo que hace destacar a nuestro producto"
   items: [
     {
-      title: "", // ej., "Característica 1"
-      description: "", // ej., "Descripción de la característica 1"
-      icon: "", // ej., "Utilizar este o Animation"
+      title: "Convocatoria Digital", // ej., "Característica 1"
+      description:
+        "Envía convocatorias digitales con toda la información necesaria a tus accionistas y consejeros en un clic.", // ej., "Descripción de la característica 1"
+      icon: "icon1", // ej., "Utilizar este o Animation"
       animation: "", // ej., "Utilizar este o Icon"
-      image: "", // ej., "ImagenCaracteristica1"
+      image:
+        "https://www.sttok.com/wp-content/uploads/2023/11/digital-call.png", // Imagen para la característica 1
     },
     {
-      title: "", // ej., "Característica 2"
-      description: "", // ej., "Descripción de la característica 2"
-      icon: "", // ej., "Utilizar este o Animation"
+      title: "Gestión de Votos y Delegaciones", // ej., "Característica 2"
+      description:
+        "Permite a los accionistas delegar sus votos y gestionar las votaciones de manera segura y transparente.", // ej., "Descripción de la característica 2"
+      icon: "icon2", // ej., "Utilizar este o Animation"
       animation: "", // ej., "Utilizar este o Icon"
-      image: "", // ej., "ImagenCaracteristica2"
+      image:
+        "https://www.sttok.com/wp-content/uploads/2023/11/voting-management.png", // Imagen para la característica 2
     },
     {
-      title: "", // ej., "Característica 3"
-      description: "", // ej., "Descripción de la característica 3"
-      icon: "", // ej., "Utilizar este o Animation"
+      title: "Generación Automática de Actas", // ej., "Característica 3"
+      description:
+        "Crea actas de reuniones y certificados de acuerdos de manera automática y en pocos minutos.", // ej., "Descripción de la característica 3"
+      icon: "icon3", // ej., "Utilizar este o Animation"
       animation: "", // ej., "Utilizar este o Icon"
-      image: "", // ej., "ImagenCaracteristica3"
+      image:
+        "https://www.sttok.com/wp-content/uploads/2023/11/act-generation.png", // Imagen para la característica 3
     },
   ],
 };
 
 export const clients = {
-  title: "", // ej., "Nuestros Clientes de Confianza"
-  clients: [], // ej., ["Cliente1", "Cliente2", "Cliente3"]
+  title: "CLIENTES QUE UTILIZAN EL LIBRO DE SOCIOS",
+  clients: [
+    "Factorial",
+    "Shakers",
+    "Yaba",
+    "Taxdown",
+    "PldSpace",
+    "MyInvestor",
+    "Broseta",
+  ],
 };
 
 export const features = {
-  title: "", // ej., "Todas las Características"
-  description: "", // ej., "Explora todas las características que hacen único a nuestro producto"
+  title: "Todas las Características", // ej., "Todas las Características"
+  description:
+    "Explora todas las características que hacen único a nuestro producto.", // ej., "Explora todas las características que hacen único a nuestro producto"
   items: [
     {
-      icon: "", // ej., "Icono1"
-      title: "", // ej., "Característica 1"
-      description: "", // ej., "Descripción detallada de la característica 1"
+      icon: "Icon01", // ej., "Icono1"
+      title: "Convocatoria de Juntas", // ej., "Característica 1"
+      description:
+        "Crea y envía convocatorias de juntas a accionistas y consejeros de forma digital, con todos los detalles relevantes.", // ej., "Descripción detallada de la característica 1"
     },
     {
-      icon: "", // ej., "Icono2"
-      title: "", // ej., "Característica 2"
-      description: "", // ej., "Descripción detallada de la característica 2"
+      icon: "Icon02", // ej., "Icono2"
+      title: "Delegaciones Digitales de Voto ", // ej., "Característica 2"
+      description:
+        "Facilita la delegación de votos de forma segura, permitiendo a los socios representar sus intereses en las reuniones.", // ej., "Descripción detallada de la característica 2"
     },
     {
-      icon: "", // ej., "Icono3"
-      title: "", // ej., "Característica 3"
-      description: "", // ej., "Descripción detallada de la característica 3"
+      icon: "Icon03", // ej., "Icono3"
+      title: "Votaciones Electrónicas", // ej., "Característica 3"
+      description:
+        "Gestiona votaciones de acuerdos con total transparencia y eficiencia, garantizando resultados en tiempo real.", // ej., "Descripción detallada de la característica 3"
     },
     {
-      icon: "", // ej., "Icono4"
-      title: "", // ej., "Característica 4"
-      description: "", // ej., "Descripción detallada de la característica 4"
+      icon: "Icon04", // ej., "Icono4"
+      title: "Actas Automáticas", // ej., "Característica 4"
+      description:
+        "Genera actas y certificados de acuerdos al finalizar cada reunión, ahorrando tiempo y eliminando errores.", // ej., "Descripción detallada de la característica 4"
     },
     {
-      icon: "", // ej., "Icono5"
-      title: "", // ej., "Característica 5"
-      description: "", // ej., "Descripción detallada de la característica 5"
+      icon: "Icon05", // ej., "Icono5"
+      title: "Certificaciones", // ej., "Característica 5"
+      description:
+        "Generación automática de certificaciones de convocatoria, delegaciones y votaciones.", // ej., "Descripción detallada de la característica 5"
     },
     {
-      icon: "", // ej., "Icono6"
-      title: "", // ej., "Característica 6"
-      description: "", // ej., "Descripción detallada de la característica 6"
+      icon: "Icon06", // ej., "Icono6"
+      title: "Historial de Reuniones", // ej., "Característica 6"
+      description:
+        "Accede al historial completo de todas las reuniones y acuerdos anteriores, todo almacenado en la nube.", // ej., "Descripción detallada de la característica 6"
     },
   ],
 };
 
 export const testimonials = {
-  title: "", // ej., "Lo que Dicen Nuestros Clientes"
-  description: "", // ej., "Lee testimonios de clientes satisfechos"
+  title: "Lo que Dicen Nuestros Clientes", // ej., "Lo que Dicen Nuestros Clientes"
+  description:
+    "Lee testimonios de clientes satisfechos que usan Sttok para Juntas o Consejos.", // ej., "Lee testimonios de clientes satisfechos"
   items: [
     {
-      name: "", // ej., "Juan Pérez"
-      role: "", // ej., "CEO de Empresa A"
-      img: "", // ej., "https://ejemplo.com/juan-perez.jpg"
-      description: "", // ej., "Un testimonio brillante de Juan Pérez sobre nuestro producto"
-      stars: 0, // ej., 5
+      name: "Johan Longo",
+      role: "Contract Manager | PLD Space",
+      img: "https://www.sttok.com/images/logos/logo-pld-mini.png",
+      description:
+        "Sttok nos sirve para poder tener organizada toda la información sobre socios, junas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
+      stars: 5,
     },
     {
-      name: "", // ej., "María García"
-      role: "", // ej., "CTO de Empresa B"
-      img: "", // ej., "https://ejemplo.com/maria-garcia.jpg"
-      description: "", // ej., "La experiencia positiva de María García con nuestro servicio"
-      stars: 0, // ej., 4
+      name: "Lucía Bouzá",
+      role: "Head of Legal & Compliance | Factorial",
+      img: "https://www.sttok.com/images/logos/logo-factorial-mini.png",
+      description:
+        "Sttok nos permite tener toda la información de socios y planes de incentivos centralizada y actualizada. Nos facilita la gestión de juntas y la relación con los inversores.",
+      stars: 5,
     },
     {
-      name: "", // ej., "Roberto Rodríguez"
-      role: "", // ej., "Fundador de Startup C"
-      img: "", // ej., "https://ejemplo.com/roberto-rodriguez.jpg"
-      description: "", // ej., "Cómo nuestro producto ayudó a crecer la startup de Roberto Rodríguez"
-      stars: 0, // ej., 5
+      name: "Oriol Miralbell", // ej., "María García"
+      role: "CEO | Legalpigeon", // ej., "CTO de Empresa B"
+      img: "https://www.sttok.com/wp-content/uploads/2023/11/maria-garcia.jpg", // ej., "https://ejemplo.com/maria-garcia.jpg"
+      description:
+        "Sttok te permite calcular valoraciones, rondas de inversión y simulaciones fácilmente. La interfaz de la aplicación es sencilla e intuitiva, lo que  te permite tomar decisiones de manera más ágil y eficaz.",
+      stars: 4, // ej., 4
     },
     {
-      name: "", // ej., "Ana Martínez"
-      role: "", // ej., "Directora de Marketing en Empresa D"
-      img: "", // ej., "https://ejemplo.com/ana-martinez.jpg"
-      description: "", // ej., "Las opiniones de Ana Martínez sobre el impacto de nuestro producto"
-      stars: 0, // ej., 5
+      name: "Nacho González",
+      role: "CEO y Fundador | Banktrack",
+      img: "https://www.sttok.com/images/logos/logo-banktrack-mini.png",
+      description:
+        "Ahora con Sttok puedes realizar simulaciones de ampliaciones o notas convertibles. Además también gestionamos las phantoms de nuestro equipo fácilmente. Finalmente como inversor tengo organizadas mis participadas y conozco claramente qué es lo que tengo.",
+      stars: 5,
     },
   ],
 };
