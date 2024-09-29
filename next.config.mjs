@@ -2,10 +2,22 @@
 const nextConfig = {
   async rewrites() {
     return [
+      // Products
       { source: "/libro-de-socios", destination: "/partners-book" },
       { source: "/planes-de-incentivos", destination: "/incentive-plans" },
       { source: "/juntas-consejos", destination: "/shareholder-meetings" },
       { source: "/simulador", destination: "/operation-drafts" },
+      // Solutions
+      { source: "/soluciones", destination: "/solutions" },
+      { source: "/soluciones/empresas", destination: "/solutions/companies" },
+      { source: "/soluciones/abogados", destination: "/solutions/lawyers" },
+      { source: "/soluciones/startups", destination: "/solutions/startups" },
+      { source: "/soluciones/inversores", destination: "/solutions/investors" },
+      {
+        source: "/soluciones/portal-del-inversor",
+        destination: "/solutions/investors-dashboard",
+      },
+      // Resources
       { source: "/recursos", destination: "/resources" },
     ];
   },

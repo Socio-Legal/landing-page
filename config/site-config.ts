@@ -61,31 +61,31 @@ export const siteConfig = {
       content: {
         items: [
           {
-            href: "https://www.sttok.com/landing/empresas/",
+            href: "/soluciones/empresas/",
             title: "Empresa y Grupos Societarios",
             description:
               "Digitaliza la gestión societaria de la Sociedad: Libro de socios, Juntas de Accionistas, Documentación Societaria, Apoderados, etc.",
           },
           {
-            href: "https://www.sttok.com/landing/abogados/",
+            href: "/soluciones/abogados/",
             title: "Abogados",
             description:
               "Optimiza tu tiempo con la gestión digital de sociedades. Ahorra tiempo y evita errores. Automatiza tareas manuales e incrementa la productividad.",
           },
           {
-            href: "https://www.sttok.com/landing/startups/",
+            href: "/soluciones/startups/",
             title: "Startups",
             description:
               "Captable, Planes de Incentivos, Simulador de ampliaciones, notas convertibles, juntas de accionistas, sindicación de socios, etc.",
           },
           {
-            href: "https://www.sttok.com/landing/portal-del-inversor/",
+            href: "/soluciones/portal-del-inversor/",
             title: "Portal del Inversor",
             description:
               "Da acceso a tus inversores acceso a una plataforma donde dispondrán de toda la informacion que les quieras facilitar.",
           },
           {
-            href: "https://www.sttok.com/landing/inversores/",
+            href: "/soluciones/inversores/",
             title: "Inversores",
             description:
               "Acceso desde una única plataforma a los datos de sociedades participadas. Información real sin utilizar excels desactualizados.",
