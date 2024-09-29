@@ -4,6 +4,7 @@ import React, { FC, forwardRef, useRef } from "react";
 
 import { cn } from "@/lib/utils";
 import { AnimatedBeam } from "@/components/magicui/animated-beam";
+import { Icons as SttokIcons } from "@/components/icons";
 import { Icons } from "./icons";
 
 const Circle = forwardRef<
@@ -69,7 +70,7 @@ export const AnimatedBeamMultiToSingle: FC<AnimatedBeamMultiToSingleProps> = ({
         </div>
         <div className="flex flex-col justify-center">
           <Circle ref={div6Ref} className="size-16">
-            <Icons.openai />
+            <SttokIcons.logoMin />
           </Circle>
         </div>
         <div className="flex flex-col justify-center">
