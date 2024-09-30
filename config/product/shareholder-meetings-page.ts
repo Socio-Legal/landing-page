@@ -30,7 +30,7 @@ export const topFeatures = {
       description:
         "Envía convocatorias digitales con toda la información necesaria a tus accionistas y consejeros en un clic.", // ej., "Descripción de la característica 1"
       icon: "", // ej., "Utilizar este o Animation"
-      animation: "AnimatedDocScanner", // ej., "Utilizar este o Icon"
+      animation: "AnimatedBeam01_ShareholderMeeting", // ej., "Utilizar este o Icon"
       image:
         "https://www.sttok.com/wp-content/uploads/2023/11/digital-call.png", // Imagen para la característica 1
     },
@@ -38,8 +38,8 @@ export const topFeatures = {
       title: "Gestión de Votos y Delegaciones", // ej., "Característica 2"
       description:
         "Permite a los accionistas delegar sus votos y gestionar las votaciones de manera segura y transparente.", // ej., "Descripción de la característica 2"
-      icon: "icon2", // ej., "Utilizar este o Animation"
-      animation: "", // ej., "Utilizar este o Icon"
+      icon: "", // ej., "Utilizar este o Animation"
+      animation: "AnimatedBeam03", // ej., "Utilizar este o Icon"
       image:
         "https://www.sttok.com/wp-content/uploads/2023/11/voting-management.png", // Imagen para la característica 2
     },
@@ -47,8 +47,8 @@ export const topFeatures = {
       title: "Generación Automática de Actas", // ej., "Característica 3"
       description:
         "Crea actas de reuniones y certificados de acuerdos de manera automática y en pocos minutos.", // ej., "Descripción de la característica 3"
-      icon: "icon3", // ej., "Utilizar este o Animation"
-      animation: "", // ej., "Utilizar este o Icon"
+      icon: "", // ej., "Utilizar este o Animation"
+      animation: "AnimatedDocScanner", // ej., "Utilizar este o Icon"
       image:
         "https://www.sttok.com/wp-content/uploads/2023/11/act-generation.png", // Imagen para la característica 3
     },
@@ -136,7 +136,7 @@ export const testimonials = {
     {
       name: "Oriol Miralbell", // ej., "María García"
       role: "CEO | Legalpigeon", // ej., "CTO de Empresa B"
-      img: "https://www.sttok.com/wp-content/uploads/2023/11/maria-garcia.jpg", // ej., "https://ejemplo.com/maria-garcia.jpg"
+      img: "https://www.sttok.com/images/logos/logo-legalpigeon-mini.png", // ej., "https://ejemplo.com/maria-garcia.jpg"
       description:
         "Sttok te permite calcular valoraciones, rondas de inversión y simulaciones fácilmente. La interfaz de la aplicación es sencilla e intuitiva, lo que  te permite tomar decisiones de manera más ágil y eficaz.",
       stars: 4, // ej., 4

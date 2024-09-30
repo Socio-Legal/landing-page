@@ -11,10 +11,17 @@ import { AnimatedCard4 } from "./animated-card-4";
 import { AnimatedCard9 } from "./animated-card-9";
 import { AnimatedCloud } from "./animated-cloud";
 import { AnimatedDocScanner } from "./animated-doc-scanner";
+import { beamShareholderMeeting } from "@/config/beams";
 
 export const AnimatedBeams = {
   AnimatedBeam01: (
     <AnimatedBeamSingleToMulti className="border-0 p-0 h-[240px] mb-16 md:shadow-none" />
+  ),
+  AnimatedBeam01_ShareholderMeeting: (
+    <AnimatedBeamSingleToMulti
+      className="border-0 p-0 h-[240px] mb-16 md:shadow-none"
+      icons={beamShareholderMeeting}
+    />
   ),
   AnimatedBeam02: (
     <AnimatedBeamMultiToSingle className="border-0 p-0 h-[240px] mb-16 md:shadow-none" />

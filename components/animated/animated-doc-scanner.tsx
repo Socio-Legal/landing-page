@@ -1,10 +1,8 @@
 import React from "react";
 
-type Props = {};
-
-export const AnimatedDocScanner = (props: Props) => {
+export const AnimatedDocScanner = () => {
   return (
-    <div className="relative h-full min-h-[500px] rounded-[20px] p-0 lg:col-span-1">
+    <div className="relative h-full min-h-[240px] rounded-[20px] p-0 lg:col-span-1 mb-6">
       <p className="absolute -top-20 left-1/2 hidden size-fit -translate-x-1/2 items-center justify-center object-contain lg:flex">
         {/* Step 1 */}
         <svg
