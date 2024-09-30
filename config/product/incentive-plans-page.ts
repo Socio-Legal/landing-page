@@ -30,8 +30,8 @@ export const topFeatures = {
       title: "Personalización de Planes", // ej., "Característica 1"
       description:
         "Crea planes de incentivos adaptados a las necesidades de tu organización.", // ej., "Descripción de la característica 1"
-      icon: "icon1", // ej., "Utilizar este o Animation"
-      animation: "", // ej., "Utilizar este o Icon"
+      icon: "", // ej., "Utilizar este o Animation"
+      animation: "AnimatedCard4", // ej., "Utilizar este o Icon"
       image:
         "https://www.sttok.com/wp-content/uploads/2023/11/customization.png", // ej., "ImagenCaracteristica1"
     },
