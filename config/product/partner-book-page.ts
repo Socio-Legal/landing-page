@@ -25,25 +25,25 @@ export const topFeatures = {
     "Las 3 mejores razones para gestionar tu Libro de Socios con Sttok",
   items: [
     {
-      title: "Data Overload",
+      title: "Libro de Socios Actualizado",
       description:
-        "Businesses struggle to make sense of vast amounts of complex data, missing out on valuable insights that could drive growth and innovation.",
+        "Información, numeración, % y primas actualizadas y al día. Toma decisiones con datos exactos y diluciones correctas.",
       // icon: "Brain",
       animation: "AnimatedBeam01",
       image: "Feature1",
     },
     {
-      title: "Slow Decision-Making",
+      title: "Acceso para Socios e Inversores",
       description:
-        "Traditional data processing methods are too slow, causing businesses to lag behind market changes and miss crucial opportunities.",
+        "Gestiona profesionalmente la sociedada facilitando el acceso a los datos, documentos y certificados individuales de cada socio.",
       // icon: "Zap",
       animation: "AnimatedBeam03",
       image: "Feature2",
     },
     {
-      title: "Data Security Concerns",
+      title: "Libro Oficial Exportable",
       description:
-        "With increasing cyber threats, businesses worry about the safety of their sensitive information when adopting new technologies.",
+        "Tendrás el Libro de Socios actualizado y listo para compartir, presentar ante registros oficiales o para simular cualquier operación.",
       // icon: "Shield",
       animation: "AnimatedBeam02",
       image: "Feature3",
