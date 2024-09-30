@@ -14,6 +14,7 @@ export const siteConfig = {
     email: "info@sttok.com",
   },
   banner: {
+    enabled: false,
     title: "Sttok ya disponible en AWS Marketplace",
     text: "Descubre la nueva forma de gestionar tu sociedad",
     link: "https://app.sttok.com/#/",
@@ -108,10 +109,11 @@ export const siteConfig = {
     },
     {
       text: "Solicitar demo",
-      link: "/signup",
+      link: "https://calendly.com/sttok/30min",
       variant: "default",
       className: "w-full sm:w-auto text-background flex gap-2",
       hasIcon: false,
+      blankPage: true,
     },
   ],
   footer: {

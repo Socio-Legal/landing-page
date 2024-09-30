@@ -5,8 +5,8 @@ export const header = {
     "Conoce cómo Sttok puede ayudarte en la gestión societaria según tus necesidades y ahorra tiempo y evita errores con el software líder en gestión de sociedades.",
 
   buttonText: "Ver funcionalidades",
-  buttonLink: "#",
+  buttonLink: "/producto/",
 
   secondaryButtonText: "Agendar demo",
-  secondaryButtonLink: "#",
+  secondaryButtonLink: "https://calendly.com/sttok/30min",
 };

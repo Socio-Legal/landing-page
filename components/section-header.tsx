@@ -73,7 +73,11 @@ const SectionHeader = ({
 
       {secondaryButtonText && secondaryButtonLink && (
         <Button variant="outline" asChild>
-          <Link href={secondaryButtonLink} className={secondaryButtonClassName}>
+          <Link
+            href={secondaryButtonLink}
+            target="_blank"
+            className={secondaryButtonClassName}
+          >
             {secondaryButtonText}
             <ChevronRight className="ml-1 size-4 transition-all duration-300 ease-out group-hover:translate-x-1" />
           </Link>
