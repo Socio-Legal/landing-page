@@ -29,8 +29,8 @@ export const topFeatures = {
       title: "Convocatoria Digital", // ej., "Característica 1"
       description:
         "Envía convocatorias digitales con toda la información necesaria a tus accionistas y consejeros en un clic.", // ej., "Descripción de la característica 1"
-      icon: "icon1", // ej., "Utilizar este o Animation"
-      animation: "", // ej., "Utilizar este o Icon"
+      icon: "", // ej., "Utilizar este o Animation"
+      animation: "AnimatedDocScanner", // ej., "Utilizar este o Icon"
       image:
         "https://www.sttok.com/wp-content/uploads/2023/11/digital-call.png", // Imagen para la característica 1
     },

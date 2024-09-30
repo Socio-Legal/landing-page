@@ -9,12 +9,21 @@ import ProductSectionHeader from "../product-section-header";
 type ClientsSectionProps = {
   title: string;
   clients: string[];
+  hideTopSpace?: boolean;
 };
 
-const ClientsSection: FC<ClientsSectionProps> = ({ title, clients }) => {
+const ClientsSection: FC<ClientsSectionProps> = ({
+  title,
+  clients,
+  hideTopSpace = false,
+}) => {
+  const verticalPadding = hideTopSpace
+    ? "pb-12 md:pb-24 lg:pb-32"
+    : "py-12 md:py-24 lg:py-32";
+
   return (
     <section id="product-clients" className="bg-white dark:bg-black">
-      <div className="container mx-auto px-4 md:px-8 pb-12 md:pb-24 lg:pb-32">
+      <div className={`container mx-auto px-4 md:px-8 ${verticalPadding}`}>
         <ProductSectionHeader description={title} />
 
         <div className="relative mt-6">

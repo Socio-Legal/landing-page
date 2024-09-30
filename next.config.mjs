@@ -47,6 +47,12 @@ const nextConfig = {
         port: "",
         pathname: "/ably/ghost/prod/**",
       },
+      {
+        protocol: "https",
+        hostname: "avatar.vercel.sh",
+        port: "",
+        pathname: "/**",
+      },
     ],
   },
 };

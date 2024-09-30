@@ -39,16 +39,16 @@ export const topFeatures = {
       title: "Automatización de Cálculos", // ej., "Característica 2"
       description:
         "Automatiza la firma, el cálculo, el vesting y el seguimiento de los planes para cada empleado.", // ej., "Descripción de la característica 2"
-      icon: "icon2", // ej., "Utilizar este o Animation"
-      animation: "", // ej., "Utilizar este o Icon"
+      icon: "", // ej., "Utilizar este o Animation"
+      animation: "AnimatedCard9_IncentivePlan", // ej., "Utilizar este o Icon"
       image: "https://www.sttok.com/wp-content/uploads/2023/11/automation.png", // ej., "ImagenCaracteristica2"
     },
     {
       title: "Acceso para beneficiarios", // ej., "Característica 3"
       description:
         "Los empleados pueden visualizar y seguir el estado de sus incentivos.", // ej., "Descripción de la característica 3"
-      icon: "icon3", // ej., "Utilizar este o Animation"
-      animation: "", // ej., "Utilizar este o Icon"
+      icon: "", // ej., "Utilizar este o Animation"
+      animation: "AnimatedCard3", // ej., "Utilizar este o Icon"
       image:
         "https://www.sttok.com/wp-content/uploads/2023/11/transparency.png", // ej., "ImagenCaracteristica3"
     },

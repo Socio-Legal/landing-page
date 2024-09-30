@@ -1,8 +1,8 @@
 export const metadata = {
-  title: "Startups", // ej., "Nombre del Producto"
-  description: "Descubre las soluciones que ofrecemos para tu empresa", // ej., "Una breve descripción del producto o servicio"
+  title: "Sttok para Startups", // ej., "Nombre del Producto"
+  description: "Soluciones de captable, planes incentivos y mucho más para tu startup", // ej., "Una breve descripción del producto o servicio"
   keywords:
-    "soluciones, productos, servicios, empresas, clientes, beneficios, características, testimonios", // ej., "palabra_clave1, palabra_clave2, palabra_clave3"
+    "startup, sttok, captable, phantoms, incentivos, beneficiarios ", // ej., "palabra_clave1, palabra_clave2, palabra_clave3"
 };
 
 export const hero = {
@@ -10,8 +10,8 @@ export const hero = {
   description:
     "Gestión digital de Startups. Céntrate en hacer crecer la empresa y utiliza Sttok para cálculos de rondas, planes de incentivos, libro de socios, juntas, etc…", // ej., "Una descripción convincente del principal beneficio de tu producto"
   button: {
-    text: "", // ej., "Comenzar"
-    link: "", // ej., "/registro"
+    text: "Solicitar Demo", // Texto del botón
+    link: "https://www.sttok.com/demo", // Enlace del botón
   },
   image: {
     light: "", // ej., "https://ejemplo.com/imagen-hero-clara.jpg"
@@ -20,43 +20,43 @@ export const hero = {
 };
 
 export const clients = {
-  title: "", // ej., "Nuestros Clientes de Confianza"
-  clients: [], // ej., ["Cliente1", "Cliente2", "Cliente3"]
+  title: "Confian en Sttok", // ej., "Nuestros Clientes de Confianza"
+  clients: ["Factorial", "PldSpace", "TaxDown", "MyInvestor", "Shakers", "Barkibu", "Yaba", "Banktrack"], // Lista de clientes
 };
 
 export const features = {
-  title: "", // ej., "Todas las Características"
-  description: "", // ej., "Explora todas las características que hacen único a nuestro producto"
+  title: "Todas las Características", // Título de la sección de características
+  description: "Explora las características que hacen de Sttok una herramienta esencial para startups.", // Descripción de las características
   items: [
     {
-      icon: "", // ej., "Icono1"
-      title: "", // ej., "Característica 1"
-      description: "", // ej., "Descripción detallada de la característica 1"
+      icon: "Icon01", // Ícono de la característica 1
+      title: "Libro de Socios Oficial", // Título de la característica 1
+      description: "Gestiona y actualiza fácilmente el libro de socios de tu startup.", // Descripción de la característica 1
     },
     {
-      icon: "", // ej., "Icono2"
-      title: "", // ej., "Característica 2"
-      description: "", // ej., "Descripción detallada de la característica 2"
+      icon: "Icon02", // Ícono de la característica 2
+      title: "Planes de Incentivos", // Título de la característica 2
+      description: "Administra stock options y phantoms, y da acceso a los empleados a sus incentivos.", // Descripción de la característica 2
     },
     {
-      icon: "", // ej., "Icono3"
-      title: "", // ej., "Característica 3"
-      description: "", // ej., "Descripción detallada de la característica 3"
+      icon: "Icon03", // Ícono de la característica 3
+      title: "Juntas y Consejos", // Título de la característica 3
+      description: "Automatiza la gestión de juntas de accionistas y consejos con votación digital y proxy.", // Descripción de la característica 3
     },
     {
-      icon: "", // ej., "Icono4"
-      title: "", // ej., "Característica 4"
-      description: "", // ej., "Descripción detallada de la característica 4"
+      icon: "Icon04", // Ícono de la característica 4
+      title: "Simulador de Operaciones", // Título de la característica 4
+      description: "Calcula rondas de financiación y ampliaciones de capital con precisión y rapidez.", // Descripción de la característica 4
     },
     {
-      icon: "", // ej., "Icono5"
-      title: "", // ej., "Característica 5"
-      description: "", // ej., "Descripción detallada de la característica 5"
+      icon: "Icon05", // ej., "Icono5"
+      title: "Acceso a los socios", // ej., "Característica 5"
+      description: "Si quieres puedes dar acceso profesional a tus inversores", // ej., "Descripción detallada de la característica 5"
     },
     {
-      icon: "", // ej., "Icono6"
-      title: "", // ej., "Característica 6"
-      description: "", // ej., "Descripción detallada de la característica 6"
+      icon: "Icon06", // ej., "Icono6"
+      title: "Sindicación", // ej., "Característica 6"
+      description: "Configura la sindiación de forma fácil para simplificar la gestión de tu empresa", // ej., "Descripción detallada de la característica 6"
     },
   ],
 };
@@ -66,32 +66,36 @@ export const testimonials = {
   description: "", // ej., "Lee testimonios de clientes satisfechos"
   items: [
     {
-      name: "", // ej., "Juan Pérez"
-      role: "", // ej., "CEO de Empresa A"
-      img: "", // ej., "https://ejemplo.com/juan-perez.jpg"
-      description: "", // ej., "Un testimonio brillante de Juan Pérez sobre nuestro producto"
-      stars: 0, // ej., 5
+      name: "Lucía Bouzá",
+      role: "Head of Legal & Compliance | Factorial",
+      img: "https://www.sttok.com/images/logos/logo-factorial-mini.png",
+      description:
+        "Sttok nos permite tener toda la información de socios y planes de incentivos centralizada y actualizada. Nos facilita la gestión de juntas y la relación con los inversores.",
+      stars: 5,
+    },
+	{
+      name: "Gerard Garcia",
+      role: "CEO | Deale",
+      img: "https://www.sttok.com/images/logos/logo-deale-mini.png",
+      description:
+        "Sttok nos permite gestionar de forma efectiva planes de incentivos para empleados, libro de socios, simulación de operaciones y juntas de accionistas.",
+      stars: 5,
     },
     {
-      name: "", // ej., "María García"
-      role: "", // ej., "CTO de Empresa B"
-      img: "", // ej., "https://ejemplo.com/maria-garcia.jpg"
-      description: "", // ej., "La experiencia positiva de María García con nuestro servicio"
-      stars: 0, // ej., 4
+      name: "Johan Longo",
+      role: "Contract Manager | PLD Space",
+      img: "https://www.sttok.com/images/logos/logo-pld-mini.png",
+      description:
+        "Sttok nos sirve para poder tener organizada toda la información sobre socios, junas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
+      stars: 5,
     },
     {
-      name: "", // ej., "Roberto Rodríguez"
-      role: "", // ej., "Fundador de Startup C"
-      img: "", // ej., "https://ejemplo.com/roberto-rodriguez.jpg"
-      description: "", // ej., "Cómo nuestro producto ayudó a crecer la startup de Roberto Rodríguez"
-      stars: 0, // ej., 5
-    },
-    {
-      name: "", // ej., "Ana Martínez"
-      role: "", // ej., "Directora de Marketing en Empresa D"
-      img: "", // ej., "https://ejemplo.com/ana-martinez.jpg"
-      description: "", // ej., "Las opiniones de Ana Martínez sobre el impacto de nuestro producto"
-      stars: 0, // ej., 5
+      name: "Nacho González",
+      role: "CEO y Fundador | Banktrack",
+      img: "https://www.sttok.com/images/logos/logo-banktrack-mini.png",
+      description:
+        "Ahora con Sttok puedes realizar simulaciones de ampliaciones o notas convertibles. Además también gestionamos las phantoms de nuestro equipo fácilmente. Finalmente como inversor tengo organizadas mis participadas y conozco claramente qué es lo que tengo.",
+      stars: 5,
     },
   ],
 };

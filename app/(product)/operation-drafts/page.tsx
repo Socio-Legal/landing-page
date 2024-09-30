@@ -26,7 +26,7 @@ const Page = () => {
     <>
       <HeroSection {...hero} />
       <TopFeatures {...topFeatures} />
-      <ClientsSection {...clients} />
+      <ClientsSection {...clients} hideTopSpace />
       <FeaturesSection {...features} />
       <TestimonialsSection {...testimonials} />
       <CallToActionSection />

@@ -1,8 +1,8 @@
 export const metadata = {
-  title: "Abogados", // ej., "Nombre del Producto"
-  description: "Descubre las soluciones que ofrecemos para tu empresa", // ej., "Una breve descripción del producto o servicio"
+  title: "Sttok para Abogados", // ej., "Nombre del Producto"
+  description: "Software gestión sociedades para Abogados. Sttok te permite gestionar el libro de socios, planes de incentivos, juntas de accionistas, consejos de administración, etc.", // ej., "Una breve descripción del producto o servicio"
   keywords:
-    "soluciones, productos, servicios, empresas, clientes, beneficios, características, testimonios", // ej., "palabra_clave1, palabra_clave2, palabra_clave3"
+    "gestión societaria, abogados, captable, libro de socios, planes de incentivos, juntas de accionistas, consejos, testimonios", // ej., "palabra_clave1, palabra_clave2, palabra_clave3"
 };
 
 export const hero = {
@@ -10,8 +10,8 @@ export const hero = {
   description:
     "Con Sttok digitalizas la gestión de sociedades incrementando el número de sociedades que gestiona un abogado, ahorrando tiempo y evitando errores. Sttok te permite dar un mejor servicio a los clientes ganando tiempo y aportando valor.", // ej., "Una descripción convincente del principal beneficio de tu producto"
   button: {
-    text: "", // ej., "Comenzar"
-    link: "", // ej., "/registro"
+    text: "Solicitar Demo", // ej., "Comenzar"
+    link: "/demo", // ej., "/registro"
   },
   image: {
     light: "", // ej., "https://ejemplo.com/imagen-hero-clara.jpg"
@@ -20,78 +20,71 @@ export const hero = {
 };
 
 export const clients = {
-  title: "", // ej., "Nuestros Clientes de Confianza"
-  clients: [], // ej., ["Cliente1", "Cliente2", "Cliente3"]
+  title: "Despachos de Abogados que confían en Sttok", // ej., "Nuestros Clientes de Confianza"
+  clients: ["Broseta", "LetsLaw", "Zurbaran Abogados", "Derecho.com"], // ej., ["Cliente1", "Cliente2", "Cliente3"]
 };
 
 export const features = {
-  title: "", // ej., "Todas las Características"
-  description: "", // ej., "Explora todas las características que hacen único a nuestro producto"
+  title: "Funcionalidades Clave para Abogados", // ej., "Todas las Características"
+  description: "Sttok permite a los abogados digitalizar la gestión de sociedades, optimizando tareas como el libro de socios, juntas de accionistas, Consejos o planes de incentivos.", // ej., "Explora todas las características que hacen único a nuestro producto"
   items: [
     {
-      icon: "", // ej., "Icono1"
-      title: "", // ej., "Característica 1"
-      description: "", // ej., "Descripción detallada de la característica 1"
+      icon: "Icono01", // ej., "Icono1"
+      title: "Libro de Socios", // ej., "Característica 1"
+      description: "Gestiona digitalmente el libro de socios de manera eficiente y sin errores.", // ej., "Descripción detallada de la característica 1"
+    },
+	{
+      icon: "Icono02", // ej., "Icono3"
+      title: "Simulador de Operaciones", // ej., "Característica 3"
+      description: "Realiza cálculos exactos para operaciones societarias en pocos minutos.", // ej., "Descripción detallada de la característica 3"
     },
     {
-      icon: "", // ej., "Icono2"
-      title: "", // ej., "Característica 2"
-      description: "", // ej., "Descripción detallada de la característica 2"
+      icon: "Icono03", // ej., "Icono2"
+      title: "Planes de Incentivos", // ej., "Característica 2"
+      description: "Automatiza la gestión de stock options y otros planes de incentivos.", // ej., "Descripción detallada de la característica 2"
     },
     {
-      icon: "", // ej., "Icono3"
-      title: "", // ej., "Característica 3"
-      description: "", // ej., "Descripción detallada de la característica 3"
+      icon: "Icono04", // ej., "Icono4"
+      title: "Juntas de Accionistas", // ej., "Característica 4"
+      description: "Convoca, vota y gestiona digitalmente juntas de accionistas.", // ej., "Descripción detallada de la característica 4"
     },
     {
-      icon: "", // ej., "Icono4"
-      title: "", // ej., "Característica 4"
-      description: "", // ej., "Descripción detallada de la característica 4"
+      icon: "Icono05", // ej., "Icono5"
+      title: "Consejos de Administración", // ej., "Característica 5"
+      description: "Gestiona digitalmente las reuniones y votaciones del Consejo.", // ej., "Descripción detallada de la característica 5"
     },
     {
-      icon: "", // ej., "Icono5"
-      title: "", // ej., "Característica 5"
-      description: "", // ej., "Descripción detallada de la característica 5"
-    },
-    {
-      icon: "", // ej., "Icono6"
-      title: "", // ej., "Característica 6"
-      description: "", // ej., "Descripción detallada de la característica 6"
+      icon: "Icono06", // ej., "Icono6"
+      title: "Documentación Societaria", // ej., "Característica 6"
+      description: "Genera y administra actas, certificados y otros documentos de manera automática.", // ej., "Descripción detallada de la característica 6"
     },
   ],
 };
 
 export const testimonials = {
-  title: "", // ej., "Lo que Dicen Nuestros Clientes"
-  description: "", // ej., "Lee testimonios de clientes satisfechos"
+  title: "Lo que Dicen Nuestros Clientes", // ej., "Lo que Dicen Nuestros Clientes"
+  description: "Empresas que ya han mejorado su gestión societaria con Sttok.", // ej., "Lee testimonios de clientes satisfechos"
   items: [
     {
-      name: "", // ej., "Juan Pérez"
-      role: "", // ej., "CEO de Empresa A"
+      name: "Toni de Weest Prat", // ej., "Juan Pérez"
+      role: "Abogado Socio, Broseta", // ej., "CEO de Empresa A"
       img: "", // ej., "https://ejemplo.com/juan-perez.jpg"
-      description: "", // ej., "Un testimonio brillante de Juan Pérez sobre nuestro producto"
-      stars: 0, // ej., 5
+      description: "Sttok nos permite gestionar libros de socios de forma eficiente, evitando tareas manuales inecesarias y enfocándonos en aportar valor a nuestros clientes.", // ej., "Un testimonio brillante de Juan Pérez sobre nuestro producto"
+      stars: 5, // ej., 5
     },
     {
-      name: "", // ej., "María García"
-      role: "", // ej., "CTO de Empresa B"
+      name: "Patricia Manca", // ej., "María García"
+      role: "Socia responsable de NewLaw, PwC", // ej., "CTO de Empresa B"
       img: "", // ej., "https://ejemplo.com/maria-garcia.jpg"
-      description: "", // ej., "La experiencia positiva de María García con nuestro servicio"
-      stars: 0, // ej., 4
+      description: "Sttok nos ayuda en la gestión digital de sociedades, facilitando la automatización de procesos críticos como juntas, captables y planes de incentivos.", // ej., "La experiencia positiva de María García con nuestro servicio"
+      stars: 5, // ej., 5
     },
     {
-      name: "", // ej., "Roberto Rodríguez"
-      role: "", // ej., "Fundador de Startup C"
+      name: "Jose María Baños", // ej., "Roberto Rodríguez"
+      role: "Abogado Socio, LetsLaw", // ej., "Fundador de Startup C"
       img: "", // ej., "https://ejemplo.com/roberto-rodriguez.jpg"
-      description: "", // ej., "Cómo nuestro producto ayudó a crecer la startup de Roberto Rodríguez"
-      stars: 0, // ej., 5
-    },
-    {
-      name: "", // ej., "Ana Martínez"
-      role: "", // ej., "Directora de Marketing en Empresa D"
-      img: "", // ej., "https://ejemplo.com/ana-martinez.jpg"
-      description: "", // ej., "Las opiniones de Ana Martínez sobre el impacto de nuestro producto"
-      stars: 0, // ej., 5
+      description: "Sttok ha automatizado gran parte de la gestión de sociedades, permitiéndonos ofrecer un mejor servicio a nuestros clientes.", // ej., "Cómo nuestro producto ayudó a crecer la startup de Roberto Rodríguez"
+      stars: 5, // ej., 5
     },
   ],
 };
