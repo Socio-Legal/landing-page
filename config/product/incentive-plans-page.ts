@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Planes de Incentivos", // ej., "Nombre del Producto"
   description:
-    "Gestiona los planes de incentivos (phantom share plan, stock option plans, etc.), de tu empresa de manera eficiente y profesional.", // ej., "Una breve descripción del producto o servicio"
+    "Gestiona los planes de incentivos (phantom share plan, stock option plans, estc.), de tu empresa de manera eficiente y profesional.", // ej., "Una breve descripción del producto o servicio"
   keywords:
     "planes de incentivos, phantoms, opciones sobre acciones, compensación flexible, gestión de incentivos, vesting", // ej., "palabra_clave1, palabra_clave2, palabra_clave3"
 };
@@ -60,10 +60,12 @@ export const clients = {
   clients: [
     "Factorial",
     "DerechoCom",
-    "Mailtrack",
+    "Shakers",
     "Taxdown",
     "PldSpace",
     "Broseta",
+    "MyInvestor",
+    "Yaba",
   ],
 };
 
@@ -119,6 +121,12 @@ export const features = {
       title: "Simulaciones y Proyecciones",
       description:
         "Integración con el módulo de simulación para realizar proyecciones futuras y analizar diferentes escenarios de planes de incentivos.",
+    },
+    {
+      icon: "Icon09",
+      title: "Tender offers. Ventas",
+      description:
+        "Gestiona ofertas de venta, recompra o tender offers. Incluye cálculo de retenciones, firma de contrato, etc.",
     },
   ],
 };
