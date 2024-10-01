@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Sttok para Abogados", // ej., "Nombre del Producto"
-  description: "Software gestión sociedades para Abogados. Sttok te permite gestionar el libro de socios, planes de incentivos, juntas de accionistas, consejos de administración, etc.", // ej., "Una breve descripción del producto o servicio"
+  description:
+    "Software gestión sociedades para Abogados. Sttok te permite gestionar el libro de socios, planes de incentivos, juntas de accionistas, consejos de administración, etc.", // ej., "Una breve descripción del producto o servicio"
   keywords:
     "gestión societaria, abogados, captable, libro de socios, planes de incentivos, juntas de accionistas, consejos, testimonios", // ej., "palabra_clave1, palabra_clave2, palabra_clave3"
 };
@@ -26,37 +27,44 @@ export const clients = {
 
 export const features = {
   title: "Funcionalidades Clave para Abogados", // ej., "Todas las Características"
-  description: "Sttok permite a los abogados digitalizar la gestión de sociedades, optimizando tareas como el libro de socios, juntas de accionistas, Consejos o planes de incentivos.", // ej., "Explora todas las características que hacen único a nuestro producto"
+  description:
+    "Sttok permite a los abogados digitalizar la gestión de sociedades, optimizando tareas como el libro de socios, juntas de accionistas, Consejos o planes de incentivos.", // ej., "Explora todas las características que hacen único a nuestro producto"
   items: [
     {
       icon: "Icono01", // ej., "Icono1"
       title: "Libro de Socios", // ej., "Característica 1"
-      description: "Gestiona digitalmente el libro de socios de manera eficiente y sin errores.", // ej., "Descripción detallada de la característica 1"
+      description:
+        "Gestiona digitalmente el libro de socios de manera eficiente y sin errores.", // ej., "Descripción detallada de la característica 1"
     },
-	{
+    {
       icon: "Icono02", // ej., "Icono3"
       title: "Simulador de Operaciones", // ej., "Característica 3"
-      description: "Realiza cálculos exactos para operaciones societarias en pocos minutos.", // ej., "Descripción detallada de la característica 3"
+      description:
+        "Realiza cálculos exactos para operaciones societarias en pocos minutos.", // ej., "Descripción detallada de la característica 3"
     },
     {
       icon: "Icono03", // ej., "Icono2"
       title: "Planes de Incentivos", // ej., "Característica 2"
-      description: "Automatiza la gestión de stock options y otros planes de incentivos.", // ej., "Descripción detallada de la característica 2"
+      description:
+        "Automatiza la gestión de stock options y otros planes de incentivos.", // ej., "Descripción detallada de la característica 2"
     },
     {
       icon: "Icono04", // ej., "Icono4"
       title: "Juntas de Accionistas", // ej., "Característica 4"
-      description: "Convoca, vota y gestiona digitalmente juntas de accionistas.", // ej., "Descripción detallada de la característica 4"
+      description:
+        "Convoca, vota y gestiona digitalmente juntas de accionistas.", // ej., "Descripción detallada de la característica 4"
     },
     {
       icon: "Icono05", // ej., "Icono5"
       title: "Consejos de Administración", // ej., "Característica 5"
-      description: "Gestiona digitalmente las reuniones y votaciones del Consejo.", // ej., "Descripción detallada de la característica 5"
+      description:
+        "Gestiona digitalmente las reuniones y votaciones del Consejo.", // ej., "Descripción detallada de la característica 5"
     },
     {
       icon: "Icono06", // ej., "Icono6"
       title: "Documentación Societaria", // ej., "Característica 6"
-      description: "Genera y administra actas, certificados y otros documentos de manera automática.", // ej., "Descripción detallada de la característica 6"
+      description:
+        "Genera y administra actas, certificados y otros documentos de manera automática.", // ej., "Descripción detallada de la característica 6"
     },
   ],
 };
@@ -68,22 +76,25 @@ export const testimonials = {
     {
       name: "Toni de Weest Prat", // ej., "Juan Pérez"
       role: "Abogado Socio, Broseta", // ej., "CEO de Empresa A"
-      img: "", // ej., "https://ejemplo.com/juan-perez.jpg"
-      description: "Sttok nos permite gestionar libros de socios de forma eficiente, evitando tareas manuales inecesarias y enfocándonos en aportar valor a nuestros clientes.", // ej., "Un testimonio brillante de Juan Pérez sobre nuestro producto"
+      img: "https://www.sttok.com/images/logos/logo-broseta-mini.png", // ej., "https://ejemplo.com/juan-perez.jpg"
+      description:
+        "Sttok nos permite gestionar libros de socios de forma eficiente, evitando tareas manuales inecesarias y enfocándonos en aportar valor a nuestros clientes.", // ej., "Un testimonio brillante de Juan Pérez sobre nuestro producto"
       stars: 5, // ej., 5
     },
     {
       name: "Patricia Manca", // ej., "María García"
       role: "Socia responsable de NewLaw, PwC", // ej., "CTO de Empresa B"
-      img: "", // ej., "https://ejemplo.com/maria-garcia.jpg"
-      description: "Sttok nos ayuda en la gestión digital de sociedades, facilitando la automatización de procesos críticos como juntas, captables y planes de incentivos.", // ej., "La experiencia positiva de María García con nuestro servicio"
+      img: "https://www.sttok.com/images/logos/logo-pwc-mini.png", // ej., "https://ejemplo.com/maria-garcia.jpg"
+      description:
+        "Sttok nos ayuda en la gestión digital de sociedades, facilitando la automatización de procesos críticos como juntas, captables y planes de incentivos.", // ej., "La experiencia positiva de María García con nuestro servicio"
       stars: 5, // ej., 5
     },
     {
       name: "Jose María Baños", // ej., "Roberto Rodríguez"
       role: "Abogado Socio, LetsLaw", // ej., "Fundador de Startup C"
-      img: "", // ej., "https://ejemplo.com/roberto-rodriguez.jpg"
-      description: "Sttok ha automatizado gran parte de la gestión de sociedades, permitiéndonos ofrecer un mejor servicio a nuestros clientes.", // ej., "Cómo nuestro producto ayudó a crecer la startup de Roberto Rodríguez"
+      img: "https://www.sttok.com/images/logos/logo-letslaw-mini.png", // ej., "https://ejemplo.com/roberto-rodriguez.jpg"
+      description:
+        "Sttok ha automatizado gran parte de la gestión de sociedades, permitiéndonos ofrecer un mejor servicio a nuestros clientes.", // ej., "Cómo nuestro producto ayudó a crecer la startup de Roberto Rodríguez"
       stars: 5, // ej., 5
     },
   ],

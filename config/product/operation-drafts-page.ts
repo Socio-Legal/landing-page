@@ -30,7 +30,7 @@ export const topFeatures = {
       title: "Cálculos Automáticos", // ej., "Característica 1"
       description:
         "Automatiza el cálculo de operaciones como rondas de inversión, ampliaciones de capital y ventas de acciones.",
-      icon: "icon1", // ej., "Utilizar este o Animation"
+      icon: "Calculator", // ej., "Utilizar este o Animation"
       animation: "", // ej., "Utilizar este o Icon"
       image:
         "https://www.sttok.com/wp-content/uploads/2023/11/automatic-calculation.png", // ej., "ImagenCaracteristica1"
@@ -39,7 +39,7 @@ export const topFeatures = {
       title: "Simulaciones en Tiempo Real", // ej., "Característica 2"
       description:
         "Simula escenarios financieros complejos automáticamente, permitiéndote tomar decisiones con datos precisos.",
-      icon: "icon2", // ej., "Utilizar este o Animation"
+      icon: "Users", // ej., "Utilizar este o Animation"
       animation: "", // ej., "Utilizar este o Icon"
       image:
         "https://www.sttok.com/wp-content/uploads/2023/11/scenario-simulation.png", // ej., "ImagenCaracteristica2"
@@ -48,7 +48,7 @@ export const topFeatures = {
       title: "Documentación Automática", // ej., "Característica 3"
       description:
         "Genera todos los documentos necesarios para tus operaciones en cuestión de minutos.",
-      icon: "icon3", // ej., "Utilizar este o Animation"
+      icon: "FileCheck", // ej., "Utilizar este o Animation"
       animation: "", // ej., "Utilizar este o Icon"
       image:
         "https://www.sttok.com/wp-content/uploads/2023/11/documentation-generation.png", // ej., "ImagenCaracteristica3"
@@ -58,7 +58,7 @@ export const topFeatures = {
 
 export const clients = {
   title: "Nuestros Clientes de Confianza", // ej., "Nuestros Clientes de Confianza"
-  clients: ["FinTech Corp", "Startup XYZ", "ABC Ventures", "Innovatech"], // ej., ["Cliente1", "Cliente2", "Cliente3"]
+  clients: ["DerechoCom", "Taxdown", "Caballero", "MyInvestor"], // ej., ["Cliente1", "Cliente2", "Cliente3"]
 };
 
 export const features = {

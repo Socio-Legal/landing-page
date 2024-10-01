@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import BlurFade from "../magicui/blur-fade";
 import { Card, CardContent } from "../ui/card";
-import { Brain, Shield, Zap } from "lucide-react";
+import { Brain, Calculator, FileCheck, Shield, Users, Zap } from "lucide-react";
 import ProductSectionHeader from "../product-section-header";
 import { AnimatedBeamMultiToMulti } from "../animated/animated-beam-multi-to-multi";
 import { getAnimatedBeam } from "../animated/animated-beams";
@@ -29,6 +29,9 @@ const TopFeatureIcons = {
   Shield: <Shield className="w-6 h-6 text-primary" />,
   Brain: <Brain className="w-6 h-6 text-primary" />,
   Zap: <Zap className="w-6 h-6 text-primary" />,
+  Calculator: <Calculator className="w-6 h-6 text-primary" />,
+  Users: <Users className="w-6 h-6 text-primary" />,
+  FileCheck: <FileCheck className="w-6 h-6 text-primary" />,
 };
 
 const TopFeature: FC<TopFeatureProps> = ({ feature, index }) => {
