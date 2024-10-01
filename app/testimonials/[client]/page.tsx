@@ -207,7 +207,7 @@ const Page: FC<PageProps> = ({ params }) => {
               ))}
             </section>
 
-            <section className="justify-self-bottom">
+            <section className="mt-40 mb-6">
               <h2 className="text-2xl font-bold mb-6">
                 Testimonios relacionados
               </h2>
