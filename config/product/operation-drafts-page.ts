@@ -58,7 +58,7 @@ export const topFeatures = {
 
 export const clients = {
   title: "Nuestros Clientes de Confianza", // ej., "Nuestros Clientes de Confianza"
-  clients: ["DerechoCom", "Taxdown", "Caballero", "MyInvestor"], // ej., ["Cliente1", "Cliente2", "Cliente3"]
+  clients: ["Factorial", "LegalPigeon", "Banktrack", "PldSpace"], // ej., ["Cliente1", "Cliente2", "Cliente3"]
 };
 
 export const features = {
@@ -121,7 +121,7 @@ export const testimonials = {
     {
       name: "Oriol Miralbell", // ej., "María García"
       role: "CEO | Legalpigeon", // ej., "CTO de Empresa B"
-      img: "https://www.sttok.com/wp-content/uploads/2023/11/maria-garcia.jpg", // ej., "https://ejemplo.com/maria-garcia.jpg"
+      img: "https://www.sttok.com/images/logos/logo-legalpigeon-mini.png", // ej., "https://ejemplo.com/maria-garcia.jpg"
       description:
         "Sttok te permite calcular valoraciones, rondas de inversión y simulaciones fácilmente. La interfaz de la aplicación es sencilla e intuitiva, lo que  te permite tomar decisiones de manera más ágil y eficaz.",
       stars: 4, // ej., 4

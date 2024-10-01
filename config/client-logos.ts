@@ -1,5 +1,6 @@
 import Factorial from "@/public/logo-factorial.png";
 import Yaba from "@/public/logo-yaba.png";
+import Banktrack from "@/public/logo-banktrack.png";
 import Mailtrack from "@/public/logo-mailtrack.png";
 import Broseta from "@/public/logo-broseta.png";
 import DerechoCom from "@/public/logo-derechocom.png";
@@ -24,6 +25,7 @@ type ClientLogo = keyof typeof clientLogos | string;
 export const clientLogos = {
   Factorial: Factorial,
   Yaba: Yaba,
+  Banktrack: Banktrack,
   Mailtrack: Mailtrack,
   Broseta: Broseta,
   DerechoCom: DerechoCom,
