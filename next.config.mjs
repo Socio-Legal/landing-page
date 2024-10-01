@@ -17,6 +17,9 @@ const nextConfig = {
         source: "/soluciones/portal-del-inversor",
         destination: "/solutions/investors-dashboard",
       },
+      // Testimonios
+      { source: "/testimonios", destination: "/testimonials" },
+      { source: "/testimonios/:client", destination: "/testimonials/:client" },
       // Precios
       { source: "/precios", destination: "/pricing" },
       // Resources
@@ -60,6 +63,12 @@ const nextConfig = {
         hostname: "businesstalentgroup.com",
         port: "",
         pathname: "/wp-content/uploads/**",
+      },
+      {
+        protocol: "https",
+        hostname: "static.vecteezy.com",
+        port: "",
+        pathname: "/system/resources/previews/**",
       },
     ],
   },

@@ -3,19 +3,16 @@ import { SiteBanner } from "@/components/site-banner";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
-interface ResourcesLayoutProps {
+interface TestimonialsLayoutProps {
   children: React.ReactNode;
 }
 
-export default async function ResourcesLayout({
+export default async function TestimonialsLayout({
   children,
-}: ResourcesLayoutProps) {
+}: TestimonialsLayoutProps) {
   return (
     <>
-      <SiteBanner />
-      <SiteHeader />
       <main className="mx-auto flex-1 overflow-hidden">{children}</main>
-      <SiteFooter />
     </>
   );
 }
