@@ -193,13 +193,16 @@ const Page: FC<PageProps> = ({ params }) => {
               )}
 
               {content?.sections?.map((section, index) => (
-                <div className="mb-12">
+                <div className="mb-12" key={`section-content-${index}`}>
                   <h2 className="text-2xl font-bold mb-4">
                     {section?.title || ""}
                   </h2>
 
-                  {section?.texts?.map((text, index) => (
-                    <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  {section?.texts?.map((text, indexTexts) => (
+                    <p
+                      className="text-gray-600 dark:text-gray-300 mb-4"
+                      key={`section-texts-${index}-${indexTexts}`}
+                    >
                       {text}
                     </p>
                   ))}
