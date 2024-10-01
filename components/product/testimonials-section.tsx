@@ -47,14 +47,16 @@ const TestimonialItem: FC<TestimonialItemProps> = ({ testimonial, index }) => {
           </BlurFade>
           <BlurFade delay={0.25 * 2} inView>
             <div className="mt-8">
-              <Image
-                width={40}
-                height={40}
-                key={index}
-                src={img}
-                alt={"Testimonial logo"}
-                className="mx-auto rounded-full mb-4"
-              />
+              {img && (
+                <Image
+                  width={40}
+                  height={40}
+                  key={index}
+                  src={img}
+                  alt={"Testimonial logo"}
+                  className="mx-auto rounded-full mb-4"
+                />
+              )}
             </div>
           </BlurFade>
           <div className="">

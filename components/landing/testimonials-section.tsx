@@ -38,7 +38,7 @@ type TestimonialStarsProps = {
 type TestimonialCardProps = {
   name: string;
   role: string;
-  img: string;
+  img?: string;
   description: string;
   className?: string;
   stars?: number;
@@ -81,13 +81,15 @@ const TestimonialCard: FC<TestimonialCardProps> = ({
     </div>
 
     <div className="flex w-full select-none items-center justify-start gap-5">
-      <Image
-        src={img}
-        alt={name}
-        width={40}
-        height={40}
-        className="h-10 w-10 rounded-full ring-1 ring-border ring-offset-4"
-      />
+      {img && (
+        <Image
+          src={img}
+          alt={name}
+          width={40}
+          height={40}
+          className="h-10 w-10 rounded-full ring-1 ring-border ring-offset-4"
+        />
+      )}
 
       <div>
         <p className="font-medium text-neutral-500">{name}</p>

@@ -66,7 +66,6 @@ export const items = [
   {
     name: "Patricia Manca",
     role: "Socia responsable de NewLaw en PwC Tax & Legal",
-    img: "https://www.sttok.com/images/logos/logo-pwc-mini.png",
     description:
       "Sttok permite la gestión digital de sociedades, libros de socios, planes de incentivos, juntas, etc. Sttok ha participado en el programa de aceleración de startups de PwC Tax & Legal, el ‘Tax and Legal Tech Springboard’ creado con el objetivo de impulsar, en el mercado español, soluciones legaltech y taxtech.",
     stars: 5,

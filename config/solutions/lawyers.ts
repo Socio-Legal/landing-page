@@ -84,7 +84,6 @@ export const testimonials = {
     {
       name: "Patricia Manca", // ej., "María García"
       role: "Socia responsable de NewLaw, PwC", // ej., "CTO de Empresa B"
-      img: "https://www.sttok.com/images/logos/logo-pwc-mini.png", // ej., "https://ejemplo.com/maria-garcia.jpg"
       description:
         "Sttok nos ayuda en la gestión digital de sociedades, facilitando la automatización de procesos críticos como juntas, captables y planes de incentivos.", // ej., "La experiencia positiva de María García con nuestro servicio"
       stars: 5, // ej., 5
