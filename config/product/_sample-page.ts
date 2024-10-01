@@ -24,19 +24,19 @@ export const topFeatures = {
     {
       title: "", // ej., "Característica 1"
       description: "", // ej., "Descripción de la característica 1"
-      icon: "", // ej., "Icono1"
+      icon: "", // ej., "Icon1"
       image: "", // ej., "ImagenCaracteristica1"
     },
     {
       title: "", // ej., "Característica 2"
       description: "", // ej., "Descripción de la característica 2"
-      icon: "", // ej., "Icono2"
+      icon: "", // ej., "Icon2"
       image: "", // ej., "ImagenCaracteristica2"
     },
     {
       title: "", // ej., "Característica 3"
       description: "", // ej., "Descripción de la característica 3"
-      icon: "", // ej., "Icono3"
+      icon: "", // ej., "Icon3"
       image: "", // ej., "ImagenCaracteristica3"
     },
   ],
@@ -52,32 +52,32 @@ export const features = {
   description: "", // ej., "Explora todas las características que hacen único a nuestro producto"
   items: [
     {
-      icon: "", // ej., "Icono1"
+      icon: "", // ej., "Icon1"
       title: "", // ej., "Característica 1"
       description: "", // ej., "Descripción detallada de la característica 1"
     },
     {
-      icon: "", // ej., "Icono2"
+      icon: "", // ej., "Icon2"
       title: "", // ej., "Característica 2"
       description: "", // ej., "Descripción detallada de la característica 2"
     },
     {
-      icon: "", // ej., "Icono3"
+      icon: "", // ej., "Icon3"
       title: "", // ej., "Característica 3"
       description: "", // ej., "Descripción detallada de la característica 3"
     },
     {
-      icon: "", // ej., "Icono4"
+      icon: "", // ej., "Icon4"
       title: "", // ej., "Característica 4"
       description: "", // ej., "Descripción detallada de la característica 4"
     },
     {
-      icon: "", // ej., "Icono5"
+      icon: "", // ej., "Icon5"
       title: "", // ej., "Característica 5"
       description: "", // ej., "Descripción detallada de la característica 5"
     },
     {
-      icon: "", // ej., "Icono6"
+      icon: "", // ej., "Icon6"
       title: "", // ej., "Característica 6"
       description: "", // ej., "Descripción detallada de la característica 6"
     },

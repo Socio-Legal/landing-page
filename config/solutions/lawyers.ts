@@ -31,37 +31,37 @@ export const features = {
     "Sttok permite a los abogados digitalizar la gestión de sociedades, optimizando tareas como el libro de socios, juntas de accionistas, Consejos o planes de incentivos.", // ej., "Explora todas las características que hacen único a nuestro producto"
   items: [
     {
-      icon: "Icono01", // ej., "Icono1"
+      icon: "Icon01", // ej., "Icon1"
       title: "Libro de Socios", // ej., "Característica 1"
       description:
         "Gestiona digitalmente el libro de socios de manera eficiente y sin errores.", // ej., "Descripción detallada de la característica 1"
     },
     {
-      icon: "Icono02", // ej., "Icono3"
+      icon: "Icon02", // ej., "Icon3"
       title: "Simulador de Operaciones", // ej., "Característica 3"
       description:
         "Realiza cálculos exactos para operaciones societarias en pocos minutos.", // ej., "Descripción detallada de la característica 3"
     },
     {
-      icon: "Icono03", // ej., "Icono2"
+      icon: "Icon03", // ej., "Icon2"
       title: "Planes de Incentivos", // ej., "Característica 2"
       description:
         "Automatiza la gestión de stock options y otros planes de incentivos.", // ej., "Descripción detallada de la característica 2"
     },
     {
-      icon: "Icono04", // ej., "Icono4"
+      icon: "Icon04", // ej., "Icon4"
       title: "Juntas de Accionistas", // ej., "Característica 4"
       description:
         "Convoca, vota y gestiona digitalmente juntas de accionistas.", // ej., "Descripción detallada de la característica 4"
     },
     {
-      icon: "Icono05", // ej., "Icono5"
+      icon: "Icon05", // ej., "Icon5"
       title: "Consejos de Administración", // ej., "Característica 5"
       description:
         "Gestiona digitalmente las reuniones y votaciones del Consejo.", // ej., "Descripción detallada de la característica 5"
     },
     {
-      icon: "Icono06", // ej., "Icono6"
+      icon: "Icon06", // ej., "Icon6"
       title: "Documentación Societaria", // ej., "Característica 6"
       description:
         "Genera y administra actas, certificados y otros documentos de manera automática.", // ej., "Descripción detallada de la característica 6"

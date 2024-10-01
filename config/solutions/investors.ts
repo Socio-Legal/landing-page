@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Sttok para Inversores", // ej., "Nombre del Producto"
-  description: "Descubre las soluciones que ofrecemos para los inversores y sus participadas", // ej., "Una breve descripción del producto o servicio"
+  description:
+    "Descubre las soluciones que ofrecemos para los inversores y sus participadas", // ej., "Una breve descripción del producto o servicio"
   keywords:
     "inversores, participadas, cartera, captable, libro de socios, inversor", // ej., "palabra_clave1, palabra_clave2, palabra_clave3"
 };
@@ -21,42 +22,57 @@ export const hero = {
 
 export const clients = {
   title: "Empresas que utilizan Sttok", // ej., "Nuestros Clientes de Confianza"
-  clients: ["PLD Space", "Factorial", "MyInvestor", "Yaba", "Caballero", "Shakers", "TaxDown"], // ej., ["Cliente1", "Cliente2", "Cliente3"]
+  clients: [
+    "PldSpace",
+    "Factorial",
+    "MyInvestor",
+    "Yaba",
+    "Caballero",
+    "Shakers",
+    "Taxdown",
+  ], // ej., ["Cliente1", "Cliente2", "Cliente3"]
 };
 
 export const features = {
   title: "Principales Funcionalidades para Inversores", // ej., "Todas las Características"
-  description: "Sttok proporciona a los inversores acceso a su cartera de participadas con datos actualizados en tiempo real, permitiendo la simulación de rondas y la gestión de la documentación.", // ej., "Explora todas las características que hacen único a nuestro producto"
+  description:
+    "Sttok proporciona a los inversores acceso a su cartera de participadas con datos actualizados en tiempo real, permitiendo la simulación de rondas y la gestión de la documentación.", // ej., "Explora todas las características que hacen único a nuestro producto"
   items: [
     {
-      icon: "Icono01", // ej., "Icono1"
+      icon: "Icon01", // ej., "Icon1"
       title: "Acceso a la Cartera de Participadas", // ej., "Característica 1"
-      description: "Consulta la información actualizada sobre las participaciones y su valorización.", // ej., "Descripción detallada de la característica 1"
+      description:
+        "Consulta la información actualizada sobre las participaciones y su valorización.", // ej., "Descripción detallada de la característica 1"
     },
     {
-      icon: "Icono02", // ej., "Icono2"
+      icon: "Icon02", // ej., "Icon2"
       title: "Simulador de Operaciones", // ej., "Característica 2"
-      description: "Realiza simulaciones de rondas y operaciones de capital con datos exactos y en pocos minutos.", // ej., "Descripción detallada de la característica 2"
+      description:
+        "Realiza simulaciones de rondas y operaciones de capital con datos exactos y en pocos minutos.", // ej., "Descripción detallada de la característica 2"
     },
     {
-      icon: "Icono03", // ej., "Icono3"
+      icon: "Icon03", // ej., "Icon3"
       title: "Gestión de Documentación", // ej., "Característica 3"
-      description: "Accede a escrituras, actas y certificados de todas las operaciones en un único portal.", // ej., "Descripción detallada de la característica 3"
+      description:
+        "Accede a escrituras, actas y certificados de todas las operaciones en un único portal.", // ej., "Descripción detallada de la característica 3"
     },
-	{
-      icon: "Icono04", // ej., "Icono4"
+    {
+      icon: "Icon04", // ej., "Icon4"
       title: "Juntas", // ej., "Característica 3"
-      description: "Simplifica delegaciones, votaciones y documentación para las juntas.", // ej., "Descripción detallada de la característica 3"
+      description:
+        "Simplifica delegaciones, votaciones y documentación para las juntas.", // ej., "Descripción detallada de la característica 3"
     },
-	{
-      icon: "Icono05", // ej., "Icono5"
+    {
+      icon: "Icon05", // ej., "Icon5"
       title: "Ficha del socio", // ej., "Característica 3"
-      description: "Tendrás acceso a tu ficha con la información, escrituras y datos actualizados.", // ej., "Descripción detallada de la característica 3"
+      description:
+        "Tendrás acceso a tu ficha con la información, escrituras y datos actualizados.", // ej., "Descripción detallada de la característica 3"
     },
-	{
-      icon: "Icono06", // ej., "Icono5"
+    {
+      icon: "Icon06", // ej., "Icon5"
       title: "Portafolio", // ej., "Característica 3"
-      description: "Dispondrás del esquema y arbol del portafolio de tus participadas.", // ej., "Descripción detallada de la característica 3"
+      description:
+        "Dispondrás del esquema y arbol del portafolio de tus participadas.", // ej., "Descripción detallada de la característica 3"
     },
   ],
 };
@@ -69,10 +85,11 @@ export const testimonials = {
       name: "Lucía Bauza", // ej., "Juan Pérez"
       role: "Head of Legal & Compliance, Factorial", // ej., "CEO de Empresa A"
       img: "", // ej., "https://ejemplo.com/juan-perez.jpg"
-      description: "Sttok nos ayudó a digitalizar el proceso de creación y firma de documentos para nuestros planes de incentivos.", // ej., "Un testimonio brillante de Juan Pérez sobre nuestro producto"
+      description:
+        "Sttok nos ayudó a digitalizar el proceso de creación y firma de documentos para nuestros planes de incentivos.", // ej., "Un testimonio brillante de Juan Pérez sobre nuestro producto"
       stars: 5, // ej., 5
     },
-   {
+    {
       name: "Gerard Garcia",
       role: "CEO | Deale",
       img: "https://www.sttok.com/images/logos/logo-deale-mini.png",

@@ -67,37 +67,37 @@ export const features = {
     "Explora todas las características que hacen único a nuestro producto.", // ej., "Explora todas las características que hacen único a nuestro producto"
   items: [
     {
-      icon: "Icon01", // ej., "Icono1"
+      icon: "Icon01", // ej., "Icon1"
       title: "Cálculos de Rondas de Inversión", // ej., "Característica 1"
       description:
         "Calcula el impacto de las rondas de inversión en la estructura de capital de tu empresa de manera automática.", // ej., "Descripción detallada de la característica 1"
     },
     {
-      icon: "Icon02", // ej., "Icono2"
+      icon: "Icon02", // ej., "Icon2"
       title: "Ampliaciones de Capital", // ej., "Característica 2"
       description:
         "Simula ampliaciones de capital y genera la documentación necesaria en minutos.", // ej., "Descripción detallada de la característica 2"
     },
     {
-      icon: "Icon03", // ej., "Icono3"
+      icon: "Icon03", // ej., "Icon3"
       title: "Notas Convertibles", // ej., "Característica 3"
       description:
         "Gestiona y simula las conversiones de notas convertibles con facilidad.", // ej., "Descripción detallada de la característica 3"
     },
     {
-      icon: "Icon04", // ej., "Icono4"
+      icon: "Icon04", // ej., "Icon4"
       title: "Escenarios de Venta", // ej., "Característica 4"
       description:
         "Simula escenarios de venta de acciones y sus efectos sobre los socios y la estructura accionarial.", // ej., "Descripción detallada de la característica 4"
     },
     {
-      icon: "Icon05", // ej., "Icono5"
+      icon: "Icon05", // ej., "Icon5"
       title: "Generación Automática de Documentos", // ej., "Característica 5"
       description:
         "Crea automáticamente actas, contratos y otros documentos para todas tus operaciones corporativas.", // ej., "Descripción detallada de la característica 5"
     },
     {
-      icon: "Icon06", // ej., "Icono6"
+      icon: "Icon06", // ej., "Icon6"
       title: "Datos exactos y reales", // ej., "Característica 6"
       description:
         "Accede a cálculos actualizados en tiempo real para todas tus operaciones y toma decisiones informadas.", // ej., "Descripción detallada de la característica 6"

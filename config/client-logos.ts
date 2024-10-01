@@ -1,6 +1,7 @@
 import Factorial from "@/public/logo-factorial.png";
 import Yaba from "@/public/logo-yaba.png";
 import Banktrack from "@/public/logo-banktrack.png";
+import Andbank from "@/public/logo-andbank.png";
 import Mailtrack from "@/public/logo-mailtrack.png";
 import Broseta from "@/public/logo-broseta.png";
 import DerechoCom from "@/public/logo-derechocom.png";
@@ -26,6 +27,7 @@ export const clientLogos = {
   Factorial: Factorial,
   Yaba: Yaba,
   Banktrack: Banktrack,
+  Andbank: Andbank,
   Mailtrack: Mailtrack,
   Broseta: Broseta,
   DerechoCom: DerechoCom,

@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Portal del Inversor", // ej., "Nombre del Producto"
-  description: "Descubre las soluciones que ofrecemos para los inversores y empresas para dar acceso a sus accionistas", // ej., "Una breve descripción del producto o servicio"
+  description:
+    "Descubre las soluciones que ofrecemos para los inversores y empresas para dar acceso a sus accionistas", // ej., "Una breve descripción del producto o servicio"
   keywords:
     "inversores, participadas, cartera, captable, gestión documental, simulador de operaciones, portal del inversor", // ej., "palabra_clave1, palabra_clave2, palabra_clave3"
 };
@@ -21,27 +22,40 @@ export const hero = {
 
 export const clients = {
   title: "Empresas que confían en nosotros", // ej., "Nuestros Clientes de Confianza"
-  clients: ["PLD Space", "Factorial", "MyInvestor", "Deale", "Yaba", "TaxDown", "Caballero", "Andbank"], // ej., ["Cliente1", "Cliente2", "Cliente3"]
+  clients: [
+    "PldSpace",
+    "Factorial",
+    "MyInvestor",
+    "Deale",
+    "Yaba",
+    "Taxdown",
+    "Caballero",
+    "Andbank",
+  ], // ej., ["Cliente1", "Cliente2", "Cliente3"]
 };
 
 export const features = {
   title: "Principales Funcionalidades para Inversores", // ej., "Todas las Características"
-  description: "Sttok ofrece un portal personalizado para inversores, proporcionando acceso a la cartera de participadas con datos actualizados y exactos.", // ej., "Explora todas las características que hacen único a nuestro producto"
+  description:
+    "Sttok ofrece un portal personalizado para inversores, proporcionando acceso a la cartera de participadas con datos actualizados y exactos.", // ej., "Explora todas las características que hacen único a nuestro producto"
   items: [
     {
-      icon: "Icono01", // ej., "Icono1"
+      icon: "Icon01", // ej., "Icon1"
       title: "Acceso a los socios", // ej., "Característica 1"
-      description: "Consulta los datos del captable, escrituras y otras documentaciones clave en tiempo real.", // ej., "Descripción detallada de la característica 1"
+      description:
+        "Consulta los datos del captable, escrituras y otras documentaciones clave en tiempo real.", // ej., "Descripción detallada de la característica 1"
     },
     {
-      icon: "Icono02", // ej., "Icono2"
+      icon: "Icon02", // ej., "Icon2"
       title: "Ficha del Socio", // ej., "Característica 2"
-      description: "Cada socio tendrá acceso a su ficha con sus documentos y certificados.", // ej., "Descripción detallada de la característica 2"
+      description:
+        "Cada socio tendrá acceso a su ficha con sus documentos y certificados.", // ej., "Descripción detallada de la característica 2"
     },
     {
-      icon: "Icono03", // ej., "Icono3"
+      icon: "Icon03", // ej., "Icon3"
       title: "Integración con tu web", // ej., "Característica 3"
-      description: "Integra el portal del inversor con tu imagen, colores, logoos, etc.", // ej., "Descripción detallada de la característica 3"
+      description:
+        "Integra el portal del inversor con tu imagen, colores, logoos, etc.", // ej., "Descripción detallada de la característica 3"
     },
   ],
 };
@@ -54,10 +68,11 @@ export const testimonials = {
       name: "Lucía Bauza", // ej., "Juan Pérez"
       role: "Head of Legal & Compliance, Factorial", // ej., "CEO de Empresa A"
       img: "", // ej., "https://ejemplo.com/juan-perez.jpg"
-      description: "Sttok nos ayudó a digitalizar el proceso de creación y firma de documentos para los planes de incentivos.", // ej., "Un testimonio brillante de Juan Pérez sobre nuestro producto"
+      description:
+        "Sttok nos ayudó a digitalizar el proceso de creación y firma de documentos para los planes de incentivos.", // ej., "Un testimonio brillante de Juan Pérez sobre nuestro producto"
       stars: 5, // ej., 5
     },
-   {
+    {
       name: "Gerard Garcia",
       role: "CEO | Deale",
       img: "https://www.sttok.com/images/logos/logo-deale-mini.png",

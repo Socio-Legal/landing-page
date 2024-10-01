@@ -35,6 +35,7 @@ export const topFeatures = {
         "https://www.sttok.com/wp-content/uploads/2023/11/digital-call.png", // Imagen para la característica 1
     },
     {
+      // TODO: update icons left and avatars right
       title: "Gestión de Votos y Delegaciones", // ej., "Característica 2"
       description:
         "Permite a los accionistas delegar sus votos y gestionar las votaciones de manera segura y transparente.", // ej., "Descripción de la característica 2"
@@ -74,37 +75,37 @@ export const features = {
     "Explora todas las características que hacen único a nuestro producto.", // ej., "Explora todas las características que hacen único a nuestro producto"
   items: [
     {
-      icon: "Icon01", // ej., "Icono1"
+      icon: "Icon01", // ej., "Icon1"
       title: "Convocatoria de Juntas", // ej., "Característica 1"
       description:
         "Crea y envía convocatorias de juntas a accionistas y consejeros de forma digital, con todos los detalles relevantes.", // ej., "Descripción detallada de la característica 1"
     },
     {
-      icon: "Icon02", // ej., "Icono2"
+      icon: "Icon02", // ej., "Icon2"
       title: "Delegaciones Digitales de Voto ", // ej., "Característica 2"
       description:
         "Facilita la delegación de votos de forma segura, permitiendo a los socios representar sus intereses en las reuniones.", // ej., "Descripción detallada de la característica 2"
     },
     {
-      icon: "Icon03", // ej., "Icono3"
+      icon: "Icon03", // ej., "Icon3"
       title: "Votaciones Electrónicas", // ej., "Característica 3"
       description:
         "Gestiona votaciones de acuerdos con total transparencia y eficiencia, garantizando resultados en tiempo real.", // ej., "Descripción detallada de la característica 3"
     },
     {
-      icon: "Icon04", // ej., "Icono4"
+      icon: "Icon04", // ej., "Icon4"
       title: "Actas Automáticas", // ej., "Característica 4"
       description:
         "Genera actas y certificados de acuerdos al finalizar cada reunión, ahorrando tiempo y eliminando errores.", // ej., "Descripción detallada de la característica 4"
     },
     {
-      icon: "Icon05", // ej., "Icono5"
+      icon: "Icon05", // ej., "Icon5"
       title: "Certificaciones", // ej., "Característica 5"
       description:
         "Generación automática de certificaciones de convocatoria, delegaciones y votaciones.", // ej., "Descripción detallada de la característica 5"
     },
     {
-      icon: "Icon06", // ej., "Icono6"
+      icon: "Icon06", // ej., "Icon6"
       title: "Historial de Reuniones", // ej., "Característica 6"
       description:
         "Accede al historial completo de todas las reuniones y acuerdos anteriores, todo almacenado en la nube.", // ej., "Descripción detallada de la característica 6"

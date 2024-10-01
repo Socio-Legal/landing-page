@@ -3,6 +3,7 @@ const nextConfig = {
   async rewrites() {
     return [
       // Products
+      { source: "/producto", destination: "/product" },
       { source: "/libro-de-socios", destination: "/partners-book" },
       { source: "/planes-de-incentivos", destination: "/incentive-plans" },
       { source: "/juntas-consejos", destination: "/shareholder-meetings" },

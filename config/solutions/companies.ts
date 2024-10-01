@@ -23,7 +23,7 @@ export const hero = {
 export const clients = {
   title: "Empresas que confían en nosotros", // ej., "Nuestros Clientes de Confianza"
   clients: [
-    "PLD Space",
+    "PldSpace",
     "Factorial",
     "Broseta",
     "Caballero",
@@ -40,55 +40,55 @@ export const features = {
     "Sttok digitaliza la gestión societaria para Empresas y Grupos de Sociedades, optimizando tareas clave como la administración del libro de socios, juntas de accionistas, consejos y planes de incentivos.", // ej., "Explora todas las características que hacen único a nuestro producto"
   items: [
     {
-      icon: "Icono01", // ej., "Icono1"
+      icon: "Icon01", // ej., "Icon1"
       title: "Libro de Socios", // ej., "Característica 1"
       description:
         "Gestiona el libro de socios con datos siempre actualizados y accesibles.", // ej., "Descripción detallada de la característica 1"
     },
     {
-      icon: "Icono02", // ej., "Icono2"
+      icon: "Icon02", // ej., "Icon2"
       title: "Planes de Incentivos", // ej., "Característica 2"
       description:
         "Automatiza la creación y gestión de stock options y otros planes de incentivos.", // ej., "Descripción detallada de la característica 2"
     },
     {
-      icon: "Icono03", // ej., "Icono3"
+      icon: "Icon03", // ej., "Icon3"
       title: "Simulador de Operaciones", // ej., "Característica 3"
       description:
         "Calcula ampliaciones de capital y escenarios de inversión con precisión.", // ej., "Descripción detallada de la característica 3"
     },
     {
-      icon: "Icono04", // ej., "Icono4"
+      icon: "Icon04", // ej., "Icon4"
       title: "Juntas de Accionistas", // ej., "Característica 4"
       description:
         "Convoca, vota y gestiona digitalmente juntas de accionistas.", // ej., "Descripción detallada de la característica 4"
     },
     {
-      icon: "Icono05", // ej., "Icono5"
+      icon: "Icon05", // ej., "Icon5"
       title: "Consejos de Administración", // ej., "Característica 5"
       description:
         "Gestiona digitalmente las reuniones y votaciones del Consejo.", // ej., "Descripción detallada de la característica 5"
     },
     {
-      icon: "Icono06", // ej., "Icono6"
+      icon: "Icon06", // ej., "Icon6"
       title: "Documentación Societaria", // ej., "Característica 6"
       description:
         "Genera y administra actas, certificados y otros documentos de manera automática.", // ej., "Descripción detallada de la característica 6"
     },
     {
-      icon: "Icono07", // ej., "Icono7"
+      icon: "Icon07", // ej., "Icon7"
       title: "Firma digital", // ej., "Característica 6"
       description:
         "Firma digital integrada para poder firmar documentos de manera automática.", // ej., "Descripción detallada de la característica 6"
     },
     {
-      icon: "Icono08", // ej., "Icono8"
+      icon: "Icon08", // ej., "Icon8"
       title: "Acceso para los socios", // ej., "Característica 6"
       description:
         "Puedes dar acceso a los inversores para que puedan tener disponible la documentación e información societaria.", // ej., "Descripción detallada de la característica 6"
     },
     {
-      icon: "Icono09", // ej., "Icono9"
+      icon: "Icon09", // ej., "Icon9"
       title: "Portal del Inversor", // ej., "Característica 6"
       description:
         "Sttok te ofrece la posibilidad de tener el Portal del Inversor completamente integrado en tu página web", // ej., "Descripción detallada de la característica 6"
