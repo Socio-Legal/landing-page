@@ -17,6 +17,8 @@ const nextConfig = {
         source: "/soluciones/portal-del-inversor",
         destination: "/solutions/investors-dashboard",
       },
+      // Precios
+      { source: "/precios", destination: "/pricing" },
       // Resources
       { source: "/recursos", destination: "/resources" },
     ];
@@ -52,6 +54,12 @@ const nextConfig = {
         hostname: "avatar.vercel.sh",
         port: "",
         pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "businesstalentgroup.com",
+        port: "",
+        pathname: "/wp-content/uploads/**",
       },
     ],
   },

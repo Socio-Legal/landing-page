@@ -98,6 +98,10 @@ export const siteConfig = {
       href: "/testimonios",
       label: "Testimonios",
     },
+    {
+      href: "/precios",
+      label: "Precios",
+    },
   ],
   cta: [
     {
