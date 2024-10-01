@@ -1,15 +1,25 @@
+export const metadata = {
+  title:
+    "PLD Space utiliza Sttok para gestionar su portal del Inversor, libro de socios y planes de incentivos.", // ej., "Nombre del Producto"
+  description:
+    "TaxDown utiliza Sttok para la gestión de Planes de Incentivos de forma útil. Además para gestión societaria también Libro de Socios y Juntas de accionistas, etc.", // ej., "Una breve descripción del producto o servicio"
+  keywords:
+    "PLD, Sttok, PLD Space y Sttok, Libro de socios, planes de incentivos, clientes de Sttok", // ej., "palabra_clave1, palabra_clave2, palabra_clave3"
+};
+
 export const summary = {
   client: "PldSpace",
-  title: "PldSpace gestiona Captable y Planes de Incentivos con Sttok",
+  title:
+    "PLD Space utiliza Sttok para gestionar la relación con sus socios mediante el Portal del Inversor",
   description: "",
   quote: {
-    text: "“Para gestionar toda la documentación de planes de incentivos nos ha ayudado a digitalizar el proceso de creación, firma y control de los beneficiarios. Además de la gestión del Libro de Socios (Captable)”",
-    author: "Lucía Bouzá",
-    position: "Head of Legal & Compliance | PldSpace",
+    text: "“Para gestionar la relación con nuestros socios e inversores utilizamos Sttok. Además las de las principales funcionalidades como libro de socios, juntas de accionistas, planes de incentivos y consejo de administración, etc.”",
+    author: "-",
+    position: "PldSpace",
   },
   button: {
     text: "Ir al sitio de PldSpace",
-    link: "https://PldSpacehr.es/",
+    link: "https://www.pldspace.com",
   },
   features: [
     {
@@ -18,16 +28,16 @@ export const summary = {
     },
     {
       key: "Desde",
-      value: "2022",
+      value: "2023",
     },
     {
       key: "Sector",
-      value: "Software de RRHH",
+      value: "Aeroespacial",
     },
     {
       key: "Funcionalidades",
       value:
-        "Captable, Planes de Incentivos, Generación de documentos, Firma automatizada, etc",
+        "Portal del Inversor, Captable, Planes de Incentivos, Junta de Accionistas, Firma automatizada, etc",
     },
   ],
 };
@@ -43,14 +53,16 @@ export const content = {
     {
       title: "Un poco sobre PldSpace",
       texts: [
-        "PldSpace es una empresa de software para la gestión de recursos humanos dirigido principalmente a pequeñas y medianas empresas. La compañía ha experimentado un crecimiento significativo desde su fundación, destacando en la automatización de tareas y trámites relacionados con la gestión de nóminas, gastos, firmas electrónicas, registro horario e informes analíticos para medir la productividad y la eficiencia de procesos.",
+        "PLD Space es una compañía española del sector aeroespacial pionera y referente en Europa en el desarrollo de lanzadores reutilizables, con trayectoria de referencia en el sector y un sólido programa de desarrollo. A través de su familia de cohetes espaciales MIURA (MIURA 1 y MIURA 5), PLD Space situará a España entre el reducido número de países con capacidad para enviar al espacio con éxito satélites de pequeño tamaño.",
+        "Fundada en 2011 por Raúl Torres y Raúl Verdú, PLD Space cuenta con un equipo de más de 200 personas. La compañía, con sede en Elche (Alicante) y con instalaciones técnicas en Teruel, Huelva y Guayana Francesa.",
+        "El 7 de octubre de 2023, PLD Space hizo historia tras completar con éxito el lanzamiento de un primer cohete europeo privado, MIURA 1.",
         "En 2022, PldSpace cerró una ronda de 120 millones, liderada por el fondo Atomico y contó con la participación de inversores como Tiger Global, CRV, K-Fund y Creandum. PldSpace es considerado un “unicornio”, término utilizado para describir a las startups que superan los 1.000 millones de dólares en valoración.",
       ],
     },
     {
       title: "¿Por qué nos eligieron?",
       texts: [
-        "1. Por la facilidad de uso de la plataforma.",
+        "1. Para ofrecer el Portal del Inversor.",
         "2. Por la automatización de tareas manuales.",
         "3. Por la gestión del Libro de Socios (Captable).",
         "4. Por la generación de documentos y firma automatizada.",

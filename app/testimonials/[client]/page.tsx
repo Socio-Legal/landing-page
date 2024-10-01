@@ -106,7 +106,7 @@ const Page: FC<PageProps> = ({ params }) => {
           style={blurStyle01}
         >
           <div className="sticky top-6">
-            <Link className="inline-flex items-center mb-8" href="#">
+            <Link className="inline-flex items-center mb-8" href="/testimonios">
               <ArrowLeft className="h-6 w-6 mr-2" />
               <span className="font-semibold">Volver a Testimonios</span>
             </Link>

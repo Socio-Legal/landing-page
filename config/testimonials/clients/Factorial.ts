@@ -1,3 +1,12 @@
+export const metadata = {
+  title:
+    "Factorial utiliza Sttok para gestionar planes de incentivos y su captable", // ej., "Nombre del Producto"
+  description:
+    "Factorial para la gestión de Planes de Incentivos utiliza Sttok. Además para gestión societaria también Libro de Socios, Planes de incentivos, Juntas de accionistas, etc.", // ej., "Una breve descripción del producto o servicio"
+  keywords:
+    "Factorial, Sttok, factorial y Sttok, Libro de socios, planes de incentivos, clientes de sttok", // ej., "palabra_clave1, palabra_clave2, palabra_clave3"
+};
+
 export const summary = {
   client: "Factorial",
   title: "Factorial gestiona Captable y Planes de Incentivos con Sttok",
