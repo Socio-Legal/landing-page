@@ -4,7 +4,7 @@ import HeroSection from "@/components/legal/hero-section";
 import TextContentSection from "@/components/legal/text-content";
 import CallToActionSection from "@/components/landing/cta-section";
 
-import { metadata as page, hero, content } from "@/config/legal/disclaimer";
+import { metadata as page, hero, content } from "@/config/legal/privacy";
 
 export const metadata = {
   title: page.title,
@@ -16,6 +16,7 @@ const Page = () => {
   return (
     <>
       <HeroSection {...hero} />
+      {/* @ts-ignore */}
       <TextContentSection content={content} hideTopSpace />
       <CallToActionSection />
     </>

@@ -4,7 +4,7 @@ import HeroSection from "@/components/legal/hero-section";
 import TextContentSection from "@/components/legal/text-content";
 import CallToActionSection from "@/components/landing/cta-section";
 
-import { metadata as page, hero, content } from "@/config/legal/disclaimer";
+import { metadata as page, hero, content } from "@/config/legal/security";
 
 export const metadata = {
   title: page.title,

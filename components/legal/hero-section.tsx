@@ -6,7 +6,6 @@ import React, { FC, useRef } from "react";
 import { useInView } from "framer-motion";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 
-import { BorderBeam } from "@/components/magicui/border-beam";
 import Blur01 from "@/public/blur-01.svg";
 import Blur02 from "@/public/blur-02.svg";
 
@@ -70,10 +69,10 @@ const HeroSection: FC<HeroSectionProps> = ({
           </div>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        <div className="grid grid-cols-1 gap-8 items-center">
           <div className="space-y-2">
-            <div className="text-left space-y-2 mx-auto lg:text-left lg:mx-0">
-              <h1 className="bg-gradient-to-br dark:from-white from-black from-30% dark:to-white/40 to-black/40 bg-clip-text py-6 text-4xl text-left font-medium leading-none tracking-tighter text-transparent text-balance sm:text-5xl md:text-6xl lg:text-7xl translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
+            <div className="text-center space-y-2 mx-auto lg:text-center lg:mx-0">
+              <h1 className="text-center bg-gradient-to-br dark:from-white from-black from-30% dark:to-white/40 to-black/40 bg-clip-text py-6 text-4xl text-left font-medium leading-none tracking-tighter text-transparent text-balance sm:text-5xl md:text-6xl lg:text-7xl translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
                 {title}
               </h1>
             </div>
@@ -97,40 +96,6 @@ const HeroSection: FC<HeroSectionProps> = ({
                 </div>
               </>
             )}
-          </div>
-
-          <div
-            ref={ref}
-            className="relative animate-fade-up opacity-0 [--animation-delay:400ms] [perspective:2000px] after:absolute after:inset-0 after:z-50"
-          >
-            <div
-              className={`rounded-xl border  bg-white bg-opacity-[0.01] before:absolute before:bottom-1/2 before:left-0 before:top-0 before:h-full before:w-full before:opacity-0 before:[filter:blur(180px)] before:[background-image:linear-gradient(to_bottom,var(--color-one),var(--color-one),transparent_40%)] ${
-                inView ? "before:animate-image-glow" : ""
-              }`}
-            >
-              <BorderBeam
-                size={200}
-                duration={12}
-                delay={11}
-                colorFrom="var(--color-one)"
-                colorTo="var(--color-two)"
-              />
-
-              <Image
-                alt="Hero image"
-                className="aspect-video object-cover rounded-lg hidden relative w-full h-full rounded-[inherit] border object-contain dark:block"
-                height="420"
-                src={image?.dark || ""}
-                width="550"
-              />
-              <Image
-                alt="Hero image"
-                className="aspect-video object-cover rounded-lg block relative w-full h-full  rounded-[inherit] border object-contain dark:hidden"
-                height="420"
-                src={image?.light || ""}
-                width="550"
-              />
-            </div>
           </div>
         </div>
       </div>
