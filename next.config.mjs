@@ -25,6 +25,10 @@ const nextConfig = {
       { source: "/precios", destination: "/pricing" },
       // Resources
       { source: "/recursos", destination: "/resources" },
+      // Legal
+      { source: "/aviso-legal", destination: "/disclaimer" },
+      { source: "/privacidad", destination: "/privacy" },
+      { source: "/politica-seguridad", destination: "/security" },
     ];
   },
   images: {

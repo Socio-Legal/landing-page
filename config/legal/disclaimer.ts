@@ -1,0 +1,197 @@
+import { items } from "../landing/features-section";
+
+export const metadata = {
+  title: "Aviso legal y CGC",
+  description: "",
+  keywords: "",
+};
+
+export const hero = {
+  title: "Aviso legal",
+  description: "",
+};
+
+export const content = [
+  {
+    title: "Información general del Sitio Web",
+    content: [
+      "Titular: Sttok Barcelona, S.L. (en adelante referido por su nombre comercial, 'Sttok').",
+      "Sede y establecimiento: C/ Ausias Marc, 7, 3ª Planta, 08010-Barcelona.",
+      "N.I.F.: B10601268",
+      "Contacto: info@sttok.com 607838348",
+      "Datos registrales: Registro Mercantil de Barcelona, tomo 48281, folio 181, hoja núm. 578642, inscripción 1ª.",
+    ],
+  },
+  {
+    title: "Primera.- Objeto",
+    content: [
+      "STTOK es una plataforma online de gestión de Libro de Socios, Planes de Incentivos, Documentación Societaria y Comunicaciones que utilizan empresas y/o abogados o asesores para gestionar digitalmente y eficientemente sociedades, socios, inversores, beneficiarios y/o administradores así como sus procesos societarios (en adelante, 'los Servicios'). Mediante el presente Contrato se otorga al Cliente una licencia de uso para el acceso a la plataforma STTOK y utilización de los Servicios. La licencia de uso quedará sujeta al cumplimiento de los términos y condiciones establecidos en el presente Contrato o en las condiciones particulares que en su caso sean de aplicación en función del plan contratado o regulado en la Propuesta Comercial. La Licencia de uso es limitada, no exclusiva, no transferible, y limitada durante el plazo contratado o establecido en la Propuesta Comercial. STTOK se compromete a prestar servicios de apoyo y resolución de consultas mientras dure la relación contractual.",
+    ],
+  },
+  {
+    title: "Segunda.- Acceso",
+    content: [
+      "El Cliente creará un usuario accediendo a la plataforma STTOK mediante su correo electrónico que será utilizado para configurar la cuenta del Cliente. El Cliente podrá dar acceso a otros usuarios a su cuenta. El Cliente será responsable de cualesquiera actos u omisiones de cualquier persona que acceda a la plataforma de STTOK utilizando sus credenciales de acceso. STTOK se reserva el derecho de rechazar el registro, acceso, o de cancelar, los usuarios que infrinjan los términos y condiciones establecidos en el presente Contrato. En el supuesto que Cliente tenga conocimiento que su usuario o cuenta ha sido utilizado por terceras personas sin su consentimiento o sospecha de un uso no autorizado notificará inmediatamente a STTOK en el correo info@sttok.com. La acreditación de la identidad de los usuarios se realizará mediante el servicio de gestión de identidad que utilice el Cliente ya sea mediante el servicio de correos electrónicos de Microsoft o Google. En el caso que el Cliente tenga configurados sistemas de verificación de identidad de doble factor o similares serán responsabilidad de los mencionados servicios de Microsoft o Google. Para ello STTOK utiliza el servicio de Customer Identity (CIAM) de Auth0. Los términos y condiciones de los servicios de Microsoft o Google pueden ser de aplicación según el caso.",
+      "De forma puntual, el personal de STTOK podrá acceder a la cuenta del Cliente a efectos de mantener y mejorar los Servicios, incluyendo la asistencia técnica al Cliente en relación con aspectos de formación, técnicos o de facturación. En todo caso el personal de STTOK estará sujeto a las cláusulas de confidencialidad aplicables al presente Contrato. El Cliente manifiesta su conocimiento y, en lo menester, su consentimiento a tal acceso. Dicho acceso será llevado a cabo utilizando una cuenta de usuario de STTOK y en ningún caso accediendo a las cuentas individuales de los usuarios o bajo la identidad de los usuarios del Cliente.",
+    ],
+  },
+  {
+    title: "Tercera.- Disponibilidad",
+    content: [
+      "STTOK hará los esfuerzos comerciales que sean razonables para mantener la disponibilidad de la plataforma y los Servicios. STTOK excluye todas las promesas, ya sean expresas o implícitas, incluidas las promesas de que la plataforma es adecuada para el propósito deseado por el Cliente. STTOK manifiesta que los Servicios pueden sufrir cortes derivados de mantenimiento, reparaciones y actualizaciones de la plataforma. En la medida de lo posible, STTOK intentará notificar al Cliente, por vía electrónica a través de la plataforma, de cualesquiera interrupción, suspensiones de los Servicios cuando sean programados. No obstante lo anterior, STTOK no será responsable por cualesquiera fallos en los Servicios o cualesquiera otros problemas que tengan relación con (a) datos introducidos por el Cliente o de los sistemas técnicos del Cliente o (b) cortes en las redes de telecomunicaciones o proveedores de acceso a internet, redes o servidores, u otros equipos o servicios fuera de las instalaciones de STTOK o de su control.",
+    ],
+  },
+  {
+    title: "Cuarta.- Versión gratuita",
+    content: [
+      "En el caso de que STTOK haya ofrecido al Cliente una demo gratuita o versión gratuita, STTOK le ofrecerá los Servicios en régimen de prueba gratuita, que tendrá una duración hasta (a) la finalización del periodo de prueba gratuita para el cual el Cliente se haya registrado y respecto a los Servicios que sean de aplicación, o (b) la fecha de inicio de cualesquiera suscripción a los Servicios concretados por el Cliente, o (c)sobrepasar los límites de los Servicios gratuitos, o (d) la terminación por parte de STTOK a su sola discreción. La prueba o versión gratuita podría estar sujeta a términos y condiciones adicionales según se detalla en el sitio web de STTOK en cada momento. Dichos términos y condiciones adicionales se considerarán incorporados por referencia al presente Contrato y se considerarán legalmente vinculantes.",
+    ],
+  },
+  {
+    title: "Quinta.- Privacidad y Confidencialidad",
+    content: [
+      "Los datos personales de los usuarios con acceso a la plataforma así como cualquier dato personal que se trate mediante la plataforma de STTOK serán tratados de acuerdo con la Política de Privacidad de STTOK ubicada en https://www.sttok.com/privacidad.html. El Cliente será responsable de cualquier dato personal que trate mediante los Servicios y plataforma de STTOK. El Cliente deberá cumplir con todas las leyes aplicables relativas al tratamiento y uso de datos personales.",
+    ],
+  },
+  {
+    title: "Sexta.- Suscripción. Contraprestación por los Servicios",
+    content: [
+      {
+        subtitle: "Precio",
+        content: [
+          "El Cliente pagará el precio correspondiente a la Propuesta Comercial acordada por las Partes. Los precios podrán ser revisados mediante acuerdo escrito entre las partes.",
+        ],
+      },
+      {
+        subtitle: "Propuesta Comercial",
+        content: [
+          "Las Partes podrán acordar una o más Propuestas Comerciales. Entre las Partes prevalecerán los términos y condiciones de la Propuesta Comercial y de forma subsidiaria se aplicará lo establecido en el presente Contrato.",
+        ],
+      },
+      {
+        subtitle: "Pago",
+        content: [
+          "Los pagos se realizan en Euros previa emisión y envío de la factura. El vencimiento de la factura será a 30 días desde la fecha de emisión o la acordada en la Propuesta Comercial. En caso de impago, STTOK podrá exigir un interés de demora de 1,5% mensual o la cantidad máxima permitida por la ley. El Cliente se obliga a reembolsar a STTOK todos los gastos (incluyendo honorarios de abogados) incurridos por STTOK en el cobro de los pagos atrasados. STTOK podrá suspender el acceso del Cliente a la plataforma y Servicios o terminar este Contrato en el caso que el Cliente no esté al corriente de pago de las cantidades debidas a STTOK.",
+          "El Cliente podrá dar de baja su cuenta y resolver el presente contrato en cualquier momento mediando preaviso de 30 días. En este caso, el Cliente únicamente abonará los meses disfrutados hasta el momento de la efectiva resolución (a prorrata mensual sobre la cantidad anual prevista). Durante el plazo desde el preaviso hasta la efectiva resolución, STTOK prestará los servicios y el Cliente los abonará.",
+        ],
+      },
+      {
+        subtitle: "Impuestos",
+        content: [
+          "Será responsabilidad del Cliente abonar los impuestos legalmente aplicables",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Séptima.- Confidencialidad",
+    content: [
+      "Las Partes se obligan a adoptar las medidas oportunas para asegurar el adecuado tratamiento confidencial de los datos e información propiedad de la otra Parte a la que tenga acceso durante la prestación de los Servicios. A efectos de este Contrato, se considera Información Confidencial toda información susceptible de ser revelada de palabra, por escrito o por cualquier otro medio o soporte, tangible o intangible que: (a) sea suministrada por las Partes para posibilitar la estricta y correcta prestación de los Servicios; o (b) pueda llegar a ser, accidental o fortuitamente, accedida o conocida por las Partes durante la prestación de los Servicios; o (c) las Partes hayan señalado expresamente como confidencial. Las medidas a adoptar por las Partes no serán menores que las aplicadas por cada una de ellas a su propia Información Confidencial e incluirán, en todo caso, lo siguiente:",
+      "a) Utilizar la Información Confidencial para la estricta y correcta ejecución del Contrato, asumiendo la responsabilidad por todo uso distinto, ya haya sido realizado por la Parte o por las personas físicas o jurídicas a las que haya permitido el acceso.",
+      "b) Sólo permitirán el acceso a la Información Confidencial a aquellas personas físicas o jurídicas que, prestando sus servicios para estas, necesiten dicha información para el desarrollo de tareas estrictamente relacionadas con la correcta ejecución del Contrato.",
+      "c) Comunicar inmediatamente a la otra Parte cualquier filtración de la Información Confidencial de la que tenga o llegue a tener conocimiento.",
+      "d) No podrán desvelar ni revelar la Información Confidencial a terceras personas no previstas en este Contrato sin la previa y escrita autorización de la otra Parte.",
+      "Cuando una autoridad administrativa o judicial solicite a una de las Partes el acceso a Información Confidencial de la otra, la primera deberá comunicar dicha circunstancia a la Parte afectada antes de facilitar la información. El deber de confidencialidad establecido en esta estipulación estará vigente de forma indefinida, aún después de finalizar la prestación de los Servicios por cualquier causa.",
+    ],
+  },
+  {
+    title: "Octava.- Derechos de propiedad",
+    content: [
+      {
+        subtitle: "Datos e información del Cliente",
+        content: [
+          "El Cliente será propietario de todos los datos, información, documentos o títulos (incluyendo toda la propiedad intelectual y otros derechos de propiedad) incorporados y tratados mediante la plataforma STTOK (en adelante, 'los Datos del Cliente'). El Cliente otorga a STTOK un derecho no exclusivo, gratuito y con licencia para acceder, usar, copiar, procesar y almacenar los Datos del Cliente con el único fin de prestar los Servicios acordados por escrito entre las Partes.",
+        ],
+      },
+      {
+        subtitle: "Plataforma y Servicios de STTOK",
+        content: [
+          "El Cliente declara conocer y acepta que la plataforma de STTOK y los Servicios son propiedad de STTOK, quien conservará todos los derechos de propiedad intelectual, industrial o cualesquiera otros, que no podrán ser objeto de copia por parte del Cliente. La puesta a disposición para el Cliente de los Servicios y la plataforma STTOK no significa, en ningún caso, la cesión de su propiedad.",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Novena.- Garantías y limitaciones",
+    content: [
+      {
+        subtitle: "Renuncias",
+        content: [
+          "El Cliente reconoce que el cumplimiento por parte de STTOK de sus obligaciones en virtud del presente Contrato depende de que: (i) el Cliente haya adoptado todas las medidas necesarias para la correcta utilización de los Servicios o cualquier otro sistema externo conectado; y (ii) el acceso a los Servicios o plataforma STTOK (incluidos terceros proveedores de servicios de mensajería, firma y productos integrados de terceros aplicables) y a los datos almacenados o mantenidos en ellas (las dependencias externas) operen correctamente. STTOK no es responsable de ninguna dependencia externa y no tendrá responsabilidad alguna con respecto a cualquier interferencia con el uso del Cliente, o el uso o acceso de cualquier usuario a STTOK o a las violaciones de seguridad o privacidad que surjan o sean atribuibles a cualquier dependencia externa del Cliente, y el Cliente renuncia a cualquier reclamación contra STTOK en relación con ello.",
+        ],
+      },
+      {
+        subtitle: "Responsabilidad",
+        content: [
+          "STTOK responderá de los daños causados por culpa o negligencia derivados de su actuación, no excediendo, en ningún caso, la indemnización que corresponda del importe correspondiente al precio de los Servicios efectivamente abonada por el Cliente a STTOK en el momento en que se produjo la causa que motivó la indemnización. STTOK no será responsable, en ningún caso, de daños indirectos, imprevistos, especiales o accidentales, inclusive pérdida de beneficios, ingresos, datos o uso sufridos por el Cliente o por un tercero. STTOK no será responsable frente al Cliente, entre otros supuestos, de los siguientes (i) en caso de que los Servicios no se utilicen de acuerdo con la finalidad prevista o a la documentación de soporte online de STTOK; (ii) en caso de que el fallo sea provocado por usos de la plataforma no autorizadas previamente por STTOK o por sistemas de terceros.",
+          "No obstante lo anterior, ninguna disposición del presente Contrato excluirá o limitará la responsabilidad de STTOK derivada de infracción en materia de protección de datos o confidencialidad, fraude, negligencia grave, dolo o cualquier otra responsabilidad que no pueda limitarse o excluirse por imperativo legal y que sea atribuible directa e indirectamente a STTOK, a sus Partners, Colaboradores o Trabajadores.",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Décima.- Duración",
+    content: [
+      {
+        subtitle: "Plazo",
+        content: [
+          "El Contrato comenzará en la fecha de alta del Cliente en la plataforma STTOK o en la fecha que las Partes acuerden en la Propuesta Comercial. El Contrato se renovará anualmente si ninguna de las Partes comunica lo contrario y continuará en vigor hasta que (i) el Cliente de de baja su cuenta, (ii) una de las Partes notifique por escrito a la otra, con treinta (30) días de antelación a la finalización, la voluntad de no renovar el Contrato.",
+          "El Cliente podrá dar de baja su cuenta y resolver el presente contrato en cualquier momento mediando preaviso de 30 días. En este caso, el Cliente únicamente abonará los meses disfrutados hasta el momento de la efectiva resolución (a prorrata mensual sobre la cantidad anual prevista). Durante el plazo desde el preaviso hasta la efectiva resolución, STTOK prestará los servicios y el Cliente los abonará.",
+        ],
+      },
+      {
+        subtitle: "Resolución",
+        content: [
+          "El Contrato podrá ser resuelto por cualquiera de las Partes si la otra Parte incumple sustancialmente el Contrato y no se procede a la subsanación de dicho incumplimiento en un plazo de treinta (30) días desde la notificación por escrito del mismo.",
+        ],
+      },
+      {
+        subtitle: "Efectos de la terminación",
+        content: [
+          "En caso de resolución o terminación del Contrato: (i) cesarán inmediatamente cualesquiera derechos otorgados por cualquiera de las Partes a la otra; (ii) STTOK permitirá durante treinta (30) días al Cliente acceder y exportar los Datos del Cliente, siendo de aplicación las tarifas de STTOK vigentes en ese momento respecto de los Servicios utilizados; y (iii) transcurrido un período de noventa (90) días STTOK borrará los Datos del Cliente.",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Décimo primera.- Generales",
+    content: [
+      {
+        subtitle: "Acuerdo íntegro",
+        content: [
+          "El presente Contrato y en su caso la Propuesta Comercial constituyen el acuerdo íntegro entre las Partes en relación con los Servicios, y sustituyen y anulan todas las negociaciones, compromisos, pactos y comunicaciones, ya sean verbales o escritos, que al respecto hubieran alcanzado con anterioridad a la firma de este documento.",
+        ],
+      },
+      {
+        subtitle: "Fuerza mayor",
+        content: [
+          "Las Partes no serán responsable del incumplimiento de las obligaciones establecidas en el presente Contrato en la medida en que tal incumplimiento sea debido a causas razonablemente fuera de control de la Parte incumplidora, tales como, sin carácter limitativo, incendios, inundaciones, huelgas, conflictos laborales u otros desórdenes sociales, escasez o indisponibilidad de combustible o energía eléctrica, indisponibilidad o funcionamiento anómalo de las redes de comunicaciones, accidentes, guerras (declaradas o no declaradas), embargos comerciales, bloqueos, disturbios o atentados.",
+        ],
+      },
+      {
+        subtitle: "Comunicación",
+        content: [
+          "El Cliente acepta que STTOK pueda incluir el nombre o marca del Cliente en la lista de clientes de STTOK, online o en materiales comerciales. Bajo ninguna circunstancia, ninguna otra información o Datos del Cliente podrá ser utilizada por STTOK sin previo consentimiento por escrito.",
+        ],
+      },
+      {
+        subtitle: "Notificaciones",
+        content: [
+          "Toda notificación o comunicación en relación al presente Contrato deberá efectuarse mediante escrito dirigido a la otra Parte, preferiblemente por correo electrónico de la cuenta de usuario o en su caso en la especificada en la Propuesta Comercial. Las notificaciones se entenderán entregadas en el momento de su recepción conforme resulte del correspondiente acuse de recibo físico o electrónico (según corresponda en cada caso).",
+        ],
+      },
+      {
+        subtitle: "Subsistencia",
+        content: [
+          "Si cualquier cláusula de este Contrato fuese declarada, total o parcialmente, nula o ineficaz, tal nulidad o ineficacia afectará tan sólo a dicha disposición o a la parte de la misma que resulte nula o ineficaz, subsistiendo el Contrato en todo lo demás, teniéndose tal disposición, o la parte de la misma que resultase afectada, por no puesta.",
+        ],
+      },
+      {
+        subtitle: "Ley aplicable y jurisdicción",
+        content: [
+          "Cualquier controversia surgida de la interpretación o ejecución de las presentes Contrato o de cualquiera de sus eventuales modificaciones, así como cualquier incumplimiento de las mismas, se interpretará de conformidad con la legislación española. Para solucionar cualquier controversia relacionada con lo dispuesto en el presente Contrato o en ejecución del mismo, STTOK y el Cliente se someten expresamente a los Juzgados y Tribunales de Barcelona, con renuncia a cualquier otro fuero que pudiere corresponderles. El idioma a utilizar será el castellano.",
+        ],
+      },
+    ],
+  },
+];

@@ -16,6 +16,9 @@ export const routes = {
   TESTIMONIALS_CLIENT: "/testimonios/:client",
   PRICING: "/precios",
   RESOURCES: "/recursos",
+  LEGAL_DISCLAIMER: "/aviso-legal",
+  LEGAL_PRIVACY_COOKIES: "/privacidad",
+  LEGAL_SECURITY_POLICY: "/politica-seguridad",
   /* APP */
   APP: "https://app.sttok.com",
   APP_DEMO: "https://app.sttok.com/#/demo",

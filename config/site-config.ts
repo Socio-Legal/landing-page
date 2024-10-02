@@ -169,17 +169,17 @@ export const siteConfig = {
         {
           id: 14,
           title: "Aviso Legal y CGC",
-          url: "https://www.sttok.com/aviso-legal/",
+          url: routes.LEGAL_DISCLAIMER,
         },
         {
           id: 15,
           title: "Privacidad y Cookies",
-          url: "https://www.sttok.com/privacidad/",
+          url: routes.LEGAL_PRIVACY_COOKIES,
         },
         {
           id: 16,
           title: "Política de Seguridad",
-          url: "https://www.sttok.com/politica-seguridad/",
+          url: routes.LEGAL_SECURITY_POLICY,
         },
       ],
     ],
