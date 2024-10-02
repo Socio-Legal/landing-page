@@ -1,3 +1,4 @@
+import React from "react";
 import HeroSection from "@/components/landing/hero-section";
 import ClientsSection from "@/components/landing/clients-section";
 import FeaturesSection from "@/components/landing/features-section";
@@ -9,6 +10,7 @@ import CallToActionSection from "@/components/landing/cta-section";
 
 import { SphereMask } from "@/components/magicui/sphere-mask";
 import Particles from "@/components/magicui/particles";
+import { items as features } from "@/config/landing/features-section";
 
 export default async function Page() {
   return (
@@ -19,7 +21,7 @@ export default async function Page() {
       <SphereMask />
       <ProductsSection />
 
-      <FeaturesSection />
+      <FeaturesSection features={features} />
       <WhoUsesSttokSection />
       <TestimonialsSection />
       {/* <PricingSection /> */}

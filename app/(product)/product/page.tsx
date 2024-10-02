@@ -16,7 +16,7 @@ const Page = () => {
   return (
     <>
       <HeroSection {...hero} />
-      <FeaturesSection {...features} />
+      <FeaturesSection features={features} />
       <CallToActionSection />
     </>
   );

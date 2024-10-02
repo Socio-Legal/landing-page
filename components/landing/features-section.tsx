@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-import { header, items as features } from "@/config/landing/features-section";
+import { header } from "@/config/landing/features-section";
 
 import "@/components/styles/features-section.css";
 
@@ -28,6 +28,10 @@ const FeatureIcons = {
   Icon07: <Building2 className="w-6 h-6 text-primary" />,
   Icon08: <Users className="w-6 h-6 text-primary" />,
   Icon09: <FileSignature className="w-6 h-6 text-primary" />,
+};
+
+type FeatureSectionProps = {
+  features: FeatureItem[];
 };
 
 type FeatureItem = {
@@ -119,7 +123,7 @@ const FeaturesHeader: FC = () => (
   />
 );
 
-const FeaturesSection: FC<FeatureItem[]> = () => {
+const FeaturesSection: FC<FeatureSectionProps> = ({ features }) => {
   return (
     <section
       id="features-section"
