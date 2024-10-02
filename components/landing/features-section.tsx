@@ -1,4 +1,4 @@
-import { FC } from "react";
+import React, { FC } from "react";
 
 import { header, items as features } from "@/config/landing/features-section";
 
@@ -16,6 +16,7 @@ import {
   Users,
   Vote,
 } from "lucide-react";
+import Link from "next/link";
 
 const FeatureIcons = {
   Icon01: <BookOpenText className="w-6 h-6 text-primary" />,
@@ -29,13 +30,16 @@ const FeatureIcons = {
   Icon09: <FileSignature className="w-6 h-6 text-primary" />,
 };
 
+type FeatureItem = {
+  icon: string;
+  title: string;
+  description: string;
+  link?: string;
+};
+
 interface FeatureProps {
   index: number;
-  feature: {
-    icon: string;
-    title: string;
-    description: string;
-  };
+  feature: FeatureItem;
 }
 
 const Feature: FC<FeatureProps> = ({ index, feature }) => (
@@ -69,6 +73,42 @@ const Feature: FC<FeatureProps> = ({ index, feature }) => (
   </>
 );
 
+const FeatureWithLink: FC<FeatureProps> = ({ index, feature }) => (
+  <>
+    <div key={index} className="w-full sm:w-1/2 lg:w-1/3 text-left">
+      <Link href={feature.link || ""}>
+        <div
+          className="group relative overflow-hidden cursor-pointer px-6 py-8 text-center sm:py-10 lg:px-8 xl:px-13 xl:py-15
+      hover:shadow-lg hover:transform hover:-translate-y-1 transition-transform duration-300 ease-in-out"
+        >
+          <span
+            className={`features-bg absolute left-0 top-0 -z-1 h-full w-full opacity-0 group-hover:opacity-100 ${
+              index >= 3 ? "rotate-180" : "undefined"
+            }`}
+          ></span>
+
+          <div className="flex items-center mb-4 gap-x-2">
+            <div className="item-box w-12 h-12 bg-primary/10 rounded-full sm:mr-2 mr-2 shrink-0 flex items-center justify-center">
+              {FeatureIcons[feature.icon as keyof typeof FeatureIcons]}
+            </div>
+            <h3 className="text-lg font-semibold text-primary text-left">
+              <span>{feature.title}</span>
+            </h3>
+          </div>
+
+          <p className="font-medium text-black/50 dark:text-white/70 text-left">
+            {feature.description}
+          </p>
+        </div>
+      </Link>
+    </div>
+
+    {index % 3 === 2 && (
+      <div className="features-row-border-light dark:features-row-border-dark block h-[1px] w-full"></div>
+    )}
+  </>
+);
+
 const FeaturesHeader: FC = () => (
   <SectionHeader
     slogan={header.slogan}
@@ -79,7 +119,7 @@ const FeaturesHeader: FC = () => (
   />
 );
 
-const FeaturesSection: FC = () => {
+const FeaturesSection: FC<FeatureItem[]> = () => {
   return (
     <section
       id="features-section"
@@ -93,9 +133,13 @@ const FeaturesSection: FC = () => {
           <div className="features-row-border-light dark:features-row-border-dark absolute right-1/2 top-1/2 block h-[1px] w-1/2 -translate-y-1/2 rotate-90 lg:right-[8.3%] lg:block"></div>
 
           <div className="flex flex-wrap justify-center">
-            {features.map((feature, index) => (
-              <Feature key={index} index={index} feature={feature} />
-            ))}
+            {features.map((feature, index) =>
+              feature.link ? (
+                <FeatureWithLink key={index} index={index} feature={feature} />
+              ) : (
+                <Feature key={index} index={index} feature={feature} />
+              )
+            )}
           </div>
         </div>
       </div>

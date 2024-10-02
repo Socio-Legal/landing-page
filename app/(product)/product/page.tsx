@@ -1,11 +1,8 @@
 import React from "react";
 
-import CallToActionSection from "@/components/landing/cta-section";
-import TestimonialsSection from "@/components/product/testimonials-section";
-import FeaturesSection from "@/components/landing/features-section";
-import ClientsSection from "@/components/product/clients-section";
 import HeroSection from "@/components/product/hero-section";
-import TopFeatures from "@/components/product/top-features";
+import FeaturesSection from "@/components/landing/features-section";
+import CallToActionSection from "@/components/landing/cta-section";
 
 import { metadata as page, hero, features } from "@/config/product/product";
 

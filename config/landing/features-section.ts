@@ -13,23 +13,27 @@ export const items = [
     title: "Libro de Socios (Captable)",
     description:
       "Libro de socios digital para gestionar el equity. Actualizado sin errores.",
+    link: "/libro-de-socios/",
   },
   {
     icon: "Icon02",
     title: "Planes de Incentivos",
     description:
       "La forma más profesional de crear y mantener todo tipo de planes.",
+    link: "/planes-de-incentivos/",
   },
   {
     icon: "Icon03",
     title: "Simulador de Operaciones",
     description:
       "Calcula todo tipo de operaciones con los datos reales actualizados.",
+    link: "/simulador/",
   },
   {
     icon: "Icon04",
     title: "Juntas Accionistas",
     description: "Gestiona las juntas: Convocatoria, delegaciones, votos, etc.",
+    link: "/juntas-consejos/",
   },
   {
     icon: "Icon05",

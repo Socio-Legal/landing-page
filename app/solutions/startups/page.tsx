@@ -25,7 +25,6 @@ const Page = () => {
     <>
       <HeroSection {...hero} />
       <ClientsSection {...clients} />
-      {/* TODO: H1 -> Section ID Products */}
       <FeaturesSection {...features} />
       <TestimonialsSection {...testimonials} />
       <CallToActionSection />

@@ -27,7 +27,7 @@ export const siteConfig = {
           icon: "Stars",
           title: "Digital y Automatizado",
           description: "Aprovecha la automatización digital para tu sociedad.",
-          href: "#",
+          href: "/producto/",
         },
         items: [
           {
@@ -122,6 +122,7 @@ export const siteConfig = {
   ],
   footer: {
     menu: [
+      // TODO: update footer links
       [
         { id: 0, title: "Producto", url: "#", isHeader: true },
         { id: 1, title: "Libro de Socios", url: "/libro-de-socios/" },
