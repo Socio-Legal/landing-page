@@ -107,7 +107,7 @@ export const siteConfig = {
   cta: [
     {
       text: "Iniciar sesión",
-      link: "/login",
+      link: routes.APP_LOGIN,
       variant: "ghost",
       className: "",
       hasIcon: false,
