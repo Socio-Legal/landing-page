@@ -1,3 +1,5 @@
+import { routes } from "../routes";
+
 export const metadata = {
   title: "Sttok para Abogados", // ej., "Nombre del Producto"
   description:
@@ -12,7 +14,7 @@ export const hero = {
     "Con Sttok digitalizas la gestión de sociedades incrementando el número de sociedades que gestiona un abogado, ahorrando tiempo y evitando errores. Sttok te permite dar un mejor servicio a los clientes ganando tiempo y aportando valor.", // ej., "Una descripción convincente del principal beneficio de tu producto"
   button: {
     text: "Solicitar Demo", // ej., "Comenzar"
-    link: "/demo", // ej., "/registro"
+    link: routes.APP_CALENDLY,
   },
   image: {
     light: "", // ej., "https://ejemplo.com/imagen-hero-clara.jpg"

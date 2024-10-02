@@ -1,3 +1,5 @@
+import { routes } from "../routes";
+
 export const metadata = {
   title: "Juntas y Consejos", // ej., "Nombre del Producto"
   description:
@@ -12,7 +14,7 @@ export const hero = {
     "En Sttok, entendemos la importancia de las juntas y consejos para el buen funcionamiento y toma de decisiones en una empresa. Con Sttok podrás convocar, gestionar delegaciones, votaciones y generar las actas y certificados de forma digital y en pocos minutos.", // ej., "Una descripción convincente del principal beneficio de tu producto"
   button: {
     text: "Gestiona tu Junta", // ej., "Comenzar"
-    link: "/registro", // ej., "/registro"
+    link: routes.APP_DEMO, // ej., "/registro"
   },
   image: {
     light: "https://www.sttok.com/wp-content/uploads/2023/11/14shots_so.jpg", // ej., "https://ejemplo.com/imagen-hero-clara.jpg"

@@ -1,3 +1,5 @@
+import { routes } from "../routes";
+
 export const metadata = {
   title: "Empresas y Grupos de Sociedades - Sttok", // ej., "Nombre del Producto"
   description:
@@ -12,7 +14,7 @@ export const hero = {
     "Gestión digital de sociedades para Empresas y Grupos de Sociedades. Automatiza la gestión societaria.", // ej., "Una descripción convincente del principal beneficio de tu producto"
   button: {
     text: "Solicitar Demo", // ej., "Comenzar"
-    link: "/demo", // ej., "/registro"
+    link: routes.APP_CALENDLY,
   },
   image: {
     light: "", // ej., "https://ejemplo.com/imagen-hero-clara.jpg"

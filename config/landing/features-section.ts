@@ -1,10 +1,12 @@
+import { routes } from "../routes";
+
 export const header = {
   slogan: "Software completo",
   title: "Funcionalidades para gestión societaria",
   description:
     "Reunimos todas las funcionalidades para gestionar digitalmente sociedades. Dispondrás de los datos e información exacta y siempre actualizada.",
   buttonText: "Ver funcionalidades",
-  buttonLink: "#",
+  buttonLink: routes.PRODUCT,
 };
 
 export const items = [

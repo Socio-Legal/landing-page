@@ -1,3 +1,5 @@
+import { routes } from "../routes";
+
 export const metadata = {
   title: "Simulador de Operaciones", // ej., "Nombre del Producto"
   description:
@@ -12,7 +14,7 @@ export const hero = {
     "Calcula fácilmente en pocos segundos todo tipo de operaciones y escenarios. Calcula rondas, ampliaciones, ventas, notas convertibles, etc. Además genera la documentación de las simulaciones en pocos minutos.", // ej., "Una descripción convincente del principal beneficio de tu producto"
   button: {
     text: "Empieza a Simular", // ej., "Comenzar"
-    link: "/registro", // ej., "/registro"
+    link: routes.APP_DEMO, // ej., "/registro"
   },
   image: {
     light:

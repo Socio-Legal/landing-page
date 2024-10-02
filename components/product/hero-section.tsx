@@ -35,7 +35,6 @@ const HeroSection: FC<HeroSectionProps> = ({
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
   const hasButton = !!(button.text && button.link);
-  console.log("🚀 cclog  ~ hasButton:", hasButton);
 
   return (
     <section id="product-hero">

@@ -1,3 +1,5 @@
+import { routes } from "../routes";
+
 export const metadata = {
   title: "Sttok para Inversores", // ej., "Nombre del Producto"
   description:
@@ -12,7 +14,7 @@ export const hero = {
     "Toda la cartera de participadas en un único sitio con los datos reales y actualizados. Podrás saber exactamente el % ND, %FD y potencial FD, tener acceso a escrituras de transacciones, juntas de accionistas, etc.", // ej., "Una descripción convincente del principal beneficio de tu producto"
   button: {
     text: "Solicitar Demo", // ej., "Comenzar"
-    link: "/demo", // ej., "/registro"
+    link: routes.APP_CALENDLY,
   },
   image: {
     light: "", // ej., "https://ejemplo.com/imagen-hero-clara.jpg"

@@ -1,0 +1,24 @@
+export const routes = {
+  /* LANDING PAGE */
+  HOME: "/",
+  PRODUCT: "/producto",
+  PRODUCT_PARTNERS_BOOK: "/libro-de-socios",
+  PRODUCT_INCENTIVE_PLANS: "/planes-de-incentivos",
+  PRODUCT_SHAREHOLDER_MEETINGS: "/juntas-consejos",
+  PRODUCT_OPERATION_DRAFTS: "/simulador",
+  SOLUTIONS: "/soluciones",
+  SOLUTIONS_COMPANIES: "/soluciones/empresas",
+  SOLUTIONS_LAWYERS: "/soluciones/abogados",
+  SOLUTIONS_STARTUPS: "/soluciones/startups",
+  SOLUTIONS_INVESTORS: "/soluciones/inversores",
+  SOLUTIONS_INVESTORS_DASHBOARD: "/soluciones/portal-del-inversor",
+  TESTIMONIALS: "/testimonios",
+  TESTIMONIALS_CLIENT: "/testimonios/:client",
+  PRICING: "/precios",
+  RESOURCES: "/recursos",
+  /* APP */
+  APP: "https://app.sttok.com",
+  APP_DEMO: "https://app.sttok.com/#/demo",
+  APP_LOGIN: "https://app.sttok.com/#/login",
+  APP_CALENDLY: "https://calendly.com/sttok/30min",
+};

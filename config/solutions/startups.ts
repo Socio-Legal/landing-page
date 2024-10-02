@@ -1,3 +1,5 @@
+import { routes } from "../routes";
+
 export const metadata = {
   title: "Sttok para Startups", // ej., "Nombre del Producto"
   description:
@@ -11,7 +13,7 @@ export const hero = {
     "Gestión digital de Startups. Céntrate en hacer crecer la empresa y utiliza Sttok para cálculos de rondas, planes de incentivos, libro de socios, juntas, etc…", // ej., "Una descripción convincente del principal beneficio de tu producto"
   button: {
     text: "Solicitar Demo", // Texto del botón
-    link: "https://www.sttok.com/demo", // Enlace del botón
+    link: routes.APP_CALENDLY,
   },
   image: {
     light: "", // ej., "https://ejemplo.com/imagen-hero-clara.jpg"

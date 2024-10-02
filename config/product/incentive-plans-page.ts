@@ -1,3 +1,5 @@
+import { routes } from "../routes";
+
 export const metadata = {
   title: "Planes de Incentivos", // ej., "Nombre del Producto"
   description:
@@ -12,7 +14,7 @@ export const hero = {
     "La forma más profesional de crear y mantener planes de phantoms y opciones sobre acciones. Sttok te hace todos los cálculos, documentos y calendario. Además, podrás dar acceso a los beneficiarios a su plan.", // ej., "Una descripción convincente del principal beneficio de tu producto"
   button: {
     text: "Empieza ahora", // ej., "Comenzar"
-    link: "/registro", // ej., "/registro"
+    link: routes.APP_DEMO, // ej., "/registro"
   },
   image: {
     light:

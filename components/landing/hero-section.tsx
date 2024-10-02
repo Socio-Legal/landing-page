@@ -1,19 +1,21 @@
 "use client";
 
 import Image from "next/image";
-import { useRef } from "react";
+import React, { useRef } from "react";
 import { useInView } from "framer-motion";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 import { BorderBeam } from "@/components/magicui/border-beam";
-import { Button } from "@/components/ui/button";
 import Blur01 from "@/public/blur-01.svg";
 import Blur02 from "@/public/blur-02.svg";
 import { hero } from "@/config/landing/hero-section";
+import Link from "next/link";
 
 export default function HeroSection() {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
+
+  const hasButton = !!(hero.button.text && hero.button.link);
 
   return (
     <section id="hero">
@@ -63,14 +65,21 @@ export default function HeroSection() {
               {hero.description}
             </p>
 
-            <br />
-
-            <div className="flex justify-center lg:justify-start mt-12">
-              <Button className="translate-y-[-1rem] animate-fade-in gap-1 rounded-lg text-white dark:text-black opacity-0 ease-in-out [--animation-delay:600ms]">
-                <span>{hero.button.text} </span>
-                <ArrowRightIcon className="ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
-              </Button>
-            </div>
+            {hasButton && (
+              <>
+                <br />
+                <div className="flex justify-center lg:justify-start mt-12">
+                  <Link
+                    href={hero.button.link}
+                    target="_blank"
+                    className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary shadow hover:bg-primary/90 h-9 px-4 py-2 translate-y-[-1rem] animate-fade-in gap-1 rounded-lg text-white dark:text-black opacity-0 ease-in-out [--animation-delay:600ms]"
+                  >
+                    <span>{hero.button.text}</span>
+                    <ArrowRightIcon className="ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
+                  </Link>
+                </div>
+              </>
+            )}
           </div>
 
           <div

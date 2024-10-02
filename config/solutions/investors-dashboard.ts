@@ -1,3 +1,5 @@
+import { routes } from "../routes";
+
 export const metadata = {
   title: "Portal del Inversor", // ej., "Nombre del Producto"
   description:
@@ -12,7 +14,7 @@ export const hero = {
     "Da acceso a tus inversores a un portal único con toda su información detallada. Dispondrán de su ficha de socio personalizada, número de participaciones y % exacto. Integra el Portal del Inversor con el diseño e imagen de la web de la empresa.", // ej., "Una descripción convincente del principal beneficio de tu producto"
   button: {
     text: "Solicitar Demo", // ej., "Comenzar"
-    link: "/demo", // ej., "/registro"
+    link: routes.APP_CALENDLY,
   },
   image: {
     light: "", // ej., "https://ejemplo.com/imagen-hero-clara.jpg"
