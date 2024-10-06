@@ -9,7 +9,7 @@ export const hero = {
     link: routes.APP_DEMO,
   },
   image: {
-    light: "/hero-dark.png",
-    dark: "/hero-dark.png",
+    light: "/hero/hero-dark.png",
+    dark: "/hero/hero-dark.png",
   },
 };
