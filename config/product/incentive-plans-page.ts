@@ -17,9 +17,8 @@ export const hero = {
     link: routes.APP_DEMO, // ej., "/registro"
   },
   image: {
-    light:
-      "https://www.sttok.com/wp-content/uploads/2023/11/Screenshot_39-768x730.png", // ej., "https://ejemplo.com/imagen-hero-clara.jpg"
-    dark: "https://www.sttok.com/wp-content/uploads/2023/11/Screenshot_39-768x730.png", // ej., "https://ejemplo.com/imagen-hero-oscura.jpg"
+    light: "/hero/hero-product-planes-incentivos.png", // ej., "https://ejemplo.com/imagen-hero-clara.jpg"
+    dark: "/hero/hero-product-planes-incentivos.png", // ej., "https://ejemplo.com/imagen-hero-oscura.jpg"
   },
 };
 
@@ -34,8 +33,7 @@ export const topFeatures = {
         "Crea planes de incentivos adaptados a las necesidades de tu organización.", // ej., "Descripción de la característica 1"
       icon: "", // ej., "Utilizar este o Animation"
       animation: "AnimatedCard4", // ej., "Utilizar este o Icon"
-      image:
-        "https://www.sttok.com/wp-content/uploads/2023/11/customization.png", // ej., "ImagenCaracteristica1"
+      image: "",
     },
     {
       title: "Automatización de Cálculos", // ej., "Característica 2"
@@ -43,7 +41,7 @@ export const topFeatures = {
         "Automatiza la firma, el cálculo, el vesting y el seguimiento de los planes para cada empleado.", // ej., "Descripción de la característica 2"
       icon: "", // ej., "Utilizar este o Animation"
       animation: "AnimatedCard9_IncentivePlan", // ej., "Utilizar este o Icon"
-      image: "https://www.sttok.com/wp-content/uploads/2023/11/automation.png", // ej., "ImagenCaracteristica2"
+      image: "",
     },
     {
       title: "Acceso para beneficiarios", // ej., "Característica 3"
@@ -51,8 +49,7 @@ export const topFeatures = {
         "Los empleados pueden visualizar y seguir el estado de sus incentivos.", // ej., "Descripción de la característica 3"
       icon: "", // ej., "Utilizar este o Animation"
       animation: "AnimatedCard3", // ej., "Utilizar este o Icon"
-      image:
-        "https://www.sttok.com/wp-content/uploads/2023/11/transparency.png", // ej., "ImagenCaracteristica3"
+      image: "",
     },
   ],
 };

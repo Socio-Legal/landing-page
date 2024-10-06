@@ -10,18 +10,18 @@ const nextConfig = {
       { source: "/simulador", destination: "/operation-drafts" },
       // Solutions
       { source: "/soluciones", destination: "/solutions" },
-      { source: "/soluciones/empresas", destination: "/solutions/companies" },
-      { source: "/soluciones/abogados", destination: "/solutions/lawyers" },
-      { source: "/soluciones/startups", destination: "/solutions/startups" },
-      { source: "/soluciones/inversores", destination: "/solutions/investors" },
+      { source: "/empresas", destination: "/solutions/companies" },
+      { source: "/abogados", destination: "/solutions/lawyers" },
+      { source: "/startups", destination: "/solutions/startups" },
+      { source: "/inversores", destination: "/solutions/investors" },
       {
-        source: "/soluciones/portal-del-inversor",
+        source: "/portal-del-inversor",
         destination: "/solutions/investors-dashboard",
       },
-      // Testimonios
+      // Testimonials
       { source: "/testimonios", destination: "/testimonials" },
       { source: "/testimonios/:client", destination: "/testimonials/:client" },
-      // Precios
+      // Pricing
       { source: "/precios", destination: "/pricing" },
       // Resources
       { source: "/recursos", destination: "/resources" },
@@ -29,6 +29,38 @@ const nextConfig = {
       { source: "/aviso-legal", destination: "/disclaimer" },
       { source: "/privacidad", destination: "/privacy" },
       { source: "/politica-seguridad", destination: "/security" },
+      // Empty pages
+      {
+        source: "/software-de-libro-de-socios",
+        destination: "/software-partner-book",
+      },
+      {
+        source: "/software-de-juntas-de-accionistas",
+        destination: "/software-shareholder-meetings",
+      },
+      {
+        source: "/software-de-gestion-de-captable",
+        destination: "/software-captable-management",
+      },
+      { source: "/software-de-captable", destination: "/software-captable" },
+      {
+        source: "/simulador-de-ampliacion-de-capital",
+        destination: "/capital-increase-simulator",
+      },
+      { source: "/secundario", destination: "/secondary" },
+      {
+        source: "/junta-de-accionistas-digital",
+        destination: "/digital-shareholder-meetings",
+      },
+      { source: "/grupos-societarios", destination: "/corporate-groups" },
+      {
+        source: "/documentacion-societaria",
+        destination: "/corporate-documentation",
+      },
+      {
+        source: "/consejos-de-administracion",
+        destination: "/board-of-directors",
+      },
     ];
   },
   images: {

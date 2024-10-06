@@ -17,8 +17,8 @@ export const hero = {
     link: routes.APP_DEMO, // ej., "/registro"
   },
   image: {
-    light: "https://www.sttok.com/wp-content/uploads/2023/11/14shots_so.jpg", // ej., "https://ejemplo.com/imagen-hero-clara.jpg"
-    dark: "https://www.sttok.com/wp-content/uploads/2023/11/14shots_so.jpg", // ej., "https://ejemplo.com/imagen-hero-oscura.jpg"
+    light: "/hero/hero-product-juntas-consejos.png", // ej., "https://ejemplo.com/imagen-hero-clara.jpg"
+    dark: "/hero/hero-product-juntas-consejos.png", // ej., "https://ejemplo.com/imagen-hero-oscura.jpg"
   },
 };
 
@@ -33,8 +33,7 @@ export const topFeatures = {
         "Envía convocatorias digitales con toda la información necesaria a tus accionistas y consejeros en un clic.", // ej., "Descripción de la característica 1"
       icon: "", // ej., "Utilizar este o Animation"
       animation: "AnimatedBeam01_ShareholderMeeting", // ej., "Utilizar este o Icon"
-      image:
-        "https://www.sttok.com/wp-content/uploads/2023/11/digital-call.png", // Imagen para la característica 1
+      image: "", // Imagen para la característica 1
     },
     {
       // TODO: update icons left and avatars right
@@ -43,8 +42,7 @@ export const topFeatures = {
         "Permite a los accionistas delegar sus votos y gestionar las votaciones de manera segura y transparente.", // ej., "Descripción de la característica 2"
       icon: "", // ej., "Utilizar este o Animation"
       animation: "AnimatedBeam03", // ej., "Utilizar este o Icon"
-      image:
-        "https://www.sttok.com/wp-content/uploads/2023/11/voting-management.png", // Imagen para la característica 2
+      image: "", // Imagen para la característica 2
     },
     {
       title: "Generación Automática de Actas", // ej., "Característica 3"
@@ -52,8 +50,7 @@ export const topFeatures = {
         "Crea actas de reuniones y certificados de acuerdos de manera automática y en pocos minutos.", // ej., "Descripción de la característica 3"
       icon: "", // ej., "Utilizar este o Animation"
       animation: "AnimatedDocScanner", // ej., "Utilizar este o Icon"
-      image:
-        "https://www.sttok.com/wp-content/uploads/2023/11/act-generation.png", // Imagen para la característica 3
+      image: "", // Imagen para la característica 3
     },
   ],
 };

@@ -44,9 +44,8 @@ export const summary = {
 export const content = {
   title: "Taxdown usa Sttok",
   image: {
-    light:
-      "https://www.sttok.com/wp-content/uploads/2024/10/testimonial-main-section-blank-scaled.jpg",
-    dark: "https://www.sttok.com/wp-content/uploads/2024/10/testimonial-main-section-blank-scaled.jpg",
+    light: "/hero/hero-testimonials-taxdown.png",
+    dark: "/hero/hero-testimonials-taxdown.png",
   },
   sections: [
     {

@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Yaba utiliza Sttok para gestionar planes de incentivos y su captable", // ej., "Nombre del Producto"
-  description: "Yaba utiliza el software de gestión societaria para emrpesas. Libro de Socios, Planes de incentivos, Juntas de accionistas, etc.", // ej., "Una breve descripción del producto o servicio"
+  description:
+    "Yaba utiliza el software de gestión societaria para emrpesas. Libro de Socios, Planes de incentivos, Juntas de accionistas, etc.", // ej., "Una breve descripción del producto o servicio"
   keywords:
     "Yaba, Sttok, yaba y Sttok, Libro de socios, planes de incentivos, clientes de sttok", // ej., "palabra_clave1, palabra_clave2, palabra_clave3"
 };
@@ -15,7 +16,7 @@ export const summary = {
   },
   button: {
     text: "Ir al sitio de Yaba",
-    link: "www.goyaba.co",
+    link: "https://yaba.life/",
   },
   features: [
     {
@@ -41,9 +42,8 @@ export const summary = {
 export const content = {
   title: "Yaba usa Sttok",
   image: {
-    light:
-      "https://www.sttok.com/wp-content/uploads/2024/10/testimonial-main-section-blank-scaled.jpg",
-    dark: "https://www.sttok.com/wp-content/uploads/2024/10/testimonial-main-section-blank-scaled.jpg",
+    light: "/hero/hero-testimonials-yaba.png",
+    dark: "/hero/hero-testimonials-yaba.png",
   },
   sections: [
     {

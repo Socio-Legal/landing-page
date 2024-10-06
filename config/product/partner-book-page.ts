@@ -16,8 +16,8 @@ export const hero = {
     link: routes.APP_DEMO,
   },
   image: {
-    light: "https://www.sttok.com/wp-content/uploads/2023/10/810shots_so.png",
-    dark: "https://www.sttok.com/wp-content/uploads/2023/10/810shots_so.png",
+    light: "/hero/hero-product-libro-de-socios.png",
+    dark: "/hero/hero-product-libro-de-socios.png",
   },
 };
 

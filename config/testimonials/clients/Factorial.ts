@@ -44,9 +44,8 @@ export const summary = {
 export const content = {
   title: "Factorial usa Sttok",
   image: {
-    light:
-      "https://www.sttok.com/wp-content/uploads/2024/10/testimonial-main-section-Factorial-scaled.jpg",
-    dark: "https://www.sttok.com/wp-content/uploads/2024/10/testimonial-main-section-Factorial-scaled.jpg",
+    light: "/hero/hero-testimonials-factorial.jpg",
+    dark: "/hero/hero-testimonials-factorial.jpg",
   },
   sections: [
     {

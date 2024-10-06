@@ -16,6 +16,7 @@ import { cn } from "@/lib/utils";
 
 import PlanetStarsSection from "../planet-stars-header";
 import SectionHeader from "../section-header";
+import { routes } from "@/config/routes";
 
 type Interval = "monthly" | "yearly";
 
@@ -208,6 +209,7 @@ export default function PricingSection() {
     await new Promise((resolve) => setTimeout(resolve, 1000)); // Simulate a delay
     setIsLoading(false);
     setHasSelected(true);
+    window.open(routes.APP_CALENDLY, "_blank");
   };
 
   return (

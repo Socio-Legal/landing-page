@@ -17,9 +17,8 @@ export const hero = {
     link: routes.APP_DEMO, // ej., "/registro"
   },
   image: {
-    light:
-      "https://www.sttok.com/wp-content/uploads/2023/11/673shots_so-600x450.jpg", // ej., "https://ejemplo.com/imagen-hero-clara.jpg"
-    dark: "https://www.sttok.com/wp-content/uploads/2023/11/673shots_so-600x450.jpg", // ej., "https://ejemplo.com/imagen-hero-oscura.jpg"
+    light: "/hero/hero-product-planes-incentivos.png", // ej., "https://ejemplo.com/imagen-hero-clara.jpg"
+    dark: "/hero/hero-product-planes-incentivos.png", // ej., "https://ejemplo.com/imagen-hero-oscura.jpg"
   },
 };
 
@@ -34,8 +33,7 @@ export const topFeatures = {
         "Automatiza el cálculo de operaciones como rondas de inversión, ampliaciones de capital y ventas de acciones.",
       icon: "Calculator", // ej., "Utilizar este o Animation"
       animation: "", // ej., "Utilizar este o Icon"
-      image:
-        "https://www.sttok.com/wp-content/uploads/2023/11/automatic-calculation.png", // ej., "ImagenCaracteristica1"
+      image: "",
     },
     {
       title: "Simulaciones en Tiempo Real", // ej., "Característica 2"
@@ -43,8 +41,7 @@ export const topFeatures = {
         "Simula escenarios financieros complejos automáticamente, permitiéndote tomar decisiones con datos precisos.",
       icon: "Users", // ej., "Utilizar este o Animation"
       animation: "", // ej., "Utilizar este o Icon"
-      image:
-        "https://www.sttok.com/wp-content/uploads/2023/11/scenario-simulation.png", // ej., "ImagenCaracteristica2"
+      image: "",
     },
     {
       title: "Documentación Automática", // ej., "Característica 3"
@@ -52,8 +49,7 @@ export const topFeatures = {
         "Genera todos los documentos necesarios para tus operaciones en cuestión de minutos.",
       icon: "FileCheck", // ej., "Utilizar este o Animation"
       animation: "", // ej., "Utilizar este o Icon"
-      image:
-        "https://www.sttok.com/wp-content/uploads/2023/11/documentation-generation.png", // ej., "ImagenCaracteristica3"
+      image: "",
     },
   ],
 };

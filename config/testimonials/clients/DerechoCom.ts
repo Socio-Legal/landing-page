@@ -9,7 +9,7 @@ export const summary = {
   },
   button: {
     text: "Ir al sitio de DerechoCom",
-    link: "https://DerechoComhr.es/",
+    link: "https://www.derecho.com/",
   },
   features: [
     {
@@ -35,9 +35,8 @@ export const summary = {
 export const content = {
   title: "DerechoCom usa Sttok",
   image: {
-    light:
-      "https://www.sttok.com/wp-content/uploads/2024/10/testimonial-main-section-blank-scaled.jpg",
-    dark: "https://www.sttok.com/wp-content/uploads/2024/10/testimonial-main-section-blank-scaled.jpg",
+    light: "/hero/hero-testimonials-derechocom.png",
+    dark: "/hero/hero-testimonials-derechocom.png",
   },
   sections: [
     {

@@ -16,8 +16,8 @@ export const hero = {
     link: routes.APP_CALENDLY,
   },
   image: {
-    light: "", // ej., "https://ejemplo.com/imagen-hero-clara.jpg"
-    dark: "", // ej., "https://ejemplo.com/imagen-hero-oscura.jpg"
+    light: "/hero/hero-solutions-startups.png", // ej., "https://ejemplo.com/imagen-hero-clara.jpg"
+    dark: "/hero/hero-solutions-startups.png", // ej., "https://ejemplo.com/imagen-hero-oscura.jpg"
   },
 };
 

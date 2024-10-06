@@ -173,14 +173,14 @@ const Page: FC<PageProps> = ({ params }) => {
             <section className="mb-12">
               <Image
                 src={content.image.dark}
-                alt="Evervault Starter Kit Preview"
+                alt="Client website image"
                 width={800}
                 height={400}
                 className="rounded-lg shadow-lg hidden dark:block"
               />
               <Image
                 src={content.image.light}
-                alt="Evervault Starter Kit Preview"
+                alt="Client website image"
                 width={800}
                 height={400}
                 className="rounded-lg shadow-lg block dark:hidden"
