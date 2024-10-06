@@ -2,7 +2,7 @@ import React from "react";
 
 export const AnimatedDocScanner = () => {
   return (
-    <div className="relative h-full min-h-[240px] rounded-[20px] p-0 lg:col-span-1 mb-6">
+    <div className="relative h-full min-h-[240px] max-w-[300px] rounded-[20px] p-0 lg:col-span-1 mt-6 mb-10">
       <p className="absolute -top-20 left-1/2 hidden size-fit -translate-x-1/2 items-center justify-center object-contain lg:flex">
         {/* Step 1 */}
         <svg
@@ -29,11 +29,11 @@ export const AnimatedDocScanner = () => {
           ></path>
         </svg>
       </p>
-      <div className="flex size-full flex-col items-center justify-between gap-y-3.5 p-5">
+      <div className="flex  flex-col items-center justify-between py-5">
         {/* <p className="flex items-center justify-center text-xl font-semibold text-neutral-900 dark:text-white">
           Personalize
         </p> */}
-        <div className="relative z-[1] mx-auto flex w-full max-w-[200px] flex-col items-start gap-y-2 rounded-[10px] bg-white p-2.5 shadow-[0_21px_44px_-32px_rgba(63,70,75,0.10),0_26px_30px_-23px_rgba(39,44,48,0.20),0_14px_40px_0_rgba(39,44,48,0.05),0_0_0_1px_rgba(39,44,48,0.08),0_4px_8px_0px_rgba(39,44,48,0.12)]">
+        <div className="relative z-[1] mx-auto flex w-full max-w-[150px] flex-col items-start gap-y-2 rounded-[10px] bg-white p-2.5 shadow-[0_21px_44px_-32px_rgba(63,70,75,0.10),0_26px_30px_-23px_rgba(39,44,48,0.20),0_14px_40px_0_rgba(39,44,48,0.05),0_0_0_1px_rgba(39,44,48,0.08),0_4px_8px_0px_rgba(39,44,48,0.12)]">
           <div className="absolute left-1/2 top-1/2 z-[-1] size-[calc(100%+100px)] -translate-x-1/2 -translate-y-1/2 border-0 border-neutral-100 bg-gradient-to-b from-neutral-200/40 to-transparent">
             <div className="pointer-events-none absolute -left-0.5 -top-0.5 size-6 border-l-2 border-t-2 border-neutral-200"></div>
             <div className="pointer-events-none absolute -right-0.5 -top-0.5 size-6 border-r-2 border-t-2 border-neutral-200"></div>

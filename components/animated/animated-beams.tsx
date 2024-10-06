@@ -6,6 +6,7 @@ import {
 import { AnimatedBeamMultiToMulti } from "./animated-beam-multi-to-multi";
 import { AnimatedBeamMultiToSingle } from "./animated-beam-multi-to-single";
 import { AnimatedBeamSingleToMulti } from "./animated-beam-single-to-multi";
+import { AnimatedBeamSingleToMultiOriginal } from "./animated-beam-single-to-multi-original";
 import { AnimatedCard3 } from "./animated-card-3";
 import { AnimatedCard4 } from "./animated-card-4";
 import { AnimatedCard9 } from "./animated-card-9";
@@ -22,6 +23,9 @@ export const AnimatedBeams = {
       className="border-0 p-0 h-[240px] mb-16 md:shadow-none"
       icons={beamShareholderMeeting}
     />
+  ),
+  AnimatedBeam01_PartnerBook: (
+    <AnimatedBeamSingleToMultiOriginal className="border-0 p-0 h-[240px] mb-16 md:shadow-none" />
   ),
   AnimatedBeam02: (
     <AnimatedBeamMultiToSingle className="border-0 p-0 h-[240px] mb-16 md:shadow-none" />

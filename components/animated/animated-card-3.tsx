@@ -62,34 +62,27 @@ export const AnimatedCard3 = () => {
 
   return (
     <div className="relative flex h-full max-h-[300px] min-h-[300px] w-full max-w-[32rem] py-10 transform-gpu flex-col justify-between overflow-hidden rounded-lg border bg-white [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)] dark:bg-black dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]">
-      <motion.div
-        variants={containerVariants}
-        initial="initial"
-        whileHover="whileHover"
-        className="flex h-full w-full cursor-pointer flex-col justify-between"
-      >
-        <motion.div className="flex h-full w-full cursor-pointer flex-col items-center justify-center gap-y-2 overflow-hidden rounded-t-xl p-8">
-          <div className="w-fit rounded-full border px-2 text-[15px]">
-            Acceso concedido ✨
+      <motion.div className="flex h-full w-full cursor-pointer flex-col items-center justify-center gap-y-2 overflow-hidden rounded-t-xl p-8">
+        <div className="w-fit rounded-full border px-2 text-[15px]">
+          Acceso concedido ✨
+        </div>
+        <motion.div
+          variants={variant2}
+          className="flex max-w-[300px] items-start gap-x-2 rounded-lg border border-neutral-300 border-neutral-400/20 bg-white p-4 shadow-[0px_0px_40px_-25px_rgba(0,0,0,0.25)] dark:border-neutral-800 dark:bg-neutral-900"
+        >
+          <div className="flex h-6 w-6 shrink-0 rounded-full bg-blue-500">
+            <img
+              className="h-full w-full rounded-full object-cover"
+              src={AvatarBase64_Gerard}
+              alt="Gerard"
+            />
           </div>
-          <motion.div
-            variants={variant2}
-            className="flex max-w-[300px] items-start gap-x-2 rounded-lg border border-neutral-300 border-neutral-400/20 bg-white p-4 shadow-[0px_0px_40px_-25px_rgba(0,0,0,0.25)] dark:border-neutral-800 dark:bg-neutral-900"
-          >
-            <div className="flex h-6 w-6 shrink-0 rounded-full bg-blue-500">
-              <img
-                className="h-full w-full rounded-full object-cover"
-                src={AvatarBase64_Gerard}
-                alt="jane"
-              />
-            </div>
-            <div>
-              <h3 className="text-base font-semibold">Gerard Vizcaíno</h3>
-              <p className="text-sm text-neutral-500 dark:text-neutral-400">
-                Beneficiario de 3.500 Phantoms del Plan Incentivo 2025
-              </p>
-            </div>
-          </motion.div>
+          <div>
+            <h3 className="text-base font-semibold">Gerard Vizcaíno</h3>
+            <p className="text-sm text-neutral-500 dark:text-neutral-400">
+              Beneficiario de 3.500 Phantoms del Plan Incentivo 2025
+            </p>
+          </div>
         </motion.div>
       </motion.div>
     </div>

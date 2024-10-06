@@ -31,7 +31,7 @@ export const topFeatures = {
       description:
         "Información, numeración, % y primas actualizadas y al día. Toma decisiones con datos exactos y diluciones correctas.",
       // icon: "Brain",
-      animation: "AnimatedBeam01",
+      animation: "AnimatedBeam01_PartnerBook",
       image: "Feature1",
     },
     {
