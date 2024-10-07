@@ -37,7 +37,7 @@ export const topFeatures = {
     {
       title: "Acceso para Socios e Inversores",
       description:
-        "Gestiona profesionalmente la sociedada facilitando el acceso a los datos, documentos y certificados individuales de cada socio.",
+        "Gestiona profesionalmente la sociedad facilitando el acceso a los datos, documentos y certificados individuales de cada socio.",
       // icon: "Zap",
       animation: "AnimatedBeam03",
       image: "Feature2",
@@ -57,11 +57,14 @@ export const clients = {
   title: "CLIENTES QUE UTILIZAN EL LIBRO DE SOCIOS",
   clients: [
     "Factorial",
-    "DerechoCom",
+    "MyInvestor",
     "Mailtrack",
     "Taxdown",
     "PldSpace",
     "Broseta",
+    "Caballero",
+    "Barkibu",
+    "DealCar",
   ],
 };
 
@@ -78,9 +81,9 @@ export const features = {
     },
     {
       icon: "Icon02",
-      title: "Planes de Incentivos",
+      title: "Acceso para los Socios",
       description:
-        "La forma más profesional de crear y mantener todo tipo de planes.",
+        "La forma más profesional de relacionarte con los socios e inversores.",
     },
     {
       icon: "Icon03",
@@ -90,21 +93,21 @@ export const features = {
     },
     {
       icon: "Icon04",
-      title: "Juntas Accionistas",
+      title: "Numeración de participaciones",
       description:
-        "Gestiona las juntas: Convocatoria, delegaciones, votos, etc.",
+        "Libro de socio con detalle de numeración, clases, cargas y cotitulares",
     },
     {
       icon: "Icon05",
-      title: "Ofertas de Compra",
+      title: "Documentación",
       description:
-        "Gestiona y ejecuta operaciones de secundario. Tender offers.",
+        "Listado de transacciones con acceso a la escritura o documento.",
     },
     {
       icon: "Icon06",
-      title: "Documentación Societaria",
+      title: "Información al día",
       description:
-        "Genera documentos, escrituras, certificados o actas en segundos.",
+        "Dispondrás de número y % exactos y actualizados, al día para tomar decisiones.",
     },
   ],
 };

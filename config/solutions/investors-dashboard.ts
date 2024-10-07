@@ -63,7 +63,7 @@ export const features = {
 };
 
 export const testimonials = {
-  title: "Lo que Dicen Nuestros Inversores", // ej., "Lo que Dicen Nuestros Clientes"
+  title: "Lo que dicen nuestros Clientes", // ej., "Lo que Dicen Nuestros Clientes"
   description: "Inversores que ya han mejorado su gestión con Sttok.", // ej., "Lee testimonios de clientes satisfechos"
   items: [
     {

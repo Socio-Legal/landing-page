@@ -13,9 +13,8 @@ export const hero = {
   button: { text: "", link: "" },
 
   image: {
-    light:
-      "https://static.vecteezy.com/system/resources/previews/003/277/169/non_2x/stars-to-complete-five-stars-star-rating-and-negative-reviews-concept-free-photo.jpg",
-    dark: "https://static.vecteezy.com/system/resources/previews/003/277/169/non_2x/stars-to-complete-five-stars-star-rating-and-negative-reviews-concept-free-photo.jpg",
+    light: "/hero/hero-testimonials.png",
+    dark: "/hero/hero-testimonials.png",
   },
 };
 
@@ -47,10 +46,10 @@ export const features = {
     },
     {
       icon: "",
-      logo: "DerechoCom",
+      logo: "Caballero",
       title: "",
       description:
-        "DerechoCom es una empresa de servicios legales que ayuda a las empresas a cumplir con la normativa vigente.",
+        "El Grupo Caballero una empresa familiar fundada en 1830, radicada en el Puerto de Santa María en Cádiz, España",
     },
     {
       icon: "",

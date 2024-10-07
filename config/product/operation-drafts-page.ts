@@ -17,8 +17,8 @@ export const hero = {
     link: routes.APP_DEMO, // ej., "/registro"
   },
   image: {
-    light: "/hero/hero-product-planes-incentivos.png", // ej., "https://ejemplo.com/imagen-hero-clara.jpg"
-    dark: "/hero/hero-product-planes-incentivos.png", // ej., "https://ejemplo.com/imagen-hero-oscura.jpg"
+    light: "/hero/hero-product-simulador.png", // ej., "https://ejemplo.com/imagen-hero-clara.jpg"
+    dark: "/hero/hero-product-simulador.png", // ej., "https://ejemplo.com/imagen-hero-oscura.jpg"
   },
 };
 
@@ -56,7 +56,14 @@ export const topFeatures = {
 
 export const clients = {
   title: "Nuestros Clientes de Confianza", // ej., "Nuestros Clientes de Confianza"
-  clients: ["Factorial", "LegalPigeon", "Banktrack", "PldSpace"], // ej., ["Cliente1", "Cliente2", "Cliente3"]
+  clients: [
+    "Factorial",
+    "LegalPigeon",
+    "Banktrack",
+    "PldSpace",
+    "Barkibu",
+    "DealCar",
+  ], // ej., ["Cliente1", "Cliente2", "Cliente3"]
 };
 
 export const features = {

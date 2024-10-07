@@ -19,6 +19,7 @@ import * as Yaba from "@/config/testimonials/clients/Yaba";
 import * as DerechoCom from "@/config/testimonials/clients/DerechoCom";
 import * as Taxdown from "@/config/testimonials/clients/Taxdown";
 import * as Banktrack from "@/config/testimonials/clients/Banktrack";
+import * as Caballero from "@/config/testimonials/clients/Caballero";
 
 import CallToActionSection from "@/components/landing/cta-section";
 import { blurStyle01 } from "@/components/styles/blur-styles";
@@ -69,6 +70,7 @@ const testimonialPages = {
   DerechoCom: DerechoCom,
   Taxdown: Taxdown,
   Banktrack: Banktrack,
+  Caballero: Caballero,
 };
 
 const getOther2Testimonials = (client: string): TestimonialProps[] => {

@@ -23,4 +23,6 @@ export const items = [
   "Incapto",
   "LegalPigeon",
   "Criptan",
+  "Barkibu",
+  "DealCar",
 ];

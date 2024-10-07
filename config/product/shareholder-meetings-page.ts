@@ -65,6 +65,8 @@ export const clients = {
     "PldSpace",
     "MyInvestor",
     "Broseta",
+    "Barkibu",
+    "DealCar",
   ],
 };
 

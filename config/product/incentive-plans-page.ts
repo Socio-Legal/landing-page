@@ -65,6 +65,8 @@ export const clients = {
     "Broseta",
     "MyInvestor",
     "Yaba",
+    "Barkibu",
+    "DealCar",
   ],
 };
 
@@ -77,7 +79,7 @@ export const features = {
       icon: "Icon01",
       title: "Múltiples Tipos de Planes",
       description:
-        "Crea y gestiona diversos tipos de planes como Stock Options, Phantom Shares, Stock Options y más, adaptándose a tus necesidades específicas.",
+        "Crea y gestiona diversos tipos de planes como Stock Options, Phantom Shares y más, adaptándose a tus necesidades específicas",
     },
     {
       icon: "Icon02",
