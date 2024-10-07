@@ -59,7 +59,7 @@ export const AnimatedBeamSingleToMultiOriginal: FC<
           <Circle ref={div7Ref}>{icons[0]}</Circle>
         </div>
         <div className="flex flex-col justify-center">
-          <Circle ref={div6Ref} className="size-16 p-3">
+          <Circle ref={div6Ref} className="size-16">
             {icons[1]}
           </Circle>
         </div>

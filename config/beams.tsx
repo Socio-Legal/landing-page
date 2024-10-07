@@ -4,7 +4,7 @@ import { Icons } from "@/components/animated/icons";
 
 export const beamDefault = [
   <Icons.user key="user" />,
-  <SttokIcons.logoMin key="sttok" className="h-4 w-4" />,
+  <SttokIcons.logoMin key="sttok" />,
   <Icons.googleDrive key="drive" />,
   <Icons.googleDocs key="docs" />,
   <Icons.messenger key="messenger" />,
