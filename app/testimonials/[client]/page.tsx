@@ -101,7 +101,7 @@ const Page: FC<PageProps> = ({ params }) => {
 
   return (
     <>
-      <div className="flex min-h-screen container mx-auto px-4">
+      <div className="flex flex-col md:flex-row min-h-screen container mx-auto px-4">
         {/* Left sidebar */}
         <div
           className="w-full md:w-2/5 bg-backgroundbrand p-6 overflow-y-auto"
