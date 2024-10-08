@@ -7,6 +7,7 @@ import {
   DrawerHeader,
   DrawerTrigger,
 } from "@/components/ui/drawer";
+import { routes } from "@/config/routes";
 import { siteConfig } from "@/config/site-config";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
@@ -48,20 +49,20 @@ export default function drawerDemo() {
         </DrawerHeader>
         <DrawerFooter>
           <Link
-            href="/login"
+            href={routes.APP_LOGIN}
             className={buttonVariants({ variant: "outline" })}
           >
-            Login
+            Iniciar sesión
           </Link>
           <Link
-            href="/signup"
+            href={routes.APP_CALENDLY}
             className={cn(
               buttonVariants({ variant: "default" }),
               "w-full sm:w-auto text-background flex gap-2"
             )}
           >
-            <Icons.logo className="h-6 w-6" />
-            Get Started for Free
+            {/* <Icons.logo className="h-6 w-6" /> */}
+            Solicitar demo
           </Link>
         </DrawerFooter>
       </DrawerContent>
