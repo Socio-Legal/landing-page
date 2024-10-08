@@ -48,10 +48,7 @@ const SectionHeader = ({
       )}
 
       {title && (
-        <h2
-          className="mb-4 text-2xl font-extrabold text-primary sm:text-4xl xl:text-heading-2"
-          style={{ fontSize: "48px", lineHeight: "58px" }}
-        >
+        <h2 className="mb-4 text-3xl font-extrabold text-primary sm:text-4xl md:text-4xl lg:text-5xl">
           {title}
         </h2>
       )}
