@@ -58,9 +58,12 @@ export function SiteFooter() {
         </div>
 
         <div className="pt-5 md:w-1/2">
-          <div className="flex items-start justify-between gap-x-3 lg:pl-10">
+          <div className="block md:flex items-start justify-between md:gap-x-3 lg:pl-10">
             {footerLinks.map((column, columnIndex) => (
-              <ul key={columnIndex} className="flex flex-col gap-y-2">
+              <ul
+                key={columnIndex}
+                className="flex flex-col gap-y-2 mt-10 md:mt-0"
+              >
                 {column.map((link) => (
                   <li
                     key={link.id}
