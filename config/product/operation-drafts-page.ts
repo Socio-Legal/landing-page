@@ -55,7 +55,7 @@ export const topFeatures = {
 };
 
 export const clients = {
-  title: "Nuestros Clientes de Confianza", // ej., "Nuestros Clientes de Confianza"
+  title: "CLIENTES QUE UTILIZAN EL SIMULADOR DE OPERACIONES",
   clients: [
     "Factorial",
     "LegalPigeon",

@@ -55,7 +55,7 @@ export const topFeatures = {
 };
 
 export const clients = {
-  title: "CLIENTES QUE UTILIZAN EL LIBRO DE SOCIOS",
+  title: "CLIENTES QUE UTILIZAN LOS PLANES DE INCENTIVOS",
   clients: [
     "Factorial",
     "DerechoCom",

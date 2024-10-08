@@ -56,7 +56,7 @@ export const topFeatures = {
 };
 
 export const clients = {
-  title: "CLIENTES QUE UTILIZAN EL LIBRO DE SOCIOS",
+  title: "CLIENTES QUE UTILIZAN LAS JUNTAS Y CONSEJOS",
   clients: [
     "Factorial",
     "Shakers",
