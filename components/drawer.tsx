@@ -27,8 +27,8 @@ export default function drawerDemo() {
               title="brand-logo"
               className="relative mr-6 flex items-center space-x-2"
             >
-              <Icons.logo className="w-auto h-[40px]" />
-              <span className="font-bold text-xl">{siteConfig.name}</span>
+              <Icons.logo className="w-auto h-[30px]" />
+              {/* <span className="font-bold text-xl">{siteConfig.name}</span> */}
             </Link>
           </div>
           <nav>
@@ -36,7 +36,9 @@ export default function drawerDemo() {
               {siteConfig.header.map((item, index) => (
                 <li key={index} className="my-3">
                   {item.trigger ? (
-                    <span className="font-semibold">{item.trigger}</span>
+                    <Link href={item.href || ""} className="font-semibold">
+                      {item.trigger}
+                    </Link>
                   ) : (
                     <Link href={item.href || ""} className="font-semibold">
                       {item.label}

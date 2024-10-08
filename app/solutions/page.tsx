@@ -5,15 +5,14 @@ import TestimonialsSection from "@/components/product/testimonials-section";
 import FeaturesSection from "@/components/product/features-section";
 import ClientsSection from "@/components/product/clients-section";
 import HeroSection from "@/components/product/hero-section";
-import TopFeatures from "@/components/product/top-features";
+
 import {
   metadata as page,
   clients,
-  topFeatures,
   hero,
   features,
   testimonials,
-} from "@/config/product/partner-book-page";
+} from "@/config/solutions/companies";
 
 export const metadata = {
   title: page.title,
@@ -25,7 +24,6 @@ const Page = () => {
   return (
     <>
       <HeroSection {...hero} />
-      <TopFeatures {...topFeatures} />
       <ClientsSection {...clients} />
       <FeaturesSection {...features} />
       <TestimonialsSection {...testimonials} />

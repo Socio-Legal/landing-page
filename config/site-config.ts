@@ -23,6 +23,7 @@ export const siteConfig = {
   header: [
     {
       trigger: "Producto",
+      href: routes.PRODUCT,
       content: {
         main: {
           icon: "Stars",
@@ -60,6 +61,7 @@ export const siteConfig = {
     },
     {
       trigger: "Soluciones",
+      href: routes.SOLUTIONS,
       content: {
         items: [
           {
