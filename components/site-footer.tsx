@@ -3,6 +3,7 @@ import { Icons } from "./icons";
 
 import Blur02 from "@/public/blur-02.svg";
 import { siteConfig } from "@/config/site-config";
+import Image from "next/image";
 
 interface Icon {
   icon: JSX.Element;
@@ -84,10 +85,12 @@ export function SiteFooter() {
       <div className="flex flex-col justify-between gap-y-10 border-t border-dashed py-10 md:flex-row md:items-center container">
         <div className="flex items-center gap-x-4">
           {securityLogos.map((logo, index) => (
-            <img
+            <Image
               key={index}
               src={logo}
-              alt="security"
+              alt="Security logo"
+              width={100}
+              height={50}
               className="w-auto h-12"
             />
           ))}

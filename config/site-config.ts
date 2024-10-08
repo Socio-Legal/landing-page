@@ -183,11 +183,7 @@ export const siteConfig = {
         },
       ],
     ],
-    logos: [
-      "https://www.sttok.com/images/logo-gdpr-compliant.png",
-      "https://www.sttok.com/images/logo-iso-27001.png",
-      "https://www.sttok.com/images/logo-ssl.png",
-    ],
+    logos: ["/logo-gdpr-compliant.png", "/logo-iso-27001.png", "/logo-ssl.png"],
     social: [
       {
         icon: "LinkedIn",
