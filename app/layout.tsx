@@ -36,7 +36,9 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <GoogleTagManager gtmId="G-LWNDHYBY2N" />
+
           {children}
+
           <Analytics />
           <Toaster />
         </ThemeProvider>
