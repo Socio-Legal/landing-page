@@ -1,5 +1,5 @@
 import { FC } from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 import { items as companies, header } from "@/config/landing/clients-section";
 import { clientLogos, getClientLogo } from "@/config/client-logos";
@@ -35,15 +35,16 @@ const ClientsSection: FC = () => {
             {companies.map((logo, index) => (
               <div
                 key={index}
-                className={`h-10 w-40 px-2 brightness-0 dark:brightness-0 dark:invert mb-8
+                className={`relative h-10 w-40 px-2 brightness-0 dark:brightness-0 dark:invert mb-8
                   ${getColStarts(index, companies)}
                 `}
               >
                 <Image
                   src={getClientLogo(logo as keyof typeof clientLogos)}
                   alt={logo}
-                  layout="fill"
+                  fill={true}
                   objectFit="contain"
+                  className="max-h-[40px] max-w-[160px] mx-auto"
                 />
               </div>
             ))}
