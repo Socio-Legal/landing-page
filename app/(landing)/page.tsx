@@ -1,18 +1,26 @@
+"use client";
+
 import React from "react";
+import { useTranslation } from "react-i18next";
+
 import HeroSection from "@/components/landing/hero-section";
 import ClientsSection from "@/components/landing/clients-section";
-import FeaturesSection from "@/components/landing/features-section";
+import FeaturesSection, {
+  FeatureItem,
+} from "@/components/landing/features-section";
 import WhoUsesSttokSection from "@/components/landing/who-uses-sttok-section";
 import TestimonialsSection from "@/components/landing/testimonials-section";
 import ProductsSection from "@/components/landing/products-section";
-import PricingSection from "@/components/landing/pricing-section";
 import CallToActionSection from "@/components/landing/cta-section";
 
 import { SphereMask } from "@/components/magicui/sphere-mask";
 import Particles from "@/components/magicui/particles";
-import { items as features } from "@/config/landing/features-section";
 
-export default async function Page() {
+export default function Page() {
+  const { t } = useTranslation("features-section");
+
+  const features = t("items", { returnObjects: true }) as FeatureItem[];
+
   return (
     <>
       <HeroSection />
@@ -24,7 +32,6 @@ export default async function Page() {
       <FeaturesSection features={features} />
       <WhoUsesSttokSection />
       <TestimonialsSection />
-      {/* <PricingSection /> */}
       <CallToActionSection />
 
       <Particles
