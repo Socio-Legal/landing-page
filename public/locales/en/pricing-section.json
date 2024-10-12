@@ -1,0 +1,61 @@
+{
+  "header": {
+    "slogan": "Pricing",
+    "title": "Plans tailored to your needs",
+    "description": "Save time by automating manual tasks, avoid errors, have always updated data. Add value to all stakeholders.",
+    "buttonText": "",
+    "buttonLink": ""
+  },
+  "config": {
+    "switchLabel": "",
+    "suscribeLabel": "Subscribe",
+    "suscribingLabel": "Subscribing"
+  },
+  "items": [
+    {
+      "id": "price_1",
+      "name": "Basic",
+      "description": "Companies with up to 10 shareholders or beneficiaries",
+      "features": [
+        "Shareholder Register",
+        "Incentive Plans",
+        "Round Simulator"
+      ],
+      "monthlyPrice": 4000,
+      "yearlyPrice": 45000,
+      "isMostPopular": false
+    },
+    {
+      "id": "price_2",
+      "name": "Advanced",
+      "description": "Companies with up to 20 shareholders or beneficiaries",
+      "features": [
+        "Shareholder Register",
+        "Incentive Plans",
+        "Round Simulator",
+        "Shareholder Meetings",
+        "Board of Directors",
+        "Integrated Electronic Signature"
+      ],
+      "monthlyPrice": 6000,
+      "yearlyPrice": 65000,
+      "isMostPopular": true
+    },
+    {
+      "id": "price_5",
+      "name": "Pro",
+      "description": "Companies with up to 50 shareholders or beneficiaries",
+      "features": [
+        "Shareholder Register",
+        "Incentive Plans",
+        "Round Simulator",
+        "Shareholder Meetings",
+        "Board of Directors",
+        "Integrated Electronic Signature"
+      ],
+      "monthlyPrice": 8000,
+      "yearlyPrice": 85000,
+      "isMostPopular": false
+    }
+  ]
+}
