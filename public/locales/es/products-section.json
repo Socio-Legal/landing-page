@@ -1,0 +1,51 @@
+{
+  "header": {
+    "slogan": "Productos",
+    "title": "Descubre nuestras funcionalidades",
+    "description": "Sttok es una plataforma diseñada para empresas, abogados y startups que buscan una solución integral para la gestión de sociedades.",
+    "buttonText": "Ver funcionalidades",
+    "buttonLink": "#"
+  },
+  "items": [
+    {
+      "id": 1,
+      "title": "Socios",
+      "content": "Captable, Libro de Socios oficial, %, acceso de los socios, etc",
+      "image": {
+        "light": "/sttok-products-shareholders-dark.png",
+        "dark": "/sttok-products-shareholders-dark.png"
+      },
+      "icon": "BarChart3"
+    },
+    {
+      "id": 2,
+      "title": "Planes de Incentivos",
+      "content": "Phantoms, stock options, acceso empleados, vesting, etc",
+      "image": {
+        "light": "/sttok-products-incentive-plans-dark.png",
+        "dark": "/sttok-products-incentive-plans-dark.png"
+      },
+      "icon": "Brain"
+    },
+    {
+      "id": 3,
+      "title": "Juntas y Consejos",
+      "content": "Convocatoria digital, delegaciones, votaciones, etc",
+      "image": {
+        "light": "/sttok-products-boards-dark.png",
+        "dark": "/sttok-products-boards-dark.png"
+      },
+      "icon": "LineChart"
+    },
+    {
+      "id": 4,
+      "title": "Simulador de Operaciones",
+      "content": "Cálculo de rondas, ampliaciones, notas convertibles, etc",
+      "image": {
+        "light": "/sttok-products-simulator-dark.png",
+        "dark": "/sttok-products-simulator-dark.png"
+      },
+      "icon": "FileText"
+    }
+  ]
+}

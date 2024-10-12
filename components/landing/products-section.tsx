@@ -1,9 +1,11 @@
+"use client";
+
 import { BarChart3, Brain, FileText, LineChart } from "lucide-react";
 
-import { header, items as products } from "@/config/landing/products-section";
 import Features from "@/components/features-horizontal";
 
 import SectionHeader from "../section-header";
+import { useTranslation } from "react-i18next";
 
 interface ProductProps {
   id: number;
@@ -23,15 +25,23 @@ const ProductIcons = {
   LineChart: <LineChart className="h-6 w-6 text-primary" />,
 };
 
-const ProductsHeader = () => (
-  <SectionHeader
-    slogan={header.slogan}
-    title={header.title}
-    description={header.description}
-  />
-);
+const ProductsHeader = () => {
+  const { t } = useTranslation("products-section");
+
+  return (
+    <SectionHeader
+      slogan={t("header.slogan")}
+      title={t("header.title")}
+      description={t("header.description")}
+    />
+  );
+};
 
 const ProductsSection = () => {
+  const { t } = useTranslation("products-section");
+
+  const products = t("items", { returnObjects: true }) as ProductProps[];
+
   const parsedProducts = (items: ProductProps[]) => {
     return items.map((item) => ({
       ...item,
