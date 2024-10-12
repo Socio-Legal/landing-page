@@ -1,21 +1,26 @@
-import { FC } from "react";
+"use client";
 
-import { header } from "@/config/landing/cta-section";
+import { FC } from "react";
 
 import SectionHeader from "../section-header";
 import { blurStyle01 } from "../styles/blur-styles";
+import { useTranslation } from "react-i18next";
 
-const CallToActionHeader = () => (
-  <SectionHeader
-    slogan={header.slogan}
-    title={header.title}
-    description={header.description}
-    buttonText={header.buttonText}
-    buttonLink={header.buttonLink}
-    secondaryButtonText={header.secondaryButtonText}
-    secondaryButtonLink={header.secondaryButtonLink}
-  />
-);
+const CallToActionHeader = () => {
+  const { t } = useTranslation("cta-section");
+
+  return (
+    <SectionHeader
+      slogan={t("header.slogan")}
+      title={t("header.title")}
+      description={t("header.description")}
+      buttonText={t("header.buttonText")}
+      buttonLink={t("header.buttonLink")}
+      secondaryButtonText={t("header.secondaryButtonText")}
+      secondaryButtonLink={t("header.secondaryButtonLink")}
+    />
+  );
+};
 
 const CallToActionSection: FC = () => {
   return (
