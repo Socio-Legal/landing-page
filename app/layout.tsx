@@ -10,9 +10,9 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { MenuProvider } from "@/components/contexts/MenuContext";
 import { Toaster } from "@/components/ui/sonner";
 import { cn } from "@/lib/utils";
+import i18n from "@/lib/i18n";
 
 import "./globals.css";
-import i18n from "@/lib/i18n";
 
 const fontSans = FontSans({
   subsets: ["latin"],

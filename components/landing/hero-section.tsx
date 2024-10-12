@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import React, { useRef } from "react";
 import { useInView } from "framer-motion";
@@ -9,8 +10,8 @@ import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { BorderBeam } from "@/components/magicui/border-beam";
 import Blur01 from "@/public/blur-01.svg";
 import Blur02 from "@/public/blur-02.svg";
-// import { hero } from "@/locales/es/hero-section";
-import Link from "next/link";
+
+import { getImage } from "@/lib/getImage";
 
 export default function HeroSection() {
   const { t } = useTranslation("hero-section");
@@ -102,20 +103,20 @@ export default function HeroSection() {
                 colorTo="var(--color-two)"
               />
 
-              {/* <Image
+              <Image
                 alt="Hero image"
                 className="aspect-video object-cover rounded-lg hidden relative w-full h-full rounded-[inherit] border object-contain dark:block"
                 height="420"
-                src={"hero.image.dark"}
+                src={getImage(t, "hero.image.dark")}
                 width="550"
               />
               <Image
                 alt="Hero image"
                 className="aspect-video object-cover rounded-lg block relative w-full h-full  rounded-[inherit] border object-contain dark:hidden"
                 height="420"
-                src={"hero.image.light"}
+                src={getImage(t, "hero.image.light")}
                 width="550"
-              /> */}
+              />
             </div>
           </div>
         </div>
