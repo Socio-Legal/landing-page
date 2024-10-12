@@ -11,6 +11,7 @@ import Menu from "@/components/menu";
 import { cn } from "@/lib/utils";
 
 import ThemeToggler from "./ui/theme-toggler";
+import LanguageSwitcher from "./language-switcher";
 
 export function SiteHeader() {
   const [addBorder, setAddBorder] = useState(false);
@@ -67,6 +68,7 @@ export function SiteHeader() {
               ))}
 
               <ThemeToggler />
+              <LanguageSwitcher />
             </div>
           </div>
         </div>

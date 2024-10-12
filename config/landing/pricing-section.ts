@@ -53,20 +53,4 @@ export const items = [
     yearlyPrice: 85000,
     isMostPopular: false,
   },
-  {
-    id: "price_6",
-    name: "Abogados",
-    description: "Despachos con más de 10 sociedades",
-    features: [
-      "Libro de Socios",
-      "Planes Incentivos",
-      "Simulador rondas",
-      "Juntas de socios",
-      "Consejos administración",
-      "Firma electrónica integrada",
-    ],
-    monthlyPrice: 10000,
-    yearlyPrice: 105000,
-    isMostPopular: false,
-  },
 ];

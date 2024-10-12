@@ -1,0 +1,14 @@
+{
+  "hero": {
+    "title": "Company Management Software",
+    "description": "Captable (shareholder books), incentive plans, phantoms, meetings and boards, expansion and round simulator, secondary, etc.",
+    "button": {
+      "text": "Try it now",
+      "link": "https://app.sttok.com/#/demo"
+    },
+    "image": {
+      "light": "/hero/hero-dark.png",
+      "dark": "/hero/hero-dark.png"
+    }
+  }
+}
