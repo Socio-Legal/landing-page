@@ -1,16 +1,15 @@
 /* eslint-disable react/no-unescaped-entities */
+"use client";
+
 import React, { FC, ReactNode } from "react";
 import { StarFilledIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 
-import {
-  header,
-  items as testimonials,
-} from "@/config/landing/testimonials-section";
 import Marquee from "@/components/magicui/marquee";
 import { cn } from "@/lib/utils";
 
 import SectionHeader from "../section-header";
+import { useTranslation } from "react-i18next";
 
 const Highlight = ({
   children,
@@ -99,15 +98,25 @@ const TestimonialCard: FC<TestimonialCardProps> = ({
   </div>
 );
 
-const TestimonialsHeader: FC = () => (
-  <SectionHeader
-    slogan={header.slogan}
-    title={header.title}
-    description={header.description}
-  />
-);
+const TestimonialsHeader: FC = () => {
+  const { t } = useTranslation("testimonials-section");
+
+  return (
+    <SectionHeader
+      slogan={t("header.slogan")}
+      title={t("header.title")}
+      description={t("header.description")}
+    />
+  );
+};
 
 const TestimonialsSection: FC = () => {
+  const { t } = useTranslation("testimonials-section");
+
+  const testimonials = t("items", { returnObjects: true }) as
+    | TestimonialCardProps[]
+    | [];
+
   return (
     <section
       id="testimonials"
