@@ -14,11 +14,12 @@ const Page = () => {
 
   const hero = t("hero", { returnObjects: true }) as HeroSectionProps;
   const content = t("content", { returnObjects: true }) as TextSectionProps[];
+  console.log("🚀 cclog  ~ Page:", { hero, content });
 
   return (
     <>
-      <HeroSection {...hero} />
-      <TextContentSection content={content} hideTopSpace />
+      {hero && <HeroSection {...hero} />}
+      {content && <TextContentSection content={content} hideTopSpace />}
       <CallToActionSection />
     </>
   );

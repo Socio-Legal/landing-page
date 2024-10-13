@@ -21,6 +21,15 @@ export default function HeroSection() {
 
   const hasButton = !!(t("hero.button.text") && t("hero.button.link"));
 
+  const lightImage =
+    getImage(t, "hero.image.light") !== "/hero.image.light"
+      ? getImage(t, "hero.image.light")
+      : null;
+  const darkImage =
+    getImage(t, "hero.image.dark") !== "/hero.image.dark"
+      ? getImage(t, "hero.image.dark")
+      : null;
+
   return (
     <section id="hero">
       <div className="container mx-auto px-7 py-12 md:py-24 lg:py-32">
@@ -103,20 +112,25 @@ export default function HeroSection() {
                 colorTo="var(--color-two)"
               />
 
-              <Image
-                alt="Hero image"
-                className="aspect-video object-cover rounded-lg hidden relative w-full h-full rounded-[inherit] border object-contain dark:block"
-                height="420"
-                src={getImage(t, "hero.image.dark")}
-                width="550"
-              />
-              <Image
-                alt="Hero image"
-                className="aspect-video object-cover rounded-lg block relative w-full h-full  rounded-[inherit] border object-contain dark:hidden"
-                height="420"
-                src={getImage(t, "hero.image.light")}
-                width="550"
-              />
+              {lightImage && (
+                <Image
+                  alt="Hero image"
+                  className="aspect-video object-cover rounded-lg hidden relative w-full h-full rounded-[inherit] border object-contain dark:block"
+                  height="420"
+                  src={lightImage}
+                  width="550"
+                />
+              )}
+
+              {darkImage && (
+                <Image
+                  alt="Hero image"
+                  className="aspect-video object-cover rounded-lg block relative w-full h-full  rounded-[inherit] border object-contain dark:hidden"
+                  height="420"
+                  src={darkImage}
+                  width="550"
+                />
+              )}
             </div>
           </div>
         </div>

@@ -39,11 +39,13 @@ const WhoUsesSttokSection = () => {
   const usesData = t("items", { returnObjects: true }) as UseProps[] | null;
   const uses = Array.isArray(usesData) ? usesData : null;
 
-  const parsedUses = (items: UseProps[]) => {
-    return items?.map((item) => ({
-      ...item,
-      icon: WhoUsesIcons[item.icon as keyof typeof WhoUsesIcons],
-    }));
+  const parsedUses = (items: UseProps[] | null) => {
+    return (
+      items?.map((item) => ({
+        ...item,
+        icon: WhoUsesIcons[item.icon as keyof typeof WhoUsesIcons],
+      })) || []
+    );
   };
 
   return (

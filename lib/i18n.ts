@@ -58,7 +58,7 @@ const initI18n = async () => {
             // Modify cache control for debugging
             cache: "no-cache",
           },
-          queryStringParams: { v: new Date().getTime() }, // Cache busting
+          // queryStringParams: { v: new Date().getTime() }, // Cache busting
         },
       },
       (err, t) => {

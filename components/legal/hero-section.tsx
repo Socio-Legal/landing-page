@@ -71,15 +71,19 @@ const HeroSection: FC<HeroSectionProps> = ({
 
         <div className="grid grid-cols-1 gap-8 items-center">
           <div className="space-y-2">
-            <div className="text-center space-y-2 mx-auto lg:text-center lg:mx-0">
-              <h1 className="text-center bg-gradient-to-br dark:from-white from-black from-30% dark:to-white/40 to-black/40 bg-clip-text py-6 text-4xl text-left font-medium leading-none tracking-tighter text-transparent text-balance sm:text-5xl md:text-6xl lg:text-7xl translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
-                {title}
-              </h1>
-            </div>
+            {title && (
+              <div className="text-center space-y-2 mx-auto lg:text-center lg:mx-0">
+                <h1 className="text-center bg-gradient-to-br dark:from-white from-black from-30% dark:to-white/40 to-black/40 bg-clip-text py-6 text-4xl text-left font-medium leading-none tracking-tighter text-transparent text-balance sm:text-5xl md:text-6xl lg:text-7xl translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
+                  {title}
+                </h1>
+              </div>
+            )}
 
-            <p className="mb-2 text-lg tracking-tight text-gray-400 md:text-xl text-balance translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
-              {description}
-            </p>
+            {description && (
+              <p className="mb-2 text-lg tracking-tight text-gray-400 md:text-xl text-balance translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
+                {description}
+              </p>
+            )}
 
             {hasButton && (
               <>
