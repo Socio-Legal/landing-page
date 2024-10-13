@@ -2,6 +2,7 @@
 
 import { AvatarBase64_Gerard } from "@/config/avatars-base64";
 import { cubicBezier, motion } from "framer-motion";
+import Image from "next/image";
 
 export const AnimatedCard3 = () => {
   const variant1 = {
@@ -71,10 +72,12 @@ export const AnimatedCard3 = () => {
           className="flex max-w-[300px] items-start gap-x-2 rounded-lg border border-neutral-300 border-neutral-400/20 bg-white p-4 shadow-[0px_0px_40px_-25px_rgba(0,0,0,0.25)] dark:border-neutral-800 dark:bg-neutral-900"
         >
           <div className="flex h-6 w-6 shrink-0 rounded-full bg-blue-500">
-            <img
-              className="h-full w-full rounded-full object-cover"
+            <Image
               src={AvatarBase64_Gerard}
               alt="Gerard"
+              width={24}
+              height={24}
+              className="rounded-full"
             />
           </div>
           <div>

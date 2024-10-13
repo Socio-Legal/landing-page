@@ -13,6 +13,7 @@ import React, {
 
 import { cn } from "@/lib/utils";
 import { useTheme } from "next-themes";
+import Image from "next/image";
 
 type AccordionItemProps = {
   children: React.ReactNode;
@@ -152,7 +153,7 @@ export default function Features({
     }, collapseDelay);
 
     return () => clearInterval(timer);
-  }, [currentIndex]);
+  }, [currentIndex]); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     const handleAutoScroll = () => {
@@ -164,7 +165,7 @@ export default function Features({
     const autoScrollTimer = setInterval(handleAutoScroll, collapseDelay);
 
     return () => clearInterval(autoScrollTimer);
-  }, [currentIndex]);
+  }, [currentIndex]); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     const carousel = carouselRef.current;
@@ -182,7 +183,7 @@ export default function Features({
       carousel.addEventListener("scroll", handleScroll);
       return () => carousel.removeEventListener("scroll", handleScroll);
     }
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <section ref={ref} id="features">
@@ -286,7 +287,7 @@ export default function Features({
                     exit={{ opacity: 0 }}
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                   >
-                    <img
+                    {/* <img
                       src={
                         data[currentIndex].image[
                           theme as keyof ImageByThemeProps
@@ -294,6 +295,16 @@ export default function Features({
                       }
                       alt="feature"
                       className="aspect-auto w-full h-full object-cover rounded-lg shadow-lg relative border"
+                    /> */}
+                    <Image
+                      src={
+                        data[currentIndex].image[
+                          theme === "dark" ? "dark" : "light"
+                        ]
+                      }
+                      alt="feature"
+                      className="aspect-auto w-full h-full object-cover rounded-lg shadow-lg relative border"
+                      layout="fill"
                     />
                   </motion.div>
                 )}

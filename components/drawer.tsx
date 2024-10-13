@@ -20,7 +20,7 @@ import { cn } from "@/lib/utils";
 import ThemeToggler from "./ui/theme-toggler";
 import LanguageSwitcher from "./language-switcher";
 
-export default function drawerDemo() {
+export default function DrawerDemo() {
   const { t } = useTranslation("common");
 
   return (

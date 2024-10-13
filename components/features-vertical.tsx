@@ -176,7 +176,7 @@ export default function Features({
       carousel.addEventListener("scroll", handleScroll);
       return () => carousel.removeEventListener("scroll", handleScroll);
     }
-  }, []);
+  }, []); // eslint-disable-line
 
   return (
     <section ref={ref} id="features">

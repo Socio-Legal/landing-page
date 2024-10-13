@@ -28,7 +28,7 @@ const ClientsSection: FC<ClientsSectionProps> = ({
 
         <div className="relative mt-6">
           <Marquee className="max-w-full [--duration:40s]">
-            {clients.map((logo, index) => (
+            {clients?.map((logo, index) => (
               <div
                 key={index}
                 className={`h-10 w-40 mx-4 brightness-0 dark:brightness-0 dark:invert mb-8`}
