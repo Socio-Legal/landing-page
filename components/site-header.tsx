@@ -11,8 +11,11 @@ import Menu from "@/components/menu";
 import { cn } from "@/lib/utils";
 
 import ThemeToggler from "./ui/theme-toggler";
+import LanguageSwitcher from "./language-switcher";
+import { useTranslation } from "react-i18next";
 
 export function SiteHeader() {
+  const { t } = useTranslation("common");
   const [addBorder, setAddBorder] = useState(false);
 
   useEffect(() => {
@@ -62,11 +65,12 @@ export function SiteHeader() {
                   )}
                 >
                   {cta?.hasIcon && <Icons.logoMin className="h-6 w-6" />}
-                  {cta.text}
+                  {t(cta.text)}
                 </Link>
               ))}
 
               <ThemeToggler />
+              <LanguageSwitcher />
             </div>
           </div>
         </div>

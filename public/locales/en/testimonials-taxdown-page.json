@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "title": "TaxDown uses Sttok to manage incentive plans and its cap table",
+    "description": "TaxDown uses Sttok for effective Incentive Plan management. Additionally, for corporate management, it also uses Shareholder Register and Shareholder Meetings, etc.",
+    "keywords": "TaxDown, Sttok, TaxDown and Sttok, Shareholder Register, incentive plans, Sttok clients"
+  },
+  "summary": {
+    "client": "Taxdown",
+    "title": "Taxdown manages Cap Table and Incentive Plans with Sttok",
+    "description": "",
+    "quote": {
+      "text": "'We use Sttok to efficiently manage our company's Incentive Plans'",
+      "author": "Enrique Garcia",
+      "position": "Founder & co CEO | Taxdown"
+    },
+    "button": {
+      "text": "Go to Taxdown's website",
+      "link": "https://taxdown.es/"
+    },
+    "features": [
+      {
+        "key": "Client",
+        "value": "Taxdown"
+      },
+      {
+        "key": "Since",
+        "value": "2022"
+      },
+      {
+        "key": "Sector",
+        "value": "Tax declarations and processing"
+      },
+      {
+        "key": "Functionalities",
+        "value": "Cap Table, Incentive Plans, Document Generation, Automated Signing, etc"
+      }
+    ]
+  },
+  "content": {
+    "title": "Taxdown uses Sttok",
+    "image": {
+      "light": "/hero/hero-testimonials-taxdown.png",
+      "dark": "/hero/hero-testimonials-taxdown.png"
+    },
+    "sections": [
+      {
+        "title": "A bit about Taxdown",
+        "texts": [
+          "At TaxDown, we are revolutionizing the world of tax declarations, making them accessible, simple, and advantageous for everyone. We seek innovative minds to help us turn this vision into an everyday reality. Join us in making the fiscal future a clearer and fairer place for all.",
+          "With hundreds of thousands of clients and a growing team, Taxdown uses Sttok for managing incentive plans and shareholder relations for meetings, shareholder register, etc."
+        ]
+      },
+      {
+        "title": "Why did they choose us?",
+        "texts": [
+          "1. For the ease of use of the platform.",
+          "2. For the automation of manual tasks.",
+          "3. For the management of the Shareholder Register (Cap Table).",
+          "4. For document generation and automated signing.",
+          "5. For the management of Incentive Plans."
+        ]
+      }
+    ]
+  }
+}

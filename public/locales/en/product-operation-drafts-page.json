@@ -1,0 +1,121 @@
+{
+  "metadata": {
+    "title": "Operations Simulator",
+    "description": "Simulate and calculate any corporate operation with precision in seconds, including investment rounds, capital increases, and more.",
+    "keywords": "operations simulator, investment rounds, capital increases, convertible notes, corporate simulations"
+  },
+  "hero": {
+    "title": "Operations Simulator",
+    "description": "Easily calculate all types of operations and scenarios in seconds. Calculate rounds, expansions, sales, convertible notes, etc. It also generates documentation for the simulations in just a few minutes.",
+    "button": {
+      "text": "Start Simulating",
+      "link": "https://app.sttok.com/#/demo"
+    },
+    "image": {
+      "light": "/hero/hero-product-simulador.png",
+      "dark": "/hero/hero-product-simulador.png"
+    }
+  },
+  "topFeatures": {
+    "title": "Main Features",
+    "description": "Discover the most advanced tools to calculate any type of corporate operation.",
+    "items": [
+      {
+        "title": "Automatic Calculations",
+        "description": "Automate the calculation of operations such as investment rounds, capital increases, and share sales.",
+        "icon": "Calculator"
+      },
+      {
+        "title": "Real-Time Simulations",
+        "description": "Automatically simulate complex financial scenarios, allowing you to make decisions with accurate data.",
+        "icon": "Users"
+      },
+      {
+        "title": "Automatic Documentation",
+        "description": "Generate all necessary documents for your operations in a matter of minutes.",
+        "icon": "FileCheck"
+      }
+    ]
+  },
+  "clients": {
+    "title": "CLIENTS USING THE OPERATIONS SIMULATOR",
+    "clients": [
+      "Factorial",
+      "LegalPigeon",
+      "Banktrack",
+      "PldSpace",
+      "Barkibu",
+      "DealCar"
+    ]
+  },
+  "features": {
+    "title": "All Features",
+    "description": "Explore all the features that make our product unique.",
+    "items": [
+      {
+        "icon": "Icon01",
+        "title": "Investment Round Calculations",
+        "description": "Automatically calculate the impact of investment rounds on your company's capital structure."
+      },
+      {
+        "icon": "Icon02",
+        "title": "Capital Increases",
+        "description": "Simulate capital increases and generate the necessary documentation in minutes."
+      },
+      {
+        "icon": "Icon03",
+        "title": "Convertible Notes",
+        "description": "Easily manage and simulate convertible note conversions."
+      },
+      {
+        "icon": "Icon04",
+        "title": "Sale Scenarios",
+        "description": "Simulate share sale scenarios and their effects on partners and the shareholding structure."
+      },
+      {
+        "icon": "Icon05",
+        "title": "Automatic Document Generation",
+        "description": "Automatically create minutes, contracts, and other documents for all your corporate operations."
+      },
+      {
+        "icon": "Icon06",
+        "title": "Exact and Real Data",
+        "description": "Access real-time updated calculations for all your operations and make informed decisions."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "description": "Read testimonials from satisfied clients who use our simulator to improve their operations management.",
+    "items": [
+      {
+        "name": "Lucía Bouzá",
+        "role": "Head of Legal & Compliance | Factorial",
+        "img": "https://www.sttok.com/images/logos/logo-factorial-mini.png",
+        "description": "Sttok allows us to have all the information about partners and incentive plans centralized and updated. It facilitates the management of meetings and the relationship with investors.",
+        "stars": 5
+      },
+      {
+        "name": "Oriol Miralbell",
+        "role": "CEO | Legalpigeon",
+        "img": "https://www.sttok.com/images/logos/logo-legalpigeon-mini.png",
+        "description": "Sttok allows you to easily calculate valuations, investment rounds, and simulations. The application interface is simple and intuitive, which allows you to make decisions more quickly and effectively.",
+        "stars": 4
+      },
+      {
+        "name": "Nacho González",
+        "role": "CEO and Founder | Banktrack",
+        "img": "https://www.sttok.com/images/logos/logo-banktrack-mini.png",
+        "description": "Now with Sttok you can perform simulations of capital increases or convertible notes. We also easily manage our team's phantom shares. Finally, as an investor, I have my investments organized and I clearly know what I have.",
+        "stars": 5
+      },
+      {
+        "name": "Johan Longo",
+        "role": "Contract Manager | PLD Space",
+        "img": "https://www.sttok.com/images/logos/logo-pld-mini.png",
+        "description": "Sttok helps us keep all the information about partners, meetings, and incentive plans of our company organized. It facilitates the management of the cap table and the relationship with investors.",
+        "stars": 5
+      }
+    ]
+  }
+}

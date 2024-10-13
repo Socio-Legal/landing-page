@@ -1,0 +1,126 @@
+{
+  "metadata": {
+    "title": "Incentive Plans",
+    "description": "Manage incentive plans (phantom share plan, stock option plans, etc.) for your company efficiently and professionally.",
+    "keywords": "incentive plans, phantoms, stock options, flexible compensation, incentive management, vesting"
+  },
+  "hero": {
+    "title": "Incentive Plans",
+    "description": "The most professional way to create and maintain phantom and stock option plans. Sttok performs all calculations, documents, and scheduling for you. Plus, you can give beneficiaries access to their plan.",
+    "button": {
+      "text": "Start now",
+      "link": "https://app.sttok.com/#/demo"
+    },
+    "image": {
+      "light": "/hero/hero-product-planes-incentivos.png",
+      "dark": "/hero/hero-product-planes-incentivos.png"
+    }
+  },
+  "topFeatures": {
+    "title": "Main Features",
+    "description": "Learn how managing Incentive Plans with Sttok allows you to optimize management and give access to your team.",
+    "items": [
+      {
+        "title": "Plan Customization",
+        "description": "Create incentive plans tailored to your organization's needs.",
+        "animation": "AnimatedCard4"
+      },
+      {
+        "title": "Calculation Automation",
+        "description": "Automate the signing, calculation, vesting, and tracking of plans for each employee.",
+        "animation": "AnimatedCard9_IncentivePlan"
+      },
+      {
+        "title": "Beneficiary Access",
+        "description": "Employees can view and track the status of their incentives.",
+        "animation": "AnimatedCard3"
+      }
+    ]
+  },
+  "clients": {
+    "title": "CLIENTS USING INCENTIVE PLANS",
+    "clients": [
+      "Factorial",
+      "DerechoCom",
+      "Shakers",
+      "Taxdown",
+      "PldSpace",
+      "Broseta",
+      "MyInvestor",
+      "Yaba",
+      "Barkibu",
+      "DealCar"
+    ]
+  },
+  "features": {
+    "title": "Incentive Plans",
+    "description": "Sttok offers comprehensive and professional management of incentive plans for employees and collaborators. Discover all the features it offers you.",
+    "items": [
+      {
+        "icon": "Icon01",
+        "title": "Multiple Plan Types",
+        "description": "Create and manage various types of plans such as Stock Options, Phantom Shares, and more, adapting to your specific needs"
+      },
+      {
+        "icon": "Icon02",
+        "title": "Custom Configuration",
+        "description": "Configure flexible vesting and cliff periods for each plan, exercise prices, or even individual conditions."
+      },
+      {
+        "icon": "Icon03",
+        "title": "Beneficiary Access",
+        "description": "Each beneficiary will have access to their profile with all updated data, including detailed calendars, documents, and simulations."
+      },
+      {
+        "icon": "Icon04",
+        "title": "Real-time Reports",
+        "description": "Automatically monitor the status of all options; granted, vested, and exercised, with instant updates."
+      },
+      {
+        "icon": "Icon05",
+        "title": "Automatic Calculations",
+        "description": "Perform automatic dilution calculations and cap table adjustments whenever changes occur in incentive plans."
+      },
+      {
+        "icon": "Icon06",
+        "title": "Document Generation and Signature",
+        "description": "Automatically create all necessary legal documents related to incentive plans as well as their digital signature."
+      },
+      {
+        "icon": "Icon07",
+        "title": "Notification System",
+        "description": "Send automatic notifications to beneficiaries about important milestones, such as upcoming vestings or options about to expire."
+      },
+      {
+        "icon": "Icon08",
+        "title": "Simulations and Projections",
+        "description": "Integration with the simulation module to make future projections and analyze different incentive plan scenarios."
+      },
+      {
+        "icon": "Icon09",
+        "title": "Tender Offers. Sales",
+        "description": "Manage sale offers, buybacks, or tender offers. Includes withholding calculations, contract signing, etc."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "description": "Learn how our incentive plans have transformed incentive management in other companies.",
+    "items": [
+      {
+        "name": "Lucía Bouzá",
+        "role": "Head of Legal & Compliance  | Factorial",
+        "img": "https://www.sttok.com/images/logos/logo-factorial-mini.png",
+        "description": "To manage all the documentation of incentive plans, it has helped us digitize the process of creation, signing, and control of beneficiaries.",
+        "stars": 5
+      },
+      {
+        "name": "Amalia Riboldi",
+        "role": "Head of People & Culture | YABA",
+        "img": "https://www.sttok.com/wp-content/uploads/2023/07/logo-yaba-bg-122x122.jpg",
+        "description": "Sttok was definitely our best option and is helping us with the management of Incentive Plans and with the transparency of corporate information with the Partners",
+        "stars": 5
+      }
+    ]
+  }
+}

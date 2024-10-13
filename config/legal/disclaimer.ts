@@ -1,5 +1,3 @@
-import { items } from "../landing/features-section";
-
 export const metadata = {
   title: "Aviso legal y CGC",
   description: "",

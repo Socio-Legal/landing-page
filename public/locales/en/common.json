@@ -1,0 +1,52 @@
+{
+  "language": {
+    "selectLanguage": "Select Language",
+    "english": "English",
+    "spanish": "Spanish"
+  },
+  "banner": {
+    "title": "Sttok now available on AWS Marketplace",
+    "description": "Discover the new way to manage your company!"
+  },
+  "menu": {
+    "Product": "Product",
+    "ProductTitle": "Digital and Automated",
+    "ProductDescription": "Take advantage of digital automation for your company.",
+    "PartnersTitle": "Partners",
+    "Partnersdescription": "Captable, official Shareholder Book, %, shareholder access",
+    "PlansTitle": "Incentive Plans",
+    "PlansDescription": "Phantoms, stock options, employee access, vesting, etc",
+    "BoardsTitle": "Shareholder Meetings",
+    "BoardsDescription": "Digital call, delegations, voting, document signing, etc",
+    "DraftsTitle": "Drafts",
+    "DraftsDescription": "Calculation of rounds, extensions, convertible notes, etc",
+    "Solutions": "Solutions",
+    "SolutionsTitle": "Solutions",
+    "CompaniesTitle": "Company and Corporate Groups",
+    "CompaniesDescription": "Digitize the corporate management of the Company: Shareholder Book, Shareholders' Meetings, Corporate Documentation, Attorneys, etc.",
+    "LawyersTitle": "Lawyers",
+    "LawyersDescription": "Optimize your time with digital management of companies. Save time and avoid errors. Automate manual tasks and increase productivity.",
+    "StartupsTitle": "Startups",
+    "StartupsDescription": "Captable, Incentive Plans, Round Simulator, convertible notes, shareholder meetings, syndication of shareholders, etc.",
+    "InvestorPortalTitle": "Investor Portal",
+    "InvestorPortalDescription": "Give your investors access to a platform where they will have all the information you want to provide them.",
+    "InvestorsTitle": "Investors",
+    "InvestorsDescription": "Access from a single platform to the data of participating companies. Real information without using outdated excels.",
+    "Testimonials": "Testimonials",
+    "Pricing": "Pricing",
+    "Others": "Others",
+    "Legal": "Legal",
+    "LegalWarning": "Legal Notice and T&C",
+    "Privacy": "Privacy and Cookies",
+    "Security": "Security Policy"
+  },
+  "cta": {
+    "login": "Log in",
+    "demo": "Schedule demo"
+  },
+  "testimonials": {
+    "goBackToTestimonials": "Go back to Testimonials"
+  },
+  "sttokTitle": "Company Management Software",
+  "allRightsReserved": "All rights reserved"
+}

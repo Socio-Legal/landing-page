@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "title": "Factorial uses Sttok to manage incentive plans and its cap table",
+    "description": "Factorial uses Sttok for Incentive Plan management. Additionally, for corporate management, it also uses Shareholder Register, Incentive Plans, Shareholder Meetings, etc.",
+    "keywords": "Factorial, Sttok, factorial and Sttok, Shareholder Register, incentive plans, Sttok clients"
+  },
+  "summary": {
+    "client": "Factorial",
+    "title": "Factorial manages Cap Table and Incentive Plans with Sttok",
+    "description": "",
+    "quote": {
+      "text": "'To manage all the documentation of incentive plans, it has helped us digitize the process of creation, signing, and control of beneficiaries. In addition to managing the Shareholder Register (Cap Table)'",
+      "author": "Lucía Bouzá",
+      "position": "Head of Legal & Compliance | Factorial"
+    },
+    "button": {
+      "text": "Go to Factorial's website",
+      "link": "https://factorialhr.es/"
+    },
+    "features": [
+      {
+        "key": "Client",
+        "value": "Factorial"
+      },
+      {
+        "key": "Since",
+        "value": "2022"
+      },
+      {
+        "key": "Sector",
+        "value": "HR Software"
+      },
+      {
+        "key": "Functionalities",
+        "value": "Cap Table, Incentive Plans, Document Generation, Automated Signing, etc"
+      }
+    ]
+  },
+  "content": {
+    "title": "Factorial uses Sttok",
+    "image": {
+      "light": "/hero/hero-testimonials-factorial.jpg",
+      "dark": "/hero/hero-testimonials-factorial.jpg"
+    },
+    "sections": [
+      {
+        "title": "A bit about Factorial",
+        "texts": [
+          "Factorial is a human resources management software company primarily aimed at small and medium-sized businesses. The company has experienced significant growth since its founding, excelling in the automation of tasks and procedures related to payroll management, expenses, electronic signatures, time tracking, and analytical reports to measure productivity and process efficiency.",
+          "In 2022, Factorial closed a 120 million round, led by the Atomico fund and with the participation of investors such as Tiger Global, CRV, K-Fund, and Creandum. Factorial is considered a 'unicorn', a term used to describe startups that exceed $1 billion in valuation."
+        ]
+      },
+      {
+        "title": "Why did they choose us?",
+        "texts": [
+          "1. For the ease of use of the platform.",
+          "2. For the automation of manual tasks.",
+          "3. For the management of the Shareholder Register (Cap Table).",
+          "4. For document generation and automated signing.",
+          "5. For the management of Incentive Plans."
+        ]
+      }
+    ]
+  }
+}

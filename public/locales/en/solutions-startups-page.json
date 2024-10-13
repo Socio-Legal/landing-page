@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "title": "Sttok for Startups",
+    "description": "Cap table solutions, incentive plans, and much more for your startup",
+    "keywords": "startup, sttok, captable, phantoms, incentives, beneficiaries"
+  },
+  "hero": {
+    "title": "Solution for Startups",
+    "description": "Digital management for Startups. Focus on growing your company and use Sttok for round calculations, incentive plans, shareholder register, meetings, etc...",
+    "button": {
+      "text": "Request Demo",
+      "link": "https://calendly.com/sttok/30min"
+    },
+    "image": {
+      "light": "/hero/hero-solutions-startups.png",
+      "dark": "/hero/hero-solutions-startups.png"
+    }
+  },
+  "clients": {
+    "title": "They trust Sttok",
+    "clients": [
+      "Factorial",
+      "PldSpace",
+      "Taxdown",
+      "MyInvestor",
+      "Shakers",
+      "Barkibu",
+      "Yaba",
+      "Banktrack"
+    ]
+  },
+  "features": {
+    "title": "All Features",
+    "description": "Explore the features that make Sttok an essential tool for startups.",
+    "items": [
+      {
+        "icon": "Icon01",
+        "title": "Official Shareholder Register",
+        "description": "Easily manage and update your startup's shareholder register."
+      },
+      {
+        "icon": "Icon02",
+        "title": "Incentive Plans",
+        "description": "Manage stock options and phantoms, and give employees access to their incentives."
+      },
+      {
+        "icon": "Icon03",
+        "title": "Meetings and Boards",
+        "description": "Automate the management of shareholder meetings and boards with digital voting and proxy."
+      },
+      {
+        "icon": "Icon04",
+        "title": "Operations Simulator",
+        "description": "Calculate funding rounds and capital increases accurately and quickly."
+      },
+      {
+        "icon": "Icon05",
+        "title": "Access for partners",
+        "description": "If you want, you can give professional access to your investors"
+      },
+      {
+        "icon": "Icon06",
+        "title": "Syndication",
+        "description": "Configure syndication easily to simplify your company's management"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "",
+    "description": "",
+    "items": [
+      {
+        "name": "Lucía Bouzá",
+        "role": "Head of Legal & Compliance | Factorial",
+        "img": "https://www.sttok.com/images/logos/logo-factorial-mini.png",
+        "description": "Sttok allows us to have all the information about partners and incentive plans centralized and updated. It facilitates the management of meetings and the relationship with investors.",
+        "stars": 5
+      },
+      {
+        "name": "Gerard Garcia",
+        "role": "CEO | Deale",
+        "img": "https://www.sttok.com/images/logos/logo-deale-mini.png",
+        "description": "Sttok allows us to effectively manage employee incentive plans, shareholder register, operation simulations, and shareholder meetings.",
+        "stars": 5
+      },
+      {
+        "name": "Johan Longo",
+        "role": "Contract Manager | PLD Space",
+        "img": "https://www.sttok.com/images/logos/logo-pld-mini.png",
+        "description": "Sttok helps us keep all the information about partners, meetings, and incentive plans of our company organized. It facilitates the management of the cap table and the relationship with investors.",
+        "stars": 5
+      },
+      {
+        "name": "Nacho González",
+        "role": "CEO and Founder | Banktrack",
+        "img": "https://www.sttok.com/images/logos/logo-banktrack-mini.png",
+        "description": "Now with Sttok you can perform simulations of capital increases or convertible notes. We also easily manage our team's phantom shares. Finally, as an investor, I have my investments organized and I clearly know what I have.",
+        "stars": 5
+      }
+    ]
+  }
+}

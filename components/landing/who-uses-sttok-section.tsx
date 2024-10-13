@@ -1,10 +1,11 @@
-import { Building2, Scale, Handshake } from "lucide-react";
+"use client";
 
-import { header, items as uses } from "@/config/landing/uses-section";
+import { Building2, Scale, Handshake } from "lucide-react";
 
 import SectionHeader from "../section-header";
 import Features from "../features-vertical";
 import { blurStyle01 } from "../styles/blur-styles";
+import { useTranslation } from "react-i18next";
 
 interface UseProps {
   id: number;
@@ -20,20 +21,31 @@ const WhoUsesIcons = {
   Handshake: <Handshake className="w-6 h-6 text-primary" />,
 };
 
-const WhoUsesHeader = () => (
-  <SectionHeader
-    slogan={header.slogan}
-    title={header.title}
-    description={header.description}
-  />
-);
+const WhoUsesHeader = () => {
+  const { t } = useTranslation("home-uses-section");
+
+  return (
+    <SectionHeader
+      slogan={t("header.slogan")}
+      title={t("header.title")}
+      description={t("header.description")}
+    />
+  );
+};
 
 const WhoUsesSttokSection = () => {
-  const parsedUses = (items: UseProps[]) => {
-    return items.map((item) => ({
-      ...item,
-      icon: WhoUsesIcons[item.icon as keyof typeof WhoUsesIcons],
-    }));
+  const { t } = useTranslation("home-uses-section");
+
+  const usesData = t("items", { returnObjects: true }) as UseProps[] | null;
+  const uses = Array.isArray(usesData) ? usesData : null;
+
+  const parsedUses = (items: UseProps[] | null) => {
+    return (
+      items?.map((item) => ({
+        ...item,
+        icon: WhoUsesIcons[item.icon as keyof typeof WhoUsesIcons],
+      })) || []
+    );
   };
 
   return (

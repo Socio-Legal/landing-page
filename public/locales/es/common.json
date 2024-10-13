@@ -1,0 +1,52 @@
+{
+  "language": {
+    "selectLanguage": "Seleccionar Idioma",
+    "english": "Inglés",
+    "spanish": "Español"
+  },
+  "banner": {
+    "title": "Sttok ya disponible en AWS Marketplace",
+    "description": "¡Descubre la nueva forma de gestionar tu sociedad!"
+  },
+  "menu": {
+    "Product": "Producto",
+    "ProductTitle": "Digital y Automatizado",
+    "ProductDescription": "Aprovecha la automatización digital para tu sociedad.",
+    "PartnersTitle": "Libro de Socios",
+    "Partnersdescription": "Captable, Libro de Socios oficial, %, acceso de los socios",
+    "PlansTitle": "Planes de Incentivos",
+    "PlansDescription": "Phantoms, stock options, acceso empleados, vesting, etc",
+    "BoardsTitle": "Juntas y Consejos",
+    "BoardsDescription": "Convocatoria digital, delegaciones, votaciones, firma de documentos, etc",
+    "DraftsTitle": "Simulador Operaciones",
+    "DraftsDescription": "Cálculo de rondas, ampliaciones, notas convertibles, etc",
+    "Solutions": "Soluciones",
+    "SolutionsTitle": "Soluciones",
+    "CompaniesTitle": "Empresa y Grupos Societarios",
+    "CompaniesDescription": "Digitaliza la gestión societaria de la Sociedad: Libro de socios, Juntas de Accionistas, Documentación Societaria, Apoderados, etc.",
+    "LawyersTitle": "Abogados",
+    "LawyersDescription": "Optimiza tu tiempo con la gestión digital de sociedades. Ahorra tiempo y evita errores. Automatiza tareas manuales e incrementa la productividad.",
+    "StartupsTitle": "Startups",
+    "StartupsDescription": "Captable, Planes de Incentivos, Simulador de ampliaciones, notas convertibles, juntas de accionistas, sindicación de socios, etc.",
+    "InvestorPortalTitle": "Portal del Inversor",
+    "InvestorPortalDescription": "Da acceso a tus inversores acceso a una plataforma donde dispondrán de toda la informacion que les quieras facilitar.",
+    "InvestorsTitle": "Inversores",
+    "InvestorsDescription": "Acceso desde una única plataforma a los datos de sociedades participadas. Información real sin utilizar excels desactualizados.",
+    "Testimonials": "Testimonios",
+    "Pricing": "Precios",
+    "Others": "Otros",
+    "Legal": "Legal",
+    "LegalWarning": "Aviso Legal y CGC",
+    "Privacy": "Privacidad y Cookies",
+    "Security": "Política de Seguridad"
+  },
+  "cta": {
+    "login": "Iniciar sesión",
+    "demo": "Solicitar demo"
+  },
+  "testimonials": {
+    "goBackToTestimonials": "Volver a Testimonios"
+  },
+  "sttokTitle": "Software de Gestión de Sociedades",
+  "allRightsReserved": "Todos los derechos reservados"
+}

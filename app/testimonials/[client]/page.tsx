@@ -1,9 +1,10 @@
 "use client";
+
 import React, { FC } from "react";
+import { useTranslation } from "react-i18next";
 
 import Link from "next/link";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -23,6 +24,7 @@ import * as Caballero from "@/config/testimonials/clients/Caballero";
 
 import CallToActionSection from "@/components/landing/cta-section";
 import { blurStyle01 } from "@/components/styles/blur-styles";
+import { getTestimonialNamespaces } from "@/lib/getTestimonialNamespaces";
 
 type PageProps = {
   params: {
@@ -95,9 +97,19 @@ const getOther2Testimonials = (client: string): TestimonialProps[] => {
 
 const Page: FC<PageProps> = ({ params }) => {
   const client: string = params.client;
+  const namespaces = getTestimonialNamespaces(client as string);
 
-  const { summary, content } =
-    testimonialPages[client as keyof typeof testimonialPages];
+  const { t } = useTranslation(namespaces);
+
+  const namespace = namespaces.length > 1 ? namespaces[1] : "common";
+
+  const summary = t(`${namespace}:summary`, {
+    returnObjects: true,
+  }) as TestimonialSummaryProps;
+
+  const content = t(`${namespace}:content`, {
+    returnObjects: true,
+  }) as TestimonialContentProps;
 
   return (
     <>
@@ -110,7 +122,9 @@ const Page: FC<PageProps> = ({ params }) => {
           <div className="sticky top-6">
             <Link className="inline-flex items-center mb-8" href="/testimonios">
               <ArrowLeft className="h-6 w-6 mr-2" />
-              <span className="font-semibold">Volver a Testimonios</span>
+              <span className="font-semibold">
+                {t("common:testimonials.goBackToTestimonials")}
+              </span>
             </Link>
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
               {summary.title}
@@ -135,10 +149,10 @@ const Page: FC<PageProps> = ({ params }) => {
             <div className="space-y-4">
               <Link
                 className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2 w-full"
-                href={summary.button.link}
+                href={summary.button?.link || ""}
                 target="_blank"
               >
-                {summary.button.text}
+                {summary.button?.text}
               </Link>
               {/* <Button variant="outline" className="w-full">
                 <Github className="mr-2 h-4 w-4" />
@@ -148,7 +162,7 @@ const Page: FC<PageProps> = ({ params }) => {
 
             <div className="mt-8">
               <ul className="space-y-2">
-                {summary.features.map((feature, index) => (
+                {summary.features?.map((feature, index) => (
                   <li
                     key={index}
                     // add border bottom to all but the last item
@@ -174,14 +188,14 @@ const Page: FC<PageProps> = ({ params }) => {
           <div className="max-w-3xl mx-auto">
             <section className="mb-12">
               <Image
-                src={content.image.dark}
+                src={content.image?.dark}
                 alt="Client website image"
                 width={800}
                 height={400}
                 className="rounded-lg shadow-lg hidden dark:block"
               />
               <Image
-                src={content.image.light}
+                src={content.image?.light}
                 alt="Client website image"
                 width={800}
                 height={400}
@@ -217,7 +231,7 @@ const Page: FC<PageProps> = ({ params }) => {
                 Testimonios relacionados
               </h2>
               <div className="grid gap-6 md:grid-cols-2">
-                {getOther2Testimonials(client).map((client, index) => (
+                {getOther2Testimonials(client)?.map((client, index) => (
                   <Card key={index}>
                     <CardHeader>
                       <CardTitle>{client.summary.client}</CardTitle>

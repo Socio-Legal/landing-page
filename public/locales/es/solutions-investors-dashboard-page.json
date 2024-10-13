@@ -1,0 +1,87 @@
+{
+  "metadata": {
+    "title": "Portal del Inversor",
+    "description": "Descubre las soluciones que ofrecemos para los inversores y empresas para dar acceso a sus accionistas",
+    "keywords": "inversores, participadas, cartera, captable, gestión documental, simulador de operaciones, portal del inversor"
+  },
+  "hero": {
+    "title": "Portal para inversores",
+    "description": "Da acceso a tus inversores a un portal único con toda su información detallada. Dispondrán de su ficha de socio personalizada, número de participaciones y % exacto. Integra el Portal del Inversor con el diseño e imagen de la web de la empresa.",
+    "button": {
+      "text": "Solicitar Demo",
+      "link": "https://calendly.com/sttok/30min"
+    },
+    "image": {
+      "light": "/hero/hero-solutions-portal-inversor.png",
+      "dark": "/hero/hero-solutions-portal-inversor.png"
+    }
+  },
+  "clients": {
+    "title": "Empresas que confían en nosotros",
+    "clients": [
+      "PldSpace",
+      "Factorial",
+      "MyInvestor",
+      "Deale",
+      "Yaba",
+      "Taxdown",
+      "Caballero",
+      "Andbank"
+    ]
+  },
+  "features": {
+    "title": "Principales Funcionalidades para Inversores",
+    "description": "Sttok ofrece un portal personalizado para inversores, proporcionando acceso a la cartera de participadas con datos actualizados y exactos.",
+    "items": [
+      {
+        "icon": "Icon01",
+        "title": "Acceso a los socios",
+        "description": "Consulta los datos del captable, escrituras y otras documentaciones clave en tiempo real."
+      },
+      {
+        "icon": "Icon02",
+        "title": "Ficha del Socio",
+        "description": "Cada socio tendrá acceso a su ficha con sus documentos y certificados."
+      },
+      {
+        "icon": "Icon03",
+        "title": "Integración con tu web",
+        "description": "Integra el portal del inversor con tu imagen, colores, logoos, etc."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Lo que dicen nuestros Clientes",
+    "description": "Inversores que ya han mejorado su gestión con Sttok.",
+    "items": [
+      {
+        "name": "Lucía Bauza",
+        "role": "Head of Legal & Compliance, Factorial",
+        "img": "",
+        "description": "Sttok nos ayudó a digitalizar el proceso de creación y firma de documentos para los planes de incentivos.",
+        "stars": 5
+      },
+      {
+        "name": "Gerard Garcia",
+        "role": "CEO | Deale",
+        "img": "https://www.sttok.com/images/logos/logo-deale-mini.png",
+        "description": "Sttok nos permite gestionar de forma efectiva planes de incentivos para empleados, libro de socios, simulación de operaciones y juntas de accionistas.",
+        "stars": 5
+      },
+      {
+        "name": "Johan Longo",
+        "role": "Contract Manager | PLD Space",
+        "img": "https://www.sttok.com/images/logos/logo-pld-mini.png",
+        "description": "Sttok nos sirve para poder tener organizada toda la información sobre socios, junas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
+        "stars": 5
+      },
+      {
+        "name": "Nacho González",
+        "role": "CEO y Fundador | Banktrack",
+        "img": "https://www.sttok.com/images/logos/logo-banktrack-mini.png",
+        "description": "Ahora con Sttok puedes realizar simulaciones de ampliaciones o notas convertibles. Además también gestionamos las phantoms de nuestro equipo fácilmente. Finalmente como inversor tengo organizadas mis participadas y conozco claramente qué es lo que tengo.",
+        "stars": 5
+      }
+    ]
+  }
+}

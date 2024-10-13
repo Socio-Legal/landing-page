@@ -1,0 +1,87 @@
+{
+  "metadata": {
+    "title": "Investor Portal",
+    "description": "Discover the solutions we offer for investors and companies to give access to their shareholders",
+    "keywords": "investors, investees, portfolio, captable, document management, operations simulator, investor portal"
+  },
+  "hero": {
+    "title": "Portal for investors",
+    "description": "Give your investors access to a unique portal with all their detailed information. They will have their personalized partner profile, number of shares, and exact percentage. Integrate the Investor Portal with the design and image of the company's website.",
+    "button": {
+      "text": "Request Demo",
+      "link": "https://calendly.com/sttok/30min"
+    },
+    "image": {
+      "light": "/hero/hero-solutions-portal-inversor.png",
+      "dark": "/hero/hero-solutions-portal-inversor.png"
+    }
+  },
+  "clients": {
+    "title": "Companies that trust us",
+    "clients": [
+      "PldSpace",
+      "Factorial",
+      "MyInvestor",
+      "Deale",
+      "Yaba",
+      "Taxdown",
+      "Caballero",
+      "Andbank"
+    ]
+  },
+  "features": {
+    "title": "Main Features for Investors",
+    "description": "Sttok offers a personalized portal for investors, providing access to the portfolio of investees with updated and accurate data.",
+    "items": [
+      {
+        "icon": "Icon01",
+        "title": "Access for partners",
+        "description": "Consult cap table data, deeds, and other key documentation in real-time."
+      },
+      {
+        "icon": "Icon02",
+        "title": "Partner Profile",
+        "description": "Each partner will have access to their profile with their documents and certificates."
+      },
+      {
+        "icon": "Icon03",
+        "title": "Integration with your website",
+        "description": "Integrate the investor portal with your image, colors, logos, etc."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "What our Clients say",
+    "description": "Investors who have already improved their management with Sttok.",
+    "items": [
+      {
+        "name": "Lucía Bauza",
+        "role": "Head of Legal & Compliance, Factorial",
+        "img": "",
+        "description": "Sttok helped us digitize the process of creating and signing documents for incentive plans.",
+        "stars": 5
+      },
+      {
+        "name": "Gerard Garcia",
+        "role": "CEO | Deale",
+        "img": "https://www.sttok.com/images/logos/logo-deale-mini.png",
+        "description": "Sttok allows us to effectively manage employee incentive plans, shareholder register, operation simulations, and shareholder meetings.",
+        "stars": 5
+      },
+      {
+        "name": "Johan Longo",
+        "role": "Contract Manager | PLD Space",
+        "img": "https://www.sttok.com/images/logos/logo-pld-mini.png",
+        "description": "Sttok helps us keep all the information about partners, meetings, and incentive plans of our company organized. It facilitates the management of the cap table and the relationship with investors.",
+        "stars": 5
+      },
+      {
+        "name": "Nacho González",
+        "role": "CEO and Founder | Banktrack",
+        "img": "https://www.sttok.com/images/logos/logo-banktrack-mini.png",
+        "description": "Now with Sttok you can perform simulations of capital increases or convertible notes. We also easily manage our team's phantom shares. Finally, as an investor, I have my investments organized and I clearly know what I have.",
+        "stars": 5
+      }
+    ]
+  }
+}

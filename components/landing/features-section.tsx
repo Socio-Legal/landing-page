@@ -1,7 +1,5 @@
 import React, { FC } from "react";
 
-import { header } from "@/config/landing/features-section";
-
 import "@/components/styles/features-section.css";
 
 import SectionHeader from "../section-header";
@@ -17,6 +15,7 @@ import {
   Vote,
 } from "lucide-react";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const FeatureIcons = {
   Icon01: <BookOpenText className="w-6 h-6 text-primary" />,
@@ -34,7 +33,7 @@ type FeatureSectionProps = {
   features: FeatureItem[];
 };
 
-type FeatureItem = {
+export type FeatureItem = {
   icon: string;
   title: string;
   description: string;
@@ -113,17 +112,25 @@ const FeatureWithLink: FC<FeatureProps> = ({ index, feature }) => (
   </>
 );
 
-const FeaturesHeader: FC = () => (
-  <SectionHeader
-    slogan={header.slogan}
-    title={header.title}
-    description={header.description}
-    buttonText={header.buttonText}
-    buttonLink={header.buttonLink}
-  />
-);
+const FeaturesHeader: FC = () => {
+  const { t } = useTranslation("home-features-section");
 
-const FeaturesSection: FC<FeatureSectionProps> = ({ features }) => {
+  return (
+    <SectionHeader
+      slogan={t("header.slogan")}
+      title={t("header.title")}
+      description={t("header.description")}
+      buttonText={t("header.buttonText")}
+      buttonLink={t("header.buttonLink")}
+    />
+  );
+};
+
+const FeaturesSection: FC<FeatureSectionProps> = ({
+  features: featuresData,
+}) => {
+  const features = Array.isArray(featuresData) ? featuresData : null;
+
   return (
     <section
       id="features-section"
@@ -137,7 +144,7 @@ const FeaturesSection: FC<FeatureSectionProps> = ({ features }) => {
           <div className="features-row-border-light dark:features-row-border-dark absolute right-1/2 top-1/2 block h-[1px] w-1/2 -translate-y-1/2 rotate-90 lg:right-[8.3%] lg:block"></div>
 
           <div className="flex flex-wrap justify-center">
-            {features.map((feature, index) =>
+            {features?.map((feature, index) =>
               feature.link ? (
                 <FeatureWithLink key={index} index={index} feature={feature} />
               ) : (

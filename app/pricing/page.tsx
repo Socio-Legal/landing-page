@@ -1,18 +1,20 @@
-import React from "react";
+"use client";
 
-import HeroSection from "@/components/product/hero-section";
+import React from "react";
+import { useTranslation } from "react-i18next";
+
+import HeroSection, {
+  HeroSectionProps,
+} from "@/components/product/hero-section";
 import PricingSection from "@/components/landing/pricing-section";
 
-import { metadata as page, hero } from "@/config/pricing";
 import CallToActionSection from "@/components/landing/cta-section";
 
-export const metadata = {
-  title: page.title,
-  keywords: page.keywords,
-  description: page.description,
-};
-
 const Page = () => {
+  const { t } = useTranslation("pricing-page");
+
+  const hero = t("hero", { returnObjects: true }) as HeroSectionProps;
+
   return (
     <>
       <HeroSection {...hero} />

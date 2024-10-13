@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "title": "Security Policy",
+    "description": "",
+    "keywords": ""
+  },
+  "hero": {
+    "title": "Security Policy",
+    "description": ""
+  },
+  "content": [
+    {
+      "title": "Sttok's Information Security Policy Statement",
+      "content": [
+        "The essential principles and guidelines on which Sttok's Information Security Policy is based are as follows:",
+        " • Develop our activities and processes towards understanding the needs of customers to ensure their full satisfaction, always following principles of transparency and integrity.",
+        " • Involve all Sttok members in the Information Security strategy, through participation in its development and implementation.",
+        " • Communication, cooperation and training of personnel are basic lines of action.",
+        " • Management promotes the professional development of employees, aware of their influence on commitment and motivation and, by extension, on the achievement of objectives and the Organization's Mission.",
+        " • Medium and long-term planning, with the establishment of priorities and objectives, to facilitate the progress of the Organization.",
+        " • Implementation of a continuous improvement system of activities, processes and services, identifying the most significant aspects that allow the search for improvement opportunities.",
+        " • Excellence in service, innovation and profit through efficiency, are aspects that should characterize our actions and collaborations, as well as the processes designed for this purpose.",
+        " • Ensure the Confidentiality, Integrity and Availability of information, as well as have the capacity to respond to emergency situations, establishing Business Continuity Plans proportional to the Organization's context, is a permanent attitude of Sttok.",
+        " • Establish specific Information Security objectives and have measures aimed at identifying and evaluating risks that may affect their achievement.",
+        " • The analysis and measurement of Information Security of all operational and support processes, through appropriate indicators, is essential to know their evolution and apply improvements in the objectives set.",
+        " • Management's commitment to compliance with the requirements of current legislation, other regulatory requirements and contractual obligations regarding information security."
+      ]
+    }
+  ]
+}

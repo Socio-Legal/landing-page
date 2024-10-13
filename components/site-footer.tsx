@@ -1,9 +1,12 @@
+"use client";
+
 import { LinkedInLogoIcon, ChevronRightIcon } from "@radix-ui/react-icons";
 import { Icons } from "./icons";
 
 import Blur02 from "@/public/blur-02.svg";
 import { siteConfig } from "@/config/site-config";
 import Image from "next/image";
+import { useTranslation } from "react-i18next";
 
 interface Icon {
   icon: JSX.Element;
@@ -36,6 +39,8 @@ const footerStyle = {
 };
 
 export function SiteFooter() {
+  const { t } = useTranslation("common");
+
   return (
     <footer
       className="px-7 md:px-10 bg-white dark:bg-black"
@@ -50,10 +55,10 @@ export function SiteFooter() {
             </h1>
           </a>
           <p className="tracking-tight text-neutral-900 dark:text-white">
-            Software de Gestión de Sociedades
+            {t("sttokTitle")}
           </p>
           <p className="text-sm tracking-tight text-neutral-500 dark:text-neutral-400 sm:text-center">
-            Todos los derechos reservados.
+            {t("allRightsReserved")}
           </p>
         </div>
 
@@ -71,10 +76,10 @@ export function SiteFooter() {
                   >
                     {link.isHeader ? (
                       <h2 className="text-sm font-semibold uppercase text-black dark:text-white">
-                        {link.title}
+                        {t(link.title)}
                       </h2>
                     ) : (
-                      <a href={link.url}>{link.title}</a>
+                      <a href={link.url}>{t(link.title)}</a>
                     )}
                     <ChevronRightIcon className="h-4 w-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100" />
                   </li>

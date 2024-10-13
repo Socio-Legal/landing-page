@@ -4,11 +4,6 @@ import React, { useState } from "react";
 import { Loader } from "lucide-react";
 import { motion } from "framer-motion";
 
-import {
-  config,
-  header,
-  items as prices,
-} from "@/config/landing/pricing-section";
 import { CheckIcon } from "@radix-ui/react-icons";
 import { Button } from "@/components/ui/button";
 import { Switch } from "@/components/ui/switch";
@@ -17,6 +12,7 @@ import { cn } from "@/lib/utils";
 import PlanetStarsSection from "../planet-stars-header";
 import SectionHeader from "../section-header";
 import { routes } from "@/config/routes";
+import { useTranslation } from "react-i18next";
 
 type Interval = "monthly" | "yearly";
 
@@ -58,24 +54,30 @@ const PricingCardButton: React.FC<PricingCardButtonProps> = ({
   price,
   isLoading,
   onSubscribe,
-}) => (
-  <Button
-    className={cn(
-      "group relative w-full gap-2 overflow-hidden text-lg font-semibold tracking-tighter",
-      "transform-gpu ring-offset-current transition-all duration-300 ease-out hover:ring-2 hover:ring-primary hover:ring-offset-2"
-    )}
-    disabled={isLoading}
-    onClick={() => void onSubscribe(price.id)}
-  >
-    <span className="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform-gpu bg-white opacity-10 transition-all duration-1000 ease-out group-hover:-translate-x-96 dark:bg-black" />
-    {(!isLoading || (isLoading && id !== price.id)) && <p>Suscribirse</p>}
+}) => {
+  const { t } = useTranslation("home-pricing-section");
 
-    {isLoading && id === price.id && <p>Suscribiendo</p>}
-    {isLoading && id === price.id && (
-      <Loader className="mr-2 h-4 w-4 animate-spin" />
-    )}
-  </Button>
-);
+  return (
+    <Button
+      className={cn(
+        "group relative w-full gap-2 overflow-hidden text-lg font-semibold tracking-tighter",
+        "transform-gpu ring-offset-current transition-all duration-300 ease-out hover:ring-2 hover:ring-primary hover:ring-offset-2"
+      )}
+      disabled={isLoading}
+      onClick={() => void onSubscribe(price.id)}
+    >
+      <span className="absolute right-0 -mt-12 h-32 w-8 translate-x-12 rotate-12 transform-gpu bg-white opacity-10 transition-all duration-1000 ease-out group-hover:-translate-x-96 dark:bg-black" />
+      {(!isLoading || (isLoading && id !== price.id)) && (
+        <p>{t("config.suscribeLabel")}</p>
+      )}
+
+      {isLoading && id === price.id && <p>{t("config.suscribingLabel")}</p>}
+      {isLoading && id === price.id && (
+        <Loader className="mr-2 h-4 w-4 animate-spin" />
+      )}
+    </Button>
+  );
+};
 
 const PricingCardFeatures: React.FC<{ price: PriceProps }> = ({ price }) =>
   price?.features?.length > 0 && (
@@ -169,35 +171,45 @@ const PricingCard: React.FC<PricingCardProps> = ({
   );
 };
 
-const PricingSwitch: React.FC<PricingSwitchProps> = ({ onChangeInterval }) => (
-  <div className="flex w-full items-center justify-center space-x-2">
-    <Switch
-      id="interval"
-      onCheckedChange={(checked) => {
-        onChangeInterval(checked ? "yearly" : "monthly");
-      }}
-    />
-    <span>Anual</span>
+const PricingSwitch: React.FC<PricingSwitchProps> = ({ onChangeInterval }) => {
+  const { t } = useTranslation("home-pricing-section");
 
-    {config.switchLabel && (
-      <span className="inline-block whitespace-nowrap rounded-full bg-black px-2.5 py-1 text-[11px] font-semibold uppercase leading-5 tracking-wide text-white dark:bg-white dark:text-black">
-        {config.switchLabel} ✨
-      </span>
-    )}
-  </div>
-);
+  return (
+    <div className="flex w-full items-center justify-center space-x-2">
+      <Switch
+        id="interval"
+        onCheckedChange={(checked) => {
+          onChangeInterval(checked ? "yearly" : "monthly");
+        }}
+      />
+      <span>Anual</span>
 
-const PricingHeader = () => (
-  <PlanetStarsSection>
-    <SectionHeader
-      slogan={header.slogan}
-      title={header.title}
-      description={header.description}
-    />
-  </PlanetStarsSection>
-);
+      {t("config.switchLabel") && (
+        <span className="inline-block whitespace-nowrap rounded-full bg-black px-2.5 py-1 text-[11px] font-semibold uppercase leading-5 tracking-wide text-white dark:bg-white dark:text-black">
+          {t("config.switchLabel")} ✨
+        </span>
+      )}
+    </div>
+  );
+};
+
+const PricingHeader = () => {
+  const { t } = useTranslation("home-pricing-section");
+
+  return (
+    <PlanetStarsSection>
+      <SectionHeader
+        slogan={t("header.slogan")}
+        title={t("header.title")}
+        description={t("header.description")}
+      />
+    </PlanetStarsSection>
+  );
+};
 
 export default function PricingSection() {
+  const { t } = useTranslation("home-pricing-section");
+
   const [interval, setInterval] = useState<Interval>("monthly");
   const [isLoading, setIsLoading] = useState(false);
   const [id, setId] = useState<string | null>(null);
@@ -212,6 +224,8 @@ export default function PricingSection() {
     window.open(routes.APP_CALENDLY, "_blank");
   };
 
+  const prices = t("items", { returnObjects: true }) as PriceProps[] | [];
+
   return (
     <>
       <section id="pricing" className="bg-white dark:bg-black">
@@ -220,8 +234,8 @@ export default function PricingSection() {
         <div className="mx-auto flex max-w-screen-xl flex-col gap-8 px-4 md:px-8 pb-12 md:pb-24 lg:pb-32 pt-4 md:pt-8 lg:pt-12">
           <PricingSwitch onChangeInterval={setInterval} />
 
-          <div className="mx-auto grid w-full justify-center sm:grid-cols-2 lg:grid-cols-4 flex-col gap-4">
-            {prices.map((price, index) => (
+          <div className="mx-auto grid w-full justify-center sm:grid-cols-1 lg:grid-cols-3 flex-col gap-4">
+            {prices?.map((price, index) => (
               <PricingCard
                 id={id}
                 key={price.id}

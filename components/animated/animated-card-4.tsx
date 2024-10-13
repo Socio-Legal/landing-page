@@ -1,6 +1,7 @@
 "use client";
 
 import { cubicBezier, motion } from "framer-motion";
+import Image from "next/image";
 
 export const AnimatedCard4 = () => {
   const variant1 = {
@@ -103,10 +104,12 @@ export const AnimatedCard4 = () => {
               className="z-[3] flex h-fit w-full  flex-col items-center justify-between gap-x-2 gap-y-2 rounded-md border border-neutral-400/20 bg-white p-5 px-2.5 transition-all duration-100 ease-linear dark:border-neutral-800 dark:bg-neutral-900"
             >
               <div className="h-8 w-8 rounded-full bg-pink-300">
-                <img
-                  className="h-full w-full rounded-full object-cover"
+                <Image
                   src="https://avatar.vercel.sh/jack"
                   alt="jack"
+                  width={32}
+                  height={32}
+                  className="rounded-full object-cover"
                 />
               </div>
               <div className="grid grid-cols-2 gap-2">
@@ -121,10 +124,12 @@ export const AnimatedCard4 = () => {
               className="z-[3] flex h-fit w-full flex-col items-center justify-between gap-x-2 gap-y-2 rounded-md border border-neutral-400/20 bg-white p-5 px-2.5 transition-all duration-100 ease-linear dark:border-neutral-800 dark:bg-neutral-900"
             >
               <div className="h-8 w-8 rounded-full bg-pink-300">
-                <img
-                  className="h-full w-full rounded-full object-cover"
+                <Image
                   src="https://avatar.vercel.sh/christina"
                   alt="christina"
+                  width={32}
+                  height={32}
+                  className="rounded-full object-cover"
                 />
               </div>
               <div className="grid grid-cols-2 gap-2">
@@ -139,10 +144,12 @@ export const AnimatedCard4 = () => {
               className="z-[3] flex h-fit w-full flex-col items-center justify-between gap-x-2 gap-y-2 rounded-md border border-neutral-400/20 bg-white p-5 px-2.5 transition-all duration-100 ease-linear dark:border-neutral-800 dark:bg-neutral-900"
             >
               <div className="h-8 w-8 rounded-full bg-pink-300">
-                <img
-                  className="h-full w-full rounded-full object-cover"
+                <Image
                   src="https://avatar.vercel.sh/joshua"
                   alt="joshua"
+                  width={32}
+                  height={32}
+                  className="rounded-full object-cover"
                 />
               </div>
               <div className="grid grid-cols-2 gap-2">

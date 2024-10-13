@@ -1,0 +1,663 @@
+{
+  "common": {
+    "language": {
+      "selectLanguage": "Seleccionar Idioma",
+      "english": "Inglés",
+      "spanish": "Español"
+    },
+    "banner": {
+      "title": "Sttok ya disponible en AWS Marketplace",
+      "description": "¡Descubre la nueva forma de gestionar tu sociedad!"
+    },
+    "menu": {
+      "Product": "Producto",
+      "ProductTitle": "Digital y Automatizado",
+      "ProductDescription": "Aprovecha la automatización digital para tu sociedad.",
+      "PartnersTitle": "Libro de Socios",
+      "Partnersdescription": "Captable, Libro de Socios oficial, %, acceso de los socios",
+      "PlansTitle": "Planes de Incentivos",
+      "PlansDescription": "Phantoms, stock options, acceso empleados, vesting, etc",
+      "BoardsTitle": "Juntas y Consejos",
+      "BoardsDescription": "Convocatoria digital, delegaciones, votaciones, firma de documentos, etc",
+      "DraftsTitle": "Simulador Operaciones",
+      "DraftsDescription": "Cálculo de rondas, ampliaciones, notas convertibles, etc",
+      "Solutions": "Soluciones",
+      "SolutionsTitle": "Soluciones",
+      "CompaniesTitle": "Empresa y Grupos Societarios",
+      "CompaniesDescription": "Digitaliza la gestión societaria de la Sociedad: Libro de socios, Juntas de Accionistas, Documentación Societaria, Apoderados, etc.",
+      "LawyersTitle": "Abogados",
+      "LawyersDescription": "Optimiza tu tiempo con la gestión digital de sociedades. Ahorra tiempo y evita errores. Automatiza tareas manuales e incrementa la productividad.",
+      "StartupsTitle": "Startups",
+      "StartupsDescription": "Captable, Planes de Incentivos, Simulador de ampliaciones, notas convertibles, juntas de accionistas, sindicación de socios, etc.",
+      "InvestorPortalTitle": "Portal del Inversor",
+      "InvestorPortalDescription": "Da acceso a tus inversores acceso a una plataforma donde dispondrán de toda la informacion que les quieras facilitar.",
+      "InvestorsTitle": "Inversores",
+      "InvestorsDescription": "Acceso desde una única plataforma a los datos de sociedades participadas. Información real sin utilizar excels desactualizados.",
+      "Testimonials": "Testimonios",
+      "Pricing": "Precios",
+      "Others": "Otros",
+      "Legal": "Legal",
+      "LegalWarning": "Aviso Legal y CGC",
+      "Privacy": "Privacidad y Cookies",
+      "Security": "Política de Seguridad"
+    },
+    "cta": {
+      "login": "Iniciar sesión",
+      "demo": "Solicitar demo"
+    },
+    "testimonials": {
+      "goBackToTestimonials": "Volver a Testimonios"
+    },
+    "sttokTitle": "Software de Gestión de Sociedades",
+    "allRightsReserved": "Todos los derechos reservados"
+  },
+  "home": {
+    "hero": {
+      "title": "Software para Gestión de Sociedades",
+      "description": "Captable (libros de socios), planes de incentivos, phantoms, juntas y consejos, simulador de ampliaciones y rondas, secundarios, etc.",
+      "button": {
+        "text": "Pruébalo ahora",
+        "link": "https://app.sttok.com/#/demo"
+      },
+      "image": {
+        "light": "hero/hero-dark.png",
+        "dark": "hero/hero-dark.png"
+      }
+    },
+    "clients": {
+      "header": {
+        "slogan": "",
+        "title": "",
+        "description": "ALGUNOS DE NUESTROS CLIENTES",
+        "buttonText": "",
+        "buttonLink": ""
+      },
+      "companies": [
+        "Factorial",
+        "Yaba",
+        "Broseta",
+        "DerechoCom",
+        "Taxdown",
+        "Deale",
+        "PldSpace",
+        "Keybotic",
+        "MyInvestor",
+        "Shakers",
+        "Caballero",
+        "MasterChef",
+        "Cabiedes",
+        "Incapto",
+        "LegalPigeon",
+        "Criptan",
+        "Barkibu",
+        "DealCar"
+      ]
+    },
+    "cta": {
+      "header": {
+        "slogan": "",
+        "title": "Software de Gestión de Sociedades",
+        "description": "Conoce cómo Sttok puede ayudarte en la gestión societaria según tus necesidades y ahorra tiempo y evita errores con el software líder en gestión de sociedades.",
+        "buttonText": "Ver funcionalidades",
+        "buttonLink": "/producto/",
+        "secondaryButtonText": "Agendar demo",
+        "secondaryButtonLink": "https://calendly.com/sttok/30min"
+      }
+    },
+    "features": {
+      "header": {
+        "slogan": "Software completo",
+        "title": "Funcionalidades para gestión societaria",
+        "description": "Reunimos todas las funcionalidades para gestionar digitalmente sociedades. Dispondrás de los datos e información exacta y siempre actualizada.",
+        "buttonText": "Ver funcionalidades",
+        "buttonLink": "/producto"
+      },
+      "items": [
+        {
+          "icon": "Icon01",
+          "title": "Libro de Socios (Captable)",
+          "description": "Libro de socios digital para gestionar el equity. Actualizado sin errores.",
+          "link": "/libro-de-socios/"
+        },
+        {
+          "icon": "Icon02",
+          "title": "Planes de Incentivos",
+          "description": "La forma más profesional de crear y mantener todo tipo de planes.",
+          "link": "/planes-de-incentivos/"
+        },
+        {
+          "icon": "Icon03",
+          "title": "Simulador de Operaciones",
+          "description": "Calcula todo tipo de operaciones con los datos reales actualizados.",
+          "link": "/simulador/"
+        },
+        {
+          "icon": "Icon04",
+          "title": "Juntas Accionistas",
+          "description": "Gestiona las juntas: Convocatoria, delegaciones, votos, etc.",
+          "link": "/juntas-consejos/"
+        },
+        {
+          "icon": "Icon05",
+          "title": "Ofertas de Compra",
+          "description": "Gestiona y ejecuta operaciones de secundario. Tender offers."
+        },
+        {
+          "icon": "Icon06",
+          "title": "Documentación Societaria",
+          "description": "Genera documentos, escrituras, certificados o actas en segundos."
+        },
+        {
+          "icon": "Icon07",
+          "title": "Grupos de Sociedades",
+          "description": "Todas las sociedades bajo un sistema digital de gestión."
+        },
+        {
+          "icon": "Icon08",
+          "title": "Consejos de Administración",
+          "description": "Gestiona digitalmente la convocatoria, delegaciones, votos, etc."
+        },
+        {
+          "icon": "Icon09",
+          "title": "Firma Electrónica Integrada",
+          "description": "Firma electrónica integrada para todos los documentos y operaciones."
+        }
+      ]
+    },
+    "pricing": {
+      "header": {
+        "slogan": "Precios",
+        "title": "Planes a tu medida",
+        "description": "Ahorra tiempo automatizando tareas manuales, evita errores, dispón de datos siempre actualizados. Aporta valor a todos los stakeholders.",
+        "buttonText": "",
+        "buttonLink": ""
+      },
+      "config": {
+        "switchLabel": "",
+        "suscribeLabel": "Suscribirse",
+        "suscribingLabel": "Suscribiendo"
+      },
+      "items": [
+        {
+          "id": "price_1",
+          "name": "Básico",
+          "description": "Sociedades de hasta 10 socios o beneficiarios",
+          "features": [
+            "Libro de Socios",
+            "Planes Incentivos",
+            "Simulador rondas"
+          ],
+          "monthlyPrice": 4000,
+          "yearlyPrice": 45000,
+          "isMostPopular": false
+        },
+        {
+          "id": "price_2",
+          "name": "Avanzado",
+          "description": "Sociedades de hasta 20 socios o beneficiarios",
+          "features": [
+            "Libro de Socios",
+            "Planes Incentivos",
+            "Simulador rondas",
+            "Juntas de socios",
+            "Consejos administración",
+            "Firma electrónica integrada"
+          ],
+          "monthlyPrice": 6000,
+          "yearlyPrice": 65000,
+          "isMostPopular": true
+        },
+        {
+          "id": "price_5",
+          "name": "Pro",
+          "description": "Sociedades de hasta 50 socios o beneficiarios",
+          "features": [
+            "Libro de Socios",
+            "Planes Incentivos",
+            "Simulador rondas",
+            "Juntas de socios",
+            "Consejos administración",
+            "Firma electrónica integrada"
+          ],
+          "monthlyPrice": 8000,
+          "yearlyPrice": 85000,
+          "isMostPopular": false
+        }
+      ]
+    },
+    "products": {
+      "header": {
+        "slogan": "Productos",
+        "title": "Descubre nuestras funcionalidades",
+        "description": "Sttok es una plataforma diseñada para empresas, abogados y startups que buscan una solución integral para la gestión de sociedades.",
+        "buttonText": "Ver funcionalidades",
+        "buttonLink": "#"
+      },
+      "items": [
+        {
+          "id": 1,
+          "title": "Socios",
+          "content": "Captable, Libro de Socios oficial, %, acceso de los socios, etc",
+          "image": {
+            "light": "/sttok-products-shareholders-dark.png",
+            "dark": "/sttok-products-shareholders-dark.png"
+          },
+          "icon": "BarChart3"
+        },
+        {
+          "id": 2,
+          "title": "Planes de Incentivos",
+          "content": "Phantoms, stock options, acceso empleados, vesting, etc",
+          "image": {
+            "light": "/sttok-products-incentive-plans-dark.png",
+            "dark": "/sttok-products-incentive-plans-dark.png"
+          },
+          "icon": "Brain"
+        },
+        {
+          "id": 3,
+          "title": "Juntas y Consejos",
+          "content": "Convocatoria digital, delegaciones, votaciones, etc",
+          "image": {
+            "light": "/sttok-products-boards-dark.png",
+            "dark": "/sttok-products-boards-dark.png"
+          },
+          "icon": "LineChart"
+        },
+        {
+          "id": 4,
+          "title": "Simulador de Operaciones",
+          "content": "Cálculo de rondas, ampliaciones, notas convertibles, etc",
+          "image": {
+            "light": "/sttok-products-simulator-dark.png",
+            "dark": "/sttok-products-simulator-dark.png"
+          },
+          "icon": "FileText"
+        }
+      ]
+    },
+    "testimonials": {
+      "header": {
+        "slogan": "Testimonios",
+        "title": "Nuestros clientes opinan",
+        "description": "",
+        "buttonText": "",
+        "buttonLink": ""
+      },
+      "items": [
+        {
+          "name": "Gerard Garcia",
+          "role": "CEO | Deale",
+          "img": "https://www.sttok.com/images/logos/logo-deale-mini.png",
+          "description": "Sttok nos permite gestionar de forma efectiva planes de incentivos para empleados, libro de socios, simulación de operaciones y juntas de accionistas.",
+          "stars": 5
+        },
+        {
+          "name": "Eric Gracia",
+          "role": "Abogado | Derecho.com",
+          "img": "https://www.sttok.com/images/logos/logo-derechocom-mini.png",
+          "description": "Sttok me ha permitido tener toda la documentación mercantil de las sociedades que gestiono a mano. Quedan atrás Excels y carpetas donde costaba hacer seguimiento. Lo mejor es su usabilidad, muy intuitivo y user-friendly.",
+          "stars": 4
+        },
+        {
+          "name": "Oriol Miralbell",
+          "role": "CEO y Fundador | Legal Pigeon",
+          "img": "https://www.sttok.com/images/logos/logo-legalpigeon-mini.png",
+          "description": "Sttok es una aplicación que ha llegado para facilitar la vida de abogados, empresas, inversores y emprendedores. La interfaz de la aplicación es sencilla e intuitiva, lo que hace que el proceso de llevar un seguimiento de tu sociedad sea mucho más fácil.",
+          "stars": 5
+        },
+        {
+          "name": "Lucía Bauza",
+          "role": "Head of Legal & Compliance | Factorial",
+          "img": "https://www.sttok.com/images/logos/logo-factorial-mini.png",
+          "description": "Para gestionar toda la documentación de planes de incentivos nos ha ayudado a digitalizar el proceso de creación, firma y control de los beneficiarios.",
+          "stars": 5
+        },
+        {
+          "name": "Eduardo Manchón",
+          "role": "CEO | Mailtrack",
+          "img": "https://www.sttok.com/images/logos/logo-mailtrack-mini.png",
+          "description": "Sttok nos sirve para poder tener organizada toda la información sobre socios, escrituras y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
+          "stars": 5
+        },
+        {
+          "name": "Amalia Riboldi",
+          "role": "Head of People & Cultura | Yaba",
+          "img": "https://www.sttok.com/images/logos/logo-yaba-mini.png",
+          "description": "Sttok definitivamente fue nuestra mejor opción y nos está ayudando con la gestión de los Planes de Incentivos y con la transparencia de la información societaria con los Socios.",
+          "stars": 5
+        },
+        {
+          "name": "Toni de Weest",
+          "role": "Abogado Socio | Broseta",
+          "img": "https://www.sttok.com/images/logos/logo-broseta-mini.png",
+          "description": "Utilizamos Sttok para gestionar digitalmente libros de socios de forma eficiente evitando tareas manuales inecesarias. Así podemos centrarnos en aportar valor a nuestros clientes.",
+          "stars": 5
+        },
+        {
+          "name": "Patricia Manca",
+          "role": "Socia responsable de NewLaw en PwC Tax & Legal",
+          "description": "Sttok permite la gestión digital de sociedades, libros de socios, planes de incentivos, juntas, etc. Sttok ha participado en el programa de aceleración de startups de PwC Tax & Legal, el 'Tax and Legal Tech Springboard' creado con el objetivo de impulsar, en el mercado español, soluciones legaltech y taxtech.",
+          "stars": 5
+        },
+        {
+          "name": "Nacho González",
+          "role": "CEO y Fundador | Banktrack",
+          "img": "https://www.sttok.com/images/logos/logo-banktrack-mini.png",
+          "description": "Ahora con Sttok puedes realizar simulaciones de ampliaciones o notas convertibles. Además también gestionamos las phantoms de nuestro equipo fácilmente. Finalmente como inversor tengo organizadas mis participadas y conozco claramente qué es lo que tengo.",
+          "stars": 5
+        }
+      ]
+    },
+    "uses": {
+      "header": {
+        "slogan": "Usuarios",
+        "title": "¿Quién utiliza Sttok?",
+        "description": "Sttok es una plataforma diseñada para empresas, abogados y startups que buscan una solución integral para la gestión de sociedades.",
+        "buttonText": null,
+        "buttonLink": null
+      },
+      "items": [
+        {
+          "id": 1,
+          "title": "Empresas y Sociedades",
+          "content": "Gestión digital de sociedades. Libro de socio actualizado. Generación automática de documentos. Ahorra tiempo y evita errores.",
+          "image": "/who-uses-sttok-companies.png",
+          "icon": "Building2"
+        },
+        {
+          "id": 2,
+          "title": "Abogados",
+          "content": "Para Abogados que gestionan Sociedades y Consejos. Servicio profesional sin errores. Ahorra tiempo sin excels desactualizados.",
+          "image": "who-uses-sttok-lawyers.png",
+          "icon": "Scale"
+        },
+        {
+          "id": 3,
+          "title": "Startups",
+          "content": "Para startups e inversores. Detalles de socios y participaciones. Planifica rondas y ampliaciones. Gestiona incentivos para empleados.",
+          "image": "/who-uses-sttok-startups.png",
+          "icon": "Handshake"
+        }
+      ]
+    }
+  },
+  "legal": {
+    "disclaimer": {
+      "metadata": {
+        "title": "Aviso legal y CGC",
+        "description": "",
+        "keywords": ""
+      },
+      "hero": {
+        "title": "Aviso legal",
+        "description": ""
+      },
+      "content": [
+        {
+          "title": "Información general del Sitio Web",
+          "content": [
+            "Titular: Sttok Barcelona, S.L. (en adelante referido por su nombre comercial, 'Sttok').",
+            "Sede y establecimiento: C/ Ausias Marc, 7, 3ª Planta, 08010-Barcelona.",
+            "N.I.F.: B10601268",
+            "Contacto: info@sttok.com 607838348",
+            "Datos registrales: Registro Mercantil de Barcelona, tomo 48281, folio 181, hoja núm. 578642, inscripción 1ª."
+          ]
+        },
+        {
+          "title": "Primera.- Objeto",
+          "content": [
+            "STTOK es una plataforma online de gestión de Libro de Socios, Planes de Incentivos, Documentación Societaria y Comunicaciones que utilizan empresas y/o abogados o asesores para gestionar digitalmente y eficientemente sociedades, socios, inversores, beneficiarios y/o administradores así como sus procesos societarios (en adelante, 'los Servicios'). Mediante el presente Contrato se otorga al Cliente una licencia de uso para el acceso a la plataforma STTOK y utilización de los Servicios. La licencia de uso quedará sujeta al cumplimiento de los términos y condiciones establecidos en el presente Contrato o en las condiciones particulares que en su caso sean de aplicación en función del plan contratado o regulado en la Propuesta Comercial. La Licencia de uso es limitada, no exclusiva, no transferible, y limitada durante el plazo contratado o establecido en la Propuesta Comercial. STTOK se compromete a prestar servicios de apoyo y resolución de consultas mientras dure la relación contractual."
+          ]
+        },
+        {
+          "title": "Segunda.- Acceso",
+          "content": [
+            "El Cliente creará un usuario accediendo a la plataforma STTOK mediante su correo electrónico que será utilizado para configurar la cuenta del Cliente. El Cliente podrá dar acceso a otros usuarios a su cuenta. El Cliente será responsable de cualesquiera actos u omisiones de cualquier persona que acceda a la plataforma de STTOK utilizando sus credenciales de acceso. STTOK se reserva el derecho de rechazar el registro, acceso, o de cancelar, los usuarios que infrinjan los términos y condiciones establecidos en el presente Contrato. En el supuesto que Cliente tenga conocimiento que su usuario o cuenta ha sido utilizado por terceras personas sin su consentimiento o sospecha de un uso no autorizado notificará inmediatamente a STTOK en el correo info@sttok.com. La acreditación de la identidad de los usuarios se realizará mediante el servicio de gestión de identidad que utilice el Cliente ya sea mediante el servicio de correos electrónicos de Microsoft o Google. En el caso que el Cliente tenga configurados sistemas de verificación de identidad de doble factor o similares serán responsabilidad de los mencionados servicios de Microsoft o Google. Para ello STTOK utiliza el servicio de Customer Identity (CIAM) de Auth0. Los términos y condiciones de los servicios de Microsoft o Google pueden ser de aplicación según el caso.",
+            "De forma puntual, el personal de STTOK podrá acceder a la cuenta del Cliente a efectos de mantener y mejorar los Servicios, incluyendo la asistencia técnica al Cliente en relación con aspectos de formación, técnicos o de facturación. En todo caso el personal de STTOK estará sujeto a las cláusulas de confidencialidad aplicables al presente Contrato. El Cliente manifiesta su conocimiento y, en lo menester, su consentimiento a tal acceso. Dicho acceso será llevado a cabo utilizando una cuenta de usuario de STTOK y en ningún caso accediendo a las cuentas individuales de los usuarios o bajo la identidad de los usuarios del Cliente."
+          ]
+        },
+        {
+          "title": "Tercera.- Disponibilidad",
+          "content": [
+            "STTOK hará los esfuerzos comerciales que sean razonables para mantener la disponibilidad de la plataforma y los Servicios. STTOK excluye todas las promesas, ya sean expresas o implícitas, incluidas las promesas de que la plataforma es adecuada para el propósito deseado por el Cliente. STTOK manifiesta que los Servicios pueden sufrir cortes derivados de mantenimiento, reparaciones y actualizaciones de la plataforma. En la medida de lo posible, STTOK intentará notificar al Cliente, por vía electrónica a través de la plataforma, de cualesquiera interrupción, suspensiones de los Servicios cuando sean programados. No obstante lo anterior, STTOK no será responsable por cualesquiera fallos en los Servicios o cualesquiera otros problemas que tengan relación con (a) datos introducidos por el Cliente o de los sistemas técnicos del Cliente o (b) cortes en las redes de telecomunicaciones o proveedores de acceso a internet, redes o servidores, u otros equipos o servicios fuera de las instalaciones de STTOK o de su control."
+          ]
+        },
+        {
+          "title": "Cuarta.- Versión gratuita",
+          "content": [
+            "En el caso de que STTOK haya ofrecido al Cliente una demo gratuita o versión gratuita, STTOK le ofrecerá los Servicios en régimen de prueba gratuita, que tendrá una duración hasta (a) la finalización del periodo de prueba gratuita para el cual el Cliente se haya registrado y respecto a los Servicios que sean de aplicación, o (b) la fecha de inicio de cualesquiera suscripción a los Servicios concretados por el Cliente, o (c)sobrepasar los límites de los Servicios gratuitos, o (d) la terminación por parte de STTOK a su sola discreción. La prueba o versión gratuita podría estar sujeta a términos y condiciones adicionales según se detalla en el sitio web de STTOK en cada momento. Dichos términos y condiciones adicionales se considerarán incorporados por referencia al presente Contrato y se considerarán legalmente vinculantes."
+          ]
+        },
+        {
+          "title": "Quinta.- Privacidad y Confidencialidad",
+          "content": [
+            "Los datos personales de los usuarios con acceso a la plataforma así como cualquier dato personal que se trate mediante la plataforma de STTOK serán tratados de acuerdo con la Política de Privacidad de STTOK ubicada en https://www.sttok.com/privacidad.html. El Cliente será responsable de cualquier dato personal que trate mediante los Servicios y plataforma de STTOK. El Cliente deberá cumplir con todas las leyes aplicables relativas al tratamiento y uso de datos personales."
+          ]
+        },
+        {
+          "title": "Sexta.- Suscripción. Contraprestación por los Servicios",
+          "content": [
+            {
+              "subtitle": "Precio",
+              "content": [
+                "El Cliente pagará el precio correspondiente a la Propuesta Comercial acordada por las Partes. Los precios podrán ser revisados mediante acuerdo escrito entre las partes."
+              ]
+            },
+            {
+              "subtitle": "Propuesta Comercial",
+              "content": [
+                "Las Partes podrán acordar una o más Propuestas Comerciales. Entre las Partes prevalecerán los términos y condiciones de la Propuesta Comercial y de forma subsidiaria se aplicará lo establecido en el presente Contrato."
+              ]
+            },
+            {
+              "subtitle": "Pago",
+              "content": [
+                "Los pagos se realizan en Euros previa emisión y envío de la factura. El vencimiento de la factura será a 30 días desde la fecha de emisión o la acordada en la Propuesta Comercial. En caso de impago, STTOK podrá exigir un interés de demora de 1,5% mensual o la cantidad máxima permitida por la ley. El Cliente se obliga a reembolsar a STTOK todos los gastos (incluyendo honorarios de abogados) incurridos por STTOK en el cobro de los pagos atrasados. STTOK podrá suspender el acceso del Cliente a la plataforma y Servicios o terminar este Contrato en el caso que el Cliente no esté al corriente de pago de las cantidades debidas a STTOK.",
+                "El Cliente podrá dar de baja su cuenta y resolver el presente contrato en cualquier momento mediando preaviso de 30 días. En este caso, el Cliente únicamente abonará los meses disfrutados hasta el momento de la efectiva resolución (a prorrata mensual sobre la cantidad anual prevista). Durante el plazo desde el preaviso hasta la efectiva resolución, STTOK prestará los servicios y el Cliente los abonará."
+              ]
+            },
+            {
+              "subtitle": "Impuestos",
+              "content": [
+                "Será responsabilidad del Cliente abonar los impuestos legalmente aplicables"
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Séptima.- Confidencialidad",
+          "content": [
+            "Las Partes se obligan a adoptar las medidas oportunas para asegurar el adecuado tratamiento confidencial de los datos e información propiedad de la otra Parte a la que tenga acceso durante la prestación de los Servicios. A efectos de este Contrato, se considera Información Confidencial toda información susceptible de ser revelada de palabra, por escrito o por cualquier otro medio o soporte, tangible o intangible que: (a) sea suministrada por las Partes para posibilitar la estricta y correcta prestación de los Servicios; o (b) pueda llegar a ser, accidental o fortuitamente, accedida o conocida por las Partes durante la prestación de los Servicios; o (c) las Partes hayan señalado expresamente como confidencial. Las medidas a adoptar por las Partes no serán menores que las aplicadas por cada una de ellas a su propia Información Confidencial e incluirán, en todo caso, lo siguiente:",
+            "a) Utilizar la Información Confidencial para la estricta y correcta ejecución del Contrato, asumiendo la responsabilidad por todo uso distinto, ya haya sido realizado por la Parte o por las personas físicas o jurídicas a las que haya permitido el acceso.",
+            "b) Sólo permitirán el acceso a la Información Confidencial a aquellas personas físicas o jurídicas que, prestando sus servicios para estas, necesiten dicha información para el desarrollo de tareas estrictamente relacionadas con la correcta ejecución del Contrato.",
+            "c) Comunicar inmediatamente a la otra Parte cualquier filtración de la Información Confidencial de la que tenga o llegue a tener conocimiento.",
+            "d) No podrán desvelar ni revelar la Información Confidencial a terceras personas no previstas en este Contrato sin la previa y escrita autorización de la otra Parte.",
+            "Cuando una autoridad administrativa o judicial solicite a una de las Partes el acceso a Información Confidencial de la otra, la primera deberá comunicar dicha circunstancia a la Parte afectada antes de facilitar la información. El deber de confidencialidad establecido en esta estipulación estará vigente de forma indefinida, aún después de finalizar la prestación de los Servicios por cualquier causa."
+          ]
+        },
+        {
+          "title": "Octava.- Derechos de propiedad",
+          "content": [
+            {
+              "subtitle": "Datos e información del Cliente",
+              "content": [
+                "El Cliente será propietario de todos los datos, información, documentos o títulos (incluyendo toda la propiedad intelectual y otros derechos de propiedad) incorporados y tratados mediante la plataforma STTOK (en adelante, 'los Datos del Cliente'). El Cliente otorga a STTOK un derecho no exclusivo, gratuito y con licencia para acceder, usar, copiar, procesar y almacenar los Datos del Cliente con el único fin de prestar los Servicios acordados por escrito entre las Partes."
+              ]
+            },
+            {
+              "subtitle": "Plataforma y Servicios de STTOK",
+              "content": [
+                "El Cliente declara conocer y acepta que la plataforma de STTOK y los Servicios son propiedad de STTOK, quien conservará todos los derechos de propiedad intelectual, industrial o cualesquiera otros, que no podrán ser objeto de copia por parte del Cliente. La puesta a disposición para el Cliente de los Servicios y la plataforma STTOK no significa, en ningún caso, la cesión de su propiedad."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Novena.- Garantías y limitaciones",
+          "content": [
+            {
+              "title": "Novena.- Garantías y limitaciones",
+              "content": [
+                {
+                  "subtitle": "Responsabilidad",
+                  "content": [
+                    "STTOK responderá de los daños causados por culpa o negligencia derivados de su actuación, no excediendo, en ningún caso, la indemnización que corresponda del importe correspondiente al precio de los Servicios efectivamente abonada por el Cliente a STTOK en el momento en que se produjo la causa que motivó la indemnización. STTOK no será responsable, en ningún caso, de daños indirectos, imprevistos, especiales o accidentales, inclusive pérdida de beneficios, ingresos, datos o uso sufridos por el Cliente o por un tercero. STTOK no será responsable frente al Cliente, entre otros supuestos, de los siguientes (i) en caso de que los Servicios no se utilicen de acuerdo con la finalidad prevista o a la documentación de soporte online de STTOK; (ii) en caso de que el fallo sea provocado por usos de la plataforma no autorizadas previamente por STTOK o por sistemas de terceros.",
+                    "No obstante lo anterior, ninguna disposición del presente Contrato excluirá o limitará la responsabilidad de STTOK derivada de infracción en materia de protección de datos o confidencialidad, fraude, negligencia grave, dolo o cualquier otra responsabilidad que no pueda limitarse o excluirse por imperativo legal y que sea atribuible directa e indirectamente a STTOK, a sus Partners, Colaboradores o Trabajadores."
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Décima.- Duración",
+          "content": [
+            {
+              "subtitle": "Plazo",
+              "content": [
+                "El Contrato comenzará en la fecha de alta del Cliente en la plataforma STTOK o en la fecha que las Partes acuerden en la Propuesta Comercial. El Contrato se renovará anualmente si ninguna de las Partes comunica lo contrario y continuará en vigor hasta que (i) el Cliente de de baja su cuenta, (ii) una de las Partes notifique por escrito a la otra, con treinta (30) días de antelación a la finalización, la voluntad de no renovar el Contrato.",
+                "El Cliente podrá dar de baja su cuenta y resolver el presente contrato en cualquier momento mediando preaviso de 30 días. En este caso, el Cliente únicamente abonará los meses disfrutados hasta el momento de la efectiva resolución (a prorrata mensual sobre la cantidad anual prevista). Durante el plazo desde el preaviso hasta la efectiva resolución, STTOK prestará los servicios y el Cliente los abonará."
+              ]
+            },
+            {
+              "subtitle": "Resolución",
+              "content": [
+                "El Contrato podrá ser resuelto por cualquiera de las Partes si la otra Parte incumple sustancialmente el Contrato y no se procede a la subsanación de dicho incumplimiento en un plazo de treinta (30) días desde la notificación por escrito del mismo."
+              ]
+            },
+            {
+              "subtitle": "Efectos de la terminación",
+              "content": [
+                "En caso de resolución o terminación del Contrato: (i) cesarán inmediatamente cualesquiera derechos otorgados por cualquiera de las Partes a la otra; (ii) STTOK permitirá durante treinta (30) días al Cliente acceder y exportar los Datos del Cliente, siendo de aplicación las tarifas de STTOK vigentes en ese momento respecto de los Servicios utilizados; y (iii) transcurrido un período de noventa (90) días STTOK borrará los Datos del Cliente."
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Décimo primera.- Generales",
+          "content": [
+            {
+              "subtitle": "Acuerdo íntegro",
+              "content": [
+                "El presente Contrato y en su caso la Propuesta Comercial constituyen el acuerdo íntegro entre las Partes en relación con los Servicios, y sustituyen y anulan todas las negociaciones, compromisos, pactos y comunicaciones, ya sean verbales o escritos, que al respecto hubieran alcanzado con anterioridad a la firma de este documento."
+              ]
+            },
+            {
+              "subtitle": "Fuerza mayor",
+              "content": [
+                "Las Partes no serán responsable del incumplimiento de las obligaciones establecidas en el presente Contrato en la medida en que tal incumplimiento sea debido a causas razonablemente fuera de control de la Parte incumplidora, tales como, sin carácter limitativo, incendios, inundaciones, huelgas, conflictos laborales u otros desórdenes sociales, escasez o indisponibilidad de combustible o energía eléctrica, indisponibilidad o funcionamiento anómalo de las redes de comunicaciones, accidentes, guerras (declaradas o no declaradas), embargos comerciales, bloqueos, disturbios o atentados."
+              ]
+            },
+            {
+              "subtitle": "Comunicación",
+              "content": [
+                "El Cliente acepta que STTOK pueda incluir el nombre o marca del Cliente en la lista de clientes de STTOK, online o en materiales comerciales. Bajo ninguna circunstancia, ninguna otra información o Datos del Cliente podrá ser utilizada por STTOK sin previo consentimiento por escrito."
+              ]
+            },
+            {
+              "subtitle": "Notificaciones",
+              "content": [
+                "Toda notificación o comunicación en relación al presente Contrato deberá efectuarse mediante escrito dirigido a la otra Parte, preferiblemente por correo electrónico de la cuenta de usuario o en su caso en la especificada en la Propuesta Comercial. Las notificaciones se entenderán entregadas en el momento de su recepción conforme resulte del correspondiente acuse de recibo físico o electrónico (según corresponda en cada caso)."
+              ]
+            },
+            {
+              "subtitle": "Subsistencia",
+              "content": [
+                "Si cualquier cláusula de este Contrato fuese declarada, total o parcialmente, nula o ineficaz, tal nulidad o ineficacia afectará tan sólo a dicha disposición o a la parte de la misma que resulte nula o ineficaz, subsistiendo el Contrato en todo lo demás, teniéndose tal disposición, o la parte de la misma que resultase afectada, por no puesta."
+              ]
+            },
+            {
+              "subtitle": "Ley aplicable y jurisdicción",
+              "content": [
+                "Cualquier controversia surgida de la interpretación o ejecución de las presentes Contrato o de cualquiera de sus eventuales modificaciones, así como cualquier incumplimiento de las mismas, se interpretará de conformidad con la legislación española. Para solucionar cualquier controversia relacionada con lo dispuesto en el presente Contrato o en ejecución del mismo, STTOK y el Cliente se someten expresamente a los Juzgados y Tribunales de Barcelona, con renuncia a cualquier otro fuero que pudiere corresponderles. El idioma a utilizar será el castellano."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "privacy": {
+      "metadata": {
+        "title": "Privacidad y cookies",
+        "description": "",
+        "keywords": ""
+      },
+      "hero": {
+        "title": "Política de Privacidad y Cookies",
+        "description": ""
+      },
+      "content": [
+        {
+          "title": "Política de Cookies",
+          "content": [
+            "1. Uso de cookies en el Sitio Web",
+            "Este Sitio Web utiliza cookies propias y de terceros con la finalidad de mejorar los servicios prestados a través del mismo tratando los datos necesarios para ello.",
+            "2. ¿Qué es una cookie?",
+            "Este Sitio Web utiliza cookies y/o tecnologías similares que almacenan y recuperan información cuando navegas. En general, estas tecnologías pueden servir para finalidades muy diversas, como, por ejemplo, reconocerte como usuario, obtener información sobre tus hábitos de navegación, o personalizar la forma en que se muestra el contenido. Los usos concretos que hacemos de estas tecnologías se describen a continuación.",
+            "3. ¿Qué cookies utiliza este Sitio Web y quién las utiliza?",
+            {
+              "type": "table",
+              "headers": [
+                "Tipología",
+                "¿Quién las gestiona?",
+                "Plazo de actividad"
+              ],
+              "rows": [
+                [
+                  "De análisis o medición: son aquellas que permiten al responsable de las mismas el seguimiento y análisis del comportamiento de los usuarios de los sitios web a los que están vinculadas, incluida la cuantificación de los impactos de los anuncios. La información recogida mediante este tipo de cookies se utiliza en la medición de la actividad de los sitios web, aplicación o plataforma, con el fin de introducir mejoras en función del análisis de los datos de uso que hacen los usuarios del servicio.",
+                  "_ga – Google Analytics \n\n_ga_LWNDHYBY2N – Google Analytics \n\nmp_ba0860a57b27c67a154b377a60b956d9_ – Mixpanel",
+                  "Persistente \n\nPersistente \n\nPersistente"
+                ],
+                [
+                  "Técnicas: son aquéllas que permiten al usuario la navegación a través de una página web, plataforma o aplicación y la utilización de las diferentes opciones o servicios que en ella existan, incluyendo aquellas que el editor utiliza para permitir la gestión y operativa de la página web y habilitar sus funciones y servicios, como, por ejemplo, controlar el tráfico y la comunicación de datos, identificar la sesión, acceder a partes de acceso restringido, recordar los elementos que integran un pedido, realizar el proceso de compra de un pedido, gestionar el pago, controlar el fraude vinculado a la seguridad del servicio, realizar la solicitud de inscripción o participación en un evento, contar visitas a efectos de la facturación de licencias del software con el que funciona el servicio (sitio web, plataforma o aplicación), utilizar elementos de seguridad durante la navegación, almacenar contenidos para la difusión de vídeos o sonido, habilitar contenidos dinámicos (por ejemplo, animación de carga de un texto o imagen) o compartir contenidos a través de redes sociales.",
+                  "_lr_hb_-audwrk%2Fsttok – Propia",
+                  "Persistente"
+                ],
+                [
+                  "También pertenecen a esta categoría, por su naturaleza técnica, aquellas cookies que permiten la gestión, de la forma más eficaz posible, de los espacios publicitarios que, como un elemento más de diseño o \"maquetación\" del servicio ofrecido al usuario, el editor haya incluido en una página web, aplicación o plataforma en base a criterios como el contenido editado, sin que se recopile información de los usuarios con fines distintos, como puede ser personalizar ese contenido publicitario u otros contenidos.",
+                  "_lr_uf_-audwrk – Propia \n\n_lr_tabs_-audwrk%2Fsttok – Propia",
+                  "Sesión \n\nPersistente"
+                ]
+              ]
+            },
+            "4. ¿Cómo puedo bloquear o eliminar las cookies que utiliza este Sitio Web?",
+            "El usuario puede permitir, bloquear o eliminar las cookies por medio del panel de configuración puesto a su disposición. Además, debe tener en cuenta que, si acepta las cookies de terceros, puede eliminarlas desde las opciones de su navegador o desde el sistema ofrecido por el propio tercero.",
+            "El hecho de bloquear la instalación de las cookies no impide la efectiva utilización del Sitio Web por parte del usuario.",
+            "Puede informarse de las transferencias a terceros países que, en su caso, realizan los terceros identificados en el cuadro anterior en sus correspondientes políticas. En el caso de Google sería: https://www.google.com/about/company/user-consent-policy-help/ y en el caso de Mixpanel sería: https://mixpanel.com/legal/privacy-policy/."
+          ]
+        }
+      ]
+    },
+    "security": {
+      "metadata": {
+        "title": "Política de Seguridad",
+        "description": "",
+        "keywords": ""
+      },
+      "hero": {
+        "title": "Política de Seguridad",
+        "description": ""
+      },
+      "content": [
+        {
+          "title": "Declaración de la Política de Seguridad de la Información de Sttok",
+          "content": [
+            "Los principios y directrices esenciales en que se basa la Política de Seguridad de la Información de Sttok son los que siguen:",
+            " • Desarrollar nuestras actividades y procesos hacia el conocimiento de las necesidades de los clientes para procurar su plena satisfacción, siguiendo siempre principios de transparencia e integridad.",
+            " • Implicar a todos los miembros de Sttok en la estrategia de Seguridad de la Información, mediante la participación en su elaboración y aplicación.",
+            " • Comunicación, cooperación y formación del personal constituyen ejes básicos de actuación.",
+            " • La Dirección promueve el desarrollo profesional de los empleados, consciente de su influencia en el compromiso y motivación y, por extensión, en la consecución de los objetivos y la Misión de la Organización.",
+            " • Planificación a medio y largo plazo, con establecimiento de prioridades y objetivos, que faciliten el avance de la Organización.",
+            " • Implantación de un sistema de mejora continua de las actividades, procesos y servicios, identificando los aspectos más significativos que permitan la búsqueda de oportunidades de mejora.",
+            " • La excelencia en el servicio, la innovación y la obtención de beneficio mediante la eficacia, son aspectos  que deben caracterizar nuestras actuaciones y colaboraciones, así como los procesos diseñados para ello.",
+            " • Asegurar la Confidencialidad, Integridad y Disponibilidad de la información, así como disponer de capacidad de respuesta ante situaciones de emergencia, estableciendo Planes de Continuidad de Negocio proporcionales al contexto de la Organización, es una actitud  permanente de Sttok.",
+            " • Establecer objetivos específicos de Seguridad de la Información y disponer medidas encaminadas a la identificación y evaluación de riesgos que puedan condicionar la consecución de los mismos.",
+            " • El análisis y medición de la Seguridad de la Información de todos los procesos operativos y de apoyo, mediante indicadores adecuados, es fundamental para conocer su evolución y aplicar mejoras en los objetivos fijados.",
+            " • Compromiso de la Dirección con el cumplimiento de los requisitos de la legislación vigente, otros requisitos reglamentarios y obligaciones contractuales en relación con la seguridad de la información."
+          ]
+        }
+      ]
+    }
+  }
+}

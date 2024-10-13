@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "title": "Privacy and Cookies",
+    "description": "",
+    "keywords": ""
+  },
+  "hero": {
+    "title": "Privacy and Cookies Policy",
+    "description": ""
+  },
+  "content": [
+    {
+      "title": "Cookies Policy",
+      "content": [
+        "1. Use of cookies on the Website",
+        "This Website uses its own and third-party cookies in order to improve the services provided through it by processing the necessary data for this purpose.",
+        "2. What is a cookie?",
+        "This Website uses cookies and/or similar technologies that store and retrieve information when you browse. In general, these technologies can serve very diverse purposes, such as, for example, recognizing you as a user, obtaining information about your browsing habits, or personalizing the way content is displayed. The specific uses we make of these technologies are described below.",
+        "3. What cookies does this Website use and who uses them?",
+        {
+          "type": "table",
+          "headers": ["Typology", "Who manages them?", "Activity period"],
+          "rows": [
+            [
+              "Analysis or measurement: these are cookies that allow the person responsible for them to track and analyze the behavior of users of the websites to which they are linked, including quantifying the impacts of advertisements. The information collected through this type of cookies is used in the measurement of the activity of websites, applications or platforms, in order to introduce improvements based on the analysis of the usage data that users of the service make.",
+              "_ga – Google Analytics \n\n_ga_LWNDHYBY2N – Google Analytics \n\nmp_ba0860a57b27c67a154b377a60b956d9_ – Mixpanel",
+              "Persistent \n\nPersistent \n\nPersistent"
+            ],
+            [
+              "Technical: these are cookies that allow the user to navigate through a web page, platform or application and use the different options or services that exist in it, including those that the publisher uses to allow the management and operation of the web page and enable its functions and services, such as, for example, controlling traffic and data communication, identifying the session, accessing restricted access parts, remembering the elements that make up an order, carrying out the purchase process of an order, managing payment, controlling fraud linked to the security of the service, carrying out the request for registration or participation in an event, counting visits for the purpose of billing licenses for the software with which the service works (website, platform or application), using security elements during navigation, storing content for the dissemination of videos or sound, enabling dynamic content (for example, loading animation of a text or image) or sharing content through social networks.",
+              "_lr_hb_-audwrk%2Fsttok – Own",
+              "Persistent"
+            ],
+            [
+              "Also belonging to this category, due to their technical nature, are those cookies that allow the most efficient management possible of the advertising spaces that, as one more element of design or \"layout\" of the service offered to the user, the publisher has included in a web page, application or platform based on criteria such as the edited content, without collecting information from users for different purposes, such as customizing that advertising content or other content.",
+              "_lr_uf_-audwrk – Own \n\n_lr_tabs_-audwrk%2Fsttok – Own",
+              "Session \n\nPersistent"
+            ]
+          ]
+        },
+        "4. How can I block or delete the cookies used by this Website?",
+        "The user can allow, block or delete cookies through the configuration panel made available to him. In addition, it should be noted that, if you accept third-party cookies, you can delete them from your browser options or from the system offered by the third party itself.",
+        "Blocking the installation of cookies does not prevent the effective use of the Website by the user",
+        "You can find out about transfers to third countries that, where applicable, the third parties identified in the table above make in their respective policies. In the case of Google it would be: https://www.google.com/about/company/user-consent-policy-help/ and in the case of Mixpanel it would be: https://mixpanel.com/legal/privacy-policy/"
+      ]
+    }
+  ]
+}

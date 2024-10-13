@@ -1,21 +1,40 @@
 "use client";
 
+import Link from "next/link";
 import Image from "next/image";
 import React, { useRef } from "react";
 import { useInView } from "framer-motion";
+import { useTranslation } from "react-i18next";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 import { BorderBeam } from "@/components/magicui/border-beam";
 import Blur01 from "@/public/blur-01.svg";
 import Blur02 from "@/public/blur-02.svg";
-import { hero } from "@/config/landing/hero-section";
-import Link from "next/link";
+
+import { getImage } from "@/lib/getImage";
 
 export default function HeroSection() {
+  const { t } = useTranslation(["common", "home-hero-section"]);
+
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
-  const hasButton = !!(hero.button.text && hero.button.link);
+  const hasButton = !!(
+    t("home-hero-section:hero.button.text") &&
+    t("home-hero-section:hero.button.link")
+  );
+
+  const lightImage =
+    getImage(t, "home-hero-section:hero.image.light") !==
+    "/home-hero-section:hero.image.light"
+      ? getImage(t, "home-hero-section:hero.image.light")
+      : null;
+
+  const darkImage =
+    getImage(t, "home-hero-section:hero.image.dark") !==
+    "/home-hero-section:hero.image.dark"
+      ? getImage(t, "home-hero-section:hero.image.dark")
+      : null;
 
   return (
     <section id="hero">
@@ -57,12 +76,12 @@ export default function HeroSection() {
           <div className="space-y-2">
             <div className="text-left space-y-2 mx-auto lg:text-left lg:mx-0">
               <h1 className="bg-gradient-to-br dark:from-white from-black from-30% dark:to-white/40 to-black/40 bg-clip-text py-6 text-4xl text-left font-medium leading-none tracking-tighter text-transparent text-balance sm:text-5xl md:text-6xl lg:text-7xl translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
-                {hero.title}
+                {t("home-hero-section:hero.title")}
               </h1>
             </div>
 
             <p className="mb-2 text-lg tracking-tight text-gray-400 md:text-xl text-balance translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
-              {hero.description}
+              {t("home-hero-section:hero.description")}
             </p>
 
             {hasButton && (
@@ -70,11 +89,11 @@ export default function HeroSection() {
                 <br />
                 <div className="flex justify-center lg:justify-start mt-12">
                   <Link
-                    href={hero.button.link}
+                    href={t("home-hero-section:hero.button.link")}
                     target="_blank"
                     className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary shadow hover:bg-primary/90 h-9 px-4 py-2 translate-y-[-1rem] animate-fade-in gap-1 rounded-lg text-white dark:text-black opacity-0 ease-in-out [--animation-delay:600ms]"
                   >
-                    <span>{hero.button.text}</span>
+                    <span>{t("home-hero-section:hero.button.text")}</span>
                     <ArrowRightIcon className="ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
                   </Link>
                 </div>
@@ -99,20 +118,25 @@ export default function HeroSection() {
                 colorTo="var(--color-two)"
               />
 
-              <Image
-                alt="Hero image"
-                className="aspect-video object-cover rounded-lg hidden relative w-full h-full rounded-[inherit] border object-contain dark:block"
-                height="420"
-                src={hero.image.dark}
-                width="550"
-              />
-              <Image
-                alt="Hero image"
-                className="aspect-video object-cover rounded-lg block relative w-full h-full  rounded-[inherit] border object-contain dark:hidden"
-                height="420"
-                src={hero.image.light}
-                width="550"
-              />
+              {lightImage && (
+                <Image
+                  alt="Hero image"
+                  className="aspect-video object-cover rounded-lg hidden relative w-full h-full rounded-[inherit] border object-contain dark:block"
+                  height="420"
+                  src={lightImage}
+                  width="550"
+                />
+              )}
+
+              {darkImage && (
+                <Image
+                  alt="Hero image"
+                  className="aspect-video object-cover rounded-lg block relative w-full h-full  rounded-[inherit] border object-contain dark:hidden"
+                  height="420"
+                  src={darkImage}
+                  width="550"
+                />
+              )}
             </div>
           </div>
         </div>

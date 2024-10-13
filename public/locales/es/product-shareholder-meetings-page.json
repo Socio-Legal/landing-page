@@ -1,0 +1,124 @@
+{
+  "metadata": {
+    "title": "Juntas y Consejos",
+    "description": "Gestiona juntas y consejos de administración de manera eficiente con Sttok, incluyendo convocatorias, delegaciones, votos y actas.",
+    "keywords": "juntas de socios, consejos de administración, gestión digital de juntas, convocatorias, delegaciones de voto, actas digitales"
+  },
+  "hero": {
+    "title": "Juntas y Consejos",
+    "description": "En Sttok, entendemos la importancia de las juntas y consejos para el buen funcionamiento y toma de decisiones en una empresa. Con Sttok podrás convocar, gestionar delegaciones, votaciones y generar las actas y certificados de forma digital y en pocos minutos.",
+    "button": {
+      "text": "Gestiona tu Junta",
+      "link": "https://app.sttok.com/#/demo"
+    },
+    "image": {
+      "light": "/hero/hero-product-juntas-consejos.png",
+      "dark": "/hero/hero-product-juntas-consejos.png"
+    }
+  },
+  "topFeatures": {
+    "title": "Características Principales",
+    "description": "Optimiza la gestión de juntas y consejos con herramientas que simplifican cada paso del proceso.",
+    "items": [
+      {
+        "title": "Convocatoria Digital",
+        "description": "Envía convocatorias digitales con toda la información necesaria a tus accionistas y consejeros en un clic.",
+        "animation": "AnimatedBeam01_ShareholderMeeting"
+      },
+      {
+        "title": "Gestión de Votos y Delegaciones",
+        "description": "Permite a los accionistas delegar sus votos y gestionar las votaciones de manera segura y transparente.",
+        "animation": "AnimatedBeam03"
+      },
+      {
+        "title": "Generación Automática de Actas",
+        "description": "Crea actas de reuniones y certificados de acuerdos de manera automática y en pocos minutos.",
+        "animation": "AnimatedDocScanner"
+      }
+    ]
+  },
+  "clients": {
+    "title": "CLIENTES QUE UTILIZAN LAS JUNTAS Y CONSEJOS",
+    "clients": [
+      "Factorial",
+      "Shakers",
+      "Yaba",
+      "Taxdown",
+      "PldSpace",
+      "MyInvestor",
+      "Broseta",
+      "Barkibu",
+      "DealCar"
+    ]
+  },
+  "features": {
+    "title": "Todas las Características",
+    "description": "Explora todas las características que hacen único a nuestro producto.",
+    "items": [
+      {
+        "icon": "Icon01",
+        "title": "Convocatoria de Juntas",
+        "description": "Crea y envía convocatorias de juntas a accionistas y consejeros de forma digital, con todos los detalles relevantes."
+      },
+      {
+        "icon": "Icon02",
+        "title": "Delegaciones Digitales de Voto",
+        "description": "Facilita la delegación de votos de forma segura, permitiendo a los socios representar sus intereses en las reuniones."
+      },
+      {
+        "icon": "Icon03",
+        "title": "Votaciones Electrónicas",
+        "description": "Gestiona votaciones de acuerdos con total transparencia y eficiencia, garantizando resultados en tiempo real."
+      },
+      {
+        "icon": "Icon04",
+        "title": "Actas Automáticas",
+        "description": "Genera actas y certificados de acuerdos al finalizar cada reunión, ahorrando tiempo y eliminando errores."
+      },
+      {
+        "icon": "Icon05",
+        "title": "Certificaciones",
+        "description": "Generación automática de certificaciones de convocatoria, delegaciones y votaciones."
+      },
+      {
+        "icon": "Icon06",
+        "title": "Historial de Reuniones",
+        "description": "Accede al historial completo de todas las reuniones y acuerdos anteriores, todo almacenado en la nube."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Lo que Dicen Nuestros Clientes",
+    "description": "Lee testimonios de clientes satisfechos que usan Sttok para Juntas o Consejos.",
+    "items": [
+      {
+        "name": "Johan Longo",
+        "role": "Contract Manager | PLD Space",
+        "img": "https://www.sttok.com/images/logos/logo-pld-mini.png",
+        "description": "Sttok nos sirve para poder tener organizada toda la información sobre socios, junas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
+        "stars": 5
+      },
+      {
+        "name": "Lucía Bouzá",
+        "role": "Head of Legal & Compliance | Factorial",
+        "img": "https://www.sttok.com/images/logos/logo-factorial-mini.png",
+        "description": "Sttok nos permite tener toda la información de socios y planes de incentivos centralizada y actualizada. Nos facilita la gestión de juntas y la relación con los inversores.",
+        "stars": 5
+      },
+      {
+        "name": "Oriol Miralbell",
+        "role": "CEO | Legalpigeon",
+        "img": "https://www.sttok.com/images/logos/logo-legalpigeon-mini.png",
+        "description": "Sttok te permite calcular valoraciones, rondas de inversión y simulaciones fácilmente. La interfaz de la aplicación es sencilla e intuitiva, lo que  te permite tomar decisiones de manera más ágil y eficaz.",
+        "stars": 4
+      },
+      {
+        "name": "Nacho González",
+        "role": "CEO y Fundador | Banktrack",
+        "img": "https://www.sttok.com/images/logos/logo-banktrack-mini.png",
+        "description": "Ahora con Sttok puedes realizar simulaciones de ampliaciones o notas convertibles. Además también gestionamos las phantoms de nuestro equipo fácilmente. Finalmente como inversor tengo organizadas mis participadas y conozco claramente qué es lo que tengo.",
+        "stars": 5
+      }
+    ]
+  }
+}

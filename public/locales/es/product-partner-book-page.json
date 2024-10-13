@@ -1,0 +1,127 @@
+{
+  "metadata": {
+    "title": "Libro de Socios",
+    "description": "Libro de Socios oficial, actualizado y sin errores. Deja de utilizar excel ineficientes. Un único libro de socios listo para presentar al Registro y para poder calcular operaciones fácilmente.",
+    "keywords": "Libro de Socios, Socios, Registro, Operaciones, Excel"
+  },
+  "hero": {
+    "title": "Libro de Socios",
+    "description": "Libro de Socios oficial, actualizado y sin errores. Deja de utilizar excel ineficientes. Un único libro de socios listo para presentar al Registro y para poder calcular operaciones fácilmente.",
+    "button": {
+      "text": "Gestiona tu Libro de Socios",
+      "link": "https://app.sttok.com/#/demo"
+    },
+    "image": {
+      "light": "/hero/hero-product-libro-de-socios.png",
+      "dark": "/hero/hero-product-libro-de-socios.png"
+    }
+  },
+  "topFeatures": {
+    "title": "Libro de Socios",
+    "description": "Las 3 mejores razones para gestionar tu Libro de Socios con Sttok",
+    "items": [
+      {
+        "title": "Libro de Socios Actualizado",
+        "description": "Información, numeración, % y primas actualizadas y al día. Toma decisiones con datos exactos y diluciones correctas.",
+        "animation": "AnimatedBeam01_PartnerBook",
+        "image": "Feature1"
+      },
+      {
+        "title": "Acceso para Socios e Inversores",
+        "description": "Gestiona profesionalmente la sociedad facilitando el acceso a los datos, documentos y certificados individuales de cada socio.",
+        "animation": "AnimatedBeam03",
+        "image": "Feature2"
+      },
+      {
+        "title": "Libro Oficial Exportable",
+        "description": "Tendrás el Libro de Socios actualizado y listo para compartir, presentar ante registros oficiales o para simular cualquier operación.",
+        "animation": "AnimatedBeam02",
+        "image": "Feature3"
+      }
+    ]
+  },
+  "clients": {
+    "title": "CLIENTES QUE UTILIZAN EL LIBRO DE SOCIOS",
+    "clients": [
+      "Factorial",
+      "MyInvestor",
+      "Mailtrack",
+      "Taxdown",
+      "PldSpace",
+      "Broseta",
+      "Caballero",
+      "Barkibu",
+      "DealCar"
+    ]
+  },
+  "features": {
+    "title": "Características",
+    "description": "Sttok es la plataforma de gestión de sociedades más completa del mercado. Descubre todas las funcionalidades que te ofrece.",
+    "items": [
+      {
+        "icon": "Icon01",
+        "title": "Libro de Socios (Captable)",
+        "description": "Libro de socios digital para gestionar el equity. Actualizado sin errores."
+      },
+      {
+        "icon": "Icon02",
+        "title": "Acceso para los Socios",
+        "description": "La forma más profesional de relacionarte con los socios e inversores."
+      },
+      {
+        "icon": "Icon03",
+        "title": "Simulador de Operaciones",
+        "description": "Calcula todo tipo de operaciones con los datos reales actualizados."
+      },
+      {
+        "icon": "Icon04",
+        "title": "Numeración de participaciones",
+        "description": "Libro de socio con detalle de numeración, clases, cargas y cotitulares"
+      },
+      {
+        "icon": "Icon05",
+        "title": "Documentación",
+        "description": "Listado de transacciones con acceso a la escritura o documento."
+      },
+      {
+        "icon": "Icon06",
+        "title": "Información al día",
+        "description": "Dispondrás de número y % exactos y actualizados, al día para tomar decisiones."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Testimonios",
+    "description": "Descubre lo que dicen nuestros clientes sobre el Libro de Socios.",
+    "items": [
+      {
+        "name": "Lucía Bouzá",
+        "role": "Head of Legal & Compliance | Factorial",
+        "img": "https://www.sttok.com/images/logos/logo-factorial-mini.png",
+        "description": "Sttok nos permite tener toda la información de socios y planes de incentivos centralizada y actualizada. Nos facilita la gestión de juntas y la relación con los inversores.",
+        "stars": 5
+      },
+      {
+        "name": "Gerard Garcia",
+        "role": "CEO | Deale",
+        "img": "https://www.sttok.com/images/logos/logo-deale-mini.png",
+        "description": "Sttok nos permite gestionar de forma efectiva planes de incentivos para empleados, libro de socios, simulación de operaciones y juntas de accionistas.",
+        "stars": 5
+      },
+      {
+        "name": "Johan Longo",
+        "role": "Contract Manager | PLD Space",
+        "img": "https://www.sttok.com/images/logos/logo-pld-mini.png",
+        "description": "Sttok nos sirve para poder tener organizada toda la información sobre socios, junas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
+        "stars": 5
+      },
+      {
+        "name": "Nacho González",
+        "role": "CEO y Fundador | Banktrack",
+        "img": "https://www.sttok.com/images/logos/logo-banktrack-mini.png",
+        "description": "Ahora con Sttok puedes realizar simulaciones de ampliaciones o notas convertibles. Además también gestionamos las phantoms de nuestro equipo fácilmente. Finalmente como inversor tengo organizadas mis participadas y conozco claramente qué es lo que tengo.",
+        "stars": 5
+      }
+    ]
+  }
+}

@@ -2,13 +2,20 @@ import { SiteBanner } from "@/components/site-banner";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
-interface IncentivePlansLayoutProps {
+import { metadata as page } from "@/config/product/operation-drafts-page";
+
+export const metadata = {
+  title: page.title,
+  keywords: page.keywords,
+  description: page.description,
+};
+interface OperationDraftsLayoutProps {
   children: React.ReactNode;
 }
 
-export default async function IncentivePlansLayout({
+export default async function OperationDraftsLayout({
   children,
-}: IncentivePlansLayoutProps) {
+}: OperationDraftsLayoutProps) {
   return (
     <>
       <SiteBanner />

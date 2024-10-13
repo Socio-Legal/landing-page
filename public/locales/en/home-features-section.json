@@ -1,0 +1,60 @@
+{
+  "header": {
+    "slogan": "Complete software",
+    "title": "Features for corporate management",
+    "description": "We bring together all the features to digitally manage companies. You will have accurate and always updated data and information.",
+    "buttonText": "View features",
+    "buttonLink": "/product"
+  },
+  "items": [
+    {
+      "icon": "Icon01",
+      "title": "Shareholder Register (Cap Table)",
+      "description": "Digital shareholder register to manage equity. Updated without errors.",
+      "link": "/shareholder-register/"
+    },
+    {
+      "icon": "Icon02",
+      "title": "Incentive Plans",
+      "description": "The most professional way to create and maintain all types of plans.",
+      "link": "/incentive-plans/"
+    },
+    {
+      "icon": "Icon03",
+      "title": "Operations Simulator",
+      "description": "Calculate all types of operations with updated real data.",
+      "link": "/simulator/"
+    },
+    {
+      "icon": "Icon04",
+      "title": "Shareholder Meetings",
+      "description": "Manage meetings: Convening, delegations, voting, etc.",
+      "link": "/meetings-boards/"
+    },
+    {
+      "icon": "Icon05",
+      "title": "Purchase Offers",
+      "description": "Manage and execute secondary market operations. Tender offers."
+    },
+    {
+      "icon": "Icon06",
+      "title": "Corporate Documentation",
+      "description": "Generate documents, deeds, certificates or minutes in seconds."
+    },
+    {
+      "icon": "Icon07",
+      "title": "Groups of Companies",
+      "description": "All companies under a digital management system."
+    },
+    {
+      "icon": "Icon08",
+      "title": "Board of Directors",
+      "description": "Digitally manage convening, delegations, voting, etc."
+    },
+    {
+      "icon": "Icon09",
+      "title": "Integrated Electronic Signature",
+      "description": "Integrated electronic signature for all documents and operations."
+    }
+  ]
+}

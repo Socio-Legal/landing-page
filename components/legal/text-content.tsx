@@ -11,13 +11,13 @@ interface Subsection {
   content: string[];
 }
 
-interface Section {
+export interface TextSectionProps {
   title: string;
   content: (string | Subsection | TableSection)[];
 }
 
-interface TextContentProps {
-  content: Section[];
+export interface TextContentProps {
+  content: TextSectionProps[];
   hideTopSpace?: boolean;
 }
 

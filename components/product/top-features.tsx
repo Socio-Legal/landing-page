@@ -19,7 +19,7 @@ type TopFeatureProps = {
   index: number;
 };
 
-type TopFeaturesProps = {
+export type TopFeaturesProps = {
   title: string;
   description: string;
   items: Feature[];
@@ -63,7 +63,7 @@ const TopFeatures: FC<TopFeaturesProps> = ({ title, description, items }) => {
         <ProductSectionHeader title={title} description={description} />
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-          {items.map((feature, index) => (
+          {items?.map((feature, index) => (
             <TopFeature key={index} feature={feature} index={index} />
           ))}
         </div>

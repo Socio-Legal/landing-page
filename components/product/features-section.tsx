@@ -44,7 +44,7 @@ type FeaturesHeaderProps = {
   description: string;
 };
 
-type FeaturesSectionProps = {
+export type FeaturesSectionProps = {
   title: string;
   description: string;
   items: Feature[];

@@ -1,0 +1,127 @@
+{
+  "metadata": {
+    "title": "Shareholder Register",
+    "description": "Official Shareholder Register, updated and error-free. Stop using inefficient Excel sheets. A single shareholder register ready to submit to the Registry and to easily calculate operations.",
+    "keywords": "Shareholder Register, Shareholders, Registry, Operations, Excel"
+  },
+  "hero": {
+    "title": "Shareholder Register",
+    "description": "Official Shareholder Register, updated and error-free. Stop using inefficient Excel sheets. A single shareholder register ready to submit to the Registry and to easily calculate operations.",
+    "button": {
+      "text": "Manage your Shareholder Register",
+      "link": "https://app.sttok.com/#/demo"
+    },
+    "image": {
+      "light": "/hero/hero-product-libro-de-socios.png",
+      "dark": "/hero/hero-product-libro-de-socios.png"
+    }
+  },
+  "topFeatures": {
+    "title": "Shareholder Register",
+    "description": "The 3 best reasons to manage your Shareholder Register with Sttok",
+    "items": [
+      {
+        "title": "Updated Shareholder Register",
+        "description": "Information, numbering, % and premiums updated and current. Make decisions with accurate data and correct dilutions.",
+        "animation": "AnimatedBeam01_PartnerBook",
+        "image": "Feature1"
+      },
+      {
+        "title": "Access for Shareholders and Investors",
+        "description": "Professionally manage the company by facilitating access to individual data, documents, and certificates for each shareholder.",
+        "animation": "AnimatedBeam03",
+        "image": "Feature2"
+      },
+      {
+        "title": "Exportable Official Register",
+        "description": "You'll have the Shareholder Register updated and ready to share, present to official registries, or to simulate any operation.",
+        "animation": "AnimatedBeam02",
+        "image": "Feature3"
+      }
+    ]
+  },
+  "clients": {
+    "title": "CLIENTS USING THE SHAREHOLDER REGISTER",
+    "clients": [
+      "Factorial",
+      "MyInvestor",
+      "Mailtrack",
+      "Taxdown",
+      "PldSpace",
+      "Broseta",
+      "Caballero",
+      "Barkibu",
+      "DealCar"
+    ]
+  },
+  "features": {
+    "title": "Features",
+    "description": "Sttok is the most comprehensive company management platform on the market. Discover all the functionalities it offers you.",
+    "items": [
+      {
+        "icon": "Icon01",
+        "title": "Shareholder Register (Cap Table)",
+        "description": "Digital shareholder register to manage equity. Updated without errors."
+      },
+      {
+        "icon": "Icon02",
+        "title": "Access for Shareholders",
+        "description": "The most professional way to interact with shareholders and investors."
+      },
+      {
+        "icon": "Icon03",
+        "title": "Operations Simulator",
+        "description": "Calculate all types of operations with updated real data."
+      },
+      {
+        "icon": "Icon04",
+        "title": "Share Numbering",
+        "description": "Shareholder register with details of numbering, classes, encumbrances, and co-holders"
+      },
+      {
+        "icon": "Icon05",
+        "title": "Documentation",
+        "description": "List of transactions with access to the deed or document."
+      },
+      {
+        "icon": "Icon06",
+        "title": "Up-to-date Information",
+        "description": "You'll have exact and updated numbers and %, ready for decision-making."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "description": "Discover what our clients say about the Shareholder Register.",
+    "items": [
+      {
+        "name": "Lucía Bouzá",
+        "role": "Head of Legal & Compliance | Factorial",
+        "img": "https://www.sttok.com/images/logos/logo-factorial-mini.png",
+        "description": "Sttok allows us to have all shareholder and incentive plan information centralized and updated. It facilitates the management of meetings and the relationship with investors.",
+        "stars": 5
+      },
+      {
+        "name": "Gerard Garcia",
+        "role": "CEO | Deale",
+        "img": "https://www.sttok.com/images/logos/logo-deale-mini.png",
+        "description": "Sttok allows us to effectively manage employee incentive plans, shareholder register, operation simulations, and shareholder meetings.",
+        "stars": 5
+      },
+      {
+        "name": "Johan Longo",
+        "role": "Contract Manager | PLD Space",
+        "img": "https://www.sttok.com/images/logos/logo-pld-mini.png",
+        "description": "Sttok serves us to have all the information about partners, meetings, and incentive plans of our company organized. It facilitates the management of the cap table and the relationship with investors.",
+        "stars": 5
+      },
+      {
+        "name": "Nacho González",
+        "role": "CEO and Founder | Banktrack",
+        "img": "https://www.sttok.com/images/logos/logo-banktrack-mini.png",
+        "description": "Now with Sttok you can perform simulations of capital increases or convertible notes. We also easily manage our team's phantom shares. Finally, as an investor, I have my investees organized and I clearly know what I have.",
+        "stars": 5
+      }
+    ]
+  }
+}

@@ -96,7 +96,7 @@ export default function Features({
   collapseDelay = 5000,
   ltr = false,
   linePosition = "left",
-  data = [],
+  data,
 }: FeaturesProps) {
   const [currentIndex, setCurrentIndex] = useState<number>(-1);
   const carouselRef = useRef<HTMLUListElement>(null);
@@ -176,7 +176,7 @@ export default function Features({
       carousel.addEventListener("scroll", handleScroll);
       return () => carousel.removeEventListener("scroll", handleScroll);
     }
-  }, []);
+  }, []); // eslint-disable-line
 
   return (
     <section ref={ref} id="features">

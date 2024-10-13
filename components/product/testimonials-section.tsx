@@ -19,7 +19,7 @@ type TestimonialsHeaderProps = {
   description: string;
 };
 
-type TestimonialsSectionProps = {
+export type TestimonialsSectionProps = {
   title: string;
   description: string;
   items: Testimonial[];

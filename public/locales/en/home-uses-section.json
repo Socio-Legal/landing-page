@@ -1,0 +1,32 @@
+{
+  "header": {
+    "slogan": "Users",
+    "title": "Who uses Sttok?",
+    "description": "Sttok is a platform designed for companies, lawyers, and startups looking for a comprehensive solution for company management.",
+    "buttonText": null,
+    "buttonLink": null
+  },
+  "items": [
+    {
+      "id": 1,
+      "title": "Companies and Corporations",
+      "content": "Digital management of companies. Updated shareholder register. Automatic document generation. Save time and avoid errors.",
+      "image": "/who-uses-sttok-companies.png",
+      "icon": "Building2"
+    },
+    {
+      "id": 2,
+      "title": "Lawyers",
+      "content": "For lawyers managing Companies and Boards. Professional service without errors. Save time without outdated Excel sheets.",
+      "image": "who-uses-sttok-lawyers.png",
+      "icon": "Scale"
+    },
+    {
+      "id": 3,
+      "title": "Startups",
+      "content": "For startups and investors. Details of partners and shares. Plan rounds and expansions. Manage employee incentives.",
+      "image": "/who-uses-sttok-startups.png",
+      "icon": "Handshake"
+    }
+  ]
+}

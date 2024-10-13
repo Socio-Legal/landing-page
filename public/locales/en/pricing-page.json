@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "title": "Pricing",
+    "description": "Here you will find plans and pricing for this product",
+    "keywords": "plans, pricing, rates, costs, subscription, monthly, annual, free"
+  },
+  "hero": {
+    "title": "Pricing",
+    "description": "Save time by automating manual tasks, avoid errors, have always updated data. Add value to all stakeholders.",
+    "button": {
+      "text": "",
+      "link": ""
+    },
+    "image": {
+      "light": "https://businesstalentgroup.com/wp-content/uploads/2020/07/data-driven-pricing-strategy-header-1024x487.jpg",
+      "dark": "https://businesstalentgroup.com/wp-content/uploads/2020/07/data-driven-pricing-strategy-header-1024x487.jpg"
+    }
+  }
+}

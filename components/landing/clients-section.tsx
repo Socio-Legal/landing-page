@@ -1,20 +1,26 @@
+"use client";
+
 import { FC } from "react";
 import Image from "next/image";
 
-import { items as companies, header } from "@/config/landing/clients-section";
 import { clientLogos, getClientLogo } from "@/config/client-logos";
 
 import SectionHeader from "../section-header";
+import { useTranslation } from "react-i18next";
 
-const ClientsHeader: FC = () => (
-  <SectionHeader
-    slogan={header.slogan}
-    title={header.title}
-    description={header.description}
-    buttonText={header.buttonText}
-    buttonLink={header.buttonLink}
-  />
-);
+const ClientsHeader: FC = () => {
+  const { t } = useTranslation("home-clients-section");
+
+  return (
+    <SectionHeader
+      slogan={t("header.slogan")}
+      title={t("header.title")}
+      description={t("header.description")}
+      buttonText={t("header.buttonText")}
+      buttonLink={t("header.buttonLink")}
+    />
+  );
+};
 
 const getColStarts = (index: number, companies: string[]) => {
   if (companies.length === 16) {
@@ -25,6 +31,13 @@ const getColStarts = (index: number, companies: string[]) => {
 };
 
 const ClientsSection: FC = () => {
+  const { t } = useTranslation("home-clients-section");
+
+  const companiesData =
+    (t("companies", { returnObjects: true }) as string[]) || null;
+
+  const companies = Array.isArray(companiesData) ? companiesData : null;
+
   return (
     <section id="companies">
       <div className="container mx-auto px-4 md:px-8 py-12 md:py-24 lg:py-32">
@@ -32,7 +45,7 @@ const ClientsSection: FC = () => {
 
         <div className="relative mt-6">
           <div className="grid grid-cols-2 place-items-center gap-2 md:grid-cols-4 xl:grid-cols-6 xl:gap-4">
-            {companies.map((logo, index) => (
+            {companies?.map((logo, index) => (
               <div
                 key={index}
                 className={`relative h-10 w-40 px-2 brightness-0 dark:brightness-0 dark:invert mb-8
