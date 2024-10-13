@@ -16,12 +16,15 @@ import { siteConfig } from "@/config/site-config";
 import { cn } from "@/lib/utils";
 
 import { Icons } from "./icons";
+import { useTranslation } from "react-i18next";
 
 const MenuIcons = {
   Stars: <Icons.stars className="h-6 w-6" />,
 };
 
 export default function NavigationMenuDemo() {
+  const { t } = useTranslation("common");
+
   return (
     <NavigationMenu>
       <NavigationMenuList>
@@ -29,7 +32,7 @@ export default function NavigationMenuDemo() {
           <NavigationMenuItem key={index}>
             {item.trigger ? (
               <>
-                <NavigationMenuTrigger>{item.trigger}</NavigationMenuTrigger>
+                <NavigationMenuTrigger>{t(item.trigger)}</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul
                     className={`grid gap-3 p-6 ${
@@ -52,10 +55,10 @@ export default function NavigationMenuDemo() {
                               ]
                             }
                             <div className="mb-2 mt-4 text-lg font-medium">
-                              {item.content?.main.title}
+                              {t(item.content?.main.title)}
                             </div>
                             <p className="text-sm leading-tight text-muted-foreground">
-                              {item.content?.main.description}
+                              {t(item.content?.main.description)}
                             </p>
                           </Link>
                         </NavigationMenuLink>
@@ -66,10 +69,10 @@ export default function NavigationMenuDemo() {
                         <ListItem
                           key={subIndex}
                           href={subItem.href}
-                          title={subItem.title}
+                          title={t(subItem.title)}
                           className="hover:bg-primary/10"
                         >
-                          {subItem.description}
+                          {t(subItem.description)}
                         </ListItem>
                       )
                     )}
@@ -84,7 +87,7 @@ export default function NavigationMenuDemo() {
                 passHref
               >
                 <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                  {item.label}
+                  {t(item.label)}
                 </NavigationMenuLink>
               </Link>
             )}

@@ -16,106 +16,98 @@ export const siteConfig = {
   },
   banner: {
     enabled: false,
-    title: "Sttok ya disponible en AWS Marketplace",
-    text: "Descubre la nueva forma de gestionar tu sociedad",
+    title: "banner.title",
+    text: "banner.description",
     link: routes.APP,
   },
+
   header: [
     {
-      trigger: "Producto",
+      trigger: "menu.Product",
       href: routes.PRODUCT,
       content: {
         main: {
           icon: "Stars",
-          title: "Digital y Automatizado",
-          description: "Aprovecha la automatización digital para tu sociedad.",
+          title: "menu.ProductTitle",
+          description: "menu.ProductDescription",
           href: routes.PRODUCT,
         },
         items: [
           {
             href: routes.PRODUCT_PARTNERS_BOOK,
-            title: "Socios",
-            description:
-              "Captable, Libro de Socios oficial, %, acceso de los socios",
+            title: "menu.PartnersTitle",
+            description: "menu.Partnersdescription",
           },
           {
             href: routes.PRODUCT_INCENTIVE_PLANS,
-            title: "Planes de Incentivos",
-            description:
-              "Phantoms, stock options, acceso empleados, vesting, etc",
+            title: "menu.PlansTitle",
+            description: "menu.PlansDescription",
           },
           {
             href: routes.PRODUCT_SHAREHOLDER_MEETINGS,
-            title: "Juntas y Consejos",
-            description:
-              "Convocatoria digital, delegaciones, votaciones, firma de documentos, etc",
+            title: "menu.BoardsTitle",
+            description: "menu.BoardsDescription",
           },
           {
             href: routes.PRODUCT_OPERATION_DRAFTS,
-            title: "Simulador de Operaciones",
-            description:
-              "Cálculo de rondas, ampliaciones, notas convertibles, etc",
+            title: "menu.DraftsTitle",
+            description: "menu.DraftsDescription",
           },
         ],
       },
     },
     {
-      trigger: "Soluciones",
+      trigger: "menu.Solutions",
       href: routes.SOLUTIONS,
       content: {
         items: [
           {
             href: routes.SOLUTIONS_COMPANIES,
-            title: "Empresa y Grupos Societarios",
-            description:
-              "Digitaliza la gestión societaria de la Sociedad: Libro de socios, Juntas de Accionistas, Documentación Societaria, Apoderados, etc.",
+            title: "menu.CompaniesTitle",
+            description: "menu.CompaniesDescription",
           },
           {
             href: routes.SOLUTIONS_LAWYERS,
-            title: "Abogados",
-            description:
-              "Optimiza tu tiempo con la gestión digital de sociedades. Ahorra tiempo y evita errores. Automatiza tareas manuales e incrementa la productividad.",
+            title: "menu.LawyersTitle",
+            description: "menu.LawyersDescription",
           },
           {
             href: routes.SOLUTIONS_STARTUPS,
-            title: "Startups",
-            description:
-              "Captable, Planes de Incentivos, Simulador de ampliaciones, notas convertibles, juntas de accionistas, sindicación de socios, etc.",
+            title: "menu.StartupsTitle",
+            description: "menu.StartupsDescription",
           },
           {
             href: routes.SOLUTIONS_INVESTORS_DASHBOARD,
-            title: "Portal del Inversor",
-            description:
-              "Da acceso a tus inversores acceso a una plataforma donde dispondrán de toda la informacion que les quieras facilitar.",
+            title: "menu.InvestorPortalTitle",
+            description: "menu.InvestorPortalDescription",
           },
           {
             href: routes.SOLUTIONS_INVESTORS,
-            title: "Inversores",
-            description:
-              "Acceso desde una única plataforma a los datos de sociedades participadas. Información real sin utilizar excels desactualizados.",
+            title: "menu.InvestorsTitle",
+            description: "menu.InvestorsDescription",
           },
         ],
       },
     },
     {
       href: routes.TESTIMONIALS,
-      label: "Testimonios",
+      label: "menu.Testimonials",
     },
     {
       href: routes.PRICING,
-      label: "Precios",
+      label: "menu.Pricing",
     },
   ],
   cta: [
     {
-      text: "Iniciar sesión",
+      text: "cta.login",
       link: routes.APP_LOGIN,
       variant: "ghost",
       className: "",
       hasIcon: false,
     },
     {
-      text: "Solicitar demo",
+      text: "cta.demo",
       link: routes.APP_CALENDLY,
       variant: "default",
       className: "w-full sm:w-auto text-background flex gap-2",
@@ -125,62 +117,74 @@ export const siteConfig = {
   ],
   footer: {
     menu: [
-      // TODO: update footer links
       [
-        { id: 0, title: "Producto", url: routes.PRODUCT, isHeader: true },
-        { id: 1, title: "Libro de Socios", url: routes.PRODUCT_PARTNERS_BOOK },
+        { id: 0, title: "menu.Product", url: routes.PRODUCT, isHeader: true },
+        {
+          id: 1,
+          title: "menu.PartnersTitle",
+          url: routes.PRODUCT_PARTNERS_BOOK,
+        },
         {
           id: 2,
-          title: "Planes de Incentivos",
+          title: "menu.PlansTitle",
           url: routes.PRODUCT_INCENTIVE_PLANS,
         },
         {
           id: 3,
-          title: "Simulador Operaciones",
+          title: "menu.DraftsTitle",
           url: routes.PRODUCT_OPERATION_DRAFTS,
         },
         {
           id: 4,
-          title: "Juntas y Consejos",
+          title: "menu.BoardsTitle",
           url: routes.PRODUCT_SHAREHOLDER_MEETINGS,
         },
       ],
       [
-        { id: 5, title: "Soluciones", url: routes.SOLUTIONS, isHeader: true },
+        {
+          id: 5,
+          title: "menu.SolutionsTitle",
+          url: routes.SOLUTIONS,
+          isHeader: true,
+        },
         {
           id: 6,
-          title: "Empresa y Grupos Societarios",
+          title: "menu.CompaniesTitle",
           url: routes.SOLUTIONS_COMPANIES,
         },
-        { id: 7, title: "Abogados", url: routes.SOLUTIONS_LAWYERS },
+        { id: 7, title: "menu.LawyersTitle", url: routes.SOLUTIONS_LAWYERS },
         {
           id: 8,
-          title: "Portal del Inversor",
+          title: "menu.InvestorPortalTitle",
           url: routes.SOLUTIONS_INVESTORS_DASHBOARD,
         },
-        { id: 9, title: "Inversores", url: routes.SOLUTIONS_INVESTORS },
+        {
+          id: 9,
+          title: "menu.InvestorsTitle",
+          url: routes.SOLUTIONS_INVESTORS,
+        },
       ],
       [
-        { id: 10, title: "Otros", url: "", isHeader: true },
-        { id: 11, title: "Testimonios", url: routes.TESTIMONIALS },
-        { id: 12, title: "Precios", url: routes.PRICING },
+        { id: 10, title: "menu.Others", url: "", isHeader: true },
+        { id: 11, title: "menu.Testimonials", url: routes.TESTIMONIALS },
+        { id: 12, title: "menu.Pricing", url: routes.PRICING },
       ],
       [
         // TODO: create legal pages
-        { id: 13, title: "Legal", url: "#", isHeader: true },
+        { id: 13, title: "menu.Legal", url: "#", isHeader: true },
         {
           id: 14,
-          title: "Aviso Legal y CGC",
+          title: "menu.LegalWarning",
           url: routes.LEGAL_DISCLAIMER,
         },
         {
           id: 15,
-          title: "Privacidad y Cookies",
+          title: "menu.Privacy",
           url: routes.LEGAL_PRIVACY_COOKIES,
         },
         {
           id: 16,
-          title: "Política de Seguridad",
+          title: "menu.Security",
           url: routes.LEGAL_SECURITY_POLICY,
         },
       ],
