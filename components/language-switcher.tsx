@@ -3,6 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { Icon } from "@iconify/react";
 import { useTranslation } from "react-i18next";
 import { useMenu } from "@/components/contexts/MenuContext";
+import { useRouter } from "next/navigation";
 
 const languages = [
   {
@@ -21,6 +22,7 @@ const LanguageSwitcher = () => {
   const { t, i18n } = useTranslation("common");
   const { openMenu, closeMenu } = useMenu();
   const dropdownRef = useRef(null);
+  const router = useRouter();
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -70,6 +72,11 @@ const LanguageSwitcher = () => {
 
   const changeLanguage = (lang: string) => {
     i18n.changeLanguage(lang);
+    if (i18n.language !== lang) {
+      i18n.changeLanguage(lang);
+      // Refresh the current route to apply language changes
+      router.refresh();
+    }
     setIsOpen(false);
     closeMenu();
   };

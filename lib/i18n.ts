@@ -4,29 +4,33 @@ import LanguageDetector from "i18next-browser-languagedetector";
 import loadTranslations from "./loadTranslations";
 
 const initI18n = async () => {
-  const [esTranslations, enTranslations] = await Promise.all([
-    loadTranslations("es"),
-    loadTranslations("en"),
-  ]);
+  if (!i18n.isInitialized) {
+    const [esTranslations, enTranslations] = await Promise.all([
+      loadTranslations("es"),
+      loadTranslations("en"),
+    ]);
 
-  await i18n
-    .use(LanguageDetector)
-    .use(initReactI18next)
-    .init({
-      resources: {
-        es: esTranslations,
-        en: enTranslations,
-      },
-      lng: "es",
-      fallbackLng: "es",
-      supportedLngs: ["es", "en"],
-      defaultNS: "common",
-      interpolation: {
-        escapeValue: false,
-      },
-    } as any);
+    await i18n
+      .use(LanguageDetector)
+      .use(initReactI18next)
+      .init({
+        resources: {
+          es: esTranslations,
+          en: enTranslations,
+        },
+        fallbackLng: "es",
+        supportedLngs: ["es", "en"],
+        detection: {
+          order: ["localStorage", "navigator"],
+        },
+        defaultNS: "common",
+        interpolation: {
+          escapeValue: false,
+        },
+      } as any);
 
-  console.log("i18n initialized:", i18n.language);
+    console.log("i18n initialized:", i18n.language);
+  }
 };
 
 initI18n();

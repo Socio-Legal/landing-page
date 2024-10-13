@@ -13,23 +13,44 @@ import { cn } from "@/lib/utils";
 import i18n from "@/lib/i18n";
 
 import "./globals.css";
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
 });
-// export const metadata: Metadata = {
-//   title: "Sttok",
-//   description: "Software para Gestión de Sociedades",
-// };
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const [mounted, setMounted] = useState(false);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const storedLang = localStorage.getItem("i18nextLng");
+    if (storedLang && i18n.language !== storedLang) {
+      i18n.changeLanguage(storedLang);
+    }
+    setMounted(true);
+  }, []);
+
+  // Re-render on pathname change to ensure correct language
+  useEffect(() => {
+    const storedLang = localStorage.getItem("i18nextLng");
+    if (storedLang && i18n.language !== storedLang) {
+      i18n.changeLanguage(storedLang);
+    }
+  }, [pathname]);
+
+  if (!mounted) {
+    return null; // or a loading spinner
+  }
+
   return (
-    <html lang="es" suppressHydrationWarning>
+    <html lang={i18n.language} suppressHydrationWarning>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
