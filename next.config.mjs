@@ -1,16 +1,8 @@
-import path from "path";
-import { fileURLToPath } from "url";
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+import nextI18NextConfig from "./next-i18next.config.js";
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  i18n: {
-    locales: ["es", "en"],
-    defaultLocale: "es",
-  },
-  localePath: path.resolve(__dirname, "./public/locales"),
+  i18n: nextI18NextConfig.i18n,
 
   async rewrites() {
     return [

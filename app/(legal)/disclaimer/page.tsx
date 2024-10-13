@@ -2,12 +2,14 @@
 
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import HeroSection, { HeroSectionProps } from "@/components/legal/hero-section";
 import TextContentSection, {
   TextSectionProps,
 } from "@/components/legal/text-content";
 import CallToActionSection from "@/components/landing/cta-section";
+import { GetStaticProps } from "next";
 
 const Page = () => {
   const { t } = useTranslation("legal-disclaimer-page");
@@ -24,5 +26,14 @@ const Page = () => {
     </>
   );
 };
+
+export const getStaticProps: GetStaticProps = async ({ locale }) => ({
+  props: {
+    ...(await serverSideTranslations(locale ?? "es", [
+      "common",
+      "legal-disclaimer-page",
+    ])),
+  },
+});
 
 export default Page;

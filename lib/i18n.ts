@@ -10,7 +10,7 @@ const initI18n = async () => {
     .use(initReactI18next)
     .init(
       {
-        debug: false,
+        debug: true,
         fallbackLng: "es",
         supportedLngs: ["es", "en"],
         lng: "es",
@@ -62,7 +62,11 @@ const initI18n = async () => {
         },
       },
       (err, t) => {
-        if (err) return console.error("Error loading translations:", err);
+        if (err) {
+          console.error("Error loading translations:");
+          console.error(JSON.stringify(err, null, 2));
+          return;
+        }
         console.log("Translations loaded successfully");
       }
     );
