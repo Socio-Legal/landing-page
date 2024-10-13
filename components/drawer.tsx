@@ -1,3 +1,10 @@
+"use client";
+
+import Link from "next/link";
+
+import { IoMenuSharp } from "react-icons/io5";
+import { useTranslation } from "react-i18next";
+
 import { Icons } from "@/components/icons";
 import { buttonVariants } from "@/components/ui/button";
 import {
@@ -10,10 +17,12 @@ import {
 import { routes } from "@/config/routes";
 import { siteConfig } from "@/config/site-config";
 import { cn } from "@/lib/utils";
-import Link from "next/link";
-import { IoMenuSharp } from "react-icons/io5";
+import ThemeToggler from "./ui/theme-toggler";
+import LanguageSwitcher from "./language-switcher";
 
 export default function drawerDemo() {
+  const { t } = useTranslation("common");
+
   return (
     <Drawer>
       <DrawerTrigger>
@@ -21,7 +30,7 @@ export default function drawerDemo() {
       </DrawerTrigger>
       <DrawerContent>
         <DrawerHeader className="px-6">
-          <div className="">
+          <div className="flex justify-between">
             <Link
               href="/"
               title="brand-logo"
@@ -30,6 +39,11 @@ export default function drawerDemo() {
               <Icons.logo className="w-auto h-[30px]" />
               {/* <span className="font-bold text-xl">{siteConfig.name}</span> */}
             </Link>
+
+            <div className="flex gap-4">
+              <ThemeToggler />
+              <LanguageSwitcher />
+            </div>
           </div>
           <nav>
             <ul className="mt-7 text-left">
@@ -37,11 +51,11 @@ export default function drawerDemo() {
                 <li key={index} className="my-3">
                   {item.trigger ? (
                     <Link href={item.href || ""} className="font-semibold">
-                      {item.trigger}
+                      {t(item.trigger)}
                     </Link>
                   ) : (
                     <Link href={item.href || ""} className="font-semibold">
-                      {item.label}
+                      {t(item.label || "")}
                     </Link>
                   )}
                 </li>
@@ -54,7 +68,7 @@ export default function drawerDemo() {
             href={routes.APP_LOGIN}
             className={buttonVariants({ variant: "outline" })}
           >
-            Iniciar sesión
+            {t("cta.login")}
           </Link>
           <Link
             href={routes.APP_CALENDLY}
@@ -64,7 +78,7 @@ export default function drawerDemo() {
             )}
           >
             {/* <Icons.logo className="h-6 w-6" /> */}
-            Solicitar demo
+            {t("cta.demo")}
           </Link>
         </DrawerFooter>
       </DrawerContent>
