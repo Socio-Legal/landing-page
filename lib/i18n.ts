@@ -28,6 +28,8 @@ const initI18n = async () => {
           "product-hero-section",
           "product-partner-book-page",
           "product-incentive-plans-page",
+          "product-shareholder-meetings-page",
+          "product-operation-drafts-page",
         ],
         interpolation: {
           escapeValue: false,

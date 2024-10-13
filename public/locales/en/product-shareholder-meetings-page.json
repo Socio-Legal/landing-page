@@ -1,0 +1,124 @@
+{
+  "metadata": {
+    "title": "Meetings and Boards",
+    "description": "Efficiently manage shareholder meetings and board meetings with Sttok, including convocations, delegations, votes, and minutes.",
+    "keywords": "shareholder meetings, board meetings, digital meeting management, convocations, vote delegations, digital minutes"
+  },
+  "hero": {
+    "title": "Meetings and Boards",
+    "description": "At Sttok, we understand the importance of meetings and boards for the proper functioning and decision-making in a company. With Sttok, you can convene, manage delegations, votes, and generate minutes and certificates digitally in just a few minutes.",
+    "button": {
+      "text": "Manage Your Meeting",
+      "link": "https://app.sttok.com/#/demo"
+    },
+    "image": {
+      "light": "/hero/hero-product-juntas-consejos.png",
+      "dark": "/hero/hero-product-juntas-consejos.png"
+    }
+  },
+  "topFeatures": {
+    "title": "Main Features",
+    "description": "Optimize the management of meetings and boards with tools that simplify each step of the process.",
+    "items": [
+      {
+        "title": "Digital Convocation",
+        "description": "Send digital convocations with all necessary information to your shareholders and board members in one click.",
+        "animation": "AnimatedBeam01_ShareholderMeeting"
+      },
+      {
+        "title": "Vote and Delegation Management",
+        "description": "Allow shareholders to delegate their votes and manage voting securely and transparently.",
+        "animation": "AnimatedBeam03"
+      },
+      {
+        "title": "Automatic Minutes Generation",
+        "description": "Create meeting minutes and certificates of agreements automatically in just a few minutes.",
+        "animation": "AnimatedDocScanner"
+      }
+    ]
+  },
+  "clients": {
+    "title": "CLIENTS USING MEETINGS AND BOARDS",
+    "clients": [
+      "Factorial",
+      "Shakers",
+      "Yaba",
+      "Taxdown",
+      "PldSpace",
+      "MyInvestor",
+      "Broseta",
+      "Barkibu",
+      "DealCar"
+    ]
+  },
+  "features": {
+    "title": "All Features",
+    "description": "Explore all the features that make our product unique.",
+    "items": [
+      {
+        "icon": "Icon01",
+        "title": "Meeting Convocation",
+        "description": "Create and send meeting convocations to shareholders and board members digitally, with all relevant details."
+      },
+      {
+        "icon": "Icon02",
+        "title": "Digital Vote Delegations",
+        "description": "Facilitate secure vote delegation, allowing partners to represent their interests in meetings."
+      },
+      {
+        "icon": "Icon03",
+        "title": "Electronic Voting",
+        "description": "Manage agreement voting with full transparency and efficiency, ensuring real-time results."
+      },
+      {
+        "icon": "Icon04",
+        "title": "Automatic Minutes",
+        "description": "Generate minutes and certificates of agreements at the end of each meeting, saving time and eliminating errors."
+      },
+      {
+        "icon": "Icon05",
+        "title": "Certifications",
+        "description": "Automatic generation of certifications for convocations, delegations, and voting."
+      },
+      {
+        "icon": "Icon06",
+        "title": "Meeting History",
+        "description": "Access the complete history of all previous meetings and agreements, all stored in the cloud."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "description": "Read testimonials from satisfied clients who use Sttok for Meetings or Boards.",
+    "items": [
+      {
+        "name": "Johan Longo",
+        "role": "Contract Manager | PLD Space",
+        "img": "https://www.sttok.com/images/logos/logo-pld-mini.png",
+        "description": "Sttok helps us keep all the information about partners, meetings, and incentive plans of our company organized. It facilitates the management of the cap table and the relationship with investors.",
+        "stars": 5
+      },
+      {
+        "name": "Lucía Bouzá",
+        "role": "Head of Legal & Compliance | Factorial",
+        "img": "https://www.sttok.com/images/logos/logo-factorial-mini.png",
+        "description": "Sttok allows us to have all the information about partners and incentive plans centralized and updated. It facilitates the management of meetings and the relationship with investors.",
+        "stars": 5
+      },
+      {
+        "name": "Oriol Miralbell",
+        "role": "CEO | Legalpigeon",
+        "img": "https://www.sttok.com/images/logos/logo-legalpigeon-mini.png",
+        "description": "Sttok allows you to easily calculate valuations, investment rounds, and simulations. The application interface is simple and intuitive, which allows you to make decisions more quickly and effectively.",
+        "stars": 4
+      },
+      {
+        "name": "Nacho González",
+        "role": "CEO and Founder | Banktrack",
+        "img": "https://www.sttok.com/images/logos/logo-banktrack-mini.png",
+        "description": "Now with Sttok you can perform simulations of capital increases or convertible notes. We also easily manage our team's phantom shares. Finally, as an investor, I have my investments organized and I clearly know what I have.",
+        "stars": 5
+      }
+    ]
+  }
+}
