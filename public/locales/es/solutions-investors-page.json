@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "title": "Sttok para Inversores",
+    "description": "Descubre las soluciones que ofrecemos para los inversores y sus participadas",
+    "keywords": "inversores, participadas, cartera, captable, libro de socios, inversor"
+  },
+  "hero": {
+    "title": "Solución para Inversores, VC y Fondos",
+    "description": "Toda la cartera de participadas en un único sitio con los datos reales y actualizados. Podrás saber exactamente el % ND, %FD y potencial FD, tener acceso a escrituras de transacciones, juntas de accionistas, etc.",
+    "button": {
+      "text": "Solicitar Demo",
+      "link": "https://calendly.com/sttok/30min"
+    },
+    "image": {
+      "light": "/hero/hero-solutions-inversor.png",
+      "dark": "/hero/hero-solutions-inversor.png"
+    }
+  },
+  "clients": {
+    "title": "Empresas que utilizan Sttok",
+    "clients": [
+      "PldSpace",
+      "Factorial",
+      "MyInvestor",
+      "Yaba",
+      "Caballero",
+      "Shakers",
+      "Taxdown"
+    ]
+  },
+  "features": {
+    "title": "Principales Funcionalidades para Inversores",
+    "description": "Sttok proporciona a los inversores acceso a su cartera de participadas con datos actualizados en tiempo real, permitiendo la simulación de rondas y la gestión de la documentación.",
+    "items": [
+      {
+        "icon": "Icon01",
+        "title": "Acceso a la Cartera de Participadas",
+        "description": "Consulta la información actualizada sobre las participaciones y su valorización."
+      },
+      {
+        "icon": "Icon02",
+        "title": "Simulador de Operaciones",
+        "description": "Realiza simulaciones de rondas y operaciones de capital con datos exactos y en pocos minutos."
+      },
+      {
+        "icon": "Icon03",
+        "title": "Gestión de Documentación",
+        "description": "Accede a escrituras, actas y certificados de todas las operaciones en un único portal."
+      },
+      {
+        "icon": "Icon04",
+        "title": "Juntas",
+        "description": "Simplifica delegaciones, votaciones y documentación para las juntas."
+      },
+      {
+        "icon": "Icon05",
+        "title": "Ficha del socio",
+        "description": "Tendrás acceso a tu ficha con la información, escrituras y datos actualizados."
+      },
+      {
+        "icon": "Icon06",
+        "title": "Portafolio",
+        "description": "Dispondrás del esquema y arbol del portafolio de tus participadas."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Lo que dicen nuestros Clientes",
+    "description": "Empresas que ya han mejorado su gestión societaria con Sttok.",
+    "items": [
+      {
+        "name": "Lucía Bauza",
+        "role": "Head of Legal & Compliance, Factorial",
+        "img": "",
+        "description": "Sttok nos ayudó a digitalizar el proceso de creación y firma de documentos para nuestros planes de incentivos.",
+        "stars": 5
+      },
+      {
+        "name": "Gerard Garcia",
+        "role": "CEO | Deale",
+        "img": "https://www.sttok.com/images/logos/logo-deale-mini.png",
+        "description": "Sttok nos permite gestionar de forma efectiva planes de incentivos para empleados, libro de socios, simulación de operaciones y juntas de accionistas.",
+        "stars": 5
+      },
+      {
+        "name": "Johan Longo",
+        "role": "Contract Manager | PLD Space",
+        "img": "https://www.sttok.com/images/logos/logo-pld-mini.png",
+        "description": "Sttok nos sirve para poder tener organizada toda la información sobre socios, junas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
+        "stars": 5
+      },
+      {
+        "name": "Nacho González",
+        "role": "CEO y Fundador | Banktrack",
+        "img": "https://www.sttok.com/images/logos/logo-banktrack-mini.png",
+        "description": "Ahora con Sttok puedes realizar simulaciones de ampliaciones o notas convertibles. Además también gestionamos las phantoms de nuestro equipo fácilmente. Finalmente como inversor tengo organizadas mis participadas y conozco claramente qué es lo que tengo.",
+        "stars": 5
+      }
+    ]
+  }
+}

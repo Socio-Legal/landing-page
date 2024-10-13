@@ -1,0 +1,110 @@
+{
+  "metadata": {
+    "title": "Empresas y Grupos de Sociedades - Sttok",
+    "description": "Software de gestión societaria para emrpesas y grupos de emp`resas. Libro de Socios, Juntas de accionistas, etc.",
+    "keywords": "Libro de socios, Empresa, grupo de empresas, junta de accionistas, planes de incentivos, consejo de administración"
+  },
+  "hero": {
+    "title": "Solución para Empresas y Grupos de Sociedades",
+    "description": "Gestión digital de sociedades para Empresas y Grupos de Sociedades. Automatiza la gestión societaria.",
+    "button": {
+      "text": "Solicitar Demo",
+      "link": "https://calendly.com/sttok/30min"
+    },
+    "image": {
+      "light": "/hero/hero-solutions-empresas-grupos-empresas.png",
+      "dark": "/hero/hero-solutions-empresas-grupos-empresas.png"
+    }
+  },
+  "clients": {
+    "title": "Empresas que confían en nosotros",
+    "clients": [
+      "PldSpace",
+      "Factorial",
+      "Broseta",
+      "Caballero",
+      "Taxdown",
+      "Yaba",
+      "Andbank",
+      "MyInvestor"
+    ]
+  },
+  "features": {
+    "title": "Principales Funcionalidades",
+    "description": "Sttok digitaliza la gestión societaria para Empresas y Grupos de Sociedades, optimizando tareas clave como la administración del libro de socios, juntas de accionistas, consejos y planes de incentivos.",
+    "items": [
+      {
+        "icon": "Icon01",
+        "title": "Libro de Socios",
+        "description": "Gestiona el libro de socios con datos siempre actualizados y accesibles."
+      },
+      {
+        "icon": "Icon02",
+        "title": "Planes de Incentivos",
+        "description": "Automatiza la creación y gestión de stock options y otros planes de incentivos."
+      },
+      {
+        "icon": "Icon03",
+        "title": "Simulador de Operaciones",
+        "description": "Calcula ampliaciones de capital y escenarios de inversión con precisión."
+      },
+      {
+        "icon": "Icon04",
+        "title": "Juntas de Accionistas",
+        "description": "Convoca, vota y gestiona digitalmente juntas de accionistas."
+      },
+      {
+        "icon": "Icon05",
+        "title": "Consejos de Administración",
+        "description": "Gestiona digitalmente las reuniones y votaciones del Consejo."
+      },
+      {
+        "icon": "Icon06",
+        "title": "Documentación Societaria",
+        "description": "Genera y administra actas, certificados y otros documentos de manera automática."
+      },
+      {
+        "icon": "Icon07",
+        "title": "Firma digital",
+        "description": "Firma digital integrada para poder firmar documentos de manera automática."
+      },
+      {
+        "icon": "Icon08",
+        "title": "Acceso para los socios",
+        "description": "Puedes dar acceso a los inversores para que puedan tener disponible la documentación e información societaria."
+      },
+      {
+        "icon": "Icon09",
+        "title": "Portal del Inversor",
+        "description": "Sttok te ofrece la posibilidad de tener el Portal del Inversor completamente integrado en tu página web"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Testimonios de Clientes",
+    "description": "Empresas que ya han mejorado su gestión societaria con Sttok.",
+    "items": [
+      {
+        "name": "Lucía Bauza",
+        "role": "Head of Legal & Compliance, Factorial",
+        "img": "https://www.sttok.com/images/logos/logo-factorial-mini.png",
+        "description": "Sttok nos ha permitido digitalizar el proceso de creación y firma de documentos para nuestros planes de incentivos",
+        "stars": 5
+      },
+      {
+        "name": "Toni de Weest",
+        "role": "Abogado Socio, Broseta",
+        "img": "https://www.sttok.com/images/logos/logo-broseta-mini.png",
+        "description": "Utilizamos Sttok para gestionar digitalmente libros de socios de forma eficiente evitando tareas manuales inecesarias.",
+        "stars": 5
+      },
+      {
+        "name": "Amalia Riboldi",
+        "role": "Head of People & Cultura, Yaba",
+        "img": "https://www.sttok.com/images/logos/logo-yaba-mini.png",
+        "description": "Sttok fue nuestra mejor opción para gestionar los planes de incentivos y la información societaria de los socios.",
+        "stars": 5
+      }
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "metadata": {
+    "title": "Companies and Corporate Groups - Sttok",
+    "description": "Corporate management software for companies and corporate groups. Shareholder Register, Shareholder Meetings, etc.",
+    "keywords": "Shareholder Register, Company, corporate group, shareholder meeting, incentive plans, board of directors"
+  },
+  "hero": {
+    "title": "Solution for Companies and Corporate Groups",
+    "description": "Digital management of companies for Businesses and Corporate Groups. Automate corporate management.",
+    "button": {
+      "text": "Request Demo",
+      "link": "https://calendly.com/sttok/30min"
+    },
+    "image": {
+      "light": "/hero/hero-solutions-empresas-grupos-empresas.png",
+      "dark": "/hero/hero-solutions-empresas-grupos-empresas.png"
+    }
+  },
+  "clients": {
+    "title": "Companies that trust us",
+    "clients": [
+      "PldSpace",
+      "Factorial",
+      "Broseta",
+      "Caballero",
+      "Taxdown",
+      "Yaba",
+      "Andbank",
+      "MyInvestor"
+    ]
+  },
+  "features": {
+    "title": "Main Features",
+    "description": "Sttok digitizes corporate management for Companies and Corporate Groups, optimizing key tasks such as shareholder register administration, shareholder meetings, board meetings, and incentive plans.",
+    "items": [
+      {
+        "icon": "Icon01",
+        "title": "Shareholder Register",
+        "description": "Manage the shareholder register with always up-to-date and accessible data."
+      },
+      {
+        "icon": "Icon02",
+        "title": "Incentive Plans",
+        "description": "Automate the creation and management of stock options and other incentive plans."
+      },
+      {
+        "icon": "Icon03",
+        "title": "Operations Simulator",
+        "description": "Calculate capital increases and investment scenarios with precision."
+      },
+      {
+        "icon": "Icon04",
+        "title": "Shareholder Meetings",
+        "description": "Convene, vote, and manage shareholder meetings digitally."
+      },
+      {
+        "icon": "Icon05",
+        "title": "Board of Directors",
+        "description": "Digitally manage Board meetings and voting."
+      },
+      {
+        "icon": "Icon06",
+        "title": "Corporate Documentation",
+        "description": "Generate and manage minutes, certificates, and other documents automatically."
+      },
+      {
+        "icon": "Icon07",
+        "title": "Digital Signature",
+        "description": "Integrated digital signature to automatically sign documents."
+      },
+      {
+        "icon": "Icon08",
+        "title": "Shareholder Access",
+        "description": "You can grant access to investors so they can have corporate documentation and information available."
+      },
+      {
+        "icon": "Icon09",
+        "title": "Investor Portal",
+        "description": "Sttok offers you the possibility of having the Investor Portal fully integrated into your website"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Client Testimonials",
+    "description": "Companies that have already improved their corporate management with Sttok.",
+    "items": [
+      {
+        "name": "Lucía Bauza",
+        "role": "Head of Legal & Compliance, Factorial",
+        "img": "https://www.sttok.com/images/logos/logo-factorial-mini.png",
+        "description": "Sttok has allowed us to digitize the process of creating and signing documents for our incentive plans",
+        "stars": 5
+      },
+      {
+        "name": "Toni de Weest",
+        "role": "Partner Lawyer, Broseta",
+        "img": "https://www.sttok.com/images/logos/logo-broseta-mini.png",
+        "description": "We use Sttok to digitally manage shareholder registers efficiently, avoiding unnecessary manual tasks.",
+        "stars": 5
+      },
+      {
+        "name": "Amalia Riboldi",
+        "role": "Head of People & Culture, Yaba",
+        "img": "https://www.sttok.com/images/logos/logo-yaba-mini.png",
+        "description": "Sttok was our best option for managing incentive plans and corporate information for shareholders.",
+        "stars": 5
+      }
+    ]
+  }
+}

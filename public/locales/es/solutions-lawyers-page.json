@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "title": "Sttok para Abogados",
+    "description": "Software gestión sociedades para Abogados. Sttok te permite gestionar el libro de socios, planes de incentivos, juntas de accionistas, consejos de administración, etc.",
+    "keywords": "gestión societaria, abogados, captable, libro de socios, planes de incentivos, juntas de accionistas, consejos, testimonios"
+  },
+  "hero": {
+    "title": "Solución para Abogados",
+    "description": "Con Sttok digitalizas la gestión de sociedades incrementando el número de sociedades que gestiona un abogado, ahorrando tiempo y evitando errores. Sttok te permite dar un mejor servicio a los clientes ganando tiempo y aportando valor.",
+    "button": {
+      "text": "Solicitar Demo",
+      "link": "https://calendly.com/sttok/30min"
+    },
+    "image": {
+      "light": "/hero/hero-solutions-abogados.png",
+      "dark": "/hero/hero-solutions-abogados.png"
+    }
+  },
+  "clients": {
+    "title": "Despachos de Abogados que confían en Sttok",
+    "clients": ["Broseta", "DerechoCom", "LetsLaw"]
+  },
+  "features": {
+    "title": "Funcionalidades Clave para Abogados",
+    "description": "Sttok permite a los abogados digitalizar la gestión de sociedades, optimizando tareas como el libro de socios, juntas de accionistas, Consejos o planes de incentivos.",
+    "items": [
+      {
+        "icon": "Icon01",
+        "title": "Libro de Socios",
+        "description": "Gestiona digitalmente el libro de socios de manera eficiente y sin errores."
+      },
+      {
+        "icon": "Icon02",
+        "title": "Simulador de Operaciones",
+        "description": "Realiza cálculos exactos para operaciones societarias en pocos minutos."
+      },
+      {
+        "icon": "Icon03",
+        "title": "Planes de Incentivos",
+        "description": "Automatiza la gestión de stock options y otros planes de incentivos."
+      },
+      {
+        "icon": "Icon04",
+        "title": "Juntas de Accionistas",
+        "description": "Convoca, vota y gestiona digitalmente juntas de accionistas."
+      },
+      {
+        "icon": "Icon05",
+        "title": "Consejos de Administración",
+        "description": "Gestiona digitalmente las reuniones y votaciones del Consejo."
+      },
+      {
+        "icon": "Icon06",
+        "title": "Documentación Societaria",
+        "description": "Genera y administra actas, certificados y otros documentos de manera automática."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Lo que Dicen Nuestros Clientes",
+    "description": "Empresas que ya han mejorado su gestión societaria con Sttok.",
+    "items": [
+      {
+        "name": "Toni de Weest Prat",
+        "role": "Abogado Socio, Broseta",
+        "img": "https://www.sttok.com/images/logos/logo-broseta-mini.png",
+        "description": "Sttok nos permite gestionar libros de socios de forma eficiente, evitando tareas manuales inecesarias y enfocándonos en aportar valor a nuestros clientes.",
+        "stars": 5
+      },
+      {
+        "name": "Patricia Manca",
+        "role": "Socia responsable de NewLaw, PwC",
+        "description": "Sttok nos ayuda en la gestión digital de sociedades, facilitando la automatización de procesos críticos como juntas, captables y planes de incentivos.",
+        "stars": 5
+      },
+      {
+        "name": "Jose María Baños",
+        "role": "Abogado Socio, LetsLaw",
+        "img": "https://www.sttok.com/images/logos/logo-letslaw-mini.png",
+        "description": "Sttok ha automatizado gran parte de la gestión de sociedades, permitiéndonos ofrecer un mejor servicio a nuestros clientes.",
+        "stars": 5
+      }
+    ]
+  }
+}

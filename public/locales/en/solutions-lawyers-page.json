@@ -1,0 +1,85 @@
+{
+  "metadata": {
+    "title": "Sttok for Lawyers",
+    "description": "Corporate management software for Lawyers. Sttok allows you to manage the shareholder register, incentive plans, shareholder meetings, board of directors, etc.",
+    "keywords": "corporate management, lawyers, captable, shareholder register, incentive plans, shareholder meetings, boards, testimonials"
+  },
+  "hero": {
+    "title": "Solution for Lawyers",
+    "description": "With Sttok, you digitize corporate management, increasing the number of companies a lawyer can manage, saving time and avoiding errors. Sttok allows you to provide better service to clients by saving time and adding value.",
+    "button": {
+      "text": "Request Demo",
+      "link": "https://calendly.com/sttok/30min"
+    },
+    "image": {
+      "light": "/hero/hero-solutions-abogados.png",
+      "dark": "/hero/hero-solutions-abogados.png"
+    }
+  },
+  "clients": {
+    "title": "Law Firms that trust Sttok",
+    "clients": ["Broseta", "DerechoCom", "LetsLaw"]
+  },
+  "features": {
+    "title": "Key Features for Lawyers",
+    "description": "Sttok allows lawyers to digitize corporate management, optimizing tasks such as shareholder registers, shareholder meetings, Boards, or incentive plans.",
+    "items": [
+      {
+        "icon": "Icon01",
+        "title": "Shareholder Register",
+        "description": "Efficiently manage the shareholder register digitally and without errors."
+      },
+      {
+        "icon": "Icon02",
+        "title": "Operations Simulator",
+        "description": "Perform exact calculations for corporate operations in minutes."
+      },
+      {
+        "icon": "Icon03",
+        "title": "Incentive Plans",
+        "description": "Automate the management of stock options and other incentive plans."
+      },
+      {
+        "icon": "Icon04",
+        "title": "Shareholder Meetings",
+        "description": "Convene, vote, and manage shareholder meetings digitally."
+      },
+      {
+        "icon": "Icon05",
+        "title": "Board of Directors",
+        "description": "Digitally manage Board meetings and voting."
+      },
+      {
+        "icon": "Icon06",
+        "title": "Corporate Documentation",
+        "description": "Generate and manage minutes, certificates, and other documents automatically."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "description": "Companies that have already improved their corporate management with Sttok.",
+    "items": [
+      {
+        "name": "Toni de Weest Prat",
+        "role": "Partner Lawyer, Broseta",
+        "img": "https://www.sttok.com/images/logos/logo-broseta-mini.png",
+        "description": "Sttok allows us to manage shareholder registers efficiently, avoiding unnecessary manual tasks and focusing on adding value to our clients.",
+        "stars": 5
+      },
+      {
+        "name": "Patricia Manca",
+        "role": "Partner responsible for NewLaw, PwC",
+        "description": "Sttok helps us in the digital management of companies, facilitating the automation of critical processes such as meetings, captables, and incentive plans.",
+        "stars": 5
+      },
+      {
+        "name": "Jose María Baños",
+        "role": "Partner Lawyer, LetsLaw",
+        "img": "https://www.sttok.com/images/logos/logo-letslaw-mini.png",
+        "description": "Sttok has automated a large part of corporate management, allowing us to offer better service to our clients.",
+        "stars": 5
+      }
+    ]
+  }
+}

@@ -30,6 +30,12 @@ const initI18n = async () => {
           "product-incentive-plans-page",
           "product-shareholder-meetings-page",
           "product-operation-drafts-page",
+          "solutions-page",
+          "solutions-companies-page",
+          "solutions-lawyers-page",
+          "solutions-startups-page",
+          "solutions-investors-page",
+          "solutions-investors-dashboard-page",
         ],
         interpolation: {
           escapeValue: false,

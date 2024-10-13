@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "title": "Solutions",
+    "description": "Discover the solutions we offer for your company",
+    "keywords": "solutions, products, services, companies, clients, benefits, features, testimonials"
+  },
+  "hero": {
+    "title": "",
+    "description": "",
+    "button": {
+      "text": "",
+      "link": ""
+    },
+    "image": {
+      "light": "",
+      "dark": ""
+    }
+  },
+  "clients": {
+    "title": "",
+    "clients": []
+  },
+  "features": {
+    "title": "",
+    "description": "",
+    "items": [
+      {
+        "icon": "",
+        "title": "",
+        "description": ""
+      },
+      {
+        "icon": "",
+        "title": "",
+        "description": ""
+      },
+      {
+        "icon": "",
+        "title": "",
+        "description": ""
+      },
+      {
+        "icon": "",
+        "title": "",
+        "description": ""
+      },
+      {
+        "icon": "",
+        "title": "",
+        "description": ""
+      },
+      {
+        "icon": "",
+        "title": "",
+        "description": ""
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "",
+    "description": "",
+    "items": [
+      {
+        "name": "",
+        "role": "",
+        "img": "",
+        "description": "",
+        "stars": 0
+      },
+      {
+        "name": "",
+        "role": "",
+        "img": "",
+        "description": "",
+        "stars": 0
+      },
+      {
+        "name": "",
+        "role": "",
+        "img": "",
+        "description": "",
+        "stars": 0
+      },
+      {
+        "name": "",
+        "role": "",
+        "img": "",
+        "description": "",
+        "stars": 0
+      }
+    ]
+  }
+}

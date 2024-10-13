@@ -1,0 +1,102 @@
+{
+  "metadata": {
+    "title": "Sttok para Startups",
+    "description": "Soluciones de captable, planes incentivos y mucho más para tu startup",
+    "keywords": "startup, sttok, captable, phantoms, incentivos, beneficiarios"
+  },
+  "hero": {
+    "title": "Solución para Startups",
+    "description": "Gestión digital de Startups. Céntrate en hacer crecer la empresa y utiliza Sttok para cálculos de rondas, planes de incentivos, libro de socios, juntas, etc…",
+    "button": {
+      "text": "Solicitar Demo",
+      "link": "https://calendly.com/sttok/30min"
+    },
+    "image": {
+      "light": "/hero/hero-solutions-startups.png",
+      "dark": "/hero/hero-solutions-startups.png"
+    }
+  },
+  "clients": {
+    "title": "Confian en Sttok",
+    "clients": [
+      "Factorial",
+      "PldSpace",
+      "Taxdown",
+      "MyInvestor",
+      "Shakers",
+      "Barkibu",
+      "Yaba",
+      "Banktrack"
+    ]
+  },
+  "features": {
+    "title": "Todas las Características",
+    "description": "Explora las características que hacen de Sttok una herramienta esencial para startups.",
+    "items": [
+      {
+        "icon": "Icon01",
+        "title": "Libro de Socios Oficial",
+        "description": "Gestiona y actualiza fácilmente el libro de socios de tu startup."
+      },
+      {
+        "icon": "Icon02",
+        "title": "Planes de Incentivos",
+        "description": "Administra stock options y phantoms, y da acceso a los empleados a sus incentivos."
+      },
+      {
+        "icon": "Icon03",
+        "title": "Juntas y Consejos",
+        "description": "Automatiza la gestión de juntas de accionistas y consejos con votación digital y proxy."
+      },
+      {
+        "icon": "Icon04",
+        "title": "Simulador de Operaciones",
+        "description": "Calcula rondas de financiación y ampliaciones de capital con precisión y rapidez."
+      },
+      {
+        "icon": "Icon05",
+        "title": "Acceso a los socios",
+        "description": "Si quieres puedes dar acceso profesional a tus inversores"
+      },
+      {
+        "icon": "Icon06",
+        "title": "Sindicación",
+        "description": "Configura la sindiación de forma fácil para simplificar la gestión de tu empresa"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "",
+    "description": "",
+    "items": [
+      {
+        "name": "Lucía Bouzá",
+        "role": "Head of Legal & Compliance | Factorial",
+        "img": "https://www.sttok.com/images/logos/logo-factorial-mini.png",
+        "description": "Sttok nos permite tener toda la información de socios y planes de incentivos centralizada y actualizada. Nos facilita la gestión de juntas y la relación con los inversores.",
+        "stars": 5
+      },
+      {
+        "name": "Gerard Garcia",
+        "role": "CEO | Deale",
+        "img": "https://www.sttok.com/images/logos/logo-deale-mini.png",
+        "description": "Sttok nos permite gestionar de forma efectiva planes de incentivos para empleados, libro de socios, simulación de operaciones y juntas de accionistas.",
+        "stars": 5
+      },
+      {
+        "name": "Johan Longo",
+        "role": "Contract Manager | PLD Space",
+        "img": "https://www.sttok.com/images/logos/logo-pld-mini.png",
+        "description": "Sttok nos sirve para poder tener organizada toda la información sobre socios, junas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
+        "stars": 5
+      },
+      {
+        "name": "Nacho González",
+        "role": "CEO y Fundador | Banktrack",
+        "img": "https://www.sttok.com/images/logos/logo-banktrack-mini.png",
+        "description": "Ahora con Sttok puedes realizar simulaciones de ampliaciones o notas convertibles. Además también gestionamos las phantoms de nuestro equipo fácilmente. Finalmente como inversor tengo organizadas mis participadas y conozco claramente qué es lo que tengo.",
+        "stars": 5
+      }
+    ]
+  }
+}

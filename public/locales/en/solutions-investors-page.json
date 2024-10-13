@@ -1,0 +1,101 @@
+{
+  "metadata": {
+    "title": "Sttok for Investors",
+    "description": "Discover the solutions we offer for investors and their investees",
+    "keywords": "investors, investees, portfolio, captable, shareholder register, investor"
+  },
+  "hero": {
+    "title": "Solution for Investors, VCs and Funds",
+    "description": "All the portfolio of investees in a single place with real and updated data. You'll be able to know exactly the % ND, %FD and potential FD, have access to transaction deeds, shareholder meetings, etc.",
+    "button": {
+      "text": "Request Demo",
+      "link": "https://calendly.com/sttok/30min"
+    },
+    "image": {
+      "light": "/hero/hero-solutions-inversor.png",
+      "dark": "/hero/hero-solutions-inversor.png"
+    }
+  },
+  "clients": {
+    "title": "Companies using Sttok",
+    "clients": [
+      "PldSpace",
+      "Factorial",
+      "MyInvestor",
+      "Yaba",
+      "Caballero",
+      "Shakers",
+      "Taxdown"
+    ]
+  },
+  "features": {
+    "title": "Main Features for Investors",
+    "description": "Sttok provides investors access to their portfolio of investees with real-time updated data, allowing round simulations and document management.",
+    "items": [
+      {
+        "icon": "Icon01",
+        "title": "Access to Investee Portfolio",
+        "description": "Consult updated information about shareholdings and their valuation."
+      },
+      {
+        "icon": "Icon02",
+        "title": "Operations Simulator",
+        "description": "Perform simulations of rounds and capital operations with exact data in just a few minutes."
+      },
+      {
+        "icon": "Icon03",
+        "title": "Document Management",
+        "description": "Access deeds, minutes, and certificates of all operations in a single portal."
+      },
+      {
+        "icon": "Icon04",
+        "title": "Meetings",
+        "description": "Simplify delegations, voting, and documentation for meetings."
+      },
+      {
+        "icon": "Icon05",
+        "title": "Partner profile",
+        "description": "You'll have access to your profile with updated information, deeds, and data."
+      },
+      {
+        "icon": "Icon06",
+        "title": "Portfolio",
+        "description": "You'll have the scheme and tree of your investee portfolio."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "What our Clients say",
+    "description": "Companies that have already improved their corporate management with Sttok.",
+    "items": [
+      {
+        "name": "Lucía Bauza",
+        "role": "Head of Legal & Compliance, Factorial",
+        "img": "",
+        "description": "Sttok helped us digitize the process of creating and signing documents for our incentive plans.",
+        "stars": 5
+      },
+      {
+        "name": "Gerard Garcia",
+        "role": "CEO | Deale",
+        "img": "https://www.sttok.com/images/logos/logo-deale-mini.png",
+        "description": "Sttok allows us to effectively manage employee incentive plans, shareholder register, operation simulations, and shareholder meetings.",
+        "stars": 5
+      },
+      {
+        "name": "Johan Longo",
+        "role": "Contract Manager | PLD Space",
+        "img": "https://www.sttok.com/images/logos/logo-pld-mini.png",
+        "description": "Sttok helps us keep all the information about partners, meetings, and incentive plans of our company organized. It facilitates the management of the cap table and the relationship with investors.",
+        "stars": 5
+      },
+      {
+        "name": "Nacho González",
+        "role": "CEO and Founder | Banktrack",
+        "img": "https://www.sttok.com/images/logos/logo-banktrack-mini.png",
+        "description": "Now with Sttok you can perform simulations of capital increases or convertible notes. We also easily manage our team's phantom shares. Finally, as an investor, I have my investments organized and I clearly know what I have.",
+        "stars": 5
+      }
+    ]
+  }
+}
