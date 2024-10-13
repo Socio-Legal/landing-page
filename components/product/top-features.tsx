@@ -19,7 +19,7 @@ type TopFeatureProps = {
   index: number;
 };
 
-type TopFeaturesProps = {
+export type TopFeaturesProps = {
   title: string;
   description: string;
   items: Feature[];

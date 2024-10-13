@@ -6,7 +6,7 @@ import { clientLogos, getClientLogo } from "@/config/client-logos";
 
 import ProductSectionHeader from "../product-section-header";
 
-type ClientsSectionProps = {
+export type ClientsSectionProps = {
   title: string;
   clients: string[];
   hideTopSpace?: boolean;
