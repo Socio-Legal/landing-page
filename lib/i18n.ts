@@ -10,7 +10,7 @@ const initI18n = async () => {
     .use(initReactI18next)
     .init(
       {
-        debug: true,
+        debug: false,
         fallbackLng: "es",
         supportedLngs: ["es", "en"],
         lng: "es",
