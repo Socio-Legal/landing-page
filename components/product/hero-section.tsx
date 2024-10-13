@@ -9,8 +9,9 @@ import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { BorderBeam } from "@/components/magicui/border-beam";
 import Blur01 from "@/public/blur-01.svg";
 import Blur02 from "@/public/blur-02.svg";
+import { useTranslation } from "react-i18next";
 
-type HeroSectionProps = {
+export type HeroSectionProps = {
   title: string;
   description: string;
   button?: {
@@ -29,6 +30,7 @@ const HeroSection: FC<HeroSectionProps> = ({
   button,
   image,
 }) => {
+  const { t } = useTranslation("product-hero-section");
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
 
@@ -74,12 +76,12 @@ const HeroSection: FC<HeroSectionProps> = ({
           <div className="space-y-2">
             <div className="text-left space-y-2 mx-auto lg:text-left lg:mx-0">
               <h1 className="bg-gradient-to-br dark:from-white from-black from-30% dark:to-white/40 to-black/40 bg-clip-text py-6 text-4xl text-left font-medium leading-none tracking-tighter text-transparent text-balance sm:text-5xl md:text-6xl lg:text-7xl translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:200ms]">
-                {title}
+                {t(title)}
               </h1>
             </div>
 
             <p className="mb-2 text-lg tracking-tight text-gray-400 md:text-xl text-balance translate-y-[-1rem] animate-fade-in opacity-0 [--animation-delay:400ms]">
-              {description}
+              {t(description)}
             </p>
 
             {hasButton && (
@@ -91,7 +93,7 @@ const HeroSection: FC<HeroSectionProps> = ({
                     target="_blank"
                     className="inline-flex items-center justify-center whitespace-nowrap text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary shadow hover:bg-primary/90 h-9 px-4 py-2 translate-y-[-1rem] animate-fade-in gap-1 rounded-lg text-white dark:text-black opacity-0 ease-in-out [--animation-delay:600ms]"
                   >
-                    <span>{button.text}</span>
+                    <span>{t(button.text)}</span>
                     <ArrowRightIcon className="ml-1 size-4 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
                   </Link>
                 </div>
