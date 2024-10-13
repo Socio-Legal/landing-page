@@ -10,11 +10,15 @@ import TextContentSection, {
 import CallToActionSection from "@/components/landing/cta-section";
 
 const Page = () => {
-  const { t } = useTranslation("legal-disclaimer-page");
+  const { t } = useTranslation();
 
-  const hero = t("hero", { returnObjects: true }) as HeroSectionProps;
-  const content = t("content", { returnObjects: true }) as TextSectionProps[];
-  console.log("🚀 cclog  ~ Page:", { hero, content });
+  const hero = t("legal.disclaimer.hero", {
+    returnObjects: true,
+  }) as HeroSectionProps;
+
+  const content = t("legal.disclaimer.content", {
+    returnObjects: true,
+  }) as TextSectionProps[];
 
   return (
     <>
