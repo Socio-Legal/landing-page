@@ -44,6 +44,9 @@
     "login": "Log in",
     "demo": "Schedule demo"
   },
+  "testimonials": {
+    "goBackToTestimonials": "Go back to Testimonials"
+  },
   "sttokTitle": "Company Management Software",
   "allRightsReserved": "All rights reserved"
 }

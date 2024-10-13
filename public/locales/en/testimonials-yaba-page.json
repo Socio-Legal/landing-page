@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "title": "Yaba uses Sttok to manage incentive plans and its cap table",
+    "description": "Yaba uses corporate management software for companies. Shareholder Register, Incentive Plans, Shareholder Meetings, etc.",
+    "keywords": "Yaba, Sttok, Yaba and Sttok, Shareholder Register, incentive plans, Sttok clients"
+  },
+  "summary": {
+    "client": "Yaba",
+    "title": "Yaba manages Cap Table and Incentive Plans with Sttok",
+    "description": "",
+    "quote": {
+      "text": "'Sttok was definitely our best option and is helping us with the management of Incentive Plans and with the transparency of corporate information with the Partners'",
+      "author": "AMALIA RIBOLDI",
+      "position": "HEAD OF PEOPLE & CULTURE at YABA"
+    },
+    "button": {
+      "text": "Go to Yaba's website",
+      "link": "https://yaba.life/"
+    },
+    "features": [
+      {
+        "key": "Client",
+        "value": "Yaba"
+      },
+      {
+        "key": "Since",
+        "value": "2022"
+      },
+      {
+        "key": "Sector",
+        "value": "eCommerce company for personal wellness"
+      },
+      {
+        "key": "Functionalities",
+        "value": "Cap Table, Incentive Plans, Document Generation, Automated Signing, etc"
+      }
+    ]
+  },
+  "content": {
+    "title": "Yaba uses Sttok",
+    "image": {
+      "light": "/hero/hero-testimonials-yaba.png",
+      "dark": "/hero/hero-testimonials-yaba.png"
+    },
+    "sections": [
+      {
+        "title": "A bit about Yaba",
+        "texts": [
+          "Yaba stands for Your Amazing Brand Amplifier, a new generation brand house for personal wellness to live more and better. They manage online businesses and leverage online operations and marketing techniques.",
+          "Yaba is a high-growth company leading in its sector with a top-level professional team leading one of the benchmark projects in Europe."
+        ]
+      },
+      {
+        "title": "Why did they choose us?",
+        "texts": [
+          "1. For the ease of use of the platform.",
+          "2. For the automation of manual tasks.",
+          "3. For the management of the Shareholder Register (Cap Table).",
+          "4. For document generation and automated signing.",
+          "5. For the management of Incentive Plans."
+        ]
+      }
+    ]
+  }
+}

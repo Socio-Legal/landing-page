@@ -44,6 +44,9 @@
     "login": "Iniciar sesión",
     "demo": "Solicitar demo"
   },
+  "testimonials": {
+    "goBackToTestimonials": "Volver a Testimonios"
+  },
   "sttokTitle": "Software de Gestión de Sociedades",
   "allRightsReserved": "Todos los derechos reservados"
 }

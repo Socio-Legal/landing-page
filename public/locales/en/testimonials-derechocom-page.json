@@ -1,0 +1,60 @@
+{
+  "summary": {
+    "client": "DerechoCom",
+    "title": "DerechoCom manages Cap Table and Incentive Plans with Sttok",
+    "description": "",
+    "quote": {
+      "text": "'To manage all the documentation of incentive plans, it has helped us digitize the process of creation, signing, and control of beneficiaries. In addition to managing the Shareholder Register (Cap Table)'",
+      "author": "Lucía Bouzá",
+      "position": "Head of Legal & Compliance | DerechoCom"
+    },
+    "button": {
+      "text": "Go to DerechoCom's website",
+      "link": "https://www.derecho.com/"
+    },
+    "features": [
+      {
+        "key": "Client",
+        "value": "DerechoCom"
+      },
+      {
+        "key": "Since",
+        "value": "2022"
+      },
+      {
+        "key": "Sector",
+        "value": "HR Software"
+      },
+      {
+        "key": "Functionalities",
+        "value": "Cap Table, Incentive Plans, Document Generation, Automated Signing, etc"
+      }
+    ]
+  },
+  "content": {
+    "title": "DerechoCom uses Sttok",
+    "image": {
+      "light": "/hero/hero-testimonials-derechocom.png",
+      "dark": "/hero/hero-testimonials-derechocom.png"
+    },
+    "sections": [
+      {
+        "title": "A bit about DerechoCom",
+        "texts": [
+          "DerechoCom is a human resources management software company primarily aimed at small and medium-sized businesses. The company has experienced significant growth since its founding, excelling in the automation of tasks and procedures related to payroll management, expenses, electronic signatures, time tracking, and analytical reports to measure productivity and process efficiency.",
+          "In 2022, DerechoCom closed a 120 million round, led by the Atomico fund and with the participation of investors such as Tiger Global, CRV, K-Fund, and Creandum. DerechoCom is considered a 'unicorn', a term used to describe startups that exceed $1 billion in valuation."
+        ]
+      },
+      {
+        "title": "Why did they choose us?",
+        "texts": [
+          "1. For the ease of use of the platform.",
+          "2. For the automation of manual tasks.",
+          "3. For the management of the Shareholder Register (Cap Table).",
+          "4. For document generation and automated signing.",
+          "5. For the management of Incentive Plans."
+        ]
+      }
+    ]
+  }
+}

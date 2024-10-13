@@ -1,0 +1,59 @@
+{
+  "summary": {
+    "client": "Grupo Caballero",
+    "title": "Grupo Caballero manages Cap Table and Incentive Plans with Sttok",
+    "description": "",
+    "quote": {
+      "text": "'Sttok has been a key tool for managing our Cap Table and Incentive Plans. It has allowed us to automate manual tasks and save time in generating documents and electronic signatures.'",
+      "author": "...",
+      "position": "..."
+    },
+    "button": {
+      "text": "Go to Grupo Caballero's website",
+      "link": "https://caballero.es/"
+    },
+    "features": [
+      {
+        "key": "Client",
+        "value": "Grupo Caballero"
+      },
+      {
+        "key": "Since",
+        "value": "2022"
+      },
+      {
+        "key": "Sector",
+        "value": "Beverages"
+      },
+      {
+        "key": "Functionalities",
+        "value": "Cap Table, Incentive Plans, Document Generation, Automated Signing, etc"
+      }
+    ]
+  },
+  "content": {
+    "title": "Grupo Caballero uses Sttok",
+    "image": {
+      "light": "/hero/hero-testimonials-caballero.png",
+      "dark": "/hero/hero-testimonials-caballero.png"
+    },
+    "sections": [
+      {
+        "title": "A bit about Grupo Caballero",
+        "texts": [
+          "Grupo Caballero is a leading beverage company in the Spanish market, with a wide range of products and internationally recognized brands. The company has experienced significant growth since its foundation, excelling in product innovation and quality."
+        ]
+      },
+      {
+        "title": "Why did they choose us?",
+        "texts": [
+          "1. For the ease of use of the platform.",
+          "2. For the automation of manual tasks.",
+          "3. For the management of the Shareholder Register (Cap Table).",
+          "4. For document generation and automated signing.",
+          "5. For the management of Incentive Plans."
+        ]
+      }
+    ]
+  }
+}

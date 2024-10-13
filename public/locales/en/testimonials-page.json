@@ -1,0 +1,61 @@
+{
+  "metadata": {
+    "title": "Testimonials and Success Stories",
+    "description": "Here you will find testimonials and success stories from our clients",
+    "keywords": "testimonials, success stories, clients, companies, businesses, success, satisfaction, recommendation"
+  },
+  "hero": {
+    "title": "Testimonials and Success Stories",
+    "description": "Sttok helps our clients digitize corporate management, automating manual tasks and managing multiple related tasks such as Shareholder Register, Incentive Plans, Meetings, Operation Calculations (Rounds, Capital Increases, Sales, etc.). They no longer use Excel as they did before and now work professionally.",
+    "button": {
+      "text": "",
+      "link": ""
+    },
+    "image": {
+      "light": "/hero/hero-testimonials.png",
+      "dark": "/hero/hero-testimonials.png"
+    }
+  },
+  "features": {
+    "title": "Companies using Sttok",
+    "description": "Sttok is the most comprehensive company management platform in the market. Discover all the functionalities it offers you.",
+    "items": [
+      {
+        "icon": "",
+        "logo": "Factorial",
+        "title": "",
+        "description": "Factorial is a human resources software company that simplifies people management in businesses."
+      },
+      {
+        "icon": "",
+        "logo": "PldSpace",
+        "title": "",
+        "description": "PLD Space is a Spanish company that develops reusable rockets to launch satellites into space."
+      },
+      {
+        "icon": "",
+        "logo": "Yaba",
+        "title": "",
+        "description": "Yaba is a software company that helps businesses manage their operations efficiently."
+      },
+      {
+        "icon": "",
+        "logo": "Caballero",
+        "title": "",
+        "description": "The Caballero Group is a family business founded in 1830, based in Puerto de Santa María in Cádiz, Spain"
+      },
+      {
+        "icon": "",
+        "logo": "Taxdown",
+        "title": "",
+        "description": "Taxdown is a software company that helps people file their tax returns easily."
+      },
+      {
+        "icon": "",
+        "logo": "Banktrack",
+        "title": "",
+        "description": "Banktrack is a software company that helps businesses manage their financial operations efficiently."
+      }
+    ]
+  }
+}
