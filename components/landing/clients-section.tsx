@@ -9,7 +9,7 @@ import SectionHeader from "../section-header";
 import { useTranslation } from "react-i18next";
 
 const ClientsHeader: FC = () => {
-  const { t } = useTranslation("clients-section");
+  const { t } = useTranslation("home-clients-section");
 
   return (
     <SectionHeader
@@ -31,7 +31,7 @@ const getColStarts = (index: number, companies: string[]) => {
 };
 
 const ClientsSection: FC = () => {
-  const { t } = useTranslation("clients-section");
+  const { t } = useTranslation("home-clients-section");
 
   const companies = t("companies", { returnObjects: true }) as string[] | [];
 

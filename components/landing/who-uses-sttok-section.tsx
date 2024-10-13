@@ -22,7 +22,7 @@ const WhoUsesIcons = {
 };
 
 const WhoUsesHeader = () => {
-  const { t } = useTranslation("uses-section");
+  const { t } = useTranslation("home-uses-section");
 
   return (
     <SectionHeader
@@ -34,7 +34,7 @@ const WhoUsesHeader = () => {
 };
 
 const WhoUsesSttokSection = () => {
-  const { t } = useTranslation("uses-section");
+  const { t } = useTranslation("home-uses-section");
 
   const uses = t("items", { returnObjects: true }) as UseProps[] | [];
 

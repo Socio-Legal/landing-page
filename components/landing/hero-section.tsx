@@ -14,7 +14,7 @@ import Blur02 from "@/public/blur-02.svg";
 import { getImage } from "@/lib/getImage";
 
 export default function HeroSection() {
-  const { t } = useTranslation("hero-section");
+  const { t } = useTranslation("home-hero-section");
 
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });

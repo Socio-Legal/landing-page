@@ -17,7 +17,7 @@ import { SphereMask } from "@/components/magicui/sphere-mask";
 import Particles from "@/components/magicui/particles";
 
 export default function Page() {
-  const { t } = useTranslation("features-section");
+  const { t } = useTranslation("home-features-section");
 
   const features = t("items", { returnObjects: true }) as FeatureItem[];
 

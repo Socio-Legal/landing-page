@@ -113,7 +113,7 @@ const FeatureWithLink: FC<FeatureProps> = ({ index, feature }) => (
 );
 
 const FeaturesHeader: FC = () => {
-  const { t } = useTranslation("features-section");
+  const { t } = useTranslation("home-features-section");
 
   return (
     <SectionHeader

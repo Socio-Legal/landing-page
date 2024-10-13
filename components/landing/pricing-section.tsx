@@ -55,7 +55,7 @@ const PricingCardButton: React.FC<PricingCardButtonProps> = ({
   isLoading,
   onSubscribe,
 }) => {
-  const { t } = useTranslation("pricing-section");
+  const { t } = useTranslation("home-pricing-section");
 
   return (
     <Button
@@ -172,7 +172,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
 };
 
 const PricingSwitch: React.FC<PricingSwitchProps> = ({ onChangeInterval }) => {
-  const { t } = useTranslation("pricing-section");
+  const { t } = useTranslation("home-pricing-section");
 
   return (
     <div className="flex w-full items-center justify-center space-x-2">
@@ -194,7 +194,7 @@ const PricingSwitch: React.FC<PricingSwitchProps> = ({ onChangeInterval }) => {
 };
 
 const PricingHeader = () => {
-  const { t } = useTranslation("pricing-section");
+  const { t } = useTranslation("home-pricing-section");
 
   return (
     <PlanetStarsSection>
@@ -208,7 +208,7 @@ const PricingHeader = () => {
 };
 
 export default function PricingSection() {
-  const { t } = useTranslation("pricing-section");
+  const { t } = useTranslation("home-pricing-section");
 
   const [interval, setInterval] = useState<Interval>("monthly");
   const [isLoading, setIsLoading] = useState(false);

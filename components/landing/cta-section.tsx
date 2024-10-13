@@ -7,7 +7,7 @@ import { blurStyle01 } from "../styles/blur-styles";
 import { useTranslation } from "react-i18next";
 
 const CallToActionHeader = () => {
-  const { t } = useTranslation("cta-section");
+  const { t } = useTranslation("home-cta-section");
 
   return (
     <SectionHeader

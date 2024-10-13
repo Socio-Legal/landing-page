@@ -22,7 +22,6 @@ const LanguageSwitcher = () => {
   const { openMenu, closeMenu } = useMenu();
   const dropdownRef = useRef(null);
 
-  // console.log("🚀 cclog  ~ LanguageSwitcher ~ i18n:", i18n);
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleDropdown = (
@@ -55,6 +54,7 @@ const LanguageSwitcher = () => {
     const handleClickOutside = (event: MouseEvent) => {
       if (
         dropdownRef.current &&
+        // @ts-ignore
         !dropdownRef.current.contains(event.target as Node)
       ) {
         setIsOpen(false);
@@ -69,13 +69,10 @@ const LanguageSwitcher = () => {
   }, [closeMenu]);
 
   const changeLanguage = (lang: string) => {
-    console.log("🚀 cclog  ~ changeLanguage ~ lang:", lang);
     i18n.changeLanguage(lang);
     setIsOpen(false);
     closeMenu();
   };
-
-  console.log("🚀 cclog  ~ LanguageSwitcher ~ t, i18n:", { t, i18n });
 
   return (
     <div

@@ -99,7 +99,7 @@ const TestimonialCard: FC<TestimonialCardProps> = ({
 );
 
 const TestimonialsHeader: FC = () => {
-  const { t } = useTranslation("testimonials-section");
+  const { t } = useTranslation("home-testimonials-section");
 
   return (
     <SectionHeader
@@ -111,7 +111,7 @@ const TestimonialsHeader: FC = () => {
 };
 
 const TestimonialsSection: FC = () => {
-  const { t } = useTranslation("testimonials-section");
+  const { t } = useTranslation("home-testimonials-section");
 
   const testimonials = t("items", { returnObjects: true }) as
     | TestimonialCardProps[]

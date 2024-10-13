@@ -26,7 +26,7 @@ const ProductIcons = {
 };
 
 const ProductsHeader = () => {
-  const { t } = useTranslation("products-section");
+  const { t } = useTranslation("home-products-section");
 
   return (
     <SectionHeader
@@ -38,7 +38,7 @@ const ProductsHeader = () => {
 };
 
 const ProductsSection = () => {
-  const { t } = useTranslation("products-section");
+  const { t } = useTranslation("home-products-section");
 
   const products = t("items", { returnObjects: true }) as ProductProps[];
 

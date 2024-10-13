@@ -12,9 +12,20 @@ const initI18n = async () => {
       {
         debug: true,
         fallbackLng: "es",
-        supportedLngs: ["en", "es"],
+        supportedLngs: ["es", "en"],
         lng: "es",
         defaultNS: "common",
+        ns: [
+          "common",
+          "clients-section",
+          "cta-section",
+          "features-section",
+          "hero-section",
+          "pricing-section",
+          "products-section",
+          "testimonials-section",
+          "uses-section",
+        ],
         interpolation: {
           escapeValue: false,
         },
