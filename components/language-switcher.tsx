@@ -74,7 +74,6 @@ const LanguageSwitcher = () => {
     i18n.changeLanguage(lang);
     if (i18n.language !== lang) {
       i18n.changeLanguage(lang);
-      // Refresh the current route to apply language changes
       router.refresh();
     }
     setIsOpen(false);
