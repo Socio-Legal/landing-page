@@ -36,7 +36,8 @@ const WhoUsesHeader = () => {
 const WhoUsesSttokSection = () => {
   const { t } = useTranslation("home-uses-section");
 
-  const uses = t("items", { returnObjects: true }) as UseProps[] | [];
+  const usesData = t("items", { returnObjects: true }) as UseProps[] | null;
+  const uses = Array.isArray(usesData) ? usesData : null;
 
   const parsedUses = (items: UseProps[]) => {
     return items?.map((item) => ({

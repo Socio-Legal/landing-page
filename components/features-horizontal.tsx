@@ -94,7 +94,7 @@ export type FeaturesProps = {
   collapseDelay?: number;
   ltr?: boolean;
   linePosition?: "left" | "right" | "top" | "bottom";
-  data: CardDataProps[];
+  data: CardDataProps[] | undefined;
 };
 
 export default function Features({

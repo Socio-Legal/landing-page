@@ -126,7 +126,11 @@ const FeaturesHeader: FC = () => {
   );
 };
 
-const FeaturesSection: FC<FeatureSectionProps> = ({ features }) => {
+const FeaturesSection: FC<FeatureSectionProps> = ({
+  features: featuresData,
+}) => {
+  const features = Array.isArray(featuresData) ? featuresData : null;
+
   return (
     <section
       id="features-section"

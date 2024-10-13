@@ -33,8 +33,10 @@ const getColStarts = (index: number, companies: string[]) => {
 const ClientsSection: FC = () => {
   const { t } = useTranslation("home-clients-section");
 
-  const companies =
+  const companiesData =
     (t("companies", { returnObjects: true }) as string[]) || null;
+
+  const companies = Array.isArray(companiesData) ? companiesData : null;
 
   return (
     <section id="companies">

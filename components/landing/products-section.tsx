@@ -40,9 +40,12 @@ const ProductsHeader = () => {
 const ProductsSection = () => {
   const { t } = useTranslation("home-products-section");
 
-  const products = t("items", { returnObjects: true }) as ProductProps[];
+  const productsData = t("items", { returnObjects: true }) as ProductProps[];
+  const products: ProductProps[] | undefined = Array.isArray(productsData)
+    ? productsData
+    : undefined;
 
-  const parsedProducts = (items: ProductProps[]) => {
+  const parsedProducts = (items: ProductProps[] | undefined) => {
     return items?.map((item) => ({
       ...item,
       icon: ProductIcons[item.icon as keyof typeof ProductIcons],
