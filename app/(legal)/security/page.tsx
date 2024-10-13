@@ -10,13 +10,13 @@ import TextContentSection, {
 import CallToActionSection from "@/components/landing/cta-section";
 
 const Page = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation(["common", "legal-security-page"]);
 
-  const hero = t("legal.disclaimer.hero", {
+  const hero = t("legal-security-page:hero", {
     returnObjects: true,
   }) as HeroSectionProps;
 
-  const content = t("legal.disclaimer.content", {
+  const content = t("legal-security-page:content", {
     returnObjects: true,
   }) as TextSectionProps[];
 

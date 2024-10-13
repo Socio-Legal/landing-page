@@ -2,33 +2,61 @@ import i18n from "i18next";
 import HttpBackend from "i18next-http-backend";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
+import loadTranslations from "./loadTranslations";
 
-// files are located inside public/locales with es/index.json
-import enTranslations from "../public/locales/en/index.json";
-import esTranslations from "../public/locales/es/index.json";
+const initI18n = async () => {
+  const [esTranslations, enTranslations] = await Promise.all([
+    loadTranslations("es"),
+    loadTranslations("en"),
+  ]);
 
-i18n
-  .use(HttpBackend)
-  .use(initReactI18next)
-  .init({
-    debug: false,
-    backend: {
-      loadPath: "/locales/{{lng}}/index.json",
-    },
+  console.log("🚀 cclog  ~ initI18n:", { esTranslations, enTranslations });
+
+  await i18n.use(initReactI18next).init({
     resources: {
-      en: { translation: enTranslations },
-      es: { translation: esTranslations },
+      es: esTranslations,
+      en: enTranslations,
     },
     lng: "es",
     fallbackLng: "es",
     supportedLngs: ["es", "en"],
-    defaultNS: "translation",
+    defaultNS: "common",
     interpolation: {
       escapeValue: false,
     },
   });
 
-i18n.languages = ["es", "en"];
+  console.log("i18n initialized:", i18n.language);
+};
+
+initI18n();
+
+// import enTranslations from "../public/locales/en/index.json";
+// import esTranslations from "../public/locales/es/index.json";
+
+// i18n
+//   .use(HttpBackend)
+//   .use(initReactI18next)
+//   .use(LanguageDetector)
+//   .init({
+//     debug: false,
+//     backend: {
+//       loadPath: "/locales/{{lng}}/index.json",
+//     },
+//     resources: {
+//       en: { translation: enTranslations },
+//       es: { translation: esTranslations },
+//     },
+//     lng: "es",
+//     fallbackLng: "es",
+//     supportedLngs: ["es", "en"],
+//     defaultNS: "translation",
+//     interpolation: {
+//       escapeValue: false,
+//     },
+//   });
+
+// i18n.languages = ["es", "en"];
 
 // const initI18n = async () => {
 //   await i18n

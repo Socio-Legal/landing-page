@@ -10,20 +10,21 @@ import TextContentSection, {
 import CallToActionSection from "@/components/landing/cta-section";
 
 const Page = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation(["common", "legal-disclaimer-page"]);
 
-  const hero = t("legal.disclaimer.hero", {
+  const hero = t("legal-disclaimer-page:hero", {
     returnObjects: true,
   }) as HeroSectionProps;
 
-  const content = t("legal.disclaimer.content", {
+  const content = t("legal-disclaimer-page:content", {
     returnObjects: true,
   }) as TextSectionProps[];
+  console.log("🚀 cclog  ~ Page:", { hero, content });
 
   return (
     <>
-      {hero && <HeroSection {...hero} />}
-      {content && <TextContentSection content={content} hideTopSpace />}
+      <HeroSection {...hero} />
+      <TextContentSection content={content} hideTopSpace />
       <CallToActionSection />
     </>
   );

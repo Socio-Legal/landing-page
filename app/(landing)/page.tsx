@@ -17,13 +17,21 @@ import { SphereMask } from "@/components/magicui/sphere-mask";
 import Particles from "@/components/magicui/particles";
 
 export default function Page() {
-  const { t } = useTranslation();
+  const { t } = useTranslation([
+    "common",
+    "home-clients-section",
+    "home-cta-section",
+    "home-features-section",
+    "home-hero-section",
+    "home-pricing-section",
+    "home-products-section",
+    "home-testimonials-section",
+    "home-uses-section",
+  ]);
 
-  const features = t("home.features.items", {
+  const features = t("home-features-section:items", {
     returnObjects: true,
   }) as FeatureItem[];
-
-  console.log("🚀 cclog  ~ Page ~ features:", features);
 
   return (
     <>
