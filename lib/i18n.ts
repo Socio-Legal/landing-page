@@ -27,6 +27,7 @@ const initI18n = async () => {
           "home-uses-section",
           "product-hero-section",
           "product-partner-book-page",
+          "product-incentive-plans-page",
         ],
         interpolation: {
           escapeValue: false,
