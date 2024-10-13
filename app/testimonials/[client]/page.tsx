@@ -231,7 +231,7 @@ const Page: FC<PageProps> = ({ params }) => {
                 Testimonios relacionados
               </h2>
               <div className="grid gap-6 md:grid-cols-2">
-                {getOther2Testimonials(client).map((client, index) => (
+                {getOther2Testimonials(client)?.map((client, index) => (
                   <Card key={index}>
                     <CardHeader>
                       <CardTitle>{client.summary.client}</CardTitle>

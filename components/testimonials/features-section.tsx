@@ -139,7 +139,7 @@ const FeaturesSection: FC<FeaturesSectionProps> = ({
           <div className="features-row-border-light dark:features-row-border-dark absolute right-1/2 top-1/2 block h-[1px] w-1/2 -translate-y-1/2 rotate-90 lg:right-[8.3%] lg:block"></div>
 
           <div className="flex flex-wrap justify-center">
-            {items.map((feature, index) => (
+            {items?.map((feature, index) => (
               <Feature key={index} index={index} feature={feature} />
             ))}
           </div>

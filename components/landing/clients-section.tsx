@@ -33,7 +33,8 @@ const getColStarts = (index: number, companies: string[]) => {
 const ClientsSection: FC = () => {
   const { t } = useTranslation("home-clients-section");
 
-  const companies = t("companies", { returnObjects: true }) as string[] | [];
+  const companies =
+    (t("companies", { returnObjects: true }) as string[]) || null;
 
   return (
     <section id="companies">
@@ -42,7 +43,7 @@ const ClientsSection: FC = () => {
 
         <div className="relative mt-6">
           <div className="grid grid-cols-2 place-items-center gap-2 md:grid-cols-4 xl:grid-cols-6 xl:gap-4">
-            {companies.map((logo, index) => (
+            {companies?.map((logo, index) => (
               <div
                 key={index}
                 className={`relative h-10 w-40 px-2 brightness-0 dark:brightness-0 dark:invert mb-8

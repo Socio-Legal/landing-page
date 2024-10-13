@@ -43,7 +43,7 @@ const ProductsSection = () => {
   const products = t("items", { returnObjects: true }) as ProductProps[];
 
   const parsedProducts = (items: ProductProps[]) => {
-    return items.map((item) => ({
+    return items?.map((item) => ({
       ...item,
       icon: ProductIcons[item.icon as keyof typeof ProductIcons],
     }));

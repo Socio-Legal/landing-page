@@ -235,7 +235,7 @@ export default function PricingSection() {
           <PricingSwitch onChangeInterval={setInterval} />
 
           <div className="mx-auto grid w-full justify-center sm:grid-cols-1 lg:grid-cols-3 flex-col gap-4">
-            {prices.map((price, index) => (
+            {prices?.map((price, index) => (
               <PricingCard
                 id={id}
                 key={price.id}
