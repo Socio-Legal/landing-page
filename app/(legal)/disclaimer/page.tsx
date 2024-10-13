@@ -19,7 +19,6 @@ const Page = () => {
   const content = t("legal-disclaimer-page:content", {
     returnObjects: true,
   }) as TextSectionProps[];
-  console.log("🚀 cclog  ~ Page:", { hero, content });
 
   return (
     <>
