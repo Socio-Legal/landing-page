@@ -45,6 +45,9 @@ const initI18n = async () => {
           "testimonials-caballero-page",
           "testimonials-derechocom-page",
           "pricing-page",
+          "legal-privacy-page",
+          "legal-security-page",
+          "legal-disclaimer-page",
         ],
         interpolation: {
           escapeValue: false,

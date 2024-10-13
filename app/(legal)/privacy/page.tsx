@@ -1,22 +1,23 @@
-import React from "react";
+"use client";
 
-import HeroSection from "@/components/legal/hero-section";
-import TextContentSection from "@/components/legal/text-content";
+import React from "react";
+import { useTranslation } from "react-i18next";
+
+import HeroSection, { HeroSectionProps } from "@/components/legal/hero-section";
+import TextContentSection, {
+  TextSectionProps,
+} from "@/components/legal/text-content";
 import CallToActionSection from "@/components/landing/cta-section";
 
-import { metadata as page, hero, content } from "@/config/legal/privacy";
-
-export const metadata = {
-  title: page.title,
-  keywords: page.keywords,
-  description: page.description,
-};
-
 const Page = () => {
+  const { t } = useTranslation("legal-privacy-page");
+
+  const hero = t("hero", { returnObjects: true }) as HeroSectionProps;
+  const content = t("content", { returnObjects: true }) as TextSectionProps[];
+
   return (
     <>
       <HeroSection {...hero} />
-      {/* @ts-ignore */}
       <TextContentSection content={content} hideTopSpace />
       <CallToActionSection />
     </>

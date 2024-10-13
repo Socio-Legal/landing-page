@@ -1,0 +1,213 @@
+{
+  "metadata": {
+    "title": "Legal Notice and General Terms and Conditions",
+    "description": "",
+    "keywords": ""
+  },
+  "hero": {
+    "title": "Legal Notice",
+    "description": ""
+  },
+  "content": [
+    {
+      "title": "General Website Information",
+      "content": [
+        "Owner: Sttok Barcelona, S.L. (hereinafter referred to by its commercial name, 'Sttok').",
+        "Headquarters and establishment: C/ Ausias Marc, 7, 3rd Floor, 08010-Barcelona.",
+        "Tax ID: B10601268",
+        "Contact: info@sttok.com 607838348",
+        "Registration details: Barcelona Commercial Registry, volume 48281, folio 181, sheet no. 578642, 1st registration."
+      ]
+    },
+    {
+      "title": "First.- Purpose",
+      "content": [
+        "STTOK is an online platform for managing Shareholder Registers, Incentive Plans, Corporate Documentation, and Communications used by companies and/or lawyers or advisors to digitally and efficiently manage companies, partners, investors, beneficiaries, and/or administrators as well as their corporate processes (hereinafter, 'the Services'). This Contract grants the Client a license to access the STTOK platform and use the Services. The license of use will be subject to compliance with the terms and conditions established in this Contract or in the particular conditions that may be applicable depending on the contracted plan or regulated in the Commercial Proposal. The License of use is limited, non-exclusive, non-transferable, and limited during the contracted period or established in the Commercial Proposal. STTOK commits to providing support services and resolving queries for the duration of the contractual relationship."
+      ]
+    },
+    {
+      "title": "Second.- Access",
+      "content": [
+        "The Client will create a user by accessing the STTOK platform using their email address, which will be used to configure the Client's account. The Client may grant access to other users to their account. The Client will be responsible for any acts or omissions of any person accessing the STTOK platform using their access credentials. STTOK reserves the right to reject registration, access, or cancel users who violate the terms and conditions established in this Contract. In the event that the Client becomes aware that their user or account has been used by third parties without their consent or suspects unauthorized use, they will immediately notify STTOK at info@sttok.com. User identity verification will be carried out through the identity management service used by the Client, either through Microsoft or Google email services. In the case that the Client has configured two-factor identity verification systems or similar, they will be the responsibility of the aforementioned Microsoft or Google services. For this purpose, STTOK uses Auth0's Customer Identity (CIAM) service. The terms and conditions of Microsoft or Google services may be applicable as appropriate.",
+        "Occasionally, STTOK personnel may access the Client's account for the purpose of maintaining and improving the Services, including technical assistance to the Client regarding training, technical, or billing aspects. In any case, STTOK personnel will be subject to the confidentiality clauses applicable to this Contract. The Client expresses their knowledge and, if necessary, their consent to such access. Said access will be carried out using a STTOK user account and in no case accessing individual user accounts or under the identity of the Client's users."
+      ]
+    },
+    {
+      "title": "Third.- Availability",
+      "content": [
+        "STTOK will make reasonable commercial efforts to maintain the availability of the platform and Services. STTOK excludes all promises, whether express or implied, including promises that the platform is suitable for the Client's desired purpose. STTOK states that the Services may experience outages due to maintenance, repairs, and platform updates. To the extent possible, STTOK will attempt to notify the Client, electronically through the platform, of any interruption or suspension of the Services when scheduled. Notwithstanding the above, STTOK will not be responsible for any failures in the Services or any other problems related to (a) data entered by the Client or the Client's technical systems or (b) outages in telecommunications networks or internet access providers, networks or servers, or other equipment or services outside STTOK's facilities or control."
+      ]
+    },
+    {
+      "title": "Fourth.- Free Version",
+      "content": [
+        "In the event that STTOK has offered the Client a free demo or free version, STTOK will offer the Services on a free trial basis, which will last until (a) the end of the free trial period for which the Client has registered and with respect to the applicable Services, or (b) the start date of any subscription to the Services specified by the Client, or (c) exceeding the limits of the free Services, or (d) termination by STTOK at its sole discretion. The trial or free version may be subject to additional terms and conditions as detailed on the STTOK website at any time. Such additional terms and conditions shall be deemed incorporated by reference into this Contract and shall be considered legally binding."
+      ]
+    },
+    {
+      "title": "Fifth.- Privacy and Confidentiality",
+      "content": [
+        "The personal data of users with access to the platform as well as any personal data processed through the STTOK platform will be treated in accordance with STTOK's Privacy Policy located at https://www.sttok.com/privacidad.html. The Client will be responsible for any personal data processed through the STTOK Services and platform. The Client must comply with all applicable laws regarding the processing and use of personal data."
+      ]
+    },
+    {
+      "title": "Sixth.- Subscription. Consideration for Services",
+      "content": [
+        {
+          "subtitle": "Price",
+          "content": [
+            "The Client will pay the price corresponding to the Commercial Proposal agreed upon by the Parties. Prices may be revised by written agreement between the parties."
+          ]
+        },
+        {
+          "subtitle": "Commercial Proposal",
+          "content": [
+            "The Parties may agree on one or more Commercial Proposals. Between the Parties, the terms and conditions of the Commercial Proposal will prevail, and subsidiarily, what is established in this Contract will apply."
+          ]
+        },
+        {
+          "subtitle": "Payment",
+          "content": [
+            "Payments are made in Euros after issuance and sending of the invoice. The invoice due date will be 30 days from the date of issue or as agreed in the Commercial Proposal. In case of non-payment, STTOK may demand a late payment interest of 1.5% monthly or the maximum amount allowed by law. The Client agrees to reimburse STTOK for all expenses (including attorneys' fees) incurred by STTOK in collecting overdue payments. STTOK may suspend the Client's access to the platform and Services or terminate this Contract in the event that the Client is not up to date with payments due to STTOK.",
+            "The Client may cancel their account and terminate this contract at any time with 30 days' notice. In this case, the Client will only pay for the months enjoyed until the effective termination (prorated monthly on the annual amount foreseen). During the period from the notice to the effective termination, STTOK will provide the services and the Client will pay for them."
+          ]
+        },
+        {
+          "subtitle": "Taxes",
+          "content": [
+            "It will be the Client's responsibility to pay the legally applicable taxes."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Seventh.- Confidentiality",
+      "content": [
+        "The Parties undertake to adopt appropriate measures to ensure the adequate confidential treatment of data and information owned by the other Party to which they have access during the provision of the Services. For the purposes of this Contract, Confidential Information is considered to be all information susceptible to being revealed orally, in writing or by any other means or support, tangible or intangible that: (a) is supplied by the Parties to enable the strict and correct provision of the Services; or (b) may become, accidentally or fortuitously, accessed or known by the Parties during the provision of the Services; or (c) the Parties have expressly indicated as confidential. The measures to be adopted by the Parties shall not be less than those applied by each of them to their own Confidential Information and shall include, in any case, the following:",
+        "a) Use the Confidential Information for the strict and correct execution of the Contract, assuming responsibility for any different use, whether it has been carried out by the Party or by the natural or legal persons to whom it has allowed access.",
+        "b) Only allow access to Confidential Information to those natural or legal persons who, providing their services for these, need such information for the development of tasks strictly related to the correct execution of the Contract.",
+        "c) Immediately communicate to the other Party any leak of Confidential Information of which it has or becomes aware.",
+        "d) They may not disclose or reveal Confidential Information to third parties not provided for in this Contract without the prior written authorization of the other Party.",
+        "When an administrative or judicial authority requests one of the Parties access to Confidential Information of the other, the former must communicate this circumstance to the affected Party before providing the information. The duty of confidentiality established in this stipulation shall remain in force indefinitely, even after the termination of the provision of the Services for any reason."
+      ]
+    },
+    {
+      "title": "Eighth.- Property Rights",
+      "content": [
+        {
+          "subtitle": "Client Data and Information",
+          "content": [
+            "The Client will own all data, information, documents or titles (including all intellectual property and other property rights) incorporated and processed through the STTOK platform (hereinafter, 'Client Data'). The Client grants STTOK a non-exclusive, free and licensed right to access, use, copy, process and store Client Data for the sole purpose of providing the Services agreed in writing between the Parties."
+          ]
+        },
+        {
+          "subtitle": "STTOK Platform and Services",
+          "content": [
+            "The Client declares to know and accepts that the STTOK platform and the Services are the property of STTOK, who will retain all intellectual property rights, industrial or any others, which may not be copied by the Client. The provision of the Services and the STTOK platform to the Client does not mean, in any case, the transfer of its ownership."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Ninth.- Warranties and Limitations",
+      "content": [
+        {
+          "subtitle": "Disclaimers",
+          "content": [
+            "The Client acknowledges that STTOK's compliance with its obligations under this Contract depends on: (i) the Client having taken all necessary measures for the correct use of the Services or any other connected external system; and (ii) access to the STTOK Services or platform (including third-party messaging service providers, signature and applicable third-party integrated products) and the data stored or maintained therein (external dependencies) operate correctly. STTOK is not responsible for any external dependency and will have no liability with respect to any interference with the Client's use, or any user's use or access to STTOK or security or privacy violations that arise from or are attributable to any external dependency of the Client, and the Client waives any claim against STTOK in relation to this."
+          ]
+        },
+        {
+          "subtitle": "Liability",
+          "content": [
+            "STTOK will be responsible for damages caused by fault or negligence derived from its actions, not exceeding, in any case, the compensation corresponding to the amount corresponding to the price of the Services effectively paid by the Client to STTOK at the time the cause that motivated the compensation occurred. STTOK will not be responsible, in any case, for indirect, unforeseen, special or accidental damages, including loss of profits, income, data or use suffered by the Client or by a third party. STTOK will not be responsible to the Client, among other cases, for the following (i) in case the Services are not used in accordance with the intended purpose or STTOK's online support documentation; (ii) in case the failure is caused by uses of the platform not previously authorized by STTOK or by third-party systems.",
+            "Notwithstanding the above, no provision of this Contract will exclude or limit STTOK's liability arising from infringement in matters of data protection or confidentiality, fraud, gross negligence, willful misconduct or any other liability that cannot be limited or excluded by legal imperative and that is directly and indirectly attributable to STTOK, its Partners, Collaborators or Workers."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tenth.- Duration",
+      "content": [
+        {
+          "subtitle": "Term",
+          "content": [
+            "The Contract will begin on the date of the Client's registration on the STTOK platform or on the date that the Parties agree in the Commercial Proposal. The Contract will be renewed annually if neither Party communicates otherwise and will continue in force until (i) the Client cancels their account, (ii) one of the Parties notifies the other in writing, thirty (30) days prior to termination, of the desire not to renew the Contract.",
+            "The Client may cancel their account and terminate this contract at any time with 30 days' notice. In this case, the Client will only pay for the months enjoyed until the effective termination (prorated monthly on the annual amount foreseen). During the period from the notice to the effective termination, STTOK will provide the services and the Client will pay for them."
+          ]
+        },
+        {
+          "subtitle": "Termination",
+          "content": [
+            "The Contract may be terminated by either Party if the other Party substantially breaches the Contract and does not remedy such breach within thirty (30) days of written notification thereof."
+          ]
+        },
+        {
+          "subtitle": "Effects of Termination",
+          "content": [
+            "In the event of resolution or termination of the Contract: (i) any rights granted by either Party to the other will immediately cease; (ii) STTOK will allow the Client to access and export Client Data for thirty (30) days, with STTOK's rates in force at that time being applicable with respect to the Services used; and (iii) after a period of ninety (90) days, STTOK will delete the Client Data."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Eleventh.- General",
+      "content": [
+        {
+          "subtitle": "Applicable Law and Jurisdiction",
+          "content": [
+            "Any controversy arising from the interpretation or execution of this Contract or any of its eventual modifications, as well as any breach thereof, will be interpreted in accordance with Spanish legislation. To resolve any controversy related to the provisions of this Contract or in execution thereof, STTOK and the Client expressly submit to the Courts and Tribunals of Barcelona, waiving any other jurisdiction that may correspond to them. The language to be used will be Spanish."
+          ]
+        },
+        {
+          "subtitle": "Severability",
+          "content": [
+            "If any provision of this Contract is declared, in whole or in part, null or ineffective, such nullity or ineffectiveness shall affect only that provision or part of it that is null or ineffective, the Contract remaining in force in all other respects, such provision, or the part of it that was affected, being considered not included."
+          ]
+        },
+        {
+          "subtitle": "Assignment",
+          "content": [
+            "The Client may not assign or transfer this Contract or any rights or obligations hereunder, in whole or in part, without the prior written consent of STTOK. STTOK may assign this Contract without restriction."
+          ]
+        },
+        {
+          "subtitle": "Amendments",
+          "content": [
+            "STTOK reserves the right to modify these terms and conditions at any time. Any changes will be notified to the Client through the platform or by email. The continued use of the Services after such notification will be considered as acceptance of the new terms."
+          ]
+        },
+        {
+          "subtitle": "No Waiver",
+          "content": [
+            "The failure of either party to exercise or enforce any right or provision of this Contract shall not constitute a waiver of such right or provision."
+          ]
+        },
+        {
+          "subtitle": "Relationship of the Parties",
+          "content": [
+            "Nothing in this Contract shall be construed as creating a partnership, joint venture, agency relationship or granting a franchise between the parties. Neither party shall have the power to bind the other or incur obligations on the other's behalf without the other's prior written consent."
+          ]
+        },
+        {
+          "subtitle": "Force Majeure",
+          "content": [
+            "Neither party shall be liable for any failure or delay in performance under this Contract (other than for delay in the payment of money due and payable hereunder) to the extent said failures or delays are proximately caused by causes beyond that party's reasonable control and occurring without its fault or negligence."
+          ]
+        },
+        {
+          "subtitle": "Notices",
+          "content": [
+            "All notices under this Contract shall be in writing and shall be deemed to have been duly given when delivered, if delivered personally or by nationally recognized overnight courier service, or when received, if sent by certified or registered mail, return receipt requested, to the address specified in the Commercial Proposal or such other address as either party may specify in writing."
+          ]
+        },
+        {
+          "subtitle": "Entire Agreement",
+          "content": [
+            "This Contract, including all exhibits and addenda hereto and all Commercial Proposals, constitutes the entire agreement between the parties and supersedes all prior and contemporaneous agreements, proposals or representations, written or oral, concerning its subject matter. No modification, amendment, or waiver of any provision of this Contract shall be effective unless in writing and signed by both parties."
+          ]
+        }
+      ]
+    }
+  ]
+}

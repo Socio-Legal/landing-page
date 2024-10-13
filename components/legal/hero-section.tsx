@@ -9,7 +9,7 @@ import { ArrowRightIcon } from "@radix-ui/react-icons";
 import Blur01 from "@/public/blur-01.svg";
 import Blur02 from "@/public/blur-02.svg";
 
-type HeroSectionProps = {
+export type HeroSectionProps = {
   title: string;
   description: string;
   button?: {
