@@ -89,7 +89,7 @@ const LanguageSwitcher = () => {
       </button>
 
       <div
-        className={`fixed left-0 right-0 top-16 mt-2.5 flex px-6 py-4 h-auto min-w-[180px] w-full flex-col rounded-md border bg-popover text-popover-foreground shadow-lg transition-all duration-300 sm:absolute sm:left-auto sm:top-full sm:w-45 sm:rounded-md data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 ${
+        className={`fixed left-0 right-0 top-16 mt-2.5 flex px-6 py-4 h-auto min-w-[170px] w-full flex-col rounded-md border bg-popover text-popover-foreground shadow-lg transition-all duration-300 sm:absolute sm:left-auto sm:top-full sm:w-45 sm:rounded-md data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 ${
           isOpen ? "visible opacity-100" : "invisible opacity-0"
         }`}
       >
