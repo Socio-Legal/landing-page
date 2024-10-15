@@ -94,28 +94,28 @@
       {
         "name": "Johan Longo",
         "role": "Contract Manager | PLD Space",
-        "img": "https://www.sttok.com/images/logos/logo-pld-mini.png",
+        "img": "/logo-pld-mini.png",
         "description": "Sttok helps us keep all the information about partners, meetings, and incentive plans of our company organized. It facilitates the management of the cap table and the relationship with investors.",
         "stars": 5
       },
       {
         "name": "Lucía Bouzá",
         "role": "Head of Legal & Compliance | Factorial",
-        "img": "https://www.sttok.com/images/logos/logo-factorial-mini.png",
+        "img": "/logo-factorial-mini.png",
         "description": "Sttok allows us to have all the information about partners and incentive plans centralized and updated. It facilitates the management of meetings and the relationship with investors.",
         "stars": 5
       },
       {
         "name": "Oriol Miralbell",
         "role": "CEO | Legalpigeon",
-        "img": "https://www.sttok.com/images/logos/logo-legalpigeon-mini.png",
+        "img": "/logo-legalpigeon-mini.png",
         "description": "Sttok allows you to easily calculate valuations, investment rounds, and simulations. The application interface is simple and intuitive, which allows you to make decisions more quickly and effectively.",
         "stars": 4
       },
       {
         "name": "Nacho González",
         "role": "CEO and Founder | Banktrack",
-        "img": "https://www.sttok.com/images/logos/logo-banktrack-mini.png",
+        "img": "/logo-banktrack-mini.png",
         "description": "Now with Sttok you can perform simulations of capital increases or convertible notes. We also easily manage our team's phantom shares. Finally, as an investor, I have my investments organized and I clearly know what I have.",
         "stars": 5
       }

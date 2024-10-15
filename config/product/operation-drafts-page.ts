@@ -118,7 +118,7 @@ export const testimonials = {
     {
       name: "Lucía Bouzá",
       role: "Head of Legal & Compliance | Factorial",
-      img: "https://www.sttok.com/images/logos/logo-factorial-mini.png",
+      img: "/logo-factorial-mini.png",
       description:
         "Sttok nos permite tener toda la información de socios y planes de incentivos centralizada y actualizada. Nos facilita la gestión de juntas y la relación con los inversores.",
       stars: 5,
@@ -126,7 +126,7 @@ export const testimonials = {
     {
       name: "Oriol Miralbell", // ej., "María García"
       role: "CEO | Legalpigeon", // ej., "CTO de Empresa B"
-      img: "https://www.sttok.com/images/logos/logo-legalpigeon-mini.png", // ej., "https://ejemplo.com/maria-garcia.jpg"
+      img: "/logo-legalpigeon-mini.png", // ej., "https://ejemplo.com/maria-garcia.jpg"
       description:
         "Sttok te permite calcular valoraciones, rondas de inversión y simulaciones fácilmente. La interfaz de la aplicación es sencilla e intuitiva, lo que  te permite tomar decisiones de manera más ágil y eficaz.",
       stars: 4, // ej., 4
@@ -134,7 +134,7 @@ export const testimonials = {
     {
       name: "Nacho González",
       role: "CEO y Fundador | Banktrack",
-      img: "https://www.sttok.com/images/logos/logo-banktrack-mini.png",
+      img: "/logo-banktrack-mini.png",
       description:
         "Ahora con Sttok puedes realizar simulaciones de ampliaciones o notas convertibles. Además también gestionamos las phantoms de nuestro equipo fácilmente. Finalmente como inversor tengo organizadas mis participadas y conozco claramente qué es lo que tengo.",
       stars: 5,
@@ -142,7 +142,7 @@ export const testimonials = {
     {
       name: "Johan Longo",
       role: "Contract Manager | PLD Space",
-      img: "https://www.sttok.com/images/logos/logo-pld-mini.png",
+      img: "/logo-pld-mini.png",
       description:
         "Sttok nos sirve para poder tener organizada toda la información sobre socios, junas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
       stars: 5,

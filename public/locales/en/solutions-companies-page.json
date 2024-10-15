@@ -87,21 +87,21 @@
       {
         "name": "Lucía Bauza",
         "role": "Head of Legal & Compliance, Factorial",
-        "img": "https://www.sttok.com/images/logos/logo-factorial-mini.png",
+        "img": "/logo-factorial-mini.png",
         "description": "Sttok has allowed us to digitize the process of creating and signing documents for our incentive plans",
         "stars": 5
       },
       {
         "name": "Toni de Weest",
         "role": "Partner Lawyer, Broseta",
-        "img": "https://www.sttok.com/images/logos/logo-broseta-mini.png",
+        "img": "/logo-broseta-mini.png",
         "description": "We use Sttok to digitally manage shareholder registers efficiently, avoiding unnecessary manual tasks.",
         "stars": 5
       },
       {
         "name": "Amalia Riboldi",
         "role": "Head of People & Culture, Yaba",
-        "img": "https://www.sttok.com/images/logos/logo-yaba-mini.png",
+        "img": "/logo-yaba-mini.png",
         "description": "Sttok was our best option for managing incentive plans and corporate information for shareholders.",
         "stars": 5
       }

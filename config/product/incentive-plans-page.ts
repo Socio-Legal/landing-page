@@ -140,7 +140,7 @@ export const testimonials = {
     {
       name: "Lucía Bouzá", // ej., "Juan Pérez"
       role: "Head of Legal & Compliance  | Factorial", // ej., "CEO de Empresa A"
-      img: "https://www.sttok.com/images/logos/logo-factorial-mini.png", // ej., "https://ejemplo.com/juan-perez.jpg"
+      img: "/logo-factorial-mini.png", // ej., "https://ejemplo.com/juan-perez.jpg"
       description:
         "Para gestionar toda la documentación de planes de incentivos nos ha ayudado a digitalizar el proceso de creación, firma y control de los beneficiarios.", // ej., "Un testimonio brillante de Juan Pérez sobre nuestro producto"
       stars: 5, // ej., 5
@@ -148,7 +148,7 @@ export const testimonials = {
     {
       name: "Amalia Riboldi", // ej., "María García"
       role: "Head of People & Culture | YABA", // ej., "CTO de Empresa B"
-      img: "https://www.sttok.com/wp-content/uploads/2023/07/logo-yaba-bg-122x122.jpg", // ej., "https://ejemplo.com/maria-garcia.jpg"
+      img: "/logo-yaba-mini.png", // ej., "https://ejemplo.com/maria-garcia.jpg"
       description:
         "Sttok definitivamente fue nuestra mejor opción y nos está ayudando con la gestión de los Planes de Incentivos y con la transparencia de la información societaria con los Socios",
       stars: 5, // ej., 5

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { FC } from "react";
 import Image from "next/legacy/image";
 
@@ -29,17 +30,12 @@ const ClientsSection: FC<ClientsSectionProps> = ({
         <div className="relative mt-6">
           <Marquee className="max-w-full [--duration:40s]">
             {clients?.map((logo, index) => (
-              <div
-                key={index}
-                className={`h-10 w-40 mx-4 brightness-0 dark:brightness-0 dark:invert mb-8`}
-              >
-                <Image
-                  src={getClientLogo(logo as keyof typeof clientLogos)}
-                  alt={logo}
-                  layout="fill"
-                  objectFit="contain"
-                />
-              </div>
+              <img
+                key={`logo-${index}`}
+                src={getClientLogo(logo as keyof typeof clientLogos)}
+                className="h-10 w-50 mx-4 mb-8 dark:brightness-0 dark:invert"
+                alt={`logo-${logo}`}
+              />
             ))}
           </Marquee>
 

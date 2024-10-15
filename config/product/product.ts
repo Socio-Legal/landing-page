@@ -17,9 +17,8 @@ export const hero = {
     link: "https://app.sttok.com/#/demo",
   },
   image: {
-    light:
-      "https://www.sttok.com/wp-content/uploads/2023/11/Screenshot_39-768x730.png",
-    dark: "https://www.sttok.com/wp-content/uploads/2023/11/Screenshot_39-768x730.png",
+    light: "/hero/hero-product.png",
+    dark: "/hero/hero-product.png",
   },
 };
 

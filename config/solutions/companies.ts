@@ -105,7 +105,7 @@ export const testimonials = {
     {
       name: "Lucía Bauza", // ej., "Juan Pérez"
       role: "Head of Legal & Compliance, Factorial", // ej., "CEO de Empresa A"
-      img: "https://www.sttok.com/images/logos/logo-factorial-mini.png", // ej., "https://ejemplo.com/juan-perez.jpg"
+      img: "/logo-factorial-mini.png", // ej., "https://ejemplo.com/juan-perez.jpg"
       description:
         "Sttok nos ha permitido digitalizar el proceso de creación y firma de documentos para nuestros planes de incentivos", // ej., "Un testimonio brillante de Juan Pérez sobre nuestro producto"
       stars: 5, // ej., 5
@@ -113,7 +113,7 @@ export const testimonials = {
     {
       name: "Toni de Weest", // ej., "Roberto Rodríguez"
       role: "Abogado Socio, Broseta", // ej., "Fundador de Startup C"
-      img: "https://www.sttok.com/images/logos/logo-broseta-mini.png", // ej., "https://ejemplo.com/roberto-rodriguez.jpg"
+      img: "/logo-broseta-mini.png", // ej., "https://ejemplo.com/roberto-rodriguez.jpg"
       description:
         "Utilizamos Sttok para gestionar digitalmente libros de socios de forma eficiente evitando tareas manuales inecesarias.", // ej., "Cómo nuestro producto ayudó a crecer la startup de Roberto Rodríguez"
       stars: 5, // ej., 5
@@ -121,7 +121,7 @@ export const testimonials = {
     {
       name: "Amalia Riboldi", // ej., "Ana Martínez"
       role: "Head of People & Cultura, Yaba", // ej., "Directora de Marketing en Empresa D"
-      img: "https://www.sttok.com/images/logos/logo-yaba-mini.png", // ej., "https://ejemplo.com/ana-martinez.jpg"
+      img: "/logo-yaba-mini.png", // ej., "https://ejemplo.com/ana-martinez.jpg"
       description:
         "Sttok fue nuestra mejor opción para gestionar los planes de incentivos y la información societaria de los socios.", // ej., "Las opiniones de Ana Martínez sobre el impacto de nuestro producto"
       stars: 5, // ej., 5

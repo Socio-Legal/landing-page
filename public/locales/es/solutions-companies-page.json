@@ -87,21 +87,21 @@
       {
         "name": "Lucía Bauza",
         "role": "Head of Legal & Compliance, Factorial",
-        "img": "https://www.sttok.com/images/logos/logo-factorial-mini.png",
+        "img": "/logo-factorial-mini.png",
         "description": "Sttok nos ha permitido digitalizar el proceso de creación y firma de documentos para nuestros planes de incentivos",
         "stars": 5
       },
       {
         "name": "Toni de Weest",
         "role": "Abogado Socio, Broseta",
-        "img": "https://www.sttok.com/images/logos/logo-broseta-mini.png",
+        "img": "/logo-broseta-mini.png",
         "description": "Utilizamos Sttok para gestionar digitalmente libros de socios de forma eficiente evitando tareas manuales inecesarias.",
         "stars": 5
       },
       {
         "name": "Amalia Riboldi",
         "role": "Head of People & Cultura, Yaba",
-        "img": "https://www.sttok.com/images/logos/logo-yaba-mini.png",
+        "img": "/logo-yaba-mini.png",
         "description": "Sttok fue nuestra mejor opción para gestionar los planes de incentivos y la información societaria de los socios.",
         "stars": 5
       }

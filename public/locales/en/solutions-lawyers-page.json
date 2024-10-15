@@ -63,7 +63,7 @@
       {
         "name": "Toni de Weest Prat",
         "role": "Partner Lawyer, Broseta",
-        "img": "https://www.sttok.com/images/logos/logo-broseta-mini.png",
+        "img": "/logo-broseta-mini.png",
         "description": "Sttok allows us to manage shareholder registers efficiently, avoiding unnecessary manual tasks and focusing on adding value to our clients.",
         "stars": 5
       },
@@ -76,7 +76,7 @@
       {
         "name": "Jose María Baños",
         "role": "Partner Lawyer, LetsLaw",
-        "img": "https://www.sttok.com/images/logos/logo-letslaw-mini.png",
+        "img": "/logo-letslaw-mini.png",
         "description": "Sttok has automated a large part of corporate management, allowing us to offer better service to our clients.",
         "stars": 5
       }

@@ -288,49 +288,49 @@
         {
           "name": "Gerard Garcia",
           "role": "CEO | Deale",
-          "img": "https://www.sttok.com/images/logos/logo-deale-mini.png",
+          "img": "/logo-deale-mini.png",
           "description": "Sttok allows us to effectively manage employee incentive plans, shareholder books, operation simulations, and shareholder meetings.",
           "stars": 5
         },
         {
           "name": "Eric Gracia",
           "role": "Lawyer | Derecho.com",
-          "img": "https://www.sttok.com/images/logos/logo-derechocom-mini.png",
+          "img": "/logo-derechocom-mini.png",
           "description": "Sttok has allowed me to have all the commercial documentation of the companies I manage at hand. Gone are the Excel sheets and folders where it was difficult to keep track. The best thing is its usability, very intuitive and user-friendly.",
           "stars": 4
         },
         {
           "name": "Oriol Miralbell",
           "role": "CEO and Founder | Legal Pigeon",
-          "img": "https://www.sttok.com/images/logos/logo-legalpigeon-mini.png",
+          "img": "/logo-legalpigeon-mini.png",
           "description": "Sttok is an application that has come to make life easier for lawyers, companies, investors, and entrepreneurs. The application interface is simple and intuitive, which makes the process of keeping track of your company much easier.",
           "stars": 5
         },
         {
           "name": "Lucía Bauza",
           "role": "Head of Legal & Compliance | Factorial",
-          "img": "https://www.sttok.com/images/logos/logo-factorial-mini.png",
+          "img": "/logo-factorial-mini.png",
           "description": "To manage all the documentation of incentive plans, it has helped us digitize the process of creation, signing, and control of beneficiaries.",
           "stars": 5
         },
         {
           "name": "Eduardo Manchón",
           "role": "CEO | Mailtrack",
-          "img": "https://www.sttok.com/images/logos/logo-mailtrack-mini.png",
+          "img": "/logo-mailtrack-mini.png",
           "description": "Sttok serves us to have all the information about partners, deeds, and incentive plans of our company organized. It facilitates the management of the cap table and the relationship with investors.",
           "stars": 5
         },
         {
           "name": "Amalia Riboldi",
           "role": "Head of People & Culture | Yaba",
-          "img": "https://www.sttok.com/images/logos/logo-yaba-mini.png",
+          "img": "/logo-yaba-mini.png",
           "description": "Sttok was definitely our best option and is helping us with the management of Incentive Plans and with the transparency of corporate information with the Partners.",
           "stars": 5
         },
         {
           "name": "Toni de Weest",
           "role": "Partner Lawyer | Broseta",
-          "img": "https://www.sttok.com/images/logos/logo-broseta-mini.png",
+          "img": "/logo-broseta-mini.png",
           "description": "We use Sttok to digitally manage shareholder books efficiently, avoiding unnecessary manual tasks. This way we can focus on providing value to our clients.",
           "stars": 5
         },
@@ -343,7 +343,7 @@
         {
           "name": "Nacho González",
           "role": "CEO and Founder | Banktrack",
-          "img": "https://www.sttok.com/images/logos/logo-banktrack-mini.png",
+          "img": "/logo-banktrack-mini.png",
           "description": "Now with Sttok you can perform simulations of capital increases or convertible notes. We also easily manage our team's phantom shares. Finally, as an investor, I have my investees organized and I clearly know what I have.",
           "stars": 5
         }

@@ -63,7 +63,7 @@
       {
         "name": "Toni de Weest Prat",
         "role": "Abogado Socio, Broseta",
-        "img": "https://www.sttok.com/images/logos/logo-broseta-mini.png",
+        "img": "/logo-broseta-mini.png",
         "description": "Sttok nos permite gestionar libros de socios de forma eficiente, evitando tareas manuales inecesarias y enfocándonos en aportar valor a nuestros clientes.",
         "stars": 5
       },
@@ -76,7 +76,7 @@
       {
         "name": "Jose María Baños",
         "role": "Abogado Socio, LetsLaw",
-        "img": "https://www.sttok.com/images/logos/logo-letslaw-mini.png",
+        "img": "/logo-letslaw-mini.png",
         "description": "Sttok ha automatizado gran parte de la gestión de sociedades, permitiéndonos ofrecer un mejor servicio a nuestros clientes.",
         "stars": 5
       }

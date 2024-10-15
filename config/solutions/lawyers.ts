@@ -78,7 +78,7 @@ export const testimonials = {
     {
       name: "Toni de Weest Prat", // ej., "Juan Pérez"
       role: "Abogado Socio, Broseta", // ej., "CEO de Empresa A"
-      img: "https://www.sttok.com/images/logos/logo-broseta-mini.png", // ej., "https://ejemplo.com/juan-perez.jpg"
+      img: "/logo-broseta-mini.png", // ej., "https://ejemplo.com/juan-perez.jpg"
       description:
         "Sttok nos permite gestionar libros de socios de forma eficiente, evitando tareas manuales inecesarias y enfocándonos en aportar valor a nuestros clientes.", // ej., "Un testimonio brillante de Juan Pérez sobre nuestro producto"
       stars: 5, // ej., 5
@@ -93,7 +93,7 @@ export const testimonials = {
     {
       name: "Jose María Baños", // ej., "Roberto Rodríguez"
       role: "Abogado Socio, LetsLaw", // ej., "Fundador de Startup C"
-      img: "https://www.sttok.com/images/logos/logo-letslaw-mini.png", // ej., "https://ejemplo.com/roberto-rodriguez.jpg"
+      img: "/logo-letslaw-mini.png", // ej., "https://ejemplo.com/roberto-rodriguez.jpg"
       description:
         "Sttok ha automatizado gran parte de la gestión de sociedades, permitiéndonos ofrecer un mejor servicio a nuestros clientes.", // ej., "Cómo nuestro producto ayudó a crecer la startup de Roberto Rodríguez"
       stars: 5, // ej., 5

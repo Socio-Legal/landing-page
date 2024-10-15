@@ -120,7 +120,7 @@ export const testimonials = {
     {
       name: "Lucía Bouzá",
       role: "Head of Legal & Compliance | Factorial",
-      img: "https://www.sttok.com/images/logos/logo-factorial-mini.png",
+      img: "/logo-factorial-mini.png",
       description:
         "Sttok nos permite tener toda la información de socios y planes de incentivos centralizada y actualizada. Nos facilita la gestión de juntas y la relación con los inversores.",
       stars: 5,
@@ -128,7 +128,7 @@ export const testimonials = {
     {
       name: "Gerard Garcia",
       role: "CEO | Deale",
-      img: "https://www.sttok.com/images/logos/logo-deale-mini.png",
+      img: "/logo-deale-mini.png",
       description:
         "Sttok nos permite gestionar de forma efectiva planes de incentivos para empleados, libro de socios, simulación de operaciones y juntas de accionistas.",
       stars: 5,
@@ -136,7 +136,7 @@ export const testimonials = {
     {
       name: "Johan Longo",
       role: "Contract Manager | PLD Space",
-      img: "https://www.sttok.com/images/logos/logo-pld-mini.png",
+      img: "/logo-pld-mini.png",
       description:
         "Sttok nos sirve para poder tener organizada toda la información sobre socios, junas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
       stars: 5,
@@ -144,7 +144,7 @@ export const testimonials = {
     {
       name: "Nacho González",
       role: "CEO y Fundador | Banktrack",
-      img: "https://www.sttok.com/images/logos/logo-banktrack-mini.png",
+      img: "/logo-banktrack-mini.png",
       description:
         "Ahora con Sttok puedes realizar simulaciones de ampliaciones o notas convertibles. Además también gestionamos las phantoms de nuestro equipo fácilmente. Finalmente como inversor tengo organizadas mis participadas y conozco claramente qué es lo que tengo.",
       stars: 5,
