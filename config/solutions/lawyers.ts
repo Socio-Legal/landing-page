@@ -24,7 +24,7 @@ export const hero = {
 
 export const clients = {
   title: "Despachos de Abogados que confían en Sttok", // ej., "Nuestros Clientes de Confianza"
-  clients: ["Broseta", "DerechoCom", "LetsLaw"], // ej., ["Cliente1", "Cliente2", "Cliente3"]
+  clients: ["Multiverse", "DerechoCom", "LetsLaw"], // ej., ["Cliente1", "Cliente2", "Cliente3"]
 };
 
 export const features = {
@@ -75,14 +75,6 @@ export const testimonials = {
   title: "Lo que Dicen Nuestros Clientes", // ej., "Lo que Dicen Nuestros Clientes"
   description: "Empresas que ya han mejorado su gestión societaria con Sttok.", // ej., "Lee testimonios de clientes satisfechos"
   items: [
-    {
-      name: "Toni de Weest Prat", // ej., "Juan Pérez"
-      role: "Abogado Socio, Broseta", // ej., "CEO de Empresa A"
-      img: "/logo-broseta-mini.png", // ej., "https://ejemplo.com/juan-perez.jpg"
-      description:
-        "Sttok nos permite gestionar libros de socios de forma eficiente, evitando tareas manuales inecesarias y enfocándonos en aportar valor a nuestros clientes.", // ej., "Un testimonio brillante de Juan Pérez sobre nuestro producto"
-      stars: 5, // ej., 5
-    },
     {
       name: "Patricia Manca", // ej., "María García"
       role: "Socia responsable de NewLaw, PwC", // ej., "CTO de Empresa B"

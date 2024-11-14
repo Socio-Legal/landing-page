@@ -27,7 +27,7 @@ export const clients = {
   clients: [
     "PldSpace",
     "Factorial",
-    "Broseta",
+    "Multiverse",
     "Caballero",
     "Taxdown",
     "Yaba",
@@ -108,14 +108,6 @@ export const testimonials = {
       img: "/logo-factorial-mini.png", // ej., "https://ejemplo.com/juan-perez.jpg"
       description:
         "Sttok nos ha permitido digitalizar el proceso de creación y firma de documentos para nuestros planes de incentivos", // ej., "Un testimonio brillante de Juan Pérez sobre nuestro producto"
-      stars: 5, // ej., 5
-    },
-    {
-      name: "Toni de Weest", // ej., "Roberto Rodríguez"
-      role: "Abogado Socio, Broseta", // ej., "Fundador de Startup C"
-      img: "/logo-broseta-mini.png", // ej., "https://ejemplo.com/roberto-rodriguez.jpg"
-      description:
-        "Utilizamos Sttok para gestionar digitalmente libros de socios de forma eficiente evitando tareas manuales inecesarias.", // ej., "Cómo nuestro producto ayudó a crecer la startup de Roberto Rodríguez"
       stars: 5, // ej., 5
     },
     {

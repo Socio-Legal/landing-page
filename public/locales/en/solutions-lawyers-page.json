@@ -18,7 +18,7 @@
   },
   "clients": {
     "title": "Law Firms that trust Sttok",
-    "clients": ["Broseta", "DerechoCom", "LetsLaw"]
+    "clients": ["Multiverse", "DerechoCom", "LetsLaw"]
   },
   "features": {
     "title": "Key Features for Lawyers",
@@ -60,13 +60,6 @@
     "title": "What Our Clients Say",
     "description": "Companies that have already improved their corporate management with Sttok.",
     "items": [
-      {
-        "name": "Toni de Weest Prat",
-        "role": "Partner Lawyer, Broseta",
-        "img": "/logo-broseta-mini.png",
-        "description": "Sttok allows us to manage shareholder registers efficiently, avoiding unnecessary manual tasks and focusing on adding value to our clients.",
-        "stars": 5
-      },
       {
         "name": "Patricia Manca",
         "role": "Partner responsible for NewLaw, PwC",

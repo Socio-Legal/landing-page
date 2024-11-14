@@ -18,7 +18,7 @@
   },
   "clients": {
     "title": "Despachos de Abogados que confían en Sttok",
-    "clients": ["Broseta", "DerechoCom", "LetsLaw"]
+    "clients": ["Multiverse", "DerechoCom", "LetsLaw"]
   },
   "features": {
     "title": "Funcionalidades Clave para Abogados",
@@ -60,13 +60,6 @@
     "title": "Lo que Dicen Nuestros Clientes",
     "description": "Empresas que ya han mejorado su gestión societaria con Sttok.",
     "items": [
-      {
-        "name": "Toni de Weest Prat",
-        "role": "Abogado Socio, Broseta",
-        "img": "/logo-broseta-mini.png",
-        "description": "Sttok nos permite gestionar libros de socios de forma eficiente, evitando tareas manuales inecesarias y enfocándonos en aportar valor a nuestros clientes.",
-        "stars": 5
-      },
       {
         "name": "Patricia Manca",
         "role": "Socia responsable de NewLaw, PwC",

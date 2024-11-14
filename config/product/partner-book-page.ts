@@ -61,7 +61,7 @@ export const clients = {
     "Mailtrack",
     "Taxdown",
     "PldSpace",
-    "Broseta",
+    "Multiverse",
     "Caballero",
     "Barkibu",
     "DealCar",

@@ -21,7 +21,7 @@
     "clients": [
       "PldSpace",
       "Factorial",
-      "Broseta",
+      "Multiverse",
       "Caballero",
       "Taxdown",
       "Yaba",
@@ -89,13 +89,6 @@
         "role": "Head of Legal & Compliance, Factorial",
         "img": "/logo-factorial-mini.png",
         "description": "Sttok nos ha permitido digitalizar el proceso de creación y firma de documentos para nuestros planes de incentivos",
-        "stars": 5
-      },
-      {
-        "name": "Toni de Weest",
-        "role": "Abogado Socio, Broseta",
-        "img": "/logo-broseta-mini.png",
-        "description": "Utilizamos Sttok para gestionar digitalmente libros de socios de forma eficiente evitando tareas manuales inecesarias.",
         "stars": 5
       },
       {

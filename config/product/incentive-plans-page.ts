@@ -62,7 +62,7 @@ export const clients = {
     "Shakers",
     "Taxdown",
     "PldSpace",
-    "Broseta",
+    "Multiverse",
     "MyInvestor",
     "Yaba",
     "Barkibu",

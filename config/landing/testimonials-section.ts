@@ -56,14 +56,6 @@ export const items = [
     stars: 5,
   },
   {
-    name: "Toni de Weest",
-    role: "Abogado Socio | Broseta",
-    img: "/logo-broseta-mini.png",
-    description:
-      "Utilizamos Sttok para gestionar digitalmente libros de socios de forma eficiente evitando tareas manuales inecesarias. Así podemos centrarnos en aportar valor a nuestros clientes.",
-    stars: 5,
-  },
-  {
     name: "Patricia Manca",
     role: "Socia responsable de NewLaw en PwC Tax & Legal",
     description:

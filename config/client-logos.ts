@@ -16,6 +16,7 @@ import LegalPigeon from "@/public/logo-legalpigeon.png";
 import LetsLaw from "@/public/logo-letslaw.png";
 import Mailtrack from "@/public/logo-mailtrack.png";
 import MasterChef from "@/public/logo-masterchefworld.png";
+import Multiverse from "@/public/logo-multiverse.svg";
 import MyInvestor from "@/public/logo-myinvestor.png";
 import PldSpace from "@/public/logo-pldspace.png";
 import Psonrie from "@/public/logo-psonrie.png";
@@ -46,6 +47,7 @@ export const clientLogos = {
   Mailtrack: Mailtrack,
   MasterChef: MasterChef,
   MyInvestor: MyInvestor,
+  Multiverse: Multiverse,
   PldSpace: PldSpace,
   Psonrie: Psonrie,
   Pwc: Pwc,
