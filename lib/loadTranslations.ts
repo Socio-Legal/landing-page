@@ -28,6 +28,7 @@ import testimonialsCaballeroPage from "../public/locales/es/testimonials-caballe
 import testimonialsPldspacePage from "../public/locales/es/testimonials-pldspace-page.json";
 import testimonialsTaxdownPage from "../public/locales/es/testimonials-taxdown-page.json";
 import testimonialsYabaPage from "../public/locales/es/testimonials-yaba-page.json";
+import testimonialsMyInvestorPage from "../public/locales/es/testimonials-myinvestor-page.json";
 
 import pricingPage from "../public/locales/es/pricing-page.json";
 
@@ -100,6 +101,7 @@ const loadTranslations = (lang: "es" | "en") => {
       "testimonials-pldspace-page": testimonialsPldspacePage,
       "testimonials-taxdown-page": testimonialsTaxdownPage,
       "testimonials-yaba-page": testimonialsYabaPage,
+      "testimonials-myinvestor-page": testimonialsMyInvestorPage,
 
       "pricing-page": pricingPage,
 

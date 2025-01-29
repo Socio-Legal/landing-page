@@ -21,6 +21,7 @@ import * as DerechoCom from "@/config/testimonials/clients/DerechoCom";
 import * as Taxdown from "@/config/testimonials/clients/Taxdown";
 import * as Banktrack from "@/config/testimonials/clients/Banktrack";
 import * as Caballero from "@/config/testimonials/clients/Caballero";
+import * as MyInvestor from "@/config/testimonials/clients/MyInvestor";
 
 import CallToActionSection from "@/components/landing/cta-section";
 import { blurStyle01 } from "@/components/styles/blur-styles";
@@ -73,6 +74,7 @@ const testimonialPages = {
   Taxdown: Taxdown,
   Banktrack: Banktrack,
   Caballero: Caballero,
+  MyInvestor: MyInvestor,
 };
 
 const getOther2Testimonials = (client: string): TestimonialProps[] => {
@@ -98,6 +100,7 @@ const getOther2Testimonials = (client: string): TestimonialProps[] => {
 const Page: FC<PageProps> = ({ params }) => {
   const client: string = params.client;
   const namespaces = getTestimonialNamespaces(client as string);
+  console.log("🚀 cclog  ~ namespaces:", namespaces);
 
   const { t } = useTranslation(namespaces);
 
