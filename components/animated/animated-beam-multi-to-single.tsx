@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { AnimatedBeam } from "@/components/magicui/animated-beam";
 import { Icons as SttokIcons } from "@/components/icons";
 import { Icons } from "./icons";
+import { beamDefault } from "@/config/beams";
 
 const Circle = forwardRef<
   HTMLDivElement,
@@ -15,7 +16,7 @@ const Circle = forwardRef<
     <div
       ref={ref}
       className={cn(
-        "z-10 flex size-12 items-center justify-center rounded-full border-2 border-border bg-white p-3 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
+        "z-10 flex size-12 items-center justify-center rounded-full border-2 border-border bg-white p-1 shadow-[0_0_20px_-12px_rgba(0,0,0,0.8)]",
         className
       )}
     >
@@ -28,10 +29,14 @@ Circle.displayName = "Circle";
 
 type AnimatedBeamMultiToSingleProps = {
   className?: string;
+  icons?: React.ReactNode[];
 };
+
+const defaultIcons = beamDefault;
 
 export const AnimatedBeamMultiToSingle: FC<AnimatedBeamMultiToSingleProps> = ({
   className,
+  icons = defaultIcons,
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const div1Ref = useRef<HTMLDivElement>(null);
@@ -52,31 +57,18 @@ export const AnimatedBeamMultiToSingle: FC<AnimatedBeamMultiToSingleProps> = ({
     >
       <div className="flex size-full flex-row items-stretch justify-between gap-10 max-w-lg">
         <div className="flex flex-col justify-center gap-4">
-          <Circle ref={div1Ref}>
-            <Icons.googleDrive />
-          </Circle>
-          <Circle ref={div2Ref}>
-            <Icons.googleDocs />
-          </Circle>
-          {/* <Circle ref={div3Ref}>
-            <Icons.whatsapp />
-          </Circle> */}
-          <Circle ref={div4Ref}>
-            <Icons.messenger />
-          </Circle>
-          <Circle ref={div5Ref}>
-            <Icons.notion />
+          <Circle ref={div1Ref}>{icons[2]}</Circle>
+          <Circle ref={div2Ref}>{icons[3]}</Circle>
+          <Circle ref={div4Ref}>{icons[4]}</Circle>
+          <Circle ref={div5Ref}>{icons[5]}</Circle>
+        </div>
+        <div className="flex flex-col justify-center">
+          <Circle ref={div6Ref} className="size-16 p-3">
+            {icons[1]}
           </Circle>
         </div>
         <div className="flex flex-col justify-center">
-          <Circle ref={div6Ref} className="size-16">
-            <SttokIcons.logoMin />
-          </Circle>
-        </div>
-        <div className="flex flex-col justify-center">
-          <Circle ref={div7Ref}>
-            <Icons.user />
-          </Circle>
+          <Circle ref={div7Ref}>{icons[0]}</Circle>
         </div>
       </div>
 

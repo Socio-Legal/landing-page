@@ -102,7 +102,7 @@ export const testimonials = {
     {
       name: "Johan Longo",
       role: "Contract Manager | PLD Space",
-      img: "/logo-pld-mini.png",
+      img: "/logo-pldspace-mini.png",
       description:
         "Sttok nos sirve para poder tener organizada toda la información sobre socios, junas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
       stars: 5,

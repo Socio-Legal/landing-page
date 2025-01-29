@@ -25,7 +25,10 @@ export const AnimatedBeams = {
     />
   ),
   AnimatedBeam01_PartnerBook: (
-    <AnimatedBeamSingleToMultiOriginal className="border-0 p-0 h-[240px] mb-16 md:shadow-none" />
+    <AnimatedBeamSingleToMulti
+      className="border-0 p-0 h-[240px] mb-16 md:shadow-none"
+      icons={beamShareholderMeeting}
+    />
   ),
   AnimatedBeam02: (
     <AnimatedBeamMultiToSingle className="border-0 p-0 h-[240px] mb-16 md:shadow-none" />
