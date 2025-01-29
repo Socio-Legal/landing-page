@@ -7,6 +7,7 @@ export const getTestimonialNamespaces = (client: string): string[] => {
     "pldspace",
     "taxdown",
     "yaba",
+    "myinvestor",
   ];
 
   const specificNamespace = validClients.includes(client.toLowerCase())

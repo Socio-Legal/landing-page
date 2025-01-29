@@ -65,5 +65,12 @@ export const features = {
       description:
         "Banktrack es una empresa de software que ayuda a las empresas a gestionar sus operaciones financieras de forma eficiente.",
     },
+    {
+      icon: "",
+      logo: "MyInvestor",
+      title: "",
+      description:
+        "MyInvestor es una entidad financiera digital líder en España que opera como agente de Andbank.",
+    },
   ],
 };
