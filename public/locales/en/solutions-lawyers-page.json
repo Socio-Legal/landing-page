@@ -17,8 +17,15 @@
     }
   },
   "clients": {
-    "title": "Law Firms that trust Sttok",
-    "clients": ["Multiverse", "DerechoCom", "LetsLaw"]
+    "title": "Lawyers from these companies and law firms use Sttok",
+    "clients": [
+      "Multiverse",
+      "DerechoCom",
+      "LetsLaw",
+      "Factorial",
+      "PldSpace",
+      "LegalPigeon"
+    ]
   },
   "features": {
     "title": "Key Features for Lawyers",

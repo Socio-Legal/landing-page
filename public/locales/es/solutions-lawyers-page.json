@@ -17,8 +17,15 @@
     }
   },
   "clients": {
-    "title": "Despachos de Abogados que confían en Sttok",
-    "clients": ["Multiverse", "DerechoCom", "LetsLaw"]
+    "title": "Los abogados de estas empresas y despachos utilizan Sttok",
+    "clients": [
+      "Multiverse",
+      "DerechoCom",
+      "LetsLaw",
+      "Factorial",
+      "PldSpace",
+      "LegalPigeon"
+    ]
   },
   "features": {
     "title": "Funcionalidades Clave para Abogados",

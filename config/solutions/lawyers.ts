@@ -23,8 +23,15 @@ export const hero = {
 };
 
 export const clients = {
-  title: "Despachos de Abogados que confían en Sttok", // ej., "Nuestros Clientes de Confianza"
-  clients: ["Multiverse", "DerechoCom", "LetsLaw"], // ej., ["Cliente1", "Cliente2", "Cliente3"]
+  title: "Los abogados de estas empresas y despachos utilizan Sttok", // ej., "Nuestros Clientes de Confianza"
+  clients: [
+    "Multiverse",
+    "DerechoCom",
+    "LetsLaw",
+    "Factorial",
+    "PldSpace",
+    "LegalPigeon",
+  ], // ej., ["Cliente1", "Cliente2", "Cliente3"]
 };
 
 export const features = {
