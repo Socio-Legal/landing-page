@@ -5,22 +5,22 @@
     "keywords": "PLD, Sttok, PLD Space and Sttok, Shareholder Register, incentive plans, Sttok clients"
   },
   "summary": {
-    "client": "PldSpace",
+    "client": "PLD Space",
     "title": "PLD Space uses Sttok to manage relationships with its partners through the Investor Portal",
     "description": "",
     "quote": {
       "text": "'We use Sttok to manage relationships with our partners and investors. In addition to the main features such as shareholder register, shareholder meetings, incentive plans and board of directors, etc.'",
       "author": "-",
-      "position": "PldSpace"
+      "position": "PLD Space"
     },
     "button": {
-      "text": "Go to PldSpace's website",
+      "text": "Go to PLD Space's website",
       "link": "https://www.pldspace.com"
     },
     "features": [
       {
         "key": "Client",
-        "value": "PldSpace"
+        "value": "PLD Space"
       },
       {
         "key": "Since",
@@ -37,19 +37,19 @@
     ]
   },
   "content": {
-    "title": "PldSpace uses Sttok",
+    "title": "PLD Space uses Sttok",
     "image": {
       "light": "/hero/hero-testimonials-pld.png",
       "dark": "/hero/hero-testimonials-pld.png"
     },
     "sections": [
       {
-        "title": "A bit about PldSpace",
+        "title": "A bit about PLD Space",
         "texts": [
           "PLD Space is a pioneering Spanish company in the aerospace sector and a reference in Europe in the development of reusable launchers, with a reference trajectory in the sector and a solid development program. Through its family of MIURA space rockets (MIURA 1 and MIURA 5), PLD Space will position Spain among the small number of countries with the capacity to successfully send small satellites into space.",
           "Founded in 2011 by Raúl Torres and Raúl Verdú, PLD Space has a team of more than 200 people. The company is headquartered in Elche (Alicante) with technical facilities in Teruel, Huelva and French Guiana.",
           "On October 7, 2023, PLD Space made history after successfully completing the launch of a first private European rocket, MIURA 1.",
-          "In 2022, PldSpace closed a 120 million round, led by the Atomico fund and with the participation of investors such as Tiger Global, CRV, K-Fund and Creandum. PldSpace is considered a 'unicorn', a term used to describe startups that exceed $1 billion in valuation."
+          "In 2022, PLD Space closed a 120 million round, led by the Atomico fund and with the participation of investors such as Tiger Global, CRV, K-Fund and Creandum. PLD Space is considered a 'unicorn', a term used to describe startups that exceed $1 billion in valuation."
         ]
       },
       {
