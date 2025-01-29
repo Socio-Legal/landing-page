@@ -31,10 +31,16 @@ export const AnimatedBeams = {
     />
   ),
   AnimatedBeam02: (
-    <AnimatedBeamMultiToSingle className="border-0 p-0 h-[240px] mb-16 md:shadow-none" />
+    <AnimatedBeamMultiToSingle
+      className="border-0 p-0 h-[240px] mb-16 md:shadow-none"
+      icons={beamShareholderMeeting}
+    />
   ),
   AnimatedBeam03: (
-    <AnimatedBeamMultiToMulti className="border-0 p-0 h-[240px] mb-16 md:shadow-none" />
+    <AnimatedBeamMultiToMulti
+      className="border-0 p-0 h-[240px] mb-16 md:shadow-none"
+      icons={beamShareholderMeeting}
+    />
   ),
   AnimatedCloud: <AnimatedCloud />,
   AnimatedCard3: <AnimatedCard3 />,
