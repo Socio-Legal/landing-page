@@ -1,9 +1,9 @@
 export const summary = {
   client: "Grupo Caballero",
-  title: "Grupo Caballero gestiona Captable y Planes de Incentivos con Sttok",
+  title: "Grupo Caballero gestiona Captable y sus Socios con Sttok",
   description: "",
   quote: {
-    text: "“Sttok ha sido una herramienta clave para la gestión de nuestro Captable y Planes de Incentivos. Nos ha permitido automatizar tareas manuales y ahorrar tiempo en la generación de documentos y firmas electrónicas.”",
+    text: "“Sttok ha sido una herramienta clave para la gestión de nuestro Captable y Juntas de Socios. Nos ha permitido automatizar tareas manuales y ahorrar tiempo en la generación de documentos y firmas electrónicas.”",
     author: "...",
     position: "...",
   },
@@ -27,7 +27,7 @@ export const summary = {
     {
       key: "Funcionalidades",
       value:
-        "Captable, Planes de Incentivos, Generación de documentos, Firma automatizada, etc",
+        "Captable, Juntas de Socios, Generación de documentos, Firma automatizada, etc",
     },
   ],
 };
@@ -52,7 +52,7 @@ export const content = {
         "2. Por la automatización de tareas manuales.",
         "3. Por la gestión del Libro de Socios (Captable).",
         "4. Por la generación de documentos y firma automatizada.",
-        "5. Por la gestión de Planes de Incentivos.",
+        "5. Por la gestión de Juntas de Socios.",
       ],
     },
   ],
