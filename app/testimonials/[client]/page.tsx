@@ -100,7 +100,6 @@ const getOther2Testimonials = (client: string): TestimonialProps[] => {
 const Page: FC<PageProps> = ({ params }) => {
   const client: string = params.client;
   const namespaces = getTestimonialNamespaces(client as string);
-  console.log("🚀 cclog  ~ namespaces:", namespaces);
 
   const { t } = useTranslation(namespaces);
 
