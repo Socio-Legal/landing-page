@@ -36,6 +36,7 @@ type Feature = {
   logo: string;
   title?: string;
   description: string;
+  alt?: string;
 };
 
 type FeatureItemProps = {
@@ -61,7 +62,11 @@ const Feature: FC<FeatureItemProps> = ({ index, feature }) => {
   return (
     <>
       <div key={index} className="w-full sm:w-1/2 lg:w-1/3 text-left">
-        <Link key={featureLinkKey} href={featureLinkHref}>
+        <Link
+          key={featureLinkKey}
+          href={featureLinkHref}
+          title={feature.alt || ""}
+        >
           <div
             className="group relative overflow-hidden cursor-pointer px-6 py-8 text-center sm:py-10 lg:px-8 xl:px-13 xl:py-15
       hover:shadow-lg hover:transform hover:-translate-y-1 transition-transform duration-300 ease-in-out

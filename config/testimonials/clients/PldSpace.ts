@@ -9,6 +9,7 @@ export const metadata = {
 
 export const summary = {
   client: "PLD Space",
+  url: "PldSpace",
   title:
     "PLD Space utiliza Sttok para gestionar la relación con sus socios mediante el Portal del Inversor",
   description: "",

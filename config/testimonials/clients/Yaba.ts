@@ -5,6 +5,7 @@ export const metadata = {
   keywords:
     "Yaba, Sttok, yaba y Sttok, Libro de socios, planes de incentivos, clientes de sttok", // ej., "palabra_clave1, palabra_clave2, palabra_clave3"
 };
+
 export const summary = {
   client: "Yaba",
   title: "Yaba gestiona Captable y Planes de Incentivos con Sttok",

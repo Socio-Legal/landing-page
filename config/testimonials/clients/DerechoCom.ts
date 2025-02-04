@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "DerechoCom usa Sttok",
+  keywords: "derechocom, sttok, testimonio",
+  description: "DerechoCom gestiona Captable y Planes de Incentivos con Sttok",
+};
+
 export const summary = {
   client: "DerechoCom",
   title: "DerechoCom gestiona Captable y Planes de Incentivos con Sttok",

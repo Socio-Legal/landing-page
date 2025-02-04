@@ -1,3 +1,11 @@
+export const metadata = {
+  title: "Caballero utiliza Sttok para gestionar su libro de socios",
+  description:
+    "Caballero utiliza el software de Sttok para gestionar su libro de socios y accionistas.",
+  keywords:
+    "caballero, sttok, librr de socios, ponche caballero, libro accionistas, título acciones",
+};
+
 export const summary = {
   client: "Grupo Caballero",
   title: "Grupo Caballero gestiona Captable y sus Socios con Sttok",

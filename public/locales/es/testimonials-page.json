@@ -24,43 +24,50 @@
         "icon": "",
         "logo": "Factorial",
         "title": "",
-        "description": "Factorial es una empresa de software de recursos humanos que simplifica la gestión de las personas en las empresas."
+        "description": "Factorial es una empresa de software de recursos humanos que simplifica la gestión de las personas en las empresas.",
+        "alt": "Factorial gestiona Captable y Planes de Incentivos con Sttok"
       },
       {
         "icon": "",
         "logo": "PldSpace",
         "title": "",
-        "description": "PLD Space es una empresa española que desarrolla cohetes reutilizables para lanzar satélites al espacio."
+        "description": "PLD Space es una empresa española que desarrolla cohetes reutilizables para lanzar satélites al espacio.",
+        "alt": "PLD Space utiliza Sttok para gestionar la relación con sus socios mediante el Portal del Inversor"
       },
       {
         "icon": "",
         "logo": "Yaba",
         "title": "",
-        "description": "Yaba es una empresa de software que ayuda a las empresas a gestionar sus operaciones de forma eficiente."
+        "description": "Yaba es una empresa de software que ayuda a las empresas a gestionar sus operaciones de forma eficiente.",
+        "alt": "Yaba gestiona Captable y Planes de Incentivos con Sttok"
       },
       {
         "icon": "",
         "logo": "Caballero",
         "title": "",
-        "description": "El Grupo Caballero una empresa familiar fundada en 1830, radicada en el Puerto de Santa María en Cádiz, España"
+        "description": "El Grupo Caballero una empresa familiar fundada en 1830, radicada en el Puerto de Santa María en Cádiz, España",
+        "alt": "Grupo Caballero gestiona Captable y sus Socios con Sttok"
       },
       {
         "icon": "",
         "logo": "Taxdown",
         "title": "",
-        "description": "Taxdown es una empresa de software que ayuda a las personas a hacer la declaración de la renta de forma sencilla."
+        "description": "Taxdown es una empresa de software que ayuda a las personas a hacer la declaración de la renta de forma sencilla.",
+        "alt": "Taxdown gestiona Captable y Planes de Incentivos con Sttok"
       },
       {
         "icon": "",
         "logo": "Banktrack",
         "title": "",
-        "description": "Banktrack es una empresa de software que ayuda a las empresas a gestionar sus operaciones financieras de forma eficiente."
+        "description": "Banktrack es una empresa de software que ayuda a las empresas a gestionar sus operaciones financieras de forma eficiente.",
+        "alt": "Banktrack gestiona Captable y Planes de Incentivos con Sttok"
       },
       {
         "icon": "",
         "logo": "MyInvestor",
         "title": "",
-        "description": "MyInvestor es una entidad financiera digital líder en España que opera como agente de Andbank."
+        "description": "MyInvestor es una entidad financiera digital líder en España que opera como agente de Andbank.",
+        "alt": "MyInvestor digitaliza su gestión societaria con Sttok"
       }
     ]
   }

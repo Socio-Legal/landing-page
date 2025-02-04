@@ -1,3 +1,9 @@
+export const metadata = {
+  title: "Banktrack usa Sttok",
+  keywords: "Banktrack, testimonio, Sttok",
+  description: "Banktrack gestiona Captable y Planes de Incentivos con Sttok",
+};
+
 export const summary = {
   client: "Banktrack",
   title: "Banktrack gestiona Captable y Planes de Incentivos con Sttok",
