@@ -17,6 +17,7 @@ interface FooterLink {
   id: number;
   title: string;
   url: string;
+  alt?: string;
   isHeader?: boolean;
 }
 
@@ -79,7 +80,9 @@ export function SiteFooter() {
                         {t(link.title)}
                       </h2>
                     ) : (
-                      <a href={link.url}>{t(link.title)}</a>
+                      <a href={link.url} title={link.alt || ""}>
+                        {t(link.title)}
+                      </a>
                     )}
                     <ChevronRightIcon className="h-4 w-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100" />
                   </li>
