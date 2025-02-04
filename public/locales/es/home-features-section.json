@@ -11,25 +11,29 @@
       "icon": "Icon01",
       "title": "Libro de Socios (Captable)",
       "description": "Libro de socios digital para gestionar el equity. Actualizado sin errores.",
-      "link": "/libro-de-socios/"
+      "link": "/libro-de-socios/",
+      "alt": "Software para Libro de Socios"
     },
     {
       "icon": "Icon02",
       "title": "Planes de Incentivos",
       "description": "La forma más profesional de crear y mantener todo tipo de planes.",
-      "link": "/planes-de-incentivos/"
+      "link": "/planes-de-incentivos/",
+      "alt": "Software para Planes de Incentivos"
     },
     {
       "icon": "Icon03",
       "title": "Simulador de Operaciones",
       "description": "Calcula todo tipo de operaciones con los datos reales actualizados.",
-      "link": "/simulador/"
+      "link": "/simulador/",
+      "alt": "Software para Simulador de Operaciones"
     },
     {
       "icon": "Icon04",
       "title": "Juntas Accionistas",
       "description": "Gestiona las juntas: Convocatoria, delegaciones, votos, etc.",
-      "link": "/juntas-consejos/"
+      "link": "/juntas-consejos/",
+      "alt": "Software para Juntas Accionistas"
     },
     {
       "icon": "Icon05",
@@ -44,7 +48,9 @@
     {
       "icon": "Icon07",
       "title": "Grupos de Sociedades",
-      "description": "Todas las sociedades bajo un sistema digital de gestión."
+      "description": "Todas las sociedades bajo un sistema digital de gestión.",
+      "link": "/empresas",
+      "alt": "Software para Grupos de Sociedades"
     },
     {
       "icon": "Icon08",

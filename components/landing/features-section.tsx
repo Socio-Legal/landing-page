@@ -38,6 +38,7 @@ export type FeatureItem = {
   title: string;
   description: string;
   link?: string;
+  alt?: string;
 };
 
 interface FeatureProps {
@@ -79,7 +80,7 @@ const Feature: FC<FeatureProps> = ({ index, feature }) => (
 const FeatureWithLink: FC<FeatureProps> = ({ index, feature }) => (
   <>
     <div key={index} className="w-full sm:w-1/2 lg:w-1/3 text-left">
-      <Link href={feature.link || ""}>
+      <Link href={feature.link || ""} title={feature.alt}>
         <div
           className="group relative overflow-hidden cursor-pointer px-6 py-8 text-center sm:py-10 lg:px-8 xl:px-13 xl:py-15
       hover:shadow-lg hover:transform hover:-translate-y-1 transition-transform duration-300 ease-in-out"
