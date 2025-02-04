@@ -1,7 +1,7 @@
 import { routes } from "../routes";
 
 export const metadata = {
-  title: "Sttok para Abogados", // ej., "Nombre del Producto"
+  title: "Software para Abogados Gestión Libro de Socios", // ej., "Nombre del Producto"
   description:
     "Software gestión sociedades para Abogados. Sttok te permite gestionar el libro de socios, planes de incentivos, juntas de accionistas, consejos de administración, etc.", // ej., "Una breve descripción del producto o servicio"
   keywords:

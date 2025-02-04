@@ -1,7 +1,7 @@
 import { routes } from "../routes";
 
 export const metadata = {
-  title: "Portal del Inversor", // ej., "Nombre del Producto"
+  title: "Software para Portal del Inversor", // ej., "Nombre del Producto"
   description:
     "Descubre las soluciones que ofrecemos para los inversores y empresas para dar acceso a sus accionistas", // ej., "Una breve descripción del producto o servicio"
   keywords:

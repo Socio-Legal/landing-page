@@ -1,7 +1,7 @@
 import { routes } from "../routes";
 
 export const metadata = {
-  title: "Sttok para Startups", // ej., "Nombre del Producto"
+  title: "Software Captable para Startups", // ej., "Nombre del Producto"
   description:
     "Soluciones de captable, planes incentivos y mucho más para tu startup", // ej., "Una breve descripción del producto o servicio"
   keywords: "startup, sttok, captable, phantoms, incentivos, beneficiarios ", // ej., "palabra_clave1, palabra_clave2, palabra_clave3"
