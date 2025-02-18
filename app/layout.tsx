@@ -1,21 +1,21 @@
 "use client";
 
-import { I18nextProvider } from "react-i18next";
-import type { Metadata } from "next";
-import { Inter as FontSans } from "next/font/google";
-import { GoogleTagManager } from "@next/third-parties/google";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
-import { ThemeProvider } from "@/components/theme-provider";
-import { MenuProvider } from "@/components/contexts/MenuContext";
-import { Toaster } from "@/components/ui/sonner";
-import { cn } from "@/lib/utils";
+import { usePathname } from "next/navigation";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { I18nextProvider } from "react-i18next";
+import { GoogleTagManager } from "@next/third-parties/google";
+import { Inter as FontSans } from "next/font/google";
+
 import i18n from "@/lib/i18n";
+import { cn } from "@/lib/utils";
+import { Toaster } from "@/components/ui/sonner";
+import { MenuProvider } from "@/components/contexts/MenuContext";
+import { ThemeProvider } from "@/components/theme-provider";
 
 import "./globals.css";
 import { useEffect, useState } from "react";
-import { usePathname } from "next/navigation";
-import Script from "next/script";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -72,15 +72,15 @@ export default function RootLayout({
           <SpeedInsights />
           <Analytics />
           <Toaster />
-        </ThemeProvider>
 
-        <Script
-          id="Cookiebot"
-          src="https://consent.cookiebot.com/uc.js"
-          data-cbid="7f81f189-cd77-4a4b-9728-d58e81f20737"
-          data-blockingmode="auto"
-          strategy="beforeInteractive"
-        />
+          <Script
+            id="Cookiebot"
+            src="https://consent.cookiebot.com/uc.js"
+            data-cbid="7f81f189-cd77-4a4b-9728-d58e81f20737"
+            data-blockingmode="auto"
+            strategy="beforeInteractive"
+          />
+        </ThemeProvider>
       </body>
     </html>
   );
