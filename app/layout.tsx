@@ -15,6 +15,7 @@ import i18n from "@/lib/i18n";
 import "./globals.css";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+import Script from "next/script";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -72,6 +73,14 @@ export default function RootLayout({
           <Analytics />
           <Toaster />
         </ThemeProvider>
+
+        <Script
+          id="Cookiebot"
+          src="https://consent.cookiebot.com/uc.js"
+          data-cbid="7f81f189-cd77-4a4b-9728-d58e81f20737"
+          data-blockingmode="auto"
+          strategy="beforeInteractive"
+        />
       </body>
     </html>
   );
