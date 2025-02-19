@@ -52,6 +52,17 @@ export default function RootLayout({
 
   return (
     <html lang={i18n.language} suppressHydrationWarning>
+      <head>
+        <Script
+          async={true}
+          data-blockingmode="auto"
+          data-cbid="7f81f189-cd77-4a4b-9728-d58e81f20737"
+          id="Cookiebot"
+          src="https://consent.cookiebot.com/uc.js"
+          strategy="beforeInteractive"
+          type="text/javascript"
+        />
+      </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
@@ -72,14 +83,6 @@ export default function RootLayout({
           <SpeedInsights />
           <Analytics />
           <Toaster />
-
-          <Script
-            id="Cookiebot"
-            src="https://consent.cookiebot.com/uc.js"
-            data-cbid="7f81f189-cd77-4a4b-9728-d58e81f20737"
-            data-blockingmode="auto"
-            strategy="beforeInteractive"
-          />
         </ThemeProvider>
       </body>
     </html>
