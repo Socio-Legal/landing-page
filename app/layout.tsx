@@ -1,6 +1,5 @@
 "use client";
 
-import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
 import { usePathname } from "next/navigation";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -53,14 +52,23 @@ export default function RootLayout({
   return (
     <html lang={i18n.language} suppressHydrationWarning>
       <head>
-        <Script
-          async={true}
-          data-blockingmode="auto"
-          data-cbid="7f81f189-cd77-4a4b-9728-d58e81f20737"
+        <script
           id="Cookiebot"
           src="https://consent.cookiebot.com/uc.js"
-          strategy="beforeInteractive"
+          data-cbid="7f81f189-cd77-4a4b-9728-d58e81f20737"
+          data-blockingmode="auto"
           type="text/javascript"
+          async
+        />
+        {/* Add this line for the CookieBot declaration */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.addEventListener('CookiebotOnLoad', function () {
+              console.log('CookieBot loaded');
+            });
+          `,
+          }}
         />
       </head>
       <body
