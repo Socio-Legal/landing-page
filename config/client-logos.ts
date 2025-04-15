@@ -1,3 +1,4 @@
+import Axa from "@/public/logo-axa-border.png";
 import Andbank from "@/public/logo-andbank.png";
 import Banktrack from "@/public/logo-banktrack.png";
 import Barkibu from "@/public/logo-barkibu.png";
@@ -28,6 +29,7 @@ import Yaba from "@/public/logo-yaba.png";
 type ClientLogo = keyof typeof clientLogos | string;
 
 export const clientLogos = {
+  Axa: Axa,
   Andbank: Andbank,
   Banktrack: Banktrack,
   Barkibu: Barkibu,

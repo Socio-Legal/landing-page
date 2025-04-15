@@ -27,6 +27,7 @@ export const clients = {
   clients: [
     "PldSpace",
     "Factorial",
+    "Axa",
     "MyInvestor",
     "Deale",
     "Yaba",
