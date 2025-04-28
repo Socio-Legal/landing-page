@@ -1,7 +1,3 @@
-import { Icons } from "@/components/icons";
-import { FaTwitter } from "react-icons/fa";
-import { FaYoutube } from "react-icons/fa6";
-import { RiInstagramFill } from "react-icons/ri";
 import { routes } from "./routes";
 
 export const BLUR_FADE_DELAY = 0.15;
@@ -185,6 +181,11 @@ export const siteConfig = {
           alt: "Testimonios y casos de éxito",
         },
         { id: 12, title: "menu.Pricing", url: routes.PRICING },
+        {
+          id: 121,
+          title: "menu.Resources",
+          url: routes.APP_BLOG,
+        },
       ],
       [
         // TODO: create legal pages
