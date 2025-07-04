@@ -210,7 +210,12 @@ export const siteConfig = {
         },
       ],
     ],
-    logos: ["/logo-gdpr-compliant.png", "/logo-iso-27001.png", "/logo-ssl.png"],
+    logos: [
+      "/logo-gdpr-compliant.png",
+      "/logo-iso-27001.png",
+      "/logo-ssl.png",
+      "/logo-bureau-veritas.png",
+    ],
     social: [
       {
         icon: "LinkedIn",
