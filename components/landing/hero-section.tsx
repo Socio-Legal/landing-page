@@ -121,20 +121,26 @@ export default function HeroSection() {
               {lightImage && (
                 <Image
                   alt="Hero image"
-                  className="aspect-video object-cover rounded-lg hidden relative w-full h-full rounded-[inherit] border object-contain dark:block"
-                  height="420"
+                  className="aspect-video object-cover rounded-lg block relative w-full h-full rounded-[inherit] border dark:hidden"
                   src={lightImage}
-                  width="550"
+                  height={0}
+                  width={0}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  style={{ width: "100%", height: "auto" }}
+                  priority
                 />
               )}
 
               {darkImage && (
                 <Image
                   alt="Hero image"
-                  className="aspect-video object-cover rounded-lg block relative w-full h-full  rounded-[inherit] border object-contain dark:hidden"
-                  height="420"
+                  className="aspect-video object-cover rounded-lg hidden relative w-full h-full rounded-[inherit] border dark:block"
                   src={darkImage}
-                  width="550"
+                  height={0}
+                  width={0}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  style={{ width: "100%", height: "auto" }}
+                  priority
                 />
               )}
             </div>

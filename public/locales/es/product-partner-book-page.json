@@ -12,8 +12,8 @@
       "link": "https://app.sttok.com/#/demo"
     },
     "image": {
-      "light": "/hero/hero-product-libro-de-socios.png",
-      "dark": "/hero/hero-product-libro-de-socios.png"
+      "light": "/hero/hero-product-libro-de-socios-dark.png",
+      "dark": "/hero/hero-product-libro-de-socios-light.png"
     }
   },
   "topFeatures": {
