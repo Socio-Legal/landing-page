@@ -12,8 +12,8 @@
       "link": "https://app.sttok.com/#/demo"
     },
     "image": {
-      "light": "/hero/hero-product.png",
-      "dark": "/hero/hero-product.png"
+      "light": "/hero/hero-product-dark.png",
+      "dark": "/hero/hero-product-light.png"
     }
   },
   "items": [

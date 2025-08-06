@@ -120,17 +120,24 @@ const HeroSection: FC<HeroSectionProps> = ({
 
               <Image
                 alt="Hero image"
-                className="aspect-video object-cover rounded-lg hidden relative w-full h-full rounded-[inherit] border object-contain dark:block"
-                height="420"
-                src={image?.dark || ""}
-                width="550"
+                className="aspect-video object-cover rounded-lg block relative w-full h-full rounded-[inherit] border dark:hidden"
+                src={image?.light || ""}
+                height={0}
+                width={0}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                style={{ width: "100%", height: "auto" }}
+                priority
               />
+
               <Image
                 alt="Hero image"
-                className="aspect-video object-cover rounded-lg block relative w-full h-full  rounded-[inherit] border object-contain dark:hidden"
-                height="420"
-                src={image?.light || ""}
-                width="550"
+                className="aspect-video object-cover rounded-lg hidden relative w-full h-full rounded-[inherit] border dark:block"
+                src={image?.dark || ""}
+                height={0}
+                width={0}
+                sizes="(max-width: 768px) 100vw, 50vw"
+                style={{ width: "100%", height: "auto" }}
+                priority
               />
             </div>
           </div>
