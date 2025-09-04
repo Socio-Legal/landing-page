@@ -1,0 +1,54 @@
+{
+  "language": {
+    "selectLanguage": "Seleccionar Idioma",
+    "english": "Anglès",
+    "spanish": "Espanyol",
+    "catalan": "Català"
+  },
+  "banner": {
+    "title": "Sttok ja disponible a AWS Marketplace",
+    "description": "Descobreix la nova manera de gestionar la teva societat!"
+  },
+  "menu": {
+    "Product": "Producte",
+    "ProductTitle": "Digital i Automatitzat",
+    "ProductDescription": "Aprofita l'automatització digital per a la teva societat.",
+    "PartnersTitle": "Llibre de Socis",
+    "Partnersdescription": "Captable, Llibre de Socis oficial, %, accés dels socis",
+    "PlansTitle": "Plans d'Incentius",
+    "PlansDescription": "Phantoms, stock options, accés empleats, vesting, etc",
+    "BoardsTitle": "Juntes i Consells",
+    "BoardsDescription": "Convocatòria digital, delegacions, votacions, signatura de documents, etc",
+    "DraftsTitle": "Simulador Operacions",
+    "DraftsDescription": "Càlcul de rondes, ampliacions, notes convertibles, etc",
+    "Solutions": "Solucions",
+    "SolutionsTitle": "Solucions",
+    "CompaniesTitle": "Empresa i Grups Societaris",
+    "CompaniesDescription": "Digitalitza la gestió societària de la Societat: Llibre de socis, Juntes d'Accionistes, Documentació Societària, Apoderats, etc.",
+    "LawyersTitle": "Advocats",
+    "LawyersDescription": "Optimitza el teu temps amb la gestió digital de societats. Estalvia temps i evita errors. Automatitza tasques manuals i incrementa la productivitat.",
+    "StartupsTitle": "Startups",
+    "StartupsDescription": "Captable, Plans d'Incentius, Simulador d'ampliacions, notes convertibles, juntes d'accionistes, sindicació de socis, etc.",
+    "InvestorPortalTitle": "Portal de l'Inversor",
+    "InvestorPortalDescription": "Dona accés als teus inversors a una plataforma on tindran tota la informació que els vulguis facilitar.",
+    "InvestorsTitle": "Inversors",
+    "InvestorsDescription": "Accés des d'una única plataforma als dades de societats participades. Informació real sense utilitzar excels desactualitzats.",
+    "Testimonials": "Testimonis",
+    "Pricing": "Preus",
+    "Resources": "Recursos",
+    "Others": "Altres",
+    "Legal": "Legal",
+    "LegalWarning": "Avís Legal i CGC",
+    "Privacy": "Privacitat i Cookies",
+    "Security": "Política de Seguretat"
+  },
+  "cta": {
+    "login": "Iniciar sessió",
+    "demo": "Sol·licitar demo"
+  },
+  "testimonials": {
+    "goBackToTestimonials": "Tornar a Testimonis"
+  },
+  "sttokTitle": "Software de Gestió de Societats",
+  "allRightsReserved": "Tots els drets reservats"
+}
