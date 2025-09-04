@@ -1,0 +1,380 @@
+{
+  "common": {
+    "language": {
+      "selectLanguage": "Seleccionar Idioma",
+      "english": "Anglès",
+      "spanish": "Espanyol",
+      "catalan": "Català"
+    },
+    "banner": {
+      "title": "Sttok ja disponible a AWS Marketplace",
+      "description": "Descobreix la nova manera de gestionar la teva societat!"
+    },
+    "menu": {
+      "Product": "Producte",
+      "ProductTitle": "Digital i Automatitzat",
+      "ProductDescription": "Aprofita l'automatització digital per a la teva societat.",
+      "PartnersTitle": "Llibre de Socis",
+      "Partnersdescription": "Captable, Llibre de Socis oficial, %, accés dels socis",
+      "PlansTitle": "Plans d'Incentius",
+      "PlansDescription": "Phantoms, stock options, accés empleats, vesting, etc",
+      "BoardsTitle": "Juntes i Consells",
+      "BoardsDescription": "Convocatòria digital, delegacions, votacions, signatura de documents, etc",
+      "DraftsTitle": "Simulador Operacions",
+      "DraftsDescription": "Càlcul de rondes, ampliacions, notes convertibles, etc",
+      "Solutions": "Solucions",
+      "SolutionsTitle": "Solucions",
+      "CompaniesTitle": "Empresa i Grups Societaris",
+      "CompaniesDescription": "Digitalitza la gestió societària de la Societat: Llibre de socis, Juntes d'Accionistes, Documentació Societària, Apoderats, etc.",
+      "LawyersTitle": "Advocats",
+      "LawyersDescription": "Optimitza el teu temps amb la gestió digital de societats. Estalvia temps i evita errors. Automatitza tasques manuals i incrementa la productivitat.",
+      "StartupsTitle": "Startups",
+      "StartupsDescription": "Captable, Plans d'Incentius, Simulador d'ampliacions, notes convertibles, juntes d'accionistes, sindicació de socis, etc.",
+      "InvestorPortalTitle": "Portal de l'Inversor",
+      "InvestorPortalDescription": "Dona accés als teus inversors a una plataforma on tindran tota la informació que els vulguis facilitar.",
+      "InvestorsTitle": "Inversors",
+      "InvestorsDescription": "Accés des d'una única plataforma als dades de societats participades. Informació real sense utilitzar excels desactualitzats.",
+      "Testimonials": "Testimonis",
+      "Pricing": "Preus",
+      "Resources": "Recursos",
+      "Others": "Altres",
+      "Legal": "Legal",
+      "LegalWarning": "Avís Legal i CGC",
+      "Privacy": "Privacitat i Cookies",
+      "Security": "Política de Seguretat"
+    },
+    "cta": {
+      "login": "Iniciar sessió",
+      "demo": "Sol·licitar demo"
+    },
+    "testimonials": {
+      "goBackToTestimonials": "Tornar a Testimonis"
+    },
+    "sttokTitle": "Software de Gestió de Societats",
+    "allRightsReserved": "Tots els drets reservats"
+  },
+  "home": {
+    "hero": {
+      "title": "Software per a Gestió de Societats",
+      "description": "Captable (llibres de socis), plans d'incentius, phantoms, juntes i consells, simulador d'ampliacions i rondes, secundaris, etc.",
+      "button": {
+        "text": "Prova-ho ara",
+        "link": "https://app.sttok.com/#/demo"
+      },
+      "image": {
+        "light": "hero/hero-dark.png",
+        "dark": "hero/hero-dark.png"
+      }
+    },
+    "clients": {
+      "header": {
+        "slogan": "",
+        "title": "",
+        "description": "ALGUNS DELS NOSTRES CLIENTS",
+        "buttonText": "",
+        "buttonLink": ""
+      },
+      "companies": [
+        "Factorial",
+        "Yaba",
+        "Multiverse",
+        "DerechoCom",
+        "Taxdown",
+        "Deale",
+        "PldSpace",
+        "Keybotic",
+        "MyInvestor",
+        "Shakers",
+        "Caballero",
+        "MasterChef",
+        "Cabiedes",
+        "Incapto",
+        "LegalPigeon",
+        "Criptan",
+        "Barkibu",
+        "DealCar"
+      ]
+    },
+    "cta": {
+      "header": {
+        "slogan": "",
+        "title": "Software de Gestió de Societats",
+        "description": "Coneix com Sttok pot ajudar-te en la gestió societària segons les teves necessitats i estalvia temps i evita errors amb el software líder en gestió de societats.",
+        "buttonText": "Veure funcionalitats",
+        "buttonLink": "/producte/",
+        "secondaryButtonText": "Programar demo",
+        "secondaryButtonLink": "https://calendly.com/sttok/30min"
+      }
+    },
+    "features": {
+      "header": {
+        "slogan": "Software complet",
+        "title": "Funcionalitats per a gestió societària",
+        "description": "Reunim totes les funcionalitats per gestionar digitalment societats. Disposaràs de les dades i informació exacta i sempre actualitzada.",
+        "buttonText": "Veure funcionalitats",
+        "buttonLink": "/producte"
+      },
+      "items": [
+        {
+          "icon": "Icon01",
+          "title": "Llibre de Socis (Captable)",
+          "description": "Llibre de socis digital per gestionar l'equity. Actualitzat sense errors.",
+          "link": "/llibre-de-socis/"
+        },
+        {
+          "icon": "Icon02",
+          "title": "Plans d'Incentius",
+          "description": "La forma més professional de crear i mantenir tot tipus de plans.",
+          "link": "/plans-dincentius/"
+        },
+        {
+          "icon": "Icon03",
+          "title": "Simulador d'Operacions",
+          "description": "Calcula tot tipus d'operacions amb les dades reals actualitzades.",
+          "link": "/simulador/"
+        },
+        {
+          "icon": "Icon04",
+          "title": "Juntes Accionistes",
+          "description": "Gestiona les juntes: Convocatòria, delegacions, vots, etc.",
+          "link": "/juntes-consells/"
+        },
+        {
+          "icon": "Icon05",
+          "title": "Ofertes de Compra",
+          "description": "Gestiona i executa operacions de secundari. Tender offers."
+        },
+        {
+          "icon": "Icon06",
+          "title": "Documentació Societària",
+          "description": "Genera documents, escriptures, certificats o actes en segons."
+        },
+        {
+          "icon": "Icon07",
+          "title": "Grups de Societats",
+          "description": "Totes les societats sota un sistema digital de gestió."
+        },
+        {
+          "icon": "Icon08",
+          "title": "Consells d'Administració",
+          "description": "Gestiona digitalment la convocatòria, delegacions, vots, etc."
+        },
+        {
+          "icon": "Icon09",
+          "title": "Signatura Electrònica Integrada",
+          "description": "Signatura electrònica integrada per a tots els documents i operacions."
+        }
+      ]
+    },
+    "pricing": {
+      "header": {
+        "slogan": "Preus",
+        "title": "Plans a la teva mida",
+        "description": "Estalvia temps automatitzant tasques manuals, evita errors, disposa de dades sempre actualitzades. Aporta valor a tots els stakeholders.",
+        "buttonText": "",
+        "buttonLink": ""
+      },
+      "config": {
+        "switchLabel": "",
+        "suscribeLabel": "Subscriure's",
+        "suscribingLabel": "Subscrivint"
+      },
+      "items": [
+        {
+          "id": "price_1",
+          "name": "Bàsic",
+          "description": "Societats fins a 10 socis o beneficiaris",
+          "features": [
+            "Llibre de Socis",
+            "Plans Incentius",
+            "Simulador rondes"
+          ],
+          "monthlyPrice": 4000,
+          "yearlyPrice": 45000,
+          "isMostPopular": false
+        },
+        {
+          "id": "price_2",
+          "name": "Avançat",
+          "description": "Societats fins a 20 socis o beneficiaris",
+          "features": [
+            "Llibre de Socis",
+            "Plans Incentius",
+            "Simulador rondes",
+            "Juntes de socis",
+            "Consells administració",
+            "Signatura electrònica integrada"
+          ],
+          "monthlyPrice": 6000,
+          "yearlyPrice": 65000,
+          "isMostPopular": true
+        },
+        {
+          "id": "price_5",
+          "name": "Pro",
+          "description": "Societats fins a 50 socis o beneficiaris",
+          "features": [
+            "Llibre de Socis",
+            "Plans Incentius",
+            "Simulador rondes",
+            "Juntes de socis",
+            "Consells administració",
+            "Signatura electrònica integrada"
+          ],
+          "monthlyPrice": 8000,
+          "yearlyPrice": 85000,
+          "isMostPopular": false
+        }
+      ]
+    },
+    "products": {
+      "header": {
+        "slogan": "Productes",
+        "title": "Descobreix les nostres funcionalitats",
+        "description": "Sttok és una plataforma dissenyada per a empreses, advocats i startups que busquen una solució integral per a la gestió de societats.",
+        "buttonText": "Veure funcionalitats",
+        "buttonLink": "#"
+      },
+      "items": [
+        {
+          "id": 1,
+          "title": "Socis",
+          "content": "Captable, Llibre de Socis oficial, %, accés dels socis, etc",
+          "image": {
+            "light": "/sttok-products-shareholders-dark.png",
+            "dark": "/sttok-products-shareholders-dark.png"
+          },
+          "icon": "BarChart3"
+        },
+        {
+          "id": 2,
+          "title": "Plans d'Incentius",
+          "content": "Phantoms, stock options, accés empleats, vesting, etc",
+          "image": {
+            "light": "/sttok-products-incentive-plans-dark.png",
+            "dark": "/sttok-products-incentive-plans-dark.png"
+          },
+          "icon": "Brain"
+        },
+        {
+          "id": 3,
+          "title": "Juntes i Consells",
+          "content": "Convocatòria digital, delegacions, votacions, etc",
+          "image": {
+            "light": "/sttok-products-boards-dark.png",
+            "dark": "/sttok-products-boards-dark.png"
+          },
+          "icon": "LineChart"
+        },
+        {
+          "id": 4,
+          "title": "Simulador d'Operacions",
+          "content": "Càlcul de rondes, ampliacions, notes convertibles, etc",
+          "image": {
+            "light": "/sttok-products-simulator-dark.png",
+            "dark": "/sttok-products-simulator-dark.png"
+          },
+          "icon": "FileText"
+        }
+      ]
+    },
+    "testimonials": {
+      "header": {
+        "slogan": "Testimonis",
+        "title": "Els nostres clients opinen",
+        "description": "",
+        "buttonText": "",
+        "buttonLink": ""
+      },
+      "items": [
+        {
+          "name": "Gerard Garcia",
+          "role": "CEO | Deale",
+          "img": "/logo-deale-mini.png",
+          "description": "Sttok ens permet gestionar de forma efectiva plans d'incentius per a empleats, llibre de socis, simulació d'operacions i juntes d'accionistes.",
+          "stars": 5
+        },
+        {
+          "name": "Eric Gracia",
+          "role": "Advocat | Derecho.com",
+          "img": "/logo-derechocom-mini.png",
+          "description": "Sttok m'ha permès tenir tota la documentació mercantil de les societats que gestiono a mà. Queden enrere Excels i carpetes on costava fer seguiment. El millor és la seva usabilitat, molt intuïtiu i user-friendly.",
+          "stars": 4
+        },
+        {
+          "name": "Oriol Miralbell",
+          "role": "CEO i Fundador | Legal Pigeon",
+          "img": "/logo-legalpigeon-mini.png",
+          "description": "Sttok és una aplicació que ha arribat per facilitar la vida d'advocats, empreses, inversors i emprenedors. La interfície de l'aplicació és senzilla i intuïtiva, cosa que fa que el procés de portar un seguiment de la teva societat sigui molt més fàcil.",
+          "stars": 5
+        },
+        {
+          "name": "Lucía Bauza",
+          "role": "Head of Legal & Compliance | Factorial",
+          "img": "/logo-factorial-mini.png",
+          "description": "Per gestionar tota la documentació de plans d'incentius ens ha ajudat a digitalitzar el procés de creació, signatura i control dels beneficiaris.",
+          "stars": 5
+        },
+        {
+          "name": "Eduardo Manchón",
+          "role": "CEO | Mailtrack",
+          "img": "/logo-mailtrack-mini.png",
+          "description": "Sttok ens serveix per poder tenir organitzada tota la informació sobre socis, escriptures i plans d'incentius de la nostra empresa. Ens facilita la gestió del captable i la relació amb els inversors.",
+          "stars": 5
+        },
+        {
+          "name": "Amalia Riboldi",
+          "role": "Head of People & Cultura | Yaba",
+          "img": "/logo-yaba-mini.png",
+          "description": "Sttok definitivament va ser la nostra millor opció i ens està ajudant amb la gestió dels Plans d'Incentius i amb la transparència de la informació societària amb els Socis.",
+          "stars": 5
+        },
+        {
+          "name": "Patricia Manca",
+          "role": "Sòcia responsable de NewLaw a PwC Tax & Legal",
+          "description": "Sttok permet la gestió digital de societats, llibres de socis, plans d'incentius, juntes, etc. Sttok ha participat en el programa d'acceleració de startups de PwC Tax & Legal, el 'Tax and Legal Tech Springboard' creat amb l'objectiu d'impulsar, al mercat espanyol, solucions legaltech i taxtech.",
+          "stars": 5
+        },
+        {
+          "name": "Nacho González",
+          "role": "CEO i Fundador | Banktrack",
+          "img": "/logo-banktrack-mini.png",
+          "description": "Ara amb Sttok pots realitzar simulacions d'ampliacions o notes convertibles. A més també gestionem les phantoms del nostre equip fàcilment. Finalment com a inversor tinc organitzades les meves participades i conec clarament què és el que tinc.",
+          "stars": 5
+        }
+      ]
+    },
+    "uses": {
+      "header": {
+        "slogan": "Usuaris",
+        "title": "Qui utilitza Sttok?",
+        "description": "Sttok és una plataforma dissenyada per a empreses, advocats i startups que busquen una solució integral per a la gestió de societats.",
+        "buttonText": null,
+        "buttonLink": null
+      },
+      "items": [
+        {
+          "id": 1,
+          "title": "Empreses i Societats",
+          "content": "Gestió digital de societats. Llibre de soci actualitzat. Generació automàtica de documents. Estalvia temps i evita errors.",
+          "image": "/who-uses-sttok-companies.png",
+          "icon": "Building2"
+        },
+        {
+          "id": 2,
+          "title": "Advocats",
+          "content": "Per a Advocats que gestionen Societats i Consells. Servei professional sense errors. Estalvia temps sense excels desactualitzats.",
+          "image": "who-uses-sttok-lawyers.png",
+          "icon": "Scale"
+        },
+        {
+          "id": 3,
+          "title": "Startups",
+          "content": "Per a startups i inversors. Detalls de socis i participacions. Planifica rondes i ampliacions. Gestiona incentius per a empleats.",
+          "image": "/who-uses-sttok-startups.png",
+          "icon": "Handshake"
+        }
+      ]
+    }
+  }
+}
