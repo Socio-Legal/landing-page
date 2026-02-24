@@ -70,11 +70,18 @@ export default function RootLayout({
           `,
           }}
         />
+        {/* Mandrill/Mailchimp verification */}
+        <script
+          id="mcjs"
+          dangerouslySetInnerHTML={{
+            __html: `!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/1b100214ec0aaa7263e586908/efe92693beb44845bba2751c7.js");`,
+          }}
+        />
       </head>
       <body
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
+          fontSans.variable,
         )}
       >
         <ThemeProvider
