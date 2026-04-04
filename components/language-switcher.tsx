@@ -16,6 +16,11 @@ const languages = [
     icon: "emojione-v1:flag-for-united-kingdom",
     label: "language.english",
   },
+  {
+    code: "ca",
+    icon: "emojione-v1:flag-for-catalonia",
+    label: "language.catalan",
+  },
 ];
 
 const LanguageSwitcher = () => {

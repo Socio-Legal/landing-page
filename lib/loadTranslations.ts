@@ -37,6 +37,7 @@ import legalSecurityPage from "../public/locales/es/legal-security-page.json";
 import legalPrivacyPage from "../public/locales/es/legal-privacy-page.json";
 
 import commonEN from "../public/locales/en/common.json";
+import commonCA from "../public/locales/ca/common.json";
 
 import homeClientsSectionEN from "../public/locales/en/home-clients-section.json";
 import homeCtaSectionEN from "../public/locales/en/home-cta-section.json";
@@ -68,10 +69,54 @@ import legalDisclaimerPageEN from "../public/locales/en/legal-disclaimer-page.js
 import legalSecurityPageEN from "../public/locales/en/legal-security-page.json";
 import legalPrivacyPageEN from "../public/locales/en/legal-privacy-page.json";
 
-const loadTranslations = (lang: "es" | "en") => {
+const loadTranslations = (lang: "es" | "en" | "ca") => {
   if (lang === "es") {
     return {
       common,
+      "home-clients-section": homeClientsSection,
+      "home-cta-section": homeCtaSection,
+      "home-features-section": homeFeaturesSection,
+      "home-hero-section": homeHeroSection,
+      "home-pricing-section": homePricingSection,
+      "home-products-section": homeProductsSection,
+      "home-testimonials-section": homeTestimonialsSection,
+      "home-uses-section": homeUsesSection,
+
+      "product-hero-section": productHeroSection,
+      "product-partner-book-page": productPartnerBookPage,
+      "product-incentive-plans-page": productIncentivePlansPage,
+      "product-shareholder-meetings-page": productShareholderMeetingsPage,
+      "product-operation-drafts-page": productOperationDraftsPage,
+
+      "solutions-page": solutionsPage,
+      "solutions-companies-page": solutionsCompaniesPage,
+      "solutions-lawyers-page": solutionsLawyersPage,
+      "solutions-startups-page": solutionsStartupsPage,
+      "solutions-investors-page": solutionsInvestorsPage,
+      "solutions-investors-dashboard-page": solutionsInvestorsDashboardPage,
+
+      "testimonials-page": testimonialsPage,
+      "testimonials-factorial-page": testimonialsFactorialPage,
+      "testimonials-banktrack-page": testimonialsBanktrackPage,
+      "testimonials-caballero-page": testimonialsCaballeroPage,
+      "testimonials-pldspace-page": testimonialsPldspacePage,
+      "testimonials-taxdown-page": testimonialsTaxdownPage,
+      "testimonials-yaba-page": testimonialsYabaPage,
+      "testimonials-myinvestor-page": testimonialsMyInvestorPage,
+
+      "pricing-page": pricingPage,
+
+      "legal-privacy-page": legalPrivacyPage,
+      "legal-security-page": legalSecurityPage,
+      "legal-disclaimer-page": legalDisclaimerPage,
+    };
+  }
+
+  if (lang === "ca") {
+    return {
+      common: commonCA,
+      // For now, we'll use Spanish translations as fallback for other sections
+      // This can be expanded later with proper Catalan translations
       "home-clients-section": homeClientsSection,
       "home-cta-section": homeCtaSection,
       "home-features-section": homeFeaturesSection,
