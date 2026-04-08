@@ -16,32 +16,32 @@
     "description": "Gestiona operaciones de secundario de principio a fin: publicación de ofertas, aceptación, ejecución y seguimiento.",
     "items": [
       {
-        "icon": "Icon01",
+        "icon": "SecondarySell",
         "title": "Vender mis acciones",
         "description": "Publica ofertas de venta indicando acciones, precio por acción, fechas y condiciones de ejecución."
       },
       {
-        "icon": "Icon02",
+        "icon": "SecondaryBuy",
         "title": "Comprar acciones",
         "description": "Consulta ofertas activas y completa compras de forma guiada con resumen de importe y validaciones."
       },
       {
-        "icon": "Icon03",
+        "icon": "SecondaryBid",
         "title": "Lanzar oferta de compra",
         "description": "Publica interés de compra para captar vendedores y activar operaciones cuando no encuentres oferta disponible."
       },
       {
-        "icon": "Icon04",
+        "icon": "SecondaryBook",
         "title": "Libro de ofertas y contexto de precio",
         "description": "Visualiza precio medio, volumen y detalle de ofertas de compra y venta para decidir con más información."
       },
       {
-        "icon": "Icon05",
+        "icon": "SecondaryTracking",
         "title": "Operaciones con estado y trazabilidad",
         "description": "Sigue cada operación por estado (activa, aceptada, etc.) y conserva histórico para control interno."
       },
       {
-        "icon": "Icon06",
+        "icon": "SecondaryIntegration",
         "title": "Integrado con la gestión societaria",
         "description": "Conecta el secundario con captable y documentación para mantener la información societaria actualizada."
       }

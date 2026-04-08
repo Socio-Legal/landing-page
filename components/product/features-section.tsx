@@ -1,6 +1,8 @@
 import React, { FC } from "react";
 
 import {
+  ArrowDown,
+  ArrowUp,
   BadgeEuro,
   BookOpenText,
   Building2,
@@ -8,6 +10,9 @@ import {
   FileSignature,
   FileText,
   HandCoins,
+  ListOrdered,
+  SearchCheck,
+  ShieldCheck,
   Users,
   Vote,
 } from "lucide-react";
@@ -26,6 +31,12 @@ const FeatureIcons = {
   Icon07: <Building2 className="w-6 h-6 text-primary" />,
   Icon08: <Users className="w-6 h-6 text-primary" />,
   Icon09: <FileSignature className="w-6 h-6 text-primary" />,
+  SecondarySell: <ArrowUp className="w-6 h-6 text-primary" />,
+  SecondaryBuy: <ArrowDown className="w-6 h-6 text-primary" />,
+  SecondaryBid: <SearchCheck className="w-6 h-6 text-primary" />,
+  SecondaryBook: <ListOrdered className="w-6 h-6 text-primary" />,
+  SecondaryTracking: <ShieldCheck className="w-6 h-6 text-primary" />,
+  SecondaryIntegration: <Building2 className="w-6 h-6 text-primary" />,
 };
 
 type Feature = {

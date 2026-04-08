@@ -16,32 +16,32 @@
     "description": "Manage secondary transactions end-to-end: listing offers, acceptance, execution, and tracking.",
     "items": [
       {
-        "icon": "Icon01",
+        "icon": "SecondarySell",
         "title": "Sell my shares",
         "description": "Publish sell offers with share amount, price per share, dates, and execution conditions."
       },
       {
-        "icon": "Icon02",
+        "icon": "SecondaryBuy",
         "title": "Buy shares",
         "description": "Browse active sell offers and complete purchases with guided steps, validations, and purchase summary."
       },
       {
-        "icon": "Icon03",
+        "icon": "SecondaryBid",
         "title": "Launch buy offer",
         "description": "Publish buying interest to attract sellers and trigger transactions when no suitable offer is available."
       },
       {
-        "icon": "Icon04",
+        "icon": "SecondaryBook",
         "title": "Order book and price context",
         "description": "Track average price, volume, and detailed buy/sell offers to make better-informed decisions."
       },
       {
-        "icon": "Icon05",
+        "icon": "SecondaryTracking",
         "title": "Status and full traceability",
         "description": "Follow each transaction by status (active, accepted, etc.) and keep historical records for control."
       },
       {
-        "icon": "Icon06",
+        "icon": "SecondaryIntegration",
         "title": "Integrated with corporate management",
         "description": "Connect secondary operations with cap table and documentation to keep ownership data up to date."
       }
