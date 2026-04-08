@@ -6,6 +6,7 @@ export const routes = {
   PRODUCT_INCENTIVE_PLANS: "/planes-de-incentivos",
   PRODUCT_SHAREHOLDER_MEETINGS: "/juntas-consejos",
   PRODUCT_OPERATION_DRAFTS: "/simulador",
+  PRODUCT_SECONDARY_MARKET: "/mercado-secundario",
   SOLUTIONS: "/soluciones",
   SOLUTIONS_COMPANIES: "/empresas",
   SOLUTIONS_LAWYERS: "/abogados",

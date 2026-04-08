@@ -49,6 +49,11 @@ export const siteConfig = {
             title: "menu.DraftsTitle",
             description: "menu.DraftsDescription",
           },
+          {
+            href: routes.PRODUCT_SECONDARY_MARKET,
+            title: "menu.SecondaryMarketTitle",
+            description: "menu.SecondaryMarketDescription",
+          },
         ],
       },
     },
@@ -138,6 +143,12 @@ export const siteConfig = {
           title: "menu.BoardsTitle",
           url: routes.PRODUCT_SHAREHOLDER_MEETINGS,
           alt: "Software para Juntas de consejos",
+        },
+        {
+          id: 17,
+          title: "menu.SecondaryMarketTitle",
+          url: routes.PRODUCT_SECONDARY_MARKET,
+          alt: "Software para mercado secundario",
         },
       ],
       [

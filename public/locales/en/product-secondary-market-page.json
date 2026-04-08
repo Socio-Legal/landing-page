@@ -1,0 +1,50 @@
+{
+  "hero": {
+    "title": "Secondary Market",
+    "description": "Manage share trading between shareholders with buy and sell offers in a secure, traceable, and fully digital environment.",
+    "button": {
+      "text": "Schedule demo",
+      "link": "https://app.sttok.com/#/demo"
+    },
+    "image": {
+      "light": "/hero/hero-product.png",
+      "dark": "/hero/hero-product.png"
+    }
+  },
+  "features": {
+    "title": "Share trading between shareholders",
+    "description": "Centralize secondary transactions and streamline the full flow: listing, acceptance, signing, and tracking.",
+    "items": [
+      {
+        "icon": "Icon01",
+        "title": "Buy and sell offers",
+        "description": "Publish buy or sell offers between shareholders with clear terms and defined rules."
+      },
+      {
+        "icon": "Icon02",
+        "title": "Guided process",
+        "description": "Execute transactions step by step with validations to reduce errors and operational friction."
+      },
+      {
+        "icon": "Icon03",
+        "title": "Visible price and volume",
+        "description": "View key secondary market information to support informed decisions between parties."
+      },
+      {
+        "icon": "Icon04",
+        "title": "Full traceability",
+        "description": "Record every transaction status for historical tracking and audit control."
+      },
+      {
+        "icon": "Icon05",
+        "title": "Centralized documentation",
+        "description": "Keep all transaction documents grouped and accessible in one place."
+      },
+      {
+        "icon": "Icon06",
+        "title": "Cap table updates",
+        "description": "After execution, reflect ownership changes in a structured and reliable way."
+      }
+    ]
+  }
+}

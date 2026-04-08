@@ -1,0 +1,50 @@
+{
+  "hero": {
+    "title": "Mercado Secundario",
+    "description": "Gestiona el mercado de acciones entre socios con ofertas de compra y venta en un entorno seguro, trazable y totalmente digital.",
+    "button": {
+      "text": "Solicitar demo",
+      "link": "https://app.sttok.com/#/demo"
+    },
+    "image": {
+      "light": "/hero/hero-product.png",
+      "dark": "/hero/hero-product.png"
+    }
+  },
+  "features": {
+    "title": "Mercado de acciones entre socios",
+    "description": "Centraliza operaciones de secundario y simplifica todo el flujo: publicación, aceptación, firma y seguimiento.",
+    "items": [
+      {
+        "icon": "Icon01",
+        "title": "Ofertas de compra y venta",
+        "description": "Publica ofertas de compra o venta entre socios con parámetros claros y reglas definidas."
+      },
+      {
+        "icon": "Icon02",
+        "title": "Proceso guiado",
+        "description": "Ejecuta operaciones paso a paso con validaciones para reducir errores y fricción operativa."
+      },
+      {
+        "icon": "Icon03",
+        "title": "Precio y volumen visibles",
+        "description": "Consulta información clave de mercado secundario para facilitar decisiones entre las partes."
+      },
+      {
+        "icon": "Icon04",
+        "title": "Trazabilidad completa",
+        "description": "Registra cada estado de la operación para tener histórico y control de auditoría."
+      },
+      {
+        "icon": "Icon05",
+        "title": "Documentación centralizada",
+        "description": "Mantén los documentos de cada operación agrupados y accesibles desde un único lugar."
+      },
+      {
+        "icon": "Icon06",
+        "title": "Actualización societaria",
+        "description": "Tras ejecutar la operación, refleja los cambios en la estructura accionarial de forma ordenada."
+      }
+    ]
+  }
+}

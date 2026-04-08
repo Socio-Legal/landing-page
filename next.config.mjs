@@ -23,6 +23,7 @@ const nextConfig = {
       { source: "/planes-de-incentivos", destination: "/incentive-plans" },
       { source: "/juntas-consejos", destination: "/shareholder-meetings" },
       { source: "/simulador", destination: "/operation-drafts" },
+      { source: "/mercado-secundario", destination: "/secondary-market" },
       // Solutions
       { source: "/soluciones", destination: "/solutions" },
       { source: "/empresas", destination: "/solutions/companies" },
