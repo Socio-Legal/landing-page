@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "Secondary Market",
-    "description": "Manage share trading between shareholders with buy and sell offers in a secure, traceable, and fully digital environment.",
+    "description": "Share trading between shareholders to buy, sell, and launch buy offers in a secure and fully digital environment.",
     "button": {
       "text": "Schedule demo",
       "link": "https://app.sttok.com/#/demo"
@@ -13,37 +13,37 @@
   },
   "features": {
     "title": "Share trading between shareholders",
-    "description": "Centralize secondary transactions and streamline the full flow: listing, acceptance, signing, and tracking.",
+    "description": "Manage secondary transactions end-to-end: listing offers, acceptance, execution, and tracking.",
     "items": [
       {
         "icon": "Icon01",
-        "title": "Buy and sell offers",
-        "description": "Publish buy or sell offers between shareholders with clear terms and defined rules."
+        "title": "Sell my shares",
+        "description": "Publish sell offers with share amount, price per share, dates, and execution conditions."
       },
       {
         "icon": "Icon02",
-        "title": "Guided process",
-        "description": "Execute transactions step by step with validations to reduce errors and operational friction."
+        "title": "Buy shares",
+        "description": "Browse active sell offers and complete purchases with guided steps, validations, and purchase summary."
       },
       {
         "icon": "Icon03",
-        "title": "Visible price and volume",
-        "description": "View key secondary market information to support informed decisions between parties."
+        "title": "Launch buy offer",
+        "description": "Publish buying interest to attract sellers and trigger transactions when no suitable offer is available."
       },
       {
         "icon": "Icon04",
-        "title": "Full traceability",
-        "description": "Record every transaction status for historical tracking and audit control."
+        "title": "Order book and price context",
+        "description": "Track average price, volume, and detailed buy/sell offers to make better-informed decisions."
       },
       {
         "icon": "Icon05",
-        "title": "Centralized documentation",
-        "description": "Keep all transaction documents grouped and accessible in one place."
+        "title": "Status and full traceability",
+        "description": "Follow each transaction by status (active, accepted, etc.) and keep historical records for control."
       },
       {
         "icon": "Icon06",
-        "title": "Cap table updates",
-        "description": "After execution, reflect ownership changes in a structured and reliable way."
+        "title": "Integrated with corporate management",
+        "description": "Connect secondary operations with cap table and documentation to keep ownership data up to date."
       }
     ]
   }

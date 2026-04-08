@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "Mercado Secundario",
-    "description": "Gestiona el mercado de acciones entre socios con ofertas de compra y venta en un entorno seguro, trazable y totalmente digital.",
+    "description": "Mercado de acciones entre socios para comprar, vender y lanzar ofertas de compra en un entorno seguro y 100% digital.",
     "button": {
       "text": "Solicitar demo",
       "link": "https://app.sttok.com/#/demo"
@@ -13,37 +13,37 @@
   },
   "features": {
     "title": "Mercado de acciones entre socios",
-    "description": "Centraliza operaciones de secundario y simplifica todo el flujo: publicación, aceptación, firma y seguimiento.",
+    "description": "Gestiona operaciones de secundario de principio a fin: publicación de ofertas, aceptación, ejecución y seguimiento.",
     "items": [
       {
         "icon": "Icon01",
-        "title": "Ofertas de compra y venta",
-        "description": "Publica ofertas de compra o venta entre socios con parámetros claros y reglas definidas."
+        "title": "Vender mis acciones",
+        "description": "Publica ofertas de venta indicando acciones, precio por acción, fechas y condiciones de ejecución."
       },
       {
         "icon": "Icon02",
-        "title": "Proceso guiado",
-        "description": "Ejecuta operaciones paso a paso con validaciones para reducir errores y fricción operativa."
+        "title": "Comprar acciones",
+        "description": "Consulta ofertas activas y completa compras de forma guiada con resumen de importe y validaciones."
       },
       {
         "icon": "Icon03",
-        "title": "Precio y volumen visibles",
-        "description": "Consulta información clave de mercado secundario para facilitar decisiones entre las partes."
+        "title": "Lanzar oferta de compra",
+        "description": "Publica interés de compra para captar vendedores y activar operaciones cuando no encuentres oferta disponible."
       },
       {
         "icon": "Icon04",
-        "title": "Trazabilidad completa",
-        "description": "Registra cada estado de la operación para tener histórico y control de auditoría."
+        "title": "Libro de ofertas y contexto de precio",
+        "description": "Visualiza precio medio, volumen y detalle de ofertas de compra y venta para decidir con más información."
       },
       {
         "icon": "Icon05",
-        "title": "Documentación centralizada",
-        "description": "Mantén los documentos de cada operación agrupados y accesibles desde un único lugar."
+        "title": "Operaciones con estado y trazabilidad",
+        "description": "Sigue cada operación por estado (activa, aceptada, etc.) y conserva histórico para control interno."
       },
       {
         "icon": "Icon06",
-        "title": "Actualización societaria",
-        "description": "Tras ejecutar la operación, refleja los cambios en la estructura accionarial de forma ordenada."
+        "title": "Integrado con la gestión societaria",
+        "description": "Conecta el secundario con captable y documentación para mantener la información societaria actualizada."
       }
     ]
   }
