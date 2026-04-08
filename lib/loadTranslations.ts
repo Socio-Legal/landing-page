@@ -13,6 +13,7 @@ import productPartnerBookPage from "../public/locales/es/product-partner-book-pa
 import productIncentivePlansPage from "../public/locales/es/product-incentive-plans-page.json";
 import productShareholderMeetingsPage from "../public/locales/es/product-shareholder-meetings-page.json";
 import productOperationDraftsPage from "../public/locales/es/product-operation-drafts-page.json";
+import productSecondaryMarketPage from "../public/locales/es/product-secondary-market-page.json";
 
 import solutionsPage from "../public/locales/es/solutions-page.json";
 import solutionsCompaniesPage from "../public/locales/es/solutions-companies-page.json";
@@ -52,6 +53,7 @@ import productPartnerBookPageEN from "../public/locales/en/product-partner-book-
 import productIncentivePlansPageEN from "../public/locales/en/product-incentive-plans-page.json";
 import productShareholderMeetingsPageEN from "../public/locales/en/product-shareholder-meetings-page.json";
 import productOperationDraftsPageEN from "../public/locales/en/product-operation-drafts-page.json";
+import productSecondaryMarketPageEN from "../public/locales/en/product-secondary-market-page.json";
 
 import solutionsPageEN from "../public/locales/en/solutions-page.json";
 import solutionsCompaniesPageEN from "../public/locales/en/solutions-companies-page.json";
@@ -86,6 +88,7 @@ const loadTranslations = (lang: "es" | "en") => {
       "product-incentive-plans-page": productIncentivePlansPage,
       "product-shareholder-meetings-page": productShareholderMeetingsPage,
       "product-operation-drafts-page": productOperationDraftsPage,
+      "product-secondary-market-page": productSecondaryMarketPage,
 
       "solutions-page": solutionsPage,
       "solutions-companies-page": solutionsCompaniesPage,
@@ -127,6 +130,7 @@ const loadTranslations = (lang: "es" | "en") => {
     "product-incentive-plans-page": productIncentivePlansPageEN,
     "product-shareholder-meetings-page": productShareholderMeetingsPageEN,
     "product-operation-drafts-page": productOperationDraftsPageEN,
+    "product-secondary-market-page": productSecondaryMarketPageEN,
 
     "solutions-page": solutionsPageEN,
     "solutions-companies-page": solutionsCompaniesPageEN,
