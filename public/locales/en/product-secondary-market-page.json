@@ -7,8 +7,8 @@
       "link": "https://app.sttok.com/#/demo"
     },
     "image": {
-      "light": "/hero/hero-product.png",
-      "dark": "/hero/hero-product.png"
+      "light": "/hero/hero-product-secondary-market.png",
+      "dark": "/hero/hero-product-secondary-market.png"
     }
   },
   "features": {
