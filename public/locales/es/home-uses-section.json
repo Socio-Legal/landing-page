@@ -1,39 +1,45 @@
 {
   "header": {
     "slogan": "Para quién",
-    "title": "¿Quién utiliza Sttok?",
-    "description": "Diseñado para los equipos legales y financieros que gestionan la vida societaria de las empresas.",
-    "buttonText": null,
-    "buttonLink": null
+    "title": "Hecho para los equipos que llevan la sociedad",
+    "description": "Diseñado para los profesionales que cada día gestionan socios, juntas, incentivos y operaciones."
   },
   "items": [
     {
       "id": 1,
-      "title": "Empresas con muchos socios",
-      "content": "Gestiona captable, libro de socios oficial, porcentajes y acuerdos de socios. Centraliza grupos de sociedades con múltiples entidades bajo una misma plataforma.",
-      "image": "/who-uses-sttok-companies.png",
-      "icon": "Building2"
+      "title": "Empresas con muchos socios y grupos de sociedades",
+      "pain": "Excel desactualizado, certificados manuales, libros en carpetas. Cada cambio societario son horas de trabajo y riesgo de errores.",
+      "with": "Libro de socios oficial en tiempo real, ficha de cada socio con histórico de actas, certificados generados al instante y repositorio accesible para todos los stakeholders.",
+      "case": "AXA Agrupació Mutua centraliza la gestión de más de 200.000 socios con Sttok, ahorrando horas de gestiones manuales en certificados y procesos societarios.",
+      "icon": "Building2",
+      "image": "/who-uses-sttok-companies.png"
     },
     {
       "id": 2,
-      "title": "Empresas con planes de incentivos",
-      "content": "Startups y scale-ups con phantoms, stock options y vesting para empleados. Portal de acceso individual para cada beneficiario.",
-      "image": "/who-uses-sttok-startups.png",
-      "icon": "Handshake"
+      "title": "Startups y scale-ups con planes de incentivos",
+      "pain": "Excel de phantoms, cartas en Word, firmas por email, beneficiarios sin visibilidad sobre lo que tienen.",
+      "with": "Plan de phantoms al día, cartas de invitación generadas, ficha de cada beneficiario configurada y firma con DocuSign en minutos. Cada empleado accede a su portal y ve lo suyo.",
+      "case": "Factorial gestiona su plan de incentivos global para cientos de empleados con Sttok, ahorrando centenares de horas en administración del plan.",
+      "icon": "Handshake",
+      "image": "/who-uses-sttok-startups.png"
     },
     {
       "id": 3,
-      "title": "Secretarios del Consejo",
-      "content": "Convocatoria digital de juntas y consejos, delegaciones de voto, actas y documentación mercantil centralizada. Cero burocracia en papel.",
-      "image": "/who-uses-sttok-companies.png",
-      "icon": "Scale"
+      "title": "Secretarios del Consejo y juntas con múltiples accionistas",
+      "pain": "Convocatorias por email, delegaciones en papel, quórums calculados a mano, actas redactadas a posteriori.",
+      "with": "Convocatoria en un click, delegaciones digitales, cálculo automático de quórums, votaciones electrónicas y acta generada al instante.",
+      "case": "PLD Space optimiza sus juntas con múltiples vehículos de inversores: convocatorias, delegaciones y votaciones centralizadas, sin tareas manuales.",
+      "icon": "Vote",
+      "image": "/who-uses-sttok-companies.png"
     },
     {
       "id": 4,
-      "title": "Abogados y asesores",
-      "content": "Gestiona múltiples sociedades de clientes desde un único panel. Historial completo, documentos generados automáticamente, sin excels desactualizados.",
-      "image": "who-uses-sttok-lawyers.png",
-      "icon": "Scale"
+      "title": "Abogados y asesores mercantilistas",
+      "pain": "Cada cliente con su Excel, su carpeta, sus criterios. Imposible escalar más allá de un puñado de sociedades sin que algo se pierda.",
+      "with": "Panel multi-sociedad para todos tus clientes, histórico completo, documentos generados automáticamente y portal de acceso para clientes y sus socios.",
+      "case": "Despachos mercantilistas en toda España centralizan en Sttok la gestión societaria de sus clientes. Cero Excels, cero carpetas, todo al día.",
+      "icon": "Scale",
+      "image": "who-uses-sttok-lawyers.png"
     }
   ]
 }

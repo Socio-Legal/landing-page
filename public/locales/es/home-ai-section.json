@@ -1,0 +1,47 @@
+{
+  "header": {
+    "slogan": "Sttok AI",
+    "title": "Tu mejor asistente societario, disponible 24/7",
+    "description": "Pídele a Sttok AI lo que pedirías a tu mejor asistente: datos, documentos, informes y cálculos sobre la parte societaria de tu empresa. Respuestas en segundos, sin salir de la plataforma."
+  },
+  "guardrails": [
+    {
+      "title": "Datos en Europa",
+      "description": "Sttok corre en AWS Europa. Tus datos no salen de la UE."
+    },
+    {
+      "title": "Sin entrenamiento cruzado",
+      "description": "Los datos de tu sociedad están en silo. No se reutilizan ni entrenan modelos externos."
+    },
+    {
+      "title": "Cumplimiento certificado",
+      "description": "Conforme con RGPD, EU AI Act e ISO 27001."
+    },
+    {
+      "title": "Respuestas trazables",
+      "description": "Cada output de la IA es revisable y queda registrado para auditoría."
+    }
+  ],
+  "examples": [
+    {
+      "prompt": "Dame el listado de socios para la junta del próximo mes con sus porcentajes y emails.",
+      "result": "Tabla con los 11 socios, %ND, %FD y datos de contacto, lista para convocar.",
+      "icon": "Users"
+    },
+    {
+      "prompt": "Redacta el acta de la junta de aprobación de cuentas con los acuerdos votados hoy.",
+      "result": "Acta completa con quórum, asistentes, acuerdos y resultado de las votaciones.",
+      "icon": "FileText"
+    },
+    {
+      "prompt": "Prepara la documentación para la ampliación de capital de 2M€ a valoración pre-money de 18M€.",
+      "result": "Convocatoria, hoja de cálculo de dilución, certificado y acuerdo listos para firma.",
+      "icon": "FileSignature"
+    },
+    {
+      "prompt": "Calcula la prima de emisión y la numeración para esta ampliación.",
+      "result": "Prima por participación, valor nominal, rango de numeración y total a desembolsar.",
+      "icon": "Calculator"
+    }
+  ]
+}

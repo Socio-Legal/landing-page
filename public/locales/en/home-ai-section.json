@@ -1,0 +1,47 @@
+{
+  "header": {
+    "slogan": "Sttok AI",
+    "title": "Your best corporate assistant, available 24/7",
+    "description": "Ask Sttok AI what you'd ask your best assistant: data, documents, reports and calculations on your company's corporate matters. Answers in seconds, without leaving the platform."
+  },
+  "guardrails": [
+    {
+      "title": "Data in Europe",
+      "description": "Sttok runs on AWS Europe. Your data never leaves the EU."
+    },
+    {
+      "title": "No cross-training",
+      "description": "Your company data is isolated. It's never reused or used to train external models."
+    },
+    {
+      "title": "Certified compliance",
+      "description": "Compliant with GDPR, EU AI Act and ISO 27001."
+    },
+    {
+      "title": "Auditable answers",
+      "description": "Every AI output is reviewable and logged for audit."
+    }
+  ],
+  "examples": [
+    {
+      "prompt": "Give me the list of shareholders for next month's meeting with their percentages and emails.",
+      "result": "Table with all 11 shareholders, %ND, %FD and contact data, ready to convene.",
+      "icon": "Users"
+    },
+    {
+      "prompt": "Draft the minutes for today's accounts approval meeting with the voted resolutions.",
+      "result": "Complete minutes with quorum, attendees, resolutions and voting results.",
+      "icon": "FileText"
+    },
+    {
+      "prompt": "Prepare the paperwork for a €2M capital increase at €18M pre-money valuation.",
+      "result": "Notice, dilution sheet, certificate and resolution ready for signature.",
+      "icon": "FileSignature"
+    },
+    {
+      "prompt": "Calculate the issue premium and numbering for this capital increase.",
+      "result": "Premium per share, par value, numbering range and total to be paid in.",
+      "icon": "Calculator"
+    }
+  ]
+}

@@ -1,11 +1,15 @@
 {
   "hero": {
-    "badge": "Confiado por +500 sociedades",
-    "title": "Software para Gestión de Sociedades",
-    "description": "Captable (libros de socios), planes de incentivos, phantoms, juntas y consejos, mercado secundario, simulador de ampliaciones y rondas, y mercado secundario de acciones, etc.",
+    "badge": "+250 empresas y +250.000 socios confían en Sttok",
+    "title": "Toda la gestión societaria de tu empresa, en una sola plataforma",
+    "description": "Captable (libro de socios), planes de incentivos (phantoms y stock options), juntas, consejos, mercado secundario y simulador de operaciones. Con asistente de IA y cumplimiento ISO 27001 y RGPD.",
     "button": {
-      "text": "Pruébalo ahora",
-      "link": "https://app.sttok.com/#/demo"
+      "text": "Solicitar demo personalizada",
+      "link": "https://calendly.com/sttok/30min"
+    },
+    "secondaryButton": {
+      "text": "Ver funcionalidades",
+      "link": "/producto"
     },
     "image": {
       "light": "hero/hero-dark.png",

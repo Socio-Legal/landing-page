@@ -1,11 +1,11 @@
 {
   "header": {
-    "slogan": "",
-    "title": "Company Management Software",
-    "description": "Learn how Sttok can help you with corporate management according to your needs and save time and avoid errors with the leading software in company management.",
-    "buttonText": "View features",
-    "buttonLink": "/product/",
-    "secondaryButtonText": "Schedule demo",
-    "secondaryButtonLink": "https://calendly.com/sttok/30min"
+    "slogan": "Talk to a corporate expert",
+    "title": "Book 30 minutes and we'll show you Sttok applied to your company",
+    "description": "No generic script. We'll show you how companies like Factorial, AXA, MyInvestor or PLD Space manage their captable, shareholder meetings and incentive plans with Sttok.",
+    "buttonText": "Request personalized demo",
+    "buttonLink": "https://calendly.com/sttok/30min",
+    "secondaryButtonText": "See features",
+    "secondaryButtonLink": "/producto"
   }
 }

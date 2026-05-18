@@ -1,11 +1,11 @@
 {
   "header": {
-    "slogan": "",
-    "title": "Software de Gestión de Sociedades",
-    "description": "Conoce cómo Sttok puede ayudarte en la gestión societaria según tus necesidades y ahorra tiempo y evita errores con el software líder en gestión de sociedades.",
-    "buttonText": "Ver funcionalidades",
-    "buttonLink": "/producto/",
-    "secondaryButtonText": "Agendar demo",
-    "secondaryButtonLink": "https://calendly.com/sttok/30min"
+    "slogan": "Habla con un experto societario",
+    "title": "Reserva 30 minutos y te enseñamos Sttok aplicado a tu empresa",
+    "description": "Ningún script genérico. Te enseñamos cómo empresas como Factorial, AXA, MyInvestor o PLD Space gestionan su captable, sus juntas y sus planes de incentivos con Sttok.",
+    "buttonText": "Solicitar demo personalizada",
+    "buttonLink": "https://calendly.com/sttok/30min",
+    "secondaryButtonText": "Ver funcionalidades",
+    "secondaryButtonLink": "/producto"
   }
 }

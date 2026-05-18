@@ -1,11 +1,15 @@
 {
   "hero": {
-    "badge": "Trusted by +500 companies",
-    "title": "Company Management Software",
-    "description": "Captable (shareholder books), incentive plans, phantoms, meetings and boards, expansion and round simulator, and secondary share marketplace, etc.",
+    "badge": "+250 companies and +250,000 shareholders trust Sttok",
+    "title": "All your company governance, on a single platform",
+    "description": "Captable (shareholder book), incentive plans (phantoms and stock options), shareholder meetings, boards, secondary market and operations simulator. With AI assistant and ISO 27001 and GDPR compliance.",
     "button": {
-      "text": "Try it now",
-      "link": "https://app.sttok.com/#/demo"
+      "text": "Request personalized demo",
+      "link": "https://calendly.com/sttok/30min"
+    },
+    "secondaryButton": {
+      "text": "See features",
+      "link": "/producto"
     },
     "image": {
       "light": "hero/hero-dark.png",
