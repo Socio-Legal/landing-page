@@ -13,78 +13,74 @@ import { cn } from "@/lib/utils";
 import ThemeToggler from "./ui/theme-toggler";
 import LanguageSwitcher from "./language-switcher";
 import { useTranslation } from "react-i18next";
+import { trackDemoClick, trackLoginClick } from "@/lib/analytics";
 
 export function SiteHeader() {
   const { t } = useTranslation("common");
-  const [addBorder, setAddBorder] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 20) {
-        setAddBorder(true);
-      } else {
-        setAddBorder(false);
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 8);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <header className={"relative sticky top-0 z-50 py-2 backdrop-blur"}>
-      <div className="flex justify-between items-center container">
+    <header
+      className={cn(
+        "sticky top-0 z-50 w-full bg-background/95 backdrop-blur-sm transition-shadow duration-200",
+        scrolled ? "shadow-sm border-b border-border" : "border-b border-transparent"
+      )}
+    >
+      <div className="container flex h-14 items-center justify-between">
+        {/* Logo */}
         <Link
           href="/"
-          title="brand-logo"
-          className="relative mr-6 flex items-center space-x-2"
+          title="Sttok"
+          className="flex items-center shrink-0 mr-8"
         >
-          <Icons.logo className="w-auto h-[30px]" />
-          <span className="font-bold text-xl hidden">{siteConfig.name}</span>
+          <Icons.logo className="h-[26px] w-auto" />
         </Link>
 
-        <div className="hidden lg:block">
-          <div className="flex items-center ">
-            <nav className="mr-10">
-              <Menu />
-            </nav>
+        {/* Desktop nav */}
+        <div className="hidden lg:flex items-center flex-1">
+          <nav className="flex-1">
+            <Menu />
+          </nav>
 
-            <div className="gap-2 flex">
-              {siteConfig.cta?.map((cta, index) => (
-                <Link
-                  key={index}
-                  href={cta.link}
-                  className={cn(
-                    buttonVariants({
-                      variant: cta.variant as keyof typeof buttonVariants,
-                    }),
-                    cta.className || ""
-                  )}
-                >
-                  {cta?.hasIcon && <Icons.logoMin className="h-6 w-6" />}
-                  {t(cta.text)}
-                </Link>
-              ))}
+          <div className="flex items-center gap-1.5">
+            {siteConfig.cta?.map((cta, index) => (
+              <Link
+                key={index}
+                href={cta.link}
+                target={cta.blankPage ? "_blank" : undefined}
+                rel={cta.blankPage ? "noopener noreferrer" : undefined}
+                onClick={() => cta.variant === "default" ? trackDemoClick("nav") : trackLoginClick()}
+                className={cn(
+                  buttonVariants({
+                    variant: cta.variant as any,
+                    size: "sm",
+                  }),
+                  cta.variant === "default" && "bg-foreground text-background hover:bg-foreground/90",
+                  cta.variant === "ghost" && "text-foreground/70 hover:text-foreground hover:bg-accent",
+                )}
+              >
+                {t(cta.text)}
+              </Link>
+            ))}
 
+            <div className="ml-1 flex items-center gap-1">
               <ThemeToggler />
               <LanguageSwitcher />
             </div>
           </div>
         </div>
 
-        <div className="mt-2 cursor-pointer block lg:hidden">
+        {/* Mobile hamburger */}
+        <div className="block lg:hidden">
           <Drawer />
         </div>
       </div>
-      <hr
-        className={cn(
-          "absolute w-full bottom-0 transition-opacity duration-300 ease-in-out",
-          addBorder ? "opacity-100" : "opacity-0"
-        )}
-      />
     </header>
   );
 }

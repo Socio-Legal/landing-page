@@ -1,32 +1,45 @@
 {
   "header": {
-    "slogan": "Users",
-    "title": "Who uses Sttok?",
-    "description": "Sttok is a platform designed for companies, lawyers, and startups looking for a comprehensive solution for company management.",
-    "buttonText": null,
-    "buttonLink": null
+    "slogan": "For whom",
+    "title": "Built for the teams running the company",
+    "description": "Designed for professionals who manage shareholders, boards, incentive plans and operations every day."
   },
   "items": [
     {
       "id": 1,
-      "title": "Companies and Corporations",
-      "content": "Digital management of companies. Updated shareholder register. Automatic document generation. Save time and avoid errors.",
-      "image": "/who-uses-sttok-companies.png",
-      "icon": "Building2"
+      "title": "Companies with many shareholders and corporate groups",
+      "pain": "Outdated spreadsheets, manual certificates, ledgers in folders. Every corporate change means hours of work and risk of errors.",
+      "with": "Official shareholder book in real time, individual records with full meeting history, instant certificate generation and a centralized repository accessible to all stakeholders.",
+      "case": "AXA Agrupació Mutua centralizes the management of over 200,000 members with Sttok, saving hours of manual certificate and corporate process work.",
+      "icon": "Building2",
+      "image": "/who-uses-sttok-companies.png"
     },
     {
       "id": 2,
-      "title": "Lawyers",
-      "content": "For lawyers managing Companies and Boards. Professional service without errors. Save time without outdated Excel sheets.",
-      "image": "who-uses-sttok-lawyers.png",
-      "icon": "Scale"
+      "title": "Startups and scale-ups with incentive plans",
+      "pain": "Phantom plans in spreadsheets, letters in Word, signatures by email, beneficiaries with no visibility on what they hold.",
+      "with": "Phantom plans always up to date, invitation letters generated, beneficiary records configured and DocuSign signing in minutes. Each employee accesses their portal and sees their own holdings.",
+      "case": "Factorial runs its global incentive plan for hundreds of employees on Sttok, saving hundreds of hours of plan administration.",
+      "icon": "Handshake",
+      "image": "/who-uses-sttok-startups.png"
     },
     {
       "id": 3,
-      "title": "Startups",
-      "content": "For startups and investors. Details of partners and shares. Plan rounds and expansions. Manage employee incentives.",
-      "image": "/who-uses-sttok-startups.png",
-      "icon": "Handshake"
+      "title": "Board Secretaries and shareholder meetings",
+      "pain": "Notices by email, delegations on paper, quorums calculated by hand, minutes drafted after the fact.",
+      "with": "One-click notice, digital delegations, automatic quorum calculation, electronic voting and instantly generated minutes.",
+      "case": "PLD Space optimizes its meetings with multiple investor vehicles: centralized notices, delegations and votes, with zero manual tasks.",
+      "icon": "Vote",
+      "image": "/who-uses-sttok-companies.png"
+    },
+    {
+      "id": 4,
+      "title": "Corporate lawyers and advisors",
+      "pain": "Every client with their own spreadsheet, folder and criteria. Impossible to scale beyond a handful of companies without losing track.",
+      "with": "Multi-company dashboard for all your clients, full history, auto-generated documents and access portal for clients and their shareholders.",
+      "case": "Corporate law firms across Spain centralize their clients' corporate management on Sttok. Zero spreadsheets, zero folders, always up to date.",
+      "icon": "Scale",
+      "image": "who-uses-sttok-lawyers.png"
     }
   ]
 }

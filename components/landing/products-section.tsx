@@ -53,10 +53,7 @@ const ProductsSection = () => {
   };
 
   return (
-    <section
-      id="products"
-      className="bg-gradient-to-b from-background bg-white dark:bg-black"
-    >
+    <section id="products" className="border-t border-border">
       <div className="container mx-auto px-4 py-12 md:py-24 lg:py-32">
         <ProductsHeader />
         <Features

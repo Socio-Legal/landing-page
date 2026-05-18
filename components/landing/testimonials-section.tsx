@@ -65,11 +65,7 @@ const TestimonialCard: FC<TestimonialCardProps> = ({
 }) => (
   <div
     className={cn(
-      "mb-4 flex w-full cursor-pointer break-inside-avoid flex-col items-center justify-between gap-6 rounded-xl p-4",
-      // light styles
-      " border border-neutral-200 bg-white",
-      // dark styles
-      "dark:bg-black dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset]",
+      "mb-4 flex w-full cursor-pointer break-inside-avoid flex-col items-center justify-between gap-6 rounded-xl p-4 border border-border bg-card",
       className
     )}
     {...props}
@@ -123,7 +119,7 @@ const TestimonialsSection: FC = () => {
   return (
     <section
       id="testimonials"
-      className="bg-gradient-to-b bg-white dark:bg-black from-white from-40% dark:from-black"
+      className="border-t border-border"
     >
       <div className="container mx-auto px-4 md:px-8 py-12 md:py-24 lg:py-32">
         <TestimonialsHeader />
@@ -148,8 +144,8 @@ const TestimonialsSection: FC = () => {
                 </Marquee>
               ))}
           </div>
-          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 w-full bg-gradient-to-t from-white from-20% dark:from-black"></div>
-          <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 w-full bg-gradient-to-b from-white from-20% dark:from-black"></div>
+          <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/4 w-full bg-gradient-to-t from-background from-20%"></div>
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-1/4 w-full bg-gradient-to-b from-background from-20%"></div>
         </div>
       </div>
     </section>

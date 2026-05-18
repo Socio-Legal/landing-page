@@ -1,32 +1,45 @@
 {
   "header": {
-    "slogan": "Usuarios",
-    "title": "¿Quién utiliza Sttok?",
-    "description": "Sttok es una plataforma diseñada para empresas, abogados y startups que buscan una solución integral para la gestión de sociedades.",
-    "buttonText": null,
-    "buttonLink": null
+    "slogan": "Para quién",
+    "title": "Hecho para los equipos que llevan la sociedad",
+    "description": "Diseñado para los profesionales que cada día gestionan socios, juntas, incentivos y operaciones."
   },
   "items": [
     {
       "id": 1,
-      "title": "Empresas y Sociedades",
-      "content": "Gestión digital de sociedades. Libro de socio actualizado. Generación automática de documentos. Ahorra tiempo y evita errores.",
-      "image": "/who-uses-sttok-companies.png",
-      "icon": "Building2"
+      "title": "Empresas con muchos socios y grupos de sociedades",
+      "pain": "Excel desactualizado, certificados manuales, libros en carpetas. Cada cambio societario son horas de trabajo y riesgo de errores.",
+      "with": "Libro de socios oficial en tiempo real, ficha de cada socio con histórico de actas, certificados generados al instante y repositorio accesible para todos los stakeholders.",
+      "case": "AXA Agrupació Mutua centraliza la gestión de más de 200.000 socios con Sttok, ahorrando horas de gestiones manuales en certificados y procesos societarios.",
+      "icon": "Building2",
+      "image": "/who-uses-sttok-companies.png"
     },
     {
       "id": 2,
-      "title": "Abogados",
-      "content": "Para Abogados que gestionan Sociedades y Consejos. Servicio profesional sin errores. Ahorra tiempo sin excels desactualizados.",
-      "image": "who-uses-sttok-lawyers.png",
-      "icon": "Scale"
+      "title": "Startups y scale-ups con planes de incentivos",
+      "pain": "Excel de phantoms, cartas en Word, firmas por email, beneficiarios sin visibilidad sobre lo que tienen.",
+      "with": "Plan de phantoms al día, cartas de invitación generadas, ficha de cada beneficiario configurada y firma con DocuSign en minutos. Cada empleado accede a su portal y ve lo suyo.",
+      "case": "Factorial gestiona su plan de incentivos global para cientos de empleados con Sttok, ahorrando centenares de horas en administración del plan.",
+      "icon": "Handshake",
+      "image": "/who-uses-sttok-startups.png"
     },
     {
       "id": 3,
-      "title": "Startups",
-      "content": "Para startups e inversores. Detalles de socios y participaciones. Planifica rondas y ampliaciones. Gestiona incentivos para empleados.",
-      "image": "/who-uses-sttok-startups.png",
-      "icon": "Handshake"
+      "title": "Secretarios del Consejo y juntas con múltiples accionistas",
+      "pain": "Convocatorias por email, delegaciones en papel, quórums calculados a mano, actas redactadas a posteriori.",
+      "with": "Convocatoria en un click, delegaciones digitales, cálculo automático de quórums, votaciones electrónicas y acta generada al instante.",
+      "case": "PLD Space optimiza sus juntas con múltiples vehículos de inversores: convocatorias, delegaciones y votaciones centralizadas, sin tareas manuales.",
+      "icon": "Vote",
+      "image": "/who-uses-sttok-companies.png"
+    },
+    {
+      "id": 4,
+      "title": "Abogados y asesores mercantilistas",
+      "pain": "Cada cliente con su Excel, su carpeta, sus criterios. Imposible escalar más allá de un puñado de sociedades sin que algo se pierda.",
+      "with": "Panel multi-sociedad para todos tus clientes, histórico completo, documentos generados automáticamente y portal de acceso para clientes y sus socios.",
+      "case": "Despachos mercantilistas en toda España centralizan en Sttok la gestión societaria de sus clientes. Cero Excels, cero carpetas, todo al día.",
+      "icon": "Scale",
+      "image": "who-uses-sttok-lawyers.png"
     }
   ]
 }
