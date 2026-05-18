@@ -23,6 +23,7 @@ const fontSans = FontSans({
 
 const fontSerif = FontSerif({
   subsets: ["latin"],
+  weight: "400",
   style: ["normal", "italic"],
   variable: "--font-serif",
 });
