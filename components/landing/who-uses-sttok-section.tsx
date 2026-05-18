@@ -4,7 +4,6 @@ import { Building2, Scale, Handshake } from "lucide-react";
 
 import SectionHeader from "../section-header";
 import Features from "../features-vertical";
-import { blurStyle01 } from "../styles/blur-styles";
 import { useTranslation } from "react-i18next";
 
 interface UseProps {
@@ -51,8 +50,7 @@ const WhoUsesSttokSection = () => {
   return (
     <section
       id="who-uses-sttok"
-      className="bg-backgroundbrand"
-      style={blurStyle01}
+      className="bg-backgroundbrand border-t border-border"
     >
       <div className="container mx-auto px-4 py-12 md:py-24 lg:py-32">
         <WhoUsesHeader />

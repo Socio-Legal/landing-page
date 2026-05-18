@@ -4,90 +4,84 @@
 
 @layer base {
   :root {
-    --background: 231 100% 95%;
-    --foreground: 0 0% 3.9%;
+    /* Warm cream background — más profesional que el azulado anterior */
+    --background: 40 20% 95%;
+    --foreground: 40 8% 10%;
 
-    --backgroundbrand: 235 100% 95%;
-    --backgroundbrand-foreground: 235 100% 95%;
+    --backgroundbrand: 40 20% 92%;
+    --backgroundbrand-foreground: 40 20% 92%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
+    --card-foreground: 40 8% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
+    --popover-foreground: 40 8% 10%;
 
     --brand: 231 100% 70%;
     --brand-foreground: 231 100% 70%;
 
-    --primary: 0 0% 9%;
+    --primary: 40 8% 10%;
     --primary-foreground: 0 0% 98%;
 
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
+    --secondary: 40 14% 94%;
+    --secondary-foreground: 40 8% 10%;
 
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
+    --muted: 40 14% 94%;
+    --muted-foreground: 40 5% 44%;
 
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
+    --accent: 40 14% 94%;
+    --accent-foreground: 40 8% 10%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 0 0% 3.9%;
+    --border: 40 9% 88%;
+    --input: 40 9% 88%;
+    --ring: 40 8% 10%;
 
-    --radius: 0.5rem;
+    --radius: 0.375rem;
 
     /* Custom properties */
     --navigation-height: 3.5rem;
     --color-brand: #6576ff;
     --color-one: #6576ff;
-    --color-two: #fe8bbb;
-    --color-three: #ffbd7a;
-
-    /* 
-    --color-one: #37ecba;
-    --color-two: #72afd3;
-    --color-three: #ff2e63;
-     */
   }
 
   .dark {
-    --background: 0 0% 0%;
-    --foreground: 0 0% 98%;
+    /* Warm dark slate — más elegante que negro puro */
+    --background: 40 17% 7%;
+    --foreground: 40 10% 96%;
 
-    --backgroundbrand: 232 45% 16%;
-    --backgroundbrand-foreground: 232 45% 16%;
+    --backgroundbrand: 40 17% 10%;
+    --backgroundbrand-foreground: 40 17% 10%;
 
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
+    --card: 40 14% 9%;
+    --card-foreground: 40 10% 96%;
 
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 40 14% 9%;
+    --popover-foreground: 40 10% 96%;
 
     --brand: 231 100% 70%;
     --brand-foreground: 231 100% 70%;
 
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
+    --primary: 40 10% 96%;
+    --primary-foreground: 40 8% 10%;
 
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 40 10% 14%;
+    --secondary-foreground: 40 10% 96%;
 
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
+    --muted: 40 10% 14%;
+    --muted-foreground: 40 5% 60%;
 
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 40 10% 14%;
+    --accent-foreground: 40 10% 96%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
+    --border: 40 8% 18%;
+    --input: 40 8% 18%;
+    --ring: 40 10% 80%;
   }
 }
 

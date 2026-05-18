@@ -11,10 +11,8 @@ import FeaturesSection, {
 import WhoUsesSttokSection from "@/components/landing/who-uses-sttok-section";
 import TestimonialsSection from "@/components/landing/testimonials-section";
 import ProductsSection from "@/components/landing/products-section";
+import AiSection from "@/components/landing/ai-section";
 import CallToActionSection from "@/components/landing/cta-section";
-
-import { SphereMask } from "@/components/magicui/sphere-mask";
-import Particles from "@/components/magicui/particles";
 
 export default function Page() {
   const { t } = useTranslation([
@@ -37,23 +35,12 @@ export default function Page() {
     <>
       <HeroSection />
       <ClientsSection />
-
-      <SphereMask />
       <ProductsSection />
-
+      <AiSection />
       <FeaturesSection features={features} />
       <WhoUsesSttokSection />
       <TestimonialsSection />
       <CallToActionSection />
-
-      <Particles
-        className="absolute inset-0 -z-10"
-        quantity={50}
-        ease={70}
-        size={0.05}
-        staticity={40}
-        color={"#ffffff"}
-      />
     </>
   );
 }

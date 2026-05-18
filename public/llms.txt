@@ -1,0 +1,44 @@
+# Sttok — Software de Gestión de Sociedades
+
+## ¿Qué es Sttok?
+
+Sttok es el software líder en España para la gestión de sociedades mercantiles. Ofrece una plataforma integral que cubre todo el ciclo de vida societario: captable, libros de socios, planes de incentivos (phantoms, stock options, warrants), juntas y consejos, mercado secundario de participaciones y simulador de operaciones societarias.
+
+## Funcionalidades principales
+
+- **Libro de Socios**: Captable digital y oficial conforme a la legislación española. Registro de socios, porcentajes, transmisiones y acuerdos.
+- **Planes de Incentivos**: Gestión de phantom shares, stock options, restricted shares y planes de vesting. Portal individual para empleados beneficiarios.
+- **Juntas y Consejos**: Convocatoria digital, delegaciones de voto, votaciones electrónicas y generación automática de actas.
+- **Simulador de Operaciones**: Cálculo de rondas de financiación, ampliaciones de capital, notas convertibles y escenarios de liquidación.
+- **Mercado Secundario**: Plataforma para compraventa de participaciones entre socios.
+- **Sttok AI**: Inteligencia artificial integrada que genera documentos, informes, listados y cálculos en segundos.
+
+## Perfiles de usuario
+
+- Empresas con múltiples socios o grupos de sociedades
+- Startups con planes de incentivos para empleados
+- Secretarios del Consejo de Administración
+- Abogados y asesores que gestionan sociedades de clientes
+
+## Cumplimiento y seguridad
+
+- ISO 27001 certificado
+- Cumplimiento RGPD (Reglamento General de Protección de Datos)
+- SSL/TLS encriptación
+- Bureau Veritas auditado
+
+## Clientes destacados
+
+AXA, Factorial, PLD Space, MyInvestor, Taxdown, Andbank, PwC, Yaba, Barkibu, Deale, Mailtrack, Banktrack, Legal Pigeon, Derecho.com, Cabiedes & Partners y más de 500 sociedades en España.
+
+## Contacto y demo
+
+- Web: https://www.sttok.com
+- App: https://app.sttok.com
+- Agendar reunión: https://calendly.com/sttok/30min
+- Blog/Recursos: https://blog.sttok.com/recursos
+- LinkedIn: https://www.linkedin.com/company/sttok/
+
+## Idiomas
+
+Español (es), English (en)

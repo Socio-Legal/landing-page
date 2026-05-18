@@ -1,32 +1,39 @@
 {
   "header": {
-    "slogan": "Usuarios",
+    "slogan": "Para quién",
     "title": "¿Quién utiliza Sttok?",
-    "description": "Sttok es una plataforma diseñada para empresas, abogados y startups que buscan una solución integral para la gestión de sociedades.",
+    "description": "Diseñado para los equipos legales y financieros que gestionan la vida societaria de las empresas.",
     "buttonText": null,
     "buttonLink": null
   },
   "items": [
     {
       "id": 1,
-      "title": "Empresas y Sociedades",
-      "content": "Gestión digital de sociedades. Libro de socio actualizado. Generación automática de documentos. Ahorra tiempo y evita errores.",
+      "title": "Empresas con muchos socios",
+      "content": "Gestiona captable, libro de socios oficial, porcentajes y acuerdos de socios. Centraliza grupos de sociedades con múltiples entidades bajo una misma plataforma.",
       "image": "/who-uses-sttok-companies.png",
       "icon": "Building2"
     },
     {
       "id": 2,
-      "title": "Abogados",
-      "content": "Para Abogados que gestionan Sociedades y Consejos. Servicio profesional sin errores. Ahorra tiempo sin excels desactualizados.",
-      "image": "who-uses-sttok-lawyers.png",
-      "icon": "Scale"
+      "title": "Empresas con planes de incentivos",
+      "content": "Startups y scale-ups con phantoms, stock options y vesting para empleados. Portal de acceso individual para cada beneficiario.",
+      "image": "/who-uses-sttok-startups.png",
+      "icon": "Handshake"
     },
     {
       "id": 3,
-      "title": "Startups",
-      "content": "Para startups e inversores. Detalles de socios y participaciones. Planifica rondas y ampliaciones. Gestiona incentivos para empleados.",
-      "image": "/who-uses-sttok-startups.png",
-      "icon": "Handshake"
+      "title": "Secretarios del Consejo",
+      "content": "Convocatoria digital de juntas y consejos, delegaciones de voto, actas y documentación mercantil centralizada. Cero burocracia en papel.",
+      "image": "/who-uses-sttok-companies.png",
+      "icon": "Scale"
+    },
+    {
+      "id": 4,
+      "title": "Abogados y asesores",
+      "content": "Gestiona múltiples sociedades de clientes desde un único panel. Historial completo, documentos generados automáticamente, sin excels desactualizados.",
+      "image": "who-uses-sttok-lawyers.png",
+      "icon": "Scale"
     }
   ]
 }

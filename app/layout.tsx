@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { I18nextProvider } from "react-i18next";
 import { GoogleTagManager } from "@next/third-parties/google";
-import { Inter as FontSans } from "next/font/google";
+import { Inter as FontSans, Instrument_Serif as FontSerif } from "next/font/google";
 
 import i18n from "@/lib/i18n";
 import { cn } from "@/lib/utils";
@@ -19,6 +19,12 @@ import { useEffect, useState } from "react";
 const fontSans = FontSans({
   subsets: ["latin"],
   variable: "--font-sans",
+});
+
+const fontSerif = FontSerif({
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+  variable: "--font-serif",
 });
 
 export default function RootLayout({
@@ -82,6 +88,7 @@ export default function RootLayout({
         className={cn(
           "min-h-screen bg-background font-sans antialiased",
           fontSans.variable,
+          fontSerif.variable,
         )}
       >
         <ThemeProvider
