@@ -5,9 +5,10 @@ import loadTranslations from "./loadTranslations";
 
 const initI18n = async () => {
   if (!i18n.isInitialized) {
-    const [esTranslations, enTranslations] = await Promise.all([
+    const [esTranslations, enTranslations, caTranslations] = await Promise.all([
       loadTranslations("es"),
       loadTranslations("en"),
+      loadTranslations("ca"),
     ]);
 
     await i18n
@@ -17,9 +18,10 @@ const initI18n = async () => {
         resources: {
           es: esTranslations,
           en: enTranslations,
+          ca: caTranslations,
         },
         fallbackLng: "es",
-        supportedLngs: ["es", "en"],
+        supportedLngs: ["es", "en", "ca"],
         detection: {
           order: ["localStorage", "navigator"],
         },
