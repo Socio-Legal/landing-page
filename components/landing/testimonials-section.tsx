@@ -65,7 +65,7 @@ const TestimonialCard: FC<TestimonialCardProps> = ({
 }) => (
   <div
     className={cn(
-      "mb-4 flex w-full cursor-pointer break-inside-avoid flex-col items-center justify-between gap-6 rounded-xl p-4 border border-border bg-card",
+      "mb-4 flex w-full cursor-pointer break-inside-avoid flex-col items-center justify-between gap-6 rounded-lg p-4 border border-border bg-card",
       className
     )}
     {...props}

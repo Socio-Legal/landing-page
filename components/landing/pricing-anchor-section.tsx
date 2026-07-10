@@ -48,13 +48,11 @@ const PricingAnchorSection: FC = () => {
             </div>
           </div>
 
-          <div className="rounded-xl border border-border bg-card p-6 md:p-8">
-            <ul className="space-y-3">
+          <div className="rounded-lg border border-border bg-card p-6 md:p-8">
+            <ul className="divide-y divide-border">
               {highlights.map((highlight, i) => (
-                <li key={i} className="flex items-start gap-3">
-                  <div className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-brand/10">
-                    <CheckIcon className="h-3 w-3 text-brand" />
-                  </div>
+                <li key={i} className="flex items-start gap-3 py-3 first:pt-0 last:pb-0">
+                  <CheckIcon className="mt-0.5 h-4 w-4 shrink-0 text-muted-foreground" />
                   <span className="text-sm leading-relaxed text-foreground">
                     {highlight}
                   </span>

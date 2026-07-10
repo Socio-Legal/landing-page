@@ -52,10 +52,9 @@ const AiSection: FC = () => {
     <section id="ai" className="border-t border-border">
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-3.5 py-1 text-xs font-medium text-muted-foreground mb-4">
-            <Sparkles className="h-3 w-3 text-brand" />
+          <p className="text-xs font-medium uppercase tracking-widest text-brand mb-3">
             {t("header.slogan")}
-          </div>
+          </p>
           <h2 className="font-serif text-3xl font-normal tracking-tight text-foreground text-balance sm:text-4xl mb-4">
             {t("header.title")}
           </h2>
@@ -71,7 +70,7 @@ const AiSection: FC = () => {
             return (
               <div
                 key={i}
-                className="rounded-xl border border-border bg-card overflow-hidden"
+                className="rounded-lg border border-border bg-card overflow-hidden"
               >
                 {/* Prompt block */}
                 <div className="border-b border-border bg-muted/40 p-5">
@@ -104,7 +103,7 @@ const AiSection: FC = () => {
         </div>
 
         {/* Guardrails strip */}
-        <div className="rounded-xl border border-border bg-backgroundbrand p-6 md:p-8 max-w-5xl mx-auto">
+        <div className="rounded-lg border border-border bg-backgroundbrand p-6 md:p-8 max-w-5xl mx-auto">
           <p className="text-center text-xs font-medium uppercase tracking-widest text-muted-foreground mb-6">
             Confianza por defecto
           </p>

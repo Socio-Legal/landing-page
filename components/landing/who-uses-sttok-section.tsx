@@ -51,7 +51,7 @@ const WhoUsesSttokSection: FC = () => {
             return (
               <article
                 key={item.id}
-                className="rounded-xl border border-border bg-card p-6 md:p-8 flex flex-col"
+                className="rounded-lg border border-border bg-card p-6 md:p-8 flex flex-col"
               >
                 <div className="flex items-start gap-4 mb-6">
                   <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-brand/10">

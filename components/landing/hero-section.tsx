@@ -13,23 +13,12 @@ export default function HeroSection() {
 
   return (
     <section id="hero" className="relative overflow-hidden">
-      <div
-        className="pointer-events-none absolute inset-0 -z-10"
-        style={{
-          backgroundImage:
-            "radial-gradient(circle, hsl(var(--border)) 1px, transparent 1px)",
-          backgroundSize: "28px 28px",
-          opacity: 0.5,
-        }}
-      />
-
       <div className="container mx-auto px-4 pt-16 pb-12 md:pt-24 md:pb-16 lg:pt-28 lg:pb-20">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6 max-w-xl">
-            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-3.5 py-1 text-xs font-medium text-muted-foreground shadow-sm animate-fade-in opacity-0 [--animation-delay:0ms]">
-              <span className="h-1.5 w-1.5 rounded-full bg-brand" />
+            <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground animate-fade-in opacity-0 [--animation-delay:0ms]">
               {t("home-hero-section:hero.badge")}
-            </div>
+            </p>
 
             <h1 className="font-serif text-4xl font-normal leading-tight tracking-tight text-foreground text-balance sm:text-5xl md:text-[54px] animate-fade-in opacity-0 [--animation-delay:100ms]">
               {t("home-hero-section:hero.title")}
