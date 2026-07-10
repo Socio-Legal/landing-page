@@ -7,6 +7,11 @@ import homePricingSection from "../public/locales/es/home-pricing-section.json";
 import homeProductsSection from "../public/locales/es/home-products-section.json";
 import homeTestimonialsSection from "../public/locales/es/home-testimonials-section.json";
 import homeUsesSection from "../public/locales/es/home-uses-section.json";
+import homeNumbersSection from "../public/locales/es/home-numbers-section.json";
+import homeAiSection from "../public/locales/es/home-ai-section.json";
+import homeSecuritySection from "../public/locales/es/home-security-section.json";
+import homeIntegrationsSection from "../public/locales/es/home-integrations-section.json";
+import homePricingAnchor from "../public/locales/es/home-pricing-anchor.json";
 
 import productHeroSection from "../public/locales/es/product-hero-section.json";
 import productPartnerBookPage from "../public/locales/es/product-partner-book-page.json";
@@ -47,6 +52,11 @@ import homePricingSectionEN from "../public/locales/en/home-pricing-section.json
 import homeProductsSectionEN from "../public/locales/en/home-products-section.json";
 import homeTestimonialsSectionEN from "../public/locales/en/home-testimonials-section.json";
 import homeUsesSectionEN from "../public/locales/en/home-uses-section.json";
+import homeNumbersSectionEN from "../public/locales/en/home-numbers-section.json";
+import homeAiSectionEN from "../public/locales/en/home-ai-section.json";
+import homeSecuritySectionEN from "../public/locales/en/home-security-section.json";
+import homeIntegrationsSectionEN from "../public/locales/en/home-integrations-section.json";
+import homePricingAnchorEN from "../public/locales/en/home-pricing-anchor.json";
 
 import productHeroSectionEN from "../public/locales/en/product-hero-section.json";
 import productPartnerBookPageEN from "../public/locales/en/product-partner-book-page.json";
@@ -82,6 +92,11 @@ const loadTranslations = (lang: "es" | "en") => {
       "home-products-section": homeProductsSection,
       "home-testimonials-section": homeTestimonialsSection,
       "home-uses-section": homeUsesSection,
+      "home-numbers-section": homeNumbersSection,
+      "home-ai-section": homeAiSection,
+      "home-security-section": homeSecuritySection,
+      "home-integrations-section": homeIntegrationsSection,
+      "home-pricing-anchor": homePricingAnchor,
 
       "product-hero-section": productHeroSection,
       "product-partner-book-page": productPartnerBookPage,
@@ -124,6 +139,11 @@ const loadTranslations = (lang: "es" | "en") => {
     "home-products-section": homeProductsSectionEN,
     "home-testimonials-section": homeTestimonialsSectionEN,
     "home-uses-section": homeUsesSectionEN,
+    "home-numbers-section": homeNumbersSectionEN,
+    "home-ai-section": homeAiSectionEN,
+    "home-security-section": homeSecuritySectionEN,
+    "home-integrations-section": homeIntegrationsSectionEN,
+    "home-pricing-anchor": homePricingAnchorEN,
 
     "product-hero-section": productHeroSectionEN,
     "product-partner-book-page": productPartnerBookPageEN,

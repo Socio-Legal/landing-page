@@ -1,0 +1,19 @@
+{
+  "header": {
+    "slogan": "Inversión",
+    "title": "Desde 550€ por sociedad al año",
+    "description": "Plan personalizado según número de sociedades, módulos y nivel de soporte. La mejor forma de ver si Sttok encaja con tu empresa es una demo de 30 minutos con un experto societario."
+  },
+  "highlights": [
+    "Sin coste de implantación",
+    "Onboarding completo en una semana",
+    "Firma electrónica incluida",
+    "Soporte en español"
+  ],
+  "cta": {
+    "primary": "Solicitar demo personalizada",
+    "primaryLink": "https://calendly.com/sttok/30min",
+    "secondary": "Ver planes y precios",
+    "secondaryLink": "/precios"
+  }
+}

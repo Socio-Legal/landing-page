@@ -1,0 +1,26 @@
+{
+  "header": {
+    "slogan": "Por los números",
+    "title": "El estándar de la gestión societaria en España",
+    "description": "Cientos de empresas líderes confían su captable, sus juntas y sus planes de incentivos a Sttok."
+  },
+  "items": [
+    {
+      "value": "+250",
+      "label": "empresas gestionan su sociedad con Sttok"
+    },
+    {
+      "value": "+20.000M€",
+      "label": "en equity bajo gestión"
+    },
+    {
+      "value": "+250.000",
+      "label": "socios gestionados en la plataforma"
+    },
+    {
+      "value": "+5.000",
+      "label": "beneficiarios de planes de incentivos"
+    }
+  ],
+  "footnote": "NPS de 8,5 y onboarding completo en una semana."
+}

@@ -1,0 +1,26 @@
+{
+  "header": {
+    "slogan": "By the numbers",
+    "title": "The standard for corporate management in Spain",
+    "description": "Hundreds of leading companies trust their captable, shareholder meetings and incentive plans to Sttok."
+  },
+  "items": [
+    {
+      "value": "+250",
+      "label": "companies running their corporate life on Sttok"
+    },
+    {
+      "value": "+€20B",
+      "label": "in equity under management"
+    },
+    {
+      "value": "+250,000",
+      "label": "shareholders managed on the platform"
+    },
+    {
+      "value": "+5,000",
+      "label": "incentive plan beneficiaries"
+    }
+  ],
+  "footnote": "NPS of 8.5 and full onboarding in one week."
+}

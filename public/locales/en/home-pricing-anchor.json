@@ -1,0 +1,20 @@
+{
+  "header": {
+    "slogan": "Investment",
+    "title": "Starting at €550 per company per year",
+    "description": "Custom plan based on number of companies, modules and support level. The best way to see if Sttok fits your company is a 30-minute demo with a corporate expert.",
+    "highlights": []
+  },
+  "highlights": [
+    "No implementation fee",
+    "Full onboarding in one week",
+    "Electronic signature included",
+    "Support in Spanish and English"
+  ],
+  "cta": {
+    "primary": "Request personalized demo",
+    "primaryLink": "https://calendly.com/sttok/30min",
+    "secondary": "See plans and pricing",
+    "secondaryLink": "/precios"
+  }
+}

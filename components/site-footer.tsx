@@ -1,122 +1,103 @@
 "use client";
 
-import { LinkedInLogoIcon, ChevronRightIcon } from "@radix-ui/react-icons";
-import { Icons } from "./icons";
-
-import Blur02 from "@/public/blur-02.svg";
-import { siteConfig } from "@/config/site-config";
+import Link from "next/link";
 import Image from "next/image";
+import { LinkedInLogoIcon } from "@radix-ui/react-icons";
+
+import { Icons } from "./icons";
+import { siteConfig } from "@/config/site-config";
 import { useTranslation } from "react-i18next";
-
-interface Icon {
-  icon: JSX.Element;
-  url: string;
-}
-
-interface FooterLink {
-  id: number;
-  title: string;
-  url: string;
-  alt?: string;
-  isHeader?: boolean;
-}
+import LanguageSwitcher from "./language-switcher";
 
 const FooterIcons = {
-  LinkedIn: <LinkedInLogoIcon className="h-6 w-6" />,
-};
-
-const icons: Icon[] = siteConfig.footer.social.map((social) => ({
-  icon: FooterIcons[social.icon as keyof typeof FooterIcons],
-  url: social.url,
-}));
-
-const footerLinks: FooterLink[][] = siteConfig.footer.menu;
-const securityLogos: string[] = siteConfig.footer.logos;
-
-const footerStyle = {
-  backgroundImage: `url(${Blur02.src})`,
-  backgroundSize: "cover",
-  backgroundPosition: "bottom",
+  LinkedIn: <LinkedInLogoIcon className="h-5 w-5" />,
 };
 
 export function SiteFooter() {
   const { t } = useTranslation("common");
 
   return (
-    <footer
-      className="px-7 md:px-10 bg-white dark:bg-black"
-      style={footerStyle}
-    >
-      <div className="flex flex-col py-10 md:flex-row md:items-center md:justify-between container">
-        <div className="flex flex-col items-start justify-start gap-y-5">
-          <a href="#" className="flex items-center gap-x-2.5">
-            <Icons.logo className="w-auto h-[30px]" />
-            <h1 className="text-xl font-bold text-neutral-900 dark:text-white hidden">
-              Sttok
-            </h1>
-          </a>
-          <p className="tracking-tight text-neutral-900 dark:text-white">
-            {t("sttokTitle")}
-          </p>
-          <p className="text-sm tracking-tight text-neutral-500 dark:text-neutral-400 sm:text-center">
-            {t("allRightsReserved")}
-          </p>
-        </div>
-
-        <div className="pt-5 md:w-1/2">
-          <div className="block md:flex items-start justify-between md:gap-x-3 lg:pl-10">
-            {footerLinks.map((column, columnIndex) => (
-              <ul
-                key={columnIndex}
-                className="flex flex-col gap-y-2 mt-10 md:mt-0"
-              >
-                {column.map((link) => (
-                  <li
-                    key={link.id}
-                    className="group inline-flex cursor-pointer items-center justify-start gap-1 text-[15px]/snug font-medium text-neutral-400 duration-200 hover:text-neutral-700 dark:text-neutral-400 dark:hover:text-neutral-200"
-                  >
-                    {link.isHeader ? (
-                      <h2 className="text-sm font-semibold uppercase text-black dark:text-white">
-                        {t(link.title)}
-                      </h2>
-                    ) : (
-                      <a href={link.url} title={link.alt || ""}>
-                        {t(link.title)}
-                      </a>
-                    )}
-                    <ChevronRightIcon className="h-4 w-4 translate-x-0 transform opacity-0 transition-all duration-300 ease-out group-hover:translate-x-1 group-hover:opacity-100" />
-                  </li>
-                ))}
-              </ul>
-            ))}
+    <footer className="border-t border-border bg-background">
+      {/* Main footer columns */}
+      <div className="container mx-auto px-4 py-12 md:py-16">
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-5">
+          {/* Brand column */}
+          <div className="col-span-2 md:col-span-1 flex flex-col gap-4">
+            <Link href="/" title="Sttok">
+              <Icons.logo className="h-[24px] w-auto" />
+            </Link>
+            <p className="text-sm leading-relaxed text-muted-foreground max-w-[200px]">
+              {t("sttokTitle")}
+            </p>
+            {/* Social */}
+            <div className="flex items-center gap-3 mt-1">
+              {siteConfig.footer.social.map((social, i) => (
+                <a
+                  key={i}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                  aria-label="LinkedIn"
+                >
+                  {FooterIcons[social.icon as keyof typeof FooterIcons]}
+                </a>
+              ))}
+            </div>
           </div>
+
+          {/* Link columns */}
+          {siteConfig.footer.menu.map((column, colIdx) => (
+            <div key={colIdx} className="flex flex-col gap-3">
+              {column.map((link) =>
+                link.isHeader ? (
+                  <p
+                    key={link.id}
+                    className="text-xs font-semibold uppercase tracking-wider text-foreground"
+                  >
+                    {t(link.title)}
+                  </p>
+                ) : (
+                  <Link
+                    key={link.id}
+                    href={link.url || "#"}
+                    title={link.alt}
+                    className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                  >
+                    {t(link.title)}
+                  </Link>
+                )
+              )}
+            </div>
+          ))}
         </div>
       </div>
 
-      <div className="flex flex-col justify-between gap-y-10 border-t border-dashed py-10 md:flex-row md:items-center container">
-        <div className="flex items-center gap-x-4">
-          {securityLogos.map((logo, index) => (
-            <Image
-              key={index}
-              src={logo}
-              alt="Security logo"
-              width={100}
-              height={50}
-              className="w-auto h-12"
-            />
-          ))}
-        </div>
+      {/* Bottom bar */}
+      <div className="border-t border-border">
+        <div className="container mx-auto px-4 py-5 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          {/* Security logos */}
+          <div className="flex items-center gap-4 flex-wrap">
+            {siteConfig.footer.logos.map((logo, i) => (
+              <div key={i} className="relative h-8 w-20">
+                <Image
+                  src={logo}
+                  alt="Certificado de seguridad"
+                  fill
+                  style={{ objectFit: "contain" }}
+                  className="opacity-70"
+                />
+              </div>
+            ))}
+          </div>
 
-        <div className="flex items-center gap-x-4">
-          {icons.map((icon, index) => (
-            <a
-              key={index}
-              href={icon.url}
-              className="text-xl text-neutral-500 hover:text-neutral-900 hover:dark:text-white"
-            >
-              {icon.icon}
-            </a>
-          ))}
+          {/* Right side: copyright + language */}
+          <div className="flex items-center gap-4">
+            <p className="text-xs text-muted-foreground">
+              {t("allRightsReserved")}
+            </p>
+            <LanguageSwitcher />
+          </div>
         </div>
       </div>
     </footer>
