@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sttok — Cabecera Mockup v3</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:         #F4F3EF;
+      --white:      #FFFFFF;
+      --text:       #1A1917;
+      --muted:      #6B6960;
+      --subtle:     #9A9888;
+      --brand:      #6576ff;
+      --accent:     #1B3BFF;
+      --border:     #E0DED8;
+      --border-mid: #C8C6BE;
+      --green:      #16A34A;
+      --green-bg:   #F0FDF4;
+      --amber:      #D97706;
+      --amber-bg:   #FFFBEB;
+      --shadow-nav: 0 8px 40px rgba(0,0,0,0.10), 0 2px 8px rgba(0,0,0,0.05);
+      --nav-h:      60px;
+      --r:          7px;
+      --r-lg:       12px;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* ══════════════════════════════════════════════════
+       NAV
+    ══════════════════════════════════════════════════ */
+    .nav-wrap {
+      position: sticky; top: 0; z-index: 200;
+    }
+    nav {
+      height: var(--nav-h);
+      background: rgba(244,243,239,0.95);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center;
+    }
+    .nav-inner {
+      max-width: 1160px; margin: 0 auto;
+      padding: 0 28px; width: 100%;
+      display: flex; align-items: center;
+      gap: 0;
+    }
+
+    /* Logo */
+    .nav-logo {
+      display: flex; align-items: center;
+      margin-right: 32px; flex-shrink: 0;
+    }
+    .nav-logo svg { height: 24px; width: auto; }
+
+    /* Main links */
+    .nav-links {
+      display: flex; align-items: center;
+      gap: 2px; flex: 1;
+    }
+    .nav-item {
+      position: relative;
+    }
+    .nav-link {
+      display: inline-flex; align-items: center; gap: 4px;
+      font-size: 13.5px; font-weight: 500;
+      color: var(--muted);
+      padding: 6px 11px; border-radius: 6px;
+      cursor: pointer; user-select: none;
+      transition: color 0.12s, background 0.12s;
+    }
+    .nav-link:hover, .nav-item.open .nav-link {
+      color: var(--text); background: rgba(0,0,0,0.05);
+    }
+    .nav-chevron {
+      width: 12px; height: 12px;
+      transition: transform 0.2s;
+      opacity: 0.5;
+    }
+    .nav-item.open .nav-chevron { transform: rotate(180deg); opacity: 0.8; }
+
+    /* Right side */
+    .nav-right {
+      display: flex; align-items: center; gap: 6px;
+    }
+    .btn-login {
+      font-size: 13.5px; font-weight: 500;
+      color: var(--muted); padding: 6px 12px;
+      border-radius: 6px; border: none;
+      background: none; cursor: pointer;
+      transition: color 0.12s, background 0.12s;
+    }
+    .btn-login:hover { color: var(--text); background: rgba(0,0,0,0.05); }
+
+    .btn-demo {
+      font-size: 13.5px; font-weight: 600;
+      background: var(--text); color: #fff;
+      border: none; cursor: pointer;
+      padding: 7px 15px; border-radius: 6px;
+      transition: opacity 0.15s;
+    }
+    .btn-demo:hover { opacity: 0.82; }
+
+    .btn-meeting {
+      font-size: 13.5px; font-weight: 500;
+      background: transparent; color: var(--text);
+      border: 1px solid var(--border-mid);
+      cursor: pointer; padding: 6px 14px;
+      border-radius: 6px;
+      display: inline-flex; align-items: center; gap: 6px;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .btn-meeting:hover { border-color: var(--text); background: rgba(0,0,0,0.03); }
+    .btn-meeting-icon { width: 14px; height: 14px; opacity: 0.6; }
+
+    /* ── Dropdown panel ──────────────────────────── */
+    .dropdown {
+      position: absolute;
+      top: calc(100% + 10px);
+      left: 50%; transform: translateX(-50%);
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--r-lg);
+      box-shadow: var(--shadow-nav);
+      opacity: 0; pointer-events: none;
+      transform: translateX(-50%) translateY(-6px);
+      transition: opacity 0.18s ease, transform 0.18s ease;
+      min-width: 560px;
+    }
+    .dropdown::before {
+      content: '';
+      position: absolute; top: -6px; left: 50%;
+      transform: translateX(-50%);
+      width: 100%; height: 12px;
+    }
+    .nav-item.open .dropdown {
+      opacity: 1; pointer-events: all;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    /* Dropdown inner layout */
+    .dd-inner { display: flex; }
+    .dd-col-main { flex: 1; padding: 16px; }
+    .dd-col-side {
+      width: 220px; padding: 16px;
+      border-left: 1px solid var(--border);
+      background: #FAFAF8;
+      border-radius: 0 var(--r-lg) var(--r-lg) 0;
+    }
+    .dd-section-label {
+      font-size: 10.5px; font-weight: 600;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: var(--subtle); padding: 4px 8px 10px;
+    }
+    .dd-item {
+      display: flex; align-items: flex-start; gap: 12px;
+      padding: 10px 10px; border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.12s;
+    }
+    .dd-item:hover { background: var(--bg); }
+    .dd-icon {
+      width: 34px; height: 34px; flex-shrink: 0;
+      border: 1px solid var(--border);
+      border-radius: 7px;
+      background: var(--white);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--text);
+    }
+    .dd-icon svg { width: 16px; height: 16px; }
+    .dd-text {}
+    .dd-title {
+      font-size: 13.5px; font-weight: 600;
+      color: var(--text); line-height: 1.3;
+    }
+    .dd-desc {
+      font-size: 12px; color: var(--muted);
+      line-height: 1.45; margin-top: 1px;
+    }
+
+    /* Side col items */
+    .dd-side-item {
+      display: flex; align-items: center; gap: 10px;
+      padding: 9px 8px; border-radius: 7px;
+      cursor: pointer;
+      transition: background 0.12s;
+    }
+    .dd-side-item:hover { background: var(--bg); }
+    .dd-side-icon {
+      width: 28px; height: 28px; flex-shrink: 0;
+      border-radius: 6px; background: var(--bg);
+      border: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .dd-side-icon svg { width: 13px; height: 13px; }
+    .dd-side-title { font-size: 13px; font-weight: 500; color: var(--text); }
+    .dd-side-desc { font-size: 11.5px; color: var(--muted); }
+
+    .dd-divider { height: 1px; background: var(--border); margin: 8px 8px; }
+
+    .dd-cta-row {
+      display: flex; gap: 8px; padding: 12px 10px 4px;
+      border-top: 1px solid var(--border); margin-top: 4px;
+    }
+    .dd-cta-btn {
+      flex: 1; text-align: center;
+      font-size: 12.5px; font-weight: 600;
+      padding: 8px 12px; border-radius: 6px;
+      cursor: pointer; transition: all 0.12s;
+    }
+    .dd-cta-primary {
+      background: var(--text); color: #fff;
+    }
+    .dd-cta-primary:hover { opacity: 0.85; }
+    .dd-cta-outline {
+      background: transparent; color: var(--text);
+      border: 1px solid var(--border-mid);
+    }
+    .dd-cta-outline:hover { border-color: var(--text); background: var(--bg); }
+
+    /* ══════════════════════════════════════════════════
+       HERO
+    ══════════════════════════════════════════════════ */
+    .hero { padding: 72px 28px 0; }
+    .hero-inner { max-width: 1160px; margin: 0 auto; }
+
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 7px;
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: 100px; padding: 5px 13px 5px 8px;
+      font-size: 12.5px; font-weight: 500; color: var(--muted);
+      margin-bottom: 26px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    }
+    .badge-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--brand); }
+    .hero-badge strong { color: var(--text); font-weight: 600; }
+
+    .hero-h1 {
+      font-family: 'Instrument Serif', serif;
+      font-size: clamp(44px, 5.5vw, 64px);
+      font-weight: 400; line-height: 1.08;
+      letter-spacing: -0.022em;
+      color: var(--text); max-width: 740px;
+      margin-bottom: 20px;
+    }
+    .hero-h1 em { font-style: italic; color: var(--muted); }
+
+    .hero-sub {
+      font-size: 17px; color: var(--muted);
+      max-width: 520px; line-height: 1.65;
+      margin-bottom: 34px;
+    }
+
+    .hero-ctas { display: flex; gap: 10px; margin-bottom: 60px; }
+    .btn-hero-p {
+      font-size: 14.5px; font-weight: 600;
+      background: var(--text); color: #fff;
+      border: none; cursor: pointer;
+      padding: 12px 22px; border-radius: var(--r);
+      display: inline-flex; align-items: center; gap: 7px;
+      transition: opacity 0.15s, transform 0.15s;
+    }
+    .btn-hero-p:hover { opacity: 0.82; transform: translateY(-1px); }
+    .btn-hero-o {
+      font-size: 14.5px; font-weight: 500;
+      background: transparent; color: var(--text);
+      border: 1px solid var(--border-mid);
+      cursor: pointer; padding: 12px 22px;
+      border-radius: var(--r);
+      display: inline-flex; align-items: center; gap: 7px;
+      transition: border-color 0.15s, background 0.15s;
+    }
+    .btn-hero-o:hover { border-color: var(--text); background: rgba(0,0,0,0.03); }
+
+    /* ══════════════════════════════════════════════════
+       HERO SCREENSHOT
+    ══════════════════════════════════════════════════ */
+    .hero-screen {
+      max-width: 920px; margin: 0 auto;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-bottom: none;
+      border-radius: var(--r-lg) var(--r-lg) 0 0;
+      box-shadow: 0 12px 48px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+    .sc-chrome {
+      background: #F0EFEB; border-bottom: 1px solid var(--border);
+      padding: 10px 14px; display: flex; align-items: center; gap: 7px;
+    }
+    .cd { width: 10px; height: 10px; border-radius: 50%; }
+    .cdr { background: #FC8181; } .cdy { background: #F6C90E; } .cdg { background: #68D391; }
+    .sc-url {
+      flex: 1; height: 22px; background: var(--white);
+      border: 1px solid var(--border); border-radius: 4px;
+      margin: 0 8px; display: flex; align-items: center;
+      padding: 0 10px; font-size: 11.5px; color: var(--subtle);
+    }
+    .sc-body { padding: 20px; background: var(--bg); }
+    .sc-topbar {
+      display: flex; justify-content: space-between; align-items: center;
+      margin-bottom: 14px;
+    }
+    .sc-title { font-size: 13px; font-weight: 600; }
+    .sc-meta { font-size: 11px; color: var(--subtle); margin-top: 2px; }
+    .chip {
+      font-size: 10.5px; font-weight: 600; padding: 3px 9px;
+      border-radius: 100px; white-space: nowrap;
+      display: inline-flex; align-items: center; gap: 4px;
+    }
+    .chip-g { background: var(--green-bg); color: var(--green); }
+    .chip-a { background: var(--amber-bg); color: var(--amber); }
+    .chip-b { background: #EEF1FF; color: var(--accent); }
+    .sc-table {
+      background: var(--white); border: 1px solid var(--border);
+      border-radius: 8px; overflow: hidden;
+    }
+    .sc-th-row, .sc-tr {
+      display: grid;
+      grid-template-columns: 2fr 1fr 0.9fr 1fr 0.9fr;
+      padding: 8px 14px;
+    }
+    .sc-th-row { background: #F7F6F2; border-bottom: 1px solid var(--border); }
+    .sc-th { font-size: 10.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--subtle); }
+    .sc-tr { border-bottom: 1px solid var(--border); align-items: center; }
+    .sc-tr:last-child { border-bottom: none; }
+    .sc-td { font-size: 12.5px; color: var(--text); }
+    .sc-td.dim { color: var(--muted); }
+    .sc-td.bold { font-weight: 600; }
+    .av { display: flex; align-items: center; gap: 8px; }
+    .avc {
+      width: 24px; height: 24px; border-radius: 50%;
+      font-size: 10px; font-weight: 700; color: #fff;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+
+    /* ══════════════════════════════════════════════════
+       CLIENTS
+    ══════════════════════════════════════════════════ */
+    .clients {
+      background: var(--white);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 40px 28px;
+    }
+    .clients-inner { max-width: 1160px; margin: 0 auto; }
+    .clients-label {
+      font-size: 10.5px; font-weight: 600; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--subtle);
+      text-align: center; margin-bottom: 28px;
+    }
+    .logos-row {
+      display: flex; align-items: center; justify-content: center;
+      flex-wrap: wrap; gap: 0;
+    }
+    .logo-wrap {
+      padding: 8px 28px;
+      border-right: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: center;
+    }
+    .logo-wrap:last-child { border-right: none; }
+    .logo-wrap img {
+      height: 24px; width: auto;
+      filter: grayscale(100%) opacity(0.45);
+      transition: filter 0.2s;
+      object-fit: contain;
+    }
+    .logo-wrap:hover img { filter: grayscale(0%) opacity(1); }
+
+    /* ══════════════════════════════════════════════════
+       PRE-FOOTER CTA
+    ══════════════════════════════════════════════════ */
+    .prefooter {
+      background: var(--text);
+      padding: 80px 28px;
+    }
+    .prefooter-inner {
+      max-width: 1160px; margin: 0 auto;
+      display: flex; align-items: center;
+      justify-content: space-between; gap: 48px;
+    }
+    .prefooter-left { max-width: 560px; }
+    .prefooter-eyebrow {
+      font-size: 11px; font-weight: 600;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: rgba(255,255,255,0.4); margin-bottom: 14px;
+    }
+    .prefooter-h2 {
+      font-family: 'Instrument Serif', serif;
+      font-size: clamp(30px, 3.5vw, 44px);
+      font-weight: 400; line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: #fff; margin-bottom: 14px;
+    }
+    .prefooter-h2 em { font-style: italic; color: rgba(255,255,255,0.55); }
+    .prefooter-sub {
+      font-size: 15.5px; color: rgba(255,255,255,0.55);
+      line-height: 1.6;
+    }
+    .prefooter-right { display: flex; flex-direction: column; gap: 10px; align-items: flex-start; flex-shrink: 0; }
+    .btn-pf-primary {
+      font-size: 14.5px; font-weight: 600;
+      background: #fff; color: var(--text);
+      border: none; cursor: pointer;
+      padding: 13px 26px; border-radius: var(--r);
+      display: inline-flex; align-items: center; gap: 8px;
+      transition: opacity 0.15s; white-space: nowrap;
+      min-width: 220px; justify-content: center;
+    }
+    .btn-pf-primary:hover { opacity: 0.88; }
+    .btn-pf-outline {
+      font-size: 14.5px; font-weight: 500;
+      background: transparent; color: rgba(255,255,255,0.8);
+      border: 1px solid rgba(255,255,255,0.2);
+      cursor: pointer; padding: 13px 26px;
+      border-radius: var(--r);
+      display: inline-flex; align-items: center; gap: 8px;
+      transition: border-color 0.15s, background 0.15s; white-space: nowrap;
+      min-width: 220px; justify-content: center;
+    }
+    .btn-pf-outline:hover { border-color: rgba(255,255,255,0.5); background: rgba(255,255,255,0.05); }
+    .prefooter-trust {
+      display: flex; align-items: center; gap: 16px;
+      margin-top: 6px;
+    }
+    .trust-item {
+      display: flex; align-items: center; gap: 5px;
+      font-size: 11.5px; color: rgba(255,255,255,0.4);
+    }
+    .trust-item svg { width: 12px; height: 12px; opacity: 0.6; }
+
+    /* ══════════════════════════════════════════════════
+       FOOTER
+    ══════════════════════════════════════════════════ */
+    footer {
+      background: #111009;
+      border-top: 1px solid rgba(255,255,255,0.07);
+      padding: 56px 28px 0;
+    }
+    .footer-inner {
+      max-width: 1160px; margin: 0 auto;
+    }
+
+    /* Main grid */
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.8fr 1fr 1fr 1fr 1fr;
+      gap: 40px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    /* Brand col */
+    .footer-brand {}
+    .footer-logo svg { height: 22px; width: auto; }
+    .footer-logo svg path, .footer-logo svg g { fill: rgba(255,255,255,0.9); }
+    .footer-desc {
+      font-size: 13.5px; color: rgba(255,255,255,0.4);
+      line-height: 1.65; margin-top: 14px; max-width: 220px;
+    }
+    .footer-social {
+      display: flex; gap: 8px; margin-top: 20px;
+    }
+    .social-btn {
+      width: 32px; height: 32px;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 7px;
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,0.4);
+      transition: border-color 0.15s, color 0.15s;
+      cursor: pointer;
+    }
+    .social-btn:hover { border-color: rgba(255,255,255,0.35); color: rgba(255,255,255,0.9); }
+    .social-btn svg { width: 14px; height: 14px; }
+
+    /* Nav cols */
+    .footer-col-title {
+      font-size: 11px; font-weight: 600;
+      letter-spacing: 0.1em; text-transform: uppercase;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 16px;
+    }
+    .footer-links { display: flex; flex-direction: column; gap: 9px; }
+    .footer-link {
+      font-size: 13.5px; color: rgba(255,255,255,0.4);
+      transition: color 0.12s; cursor: pointer;
+      display: inline-flex; align-items: center; gap: 5px;
+    }
+    .footer-link:hover { color: rgba(255,255,255,0.85); }
+    .footer-link-badge {
+      font-size: 9.5px; font-weight: 700;
+      background: #6576ff; color: #fff;
+      padding: 1px 6px; border-radius: 3px;
+      letter-spacing: 0.04em;
+    }
+    .footer-link-new {
+      font-size: 9.5px; font-weight: 700;
+      background: rgba(101,118,255,0.15); color: #8b9bff;
+      padding: 1px 6px; border-radius: 3px;
+    }
+
+    /* Bottom bar */
+    .footer-bottom {
+      padding: 20px 0 24px;
+      display: flex; align-items: center;
+      justify-content: space-between; gap: 24px;
+      flex-wrap: wrap;
+    }
+    .footer-badges {
+      display: flex; align-items: center; gap: 16px;
+    }
+    .footer-badge-img {
+      height: 28px; width: auto;
+      filter: grayscale(100%) brightness(0.5);
+      transition: filter 0.2s;
+    }
+    .footer-badge-img:hover { filter: grayscale(0%) brightness(1); }
+    .footer-copyright {
+      font-size: 12.5px; color: rgba(255,255,255,0.25);
+    }
+    .footer-bottom-links {
+      display: flex; align-items: center; gap: 0;
+    }
+    .footer-bottom-link {
+      font-size: 12.5px; color: rgba(255,255,255,0.3);
+      padding: 4px 12px;
+      border-right: 1px solid rgba(255,255,255,0.1);
+      transition: color 0.12s; cursor: pointer;
+    }
+    .footer-bottom-link:last-child { border-right: none; }
+    .footer-bottom-link:hover { color: rgba(255,255,255,0.7); }
+
+    /* Lang switcher */
+    .lang-switch {
+      display: flex; align-items: center;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 6px; overflow: hidden;
+    }
+    .lang-btn {
+      font-size: 12px; font-weight: 600;
+      padding: 5px 12px; cursor: pointer;
+      color: rgba(255,255,255,0.35);
+      background: none; border: none;
+      transition: color 0.12s, background 0.12s;
+    }
+    .lang-btn.active {
+      background: rgba(255,255,255,0.1);
+      color: rgba(255,255,255,0.85);
+    }
+    .lang-btn:hover:not(.active) { color: rgba(255,255,255,0.6); }
+
+    /* ══════════════════════════════════════════════════
+       ANNOTATIONS (mockup labels)
+    ══════════════════════════════════════════════════ */
+    .annotation {
+      position: fixed; bottom: 20px; left: 50%;
+      transform: translateX(-50%);
+      background: var(--text); color: #fff;
+      font-size: 12px; font-weight: 500;
+      padding: 8px 18px; border-radius: 100px;
+      pointer-events: none; white-space: nowrap;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════
+     NAVIGATION
+══════════════════════════════════════════════════ -->
+<div class="nav-wrap">
+<nav>
+  <div class="nav-inner">
+
+    <!-- Logo real de Sttok -->
+    <a href="#" class="nav-logo">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 446.88 130.499996" preserveAspectRatio="xMidYMid meet" version="1.0">
+        <g fill="#6576ff" fill-opacity="1">
+          <g transform="translate(-5.04635, 127.321456)"><g><path d="M 78.46875 -88.828125 C 77.988281 -93.734375 75.890625 -97.546875 72.171875 -100.265625 C 68.460938 -102.984375 63.460938 -104.34375 57.171875 -104.34375 C 50.710938 -104.34375 45.757812 -103.023438 42.3125 -100.390625 C 38.863281 -97.753906 37.140625 -94.425781 37.140625 -90.40625 C 37.054688 -85.9375 38.972656 -82.554688 42.890625 -80.265625 C 46.804688 -77.972656 51.460938 -76.195312 56.859375 -74.9375 L 68.0625 -72.265625 C 75.289062 -70.640625 81.710938 -68.285156 87.328125 -65.203125 C 92.953125 -62.117188 97.375 -58.148438 100.59375 -53.296875 C 103.820312 -48.453125 105.4375 -42.554688 105.4375 -35.609375 C 105.394531 -24.203125 101.125 -15.117188 92.625 -8.359375 C 84.125 -1.609375 72.265625 1.765625 57.046875 1.765625 C 41.910156 1.765625 29.835938 -1.679688 20.828125 -8.578125 C 11.816406 -15.484375 7.144531 -25.671875 6.8125 -39.140625 L 32.328125 -39.140625 C 32.773438 -32.890625 35.238281 -28.191406 39.71875 -25.046875 C 44.207031 -21.898438 49.878906 -20.328125 56.734375 -20.328125 C 63.429688 -20.328125 68.78125 -21.75 72.78125 -24.59375 C 76.78125 -27.4375 78.800781 -31.128906 78.84375 -35.671875 C 78.800781 -39.890625 76.953125 -43.132812 73.296875 -45.40625 C 69.640625 -47.6875 64.425781 -49.640625 57.65625 -51.265625 L 44.078125 -54.671875 C 33.566406 -57.179688 25.265625 -61.175781 19.171875 -66.65625 C 13.085938 -72.132812 10.066406 -79.460938 10.109375 -88.640625 C 10.066406 -96.191406 12.082031 -102.796875 16.15625 -108.453125 C 20.238281 -114.117188 25.851562 -118.523438 33 -121.671875 C 40.144531 -124.816406 48.257812 -126.390625 57.34375 -126.390625 C 66.601562 -126.390625 74.691406 -124.804688 81.609375 -121.640625 C 88.523438 -118.472656 93.910156 -114.066406 97.765625 -108.421875 C 101.628906 -102.785156 103.617188 -96.253906 103.734375 -88.828125 Z M 78.46875 -88.828125 "/></g></g>
+          <g transform="translate(107.20968, 127.321456)"><g><path d="M 60.09375 -93.515625 L 60.09375 -74.03125 L 42.5 -74.03125 L 42.5 -28.734375 C 42.5 -25.160156 43.304688 -22.742188 44.921875 -21.484375 C 46.546875 -20.234375 48.660156 -19.609375 51.265625 -19.609375 C 52.484375 -19.609375 53.695312 -19.71875 54.90625 -19.9375 C 56.125 -20.15625 57.0625 -20.328125 57.71875 -20.453125 L 61.796875 -1.15625 C 60.492188 -0.75 58.664062 -0.273438 56.3125 0.265625 C 53.957031 0.816406 51.097656 1.15625 47.734375 1.28125 C 38.316406 1.6875 30.753906 -0.347656 25.046875 -4.828125 C 19.347656 -9.316406 16.519531 -16.148438 16.5625 -25.328125 L 16.5625 -74.03125 L 3.78125 -74.03125 L 3.78125 -93.515625 L 16.5625 -93.515625 L 16.5625 -115.921875 L 42.5 -115.921875 L 42.5 -93.515625 Z M 60.09375 -93.515625 "/></g></g>
+          <g transform="translate(173.808435, 127.321456)"><g><path d="M 60.09375 -93.515625 L 60.09375 -74.03125 L 42.5 -74.03125 L 42.5 -28.734375 C 42.5 -25.160156 43.304688 -22.742188 44.921875 -21.484375 C 46.546875 -20.234375 48.660156 -19.609375 51.265625 -19.609375 C 52.484375 -19.609375 53.695312 -19.71875 54.90625 -19.9375 C 56.125 -20.15625 57.0625 -20.328125 57.71875 -20.453125 L 61.796875 -1.15625 C 60.492188 -0.75 58.664062 -0.273438 56.3125 0.265625 C 53.957031 0.816406 51.097656 1.15625 47.734375 1.28125 C 38.316406 1.6875 30.753906 -0.347656 25.046875 -4.828125 C 19.347656 -9.316406 16.519531 -16.148438 16.5625 -25.328125 L 16.5625 -74.03125 L 3.78125 -74.03125 L 3.78125 -93.515625 L 16.5625 -93.515625 L 16.5625 -115.921875 L 42.5 -115.921875 L 42.5 -93.515625 Z M 60.09375 -93.515625 "/></g></g>
+          <g transform="translate(240.407191, 127.321456)"><g><path d="M 52.59375 1.828125 C 43.144531 1.828125 34.976562 -0.1875 28.09375 -4.21875 C 21.21875 -8.257812 15.910156 -13.898438 12.171875 -21.140625 C 8.441406 -28.390625 6.578125 -36.804688 6.578125 -46.390625 C 6.578125 -56.046875 8.441406 -64.492188 12.171875 -71.734375 C 15.910156 -78.984375 21.21875 -84.628906 28.09375 -88.671875 C 34.976562 -92.710938 43.144531 -94.734375 52.59375 -94.734375 C 62.050781 -94.734375 70.21875 -92.710938 77.09375 -88.671875 C 83.976562 -84.628906 89.285156 -78.984375 93.015625 -71.734375 C 96.753906 -64.492188 98.625 -56.046875 98.625 -46.390625 C 98.625 -36.804688 96.753906 -28.390625 93.015625 -21.140625 C 89.285156 -13.898438 83.976562 -8.257812 77.09375 -4.21875 C 70.21875 -0.1875 62.050781 1.828125 52.59375 1.828125 Z M 52.71875 -18.265625 C 59.132812 -18.265625 63.992188 -20.941406 67.296875 -26.296875 C 70.609375 -31.660156 72.265625 -38.421875 72.265625 -46.578125 C 72.265625 -54.734375 70.609375 -61.5 67.296875 -66.875 C 63.992188 -72.25 59.132812 -74.9375 52.71875 -74.9375 C 46.1875 -74.9375 41.253906 -72.25 37.921875 -66.875 C 34.597656 -61.5 32.9375 -54.734375 32.9375 -46.578125 C 32.9375 -38.421875 34.597656 -31.660156 37.921875 -26.296875 C 41.253906 -20.941406 46.1875 -18.265625 52.71875 -18.265625 Z M 52.71875 -18.265625 "/></g></g>
+          <g transform="translate(345.601544, 127.321456)"><g><path d="M 10.34375 0 L 10.34375 -124.6875 L 36.28125 -124.6875 L 36.28125 -58.015625 L 37.6875 -58.015625 L 67.640625 -93.515625 L 97.40625 -93.515625 L 62.703125 -53.03125 L 99.171875 0 L 68.796875 0 L 43.28125 -37.6875 L 36.28125 -29.703125 L 36.28125 0 Z M 10.34375 0 "/></g></g>
+        </g>
+      </svg>
+    </a>
+
+    <!-- Nav links with dropdowns -->
+    <div class="nav-links">
+
+      <!-- Producto dropdown -->
+      <div class="nav-item" id="nav-producto">
+        <div class="nav-link" onclick="toggle('nav-producto')">
+          Producto
+          <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="dropdown" style="left: 0; transform: none; min-width: 620px;">
+          <div class="dd-inner">
+            <div class="dd-col-main">
+              <div class="dd-section-label">Funcionalidades</div>
+
+              <div class="dd-item">
+                <div class="dd-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                </div>
+                <div class="dd-text">
+                  <div class="dd-title">Libro de Socios · Captable</div>
+                  <div class="dd-desc">Registro oficial actualizado de socios, participaciones y transmisiones.</div>
+                </div>
+              </div>
+
+              <div class="dd-item">
+                <div class="dd-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                </div>
+                <div class="dd-text">
+                  <div class="dd-title">Planes de Incentivos</div>
+                  <div class="dd-desc">Phantoms, stock options y warrants con vesting automatizado.</div>
+                </div>
+              </div>
+
+              <div class="dd-item">
+                <div class="dd-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                </div>
+                <div class="dd-text">
+                  <div class="dd-title">Juntas y Consejos</div>
+                  <div class="dd-desc">Convocatoria digital, delegaciones, votaciones y firma electrónica.</div>
+                </div>
+              </div>
+
+              <div class="dd-item">
+                <div class="dd-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="20" x2="12" y2="10"/><line x1="18" y1="20" x2="18" y2="4"/><line x1="6" y1="20" x2="6" y2="16"/></svg>
+                </div>
+                <div class="dd-text">
+                  <div class="dd-title">Simulador de Operaciones</div>
+                  <div class="dd-desc">Calcula rondas, ampliaciones y notas convertibles con datos reales.</div>
+                </div>
+              </div>
+
+              <div class="dd-item">
+                <div class="dd-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+                </div>
+                <div class="dd-text">
+                  <div class="dd-title">Mercado Secundario</div>
+                  <div class="dd-desc">Gestiona y ejecuta operaciones de compraventa entre socios.</div>
+                </div>
+              </div>
+
+              <div class="dd-cta-row">
+                <a href="#" class="dd-cta-btn dd-cta-primary">Ver todas las funcionalidades</a>
+                <a href="https://calendly.com/sttok/30min" class="dd-cta-btn dd-cta-outline">Agendar una reunión</a>
+              </div>
+            </div>
+
+            <div class="dd-col-side">
+              <div class="dd-section-label">Recursos</div>
+              <div class="dd-side-item">
+                <div class="dd-side-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                </div>
+                <div>
+                  <div class="dd-side-title">Documentación</div>
+                  <div class="dd-side-desc">Guías y tutoriales</div>
+                </div>
+              </div>
+              <div class="dd-side-item">
+                <div class="dd-side-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                </div>
+                <div>
+                  <div class="dd-side-title">Demo en vídeo</div>
+                  <div class="dd-side-desc">5 min · Ver en acción</div>
+                </div>
+              </div>
+              <div class="dd-divider"></div>
+              <div class="dd-section-label" style="padding-top:8px">Nuevo</div>
+              <div class="dd-side-item">
+                <div class="dd-side-icon" style="background:#EEF1FF;border-color:#C7D0FF">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="#1B3BFF" stroke-width="1.75" stroke-linecap="round"><path d="M3 3h18v18H3z"/><path d="M3 9h18M9 21V9"/></svg>
+                </div>
+                <div>
+                  <div class="dd-side-title" style="color:#1B3BFF">En AWS Marketplace</div>
+                  <div class="dd-side-desc">Ya disponible</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soluciones dropdown -->
+      <div class="nav-item" id="nav-soluciones">
+        <div class="nav-link" onclick="toggle('nav-soluciones')">
+          Soluciones
+          <svg class="nav-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+        </div>
+        <div class="dropdown" style="left: 0; transform: none; min-width: 580px;">
+          <div class="dd-inner">
+            <div class="dd-col-main">
+              <div class="dd-section-label">Por tipo de cliente</div>
+
+              <div class="dd-item">
+                <div class="dd-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+                </div>
+                <div class="dd-text">
+                  <div class="dd-title">Empresas y Grupos Societarios</div>
+                  <div class="dd-desc">Digitaliza la gestión societaria y la documentación de tu sociedad.</div>
+                </div>
+              </div>
+
+              <div class="dd-item">
+                <div class="dd-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9v.01M9 12v.01M9 15v.01M9 18v.01"/></svg>
+                </div>
+                <div class="dd-text">
+                  <div class="dd-title">Abogados y Asesores</div>
+                  <div class="dd-desc">Gestión de sociedades para despachos. Ahorra tiempo y evita errores.</div>
+                </div>
+              </div>
+
+              <div class="dd-item">
+                <div class="dd-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                </div>
+                <div class="dd-text">
+                  <div class="dd-title">Startups</div>
+                  <div class="dd-desc">Captable, incentivos y simulador de rondas para startups en crecimiento.</div>
+                </div>
+              </div>
+
+              <div class="dd-item">
+                <div class="dd-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </div>
+                <div class="dd-text">
+                  <div class="dd-title">Inversores · Portal del Inversor</div>
+                  <div class="dd-desc">Acceso a datos de participadas. Portal para tus inversores con información en tiempo real.</div>
+                </div>
+              </div>
+
+              <div class="dd-cta-row">
+                <a href="#" class="dd-cta-btn dd-cta-primary">Ver todas las soluciones</a>
+                <a href="https://calendly.com/sttok/30min" class="dd-cta-btn dd-cta-outline">Agendar una reunión</a>
+              </div>
+            </div>
+
+            <div class="dd-col-side">
+              <div class="dd-section-label">Clientes destacados</div>
+              <div class="dd-side-item">
+                <img src="../logo-axa-mini.png" style="height:20px;width:auto;filter:grayscale(100%);opacity:0.6" alt="AXA">
+                <div>
+                  <div class="dd-side-title">AXA</div>
+                  <div class="dd-side-desc">Grandes corporaciones</div>
+                </div>
+              </div>
+              <div class="dd-side-item">
+                <img src="../logo-factorial-mini.png" style="height:20px;width:auto;filter:grayscale(100%);opacity:0.6" alt="Factorial">
+                <div>
+                  <div class="dd-side-title">Factorial</div>
+                  <div class="dd-side-desc">Startups en crecimiento</div>
+                </div>
+              </div>
+              <div class="dd-side-item">
+                <img src="../logo-pwc-mini.png" style="height:20px;width:auto;filter:grayscale(100%);opacity:0.6" alt="PwC">
+                <div>
+                  <div class="dd-side-title">PwC Tax & Legal</div>
+                  <div class="dd-side-desc">Despachos y asesores</div>
+                </div>
+              </div>
+              <div class="dd-divider"></div>
+              <div class="dd-side-item">
+                <div class="dd-side-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                </div>
+                <div>
+                  <div class="dd-side-title">Ver casos de éxito</div>
+                  <div class="dd-side-desc">Testimonios reales</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="nav-link">Precios</a>
+      <a href="#" class="nav-link">Recursos</a>
+    </div>
+
+    <!-- Right actions -->
+    <div class="nav-right">
+      <!-- Agendar reunión (prominente) -->
+      <a href="https://calendly.com/sttok/30min" class="btn-meeting" target="_blank">
+        <svg class="btn-meeting-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Agendar reunión
+      </a>
+      <button class="btn-login">Iniciar sesión</button>
+      <button class="btn-demo">Solicitar demo</button>
+    </div>
+  </div>
+</nav>
+</div>
+
+<!-- ══════════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════════ -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">
+      <div class="badge-dot"></div>
+      Confiado por <strong>+500 sociedades</strong> en España
+    </div>
+    <h1 class="hero-h1">
+      La plataforma para gestionar<br>tu sociedad <em>de principio a fin.</em>
+    </h1>
+    <p class="hero-sub">
+      Captable, planes de incentivos, juntas y consejos,
+      mercado secundario y simulador de rondas —
+      todo en una sola plataforma, siempre actualizado.
+    </p>
+    <div class="hero-ctas">
+      <a href="#" class="btn-hero-p">
+        Pruébalo ahora
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a href="https://calendly.com/sttok/30min" class="btn-hero-o" target="_blank">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Agendar una reunión
+      </a>
+    </div>
+
+    <!-- Screenshot -->
+    <div class="hero-screen">
+      <div class="sc-chrome">
+        <div class="cd cdr"></div><div class="cd cdy"></div><div class="cd cdg"></div>
+        <div class="sc-url">app.sttok.com · Libro de Socios</div>
+        <span class="chip chip-g">● En vivo</span>
+      </div>
+      <div class="sc-body">
+        <div class="sc-topbar">
+          <div>
+            <div class="sc-title">Accionistas — Innovación Societaria S.L.</div>
+            <div class="sc-meta">4 socios · Capital social: 10.000 € · Actualizado hoy</div>
+          </div>
+          <div style="display:flex;gap:6px">
+            <span class="chip chip-b">Libro oficial</span>
+            <span class="chip chip-g">Verificado</span>
+          </div>
+        </div>
+        <div class="sc-table">
+          <div class="sc-th-row">
+            <div class="sc-th">Socio</div>
+            <div class="sc-th">Participaciones</div>
+            <div class="sc-th">% Capital</div>
+            <div class="sc-th">Val. nominal</div>
+            <div class="sc-th">Estado</div>
+          </div>
+          <div class="sc-tr">
+            <div class="sc-td bold av"><div class="avc" style="background:#3B82F6">JG</div>García Martínez, J.</div>
+            <div class="sc-td">3.500</div><div class="sc-td">35,00%</div>
+            <div class="sc-td dim">3.500 €</div>
+            <div class="sc-td"><span class="chip chip-g">Activo</span></div>
+          </div>
+          <div class="sc-tr">
+            <div class="sc-td bold av"><div class="avc" style="background:#8B5CF6">IA</div>Inversiones Alfa S.L.</div>
+            <div class="sc-td">2.500</div><div class="sc-td">25,00%</div>
+            <div class="sc-td dim">2.500 €</div>
+            <div class="sc-td"><span class="chip chip-g">Activo</span></div>
+          </div>
+          <div class="sc-tr">
+            <div class="sc-td bold av"><div class="avc" style="background:#0D9488">AL</div>López Fernández, A.</div>
+            <div class="sc-td">2.000</div><div class="sc-td">20,00%</div>
+            <div class="sc-td dim">2.000 €</div>
+            <div class="sc-td"><span class="chip chip-a">Pendiente</span></div>
+          </div>
+          <div class="sc-tr">
+            <div class="sc-td bold av"><div class="avc" style="background:#F97316">VC</div>Venture Capital I FCR</div>
+            <div class="sc-td">2.000</div><div class="sc-td">20,00%</div>
+            <div class="sc-td dim">2.000 €</div>
+            <div class="sc-td"><span class="chip chip-g">Activo</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     CLIENT LOGOS (reales)
+══════════════════════════════════════════════════ -->
+<section class="clients">
+  <div class="clients-inner">
+    <p class="clients-label">Confían en Sttok</p>
+    <div class="logos-row">
+      <div class="logo-wrap"><img src="../logo-axa.png" alt="AXA"></div>
+      <div class="logo-wrap"><img src="../logo-factorial.png" alt="Factorial"></div>
+      <div class="logo-wrap"><img src="../logo-pldspace.png" alt="PLD Space"></div>
+      <div class="logo-wrap"><img src="../logo-myinvestor.png" alt="MyInvestor"></div>
+      <div class="logo-wrap"><img src="../logo-taxdown.png" alt="Taxdown"></div>
+      <div class="logo-wrap"><img src="../logo-pwc.png" alt="PwC"></div>
+      <div class="logo-wrap"><img src="../logo-andbank.png" alt="Andbank"></div>
+      <div class="logo-wrap"><img src="../logo-yaba.png" alt="Yaba"></div>
+      <div class="logo-wrap"><img src="../logo-barkibu.png" alt="Barkibu"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     PRE-FOOTER CTA
+══════════════════════════════════════════════════ -->
+<section class="prefooter">
+  <div class="prefooter-inner">
+    <div class="prefooter-left">
+      <p class="prefooter-eyebrow">Empieza hoy</p>
+      <h2 class="prefooter-h2">
+        Tu sociedad, gestionada<br>
+        <em>de forma profesional.</em>
+      </h2>
+      <p class="prefooter-sub">
+        Más de 500 sociedades ya gestionan su captable, juntas, incentivos
+        y mercado secundario con Sttok. Sin excels, sin errores, sin fricción.
+      </p>
+      <div class="prefooter-trust" style="margin-top:20px">
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          ISO 27001
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          RGPD Compliant
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 9.9-1"/></svg>
+          SSL Seguro
+        </div>
+      </div>
+    </div>
+    <div class="prefooter-right">
+      <a href="https://app.sttok.com/#/demo" class="btn-pf-primary">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        Solicitar demo gratuita
+      </a>
+      <a href="https://calendly.com/sttok/30min" target="_blank" class="btn-pf-outline">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        Agendar una reunión
+      </a>
+      <div style="font-size:12px;color:rgba(255,255,255,0.25);text-align:center;margin-top:4px">
+        Sin permanencia · Cancela cuando quieras
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════════════ -->
+<footer>
+  <div class="footer-inner">
+
+    <!-- Main grid -->
+    <div class="footer-grid">
+
+      <!-- Brand -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 446.88 130.499996" preserveAspectRatio="xMidYMid meet" version="1.0">
+            <g fill="rgba(255,255,255,0.85)" fill-opacity="1">
+              <g transform="translate(-5.04635, 127.321456)"><g><path d="M 78.46875 -88.828125 C 77.988281 -93.734375 75.890625 -97.546875 72.171875 -100.265625 C 68.460938 -102.984375 63.460938 -104.34375 57.171875 -104.34375 C 50.710938 -104.34375 45.757812 -103.023438 42.3125 -100.390625 C 38.863281 -97.753906 37.140625 -94.425781 37.140625 -90.40625 C 37.054688 -85.9375 38.972656 -82.554688 42.890625 -80.265625 C 46.804688 -77.972656 51.460938 -76.195312 56.859375 -74.9375 L 68.0625 -72.265625 C 75.289062 -70.640625 81.710938 -68.285156 87.328125 -65.203125 C 92.953125 -62.117188 97.375 -58.148438 100.59375 -53.296875 C 103.820312 -48.453125 105.4375 -42.554688 105.4375 -35.609375 C 105.394531 -24.203125 101.125 -15.117188 92.625 -8.359375 C 84.125 -1.609375 72.265625 1.765625 57.046875 1.765625 C 41.910156 1.765625 29.835938 -1.679688 20.828125 -8.578125 C 11.816406 -15.484375 7.144531 -25.671875 6.8125 -39.140625 L 32.328125 -39.140625 C 32.773438 -32.890625 35.238281 -28.191406 39.71875 -25.046875 C 44.207031 -21.898438 49.878906 -20.328125 56.734375 -20.328125 C 63.429688 -20.328125 68.78125 -21.75 72.78125 -24.59375 C 76.78125 -27.4375 78.800781 -31.128906 78.84375 -35.671875 C 78.800781 -39.890625 76.953125 -43.132812 73.296875 -45.40625 C 69.640625 -47.6875 64.425781 -49.640625 57.65625 -51.265625 L 44.078125 -54.671875 C 33.566406 -57.179688 25.265625 -61.175781 19.171875 -66.65625 C 13.085938 -72.132812 10.066406 -79.460938 10.109375 -88.640625 C 10.066406 -96.191406 12.082031 -102.796875 16.15625 -108.453125 C 20.238281 -114.117188 25.851562 -118.523438 33 -121.671875 C 40.144531 -124.816406 48.257812 -126.390625 57.34375 -126.390625 C 66.601562 -126.390625 74.691406 -124.804688 81.609375 -121.640625 C 88.523438 -118.472656 93.910156 -114.066406 97.765625 -108.421875 C 101.628906 -102.785156 103.617188 -96.253906 103.734375 -88.828125 Z"/></g></g>
+              <g transform="translate(107.20968, 127.321456)"><g><path d="M 60.09375 -93.515625 L 60.09375 -74.03125 L 42.5 -74.03125 L 42.5 -28.734375 C 42.5 -25.160156 43.304688 -22.742188 44.921875 -21.484375 C 46.546875 -20.234375 48.660156 -19.609375 51.265625 -19.609375 C 52.484375 -19.609375 53.695312 -19.71875 54.90625 -19.9375 C 56.125 -20.15625 57.0625 -20.328125 57.71875 -20.453125 L 61.796875 -1.15625 C 60.492188 -0.75 58.664062 -0.273438 56.3125 0.265625 C 53.957031 0.816406 51.097656 1.15625 47.734375 1.28125 C 38.316406 1.6875 30.753906 -0.347656 25.046875 -4.828125 C 19.347656 -9.316406 16.519531 -16.148438 16.5625 -25.328125 L 16.5625 -74.03125 L 3.78125 -74.03125 L 3.78125 -93.515625 L 16.5625 -93.515625 L 16.5625 -115.921875 L 42.5 -115.921875 L 42.5 -93.515625 Z"/></g></g>
+              <g transform="translate(173.808435, 127.321456)"><g><path d="M 60.09375 -93.515625 L 60.09375 -74.03125 L 42.5 -74.03125 L 42.5 -28.734375 C 42.5 -25.160156 43.304688 -22.742188 44.921875 -21.484375 C 46.546875 -20.234375 48.660156 -19.609375 51.265625 -19.609375 C 52.484375 -19.609375 53.695312 -19.71875 54.90625 -19.9375 C 56.125 -20.15625 57.0625 -20.328125 57.71875 -20.453125 L 61.796875 -1.15625 C 60.492188 -0.75 58.664062 -0.273438 56.3125 0.265625 C 53.957031 0.816406 51.097656 1.15625 47.734375 1.28125 C 38.316406 1.6875 30.753906 -0.347656 25.046875 -4.828125 C 19.347656 -9.316406 16.519531 -16.148438 16.5625 -25.328125 L 16.5625 -74.03125 L 3.78125 -74.03125 L 3.78125 -93.515625 L 16.5625 -93.515625 L 16.5625 -115.921875 L 42.5 -115.921875 L 42.5 -93.515625 Z"/></g></g>
+              <g transform="translate(240.407191, 127.321456)"><g><path d="M 52.59375 1.828125 C 43.144531 1.828125 34.976562 -0.1875 28.09375 -4.21875 C 21.21875 -8.257812 15.910156 -13.898438 12.171875 -21.140625 C 8.441406 -28.390625 6.578125 -36.804688 6.578125 -46.390625 C 6.578125 -56.046875 8.441406 -64.492188 12.171875 -71.734375 C 15.910156 -78.984375 21.21875 -84.628906 28.09375 -88.671875 C 34.976562 -92.710938 43.144531 -94.734375 52.59375 -94.734375 C 62.050781 -94.734375 70.21875 -92.710938 77.09375 -88.671875 C 83.976562 -84.628906 89.285156 -78.984375 93.015625 -71.734375 C 96.753906 -64.492188 98.625 -56.046875 98.625 -46.390625 C 98.625 -36.804688 96.753906 -28.390625 93.015625 -21.140625 C 89.285156 -13.898438 83.976562 -8.257812 77.09375 -4.21875 C 70.21875 -0.1875 62.050781 1.828125 52.59375 1.828125 Z M 52.71875 -18.265625 C 59.132812 -18.265625 63.992188 -20.941406 67.296875 -26.296875 C 70.609375 -31.660156 72.265625 -38.421875 72.265625 -46.578125 C 72.265625 -54.734375 70.609375 -61.5 67.296875 -66.875 C 63.992188 -72.25 59.132812 -74.9375 52.71875 -74.9375 C 46.1875 -74.9375 41.253906 -72.25 37.921875 -66.875 C 34.597656 -61.5 32.9375 -54.734375 32.9375 -46.578125 C 32.9375 -38.421875 34.597656 -31.660156 37.921875 -26.296875 C 41.253906 -20.941406 46.1875 -18.265625 52.71875 -18.265625 Z"/></g></g>
+              <g transform="translate(345.601544, 127.321456)"><g><path d="M 10.34375 0 L 10.34375 -124.6875 L 36.28125 -124.6875 L 36.28125 -58.015625 L 37.6875 -58.015625 L 67.640625 -93.515625 L 97.40625 -93.515625 L 62.703125 -53.03125 L 99.171875 0 L 68.796875 0 L 43.28125 -37.6875 L 36.28125 -29.703125 L 36.28125 0 Z"/></g></g>
+            </g>
+          </svg>
+        </div>
+        <p class="footer-desc">
+          Software para la gestión digital de sociedades. Captable, incentivos, juntas, mercado secundario y simulador de operaciones.
+        </p>
+        <div class="footer-social">
+          <a href="#" class="social-btn" title="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="social-btn" title="Twitter / X">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Producto -->
+      <div>
+        <div class="footer-col-title">Producto</div>
+        <div class="footer-links">
+          <a class="footer-link" href="#">Libro de Socios</a>
+          <a class="footer-link" href="#">Planes de Incentivos</a>
+          <a class="footer-link" href="#">Juntas y Consejos</a>
+          <a class="footer-link" href="#">Simulador de Operaciones</a>
+          <a class="footer-link" href="#">Mercado Secundario</a>
+          <a class="footer-link" href="#">
+            Sttok AI
+            <span class="footer-link-new">Nuevo</span>
+          </a>
+          <a class="footer-link" href="#">Precios</a>
+        </div>
+      </div>
+
+      <!-- Soluciones -->
+      <div>
+        <div class="footer-col-title">Soluciones</div>
+        <div class="footer-links">
+          <a class="footer-link" href="#">Empresas</a>
+          <a class="footer-link" href="#">Grupos de Sociedades</a>
+          <a class="footer-link" href="#">Abogados y Asesores</a>
+          <a class="footer-link" href="#">Startups</a>
+          <a class="footer-link" href="#">Inversores</a>
+          <a class="footer-link" href="#">Portal del Inversor</a>
+          <a class="footer-link" href="#">Secretario del Consejo</a>
+        </div>
+      </div>
+
+      <!-- Recursos -->
+      <div>
+        <div class="footer-col-title">Recursos</div>
+        <div class="footer-links">
+          <a class="footer-link" href="#">Blog</a>
+          <a class="footer-link" href="#">Guías y tutoriales</a>
+          <a class="footer-link" href="#">Plantillas</a>
+          <a class="footer-link" href="#">Glosario societario</a>
+          <a class="footer-link" href="#">Casos de éxito</a>
+          <a class="footer-link" href="#">Webinars</a>
+          <a class="footer-link" href="#">
+            AWS Marketplace
+            <span class="footer-link-badge">AWS</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Empresa -->
+      <div>
+        <div class="footer-col-title">Empresa</div>
+        <div class="footer-links">
+          <a class="footer-link" href="#">Sobre Sttok</a>
+          <a class="footer-link" href="#">Testimonios</a>
+          <a class="footer-link" href="https://calendly.com/sttok/30min" target="_blank">Agendar reunión</a>
+          <a class="footer-link" href="#">Contacto</a>
+        </div>
+        <div class="footer-col-title" style="margin-top:24px">Legal</div>
+        <div class="footer-links">
+          <a class="footer-link" href="#">Aviso legal</a>
+          <a class="footer-link" href="#">Privacidad y cookies</a>
+          <a class="footer-link" href="#">Política de seguridad</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="footer-bottom">
+
+      <!-- Badges de seguridad -->
+      <div class="footer-badges">
+        <img src="../logo-iso-27001.png" alt="ISO 27001" class="footer-badge-img">
+        <img src="../logo-gdpr-compliant.png" alt="RGPD Compliant" class="footer-badge-img">
+        <img src="../logo-ssl.png" alt="SSL Seguro" class="footer-badge-img">
+      </div>
+
+      <!-- Copyright -->
+      <div class="footer-copyright">
+        © 2025 Sttok Barcelona, S.L. · Todos los derechos reservados
+      </div>
+
+      <!-- Right: legal links + lang switcher -->
+      <div style="display:flex;align-items:center;gap:16px">
+        <div class="footer-bottom-links">
+          <a class="footer-bottom-link" href="#">Aviso legal</a>
+          <a class="footer-bottom-link" href="#">Privacidad</a>
+          <a class="footer-bottom-link" href="#">Seguridad</a>
+        </div>
+        <div class="lang-switch">
+          <button class="lang-btn active" onclick="setLang(this)">ES</button>
+          <button class="lang-btn" onclick="setLang(this)">EN</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script>
+  let current = null;
+
+  function toggle(id) {
+    const el = document.getElementById(id);
+    if (current && current !== el) {
+      current.classList.remove('open');
+    }
+    el.classList.toggle('open');
+    current = el.classList.contains('open') ? el : null;
+  }
+
+  // Close on outside click
+  document.addEventListener('click', function(e) {
+    if (current && !current.contains(e.target)) {
+      current.classList.remove('open');
+      current = null;
+    }
+  });
+
+  function setLang(btn) {
+    btn.closest('.lang-switch').querySelectorAll('.lang-btn')
+      .forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+</script>
+</body>
+</html>
