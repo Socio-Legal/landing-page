@@ -12,7 +12,9 @@ const ClientsSection: FC = () => {
   const companiesData =
     (t("companies", { returnObjects: true }) as string[]) || [];
 
-  const companies = Array.isArray(companiesData) ? companiesData : [];
+  const companies = (Array.isArray(companiesData) ? companiesData : []).filter(
+    (name) => name in clientLogos,
+  );
 
   return (
     <section id="companies" className="border-t border-border">

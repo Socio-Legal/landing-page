@@ -61,11 +61,6 @@ export const clientLogos = {
 };
 
 export const getClientLogo = (logo: ClientLogo) => {
-  if (Object.keys(clientLogos).includes(logo)) {
-    // console.log("cclog ", clientLogos[logo as keyof typeof clientLogos]);
-    return clientLogos[logo as keyof typeof clientLogos]?.src;
-  }
-
-  // console.log("cclog `https://cdn.magicui.design/companies/${logo}.svg`");
-  return `https://cdn.magicui.design/companies/${logo}.svg`;
+  // Solo logos locales del repositorio: nada de CDNs externos.
+  return clientLogos[logo as keyof typeof clientLogos]?.src ?? "";
 };

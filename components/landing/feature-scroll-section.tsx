@@ -2,7 +2,6 @@
 
 import React, { FC } from "react";
 import Image from "next/image";
-import { blurStyle01, blurStyle02 } from "../styles/blur-styles";
 import Link from "next/link";
 
 interface FeatureScrollProps {
