@@ -1,9 +1,5 @@
-declare global {
-  interface Window {
-    dataLayer: Record<string, unknown>[];
-  }
-}
-
+// window.dataLayer ya viene declarada por @next/third-parties (GTM);
+// redeclararla aquí con otra firma rompe la compilación de tipos.
 type EventName =
   | "demo_click"
   | "login_click"
