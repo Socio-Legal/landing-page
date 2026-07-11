@@ -1,5 +1,5 @@
-// window.dataLayer ya viene declarada por @next/third-parties (GTM);
-// redeclararla aquí con otra firma rompe la compilación de tipos.
+import { sendGAEvent } from "@next/third-parties/google";
+
 type EventName =
   | "demo_click"
   | "login_click"
@@ -14,10 +14,9 @@ interface AnalyticsEvent {
   value?: number;
 }
 
-export function trackEvent(params: AnalyticsEvent) {
+export function trackEvent({ event, ...params }: AnalyticsEvent) {
   if (typeof window === "undefined") return;
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push(params);
+  sendGAEvent("event", event, params);
 }
 
 export function trackDemoClick(label?: string) {
