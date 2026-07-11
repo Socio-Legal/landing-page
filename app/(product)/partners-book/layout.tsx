@@ -3,12 +3,14 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
 import { metadata as page } from "@/config/product/partner-book-page";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = buildMetadata({
   title: page.title,
-  keywords: page.keywords,
   description: page.description,
-};
+  keywords: page.keywords,
+  path: "/libro-de-socios",
+});
 
 interface PartnerBookLayoutProps {
   children: React.ReactNode;

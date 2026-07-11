@@ -2,6 +2,7 @@ import React from "react";
 
 import CallToActionSection from "@/components/landing/cta-section";
 import HeroSection from "@/components/legal/hero-section";
+import { buildMetadata } from "@/lib/seo";
 
 const page = {
   title: "Software de Captable",
@@ -14,11 +15,12 @@ const hero = {
   description: "",
 };
 
-export const metadata = {
+export const metadata = buildMetadata({
   title: page.title,
-  keywords: page.keywords,
   description: page.description,
-};
+  keywords: page.keywords,
+  path: "/software-de-captable",
+});
 
 const Page = () => {
   return (
