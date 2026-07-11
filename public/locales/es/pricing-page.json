@@ -17,5 +17,9 @@
     "ctaLink": "https://calendly.com/sttok/30min",
     "extras": "Funcionalidades con coste extra: mercado de acciones o de incentivos."
   },
+  "dossier": {
+    "label": "Descargar dossier comercial (PDF)",
+    "file": "/docs/sttok-dossier-es.pdf"
+  },
   "clientsLabel": "Más de 250 empresas confían en Sttok"
 }

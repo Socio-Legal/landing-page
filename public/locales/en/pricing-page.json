@@ -17,5 +17,9 @@
     "ctaLink": "https://calendly.com/sttok/30min",
     "extras": "Features with extra cost: shares or incentives marketplace."
   },
+  "dossier": {
+    "label": "Download sales dossier (PDF)",
+    "file": "/docs/sttok-dossier-en.pdf"
+  },
   "clientsLabel": "More than 250 companies trust Sttok"
 }

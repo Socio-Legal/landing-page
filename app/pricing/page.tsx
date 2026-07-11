@@ -2,7 +2,7 @@
 
 import React from "react";
 import { useTranslation } from "react-i18next";
-import { CheckIcon } from "@radix-ui/react-icons";
+import { CheckIcon, DownloadIcon } from "@radix-ui/react-icons";
 
 import PricingPlans from "@/components/pricing/pricing-plans";
 import LogoStrip from "@/components/shared/logo-strip";
@@ -54,9 +54,19 @@ const Page = () => {
             ))}
           </div>
 
-          <p className="mx-auto mt-5 max-w-5xl text-left text-xs text-muted-foreground">
-            {t("pricing-page:plans.extras")}
-          </p>
+          <div className="mx-auto mt-5 flex max-w-5xl flex-wrap items-center justify-between gap-3 text-left">
+            <p className="text-xs text-muted-foreground">
+              {t("pricing-page:plans.extras")}
+            </p>
+            <a
+              href={t("pricing-page:dossier.file")}
+              download
+              className="inline-flex items-center gap-2 text-xs font-medium text-foreground underline-offset-4 hover:underline"
+            >
+              <DownloadIcon className="h-3.5 w-3.5" />
+              {t("pricing-page:dossier.label")}
+            </a>
+          </div>
         </div>
       </section>
 
