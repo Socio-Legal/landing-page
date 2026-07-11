@@ -1,9 +1,3 @@
-declare global {
-  interface Window {
-    dataLayer: Record<string, unknown>[];
-  }
-}
-
 type EventName =
   | "demo_click"
   | "login_click"
