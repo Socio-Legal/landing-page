@@ -1,10 +1,12 @@
 {
+  "readCase": "Leer su caso",
   "metadata": {
     "title": "Testimonios y Casos de Éxito",
     "description": "Aquí encontrarás testimonios y casos de éxito de nuestros clientes",
     "keywords": "testimonios, casos de éxito, clientes, empresas, empresas, éxito, satisfacción, recomendación"
   },
   "hero": {
+    "slogan": "Clientes",
     "title": "Testimonios y Casos de Éxito",
     "description": "Sttok ayuda a nuestros clientes a digitalizar la gestión societaria, automatizando tareas manuales y gestionando múltiples tareas relacionadas como Libro de Socios, Planes de Incentivos, Juntas, Cálculo de Operaciones (Rondas, Ampliaciones, Compraventas, etc.). Ya no utilizan el excel como se hacía antes y ahora trabajan profesionalmente.",
     "button": {

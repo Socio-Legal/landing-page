@@ -1,23 +1,9 @@
 import { FC } from "react";
 import Image from "next/image";
-import { MdOutlineFormatQuote } from "react-icons/md";
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
-import BlurFade from "@/components/magicui/blur-fade";
 import { Testimonial } from "@/types/Testimonial";
 
-import ProductSectionHeader from "../product-section-header";
-
-type TestimonialsHeaderProps = {
-  title: string;
-  description: string;
-};
+import SectionHeading from "@/components/shared/section-heading";
 
 export type TestimonialsSectionProps = {
   title: string;
@@ -25,93 +11,54 @@ export type TestimonialsSectionProps = {
   items: Testimonial[];
 };
 
-type TestimonialItemProps = {
-  testimonial: Testimonial;
-  index: number;
-};
-
-type TestimonialsCarouselProps = {
-  testimonials: Testimonial[];
-};
-
-const TestimonialItem: FC<TestimonialItemProps> = ({ testimonial, index }) => {
-  const { name, role, img, description, stars } = testimonial;
-
-  return (
-    <CarouselItem key={index}>
-      <div className="p-1">
-        <div className=" text-center">
-          <MdOutlineFormatQuote className="text-4xl text-themeDarkGray my-4 mx-auto" />
-          <BlurFade delay={0.25} inView>
-            <h4 className="text-1xl font-semibold">{description}</h4>
-          </BlurFade>
-          <BlurFade delay={0.25 * 2} inView>
-            <div className="mt-8">
-              {img && (
-                <Image
-                  width={40}
-                  height={40}
-                  key={index}
-                  src={img}
-                  alt={"Testimonial logo"}
-                  className="mx-auto rounded-full mb-4"
-                />
-              )}
-            </div>
-          </BlurFade>
-          <div className="">
-            <BlurFade delay={0.25 * 3} inView>
-              <h4 className="text-1xl font-semibold my-2">{name}</h4>
-            </BlurFade>
-          </div>
-          <BlurFade delay={0.25 * 4} inView>
-            <div className=" mb-3">
-              <span className="text-sm text-themeDarkGray">{role}</span>
-            </div>
-          </BlurFade>
-        </div>
-      </div>
-    </CarouselItem>
-  );
-};
-
-const TestimonialsCarousel: FC<TestimonialsCarouselProps> = ({
-  testimonials,
-}) => (
-  <Carousel>
-    <div className="max-w-2xl mx-auto">
-      <CarouselContent>
-        {testimonials.map((testimonial, index) => (
-          <TestimonialItem
-            key={index}
-            testimonial={testimonial}
-            index={index}
-          />
-        ))}
-      </CarouselContent>
-    </div>
-    <div className="md:block hidden">
-      <CarouselPrevious />
-      <CarouselNext />
-    </div>
-  </Carousel>
-);
-
-const TestimonialsSectionHeader: FC<TestimonialsHeaderProps> = ({
-  title,
-  description,
-}) => <ProductSectionHeader title={title} description={description} />;
-
+/**
+ * Testimonios sin carrusel: citas en serif itálica con nombre y cargo,
+ * en rejilla estática. Los LLM y buscadores leen HTML plano, no carruseles.
+ */
 const TestimonialsSection: FC<TestimonialsSectionProps> = ({
   title,
   description,
   items,
 }) => {
+  const safeItems = Array.isArray(items) ? items : [];
+
   return (
-    <section id="product-testimonials" className="bg-white dark:bg-black">
-      <div className="container mx-auto px-4 py-12 md:py-24 lg:py-32">
-        <TestimonialsSectionHeader title={title} description={description} />
-        <TestimonialsCarousel testimonials={items} />
+    <section id="product-testimonials" className="border-t border-border">
+      <div className="container mx-auto px-4 py-14 md:py-20">
+        <SectionHeading eyebrow={title} title={description} />
+
+        <div className="grid grid-cols-1 gap-y-10 md:grid-cols-2 md:gap-x-12">
+          {safeItems.map((testimonial, index) => (
+            <figure
+              key={index}
+              className="flex flex-col justify-between gap-5 border-l border-border pl-6"
+            >
+              <blockquote className="font-serif text-lg italic leading-relaxed text-foreground">
+                “{testimonial.description}”
+              </blockquote>
+              <figcaption className="flex items-center gap-3">
+                {testimonial.img && (
+                  <Image
+                    width={32}
+                    height={32}
+                    src={testimonial.img}
+                    alt={testimonial.name}
+                    className="rounded-full grayscale"
+                  />
+                )}
+                <div className="text-sm">
+                  <span className="font-semibold text-foreground">
+                    {testimonial.name}
+                  </span>
+                  <span className="text-muted-foreground">
+                    {" "}
+                    · {testimonial.role}
+                  </span>
+                </div>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
       </div>
     </section>
   );

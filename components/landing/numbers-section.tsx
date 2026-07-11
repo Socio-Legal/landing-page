@@ -29,13 +29,10 @@ const NumbersSection: FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 border-y border-border md:divide-x md:divide-border">
           {items.map((item, i) => (
-            <div
-              key={i}
-              className="rounded-xl border border-border bg-card p-6 text-center"
-            >
-              <p className="font-serif text-3xl md:text-4xl font-normal text-foreground mb-2">
+            <div key={i} className="p-6 md:p-8 text-center">
+              <p className="font-serif text-3xl md:text-4xl font-normal text-foreground mb-2 tabular-nums">
                 {item.value}
               </p>
               <p className="text-sm text-muted-foreground leading-snug">

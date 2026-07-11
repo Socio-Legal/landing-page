@@ -1,10 +1,16 @@
 {
+  "trust": {
+    "iso": "ISO 27001 · Bureau Veritas",
+    "gdpr": "RGPD",
+    "eu": "Datos cifrados en la UE"
+  },
   "metadata": {
     "title": "Producto",
     "description": "Todos los datos y documentación societaria actualizada en un único sitio. Gestiona socios, inversores, planes de incentivos, simulación de operaciones, juntas de accionistas, consejos, actas y escrituras en pocos minutos.",
     "keywords": "planes de incentivos, phantoms, opciones sobre acciones, compensación flexible, gestión de incentivos, vesting"
   },
   "hero": {
+    "slogan": "Producto",
     "title": "Producto",
     "description": "Todos los datos y documentación societaria actualizada en un único sitio. Gestiona socios, inversores, planes de incentivos, simulación de operaciones, juntas de accionistas, consejos, actas y escrituras en pocos minutos.",
     "button": {

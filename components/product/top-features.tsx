@@ -1,10 +1,7 @@
 import React, { FC } from "react";
-import BlurFade from "../magicui/blur-fade";
-import { Card, CardContent } from "../ui/card";
 import { Brain, Calculator, FileCheck, Shield, Users, Zap } from "lucide-react";
-import ProductSectionHeader from "../product-section-header";
-import { AnimatedBeamMultiToMulti } from "../animated/animated-beam-multi-to-multi";
-import { getAnimatedBeam } from "../animated/animated-beams";
+
+import SectionHeading from "@/components/shared/section-heading";
 
 type Feature = {
   title: string;
@@ -16,7 +13,6 @@ type Feature = {
 
 type TopFeatureProps = {
   feature: Feature;
-  index: number;
 };
 
 export type TopFeaturesProps = {
@@ -26,45 +22,41 @@ export type TopFeaturesProps = {
 };
 
 const TopFeatureIcons = {
-  Shield: <Shield className="w-6 h-6 text-primary" />,
-  Brain: <Brain className="w-6 h-6 text-primary" />,
-  Zap: <Zap className="w-6 h-6 text-primary" />,
-  Calculator: <Calculator className="w-6 h-6 text-primary" />,
-  Users: <Users className="w-6 h-6 text-primary" />,
-  FileCheck: <FileCheck className="w-6 h-6 text-primary" />,
+  Shield: <Shield className="h-[18px] w-[18px]" />,
+  Brain: <Brain className="h-[18px] w-[18px]" />,
+  Zap: <Zap className="h-[18px] w-[18px]" />,
+  Calculator: <Calculator className="h-[18px] w-[18px]" />,
+  Users: <Users className="h-[18px] w-[18px]" />,
+  FileCheck: <FileCheck className="h-[18px] w-[18px]" />,
 };
 
-const TopFeature: FC<TopFeatureProps> = ({ feature, index }) => {
-  return (
-    <BlurFade key={index} delay={0.2 + index * 0.2} inView>
-      <Card className="bg-background border-none shadow-none">
-        <CardContent className="p-6 space-y-4">
-          {feature.icon && (
-            <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-              {TopFeatureIcons[feature.icon as keyof typeof TopFeatureIcons]}
-            </div>
-          )}
-
-          {feature.animation &&
-            getAnimatedBeam(feature.animation as keyof typeof getAnimatedBeam)}
-
-          <h3 className="text-xl font-semibold">{feature.title}</h3>
-          <p className="text-muted-foreground">{feature.description}</p>
-        </CardContent>
-      </Card>
-    </BlurFade>
-  );
-};
+const TopFeature: FC<TopFeatureProps> = ({ feature }) => (
+  <div className="py-2 pr-0 md:pr-7 md:[&+&]:border-l md:[&+&]:border-border md:[&+&]:pl-7">
+    {feature.icon && TopFeatureIcons[feature.icon as keyof typeof TopFeatureIcons] && (
+      <div className="mb-4 text-foreground">
+        {TopFeatureIcons[feature.icon as keyof typeof TopFeatureIcons]}
+      </div>
+    )}
+    <h3 className="mb-2 text-base font-semibold text-foreground">
+      {feature.title}
+    </h3>
+    <p className="text-sm leading-relaxed text-muted-foreground">
+      {feature.description}
+    </p>
+  </div>
+);
 
 const TopFeatures: FC<TopFeaturesProps> = ({ title, description, items }) => {
-  return (
-    <section id="product-top-features" className="bg-white dark:bg-black">
-      <div className="container mx-auto px-4 py-12 md:py-24 lg:py-32">
-        <ProductSectionHeader title={title} description={description} />
+  const safeItems = Array.isArray(items) ? items : [];
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-          {items?.map((feature, index) => (
-            <TopFeature key={index} feature={feature} index={index} />
+  return (
+    <section id="product-top-features" className="border-t border-border">
+      <div className="container mx-auto px-4 py-14 md:py-20">
+        <SectionHeading eyebrow={title} title={description} />
+
+        <div className="grid grid-cols-1 gap-y-8 md:grid-cols-3 md:gap-y-0">
+          {safeItems.map((feature, index) => (
+            <TopFeature key={index} feature={feature} />
           ))}
         </div>
       </div>

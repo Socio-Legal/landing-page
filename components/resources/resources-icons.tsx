@@ -5,7 +5,6 @@ import toast, { Toaster } from "react-hot-toast";
 
 import SectionHeader from "../section-header";
 import { LucideReactIcons } from "./lucide-react";
-import { blurStyle02 } from "../styles/blur-styles";
 
 type IconProps = {
   icon: [string, any];
@@ -52,7 +51,7 @@ const ResourcesIcons = () => {
     <section
       id="resources-icons"
       className="bg-backgroundbrand"
-      style={blurStyle02}
+     
     >
       <div className="container mx-auto px-4 py-12 md:py-24 lg:py-32">
         <SectionHeader

@@ -1,10 +1,16 @@
 {
+  "trust": {
+    "iso": "ISO 27001 · Bureau Veritas",
+    "gdpr": "GDPR",
+    "eu": "Data encrypted in the EU"
+  },
   "metadata": {
     "title": "Product",
     "description": "All updated corporate data and documentation in one place. Manage partners, investors, incentive plans, operation simulation, shareholder meetings, boards, minutes and deeds in minutes.",
     "keywords": "incentive plans, phantoms, stock options, flexible compensation, incentive management, vesting"
   },
   "hero": {
+    "slogan": "Product",
     "title": "Product",
     "description": "All updated corporate data and documentation in one place. Manage partners, investors, incentive plans, operation simulation, shareholder meetings, boards, minutes and deeds in minutes.",
     "button": {

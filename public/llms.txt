@@ -20,6 +20,24 @@ Sttok es el software líder en España para la gestión de sociedades mercantile
 - Secretarios del Consejo de Administración
 - Abogados y asesores que gestionan sociedades de clientes
 
+## Sttok en cifras
+
+- Más de 250 empresas gestionan su sociedad con Sttok
+- Más de 20.000 millones de euros en equity bajo gestión
+- Más de 250.000 socios gestionados en la plataforma
+- Más de 5.000 beneficiarios de planes de incentivos
+- NPS de 8,5 y onboarding completo en una semana
+
+## Precios
+
+Planes por sociedad y año, con comunicaciones y firma electrónica incluidas, onboarding completo en una semana y soporte en español e inglés:
+
+- **Básico**: 450€/año. Sociedades de hasta 10 socios o beneficiarios. Libro de Socios, planes de incentivos y simulador de rondas.
+- **Avanzado**: 650€/año. Hasta 20 socios o beneficiarios. Añade juntas de socios, consejos de administración y firma electrónica integrada.
+- **Pro**: 850€/año. Hasta 50 socios o beneficiarios, con todas las funcionalidades.
+- Funcionalidades con coste extra: mercado de acciones o de incentivos (mercado secundario).
+- Para grupos de sociedades o necesidades mayores: plan personalizado con demo en https://calendly.com/sttok/30min
+
 ## Cumplimiento y seguridad
 
 - ISO 27001 certificado
@@ -29,7 +47,12 @@ Sttok es el software líder en España para la gestión de sociedades mercantile
 
 ## Clientes destacados
 
-AXA, Factorial, PLD Space, MyInvestor, Taxdown, Andbank, PwC, Yaba, Barkibu, Deale, Mailtrack, Banktrack, Legal Pigeon, Derecho.com, Cabiedes & Partners y más de 500 sociedades en España.
+AXA, Andbank, Factorial, Multiverse Computing, PLD Space, Osborne, Grupo Caballero (Caballero 1830), TaxDown, MyInvestor, Barkibu, Derecho.com, PwC, Yaba, Deale, Mailtrack, Banktrack, Legal Pigeon, Cabiedes & Partners y más de 500 sociedades en España.
+
+## Documentación descargable
+
+- Dossier comercial (español): https://www.sttok.com/docs/sttok-dossier-es.pdf
+- Sales dossier (English): https://www.sttok.com/docs/sttok-dossier-en.pdf
 
 ## Contacto y demo
 

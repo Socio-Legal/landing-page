@@ -40,7 +40,7 @@ const SecuritySection: FC = () => {
             return (
               <div
                 key={i}
-                className="rounded-xl border border-border bg-card p-6 flex flex-col gap-3"
+                className="rounded-lg border border-border bg-card p-6 flex flex-col gap-3"
               >
                 <div className="flex items-center gap-3">
                   {item.logo ? (
