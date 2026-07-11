@@ -1,19 +1,20 @@
 {
   "metadata": {
     "title": "Precios",
-    "description": "Aquí encontrarás planes y precios para este producto",
-    "keywords": "planes, precios, tarifas, costes, suscripción, mensual, anual, gratuito"
+    "description": "Planes desde 450€ por sociedad al año. Libro de socios, planes de incentivos, juntas y consejos. Sin coste de implantación y onboarding en una semana.",
+    "keywords": "planes, precios, tarifas, costes, suscripción, anual, libro de socios, captable"
   },
   "hero": {
-    "title": "Precios",
-    "description": "Ahorra tiempo automatizando tareas manuales, evita errores, dispón de datos siempre actualizados. Aporta valor a todos los stakeholders.",
-    "button": {
-      "text": "",
-      "link": ""
-    },
-    "image": {
-      "light": "https://businesstalentgroup.com/wp-content/uploads/2020/07/data-driven-pricing-strategy-header-1024x487.jpg",
-      "dark": "https://businesstalentgroup.com/wp-content/uploads/2020/07/data-driven-pricing-strategy-header-1024x487.jpg"
-    }
-  }
+    "slogan": "Precios",
+    "titleLead": "Planes",
+    "titleEmphasis": "a tu medida",
+    "description": "Ahorra tiempo automatizando tareas manuales, evita errores y dispón de datos siempre actualizados. Aporta valor a todos los stakeholders."
+  },
+  "plans": {
+    "perYear": "por sociedad, al año",
+    "recommended": "Recomendado",
+    "cta": "Solicitar demo",
+    "ctaLink": "https://calendly.com/sttok/30min"
+  },
+  "clientsLabel": "Más de 250 empresas confían en Sttok"
 }
