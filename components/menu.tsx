@@ -88,16 +88,15 @@ export default function NavigationMenuDemo() {
                 </NavigationMenuContent>
               </>
             ) : (
-              <Link href={item.href || ""} legacyBehavior passHref>
-                <NavigationMenuLink
-                  className={cn(
-                    navigationMenuTriggerStyle(),
-                    "text-sm font-medium text-foreground/80 hover:text-foreground bg-transparent hover:bg-transparent"
-                  )}
-                >
-                  {t(item.label)}
-                </NavigationMenuLink>
-              </Link>
+              <NavigationMenuLink
+                asChild
+                className={cn(
+                  navigationMenuTriggerStyle(),
+                  "text-sm font-medium text-foreground/80 hover:text-foreground bg-transparent hover:bg-transparent"
+                )}
+              >
+                <Link href={item.href || ""}>{t(item.label)}</Link>
+              </NavigationMenuLink>
             )}
           </NavigationMenuItem>
         ))}
