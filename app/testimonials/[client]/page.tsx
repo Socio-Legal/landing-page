@@ -24,7 +24,6 @@ import * as Caballero from "@/config/testimonials/clients/Caballero";
 import * as MyInvestor from "@/config/testimonials/clients/MyInvestor";
 
 import CallToActionSection from "@/components/landing/cta-section";
-import { blurStyle01 } from "@/components/styles/blur-styles";
 import { getTestimonialNamespaces } from "@/lib/getTestimonialNamespaces";
 
 type PageProps = {
@@ -118,10 +117,7 @@ const Page: FC<PageProps> = ({ params }) => {
     <>
       <div className="flex flex-col md:flex-row min-h-screen container mx-auto px-4">
         {/* Left sidebar */}
-        <div
-          className="w-full md:w-2/5 bg-backgroundbrand p-6 overflow-y-auto"
-          style={blurStyle01}
-        >
+        <div className="w-full md:w-2/5 border-border p-6 md:border-r overflow-y-auto">
           <div className="sticky top-6">
             <Link className="inline-flex items-center mb-8" href="/testimonios">
               <ArrowLeft className="h-6 w-6 mr-2" />
@@ -129,7 +125,7 @@ const Page: FC<PageProps> = ({ params }) => {
                 {t("common:testimonials.goBackToTestimonials")}
               </span>
             </Link>
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">
+            <h1 className="font-serif text-3xl font-normal tracking-tight text-balance sm:text-4xl mb-4">
               {summary.title}
             </h1>
             {summary.description && (
@@ -138,16 +134,18 @@ const Page: FC<PageProps> = ({ params }) => {
               </p>
             )}
             {summary.quote && (
-              <>
-                <p className="text-gray-500 dark:text-gray-400 mb-6">
-                  {summary.quote.text}
-                </p>
-                <p className="mb-6">
-                  {summary.quote.author}
+              <figure className="mb-6 border-l border-border pl-5">
+                <blockquote className="font-serif text-lg italic leading-relaxed text-foreground mb-3">
+                  “{summary.quote.text}”
+                </blockquote>
+                <figcaption className="text-sm">
+                  <span className="font-semibold">{summary.quote.author}</span>
                   <br />
-                  {summary.quote.position}
-                </p>
-              </>
+                  <span className="text-muted-foreground">
+                    {summary.quote.position}
+                  </span>
+                </figcaption>
+              </figure>
             )}
             <div className="space-y-4">
               <Link
@@ -208,12 +206,14 @@ const Page: FC<PageProps> = ({ params }) => {
 
             <section className="mb-12">
               {content?.title && (
-                <h1 className="text-3xl font-bold mb-8">{content.title}</h1>
+                <h1 className="font-serif text-3xl font-normal mb-8">
+                  {content.title}
+                </h1>
               )}
 
               {content?.sections?.map((section, index) => (
                 <div className="mb-12" key={`section-content-${index}`}>
-                  <h2 className="text-2xl font-bold mb-4">
+                  <h2 className="font-serif text-2xl font-normal mb-4">
                     {section?.title || ""}
                   </h2>
 
@@ -230,7 +230,7 @@ const Page: FC<PageProps> = ({ params }) => {
             </section>
 
             <section className="mt-40 mb-6">
-              <h2 className="text-2xl font-bold mb-6">
+              <h2 className="font-serif text-2xl font-normal mb-6">
                 Testimonios relacionados
               </h2>
               <div className="grid gap-6 md:grid-cols-2">

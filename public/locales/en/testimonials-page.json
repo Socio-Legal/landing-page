@@ -1,10 +1,12 @@
 {
+  "readCase": "Read their story",
   "metadata": {
     "title": "Testimonials and Success Stories",
     "description": "Here you will find testimonials and success stories from our clients",
     "keywords": "testimonials, success stories, clients, companies, businesses, success, satisfaction, recommendation"
   },
   "hero": {
+    "slogan": "Customers",
     "title": "Testimonials and Success Stories",
     "description": "Sttok helps our clients digitize corporate management, automating manual tasks and managing multiple related tasks such as Shareholder Register, Incentive Plans, Meetings, Operation Calculations (Rounds, Capital Increases, Sales, etc.). They no longer use Excel as they did before and now work professionally.",
     "button": {
