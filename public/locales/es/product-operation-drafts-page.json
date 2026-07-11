@@ -5,6 +5,7 @@
     "keywords": "simulador de operaciones, rondas de inversión, ampliaciones de capital, notas convertibles, simulaciones corporativas"
   },
   "hero": {
+    "slogan": "Producto",
     "title": "Simulador de Operaciones",
     "description": "Calcula fácilmente en pocos segundos todo tipo de operaciones y escenarios. Calcula rondas, ampliaciones, ventas, notas convertibles, etc. Además genera la documentación de las simulaciones en pocos minutos.",
     "button": {

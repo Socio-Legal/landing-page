@@ -17,40 +17,30 @@ import {
   Vote,
 } from "lucide-react";
 
-import SectionHeader from "../section-header";
-import { blurStyle01 } from "../styles/blur-styles";
-import "@/components/styles/features-section.css";
+import SectionHeading from "@/components/shared/section-heading";
+
+const iconClass = "h-[18px] w-[18px]";
 
 const FeatureIcons = {
-  Icon01: <BookOpenText className="w-6 h-6 text-primary" />,
-  Icon02: <HandCoins className="w-6 h-6 text-primary" />,
-  Icon03: <Calculator className="w-6 h-6 text-primary" />,
-  Icon04: <Vote className="w-6 h-6 text-primary" />,
-  Icon05: <BadgeEuro className="w-6 h-6 text-primary" />,
-  Icon06: <FileText className="w-6 h-6 text-primary" />,
-  Icon07: <Building2 className="w-6 h-6 text-primary" />,
-  Icon08: <Users className="w-6 h-6 text-primary" />,
-  Icon09: <FileSignature className="w-6 h-6 text-primary" />,
-  SecondarySell: <ArrowUp className="w-6 h-6 text-primary" />,
-  SecondaryBuy: <ArrowDown className="w-6 h-6 text-primary" />,
-  SecondaryBid: <SearchCheck className="w-6 h-6 text-primary" />,
-  SecondaryBook: <ListOrdered className="w-6 h-6 text-primary" />,
-  SecondaryTracking: <ShieldCheck className="w-6 h-6 text-primary" />,
-  SecondaryIntegration: <Building2 className="w-6 h-6 text-primary" />,
+  Icon01: <BookOpenText className={iconClass} />,
+  Icon02: <HandCoins className={iconClass} />,
+  Icon03: <Calculator className={iconClass} />,
+  Icon04: <Vote className={iconClass} />,
+  Icon05: <BadgeEuro className={iconClass} />,
+  Icon06: <FileText className={iconClass} />,
+  Icon07: <Building2 className={iconClass} />,
+  Icon08: <Users className={iconClass} />,
+  Icon09: <FileSignature className={iconClass} />,
+  SecondarySell: <ArrowUp className={iconClass} />,
+  SecondaryBuy: <ArrowDown className={iconClass} />,
+  SecondaryBid: <SearchCheck className={iconClass} />,
+  SecondaryBook: <ListOrdered className={iconClass} />,
+  SecondaryTracking: <ShieldCheck className={iconClass} />,
+  SecondaryIntegration: <Building2 className={iconClass} />,
 };
 
 type Feature = {
   icon: string;
-  title: string;
-  description: string;
-};
-
-type FeatureItemProps = {
-  index: number;
-  feature: Feature;
-};
-
-type FeaturesHeaderProps = {
   title: string;
   description: string;
 };
@@ -61,41 +51,10 @@ export type FeaturesSectionProps = {
   items: Feature[];
 };
 
-const Feature: FC<FeatureItemProps> = ({ index, feature }) => (
-  <>
-    <div key={index} className="w-full sm:w-1/2 lg:w-1/3 text-left">
-      <div className="group relative overflow-hidden px-6 py-8 text-center sm:py-10 lg:px-8 xl:px-13 xl:py-15">
-        <span
-          className={`features-bg absolute left-0 top-0 -z-1 h-full w-full opacity-0 group-hover:opacity-100 ${
-            index >= 3 ? "rotate-180" : "undefined"
-          }`}
-        ></span>
-
-        <div className="flex items-center mb-4 gap-x-2">
-          <div className="item-box w-12 h-12 bg-primary/10 rounded-full sm:mr-2 mr-2 shrink-0 flex items-center justify-center">
-            {FeatureIcons[feature.icon as keyof typeof FeatureIcons]}
-          </div>
-          <h3 className="text-lg font-semibold text-primary text-left">
-            <span>{feature.title}</span>
-          </h3>
-        </div>
-
-        <p className="font-medium text-black/50 dark:text-white/70 text-left">
-          {feature.description}
-        </p>
-      </div>
-    </div>
-
-    {index % 3 === 2 && (
-      <div className="features-row-border-light dark:features-row-border-dark block h-[1px] w-full"></div>
-    )}
-  </>
-);
-
-const FeaturesHeader: FC<FeaturesHeaderProps> = ({ title, description }) => (
-  <SectionHeader title={title} description={description} />
-);
-
+/**
+ * Rejilla de funcionalidades estilo libro registral: filas separadas por
+ * filetes finos, icono discreto en línea con el título, sin cajas ni fondos.
+ */
 const FeaturesSection: FC<FeaturesSectionProps> = ({
   title,
   description,
@@ -104,23 +63,25 @@ const FeaturesSection: FC<FeaturesSectionProps> = ({
   const safeItems = Array.isArray(items) ? items : [];
 
   return (
-    <section
-      id="features-section"
-      className="scroll-mt-17 overflow-hidden pt-17.5 lg:pt-22.5 xl:pt-27.5 bg-backgroundbrand"
-      style={blurStyle01}
-    >
-      <div className="mx-auto max-w-[1222px] px-4 sm:px-8 xl:px-0 py-12 md:py-24 lg:py-32">
-        <FeaturesHeader title={title} description={description} />
+    <section id="features-section" className="border-t border-border">
+      <div className="container mx-auto px-4 py-14 md:py-20">
+        <SectionHeading eyebrow={title} title={description} />
 
-        <div className="relative">
-          <div className="features-row-border-light dark:features-row-border-dark absolute left-1/2 top-1/2 block h-[1px] w-1/2 -translate-y-1/2 rotate-90 lg:left-1/4 lg:block lg:-translate-x-1/3"></div>
-          <div className="features-row-border-light dark:features-row-border-dark absolute right-1/2 top-1/2 block h-[1px] w-1/2 -translate-y-1/2 rotate-90 lg:right-[8.3%] lg:block"></div>
-
-          <div className="flex flex-wrap justify-center">
-            {safeItems.map((feature, index) => (
-              <Feature key={index} index={index} feature={feature} />
-            ))}
-          </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          {safeItems.map((feature, index) => (
+            <div
+              key={index}
+              className="border-t border-border py-6 pr-0 lg:pr-8"
+            >
+              <div className="mb-2 flex items-center gap-2.5 text-foreground">
+                {FeatureIcons[feature.icon as keyof typeof FeatureIcons]}
+                <h3 className="text-base font-semibold">{feature.title}</h3>
+              </div>
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                {feature.description}
+              </p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
