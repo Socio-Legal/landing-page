@@ -79,6 +79,11 @@
         "icon": "Icon09",
         "title": "Portal del Inversor",
         "description": "Sttok te ofrece la posibilidad de tener el Portal del Inversor completamente integrado en tu página web"
+      },
+      {
+        "icon": "SecondaryBook",
+        "title": "Transacciones",
+        "description": "Registro de todas las operaciones: ampliaciones, compraventas, transmisiones, canjes, herencias, reducciones, renumeraciones, etc."
       }
     ]
   },

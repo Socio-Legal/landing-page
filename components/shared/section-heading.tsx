@@ -18,7 +18,7 @@ const SectionHeading: FC<SectionHeadingProps> = ({ eyebrow, title, aside }) => (
           {eyebrow}
         </p>
       )}
-      <h2 className="max-w-[28ch] font-serif text-2xl font-normal tracking-tight text-balance text-foreground sm:text-3xl">
+      <h2 className="max-w-[44ch] font-serif text-2xl font-normal tracking-tight text-balance text-foreground sm:text-3xl">
         {title}
       </h2>
     </div>

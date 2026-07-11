@@ -40,6 +40,24 @@
       "case": "Despachos mercantilistas en toda España centralizan en Sttok la gestión societaria de sus clientes. Cero Excels, cero carpetas, todo al día.",
       "icon": "Scale",
       "image": "who-uses-sttok-lawyers.png"
+    },
+    {
+      "id": 5,
+      "title": "Abogados in-house y direcciones jurídicas",
+      "pain": "El día a día societario se reparte entre correos, Excels y el despacho externo. Poca trazabilidad y demasiada dependencia de terceros.",
+      "with": "Toda la vida societaria del grupo en una sola plataforma: libro de socios, juntas, consejos y documentación, con trazabilidad completa y acceso por roles.",
+      "case": "Direcciones jurídicas de grupos empresariales centralizan en Sttok el libro de socios, las juntas y la documentación de todas sus sociedades.",
+      "icon": "BriefcaseBusiness",
+      "image": "/who-uses-sttok-companies.png"
+    },
+    {
+      "id": 6,
+      "title": "Equipos de tecnología que dan servicio al área jurídica",
+      "pain": "El departamento jurídico necesita una herramienta, y la alternativa son desarrollos internos o Excels compartidos que nadie quiere mantener.",
+      "with": "Una solución estándar de mercado, certificada ISO 27001 y RGPD, con SSO, acceso OTP e instancias dedicadas. Desplegada en una semana y sin deuda de mantenimiento.",
+      "case": "Equipos de IT despliegan Sttok como estándar corporativo para su departamento jurídico y societario, con la seguridad validada por su CISO.",
+      "icon": "ServerCog",
+      "image": "/who-uses-sttok-companies.png"
     }
   ]
 }

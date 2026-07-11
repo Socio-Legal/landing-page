@@ -40,6 +40,24 @@
       "case": "Corporate law firms across Spain centralize their clients' corporate management on Sttok. Zero spreadsheets, zero folders, always up to date.",
       "icon": "Scale",
       "image": "who-uses-sttok-lawyers.png"
+    },
+    {
+      "id": 5,
+      "title": "In-house lawyers and legal departments",
+      "pain": "Day-to-day corporate work is scattered across emails, spreadsheets and the external law firm. Little traceability and too much dependency on third parties.",
+      "with": "The group's entire corporate life in a single platform: shareholder registry, meetings, boards and documentation, with full traceability and role-based access.",
+      "case": "In-house legal teams of corporate groups centralize in Sttok the shareholder registry, meetings and documentation of all their companies.",
+      "icon": "BriefcaseBusiness",
+      "image": "/who-uses-sttok-companies.png"
+    },
+    {
+      "id": 6,
+      "title": "Technology teams serving the legal department",
+      "pain": "The legal department needs a tool, and the alternative is internal developments or shared spreadsheets nobody wants to maintain.",
+      "with": "A market-standard solution, ISO 27001 and GDPR certified, with SSO, OTP access and dedicated instances. Deployed in a week with no maintenance debt.",
+      "case": "IT teams roll out Sttok as the corporate standard for their legal and corporate departments, with security validated by their CISO.",
+      "icon": "ServerCog",
+      "image": "/who-uses-sttok-companies.png"
     }
   ]
 }
