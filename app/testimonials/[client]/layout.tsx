@@ -1,6 +1,8 @@
 import React from "react";
 import { Metadata } from "next";
 
+import { buildMetadata } from "@/lib/seo";
+
 interface TestimonialsLayoutProps {
   children: React.ReactNode;
 }
@@ -29,7 +31,12 @@ export async function generateMetadata({
     };
   }
 
-  return clientData;
+  return buildMetadata({
+    title: clientData.title,
+    description: clientData.description,
+    keywords: clientData.keywords,
+    path: `/testimonios/${client}`,
+  });
 }
 
 export default async function TestimonialsLayout({

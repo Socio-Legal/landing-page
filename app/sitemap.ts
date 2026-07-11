@@ -2,7 +2,11 @@ import { MetadataRoute } from "next";
 
 const BASE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://www.sttok.com";
 
-const STATIC_ROUTES = [
+/* Solo URLs canónicas en castellano. Las rutas en inglés son rewrites de
+   las mismas páginas y quedan cubiertas por el canonical; no existen rutas
+   por idioma (/es, /en), así que no se declaran alternates. */
+
+const MAIN_ROUTES = [
   "",
   "/producto",
   "/libro-de-socios",
@@ -10,7 +14,6 @@ const STATIC_ROUTES = [
   "/juntas-consejos",
   "/simulador",
   "/mercado-secundario",
-  "/soluciones",
   "/empresas",
   "/abogados",
   "/startups",
@@ -19,29 +22,51 @@ const STATIC_ROUTES = [
   "/testimonios",
   "/precios",
   "/recursos",
-  "/aviso-legal",
-  "/privacidad",
-  "/politica-seguridad",
 ];
 
-const LOCALES = ["es", "en"];
+const CASE_STUDIES = [
+  "Factorial",
+  "PldSpace",
+  "DerechoCom",
+  "Taxdown",
+  "Banktrack",
+  "Caballero",
+  "MyInvestor",
+].map((client) => `/testimonios/${client}`);
+
+const SEO_ROUTES = [
+  "/software-de-libro-de-socios",
+  "/software-de-juntas-de-accionistas",
+  "/software-de-gestion-de-captable",
+  "/software-de-captable",
+  "/simulador-de-ampliacion-de-capital",
+  "/secundario",
+  "/junta-de-accionistas-digital",
+  "/grupos-societarios",
+  "/documentacion-societaria",
+  "/consejos-de-administracion",
+];
+
+const LEGAL_ROUTES = ["/aviso-legal", "/privacidad", "/politica-seguridad"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const entries: MetadataRoute.Sitemap = [];
+  const entry = (
+    route: string,
+    priority: number,
+    changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"],
+  ) => ({
+    url: `${BASE_URL}${route}`,
+    lastModified: new Date(),
+    changeFrequency,
+    priority,
+  });
 
-  for (const route of STATIC_ROUTES) {
-    entries.push({
-      url: `${BASE_URL}${route}`,
-      lastModified: new Date(),
-      changeFrequency: route === "" ? "weekly" : "monthly",
-      priority: route === "" ? 1 : 0.8,
-      alternates: {
-        languages: Object.fromEntries(
-          LOCALES.map((locale) => [locale, `${BASE_URL}/${locale}${route}`])
-        ),
-      },
-    });
-  }
-
-  return entries;
+  return [
+    ...MAIN_ROUTES.map((r) =>
+      entry(r, r === "" ? 1 : 0.8, r === "" ? "weekly" : "monthly"),
+    ),
+    ...CASE_STUDIES.map((r) => entry(r, 0.6, "monthly")),
+    ...SEO_ROUTES.map((r) => entry(r, 0.5, "monthly")),
+    ...LEGAL_ROUTES.map((r) => entry(r, 0.2, "yearly")),
+  ];
 }

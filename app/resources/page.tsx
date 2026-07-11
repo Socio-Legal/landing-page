@@ -8,12 +8,14 @@ import HeroSection from "@/components/product/hero-section";
 import TopFeatures from "@/components/product/top-features";
 import { metadata as page, hero } from "@/config/resources";
 import ResourcesIcons from "@/components/resources/resources-icons";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = buildMetadata({
   title: page.title,
-  keywords: page.keywords,
   description: page.description,
-};
+  keywords: page.keywords,
+  path: "/recursos",
+});
 
 const Page = () => {
   return (

@@ -49,6 +49,16 @@ Planes por sociedad y año, con comunicaciones y firma electrónica incluidas, o
 
 AXA, Andbank, Factorial, Multiverse Computing, PLD Space, Osborne, Grupo Caballero (Caballero 1830), TaxDown, MyInvestor, Barkibu, Derecho.com, PwC, Mailtrack, Banktrack, Legal Pigeon, Cabiedes & Partners y más de 500 sociedades en España.
 
+## Casos de éxito (con nombre y empresa)
+
+- Factorial (RRHH, +2.000 empleados): https://www.sttok.com/testimonios/Factorial
+- PLD Space (aeroespacial): https://www.sttok.com/testimonios/PldSpace
+- TaxDown (fiscal-tech): https://www.sttok.com/testimonios/Taxdown
+- Grupo Caballero, fundado en 1830: https://www.sttok.com/testimonios/Caballero
+- MyInvestor (neobanco): https://www.sttok.com/testimonios/MyInvestor
+- Derecho.com (legal-tech): https://www.sttok.com/testimonios/DerechoCom
+- Banktrack (fintech): https://www.sttok.com/testimonios/Banktrack
+
 ## Documentación descargable
 
 - Dossier comercial (español): https://www.sttok.com/docs/sttok-dossier-es.pdf

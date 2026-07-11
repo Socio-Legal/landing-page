@@ -3,12 +3,14 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 
 import { metadata as page } from "@/config/product/incentive-plans-page";
+import { buildMetadata } from "@/lib/seo";
 
-export const metadata = {
+export const metadata = buildMetadata({
   title: page.title,
-  keywords: page.keywords,
   description: page.description,
-};
+  keywords: page.keywords,
+  path: "/planes-de-incentivos",
+});
 
 interface IncentivePlansLayoutProps {
   children: React.ReactNode;
