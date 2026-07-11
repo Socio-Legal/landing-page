@@ -19,6 +19,7 @@ import Mailtrack from "@/public/logo-mailtrack.png";
 import MasterChef from "@/public/logo-masterchefworld.png";
 import Multiverse from "@/public/logo-multiverse.svg";
 import MyInvestor from "@/public/logo-myinvestor.png";
+import Osborne from "@/public/logo-osborne.svg";
 import PldSpace from "@/public/logo-pldspace.png";
 import Psonrie from "@/public/logo-psonrie.png";
 import Pwc from "@/public/logo-pwc.png";
@@ -50,6 +51,7 @@ export const clientLogos = {
   MasterChef: MasterChef,
   MyInvestor: MyInvestor,
   Multiverse: Multiverse,
+  Osborne: Osborne,
   PldSpace: PldSpace,
   Psonrie: Psonrie,
   Pwc: Pwc,

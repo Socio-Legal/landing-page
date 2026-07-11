@@ -53,6 +53,10 @@ const Page = () => {
               </div>
             ))}
           </div>
+
+          <p className="mx-auto mt-5 max-w-5xl text-left text-xs text-muted-foreground">
+            {t("pricing-page:plans.extras")}
+          </p>
         </div>
       </section>
 
@@ -60,7 +64,14 @@ const Page = () => {
         <div className="container mx-auto px-4 py-14 md:py-16">
           <LogoStrip
             label={t("pricing-page:clientsLabel")}
-            primary={["Axa", "Andbank", "Factorial", "Multiverse", "PldSpace"]}
+            primary={[
+              "Axa",
+              "Andbank",
+              "Factorial",
+              "Multiverse",
+              "PldSpace",
+              "Osborne",
+            ]}
             secondary={[
               "Caballero",
               "Taxdown",

@@ -30,11 +30,12 @@ Sttok es el software líder en España para la gestión de sociedades mercantile
 
 ## Precios
 
-Planes por sociedad y año, sin coste de implantación y con firma electrónica incluida:
+Planes por sociedad y año, con comunicaciones y firma electrónica incluidas, onboarding completo en una semana y soporte en español e inglés:
 
 - **Básico**: 450€/año. Sociedades de hasta 10 socios o beneficiarios. Libro de Socios, planes de incentivos y simulador de rondas.
 - **Avanzado**: 650€/año. Hasta 20 socios o beneficiarios. Añade juntas de socios, consejos de administración y firma electrónica integrada.
 - **Pro**: 850€/año. Hasta 50 socios o beneficiarios, con todas las funcionalidades.
+- Funcionalidades con coste extra: mercado de acciones o de incentivos (mercado secundario).
 - Para grupos de sociedades o necesidades mayores: plan personalizado con demo en https://calendly.com/sttok/30min
 
 ## Cumplimiento y seguridad
