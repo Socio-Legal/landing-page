@@ -57,15 +57,15 @@ const Feature: FC<FeatureProps> = ({ index, feature }) => (
         ></span>
 
         <div className="flex items-center mb-4 gap-x-2">
-          <div className="item-box w-12 h-12 bg-primary/10 rounded-full sm:mr-2 mr-2 shrink-0 flex items-center justify-center">
+          <div className="mr-1 shrink-0 flex items-center text-foreground">
             {FeatureIcons[feature.icon as keyof typeof FeatureIcons]}
           </div>
-          <h3 className="text-lg font-semibold text-primary text-left">
+          <h3 className="text-base font-semibold text-foreground text-left">
             <span>{feature.title}</span>
           </h3>
         </div>
 
-        <p className="font-medium text-black/50 dark:text-white/70 text-left">
+        <p className="text-sm text-muted-foreground text-left">
           {feature.description}
         </p>
       </div>
@@ -92,15 +92,15 @@ const FeatureWithLink: FC<FeatureProps> = ({ index, feature }) => (
           ></span>
 
           <div className="flex items-center mb-4 gap-x-2">
-            <div className="item-box w-12 h-12 bg-primary/10 rounded-full sm:mr-2 mr-2 shrink-0 flex items-center justify-center">
+            <div className="mr-1 shrink-0 flex items-center text-foreground">
               {FeatureIcons[feature.icon as keyof typeof FeatureIcons]}
             </div>
-            <h3 className="text-lg font-semibold text-primary text-left">
+            <h3 className="text-base font-semibold text-foreground text-left">
               <span>{feature.title}</span>
             </h3>
           </div>
 
-          <p className="font-medium text-black/50 dark:text-white/70 text-left">
+          <p className="text-sm text-muted-foreground text-left">
             {feature.description}
           </p>
         </div>

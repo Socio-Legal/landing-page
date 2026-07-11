@@ -1,23 +1,7 @@
 import React from "react";
 
 import Link from "next/link";
-import Image from "next/legacy/image";
 import { ChevronRight } from "lucide-react";
-
-import { cn } from "@/lib/utils";
-import { buttonVariants } from "@/components/ui/button";
-import IconTitle from "@/public/icon-title.svg";
-import { Button } from "@/components/ui/button";
-
-const buttonClassName = cn(
-  buttonVariants({ size: "lg", variant: "default" }),
-  "group mt-4 rounded-[2rem] px-6"
-);
-
-const secondaryButtonClassName = cn(
-  buttonVariants({ size: "lg", variant: "outline" }),
-  "group mt-4 ml-4 rounded-[2rem] px-6"
-);
 
 type SectionHeaderProps = {
   slogan?: string;
@@ -29,6 +13,10 @@ type SectionHeaderProps = {
   secondaryButtonLink?: string;
 };
 
+/**
+ * Cabecera de sección sobria: eyebrow en versalitas, titular serif y
+ * descripción en gris. Sin píldoras, iconos ni degradados.
+ */
 const SectionHeader = ({
   slogan,
   title,
@@ -39,47 +27,48 @@ const SectionHeader = ({
   secondaryButtonLink,
 }: SectionHeaderProps) => {
   return (
-    <div className="wow fadeInUp relative z-10 mb-16 text-center">
+    <div className="relative z-10 mb-12 text-center">
       {slogan && (
-        <span className="hero-subtitle-gradient relative mb-4 inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium">
-          <Image src={IconTitle} alt="icon" width={16} height={16} />
-          <span className="hero-subtitle-text text-brand"> {slogan} </span>
-        </span>
+        <p className="mb-3 text-xs font-medium uppercase tracking-widest text-brand">
+          {slogan}
+        </p>
       )}
 
       {title && (
-        <h2 className="mb-4 text-3xl font-extrabold text-primary sm:text-4xl md:text-4xl lg:text-5xl">
+        <h2 className="mb-4 font-serif text-3xl font-normal tracking-tight text-balance text-foreground sm:text-4xl">
           {title}
         </h2>
       )}
 
       {description && (
-        <p className="mx-auto max-w-[714px] font-medium text-gray-400 dark:text-white/70">
+        <p className="mx-auto max-w-2xl text-base leading-relaxed text-muted-foreground">
           {description}
         </p>
       )}
 
-      {buttonText && buttonLink && (
-        <Button variant="default" asChild>
-          <Link href={buttonLink} className={buttonClassName}>
-            {buttonText}
-            <ChevronRight className="ml-1 size-4 transition-all duration-300 ease-out group-hover:translate-x-1" />
-          </Link>
-        </Button>
-      )}
-
-      {secondaryButtonText && secondaryButtonLink && (
-        <Button variant="outline" asChild>
-          <Link
-            href={secondaryButtonLink}
-            target="_blank"
-            className={secondaryButtonClassName}
-          >
-            {secondaryButtonText}
-            <ChevronRight className="ml-1 size-4 transition-all duration-300 ease-out group-hover:translate-x-1" />
-          </Link>
-        </Button>
-      )}
+      {(buttonText && buttonLink) || (secondaryButtonText && secondaryButtonLink) ? (
+        <div className="mt-6 flex flex-wrap justify-center gap-3">
+          {buttonText && buttonLink && (
+            <Link
+              href={buttonLink}
+              className="group inline-flex items-center gap-2 rounded-md bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
+            >
+              {buttonText}
+              <ChevronRight className="size-4 transition-transform duration-300 ease-out group-hover:translate-x-1" />
+            </Link>
+          )}
+          {secondaryButtonText && secondaryButtonLink && (
+            <Link
+              href={secondaryButtonLink}
+              target="_blank"
+              className="group inline-flex items-center gap-2 rounded-md border border-border bg-background px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:bg-accent"
+            >
+              {secondaryButtonText}
+              <ChevronRight className="size-4 transition-transform duration-300 ease-out group-hover:translate-x-1" />
+            </Link>
+          )}
+        </div>
+      ) : null}
     </div>
   );
 };
