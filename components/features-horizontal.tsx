@@ -1,6 +1,5 @@
 "use client";
 
-import { BorderBeam } from "@/components/magicui/border-beam";
 import * as Accordion from "@radix-ui/react-accordion";
 import { AnimatePresence, motion, useInView } from "framer-motion";
 import React, {
@@ -255,13 +254,13 @@ export default function Features({
 
                   <AccordionTrigger>
                     <div className="flex items-center relative flex-col">
-                      <div className="item-box size-16 bg-primary/10 rounded-full sm:mx-6 mx-2 shrink-0 flex items-center justify-center">
+                      <div className="mt-1 shrink-0 text-foreground">
                         {item.icon}
                       </div>
-                      <div className="font-bold text-xl my-3 ">
+                      <div className="font-semibold text-base my-3">
                         {item.title}
                       </div>
-                      <div className="justify-center text-center mb-4 text-black/50 dark:text-white/70">
+                      <div className="justify-center text-center mb-4 text-sm text-muted-foreground">
                         {item.content}
                       </div>
                     </div>
@@ -329,17 +328,9 @@ export default function Features({
                 )}
               </AnimatePresence>
               {!data[currentIndex]?.image && !data[currentIndex]?.video && (
-                <div className="w-full h-full rounded-xl border border-neutral-300/50 bg-gray-200 p-1"></div>
+                <div className="w-full h-full rounded-lg border border-border bg-muted p-1"></div>
               )}
             </div>
-            <BorderBeam
-              size={400}
-              duration={12}
-              delay={9}
-              borderWidth={1.5}
-              colorFrom="hsl(var(--primary))"
-              colorTo="hsl(var(--primary)/0)"
-            />
           </div>
 
           <ul
@@ -370,9 +361,9 @@ export default function Features({
                   ></div>
                 </div>
 
-                <h2 className="text-xl font-bold">{item.title}</h2>
+                <h2 className="text-base font-semibold">{item.title}</h2>
 
-                <p className="mx-0 max-w-sm text-balance text-sm text-black/50 dark:text-white/70">
+                <p className="mx-0 max-w-sm text-balance text-sm text-muted-foreground">
                   {item.content}
                 </p>
               </div>

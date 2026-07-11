@@ -19,10 +19,10 @@ interface ProductProps {
 }
 
 const ProductIcons = {
-  Brain: <Brain className="h-6 w-6 text-primary" />,
-  FileText: <FileText className="h-6 w-6 text-primary" />,
-  BarChart3: <BarChart3 className="h-6 w-6 text-primary" />,
-  LineChart: <LineChart className="h-6 w-6 text-primary" />,
+  Brain: <Brain className="h-5 w-5" />,
+  FileText: <FileText className="h-5 w-5" />,
+  BarChart3: <BarChart3 className="h-5 w-5" />,
+  LineChart: <LineChart className="h-5 w-5" />,
 };
 
 const ProductsHeader = () => {
