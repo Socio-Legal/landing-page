@@ -8,7 +8,7 @@
     {
       "title": "ISO 27001",
       "description": "Certificación auditada por Bureau Veritas en seguridad de la información.",
-      "logo": "/logo-iso-27001.png"
+      "logo": "/logo-bureau-veritas.png"
     },
     {
       "title": "RGPD y DPA",
@@ -23,7 +23,7 @@
     {
       "title": "Datos en Europa",
       "description": "Alojado en AWS Europa. Sin transferencias internacionales de datos.",
-      "logo": null
+      "logo": "/logo-eu-flag.svg"
     },
     {
       "title": "Encriptación end-to-end",
@@ -33,7 +33,7 @@
     {
       "title": "SLA garantizado",
       "description": "Acuerdo de nivel de servicio disponible para clientes Enterprise.",
-      "logo": "/logo-bureau-veritas.png"
+      "logo": null
     }
   ]
 }

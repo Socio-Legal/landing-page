@@ -6,24 +6,24 @@
   },
   "items": [
     {
-      "title": "DocuSign",
-      "subtitle": "Electronic signature included",
-      "description": "Legally binding signature for minutes, corporate documents and incentive plans. At no extra cost."
-    },
-    {
       "title": "Google and Microsoft SSO",
       "subtitle": "Corporate identity",
       "description": "Secure access with the credentials your team already uses. No extra password to manage."
     },
     {
-      "title": "Factorial and Personio",
-      "subtitle": "HR sync",
-      "description": "Connect your HR platform so your incentive plans update automatically with every hire and exit."
+      "title": "OTP access",
+      "subtitle": "Two-step verification",
+      "description": "One-time-code access for partners, board members and guests, with no passwords to manage."
     },
     {
       "title": "Dedicated instances",
       "subtitle": "Private deployment",
       "description": "If your compliance requires it, we offer dedicated instances with custom configuration."
+    },
+    {
+      "title": "Integrated electronic signature",
+      "subtitle": "DocuSign included",
+      "description": "Legally binding signatures for minutes, corporate documents and incentive plans. At no extra cost."
     }
   ]
 }

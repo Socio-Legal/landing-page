@@ -7,7 +7,7 @@
   "hero": {
     "slogan": "Soluciones",
     "title": "Solución para Startups",
-    "description": "Gestión digital de Startups. Céntrate en hacer crecer la empresa y utiliza Sttok para cálculos de rondas, planes de incentivos, libro de socios, juntas, etc…",
+    "description": "Gestión societaria digital para startups, scale-ups y empresas en crecimiento. Céntrate en hacer crecer la empresa y usa Sttok para cálculos de rondas, planes de incentivos, libro de socios y juntas.",
     "button": {
       "text": "Solicitar Demo",
       "link": "https://calendly.com/sttok/30min"
@@ -27,12 +27,12 @@
       "Shakers",
       "Barkibu",
       "Yaba",
-      "Banktrack"
+      "Multiverse"
     ]
   },
   "features": {
     "title": "Todas las Características",
-    "description": "Explora las características que hacen de Sttok una herramienta esencial para startups.",
+    "description": "Las funcionalidades que hacen de Sttok la herramienta esencial para startups, scale-ups y empresas en crecimiento.",
     "items": [
       {
         "icon": "Icon01",
@@ -63,6 +63,11 @@
         "icon": "Icon06",
         "title": "Sindicación",
         "description": "Configura la sindiación de forma fácil para simplificar la gestión de tu empresa"
+      },
+      {
+        "icon": "SecondaryBook",
+        "title": "Transacciones",
+        "description": "Registro de todas las operaciones: ampliaciones, compraventas, transmisiones, canjes, herencias, reducciones, renumeraciones, etc."
       }
     ]
   },

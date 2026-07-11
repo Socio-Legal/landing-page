@@ -6,24 +6,24 @@
   },
   "items": [
     {
-      "title": "DocuSign",
-      "subtitle": "Firma electrónica incluida",
-      "description": "Firma legalmente vinculante para actas, documentos societarios y planes de incentivos. Sin coste adicional."
-    },
-    {
       "title": "SSO Google y Microsoft",
       "subtitle": "Identidad corporativa",
       "description": "Acceso seguro con las credenciales que ya usa tu equipo. Sin gestionar otra contraseña."
     },
     {
-      "title": "Factorial y Personio",
-      "subtitle": "Sincronización con RRHH",
-      "description": "Conecta tu plataforma de RRHH para que tus planes de incentivos se actualicen con cada alta y baja."
+      "title": "Acceso OTP",
+      "subtitle": "Verificación en dos pasos",
+      "description": "Acceso con código de un solo uso para socios, consejeros e invitados, sin contraseñas que gestionar."
     },
     {
       "title": "Instancias dedicadas",
       "subtitle": "Despliegue privado",
       "description": "Si tu compliance lo requiere, ofrecemos instancias dedicadas con configuración personalizada."
+    },
+    {
+      "title": "Firma electrónica integrada",
+      "subtitle": "DocuSign incluido",
+      "description": "Firma legalmente vinculante para actas, documentos societarios y planes de incentivos. Sin coste adicional."
     }
   ]
 }

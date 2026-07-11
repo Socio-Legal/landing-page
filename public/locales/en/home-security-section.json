@@ -8,7 +8,7 @@
     {
       "title": "ISO 27001",
       "description": "Information security certification audited by Bureau Veritas.",
-      "logo": "/logo-iso-27001.png"
+      "logo": "/logo-bureau-veritas.png"
     },
     {
       "title": "GDPR and DPA",
@@ -23,7 +23,7 @@
     {
       "title": "Data in Europe",
       "description": "Hosted on AWS Europe. No international data transfers.",
-      "logo": null
+      "logo": "/logo-eu-flag.svg"
     },
     {
       "title": "End-to-end encryption",
@@ -33,7 +33,7 @@
     {
       "title": "Guaranteed SLA",
       "description": "Service level agreement available for Enterprise customers.",
-      "logo": "/logo-bureau-veritas.png"
+      "logo": null
     }
   ]
 }

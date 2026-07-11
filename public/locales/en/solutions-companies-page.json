@@ -79,6 +79,11 @@
         "icon": "Icon09",
         "title": "Investor Portal",
         "description": "Sttok offers you the possibility of having the Investor Portal fully integrated into your website"
+      },
+      {
+        "icon": "SecondaryBook",
+        "title": "Transactions",
+        "description": "A record of every operation: capital increases, sales, transfers, swaps, inheritances, reductions, renumbering and more."
       }
     ]
   },

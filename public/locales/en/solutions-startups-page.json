@@ -7,7 +7,7 @@
   "hero": {
     "slogan": "Solutions",
     "title": "Solution for Startups",
-    "description": "Digital management for Startups. Focus on growing your company and use Sttok for round calculations, incentive plans, shareholder register, meetings, etc...",
+    "description": "Digital corporate management for startups, scale-ups and growing companies. Focus on growing the business and use Sttok for round calculations, incentive plans, shareholder registry and meetings.",
     "button": {
       "text": "Request Demo",
       "link": "https://calendly.com/sttok/30min"
@@ -27,12 +27,12 @@
       "Shakers",
       "Barkibu",
       "Yaba",
-      "Banktrack"
+      "Multiverse"
     ]
   },
   "features": {
     "title": "All Features",
-    "description": "Explore the features that make Sttok an essential tool for startups.",
+    "description": "The features that make Sttok the essential tool for startups, scale-ups and growing companies.",
     "items": [
       {
         "icon": "Icon01",
@@ -63,6 +63,11 @@
         "icon": "Icon06",
         "title": "Syndication",
         "description": "Configure syndication easily to simplify your company's management"
+      },
+      {
+        "icon": "SecondaryBook",
+        "title": "Transactions",
+        "description": "A record of every operation: capital increases, sales, transfers, swaps, inheritances, reductions, renumbering and more."
       }
     ]
   },

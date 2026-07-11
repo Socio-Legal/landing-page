@@ -2,7 +2,15 @@
 
 import { FC } from "react";
 import { useTranslation } from "react-i18next";
-import { Building2, Scale, Handshake, Vote, ArrowRight } from "lucide-react";
+import {
+  ArrowRight,
+  BriefcaseBusiness,
+  Building2,
+  Handshake,
+  Scale,
+  ServerCog,
+  Vote,
+} from "lucide-react";
 
 interface ProfileItem {
   id: number;
@@ -19,6 +27,8 @@ const ProfileIcons: Record<string, React.ComponentType<{ className?: string }>> 
   Scale,
   Handshake,
   Vote,
+  BriefcaseBusiness,
+  ServerCog,
 };
 
 const WhoUsesSttokSection: FC = () => {
