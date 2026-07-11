@@ -1,6 +1,6 @@
 "use client";
 
-import React, { FC } from "react";
+import React, { FC, use } from "react";
 import { useTranslation } from "react-i18next";
 
 import Link from "next/link";
@@ -27,9 +27,9 @@ import CallToActionSection from "@/components/landing/cta-section";
 import { getTestimonialNamespaces } from "@/lib/getTestimonialNamespaces";
 
 type PageProps = {
-  params: {
+  params: Promise<{
     client: string;
-  };
+  }>;
 };
 
 type TestimonialSummaryProps = {
@@ -98,8 +98,8 @@ const getOther2Testimonials = (client: string): TestimonialProps[] => {
 };
 
 const Page: FC<PageProps> = ({ params }) => {
-  const client: string = params.client;
-  const namespaces = getTestimonialNamespaces(client as string);
+  const { client } = use(params);
+  const namespaces = getTestimonialNamespaces(client);
 
   const { t } = useTranslation(namespaces);
 

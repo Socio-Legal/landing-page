@@ -5,7 +5,7 @@ import Script from "next/script";
 import { usePathname } from "next/navigation";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { I18nextProvider } from "react-i18next";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Inter as FontSans, Instrument_Serif as FontSerif } from "next/font/google";
 
 import i18n from "@/lib/i18n";
@@ -97,7 +97,7 @@ export default function RootLayout({
           defaultTheme="dark"
           disableTransitionOnChange
         >
-          <GoogleTagManager gtmId="G-LWNDHYBY2N" />
+          <GoogleAnalytics gaId="G-LWNDHYBY2N" />
 
           <I18nextProvider i18n={i18n}>
             <MenuProvider>{children}</MenuProvider>

@@ -3,7 +3,6 @@ import { Metadata } from "next";
 
 interface TestimonialsLayoutProps {
   children: React.ReactNode;
-  params: { client: string };
 }
 
 async function getClientData(clientId: string) {
@@ -18,9 +17,10 @@ async function getClientData(clientId: string) {
 export async function generateMetadata({
   params,
 }: {
-  params: { client: string };
+  params: Promise<{ client: string }>;
 }): Promise<Metadata> {
-  const clientData = await getClientData(params.client);
+  const { client } = await params;
+  const clientData = await getClientData(client);
 
   if (!clientData) {
     return {
@@ -34,10 +34,7 @@ export async function generateMetadata({
 
 export default async function TestimonialsLayout({
   children,
-  params,
 }: TestimonialsLayoutProps) {
-  await generateMetadata({ params });
-
   return (
     <>
       <main className="mx-auto flex-1 overflow-hidden">{children}</main>
