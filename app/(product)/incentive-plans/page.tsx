@@ -39,7 +39,7 @@ const Page = () => {
     <>
       <HeroSection {...hero} />
       <TopFeatures {...topFeatures} />
-      <ClientsSection {...clients} hideTopSpace />
+      <ClientsSection {...clients} />
       <FeaturesSection {...features} />
       <TestimonialsSection {...testimonials} />
       <CallToActionSection />

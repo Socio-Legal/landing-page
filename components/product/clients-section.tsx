@@ -16,9 +16,7 @@ const ClientsSection: FC<ClientsSectionProps> = ({
   clients,
   hideTopSpace = false,
 }) => {
-  const verticalPadding = hideTopSpace
-    ? "pb-14 md:pb-16"
-    : "py-14 md:py-16";
+  const verticalPadding = hideTopSpace ? "pb-12 md:pb-16" : "py-12 md:py-16";
 
   const safeClients = (Array.isArray(clients) ? clients : []).filter(
     (name): name is keyof typeof clientLogos => name in clientLogos,
