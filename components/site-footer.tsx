@@ -8,6 +8,8 @@ import { Icons } from "./icons";
 import { siteConfig } from "@/config/site-config";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./language-switcher";
+import { localizedHref } from "@/lib/localized-href";
+import { useLocale } from "@/lib/use-locale";
 
 const FooterIcons = {
   LinkedIn: <LinkedInLogoIcon className="h-5 w-5" />,
@@ -15,6 +17,7 @@ const FooterIcons = {
 
 export function SiteFooter() {
   const { t } = useTranslation("common");
+  const locale = useLocale();
 
   return (
     <footer className="border-t border-border bg-background">
@@ -23,7 +26,7 @@ export function SiteFooter() {
         <div className="grid grid-cols-2 gap-8 md:grid-cols-5">
           {/* Brand column */}
           <div className="col-span-2 md:col-span-1 flex flex-col gap-4">
-            <Link href="/" title="Sttok">
+            <Link href={localizedHref("/", locale)} title="Sttok">
               <Icons.logo className="h-[24px] w-auto" />
             </Link>
             <p className="text-sm leading-relaxed text-muted-foreground max-w-[200px]">
@@ -60,7 +63,7 @@ export function SiteFooter() {
                 ) : (
                   <Link
                     key={link.id}
-                    href={link.url || "#"}
+                    href={link.url ? localizedHref(link.url, locale) : "#"}
                     title={link.alt}
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                   >

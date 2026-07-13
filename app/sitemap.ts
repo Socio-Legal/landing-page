@@ -1,10 +1,12 @@
 import { MetadataRoute } from "next";
 
+import { ROUTE_MAP } from "@/lib/localized-href";
+
 const BASE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://www.sttok.com";
 
-/* Solo URLs canónicas en castellano. Las rutas en inglés son rewrites de
-   las mismas páginas y quedan cubiertas por el canonical; no existen rutas
-   por idioma (/es, /en), así que no se declaran alternates. */
+/* Español en la raíz. Las páginas con versión inglesa (ROUTE_MAP) declaran
+   alternates hreflang recíprocos es/en + x-default; el resto (casos de éxito
+   y landings SEO) solo existen en español. */
 
 const MAIN_ROUTES = [
   "",
@@ -56,12 +58,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
     route: string,
     priority: number,
     changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"],
-  ) => ({
-    url: `${BASE_URL}${route}`,
-    lastModified: new Date(),
-    changeFrequency,
-    priority,
-  });
+  ) => {
+    const esUrl = `${BASE_URL}${route}`;
+    const enPath = ROUTE_MAP[route === "" ? "/" : route];
+    return {
+      url: esUrl,
+      lastModified: new Date(),
+      changeFrequency,
+      priority,
+      ...(enPath
+        ? {
+            alternates: {
+              languages: {
+                "es-ES": esUrl,
+                en: `${BASE_URL}${enPath}`,
+                "x-default": esUrl,
+              },
+            },
+          }
+        : {}),
+    };
+  };
 
   return [
     ...MAIN_ROUTES.map((r) =>

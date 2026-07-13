@@ -17,11 +17,15 @@ import {
 import { routes } from "@/config/routes";
 import { siteConfig } from "@/config/site-config";
 import { cn } from "@/lib/utils";
+import { localizedHref } from "@/lib/localized-href";
+import { useLocale } from "@/lib/use-locale";
 import ThemeToggler from "./ui/theme-toggler";
 import LanguageSwitcher from "./language-switcher";
 
 export default function DrawerDemo() {
   const { t } = useTranslation("common");
+  const locale = useLocale();
+  const href = (path: string) => localizedHref(path, locale);
 
   return (
     <Drawer>
@@ -32,7 +36,7 @@ export default function DrawerDemo() {
         <DrawerHeader className="px-6">
           <div className="flex justify-between">
             <Link
-              href="/"
+              href={href("/")}
               title="brand-logo"
               className="relative mr-6 flex items-center space-x-2"
             >
@@ -50,11 +54,11 @@ export default function DrawerDemo() {
               {siteConfig.header.map((item, index) => (
                 <li key={index} className="my-3">
                   {item.trigger ? (
-                    <Link href={item.href || ""} className="font-semibold">
+                    <Link href={href(item.href || "/")} className="font-semibold">
                       {t(item.trigger)}
                     </Link>
                   ) : (
-                    <Link href={item.href || ""} className="font-semibold">
+                    <Link href={href(item.href || "/")} className="font-semibold">
                       {t(item.label || "")}
                     </Link>
                   )}
