@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { Icon } from "@iconify/react";
 import { useTranslation } from "react-i18next";
 import { useMenu } from "@/components/contexts/MenuContext";
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 
 import { mirrorHref } from "@/lib/localized-href";
 import type { Locale } from "@/lib/locales";
@@ -25,7 +25,6 @@ const LanguageSwitcher = () => {
   const { t } = useTranslation("common");
   const { openMenu, closeMenu } = useMenu();
   const dropdownRef = useRef(null);
-  const router = useRouter();
   const pathname = usePathname();
 
   const [isOpen, setIsOpen] = useState(false);
@@ -74,10 +73,14 @@ const LanguageSwitcher = () => {
     };
   }, [closeMenu]);
 
-  // El idioma es la URL: navegar a la página espejo en el idioma destino.
+  // El idioma es la URL, resuelta en el servidor (layout raíz lee x-locale
+  // del middleware en cada petición). Una navegación de cliente (router.push)
+  // no vuelve a pedir el documento al servidor, así que el layout raíz no se
+  // re-ejecuta y el idioma servido no cambia aunque la URL sí lo haga. Forzamos
+  // una recarga completa para que el servidor resuelva el idioma correcto.
   const changeLanguage = (lang: string) => {
     const target = (lang === "en" ? "en" : "es") as Locale;
-    router.push(mirrorHref(pathname || "/", target));
+    window.location.href = mirrorHref(pathname || "/", target);
     setIsOpen(false);
     closeMenu();
   };
