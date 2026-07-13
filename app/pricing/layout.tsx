@@ -11,6 +11,7 @@ export const metadata = buildMetadata({
   description: page.description,
   keywords: page.keywords,
   path: "/precios",
+  pathEn: "/en/pricing",
 });
 
 /* Datos estructurados de producto y planes (SEO/GEO) */

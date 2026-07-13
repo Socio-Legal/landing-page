@@ -1,38 +1,43 @@
-import i18n from "i18next";
+import i18next, { i18n as I18nType } from "i18next";
 import { initReactI18next } from "react-i18next";
-import LanguageDetector from "i18next-browser-languagedetector";
+
 import loadTranslations from "./loadTranslations";
+import { LOCALES, DEFAULT_LOCALE, type Locale } from "./locales";
 
-const initI18n = async () => {
-  if (!i18n.isInitialized) {
-    const [esTranslations, enTranslations] = await Promise.all([
-      loadTranslations("es"),
-      loadTranslations("en"),
-    ]);
+export { LOCALES, DEFAULT_LOCALE };
+export type { Locale };
 
-    await i18n
-      .use(LanguageDetector)
-      .use(initReactI18next)
-      .init({
-        resources: {
-          es: esTranslations,
-          en: enTranslations,
-        },
-        fallbackLng: "es",
-        supportedLngs: ["es", "en"],
-        detection: {
-          order: ["localStorage", "navigator"],
-        },
-        defaultNS: "common",
-        interpolation: {
-          escapeValue: false,
-        },
-      } as any);
+/**
+ * Dos instancias de i18next, una por idioma, con el idioma FIJADO e inmutable.
+ * No usamos un singleton mutable con detector de idioma: en SSR, mutar el
+ * idioma global haría que peticiones concurrentes (/precios y /en/pricing) se
+ * pisaran. Cada árbol de la app usa su instancia; el idioma nunca cambia, así
+ * que no hay carrera posible. El cambio de idioma es navegación por URL.
+ *
+ * IMPORTANTE: este módulo importa react-i18next (createContext), así que solo
+ * debe usarse desde Client Components. Los Server Components que necesiten el
+ * tipo o las constantes de locale deben importar de "@/lib/locales".
+ */
+const instances: Partial<Record<Locale, I18nType>> = {};
 
-    console.log("i18n initialized:", i18n.language);
+function createForLocale(locale: Locale): I18nType {
+  const instance = i18next.createInstance();
+  instance.use(initReactI18next).init({
+    resources: { [locale]: loadTranslations(locale) },
+    lng: locale,
+    fallbackLng: locale, // sin fallback cruzado: cada instancia es de un idioma
+    supportedLngs: [locale],
+    defaultNS: "common",
+    interpolation: { escapeValue: false },
+    react: { useSuspense: false },
+  } as any);
+  return instance;
+}
+
+export function getI18n(locale: Locale): I18nType {
+  const key: Locale = LOCALES.includes(locale) ? locale : DEFAULT_LOCALE;
+  if (!instances[key]) {
+    instances[key] = createForLocale(key);
   }
-};
-
-initI18n();
-
-export default i18n;
+  return instances[key] as I18nType;
+}

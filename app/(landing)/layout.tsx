@@ -14,6 +14,7 @@ export const metadata = buildMetadata({
   keywords:
     "gestión sociedades, libro de socios, captable, juntas de accionistas, planes de incentivos, corporate governance, software empresarial, cumplimiento normativo",
   path: "/",
+  pathEn: "/en",
 });
 
 export default async function MarketingLayout({
