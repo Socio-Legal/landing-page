@@ -22,6 +22,8 @@ const MAIN_ROUTES = [
   "/testimonios",
   "/precios",
   "/recursos",
+  "/sobre-nosotros",
+  "/sttok-vs-excel",
 ];
 
 const CASE_STUDIES = [

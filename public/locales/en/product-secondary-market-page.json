@@ -47,5 +47,27 @@
         "description": "Connect secondary operations with cap table and documentation to keep ownership data up to date."
       }
     ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Secondary market FAQs",
+    "items": [
+      {
+        "q": "What is Sttok's secondary market?",
+        "a": "A space to manage share transfers between partners and tender offers."
+      },
+      {
+        "q": "Who can participate?",
+        "a": "Partners and investors authorized by the company, with the permissions it defines."
+      },
+      {
+        "q": "How is each operation recorded?",
+        "a": "Automatically in the shareholder registry, with its associated documentation."
+      },
+      {
+        "q": "Is it included in the plans?",
+        "a": "It is an extra-cost feature: it is added as an additional module on any plan."
+      }
+    ]
   }
 }

@@ -37,6 +37,9 @@ import testimonialsYabaPage from "../public/locales/es/testimonials-yaba-page.js
 import testimonialsMyInvestorPage from "../public/locales/es/testimonials-myinvestor-page.json";
 
 import pricingPage from "../public/locales/es/pricing-page.json";
+import resourcesGlossary from "../public/locales/es/resources-glossary.json";
+import aboutPage from "../public/locales/es/about-page.json";
+import sttokVsExcelPage from "../public/locales/es/sttok-vs-excel-page.json";
 
 import legalDisclaimerPage from "../public/locales/es/legal-disclaimer-page.json";
 import legalSecurityPage from "../public/locales/es/legal-security-page.json";
@@ -75,6 +78,9 @@ import solutionsInvestorsDashboardPageEN from "../public/locales/en/solutions-in
 import testimonialsPageEN from "../public/locales/en/testimonials-page.json";
 
 import pricingPageEN from "../public/locales/en/pricing-page.json";
+import resourcesGlossaryEN from "../public/locales/en/resources-glossary.json";
+import aboutPageEN from "../public/locales/en/about-page.json";
+import sttokVsExcelPageEN from "../public/locales/en/sttok-vs-excel-page.json";
 
 import legalDisclaimerPageEN from "../public/locales/en/legal-disclaimer-page.json";
 import legalSecurityPageEN from "../public/locales/en/legal-security-page.json";
@@ -122,6 +128,9 @@ const loadTranslations = (lang: "es" | "en") => {
       "testimonials-myinvestor-page": testimonialsMyInvestorPage,
 
       "pricing-page": pricingPage,
+      "resources-glossary": resourcesGlossary,
+      "about-page": aboutPage,
+      "sttok-vs-excel-page": sttokVsExcelPage,
 
       "legal-privacy-page": legalPrivacyPage,
       "legal-security-page": legalSecurityPage,
@@ -162,6 +171,9 @@ const loadTranslations = (lang: "es" | "en") => {
     "testimonials-page": testimonialsPageEN,
 
     "pricing-page": pricingPageEN,
+    "resources-glossary": resourcesGlossaryEN,
+    "about-page": aboutPageEN,
+    "sttok-vs-excel-page": sttokVsExcelPageEN,
 
     "legal-privacy-page": legalPrivacyPageEN,
     "legal-security-page": legalSecurityPageEN,

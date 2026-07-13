@@ -1,0 +1,72 @@
+{
+  "header": {
+    "slogan": "Comparativa",
+    "title": "Sttok frente a Excel",
+    "description": "El 90% de las sociedades empieza gestionando su libro de socios en una hoja de cálculo. Funciona hasta que deja de funcionar: una ampliación mal calculada, un certificado urgente, una due diligence. Esta es la comparación honesta."
+  },
+  "tableHead": {
+    "aspect": "Aspecto",
+    "excel": "Con Excel",
+    "sttok": "Con Sttok"
+  },
+  "rows": [
+    {
+      "aspect": "Errores de cálculo",
+      "excel": "Fórmulas manuales; un error se propaga sin avisar.",
+      "sttok": "Porcentajes y diluciones calculados siempre sobre el libro real."
+    },
+    {
+      "aspect": "Versión vigente",
+      "excel": "captable_v7_FINAL_bueno.xlsx en tres buzones distintos.",
+      "sttok": "Una única fuente de verdad, con histórico y trazabilidad."
+    },
+    {
+      "aspect": "Certificados",
+      "excel": "Redactados a mano cada vez que un socio los pide.",
+      "sttok": "Generados al instante desde la ficha de cada socio."
+    },
+    {
+      "aspect": "Juntas y quórums",
+      "excel": "Convocatorias por email y quórums calculados a mano.",
+      "sttok": "Convocatoria digital, delegaciones, votación y acta automática."
+    },
+    {
+      "aspect": "Acceso de socios e inversores",
+      "excel": "Reenvíos por correo, sin control de versiones ni permisos.",
+      "sttok": "Portal propio para cada socio, con permisos por rol."
+    },
+    {
+      "aspect": "Seguridad y cumplimiento",
+      "excel": "Un archivo compartido, sin cifrado ni control de acceso.",
+      "sttok": "ISO 27001, RGPD, SSO y datos cifrados en Europa."
+    },
+    {
+      "aspect": "Due diligence",
+      "excel": "Semanas reconstruyendo el histórico societario.",
+      "sttok": "Todo el histórico y la documentación, listos para compartir."
+    },
+    {
+      "aspect": "Coste",
+      "excel": "Gratis en licencias; caro en horas y en errores.",
+      "sttok": "Desde 450€ por sociedad al año, con onboarding en una semana."
+    }
+  ],
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Preguntas frecuentes al dejar Excel",
+    "items": [
+      {
+        "q": "¿Puedo migrar mi Excel actual a Sttok?",
+        "a": "Sí. El onboarding incluye la migración del libro de socios y del histórico, y se completa en una semana."
+      },
+      {
+        "q": "¿Qué pasa con mi histórico de operaciones?",
+        "a": "Se carga en Sttok: ampliaciones, transmisiones y demás operaciones quedan registradas con su documentación."
+      },
+      {
+        "q": "¿Y si solo tengo una sociedad pequeña?",
+        "a": "El plan Básico (450€/año, hasta 10 socios) cubre libro de socios, planes de incentivos y simulador. Excel sale más caro en cuanto hay una operación."
+      }
+    ]
+  }
+}

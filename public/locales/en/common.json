@@ -41,7 +41,10 @@
     "Legal": "Legal",
     "LegalWarning": "Legal Notice and T&C",
     "Privacy": "Privacy and Cookies",
-    "Security": "Security Policy"
+    "Security": "Security Policy",
+    "Glossary": "Corporate glossary",
+    "About": "About us",
+    "VsExcel": "Sttok vs Excel"
   },
   "cta": {
     "login": "Log in",

@@ -1,0 +1,28 @@
+{
+  "header": {
+    "slogan": "Sobre nosotros",
+    "title": "Un equipo técnico y jurídico al servicio de la gestión societaria",
+    "description": "Sttok nace de un equipo con trayectoria técnica y jurídica, unido por una idea simple: la gestión societaria merece la misma excelencia que cualquier otra área crítica de la empresa. De esa exigencia surgió la plataforma líder del mercado hispano en gestión de sociedades."
+  },
+  "body": [
+    "Sttok ha crecido de forma muy relevante por el valor que aporta a grandes empresas, donde la llevanza correcta del accionariado y de la parte mercantil es crítica: libro de socios al día, juntas con garantías y documentación impecable.",
+    "Hoy más de 250 empresas —de grupos centenarios como Osborne o Caballero 1830 a compañías como AXA, Factorial, Multiverse Computing o PLD Space— gestionan con Sttok más de 20.000 millones de euros en equity y 250.000 socios.",
+    "Trabajamos con los estándares que exigen sus equipos legales y de seguridad: certificación ISO 27001 auditada por Bureau Veritas, cumplimiento RGPD y datos alojados y cifrados en Europa."
+  ],
+  "valuesLabel": "Lo que nos define",
+  "values": [
+    {
+      "title": "Rigor jurídico",
+      "description": "El producto lo diseñan personas que han llevado sociedades: cada funcionalidad respeta cómo funciona de verdad el derecho societario."
+    },
+    {
+      "title": "Excelencia técnica",
+      "description": "Una plataforma robusta y estándar de mercado, con la seguridad y las integraciones que espera un equipo de IT exigente."
+    },
+    {
+      "title": "Datos exactos",
+      "description": "El libro de socios es la fuente de verdad: porcentajes, diluciones y quórums se calculan siempre sobre datos reales."
+    }
+  ],
+  "clientsLabel": "Confían en Sttok"
+}

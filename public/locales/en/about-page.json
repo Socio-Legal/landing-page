@@ -1,0 +1,28 @@
+{
+  "header": {
+    "slogan": "About us",
+    "title": "A technical and legal team devoted to corporate management",
+    "description": "Sttok was born from a team with technical and legal backgrounds, united by a simple idea: corporate management deserves the same excellence as any other critical area of the company. From that standard came the leading corporate management platform in the Spanish-speaking market."
+  },
+  "body": [
+    "Sttok has grown remarkably because of the value it brings to large companies, where keeping the shareholder base and corporate records right is critical: an up-to-date registry, meetings with full guarantees and impeccable documentation.",
+    "Today more than 250 companies — from centuries-old groups like Osborne or Caballero 1830 to companies like AXA, Factorial, Multiverse Computing or PLD Space — manage over €20,000 million in equity and 250,000 shareholders with Sttok.",
+    "We work to the standards their legal and security teams demand: ISO 27001 certification audited by Bureau Veritas, GDPR compliance and data hosted and encrypted in Europe."
+  ],
+  "valuesLabel": "What defines us",
+  "values": [
+    {
+      "title": "Legal rigor",
+      "description": "The product is designed by people who have managed companies: every feature respects how corporate law actually works."
+    },
+    {
+      "title": "Technical excellence",
+      "description": "A robust, market-standard platform, with the security and integrations a demanding IT team expects."
+    },
+    {
+      "title": "Exact data",
+      "description": "The shareholder registry is the source of truth: percentages, dilutions and quorums are always calculated on real data."
+    }
+  ],
+  "clientsLabel": "They trust Sttok"
+}

@@ -21,5 +21,31 @@
     "label": "Descargar dossier comercial (PDF)",
     "file": "/docs/sttok-dossier-es.pdf"
   },
-  "clientsLabel": "Más de 250 empresas confían en Sttok"
+  "clientsLabel": "Más de 250 empresas confían en Sttok",
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Preguntas frecuentes sobre precios",
+    "items": [
+      {
+        "q": "¿Cuánto cuesta Sttok?",
+        "a": "Desde 450€ por sociedad al año en el plan Básico (hasta 10 socios o beneficiarios). El plan Avanzado cuesta 650€/año (hasta 20) y el Pro 850€/año (hasta 50). Para grupos de sociedades o necesidades mayores hay planes personalizados."
+      },
+      {
+        "q": "¿Qué incluyen todos los planes?",
+        "a": "Comunicaciones, firma electrónica, onboarding completo en una semana y soporte en español e inglés. Sin coste de implantación oculto."
+      },
+      {
+        "q": "¿Qué funcionalidades tienen coste extra?",
+        "a": "El mercado de acciones o de incentivos (mercado secundario) se contrata como módulo adicional."
+      },
+      {
+        "q": "¿Cuánto tarda la implantación?",
+        "a": "El onboarding completo se hace en una semana, incluida la migración de los datos desde Excel u otras herramientas."
+      },
+      {
+        "q": "¿Cómo puedo contratar Sttok?",
+        "a": "Reservando una demo de 30 minutos con un experto societario en calendly.com/sttok/30min. Verás la plataforma aplicada a tu caso antes de decidir."
+      }
+    ]
+  }
 }

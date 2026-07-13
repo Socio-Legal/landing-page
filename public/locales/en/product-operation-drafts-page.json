@@ -118,5 +118,27 @@
         "stars": 5
       }
     ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Simulator FAQs",
+    "items": [
+      {
+        "q": "What operations can I simulate?",
+        "a": "Financing rounds, capital increases, convertible notes and liquidation scenarios."
+      },
+      {
+        "q": "What data does it use?",
+        "a": "The real, up-to-date cap table from the shareholder registry, without copying data to Excel."
+      },
+      {
+        "q": "Can I compare scenarios?",
+        "a": "Yes, you can create as many drafts as you need before executing an operation."
+      },
+      {
+        "q": "Can a draft become a real operation?",
+        "a": "Yes: the simulation can be executed and recorded in the shareholder registry."
+      }
+    ]
   }
 }

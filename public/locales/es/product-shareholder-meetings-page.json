@@ -121,5 +121,27 @@
         "stars": 5
       }
     ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Preguntas frecuentes sobre juntas y consejos",
+    "items": [
+      {
+        "q": "¿Puedo convocar la junta digitalmente?",
+        "a": "Sí. Sttok gestiona la convocatoria, las delegaciones y las votaciones, y genera el acta al instante."
+      },
+      {
+        "q": "¿Cómo funcionan las delegaciones de voto?",
+        "a": "Son digitales, con registro y trazabilidad completa de quién delega en quién."
+      },
+      {
+        "q": "¿Calcula los quórums?",
+        "a": "Automáticamente, con los datos reales y actualizados del libro de socios."
+      },
+      {
+        "q": "¿Sirve también para consejos de administración?",
+        "a": "Sí: convocatoria, delegaciones, votaciones y actas de los consejos, con las mismas garantías."
+      }
+    ]
   }
 }

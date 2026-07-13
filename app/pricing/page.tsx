@@ -6,6 +6,7 @@ import { CheckIcon, DownloadIcon } from "@radix-ui/react-icons";
 
 import PricingPlans from "@/components/pricing/pricing-plans";
 import LogoStrip from "@/components/shared/logo-strip";
+import FaqSection, { FaqItem } from "@/components/shared/faq-section";
 import CallToActionSection from "@/components/landing/cta-section";
 
 const Page = () => {
@@ -92,6 +93,14 @@ const Page = () => {
           />
         </div>
       </section>
+
+      <FaqSection
+        eyebrow={t("pricing-page:faq.eyebrow")}
+        title={t("pricing-page:faq.title")}
+        items={
+          t("pricing-page:faq.items", { returnObjects: true }) as FaqItem[]
+        }
+      />
 
       <CallToActionSection />
     </>

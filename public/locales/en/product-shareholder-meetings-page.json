@@ -121,5 +121,27 @@
         "stars": 5
       }
     ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Meetings and boards FAQs",
+    "items": [
+      {
+        "q": "Can I convene meetings digitally?",
+        "a": "Yes. Sttok manages convening, proxies and voting, and generates the minutes instantly."
+      },
+      {
+        "q": "How do voting proxies work?",
+        "a": "They are digital, with full record and traceability of who delegates to whom."
+      },
+      {
+        "q": "Does it calculate quorums?",
+        "a": "Automatically, using the real, up-to-date registry data."
+      },
+      {
+        "q": "Does it also work for boards of directors?",
+        "a": "Yes: convening, proxies, voting and minutes for boards, with the same guarantees."
+      }
+    ]
   }
 }

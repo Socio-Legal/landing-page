@@ -4,6 +4,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 import CallToActionSection from "@/components/landing/cta-section";
+import FaqSection, { FaqItem } from "@/components/shared/faq-section";
 import TestimonialsSection, {
   TestimonialsSectionProps,
 } from "@/components/product/testimonials-section";
@@ -42,6 +43,11 @@ const Page = () => {
       <ClientsSection {...clients} />
       <FeaturesSection {...features} />
       <TestimonialsSection {...testimonials} />
+      <FaqSection
+        eyebrow={t("faq.eyebrow")}
+        title={t("faq.title")}
+        items={t("faq.items", { returnObjects: true }) as FaqItem[]}
+      />
       <CallToActionSection />
     </>
   );

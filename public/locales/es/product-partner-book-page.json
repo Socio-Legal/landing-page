@@ -123,5 +123,27 @@
         "stars": 5
       }
     ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Preguntas frecuentes sobre el Libro de Socios",
+    "items": [
+      {
+        "q": "¿Es válido un libro de socios digital?",
+        "a": "Sí. Sttok mantiene el libro de socios oficial actualizado y exportable, listo para presentar ante el Registro y organismos oficiales."
+      },
+      {
+        "q": "¿Puedo migrar mi libro de socios desde Excel?",
+        "a": "Sí. El onboarding incluye la migración de datos y se completa en una semana."
+      },
+      {
+        "q": "¿Los socios pueden consultar su participación?",
+        "a": "Cada socio accede a su ficha con sus datos, documentos, transacciones y certificados individuales."
+      },
+      {
+        "q": "¿Gestiona numeración, clases y cargas?",
+        "a": "Sí: numeración de participaciones, clases, cargas y cotitulares, con porcentajes y diluciones siempre exactos."
+      }
+    ]
   }
 }

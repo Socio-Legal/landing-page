@@ -211,6 +211,24 @@ export const siteConfig = {
           title: "menu.Resources",
           url: routes.APP_BLOG,
         },
+        {
+          id: 122,
+          title: "menu.Glossary",
+          url: "/recursos",
+          alt: "Glosario societario",
+        },
+        {
+          id: 123,
+          title: "menu.About",
+          url: "/sobre-nosotros",
+          alt: "Sobre Sttok",
+        },
+        {
+          id: 124,
+          title: "menu.VsExcel",
+          url: "/sttok-vs-excel",
+          alt: "Sttok frente a Excel",
+        },
       ],
       [
         // TODO: create legal pages
