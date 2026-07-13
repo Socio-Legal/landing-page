@@ -47,5 +47,27 @@
         "description": "Conecta el secundario con captable y documentación para mantener la información societaria actualizada."
       }
     ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Preguntas frecuentes sobre el mercado secundario",
+    "items": [
+      {
+        "q": "¿Qué es el mercado secundario de Sttok?",
+        "a": "Un espacio para gestionar compraventas de participaciones entre socios y ofertas de compra (tender offers)."
+      },
+      {
+        "q": "¿Quién puede participar?",
+        "a": "Los socios e inversores autorizados por la sociedad, con los permisos que esta defina."
+      },
+      {
+        "q": "¿Cómo queda registrada cada operación?",
+        "a": "Automáticamente en el libro de socios, con su documentación asociada."
+      },
+      {
+        "q": "¿Está incluido en los planes?",
+        "a": "Es una funcionalidad con coste extra: se contrata como módulo adicional sobre cualquier plan."
+      }
+    ]
   }
 }

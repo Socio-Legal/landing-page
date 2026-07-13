@@ -1,0 +1,72 @@
+{
+  "header": {
+    "slogan": "Comparison",
+    "title": "Sttok versus Excel",
+    "description": "Most companies start managing their shareholder registry in a spreadsheet. It works until it doesn't: a miscalculated capital increase, an urgent certificate, a due diligence. This is the honest comparison."
+  },
+  "tableHead": {
+    "aspect": "Aspect",
+    "excel": "With Excel",
+    "sttok": "With Sttok"
+  },
+  "rows": [
+    {
+      "aspect": "Calculation errors",
+      "excel": "Manual formulas; one error propagates silently.",
+      "sttok": "Percentages and dilutions always calculated on the real registry."
+    },
+    {
+      "aspect": "Current version",
+      "excel": "captable_v7_FINAL_good.xlsx in three different inboxes.",
+      "sttok": "A single source of truth, with history and traceability."
+    },
+    {
+      "aspect": "Certificates",
+      "excel": "Drafted by hand every time a shareholder asks.",
+      "sttok": "Generated instantly from each shareholder's file."
+    },
+    {
+      "aspect": "Meetings and quorums",
+      "excel": "Email convening and hand-calculated quorums.",
+      "sttok": "Digital convening, proxies, voting and automatic minutes."
+    },
+    {
+      "aspect": "Shareholder and investor access",
+      "excel": "Email forwards, no version control or permissions.",
+      "sttok": "A portal for each shareholder, with role-based permissions."
+    },
+    {
+      "aspect": "Security and compliance",
+      "excel": "A shared file, without encryption or access control.",
+      "sttok": "ISO 27001, GDPR, SSO and data encrypted in Europe."
+    },
+    {
+      "aspect": "Due diligence",
+      "excel": "Weeks rebuilding the corporate history.",
+      "sttok": "The whole history and documentation, ready to share."
+    },
+    {
+      "aspect": "Cost",
+      "excel": "Free in licenses; expensive in hours and errors.",
+      "sttok": "From €450 per company per year, with one-week onboarding."
+    }
+  ],
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "FAQs when leaving Excel",
+    "items": [
+      {
+        "q": "Can I migrate my current Excel to Sttok?",
+        "a": "Yes. Onboarding includes migrating the registry and its history, and takes one week."
+      },
+      {
+        "q": "What happens to my operation history?",
+        "a": "It is loaded into Sttok: capital increases, transfers and other operations are recorded with their documentation."
+      },
+      {
+        "q": "What if I only have one small company?",
+        "a": "The Basic plan (€450/year, up to 10 shareholders) covers the registry, incentive plans and the simulator. Excel becomes more expensive as soon as there is one operation."
+      }
+    ]
+  }
+}

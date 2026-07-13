@@ -122,5 +122,27 @@
         "stars": 5
       }
     ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Preguntas frecuentes sobre planes de incentivos",
+    "items": [
+      {
+        "q": "¿Gestiona phantom shares y stock options?",
+        "a": "Sí, ambos y otros tipos de plan, con calendarios de vesting configurables (incluido cliff)."
+      },
+      {
+        "q": "¿Qué ve cada beneficiario?",
+        "a": "Un portal individual con su plan, su calendario de vesting y sus documentos firmados."
+      },
+      {
+        "q": "¿Cómo se firman las cartas de invitación?",
+        "a": "Se generan automáticamente y se firman con la firma electrónica integrada, en minutos."
+      },
+      {
+        "q": "¿Calcula la dilución del plan?",
+        "a": "Sí. El pool de incentivos y su efecto en el captable se calculan con los datos reales del libro de socios."
+      }
+    ]
   }
 }

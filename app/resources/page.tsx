@@ -1,28 +1,23 @@
 import React from "react";
 
 import CallToActionSection from "@/components/landing/cta-section";
-import TestimonialsSection from "@/components/product/testimonials-section";
-import FeaturesSection from "@/components/product/features-section";
-import ClientsSection from "@/components/product/clients-section";
-import HeroSection from "@/components/product/hero-section";
-import TopFeatures from "@/components/product/top-features";
-import { metadata as page, hero } from "@/config/resources";
-import ResourcesIcons from "@/components/resources/resources-icons";
+import Glossary from "@/components/resources/glossary";
 import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
-  title: page.title,
-  description: page.description,
-  keywords: page.keywords,
+  title: "Glosario societario — captable, phantom shares, vesting y más",
+  description:
+    "Los términos de la gestión societaria explicados en una frase: captable, libro de socios, phantom shares, stock options, vesting, juntas, quórum, dilución y más.",
+  keywords:
+    "glosario societario, qué es un captable, qué son phantom shares, vesting, libro de socios, dilución, pacto de socios",
   path: "/recursos",
 });
 
 const Page = () => {
   return (
     <>
-      <HeroSection {...hero} />
-
-      <ResourcesIcons />
+      <Glossary />
+      <CallToActionSection />
     </>
   );
 };

@@ -123,5 +123,27 @@
         "stars": 5
       }
     ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Shareholder registry FAQs",
+    "items": [
+      {
+        "q": "Is a digital shareholder registry valid?",
+        "a": "Yes. Sttok keeps the official registry up to date and exportable, ready to file with the Registry and official bodies."
+      },
+      {
+        "q": "Can I migrate my registry from Excel?",
+        "a": "Yes. Onboarding includes data migration and is completed in one week."
+      },
+      {
+        "q": "Can shareholders check their stake?",
+        "a": "Each shareholder accesses their own file with data, documents, transactions and individual certificates."
+      },
+      {
+        "q": "Does it manage numbering, classes and liens?",
+        "a": "Yes: share numbering, classes, liens and co-owners, with always exact percentages and dilutions."
+      }
+    ]
   }
 }

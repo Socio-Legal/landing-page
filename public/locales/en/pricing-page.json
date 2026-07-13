@@ -21,5 +21,31 @@
     "label": "Download sales dossier (PDF)",
     "file": "/docs/sttok-dossier-en.pdf"
   },
-  "clientsLabel": "More than 250 companies trust Sttok"
+  "clientsLabel": "More than 250 companies trust Sttok",
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Pricing FAQs",
+    "items": [
+      {
+        "q": "How much does Sttok cost?",
+        "a": "From €450 per company per year on the Basic plan (up to 10 partners or beneficiaries). The Advanced plan is €650/year (up to 20) and Pro is €850/year (up to 50). Custom plans are available for company groups or larger needs."
+      },
+      {
+        "q": "What does every plan include?",
+        "a": "Communications, electronic signature, full onboarding in one week and support in Spanish and English. No hidden implementation fees."
+      },
+      {
+        "q": "Which features have an extra cost?",
+        "a": "The shares or incentives marketplace (secondary market) is available as an additional module."
+      },
+      {
+        "q": "How long does implementation take?",
+        "a": "Full onboarding takes one week, including data migration from Excel or other tools."
+      },
+      {
+        "q": "How can I get Sttok?",
+        "a": "Book a 30-minute demo with a corporate expert at calendly.com/sttok/30min. You will see the platform applied to your case before deciding."
+      }
+    ]
+  }
 }

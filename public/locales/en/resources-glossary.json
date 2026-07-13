@@ -1,0 +1,73 @@
+{
+  "header": {
+    "slogan": "Resources",
+    "title": "Corporate glossary",
+    "description": "The terms of corporate management, explained in one sentence. The vocabulary investors, lawyers and boards use, without the noise."
+  },
+  "terms": [
+    {
+      "term": "Cap table (capitalization table)",
+      "def": "The record of who owns what in a company: partners, shares, percentages and classes. In Spain its official form is the shareholder registry (libro de socios)."
+    },
+    {
+      "term": "Shareholder registry (libro de socios)",
+      "def": "The official register of a limited company recording partners, their shares, numbering and transfers. In public limited companies, its equivalent is the registered shares book."
+    },
+    {
+      "term": "Phantom shares",
+      "def": "Economic rights that mirror the value of a share without granting real equity. The beneficiary is paid in cash when an agreed liquidity event occurs."
+    },
+    {
+      "term": "Stock options",
+      "def": "Options over shares: the right to buy them in the future at a price fixed today (strike). Used to incentivize employees and executives."
+    },
+    {
+      "term": "Vesting",
+      "def": "The schedule by which a beneficiary consolidates their incentive over time or milestones. Unvested rights are lost on early departure."
+    },
+    {
+      "term": "Cliff",
+      "def": "The minimum initial period of a vesting plan (typically one year) before which nothing vests."
+    },
+    {
+      "term": "General meeting",
+      "def": "The meeting of partners to decide on company matters: accounts, directors, capital increases, bylaws. It can be ordinary or extraordinary."
+    },
+    {
+      "term": "Quorum",
+      "def": "The minimum percentage of capital that must be present or represented for the meeting to be validly held and vote."
+    },
+    {
+      "term": "Voting proxy",
+      "def": "A partner's authorization for another person to attend and vote on their behalf at a meeting."
+    },
+    {
+      "term": "Board of directors",
+      "def": "The collegiate body that manages the company when there is no sole director. Its meetings, votes and minutes follow their own rules."
+    },
+    {
+      "term": "Capital increase",
+      "def": "The operation by which the company issues new shares in exchange for contributions. It changes the cap table and usually dilutes those who do not participate."
+    },
+    {
+      "term": "Convertible note",
+      "def": "A loan that converts into shares in a future round, usually with a discount or a valuation cap."
+    },
+    {
+      "term": "Dilution",
+      "def": "The reduction of a partner's percentage when new shares are issued. Calculated on the fully diluted cap table (including options and convertibles)."
+    },
+    {
+      "term": "Secondary market",
+      "def": "The sale of already-issued shares between partners or authorized third parties, without the company issuing new ones."
+    },
+    {
+      "term": "Tender offer",
+      "def": "An organized offer to buy shares from several partners at once, common to give liquidity to employees and early investors."
+    },
+    {
+      "term": "Shareholders' agreement",
+      "def": "The private contract between partners regulating what bylaws do not cover: transfers, drag along, tag along, vetoes and commitments."
+    }
+  ]
+}

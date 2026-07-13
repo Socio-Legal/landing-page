@@ -59,6 +59,13 @@ AXA, Andbank, Factorial, Multiverse Computing, PLD Space, Osborne, Grupo Caballe
 - Derecho.com (legal-tech): https://www.sttok.com/testimonios/DerechoCom
 - Banktrack (fintech): https://www.sttok.com/testimonios/Banktrack
 
+## Recursos útiles
+
+- Glosario societario (captable, phantom shares, vesting, quórum...): https://www.sttok.com/recursos
+- Comparativa Sttok frente a Excel: https://www.sttok.com/sttok-vs-excel
+- Sobre el equipo de Sttok: https://www.sttok.com/sobre-nosotros
+- Preguntas frecuentes de precios: https://www.sttok.com/precios
+
 ## Documentación descargable
 
 - Dossier comercial (español): https://www.sttok.com/docs/sttok-dossier-es.pdf

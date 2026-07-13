@@ -118,5 +118,27 @@
         "stars": 5
       }
     ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Preguntas frecuentes sobre el simulador",
+    "items": [
+      {
+        "q": "¿Qué operaciones puedo simular?",
+        "a": "Rondas de financiación, ampliaciones de capital, notas convertibles y escenarios de liquidación."
+      },
+      {
+        "q": "¿Con qué datos calcula?",
+        "a": "Con el captable real y actualizado del libro de socios, sin copiar datos a Excel."
+      },
+      {
+        "q": "¿Puedo comparar escenarios?",
+        "a": "Sí, puedes crear tantos borradores como necesites antes de ejecutar una operación."
+      },
+      {
+        "q": "¿Un borrador se puede convertir en operación real?",
+        "a": "Sí: la simulación puede ejecutarse y quedar registrada en el libro de socios."
+      }
+    ]
   }
 }

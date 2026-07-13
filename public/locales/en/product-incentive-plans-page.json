@@ -122,5 +122,27 @@
         "stars": 5
       }
     ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Incentive plans FAQs",
+    "items": [
+      {
+        "q": "Does it manage phantom shares and stock options?",
+        "a": "Yes, both and other plan types, with configurable vesting schedules (including cliff)."
+      },
+      {
+        "q": "What does each beneficiary see?",
+        "a": "An individual portal with their plan, vesting schedule and signed documents."
+      },
+      {
+        "q": "How are grant letters signed?",
+        "a": "They are generated automatically and signed with the integrated electronic signature, in minutes."
+      },
+      {
+        "q": "Does it calculate plan dilution?",
+        "a": "Yes. The incentive pool and its effect on the cap table are calculated with the real registry data."
+      }
+    ]
   }
 }

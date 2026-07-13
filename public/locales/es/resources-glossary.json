@@ -1,0 +1,73 @@
+{
+  "header": {
+    "slogan": "Recursos",
+    "title": "Glosario societario",
+    "description": "Los términos de la gestión societaria, explicados en una frase. El vocabulario que usan inversores, abogados y consejos, sin rodeos."
+  },
+  "terms": [
+    {
+      "term": "Captable (tabla de capitalización)",
+      "def": "El registro de quién posee qué en una sociedad: socios, participaciones, porcentajes y clases. En España su soporte oficial es el libro de socios o de acciones."
+    },
+    {
+      "term": "Libro de socios",
+      "def": "El libro registro oficial de una sociedad limitada donde constan los socios, sus participaciones, la numeración y las transmisiones. En las sociedades anónimas, su equivalente es el libro registro de acciones nominativas."
+    },
+    {
+      "term": "Phantom shares",
+      "def": "Derechos económicos que replican el valor de una participación sin entregar participaciones reales. El beneficiario cobra en efectivo cuando ocurre un evento de liquidez pactado."
+    },
+    {
+      "term": "Stock options",
+      "def": "Opciones sobre participaciones o acciones: el derecho a comprarlas en el futuro a un precio fijado hoy (strike). Se usan para incentivar a empleados y directivos."
+    },
+    {
+      "term": "Vesting",
+      "def": "El calendario por el que un beneficiario va consolidando su incentivo con el tiempo o por hitos. Lo no consolidado se pierde si se va antes."
+    },
+    {
+      "term": "Cliff",
+      "def": "El periodo mínimo inicial de un plan de vesting (típicamente un año) antes del cual no se consolida nada."
+    },
+    {
+      "term": "Junta general",
+      "def": "La reunión de los socios para decidir sobre los asuntos de la sociedad: cuentas, administradores, ampliaciones, estatutos. Puede ser ordinaria o extraordinaria."
+    },
+    {
+      "term": "Quórum",
+      "def": "El porcentaje mínimo de capital que debe estar presente o representado para que la junta pueda constituirse y votar válidamente."
+    },
+    {
+      "term": "Delegación de voto",
+      "def": "La autorización de un socio para que otra persona asista y vote en su nombre en una junta."
+    },
+    {
+      "term": "Consejo de administración",
+      "def": "El órgano colegiado que administra la sociedad cuando no hay administrador único. Sus reuniones, votaciones y actas siguen reglas propias."
+    },
+    {
+      "term": "Ampliación de capital",
+      "def": "La operación por la que la sociedad emite nuevas participaciones a cambio de aportaciones. Cambia el captable y suele diluir a quien no acude."
+    },
+    {
+      "term": "Nota convertible",
+      "def": "Un préstamo que se convierte en participaciones en una ronda futura, normalmente con descuento o con un tope de valoración (cap)."
+    },
+    {
+      "term": "Dilución",
+      "def": "La reducción del porcentaje de un socio cuando se emiten nuevas participaciones. Se calcula sobre el captable totalmente diluido (incluyendo opciones y convertibles)."
+    },
+    {
+      "term": "Mercado secundario",
+      "def": "La compraventa de participaciones ya emitidas entre socios o con terceros autorizados, sin que la sociedad emita nuevas."
+    },
+    {
+      "term": "Tender offer (oferta de compra)",
+      "def": "Una oferta organizada para comprar participaciones a varios socios a la vez, habitual para dar liquidez a empleados e inversores tempranos."
+    },
+    {
+      "term": "Pacto de socios",
+      "def": "El contrato privado entre socios que regula lo que los estatutos no cubren: transmisiones, arrastre (drag along), acompañamiento (tag along), vetos y compromisos."
+    }
+  ]
+}
