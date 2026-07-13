@@ -54,13 +54,16 @@ export default function HeroSection() {
                 "/logo-gdpr-compliant.png",
                 "/logo-ssl.png",
               ].map((src) => (
-                <div key={src} className="relative h-8 w-20">
+                <div
+                  key={src}
+                  className="relative h-8 w-20 opacity-60 grayscale"
+                >
                   <Image
                     src={src}
                     alt=""
                     fill
                     style={{ objectFit: "contain" }}
-                    className="opacity-60 dark:brightness-0 dark:invert dark:opacity-40"
+                    className="dark:invert"
                   />
                 </div>
               ))}
