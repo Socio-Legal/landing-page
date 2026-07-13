@@ -3,7 +3,10 @@ import { useState, useEffect, useRef } from "react";
 import { Icon } from "@iconify/react";
 import { useTranslation } from "react-i18next";
 import { useMenu } from "@/components/contexts/MenuContext";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
+
+import { mirrorHref } from "@/lib/localized-href";
+import type { Locale } from "@/lib/locales";
 
 const languages = [
   {
@@ -19,10 +22,11 @@ const languages = [
 ];
 
 const LanguageSwitcher = () => {
-  const { t, i18n } = useTranslation("common");
+  const { t } = useTranslation("common");
   const { openMenu, closeMenu } = useMenu();
   const dropdownRef = useRef(null);
   const router = useRouter();
+  const pathname = usePathname();
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -70,12 +74,10 @@ const LanguageSwitcher = () => {
     };
   }, [closeMenu]);
 
+  // El idioma es la URL: navegar a la página espejo en el idioma destino.
   const changeLanguage = (lang: string) => {
-    i18n.changeLanguage(lang);
-    if (i18n.language !== lang) {
-      i18n.changeLanguage(lang);
-      router.refresh();
-    }
+    const target = (lang === "en" ? "en" : "es") as Locale;
+    router.push(mirrorHref(pathname || "/", target));
     setIsOpen(false);
     closeMenu();
   };

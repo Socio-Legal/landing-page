@@ -14,6 +14,8 @@ import {
 } from "@/components/ui/navigation-menu";
 import { siteConfig } from "@/config/site-config";
 import { cn } from "@/lib/utils";
+import { localizedHref } from "@/lib/localized-href";
+import { useLocale } from "@/lib/use-locale";
 
 import { Icons } from "./icons";
 import { useTranslation } from "react-i18next";
@@ -24,6 +26,8 @@ const MenuIcons = {
 
 export default function NavigationMenuDemo() {
   const { t } = useTranslation("common");
+  const locale = useLocale();
+  const href = (path: string) => localizedHref(path, locale);
 
   return (
     <NavigationMenu>
@@ -43,7 +47,7 @@ export default function NavigationMenuDemo() {
                       <div className="w-[220px] shrink-0 border-r border-border">
                         <NavigationMenuLink asChild>
                           <Link
-                            href={item.content.main.href}
+                            href={href(item.content.main.href)}
                             className="flex flex-col h-full p-6 no-underline outline-none group"
                           >
                             <div className="h-8 w-8 rounded-md bg-brand/10 flex items-center justify-center mb-4">
@@ -63,7 +67,7 @@ export default function NavigationMenuDemo() {
                         {item.content.items.map((subItem: any, subIndex: number) => (
                           <MegaMenuItem
                             key={subIndex}
-                            href={subItem.href}
+                            href={href(subItem.href)}
                             title={t(subItem.title)}
                           >
                             {t(subItem.description)}
@@ -77,7 +81,7 @@ export default function NavigationMenuDemo() {
                       {item.content.items.map((subItem: any, subIndex: number) => (
                         <MegaMenuItem
                           key={subIndex}
-                          href={subItem.href}
+                          href={href(subItem.href)}
                           title={t(subItem.title)}
                         >
                           {t(subItem.description)}
@@ -95,7 +99,7 @@ export default function NavigationMenuDemo() {
                   "text-sm font-medium text-foreground/80 hover:text-foreground bg-transparent hover:bg-transparent"
                 )}
               >
-                <Link href={item.href || ""}>{t(item.label)}</Link>
+                <Link href={href(item.href || "/")}>{t(item.label)}</Link>
               </NavigationMenuLink>
             )}
           </NavigationMenuItem>

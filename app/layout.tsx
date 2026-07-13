@@ -1,21 +1,12 @@
-"use client";
-
-import { Analytics } from "@vercel/analytics/react";
+import { headers } from "next/headers";
 import Script from "next/script";
-import { usePathname } from "next/navigation";
-import { SpeedInsights } from "@vercel/speed-insights/next";
-import { I18nextProvider } from "react-i18next";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import { Inter as FontSans, Instrument_Serif as FontSerif } from "next/font/google";
 
-import i18n from "@/lib/i18n";
 import { cn } from "@/lib/utils";
-import { Toaster } from "@/components/ui/sonner";
-import { MenuProvider } from "@/components/contexts/MenuContext";
-import { ThemeProvider } from "@/components/theme-provider";
+import { DEFAULT_LOCALE, type Locale } from "@/lib/locales";
+import Providers from "@/components/providers";
 
 import "./globals.css";
-import { useEffect } from "react";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -29,25 +20,18 @@ const fontSerif = FontSerif({
   variable: "--font-serif",
 });
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const pathname = usePathname();
-
-  // El idioma guardado se aplica al montar y al navegar. No se bloquea el
-  // render inicial: el HTML del servidor debe llegar completo a buscadores
-  // y crawlers de IA (SEO/GEO); el peor caso es un cambio breve de idioma.
-  useEffect(() => {
-    const storedLang = localStorage.getItem("i18nextLng");
-    if (storedLang && i18n.language !== storedLang) {
-      i18n.changeLanguage(storedLang);
-    }
-  }, [pathname]);
+  // El locale lo resuelve el middleware por la URL y lo deja en x-locale.
+  // Así el HTML del servidor emite el <html lang> correcto en cada idioma.
+  const headersList = await headers();
+  const locale = (headersList.get("x-locale") as Locale) || DEFAULT_LOCALE;
 
   return (
-    <html lang={i18n.language} suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
       <head>
         {/* Scripts de terceros vía next/script: se inyectan tras la
             hidratación y no provocan mismatches con el HTML del servidor */}
@@ -92,21 +76,7 @@ export default function RootLayout({
           fontSerif.variable,
         )}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          disableTransitionOnChange
-        >
-          <GoogleAnalytics gaId="G-LWNDHYBY2N" />
-
-          <I18nextProvider i18n={i18n}>
-            <MenuProvider>{children}</MenuProvider>
-          </I18nextProvider>
-
-          <SpeedInsights />
-          <Analytics />
-          <Toaster />
-        </ThemeProvider>
+        <Providers locale={locale}>{children}</Providers>
       </body>
     </html>
   );

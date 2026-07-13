@@ -14,9 +14,12 @@ import ThemeToggler from "./ui/theme-toggler";
 import LanguageSwitcher from "./language-switcher";
 import { useTranslation } from "react-i18next";
 import { trackDemoClick, trackLoginClick } from "@/lib/analytics";
+import { localizedHref } from "@/lib/localized-href";
+import { useLocale } from "@/lib/use-locale";
 
 export function SiteHeader() {
   const { t } = useTranslation("common");
+  const locale = useLocale();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -35,7 +38,7 @@ export function SiteHeader() {
       <div className="container flex h-14 items-center justify-between">
         {/* Logo */}
         <Link
-          href="/"
+          href={localizedHref("/", locale)}
           title="Sttok"
           className="flex items-center shrink-0 mr-8"
         >
