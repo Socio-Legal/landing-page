@@ -7,63 +7,78 @@
   "terms": [
     {
       "term": "Cap table (capitalization table)",
-      "def": "The record of who owns what in a company: partners, shares, percentages and classes. In Spain its official form is the shareholder registry (libro de socios)."
+      "def": "The record of who owns what in a company: partners, shares, percentages and classes. In Spain its official form is the shareholder registry (libro de socios).",
+      "href": "/en/partners-book"
     },
     {
       "term": "Shareholder registry (libro de socios)",
-      "def": "The official register of a limited company recording partners, their shares, numbering and transfers. In public limited companies, its equivalent is the registered shares book."
+      "def": "The official register of a limited company recording partners, their shares, numbering and transfers. In public limited companies, its equivalent is the registered shares book.",
+      "href": "/en/partners-book"
     },
     {
       "term": "Phantom shares",
-      "def": "Economic rights that mirror the value of a share without granting real equity. The beneficiary is paid in cash when an agreed liquidity event occurs."
+      "def": "Economic rights that mirror the value of a share without granting real equity. The beneficiary is paid in cash when an agreed liquidity event occurs.",
+      "href": "/en/incentive-plans"
     },
     {
       "term": "Stock options",
-      "def": "Options over shares: the right to buy them in the future at a price fixed today (strike). Used to incentivize employees and executives."
+      "def": "Options over shares: the right to buy them in the future at a price fixed today (strike). Used to incentivize employees and executives.",
+      "href": "/en/incentive-plans"
     },
     {
       "term": "Vesting",
-      "def": "The schedule by which a beneficiary consolidates their incentive over time or milestones. Unvested rights are lost on early departure."
+      "def": "The schedule by which a beneficiary consolidates their incentive over time or milestones. Unvested rights are lost on early departure.",
+      "href": "/en/incentive-plans"
     },
     {
       "term": "Cliff",
-      "def": "The minimum initial period of a vesting plan (typically one year) before which nothing vests."
+      "def": "The minimum initial period of a vesting plan (typically one year) before which nothing vests.",
+      "href": "/en/incentive-plans"
     },
     {
       "term": "General meeting",
-      "def": "The meeting of partners to decide on company matters: accounts, directors, capital increases, bylaws. It can be ordinary or extraordinary."
+      "def": "The meeting of partners to decide on company matters: accounts, directors, capital increases, bylaws. It can be ordinary or extraordinary.",
+      "href": "/en/shareholder-meetings"
     },
     {
       "term": "Quorum",
-      "def": "The minimum percentage of capital that must be present or represented for the meeting to be validly held and vote."
+      "def": "The minimum percentage of capital that must be present or represented for the meeting to be validly held and vote.",
+      "href": "/en/shareholder-meetings"
     },
     {
       "term": "Voting proxy",
-      "def": "A partner's authorization for another person to attend and vote on their behalf at a meeting."
+      "def": "A partner's authorization for another person to attend and vote on their behalf at a meeting.",
+      "href": "/en/shareholder-meetings"
     },
     {
       "term": "Board of directors",
-      "def": "The collegiate body that manages the company when there is no sole director. Its meetings, votes and minutes follow their own rules."
+      "def": "The collegiate body that manages the company when there is no sole director. Its meetings, votes and minutes follow their own rules.",
+      "href": "/en/shareholder-meetings"
     },
     {
       "term": "Capital increase",
-      "def": "The operation by which the company issues new shares in exchange for contributions. It changes the cap table and usually dilutes those who do not participate."
+      "def": "The operation by which the company issues new shares in exchange for contributions. It changes the cap table and usually dilutes those who do not participate.",
+      "href": "/en/operation-drafts"
     },
     {
       "term": "Convertible note",
-      "def": "A loan that converts into shares in a future round, usually with a discount or a valuation cap."
+      "def": "A loan that converts into shares in a future round, usually with a discount or a valuation cap.",
+      "href": "/en/operation-drafts"
     },
     {
       "term": "Dilution",
-      "def": "The reduction of a partner's percentage when new shares are issued. Calculated on the fully diluted cap table (including options and convertibles)."
+      "def": "The reduction of a partner's percentage when new shares are issued. Calculated on the fully diluted cap table (including options and convertibles).",
+      "href": "/en/operation-drafts"
     },
     {
       "term": "Secondary market",
-      "def": "The sale of already-issued shares between partners or authorized third parties, without the company issuing new ones."
+      "def": "The sale of already-issued shares between partners or authorized third parties, without the company issuing new ones.",
+      "href": "/en/secondary-market"
     },
     {
       "term": "Tender offer",
-      "def": "An organized offer to buy shares from several partners at once, common to give liquidity to employees and early investors."
+      "def": "An organized offer to buy shares from several partners at once, common to give liquidity to employees and early investors.",
+      "href": "/en/secondary-market"
     },
     {
       "term": "Shareholders' agreement",

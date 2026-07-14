@@ -1,11 +1,15 @@
 "use client";
 
 import { FC } from "react";
+import Link from "next/link";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { useTranslation } from "react-i18next";
 
 type GlossaryTerm = {
   term: string;
   def: string;
+  /** Ruta del producto de Sttok que resuelve este término, si aplica. */
+  href?: string;
 };
 
 /**
@@ -58,7 +62,17 @@ const Glossary: FC = () => {
             {terms.map((item, i) => (
               <div key={i} className="border-t border-border py-5">
                 <dt className="mb-1.5 text-base font-semibold text-foreground">
-                  {item.term}
+                  {item.href ? (
+                    <Link
+                      href={item.href}
+                      className="group inline-flex items-center gap-1.5 underline-offset-4 hover:underline"
+                    >
+                      {item.term}
+                      <ArrowRightIcon className="h-3.5 w-3.5 shrink-0 text-muted-foreground transition-transform group-hover:translate-x-0.5" />
+                    </Link>
+                  ) : (
+                    item.term
+                  )}
                 </dt>
                 <dd className="text-sm leading-relaxed text-muted-foreground">
                   {item.def}
