@@ -75,8 +75,8 @@ export default function HeroSection() {
               <Image
                 src="/hero/hero-dark.png"
                 alt="Sttok, panel de gestión de sociedades"
-                width={900}
-                height={560}
+                width={1200}
+                height={676}
                 sizes="(max-width: 768px) 100vw, 50vw"
                 priority
                 className="w-full h-auto hidden dark:block"
@@ -85,10 +85,9 @@ export default function HeroSection() {
               <Image
                 src="/hero/hero-light.png"
                 alt="Sttok, panel de gestión de sociedades"
-                width={900}
-                height={560}
+                width={1200}
+                height={675}
                 sizes="(max-width: 768px) 100vw, 50vw"
-                priority
                 className="w-full h-auto block dark:hidden"
                 style={{ borderRadius: "inherit" }}
               />

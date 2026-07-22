@@ -29,7 +29,7 @@ export default function DrawerDemo() {
 
   return (
     <Drawer>
-      <DrawerTrigger>
+      <DrawerTrigger aria-label={t("menu.open")}>
         <IoMenuSharp className="text-2xl" />
       </DrawerTrigger>
       <DrawerContent>

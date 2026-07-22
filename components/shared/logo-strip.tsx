@@ -40,6 +40,7 @@ const LogoStrip: FC<LogoStripProps> = ({ label, primary, secondary }) => (
             alt={`${name}, cliente de Sttok`}
             title={name}
             fill
+            sizes="128px"
             style={{ objectFit: "contain" }}
             className="dark:invert"
           />
@@ -59,6 +60,7 @@ const LogoStrip: FC<LogoStripProps> = ({ label, primary, secondary }) => (
               alt={`${name}, cliente de Sttok`}
               title={name}
               fill
+              sizes="96px"
               style={{ objectFit: "contain" }}
               className="dark:invert"
             />
