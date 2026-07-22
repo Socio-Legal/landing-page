@@ -94,6 +94,9 @@ const LanguageSwitcher = () => {
     >
       <button
         onClick={toggleDropdown}
+        aria-label={t("language.selectLanguage")}
+        aria-haspopup="menu"
+        aria-expanded={isOpen}
         className="flex items-center justify-center rounded-full cursor-pointer bg-transparent dark:bg-dark-bg w-10 h-10 text-primary dark:text-primary hover:text-brand hover:dark:text-brand border-2 border-transparent hover:border-brand dark:hover:border-brand transition-colors duration-300"
       >
         <Icon icon="tabler:language" width="24" height="24" />

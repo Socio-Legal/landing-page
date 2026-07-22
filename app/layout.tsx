@@ -47,10 +47,6 @@ export default async function RootLayout({
             console.log('CookieBot loaded');
           });`}
         </Script>
-        {/* Mandrill/Mailchimp verification */}
-        <Script id="mcjs" strategy="afterInteractive">
-          {`!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/1b100214ec0aaa7263e586908/efe92693beb44845bba2751c7.js");`}
-        </Script>
         {/* Datos estructurados de la organización (SEO/GEO) */}
         <script
           type="application/ld+json"

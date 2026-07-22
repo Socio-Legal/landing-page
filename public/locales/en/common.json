@@ -9,6 +9,7 @@
     "description": "Discover the new way to manage your company!"
   },
   "menu": {
+    "open": "Open menu",
     "Product": "Product",
     "ProductTitle": "Digital and Automated",
     "ProductDescription": "Take advantage of digital automation for your company.",

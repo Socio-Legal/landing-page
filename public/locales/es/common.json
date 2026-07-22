@@ -9,6 +9,7 @@
     "description": "¡Descubre la nueva forma de gestionar tu sociedad!"
   },
   "menu": {
+    "open": "Abrir menú",
     "Product": "Producto",
     "ProductTitle": "Digital y Automatizado",
     "ProductDescription": "Aprovecha la automatización digital para tu sociedad.",

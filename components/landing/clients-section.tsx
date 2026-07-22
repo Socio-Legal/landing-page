@@ -33,6 +33,7 @@ const ClientsSection: FC = () => {
                 src={getClientLogo(logo as keyof typeof clientLogos)}
                 alt={logo}
                 fill
+                sizes="112px"
                 title={logo}
                 style={{ objectFit: "contain" }}
                 className="dark:invert"
