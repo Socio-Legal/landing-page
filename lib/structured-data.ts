@@ -3,6 +3,23 @@ import type { Locale } from "@/lib/locales";
 const BASE_URL = "https://www.sttok.com";
 
 /**
+ * FAQPage a partir de una lista de preguntas. components/shared/faq-section
+ * emite el suyo cuando pinta el acordeon; esto es para las paginas de
+ * content/, donde las preguntas van en el cuerpo del documento.
+ */
+export function faqPageJsonLd(items: { q: string; a: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: items.map((item) => ({
+      "@type": "Question",
+      name: item.q,
+      acceptedAnswer: { "@type": "Answer", text: item.a },
+    })),
+  };
+}
+
+/**
  * URL PUBLICA de la pagina de precios en cada idioma. En castellano la ruta
  * publica es /precios: /pricing es solo el nombre de la carpeta en app/, el
  * destino interno del rewrite de next.config.mjs, y no debe aparecer nunca en

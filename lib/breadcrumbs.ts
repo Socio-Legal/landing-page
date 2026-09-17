@@ -1,7 +1,24 @@
+import { getAllDocs, SECTIONS as CONTENT_SECTIONS, type Doc } from "@/lib/content";
 import type { Locale } from "@/lib/locales";
 import { ROUTE_MAP, localizedHref } from "@/lib/localized-href";
 
 const BASE_URL = "https://www.sttok.com";
+
+/** Etiqueta y ruta de cada seccion de content/, indexadas por su ruta. */
+const SECTIONS_BY_PATH: Record<string, { name: string; path: string }> =
+  Object.fromEntries(
+    Object.entries(CONTENT_SECTIONS).map(([name, cfg]) => [
+      `/${name}`,
+      { name: cfg.label, path: `/${name}` },
+    ]),
+  );
+
+/**
+ * Etiqueta corta de un documento para la miga: el titulo hasta el primer ":",
+ * porque los titulos del frontmatter llevan cola de SEO.
+ */
+const docLabel = (doc: Doc): string =>
+  doc.frontmatter.title.split(":")[0].trim();
 
 type Label = string | Record<Locale, string>;
 
@@ -15,7 +32,14 @@ const SECTIONS = {
     path: "/testimonios",
     label: { es: "Testimonios", en: "Testimonials" },
   },
-} satisfies Record<string, { path: string; label: Label }>;
+  // /soluciones existe desde que hay content/soluciones/index.mdx. Es una
+  // seccion solo castellana, asi que no se intercala en las rutas /en: en
+  // ingles, /en/solutions/companies sigue colgando directamente de la home.
+  solutions: { path: "/soluciones", label: "Soluciones", esOnly: true },
+} satisfies Record<
+  string,
+  { path: string; label: Label; esOnly?: boolean }
+>;
 
 type SectionKey = keyof typeof SECTIONS;
 
@@ -23,11 +47,8 @@ type SectionKey = keyof typeof SECTIONS;
  * Migas por ruta PUBLICA castellana. El ingles se deriva con ROUTE_MAP, asi
  * que aqui solo se declara la ruta espanola.
  *
- * Nota: las paginas de soluciones (/empresas, /abogados...) cuelgan
- * directamente de la home y no de una seccion "Soluciones", porque
- * /soluciones no tiene pagina y devuelve 404. Una miga intermedia que apunte
- * a un 404 es peor que no tenerla. Cuando exista la pagina indice, basta con
- * añadir aqui la seccion y marcar esas cinco rutas con section: "solutions".
+ * Las paginas de soluciones cuelgan de la seccion "Soluciones", que existe
+ * desde que hay content/soluciones/index.mdx.
  */
 const PAGES: Record<string, { label: Label; section?: SectionKey }> = {
   // Producto
@@ -54,12 +75,25 @@ const PAGES: Record<string, { label: Label; section?: SectionKey }> = {
   },
 
   // Soluciones
-  "/empresas": { label: { es: "Empresas", en: "Companies" } },
-  "/abogados": { label: { es: "Abogados", en: "Lawyers" } },
-  "/startups": { label: { es: "Startups", en: "Startups" } },
-  "/inversores": { label: { es: "Inversores", en: "Investors" } },
+  "/empresas": {
+    label: { es: "Empresas", en: "Companies" },
+    section: "solutions",
+  },
+  "/abogados": {
+    label: { es: "Abogados", en: "Lawyers" },
+    section: "solutions",
+  },
+  "/startups": {
+    label: { es: "Startups", en: "Startups" },
+    section: "solutions",
+  },
+  "/inversores": {
+    label: { es: "Inversores", en: "Investors" },
+    section: "solutions",
+  },
   "/portal-del-inversor": {
     label: { es: "Portal del Inversor", en: "Investor Portal" },
+    section: "solutions",
   },
 
   // Resto de secciones principales
@@ -148,14 +182,38 @@ export function breadcrumbTrail(pathname: string, locale: Locale): Crumb[] {
     ];
   }
 
+  // Paginas de content/: se resuelven solas a partir de los archivos, asi que
+  // una pagina nueva tiene migas sin tocar este modulo.
+  const doc = getAllDocs().find((d) => d.url === esPath);
+  if (doc) {
+    const sectionLabel = SECTIONS_BY_PATH[`/${doc.section}`];
+    // La portada de seccion es ya el segundo nivel: Inicio > Soluciones. Usa
+    // el nombre de la seccion, no el titular SEO del documento.
+    if (doc.name === "index") {
+      return [
+        home,
+        { name: sectionLabel?.name ?? docLabel(doc), path: esPath },
+      ];
+    }
+    return [
+      home,
+      ...(sectionLabel
+        ? [{ name: sectionLabel.name, path: sectionLabel.path }]
+        : []),
+      { name: docLabel(doc), path: esPath },
+    ];
+  }
+
   const page = PAGES[esPath];
   if (!page) return [];
 
   const section = page.section ? SECTIONS[page.section] : undefined;
+  // Una seccion solo castellana no se intercala en las rutas inglesas.
+  const skipSection = section && "esOnly" in section && section.esOnly && locale === "en";
 
   return [
     home,
-    ...(section
+    ...(section && !skipSection
       ? [{ name: text(section.label, locale), path: section.path }]
       : []),
     { name: text(page.label, locale), path: esPath },

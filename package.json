@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 3001",
-    "build": "next build",
+    "build": "node scripts/check-content-links.mjs && next build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -24,11 +24,13 @@
     "clsx": "^2.1.0",
     "embla-carousel-react": "^8.6.0",
     "framer-motion": "^11.18.2",
+    "gray-matter": "^4.0.3",
     "i18next": "^23.16.8",
     "i18next-browser-languagedetector": "^8.0.0",
     "i18next-http-backend": "^3.0.5",
     "lucide-react": "^0.358.0",
     "next": "15.5.20",
+    "next-mdx-remote": "^6.0.0",
     "next-themes": "^0.4.6",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -37,6 +39,7 @@
     "react-i18next": "^15.7.4",
     "react-icon-cloud": "^4.1.7",
     "react-icons": "^5.3.0",
+    "remark-gfm": "^4.0.1",
     "sharp": "^0.33.5",
     "sonner": "^1.7.4",
     "tailwind-merge": "^2.2.2",
@@ -45,6 +48,7 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
+    "@types/mdx": "^2.0.14",
     "@types/node": "^20.11.28",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
