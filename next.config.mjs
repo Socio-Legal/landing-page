@@ -61,20 +61,26 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        // Landing heredada de la colaboracion con SeedRocket, la aceleradora.
+        // El contenido equivalente hoy es la pagina de soluciones para
+        // startups; la home no lo era.
         source: "/seedrocket.html",
-        destination: "/",
-        permanent: true,
+        destination: "/startups",
+        statusCode: 301,
       },
-      // Caso de exito retirado. Va ANTES de la regla generica
-      // /testimonials/:client para que no encadene dos saltos.
+      // Caso de exito retirado. Apunta al indice de casos, que es el
+      // contenido equivalente mas cercano: la home no lo es, y un 301 a la
+      // home para una pagina retirada es un soft 404.
+      // Va ANTES de la regla generica /testimonials/:client para que no
+      // encadene dos saltos.
       {
         source: "/testimonios/:client(Yaba|yaba|YABA)",
-        destination: "/",
+        destination: "/testimonios",
         statusCode: 301,
       },
       {
         source: "/testimonials/:client(Yaba|yaba|YABA)",
-        destination: "/",
+        destination: "/testimonios",
         statusCode: 301,
       },
       // Carpeta interna -> slug publico castellano. 301 explicito (no

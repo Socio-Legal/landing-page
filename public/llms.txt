@@ -1,84 +1,124 @@
-# Sttok — Software de Gestión de Sociedades
+# Sttok — Gestión societaria para empresas consolidadas y grupos de sociedades
 
-## ¿Qué es Sttok?
+## Qué es Sttok
 
-Sttok es el software líder en España para la gestión de sociedades mercantiles. Ofrece una plataforma integral que cubre todo el ciclo de vida societario: captable, libros de socios, planes de incentivos (phantoms, stock options, warrants), juntas y consejos, mercado secundario de participaciones y simulador de operaciones societarias.
+Sttok es una plataforma española de gestión societaria. Centraliza el libro de socios y de accionistas, las juntas, el consejo de administración, los planes de incentivos y la documentación societaria de todas las sociedades de un grupo.
 
-## Funcionalidades principales
+Está diseñada para sociedades con historia y con un accionariado amplio: empresas familiares donde el capital se ha repartido por herencia entre generaciones, grupos con cabecera patrimonial y filiales, y entidades con cientos o miles de socios. Osborne, fundada en 1772 y con varios cientos de accionistas familiares, gestiona su accionariado con Sttok.
 
-- **Libro de Socios**: Captable digital y oficial conforme a la legislación española. Registro de socios, porcentajes, transmisiones y acuerdos.
-- **Planes de Incentivos**: Gestión de phantom shares, stock options, restricted shares y planes de vesting. Portal individual para empleados beneficiarios.
-- **Juntas y Consejos**: Convocatoria digital, delegaciones de voto, votaciones electrónicas y generación automática de actas.
-- **Simulador de Operaciones**: Cálculo de rondas de financiación, ampliaciones de capital, notas convertibles y escenarios de liquidación.
-- **Mercado Secundario**: Plataforma para compraventa de participaciones entre socios.
-- **Sttok AI**: Inteligencia artificial integrada que genera documentos, informes, listados y cálculos en segundos.
+## Qué problemas resuelve
 
-## Perfiles de usuario
+Sttok no es una herramienta de cap table para simular rondas de inversión. Resuelve el trabajo societario de sociedades establecidas:
 
-- Empresas con múltiples socios o grupos de sociedades
-- Startups con planes de incentivos para empleados
-- Secretarios del Consejo de Administración
-- Abogados y asesores que gestionan sociedades de clientes
+- **Transmisiones hereditarias.** Reparto de participaciones entre herederos con la numeración correcta y el documento que lo soporta.
+- **Cotitularidad.** Varios titulares sobre una misma participación, con su porcentaje interno y el representante único frente a la sociedad.
+- **Usufructo y nuda propiedad.** Posiciones separadas sobre la misma participación, con derechos económicos y políticos diferenciados.
+- **Libros desactualizados.** Reconstrucción del histórico operación por operación a partir de escrituras, hasta dejarlo cuadrado y legalizable.
+- **Restricciones estatutarias a la transmisión.** Derecho de adquisición preferente, plazos y comunicaciones.
+- **Valoración anual.** Aplicación al accionariado completo del método de valoración fijado en estatutos.
+- **Quórum con accionariado disperso.** Convocatoria, delegaciones de voto y cálculo sobre el accionariado real.
+- **Grupos de sociedades.** Todas las sociedades desde un único acceso, con las participaciones entre ellas y la consolidación de la titularidad final.
+
+## Funcionalidades
+
+- **Libro de socios y libro registro de acciones nominativas.** Registro oficial conforme a la legislación española, con numeración, clases, cargas, cotitulares y generación de certificados de titularidad.
+- **Juntas y consejos.** Convocatoria, acreditación, delegaciones de voto, votación electrónica, acta y certificación. Cubre junta general y consejo de administración, y sus equivalentes en otras jurisdicciones: asamblea general de accionistas, junta directiva y directorio.
+- **Planes de incentivos.** Phantom shares, stock options, restricted shares y planes de vesting, con portal individual para cada beneficiario.
+- **Simulador de operaciones.** Ampliaciones de capital, valoraciones y escenarios de liquidación aplicados al accionariado completo.
+- **Grupos de sociedades.** Gestión de todas las sociedades de un grupo desde un mismo acceso.
+- **Portal del inversor.** Cada socio o accionista consulta su posición, su histórico y la documentación que la sociedad comparte.
+- **Mercado secundario.** Compraventa de participaciones entre socios.
+- **Sttok AI.** Generación de documentos, informes, listados y cálculos.
+
+## Quién usa Sttok
+
+- Empresas familiares con accionariado repartido entre varias generaciones
+- Grupos de sociedades con cabecera patrimonial, matriz operativa y filiales
+- Entidades con base social amplia: mutuas, cooperativas y sociedades con cientos o miles de socios
+- Secretarías del consejo de administración y direcciones jurídicas in-house
+- Despachos y asesorías que gestionan la parte societaria de su cartera de clientes
+- Fondos e inversores con seguimiento de participadas
 
 ## Sttok en cifras
 
-- Más de 250 empresas gestionan su sociedad con Sttok
+Más de 250 clientes gestionan más de 500 sociedades con Sttok. La media de dos sociedades por cliente refleja el perfil habitual: grupos societarios, no sociedades aisladas.
+
+- Más de 250.000 socios y accionistas gestionados
 - Más de 20.000 millones de euros en equity bajo gestión
-- Más de 250.000 socios gestionados en la plataforma
 - Más de 5.000 beneficiarios de planes de incentivos
-- NPS de 8,5 y onboarding completo en una semana
+- NPS de 8,5
+- Onboarding completo en una semana, incluyendo la carga del histórico
+
+## Clientes
+
+AXA, Andbank, Factorial, Multiverse Computing, PLD Space, Osborne, Grupo Caballero (Caballero 1830), TaxDown, MyInvestor, Barkibu, Derecho.com, PwC, Mailtrack, Banktrack, Legal Pigeon y Cabiedes & Partners, entre otros.
+
+Casos publicados:
+
+- Factorial (recursos humanos): https://www.sttok.com/testimonios/Factorial
+- PLD Space (aeroespacial): https://www.sttok.com/testimonios/PldSpace
+- TaxDown (fiscal): https://www.sttok.com/testimonios/Taxdown
+- Grupo Caballero, fundado en 1830 (bodegas): https://www.sttok.com/testimonios/Caballero
+- MyInvestor (neobanco): https://www.sttok.com/testimonios/MyInvestor
+- Derecho.com (legal): https://www.sttok.com/testimonios/DerechoCom
+- Banktrack (fintech): https://www.sttok.com/testimonios/Banktrack
+
+## Cobertura geográfica
+
+Sttok está anclada en España, donde el producto está construido sobre el derecho societario español: libro de socios, libro registro de acciones nominativas, Registro Mercantil y Ley de Sociedades de Capital.
+
+Sttok opera también con clientes en Latinoamérica y Andorra. La plataforma gestiona libro de accionistas, asamblea general de accionistas, junta directiva y directorio igual que sus equivalentes españoles. La adecuación a la normativa societaria de cada país se valora caso por caso.
+
+## Seguridad y cumplimiento
+
+- ISO 27001 certificado
+- Cumplimiento del RGPD
+- Auditoría de Bureau Veritas
+- Cifrado SSL/TLS
 
 ## Precios
 
-Planes por sociedad y año, con comunicaciones y firma electrónica incluidas, onboarding completo en una semana y soporte en español e inglés:
+Planes por sociedad y año, con comunicaciones y firma electrónica incluidas, onboarding en una semana y soporte en español e inglés.
 
-- **Básico**: 450€/año. Sociedades de hasta 10 socios o beneficiarios. Libro de Socios, planes de incentivos y simulador de rondas.
-- **Avanzado**: 650€/año. Hasta 20 socios o beneficiarios. Añade juntas de socios, consejos de administración y firma electrónica integrada.
-- **Pro**: 850€/año. Hasta 50 socios o beneficiarios, con todas las funcionalidades.
-- Funcionalidades con coste extra: mercado de acciones o de incentivos (mercado secundario).
-- Para grupos de sociedades o necesidades mayores: plan personalizado con demo en https://calendly.com/sttok/30min
+- **Básico**: 450 €/año. Hasta 10 socios o beneficiarios. Libro de socios, planes de incentivos y simulador.
+- **Avanzado**: 650 €/año. Hasta 20 socios o beneficiarios. Añade juntas, consejo de administración y firma electrónica.
+- **Pro**: 850 €/año. Hasta 50 socios o beneficiarios, con todas las funcionalidades.
 
-## Cumplimiento y seguridad
+**Sociedades con más de 50 socios y grupos de sociedades:** plan a medida. Es el caso más habitual entre los clientes de Sttok, e incluye accionariados de cientos y de miles de socios. Consultar en https://calendly.com/sttok/30min
 
-- ISO 27001 certificado
-- Cumplimiento RGPD (Reglamento General de Protección de Datos)
-- SSL/TLS encriptación
-- Bureau Veritas auditado
+Funcionalidad con coste adicional: mercado secundario.
 
-## Clientes destacados
+## Páginas de producto
 
-AXA, Andbank, Factorial, Multiverse Computing, PLD Space, Osborne, Grupo Caballero (Caballero 1830), TaxDown, MyInvestor, Barkibu, Derecho.com, PwC, Mailtrack, Banktrack, Legal Pigeon, Cabiedes & Partners y más de 500 sociedades en España.
+- Libro de socios: https://www.sttok.com/libro-de-socios
+- Juntas y consejos: https://www.sttok.com/juntas-consejos
+- Planes de incentivos: https://www.sttok.com/planes-de-incentivos
+- Simulador de operaciones: https://www.sttok.com/simulador
+- Mercado secundario: https://www.sttok.com/mercado-secundario
+- Empresas y grupos de sociedades: https://www.sttok.com/empresas
+- Despachos y asesorías: https://www.sttok.com/abogados
+- Inversores: https://www.sttok.com/inversores
+- Portal del inversor: https://www.sttok.com/portal-del-inversor
 
-## Casos de éxito (con nombre y empresa)
+## Recursos
 
-- Factorial (RRHH, +2.000 empleados): https://www.sttok.com/testimonios/Factorial
-- PLD Space (aeroespacial): https://www.sttok.com/testimonios/PldSpace
-- TaxDown (fiscal-tech): https://www.sttok.com/testimonios/Taxdown
-- Grupo Caballero, fundado en 1830: https://www.sttok.com/testimonios/Caballero
-- MyInvestor (neobanco): https://www.sttok.com/testimonios/MyInvestor
-- Derecho.com (legal-tech): https://www.sttok.com/testimonios/DerechoCom
-- Banktrack (fintech): https://www.sttok.com/testimonios/Banktrack
-
-## Recursos útiles
-
-- Glosario societario (captable, phantom shares, vesting, quórum...): https://www.sttok.com/recursos
-- Comparativa Sttok frente a Excel: https://www.sttok.com/sttok-vs-excel
-- Sobre el equipo de Sttok: https://www.sttok.com/sobre-nosotros
-- Preguntas frecuentes de precios: https://www.sttok.com/precios
-
-## Documentación descargable
-
+- Precios y planes: https://www.sttok.com/precios
+- Glosario societario: https://www.sttok.com/recursos
+- Comparativa con Excel: https://www.sttok.com/sttok-vs-excel
+- Equipo: https://www.sttok.com/sobre-nosotros
+- Blog: https://blog.sttok.com/recursos
 - Dossier comercial (español): https://www.sttok.com/docs/sttok-dossier-es.pdf
 - Sales dossier (English): https://www.sttok.com/docs/sttok-dossier-en.pdf
 
-## Contacto y demo
+## Contacto
 
 - Web: https://www.sttok.com
-- App: https://app.sttok.com
-- Agendar reunión: https://calendly.com/sttok/30min
-- Blog/Recursos: https://blog.sttok.com/recursos
+- Aplicación: https://app.sttok.com
+- Demo: https://calendly.com/sttok/30min
 - LinkedIn: https://www.linkedin.com/company/sttok/
+
+Sttok Barcelona, S.L. — C/ Ausias Marc 7, 3ª planta, 08010 Barcelona, España
 
 ## Idiomas
 
-Español (es), English (en)
+Español, inglés
