@@ -4,6 +4,8 @@ import { Inter as FontSans, Instrument_Serif as FontSerif } from "next/font/goog
 
 import { cn } from "@/lib/utils";
 import { DEFAULT_LOCALE, type Locale } from "@/lib/locales";
+import { breadcrumbJsonLd } from "@/lib/breadcrumbs";
+import JsonLd from "@/components/shared/json-ld";
 import Providers from "@/components/providers";
 
 import "./globals.css";
@@ -29,6 +31,14 @@ export default async function RootLayout({
   // Así el HTML del servidor emite el <html lang> correcto en cada idioma.
   const headersList = await headers();
   const locale = (headersList.get("x-locale") as Locale) || DEFAULT_LOCALE;
+
+  // El middleware deja en x-pathname la ruta PUBLICA (corre antes de los
+  // rewrites de next.config), asi que /libro-de-socios llega tal cual y no
+  // como /partners-book. De ahi salen las migas de esta pagina.
+  const breadcrumb = breadcrumbJsonLd(
+    headersList.get("x-pathname") || "/",
+    locale,
+  );
 
   return (
     <html lang={locale} suppressHydrationWarning>
@@ -78,6 +88,9 @@ export default async function RootLayout({
             }),
           }}
         />
+        {/* Migas de la pagina actual. No se emite en la home ni en rutas sin
+            jerarquia conocida (breadcrumbJsonLd devuelve null). */}
+        {breadcrumb && <JsonLd data={breadcrumb} />}
       </head>
       <body
         className={cn(
