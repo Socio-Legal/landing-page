@@ -1,7 +1,7 @@
 export const metadata = {
   title: "Yaba utiliza Sttok para gestionar planes de incentivos y su captable", // ej., "Nombre del Producto"
   description:
-    "Yaba utiliza el software de gestión societaria para emrpesas. Libro de Socios, Planes de incentivos, Juntas de accionistas, etc.", // ej., "Una breve descripción del producto o servicio"
+    "Yaba utiliza el software de gestión societaria para empresas. Libro de Socios, Planes de incentivos, Juntas de accionistas, etc.", // ej., "Una breve descripción del producto o servicio"
   keywords:
     "Yaba, Sttok, yaba y Sttok, Libro de socios, planes de incentivos, clientes de sttok", // ej., "palabra_clave1, palabra_clave2, palabra_clave3"
 };
