@@ -4,7 +4,8 @@ import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
   title: "Legal Notice and General Terms and Conditions",
-  description: "",
+  description:
+    "Legal notice for Sttok Barcelona, S.L.: site ownership, terms of use and intellectual property.",
   keywords: "",
   path: "/aviso-legal",
   pathEn: "/en/disclaimer",

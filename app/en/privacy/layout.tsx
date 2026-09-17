@@ -4,7 +4,8 @@ import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
   title: "Privacy and Cookies",
-  description: "",
+  description:
+    "Sttok’s privacy policy: what data is processed, on what legal basis and how to exercise your rights.",
   keywords: "",
   path: "/privacidad",
   pathEn: "/en/privacy",

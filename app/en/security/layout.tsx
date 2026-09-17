@@ -4,7 +4,8 @@ import { buildMetadata } from "@/lib/seo";
 
 export const metadata = buildMetadata({
   title: "Security Policy",
-  description: "",
+  description:
+    "Sttok’s security policy: ISO 27001 certification, encryption, access control and incident management.",
   keywords: "",
   path: "/politica-seguridad",
   pathEn: "/en/security",
