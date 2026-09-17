@@ -104,7 +104,6 @@ const CLIENTS: Record<string, string> = {
   MyInvestor: "MyInvestor",
   PldSpace: "PLD Space",
   Taxdown: "Taxdown",
-  Yaba: "Yaba",
 };
 
 /** Ruta inglesa -> ruta castellana, para normalizar antes de buscar en PAGES. */
