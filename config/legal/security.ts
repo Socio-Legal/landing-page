@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Política de Seguridad",
-  description: "",
+  description:
+    "Política de seguridad de Sttok: certificación ISO 27001, cifrado, control de accesos y gestión de incidentes.",
   keywords: "",
 };
 
