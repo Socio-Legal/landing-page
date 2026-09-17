@@ -61,10 +61,11 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        // PENDIENTE: el destino sigue siendo la home, que no es contenido
-        // equivalente de esta pagina heredada. Falta decidir a donde apunta.
+        // Landing heredada de la colaboracion con SeedRocket, la aceleradora.
+        // El contenido equivalente hoy es la pagina de soluciones para
+        // startups; la home no lo era.
         source: "/seedrocket.html",
-        destination: "/",
+        destination: "/startups",
         statusCode: 301,
       },
       // Caso de exito retirado. Apunta al indice de casos, que es el
