@@ -21,6 +21,10 @@ const nextConfig = {
       { source: "/simulador", destination: "/operation-drafts" },
       { source: "/mercado-secundario", destination: "/secondary-market" },
       // Solutions
+      // OJO: un rewrite no crea una ruta, solo reescribe la URL antes de
+      // resolverla contra app/. app/solutions/ no tiene page.tsx, asi que este
+      // rewrite resuelve a un 404. Se deja listo para cuando exista la pagina
+      // indice; hasta entonces nada del sitio debe enlazar a /soluciones.
       { source: "/soluciones", destination: "/solutions" },
       { source: "/empresas", destination: "/solutions/companies" },
       { source: "/abogados", destination: "/solutions/lawyers" },

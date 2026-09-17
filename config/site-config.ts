@@ -73,7 +73,9 @@ export const siteConfig = {
     },
     {
       trigger: "menu.Solutions",
-      href: routes.SOLUTIONS,
+      // Sin href propio: /soluciones no tiene page.tsx (app/solutions/ solo
+      // contiene subcarpetas), asi que enlazarlo lleva a un 404. El menu de
+      // escritorio ya ignora el href de un trigger; el drawer movil, no.
       content: {
         items: [
           {
