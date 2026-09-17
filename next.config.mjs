@@ -1,82 +1,94 @@
+/**
+ * Slug publico castellano -> carpeta interna de app/ (con nombre en ingles).
+ *
+ * De este unico mapa salen DOS cosas, para que no puedan desincronizarse:
+ *  - el rewrite  /libro-de-socios -> /partners-book   (sirve la pagina)
+ *  - el 301      /partners-book   -> /libro-de-socios (mata el duplicado)
+ *
+ * Sin el 301, la carpeta interna es tambien una URL publica que devuelve 200
+ * con el mismo contenido que su equivalente castellana: 28 duplicados
+ * sostenidos solo por el canonical.
+ *
+ * Las rutas /en/** NO entran aqui: son las URLs inglesas publicas y se sirven
+ * directamente desde app/en/**, sin rewrite y sin redireccion.
+ */
+const ES_TO_FOLDER = {
+  // Producto
+  "/producto": "/product",
+  "/libro-de-socios": "/partners-book",
+  "/planes-de-incentivos": "/incentive-plans",
+  "/juntas-consejos": "/shareholder-meetings",
+  "/simulador": "/operation-drafts",
+  "/mercado-secundario": "/secondary-market",
+  // Soluciones
+  "/soluciones": "/solutions",
+  "/empresas": "/solutions/companies",
+  "/abogados": "/solutions/lawyers",
+  "/startups": "/solutions/startups",
+  "/inversores": "/solutions/investors",
+  "/portal-del-inversor": "/solutions/investors-dashboard",
+  // Testimonios
+  "/testimonios": "/testimonials",
+  // Precios
+  "/precios": "/pricing",
+  // Recursos
+  "/recursos": "/resources",
+  // Legales
+  "/aviso-legal": "/disclaimer",
+  "/privacidad": "/privacy",
+  "/politica-seguridad": "/security",
+  // Landings SEO
+  "/software-de-libro-de-socios": "/software-partner-book",
+  "/software-de-juntas-de-accionistas": "/software-shareholder-meetings",
+  "/software-de-gestion-de-captable": "/software-captable-management",
+  "/software-de-captable": "/software-captable",
+  "/simulador-de-ampliacion-de-capital": "/capital-increase-simulator",
+  "/secundario": "/secondary",
+  "/junta-de-accionistas-digital": "/digital-shareholder-meetings",
+  "/grupos-societarios": "/corporate-groups",
+  "/documentacion-societaria": "/corporate-documentation",
+  "/consejos-de-administracion": "/board-of-directors",
+};
+
+/**
+ * /solutions no llega a ser un duplicado: app/solutions/ no tiene page.tsx, asi
+ * que devuelve 404. Redirigirlo a /soluciones seria un 301 hacia otro 404.
+ */
+const SIN_PAGINA = ["/solutions"];
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   async redirects() {
     return [
-      // 301 redirects
       {
         source: "/seedrocket.html",
         destination: "/",
         permanent: true,
+      },
+      // Carpeta interna -> slug publico castellano. 301 explicito (no
+      // `permanent: true`, que en Next emite 308).
+      ...Object.entries(ES_TO_FOLDER)
+        .filter(([, folder]) => !SIN_PAGINA.includes(folder))
+        .map(([es, folder]) => ({
+          source: folder,
+          destination: es,
+          statusCode: 301,
+        })),
+      {
+        source: "/testimonials/:client",
+        destination: "/testimonios/:client",
+        statusCode: 301,
       },
     ];
   },
 
   async rewrites() {
     return [
-      // Products
-      { source: "/producto", destination: "/product" },
-      { source: "/libro-de-socios", destination: "/partners-book" },
-      { source: "/planes-de-incentivos", destination: "/incentive-plans" },
-      { source: "/juntas-consejos", destination: "/shareholder-meetings" },
-      { source: "/simulador", destination: "/operation-drafts" },
-      { source: "/mercado-secundario", destination: "/secondary-market" },
-      // Solutions
-      // OJO: un rewrite no crea una ruta, solo reescribe la URL antes de
-      // resolverla contra app/. app/solutions/ no tiene page.tsx, asi que este
-      // rewrite resuelve a un 404. Se deja listo para cuando exista la pagina
-      // indice; hasta entonces nada del sitio debe enlazar a /soluciones.
-      { source: "/soluciones", destination: "/solutions" },
-      { source: "/empresas", destination: "/solutions/companies" },
-      { source: "/abogados", destination: "/solutions/lawyers" },
-      { source: "/startups", destination: "/solutions/startups" },
-      { source: "/inversores", destination: "/solutions/investors" },
-      {
-        source: "/portal-del-inversor",
-        destination: "/solutions/investors-dashboard",
-      },
-      // Testimonials
-      { source: "/testimonios", destination: "/testimonials" },
+      ...Object.entries(ES_TO_FOLDER).map(([es, folder]) => ({
+        source: es,
+        destination: folder,
+      })),
       { source: "/testimonios/:client", destination: "/testimonials/:client" },
-      // Pricing
-      { source: "/precios", destination: "/pricing" },
-      // Resources
-      { source: "/recursos", destination: "/resources" },
-      // Legal
-      { source: "/aviso-legal", destination: "/disclaimer" },
-      { source: "/privacidad", destination: "/privacy" },
-      { source: "/politica-seguridad", destination: "/security" },
-      // Empty pages
-      {
-        source: "/software-de-libro-de-socios",
-        destination: "/software-partner-book",
-      },
-      {
-        source: "/software-de-juntas-de-accionistas",
-        destination: "/software-shareholder-meetings",
-      },
-      {
-        source: "/software-de-gestion-de-captable",
-        destination: "/software-captable-management",
-      },
-      { source: "/software-de-captable", destination: "/software-captable" },
-      {
-        source: "/simulador-de-ampliacion-de-capital",
-        destination: "/capital-increase-simulator",
-      },
-      { source: "/secundario", destination: "/secondary" },
-      {
-        source: "/junta-de-accionistas-digital",
-        destination: "/digital-shareholder-meetings",
-      },
-      { source: "/grupos-societarios", destination: "/corporate-groups" },
-      {
-        source: "/documentacion-societaria",
-        destination: "/corporate-documentation",
-      },
-      {
-        source: "/consejos-de-administracion",
-        destination: "/board-of-directors",
-      },
     ];
   },
 
