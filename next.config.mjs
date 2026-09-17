@@ -65,6 +65,18 @@ const nextConfig = {
         destination: "/",
         permanent: true,
       },
+      // Caso de exito retirado. Va ANTES de la regla generica
+      // /testimonials/:client para que no encadene dos saltos.
+      {
+        source: "/testimonios/:client(Yaba|yaba|YABA)",
+        destination: "/",
+        statusCode: 301,
+      },
+      {
+        source: "/testimonials/:client(Yaba|yaba|YABA)",
+        destination: "/",
+        statusCode: 301,
+      },
       // Carpeta interna -> slug publico castellano. 301 explicito (no
       // `permanent: true`, que en Next emite 308).
       ...Object.entries(ES_TO_FOLDER)
