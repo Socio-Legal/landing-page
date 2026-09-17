@@ -55,11 +55,25 @@ export default async function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "Sttok",
+              // Datos de identidad tomados del aviso legal y de la politica de
+              // privacidad del propio sitio (public/locales/es/legal-*.json).
+              legalName: "Sttok Barcelona, S.L.",
+              taxID: "B10601268",
               url: "https://www.sttok.com",
-              logo: "https://www.sttok.com/android-chrome-512x512.png",
+              logo: "https://www.sttok.com/logo-sttok.png",
               description:
                 "Software de gestión de sociedades: captable, libro de socios, planes de incentivos, juntas y consejos, simulador y mercado secundario.",
               email: "info@sttok.com",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "Calle Ausias Marc, 7, 3ª planta",
+                postalCode: "08010",
+                addressLocality: "Barcelona",
+                addressRegion: "Barcelona",
+                addressCountry: "ES",
+              },
+              // Unico perfil oficial enlazado desde las propiedades de Sttok
+              // (sttok.com y blog.sttok.com). No se añaden otros sin confirmar.
               sameAs: ["https://www.linkedin.com/company/sttok/"],
             }),
           }}
