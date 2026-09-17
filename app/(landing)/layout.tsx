@@ -1,7 +1,9 @@
+import JsonLd from "@/components/shared/json-ld";
 import { SiteBanner } from "@/components/site-banner";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { buildMetadata } from "@/lib/seo";
+import { softwareApplicationJsonLd } from "@/lib/structured-data";
 
 interface MarketingLayoutProps {
   children: React.ReactNode;
@@ -22,6 +24,9 @@ export default async function MarketingLayout({
 }: MarketingLayoutProps) {
   return (
     <>
+      {/* Ficha de producto y planes (SEO/GEO). Este layout envuelve solo la
+          home castellana; la inglesa la emite app/en/page.tsx. */}
+      <JsonLd data={softwareApplicationJsonLd("es")} />
       <SiteBanner />
       <SiteHeader />
       <main

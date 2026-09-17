@@ -51,19 +51,23 @@ export default function DrawerDemo() {
           </div>
           <nav>
             <ul className="mt-7 text-left">
-              {siteConfig.header.map((item, index) => (
-                <li key={index} className="my-3">
-                  {item.trigger ? (
-                    <Link href={href(item.href || "/")} className="font-semibold">
-                      {t(item.trigger)}
-                    </Link>
-                  ) : (
-                    <Link href={href(item.href || "/")} className="font-semibold">
-                      {t(item.label || "")}
-                    </Link>
-                  )}
-                </li>
-              ))}
+              {siteConfig.header.map((item, index) => {
+                const label = t(item.trigger || item.label || "");
+                // Una seccion sin destino propio (p. ej. "Soluciones", que no
+                // tiene pagina indice) se pinta como etiqueta, no como enlace:
+                // asi el drawer deja de apuntar a un 404.
+                return (
+                  <li key={index} className="my-3">
+                    {item.href ? (
+                      <Link href={href(item.href)} className="font-semibold">
+                        {label}
+                      </Link>
+                    ) : (
+                      <span className="font-semibold">{label}</span>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
           </nav>
         </DrawerHeader>

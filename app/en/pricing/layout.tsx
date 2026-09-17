@@ -1,6 +1,8 @@
 import React from "react";
 
+import JsonLd from "@/components/shared/json-ld";
 import { buildMetadata } from "@/lib/seo";
+import { softwareApplicationJsonLd } from "@/lib/structured-data";
 
 export const metadata = buildMetadata({
   title: "Pricing — Sttok corporate management software",
@@ -13,29 +15,6 @@ export const metadata = buildMetadata({
   locale: "en",
 });
 
-/* Datos estructurados de producto y planes (SEO/GEO) — versión inglesa */
-const pricingJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "SoftwareApplication",
-  name: "Sttok",
-  applicationCategory: "BusinessApplication",
-  operatingSystem: "Web",
-  url: "https://www.sttok.com/en/pricing",
-  description:
-    "Corporate management software: shareholder registry (cap table), incentive plans, shareholder and board meetings.",
-  offers: [
-    { name: "Basic", price: "450" },
-    { name: "Advanced", price: "650" },
-    { name: "Pro", price: "850" },
-  ].map((plan) => ({
-    "@type": "Offer",
-    name: `Sttok ${plan.name}`,
-    price: plan.price,
-    priceCurrency: "EUR",
-    url: "https://www.sttok.com/en/pricing",
-  })),
-};
-
 export default function EnPricingLayout({
   children,
 }: {
@@ -43,10 +22,8 @@ export default function EnPricingLayout({
 }) {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(pricingJsonLd) }}
-      />
+      {/* Datos estructurados de producto y planes (SEO/GEO) — version inglesa */}
+      <JsonLd data={softwareApplicationJsonLd("en")} />
       {children}
     </>
   );

@@ -39,13 +39,6 @@ export const features = {
     },
     {
       icon: "",
-      logo: "Yaba",
-      title: "",
-      description:
-        "Yaba es una empresa de software que ayuda a las empresas a gestionar sus operaciones de forma eficiente.",
-    },
-    {
-      icon: "",
       logo: "Caballero",
       title: "",
       description:

@@ -3,7 +3,7 @@ import { routes } from "../routes";
 export const metadata = {
   title: "Software para Empresas y Grupos de Sociedades - Sttok", // ej., "Nombre del Producto"
   description:
-    "Software de gestión societaria para emrpesas y grupos de emp`resas. Libro de Socios, Juntas de accionistas, etc.", // ej., "Una breve descripción del producto o servicio"
+    "Software de gestión societaria para empresas y grupos de empresas. Libro de Socios, Juntas de accionistas, etc.", // ej., "Una breve descripción del producto o servicio"
   keywords:
     "Libro de socios, Empresa, grupo de empresas, junta de accionistas, planes de incentivos, consejo de administración", // ej., "palabra_clave1, palabra_clave2, palabra_clave3"
 };

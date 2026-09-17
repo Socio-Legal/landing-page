@@ -4,6 +4,7 @@ import React, { FC, use } from "react";
 import { useTranslation } from "react-i18next";
 
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import Image from "next/image";
 import {
   Card,
@@ -16,7 +17,6 @@ import { ArrowLeft } from "lucide-react";
 
 import * as Factorial from "@/config/testimonials/clients/Factorial";
 import * as PldSpace from "@/config/testimonials/clients/PldSpace";
-import * as Yaba from "@/config/testimonials/clients/Yaba";
 import * as DerechoCom from "@/config/testimonials/clients/DerechoCom";
 import * as Taxdown from "@/config/testimonials/clients/Taxdown";
 import * as Banktrack from "@/config/testimonials/clients/Banktrack";
@@ -69,7 +69,6 @@ type TestimonialProps = {
 const testimonialPages = {
   Factorial: Factorial,
   PldSpace: PldSpace,
-  Yaba: Yaba,
   DerechoCom: DerechoCom,
   Taxdown: Taxdown,
   Banktrack: Banktrack,
@@ -99,6 +98,12 @@ const getOther2Testimonials = (client: string): TestimonialProps[] => {
 
 const Page: FC<PageProps> = ({ params }) => {
   const { client } = use(params);
+
+  // Sin esto, cualquier slug inventado devolvia 200 con la plantilla vacia:
+  // /testimonios/LoQueSea era una pagina indexable mas. Solo existen los
+  // clientes de testimonialPages.
+  if (!(client in testimonialPages)) notFound();
+
   const namespaces = getTestimonialNamespaces(client);
 
   const { t } = useTranslation(namespaces);

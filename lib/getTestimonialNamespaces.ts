@@ -6,7 +6,6 @@ export const getTestimonialNamespaces = (client: string): string[] => {
     "derechocom",
     "pldspace",
     "taxdown",
-    "yaba",
     "myinvestor",
   ];
 
