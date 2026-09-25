@@ -21,7 +21,6 @@ const ES_TO_FOLDER = {
   "/simulador": "/operation-drafts",
   "/mercado-secundario": "/secondary-market",
   // Soluciones
-  "/soluciones": "/solutions",
   "/empresas": "/solutions/companies",
   "/abogados": "/solutions/lawyers",
   "/startups": "/solutions/startups",
@@ -51,8 +50,9 @@ const ES_TO_FOLDER = {
 };
 
 /**
- * /solutions no llega a ser un duplicado: app/solutions/ no tiene page.tsx, asi
- * que devuelve 404. Redirigirlo a /soluciones seria un 301 hacia otro 404.
+ * app/solutions/ sigue sin page.tsx: /solutions es solo un prefijo de ruta de
+ * las cinco paginas de soluciones, no una URL. La seccion castellana vive en
+ * app/soluciones/, que es una carpeta real sin rewrite detras.
  */
 const SIN_PAGINA = ["/solutions"];
 

@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
 
+import { getAllDocs } from "@/lib/content";
 import { ROUTE_MAP } from "@/lib/localized-href";
 
 const BASE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://www.sttok.com";
@@ -86,6 +87,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ),
     ...CASE_STUDIES.map((r) => entry(r, 0.6, "monthly")),
     ...SEO_ROUTES.map((r) => entry(r, 0.5, "monthly")),
+    // Secciones de contenido: se recorren los archivos de content/, asi que
+    // una pagina nueva entra en el sitemap el dia que se escribe, sin tocar
+    // esta lista. Solo existen en castellano: sin alternates.
+    ...getAllDocs().map((doc) => ({
+      url: `${BASE_URL}${doc.url}`,
+      lastModified: new Date(),
+      changeFrequency: "monthly" as const,
+      priority: doc.name === "index" ? 0.8 : 0.7,
+    })),
     ...LEGAL_ROUTES.map((r) => entry(r, 0.2, "yearly")),
   ];
 }
