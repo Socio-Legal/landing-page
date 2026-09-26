@@ -187,6 +187,15 @@ export const siteConfig = {
           alt: "Software para Abogados",
         },
         {
+          // Faltaba: /startups estaba en el menu de escritorio, que no viaja
+          // en el HTML servido, y en ningun otro sitio. Era una pagina sin un
+          // solo enlace entrante.
+          id: 18,
+          title: "menu.StartupsTitle",
+          url: routes.SOLUTIONS_STARTUPS,
+          alt: "Software para Startups",
+        },
+        {
           id: 8,
           title: "menu.InvestorPortalTitle",
           url: routes.SOLUTIONS_INVESTORS_DASHBOARD,

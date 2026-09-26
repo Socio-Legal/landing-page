@@ -54,12 +54,25 @@ export function SiteFooter() {
             <div key={colIdx} className="flex flex-col gap-3">
               {column.map((link) =>
                 link.isHeader ? (
-                  <p
-                    key={link.id}
-                    className="text-xs font-semibold uppercase tracking-wider text-foreground"
-                  >
-                    {t(link.title)}
-                  </p>
+                  // Una cabecera con destino real se enlaza, manteniendo su
+                  // estilo. Sin esto, /producto y /soluciones no recibian ni
+                  // un enlace desde el pie: se pintaban como texto suelto.
+                  link.url && link.url !== "#" ? (
+                    <Link
+                      key={link.id}
+                      href={localizedHref(link.url, locale)}
+                      className="text-xs font-semibold uppercase tracking-wider text-foreground transition-colors hover:text-muted-foreground"
+                    >
+                      {t(link.title)}
+                    </Link>
+                  ) : (
+                    <p
+                      key={link.id}
+                      className="text-xs font-semibold uppercase tracking-wider text-foreground"
+                    >
+                      {t(link.title)}
+                    </p>
+                  )
                 ) : (
                   <Link
                     key={link.id}
