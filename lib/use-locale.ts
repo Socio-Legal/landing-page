@@ -2,10 +2,9 @@
 
 import { usePathname } from "next/navigation";
 
-import type { Locale } from "./locales";
+import { localeFromPathname, type Locale } from "./locales";
 
-/** Locale activo derivado de la URL (inglés bajo /en, español en la raíz). */
+/** Locale activo derivado de la URL. La regla vive en lib/locales. */
 export function useLocale(): Locale {
-  const pathname = usePathname();
-  return pathname === "/en" || pathname?.startsWith("/en/") ? "en" : "es";
+  return localeFromPathname(usePathname());
 }
