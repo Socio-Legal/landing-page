@@ -52,13 +52,17 @@ const DESCRIPTION: Record<Locale, string> = {
  * dos productos distintos. La url apunta a la pagina de precios, que es donde
  * viven las ofertas.
  */
+/** @id de la ficha del producto Sttok en un idioma. */
+export const softwareApplicationId = (locale: Locale): string =>
+  `${BASE_URL}${PRICING_PATH[locale]}#software`;
+
 export function softwareApplicationJsonLd(locale: Locale) {
   const url = `${BASE_URL}${PRICING_PATH[locale]}`;
 
   return {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
-    "@id": `${url}#software`,
+    "@id": softwareApplicationId(locale),
     name: "Sttok",
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
@@ -71,5 +75,50 @@ export function softwareApplicationJsonLd(locale: Locale) {
       priceCurrency: "EUR",
       url,
     })),
+  };
+}
+
+/**
+ * Ficha de un modulo de producto: libro de socios, juntas, simulador...
+ *
+ * Cada pagina de producto describe UNA PARTE de Sttok, no un producto aparte.
+ * Por eso lleva su propio @id y se ata al producto con `isPartOf`. La pagina
+ * emite tambien la ficha del producto (softwareApplicationJsonLd), para que
+ * esa referencia se resuelva dentro de la misma pagina.
+ *
+ * No lleva `offers`, y es deliberado: los precios son de los PLANES y viven en
+ * la ficha del producto. Atribuir un precio a cada modulo exigiria saber que
+ * modulos entran en cada plan, y ponerlo aqui seria inventar ese reparto.
+ *
+ * `path` es la ruta publica en el idioma de la pagina: /libro-de-socios o
+ * /en/partners-book.
+ */
+export function productModuleJsonLd({
+  locale,
+  path,
+  title,
+  description,
+}: {
+  locale: Locale;
+  path: string;
+  title: string;
+  description: string;
+}) {
+  const url = `${BASE_URL}${path}`;
+  // Algunos titulos llevan cola de SEO ("Secondary Market — share transfers
+  // between partners"): el nombre del modulo es solo la parte principal.
+  const nombre = title.split(/\s+—\s+|:/)[0].trim();
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "@id": `${url}#software`,
+    name: `Sttok — ${nombre}`,
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web",
+    url,
+    description,
+    inLanguage: locale,
+    isPartOf: { "@id": softwareApplicationId(locale) },
   };
 }
