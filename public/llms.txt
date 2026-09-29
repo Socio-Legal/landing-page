@@ -99,6 +99,7 @@ Funcionalidad con coste adicional: mercado secundario.
 - Empresa familiar: https://www.sttok.com/soluciones/empresa-familiar
 - Grupos de sociedades: https://www.sttok.com/soluciones/grupos-de-sociedades
 - Entidades con miles de socios: https://www.sttok.com/soluciones/accionariado-amplio
+- Secretaría del consejo de administración: https://www.sttok.com/soluciones/secretaria-del-consejo
 - Empresas y grupos de sociedades: https://www.sttok.com/empresas
 - Despachos y asesorías: https://www.sttok.com/abogados
 - Inversores: https://www.sttok.com/inversores
