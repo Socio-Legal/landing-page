@@ -95,6 +95,10 @@ Funcionalidad con coste adicional: mercado secundario.
 - Planes de incentivos: https://www.sttok.com/planes-de-incentivos
 - Simulador de operaciones: https://www.sttok.com/simulador
 - Mercado secundario: https://www.sttok.com/mercado-secundario
+- Soluciones por tipo de organización: https://www.sttok.com/soluciones
+- Empresa familiar: https://www.sttok.com/soluciones/empresa-familiar
+- Grupos de sociedades: https://www.sttok.com/soluciones/grupos-de-sociedades
+- Entidades con miles de socios: https://www.sttok.com/soluciones/accionariado-amplio
 - Empresas y grupos de sociedades: https://www.sttok.com/empresas
 - Despachos y asesorías: https://www.sttok.com/abogados
 - Inversores: https://www.sttok.com/inversores
@@ -105,6 +109,7 @@ Funcionalidad con coste adicional: mercado secundario.
 - Precios y planes: https://www.sttok.com/precios
 - Glosario societario: https://www.sttok.com/recursos
 - Comparativa con Excel: https://www.sttok.com/sttok-vs-excel
+- Comparativa con Carta: https://www.sttok.com/comparativas/sttok-vs-carta
 - Equipo: https://www.sttok.com/sobre-nosotros
 - Blog: https://blog.sttok.com/recursos
 - Dossier comercial (español): https://www.sttok.com/docs/sttok-dossier-es.pdf
