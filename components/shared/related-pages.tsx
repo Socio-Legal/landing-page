@@ -46,6 +46,12 @@ const RELACIONADAS: Record<string, { href: string; label: string }[]> = {
     { href: "/grupos-societarios", label: "Grupos societarios" },
     { href: "/documentacion-societaria", label: "Documentación societaria" },
   ],
+  // Las paginas de content/ reciben enlaces de sus hermanas de seccion, pero
+  // una seccion con un solo documento no tiene hermanas. Se enlaza desde la
+  // comparativa que ya existia, que ademas es el tema contiguo.
+  "/sttok-vs-excel": [
+    { href: "/comparativas/sttok-vs-carta", label: "Sttok frente a Carta" },
+  ],
 };
 
 /** Rutas que este mapa enlaza, para poder comprobarlo desde un script. */
