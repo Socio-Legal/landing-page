@@ -20,7 +20,12 @@ export default function HeroSection() {
               {t("home-hero-section:hero.badge")}
             </p>
 
-            <h1 className="font-serif text-4xl font-normal leading-tight tracking-tight text-foreground text-balance sm:text-5xl md:text-[54px] animate-fade-in opacity-0 [--animation-delay:100ms]">
+            {/* Sin animacion de entrada a proposito: con `opacity-0` de base, el
+                titular dependia de que corriera la animacion CSS para verse, y
+                un renderizador que capture antes —o que no ejecute
+                animaciones— lo veia invisible. Es la frase principal del
+                dominio; tiene que estar visible desde el primer pintado. */}
+            <h1 className="font-serif text-4xl font-normal leading-tight tracking-tight text-foreground text-balance sm:text-5xl md:text-[54px]">
               {t("home-hero-section:hero.title")}
             </h1>
 
