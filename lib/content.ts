@@ -45,6 +45,8 @@ export type Doc = {
   name: string;
   /** Ruta publica, derivada del archivo. */
   url: string;
+  /** Archivo relativo a la raiz del repositorio: content/<seccion>/<nombre>.mdx */
+  file: string;
   frontmatter: DocFrontmatter;
   /** Cuerpo MDX, ya sin frontmatter. */
   body: string;
@@ -87,7 +89,7 @@ function readSection(section: Section): Doc[] {
         );
       }
 
-      return { section, name, url, frontmatter, body: content };
+      return { section, name, url, file: where, frontmatter, body: content };
     });
 }
 

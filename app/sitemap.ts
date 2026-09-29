@@ -1,6 +1,7 @@
 import { MetadataRoute } from "next";
 
 import { getAllDocs } from "@/lib/content";
+import { lastCommitDate } from "@/lib/git-dates";
 import { ROUTE_MAP } from "@/lib/localized-href";
 
 const BASE_URL = process.env.NEXT_PUBLIC_APP_URL || "https://www.sttok.com";
@@ -92,7 +93,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // esta lista. Solo existen en castellano: sin alternates.
     ...getAllDocs().map((doc) => ({
       url: `${BASE_URL}${doc.url}`,
-      lastModified: new Date(),
+      // Fecha del ultimo commit del archivo, no la del build. Si no es fiable
+      // (clon superficial, archivo sin commitear) se omite: ver lib/git-dates.
+      lastModified: lastCommitDate(doc.file) ?? undefined,
       changeFrequency: "monthly" as const,
       priority: doc.name === "index" ? 0.8 : 0.7,
     })),
