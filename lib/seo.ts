@@ -55,7 +55,7 @@ export function buildMetadata({
   const languages =
     enUrl !== undefined
       ? {
-          "es-ES": esUrl,
+          es: esUrl,
           en: enUrl,
           "x-default": esUrl,
         }
