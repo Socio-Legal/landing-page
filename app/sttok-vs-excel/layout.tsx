@@ -1,4 +1,5 @@
 import React from "react";
+import RelatedPages from "@/components/shared/related-pages";
 import { SiteBanner } from "@/components/site-banner";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -22,7 +23,10 @@ export default function VsExcelLayout({
     <>
       <SiteBanner />
       <SiteHeader />
-      <main className="mx-auto flex-1 overflow-hidden">{children}</main>
+      <main className="mx-auto flex-1 overflow-hidden">
+        {children}
+        <RelatedPages path="/sttok-vs-excel" />
+      </main>
       <SiteFooter />
     </>
   );
