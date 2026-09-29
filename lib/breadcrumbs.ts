@@ -4,10 +4,16 @@ import { ROUTE_MAP, localizedHref } from "@/lib/localized-href";
 
 const BASE_URL = "https://www.sttok.com";
 
-/** Etiqueta y ruta de cada seccion de content/, indexadas por su ruta. */
+/**
+ * Etiqueta y ruta de cada seccion de content/, indexadas por su ruta. Solo las
+ * que tienen portada: /comparativas y /guias son un 404, y una miga que apunta
+ * a un 404 es peor que ninguna. Sus documentos cuelgan directamente de Inicio.
+ */
 const SECTIONS_BY_PATH: Record<string, { name: string; path: string }> =
   Object.fromEntries(
-    Object.entries(CONTENT_SECTIONS).map(([name, cfg]) => [
+    Object.entries(CONTENT_SECTIONS)
+      .filter(([, cfg]) => cfg.hasIndex)
+      .map(([name, cfg]) => [
       `/${name}`,
       { name: cfg.label, path: `/${name}` },
     ]),
