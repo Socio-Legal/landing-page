@@ -110,6 +110,7 @@ Funcionalidad con coste adicional: mercado secundario.
 - Glosario societario: https://www.sttok.com/recursos
 - Comparativa con Excel: https://www.sttok.com/sttok-vs-excel
 - Comparativa con Carta: https://www.sttok.com/comparativas/sttok-vs-carta
+- Guía: fallece un socio, herencia de participaciones y libro de socios: https://www.sttok.com/guias/herencia-de-participaciones
 - Equipo: https://www.sttok.com/sobre-nosotros
 - Blog: https://blog.sttok.com/recursos
 - Dossier comercial (español): https://www.sttok.com/docs/sttok-dossier-es.pdf
