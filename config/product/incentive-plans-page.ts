@@ -3,7 +3,7 @@ import { routes } from "../routes";
 export const metadata = {
   title: "Planes de Incentivos", // ej., "Nombre del Producto"
   description:
-    "Gestiona los planes de incentivos (phantom share plan, stock option plans, estc.), de tu empresa de manera eficiente y profesional.", // ej., "Una breve descripción del producto o servicio"
+    "Gestiona los planes de incentivos (phantom share plan, stock option plans, etc.), de tu empresa de manera eficiente y profesional.", // ej., "Una breve descripción del producto o servicio"
   keywords:
     "planes de incentivos, phantoms, opciones sobre acciones, compensación flexible, gestión de incentivos, vesting", // ej., "palabra_clave1, palabra_clave2, palabra_clave3"
 };
