@@ -9,7 +9,11 @@ import {
 import { LOCALE_PREFIX } from "@/lib/locales";
 import { PAGE_REGISTRY } from "@/lib/page-registry";
 import { buildMetadata } from "@/lib/seo";
-import { softwareApplicationJsonLd } from "@/lib/structured-data";
+import { localizedHref } from "@/lib/localized-href";
+import {
+  productModuleJsonLd,
+  softwareApplicationJsonLd,
+} from "@/lib/structured-data";
 
 // Todas las subrutas de los idiomas con prefijo. Un solo archivo sustituye a
 // las 19 carpetas de re-export que habia bajo app/en/**.
@@ -54,10 +58,21 @@ export default async function Page({
   if (!r) notFound();
 
   const { Component } = r.entrada;
+  const meta = r.entrada.meta[r.locale]!;
   return (
     <>
       {r.entrada.softwareApplication && (
         <JsonLd data={softwareApplicationJsonLd(r.locale)} />
+      )}
+      {r.entrada.productModule && (
+        <JsonLd
+          data={productModuleJsonLd({
+            locale: r.locale,
+            path: localizedHref(r.esPath, r.locale),
+            title: meta.title,
+            description: meta.description,
+          })}
+        />
       )}
       <Component />
     </>

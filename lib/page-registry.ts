@@ -43,8 +43,13 @@ export type PageMeta = {
 export type PageEntry = {
   Component: ComponentType;
   meta: Partial<Record<Locale, PageMeta>>;
-  /** Emite ademas la ficha SoftwareApplication (solo la pagina de precios). */
+  /** Emite la ficha SoftwareApplication del producto Sttok, con sus planes. */
   softwareApplication?: boolean;
+  /**
+   * Pagina de un modulo de producto: emite ademas su propia ficha
+   * SoftwareApplication, atada a la del producto con isPartOf.
+   */
+  productModule?: boolean;
 };
 
 export const PAGE_REGISTRY: Record<string, PageEntry> = {
@@ -110,6 +115,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
       keywords: "shareholder meetings, board meetings, digital meeting management, convocations, vote delegations, digital minutes",
       },
     },
+    softwareApplication: true,
+    productModule: true,
   },
   "/libro-de-socios": {
     Component: PageLibroDeSocios,
@@ -120,6 +127,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
       keywords: "Shareholder Register, Shareholders, Registry, Operations, Excel",
       },
     },
+    softwareApplication: true,
+    productModule: true,
   },
   "/mercado-secundario": {
     Component: PageMercadoSecundario,
@@ -130,6 +139,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
       keywords: "secondary market, share transfers, tender offer, liquidity",
       },
     },
+    softwareApplication: true,
+    productModule: true,
   },
   "/planes-de-incentivos": {
     Component: PagePlanesDeIncentivos,
@@ -140,6 +151,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
       keywords: "incentive plans, phantoms, stock options, flexible compensation, incentive management, vesting",
       },
     },
+    softwareApplication: true,
+    productModule: true,
   },
   "/politica-seguridad": {
     Component: PagePoliticaSeguridad,
@@ -189,6 +202,7 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
       keywords: "incentive plans, phantoms, stock options, flexible compensation, incentive management, vesting",
       },
     },
+    softwareApplication: true,
   },
   "/recursos": {
     Component: PageRecursos,
@@ -209,6 +223,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
       keywords: "operations simulator, investment rounds, capital increases, convertible notes, corporate simulations",
       },
     },
+    softwareApplication: true,
+    productModule: true,
   },
   "/sobre-nosotros": {
     Component: PageSobreNosotros,
