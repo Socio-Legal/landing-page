@@ -11,7 +11,7 @@ una versión anterior de pnpm aborta con `ERR_PNPM_LOCKFILE_BREAKING_CHANGE`).
 
 ```
 pnpm install --frozen-lockfile
-pnpm build      # valida enlaces de content/ y luego next build
+pnpm build      # completa la historia de git, valida enlaces de content/ y next build
 pnpm start
 ```
 
@@ -67,6 +67,9 @@ reales, sin rewrite detrás, fuera de `ROUTE_MAP` y fuera de i18next.
   `components/shared/doc-page.tsx`.
 - El sitemap, las migas y los enlaces entre páginas de la misma sección se
   generan solos. Una página nueva es **un solo archivo**.
+- El `lastmod` de estas páginas en el sitemap es la **fecha del último commit
+  del archivo** (`lib/git-dates.ts`). El resto del sitemap usa la fecha del
+  build.
 
 ## i18n
 
@@ -115,6 +118,12 @@ comprobarlo en producción tras el despliegue.
 
 ## Detalles que sorprenden
 
+- **Vercel clona con `git clone --depth=10`.** En un clon superficial,
+  `git log -- archivo` devuelve la fecha del commit frontera para cualquier
+  archivo no tocado en esa ventana: una fecha falsa, igual para todos.
+  `scripts/ensure-git-history.mjs` completa la historia antes del build, y
+  `lib/git-dates.ts` descarta los commits frontera si no lo consigue. Nunca
+  uses `git log` para fechas sin tener esto en cuenta.
 - **Todo el sitio es SSR dinámico**: el layout raíz llama a `headers()`, así que
   no hay prerenderizado ni caché de CDN en ninguna ruta.
 - `app/[locale]/layout.tsx` aplica un `marginTop: -56px` a todas las rutas con
