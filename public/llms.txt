@@ -101,6 +101,7 @@ Funcionalidad con coste adicional: mercado secundario.
 - Entidades con miles de socios: https://www.sttok.com/soluciones/accionariado-amplio
 - Empresas y grupos de sociedades: https://www.sttok.com/empresas
 - Despachos y asesorías: https://www.sttok.com/abogados
+- Migrar la gestión societaria a Sttok: https://www.sttok.com/soluciones/migrar
 - Inversores: https://www.sttok.com/inversores
 - Portal del inversor: https://www.sttok.com/portal-del-inversor
 
