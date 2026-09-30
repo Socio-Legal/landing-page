@@ -1,13 +1,14 @@
 export const metadata = {
   title: "Política de Seguridad",
   description:
-    "Política de seguridad de Sttok: certificación ISO 27001, cifrado, control de accesos y gestión de incidentes.",
+    "Política de Seguridad de la Información de Sttok: certificación ISO 27001, cumplimiento del RGPD y garantía de confidencialidad, integridad y disponibilidad de la información.",
   keywords: "",
 };
 
 export const hero = {
   title: "Política de Seguridad",
-  description: "",
+  description:
+    "Sttok cuenta con la certificación ISO 27001 y cumple el RGPD. Esta es la política con la que protege la información societaria de sus clientes.",
 };
 
 export const content = [

@@ -1,15 +1,30 @@
 {
   "metadata": {
     "title": "Política de Seguridad",
-    "description": "",
+    "description": "Política de Seguridad de la Información de Sttok: certificación ISO 27001, cumplimiento del RGPD y garantía de confidencialidad, integridad y disponibilidad de la información.",
     "keywords": ""
   },
   "hero": {
     "slogan": "Legal",
     "title": "Política de Seguridad",
-    "description": ""
+    "description": "Sttok cuenta con la certificación ISO 27001 y cumple el RGPD. Esta es la política con la que protege la información societaria de sus clientes."
   },
   "content": [
+    {
+      "title": "Certificaciones y cumplimiento",
+      "content": [
+        "Sttok cuenta con la certificación ISO 27001 en seguridad de la información y cumple el Reglamento General de Protección de Datos (RGPD).",
+        "La información que protege son los libros de socios, las actas, los acuerdos y la documentación de juntas y consejos de las sociedades que gestiona."
+      ]
+    },
+    {
+      "title": "Qué cubre la política",
+      "content": [
+        "La política fija como objetivo asegurar la confidencialidad, la integridad y la disponibilidad de la información.",
+        "Incluye planes de continuidad de negocio, la identificación y evaluación de riesgos, indicadores para medir la seguridad de los procesos y un sistema de mejora continua.",
+        "La Dirección se compromete a cumplir la legislación vigente, los requisitos reglamentarios y las obligaciones contractuales en materia de seguridad de la información."
+      ]
+    },
     {
       "title": "Declaración de la Política de Seguridad de la Información de Sttok",
       "content": [
