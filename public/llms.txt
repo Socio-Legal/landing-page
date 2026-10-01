@@ -103,6 +103,7 @@ Funcionalidad con coste adicional: mercado secundario.
 - Direcciones jurídicas in-house: https://www.sttok.com/soluciones/direccion-juridica-in-house
 - Empresas y grupos de sociedades: https://www.sttok.com/empresas
 - Despachos y asesorías: https://www.sttok.com/abogados
+- Migrar la gestión societaria a Sttok: https://www.sttok.com/soluciones/migrar
 - Inversores: https://www.sttok.com/inversores
 - Portal del inversor: https://www.sttok.com/portal-del-inversor
 
