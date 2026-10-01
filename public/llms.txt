@@ -114,6 +114,7 @@ Funcionalidad con coste adicional: mercado secundario.
 - Glosario societario: https://www.sttok.com/recursos
 - Comparativa con Excel: https://www.sttok.com/sttok-vs-excel
 - Comparativa con Carta: https://www.sttok.com/comparativas/sttok-vs-carta
+- Guía: reconstruir un libro de socios desactualizado a partir de las escrituras: https://www.sttok.com/guias/reconstruir-libro-de-socios
 - Guía: cotitularidad, usufructo y nuda propiedad en el libro de socios: https://www.sttok.com/guias/cotitularidad-usufructo-nuda-propiedad
 - Guía: fallece un socio, herencia de participaciones y libro de socios: https://www.sttok.com/guias/herencia-de-participaciones
 - Board portals en España, comparativa: https://www.sttok.com/comparativas/board-portal-espana
