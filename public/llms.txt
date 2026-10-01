@@ -75,6 +75,7 @@ Sttok opera también con clientes en Latinoamérica y Andorra. La plataforma ges
 - Cumplimiento del RGPD
 - Auditoría de Bureau Veritas
 - Cifrado SSL/TLS
+- Política de seguridad de la información: https://www.sttok.com/politica-seguridad
 
 ## Precios
 
