@@ -159,7 +159,7 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     meta: {
       en: {
         title: "Security Policy",
-        description: "Sttok’s security policy: ISO 27001 certification, encryption, access control and incident management.",
+        description: "Sttok's Information Security Policy: ISO 27001 certification, GDPR compliance, encryption, European hosting and the confidentiality, integrity and availability of information.",
       },
     },
   },

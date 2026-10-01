@@ -1,15 +1,39 @@
 {
   "metadata": {
     "title": "Security Policy",
-    "description": "",
+    "description": "Sttok's Information Security Policy: ISO 27001 certification, GDPR compliance, encryption, European hosting and the confidentiality, integrity and availability of information.",
     "keywords": ""
   },
   "hero": {
     "slogan": "Legal",
     "title": "Security Policy",
-    "description": ""
+    "description": "Sttok holds ISO 27001 certification and complies with the GDPR. This is the policy it follows to protect its customers' corporate information."
   },
   "content": [
+    {
+      "title": "Certifications and compliance",
+      "content": [
+        "Sttok holds ISO 27001 certification in information security and complies with the General Data Protection Regulation (GDPR).",
+        "The information it protects includes shareholder registers, minutes, resolutions and the documentation of the meetings of the companies it manages."
+      ]
+    },
+    {
+      "title": "Infrastructure and data protection",
+      "content": [
+        "Data is hosted in AWS Europe, with no international data transfers.",
+        "Information is encrypted in transit with TLS 1.3 and at rest with AES-256.",
+        "The data processing agreement (DPA) is available on request.",
+        "The service level agreement (SLA) is available on custom plans."
+      ]
+    },
+    {
+      "title": "What the policy covers",
+      "content": [
+        "The policy sets as its objective ensuring the confidentiality, integrity and availability of information.",
+        "It includes business continuity plans, risk identification and assessment, indicators to measure the security of processes and a continuous improvement system.",
+        "Management commits to complying with current legislation, regulatory requirements and contractual obligations regarding information security."
+      ]
+    },
     {
       "title": "Sttok's Information Security Policy Statement",
       "content": [
