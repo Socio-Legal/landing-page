@@ -75,6 +75,7 @@ Sttok opera también con clientes en Latinoamérica y Andorra. La plataforma ges
 - Cumplimiento del RGPD
 - Auditoría de Bureau Veritas
 - Cifrado SSL/TLS
+- Política de seguridad de la información: https://www.sttok.com/politica-seguridad
 
 ## Precios
 
@@ -99,8 +100,11 @@ Funcionalidad con coste adicional: mercado secundario.
 - Empresa familiar: https://www.sttok.com/soluciones/empresa-familiar
 - Grupos de sociedades: https://www.sttok.com/soluciones/grupos-de-sociedades
 - Entidades con miles de socios: https://www.sttok.com/soluciones/accionariado-amplio
+- Secretaría del consejo de administración: https://www.sttok.com/soluciones/secretaria-del-consejo
+- Direcciones jurídicas in-house: https://www.sttok.com/soluciones/direccion-juridica-in-house
 - Empresas y grupos de sociedades: https://www.sttok.com/empresas
 - Despachos y asesorías: https://www.sttok.com/abogados
+- Migrar la gestión societaria a Sttok: https://www.sttok.com/soluciones/migrar
 - Inversores: https://www.sttok.com/inversores
 - Portal del inversor: https://www.sttok.com/portal-del-inversor
 
@@ -111,6 +115,13 @@ Funcionalidad con coste adicional: mercado secundario.
 - Comparativa con Excel: https://www.sttok.com/sttok-vs-excel
 - Comparativa con Carta: https://www.sttok.com/comparativas/sttok-vs-carta
 - Guía: libro registro de socios, cómo llevarlo y cómo legalizarlo en el Registro Mercantil: https://www.sttok.com/guias/libro-registro-socios-legalizacion
+- Guía: junta general telemática, requisitos legales y cómo celebrarla: https://www.sttok.com/guias/junta-general-telematica
+- Guía: un socio quiere vender, derecho de adquisición preferente y restricciones estatutarias: https://www.sttok.com/guias/derecho-de-adquisicion-preferente
+- Guía: reconstruir un libro de socios desactualizado a partir de las escrituras: https://www.sttok.com/guias/reconstruir-libro-de-socios
+- Guía: cotitularidad, usufructo y nuda propiedad en el libro de socios: https://www.sttok.com/guias/cotitularidad-usufructo-nuda-propiedad
+- Guía: fallece un socio, herencia de participaciones y libro de socios: https://www.sttok.com/guias/herencia-de-participaciones
+- Board portals en España, comparativa: https://www.sttok.com/comparativas/board-portal-espana
+- Software para libro de socios, juntas y consejo en España, comparativa: https://www.sttok.com/comparativas/software-libro-de-socios
 - Equipo: https://www.sttok.com/sobre-nosotros
 - Blog: https://blog.sttok.com/recursos
 - Dossier comercial (español): https://www.sttok.com/docs/sttok-dossier-es.pdf
