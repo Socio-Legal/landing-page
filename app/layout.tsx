@@ -73,7 +73,7 @@ export default async function RootLayout({
               logo: "https://www.sttok.com/logo-sttok.png",
               description:
                 "Software de gestión de sociedades: captable, libro de socios, planes de incentivos, juntas y consejos, simulador y mercado secundario.",
-              email: "info@sttok.com",
+              email: "hola@sttok.com",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Calle Ausias Marc, 7, 3ª planta",

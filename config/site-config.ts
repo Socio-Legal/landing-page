@@ -22,7 +22,7 @@ export const siteConfig = {
     "Sttok",
   ],
   links: {
-    email: "info@sttok.com",
+    email: "hola@sttok.com",
   },
   banner: {
     enabled: false,

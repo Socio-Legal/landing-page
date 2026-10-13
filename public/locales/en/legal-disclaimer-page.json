@@ -16,7 +16,7 @@
         "Owner: Sttok Barcelona, S.L. (hereinafter referred to by its commercial name, 'Sttok').",
         "Headquarters and establishment: C/ Ausias Marc, 7, 3rd Floor, 08010-Barcelona.",
         "Tax ID: B10601268",
-        "Contact: info@sttok.com 607838348",
+        "Contact: hola@sttok.com 607838348",
         "Registration details: Barcelona Commercial Registry, volume 48281, folio 181, sheet no. 578642, 1st registration."
       ]
     },
@@ -29,7 +29,7 @@
     {
       "title": "Second.- Access",
       "content": [
-        "The Client will create a user by accessing the STTOK platform using their email address, which will be used to configure the Client's account. The Client may grant access to other users to their account. The Client will be responsible for any acts or omissions of any person accessing the STTOK platform using their access credentials. STTOK reserves the right to reject registration, access, or cancel users who violate the terms and conditions established in this Contract. In the event that the Client becomes aware that their user or account has been used by third parties without their consent or suspects unauthorized use, they will immediately notify STTOK at info@sttok.com. User identity verification will be carried out through the identity management service used by the Client, either through Microsoft or Google email services. In the case that the Client has configured two-factor identity verification systems or similar, they will be the responsibility of the aforementioned Microsoft or Google services. For this purpose, STTOK uses Auth0's Customer Identity (CIAM) service. The terms and conditions of Microsoft or Google services may be applicable as appropriate.",
+        "The Client will create a user by accessing the STTOK platform using their email address, which will be used to configure the Client's account. The Client may grant access to other users to their account. The Client will be responsible for any acts or omissions of any person accessing the STTOK platform using their access credentials. STTOK reserves the right to reject registration, access, or cancel users who violate the terms and conditions established in this Contract. In the event that the Client becomes aware that their user or account has been used by third parties without their consent or suspects unauthorized use, they will immediately notify STTOK at hola@sttok.com. User identity verification will be carried out through the identity management service used by the Client, either through Microsoft or Google email services. In the case that the Client has configured two-factor identity verification systems or similar, they will be the responsibility of the aforementioned Microsoft or Google services. For this purpose, STTOK uses Auth0's Customer Identity (CIAM) service. The terms and conditions of Microsoft or Google services may be applicable as appropriate.",
         "Occasionally, STTOK personnel may access the Client's account for the purpose of maintaining and improving the Services, including technical assistance to the Client regarding training, technical, or billing aspects. In any case, STTOK personnel will be subject to the confidentiality clauses applicable to this Contract. The Client expresses their knowledge and, if necessary, their consent to such access. Said access will be carried out using a STTOK user account and in no case accessing individual user accounts or under the identity of the Client's users."
       ]
     },
