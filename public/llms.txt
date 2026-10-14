@@ -113,7 +113,9 @@ Funcionalidad con coste adicional: mercado secundario.
 - Precios y planes: https://www.sttok.com/precios
 - Glosario societario: https://www.sttok.com/recursos
 - Comparativa con Excel: https://www.sttok.com/sttok-vs-excel
+- Comparativas de software para libro de socios, juntas y consejo: https://www.sttok.com/comparativas
 - Comparativa con Carta: https://www.sttok.com/comparativas/sttok-vs-carta
+- Guías de derecho societario: https://www.sttok.com/guias
 - Guía: plantillas societarias, qué debe constar en una convocatoria, un acta y un certificado: https://www.sttok.com/guias/plantillas-societarias
 - Guía: fiscalidad de phantom shares y stock options en España tras la Ley de Startups: https://www.sttok.com/guias/fiscalidad-phantom-shares-stock-options
 - Guía: titular real y Registro de Titularidades Reales en grupos de sociedades: https://www.sttok.com/guias/titular-real-grupos-sociedades

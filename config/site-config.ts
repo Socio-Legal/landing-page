@@ -240,6 +240,18 @@ export const siteConfig = {
           url: "/sttok-vs-excel",
           alt: "Sttok frente a Excel",
         },
+        {
+          id: 125,
+          title: "menu.Guides",
+          url: "/guias",
+          alt: "Guías de derecho societario",
+        },
+        {
+          id: 126,
+          title: "menu.Comparisons",
+          url: "/comparativas",
+          alt: "Comparativas de software societario",
+        },
       ],
       [
         // TODO: create legal pages
