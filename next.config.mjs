@@ -74,12 +74,6 @@ const nextConfig = {
         destination: "/startups",
         statusCode: 301,
       },
-      // Landings SEO retiradas: cada una 301 a la pagina principal de su tema.
-      ...Object.entries(LANDINGS_RETIRADAS).map(([source, destination]) => ({
-        source,
-        destination,
-        statusCode: 301,
-      })),
       // Caso de exito retirado. Apunta al indice de casos, que es el
       // contenido equivalente mas cercano: la home no lo es, y un 301 a la
       // home para una pagina retirada es un soft 404.
@@ -95,6 +89,12 @@ const nextConfig = {
         destination: "/testimonios",
         statusCode: 301,
       },
+      // Landings SEO retiradas: cada una 301 a la pagina principal de su tema.
+      ...Object.entries(LANDINGS_RETIRADAS).map(([source, destination]) => ({
+        source,
+        destination,
+        statusCode: 301,
+      })),
       // Carpeta interna -> slug publico castellano. 301 explicito (no
       // `permanent: true`, que en Next emite 308).
       ...Object.entries(ES_TO_FOLDER)
