@@ -23,10 +23,13 @@
       "PldSpace",
       "Factorial",
       "MyInvestor",
-      "Yaba",
       "Caballero",
       "Shakers",
-      "Taxdown"
+      "Taxdown",
+      "Andbank",
+      "Osborne",
+      "Fanalca",
+      "Sade"
     ]
   },
   "features": {
@@ -74,12 +77,6 @@
         "role": "Head of Legal & Compliance, Factorial",
         "img": "",
         "description": "Sttok nos ayudó a digitalizar el proceso de creación y firma de documentos para nuestros planes de incentivos.",
-        "stars": 5
-      },
-      {
-        "name": "Gerard Garcia",
-        "role": "CEO | Deale",
-        "description": "Sttok nos permite gestionar de forma efectiva planes de incentivos para empleados, libro de socios, simulación de operaciones y juntas de accionistas.",
         "stars": 5
       },
       {

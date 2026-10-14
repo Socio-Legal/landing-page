@@ -6,21 +6,20 @@ import Broseta from "@/public/logo-broseta.png";
 import Caballero from "@/public/logo-caballero1830.png";
 import Cabiedes from "@/public/logo-cabiedespartners.png";
 import Criptan from "@/public/logo-criptan.png";
-import DealCar from "@/public/logo-dealcar.png";
 import DerechoCom from "@/public/logo-derechocom.png";
 import Factorial from "@/public/logo-factorial.png";
+import Fanalca from "@/public/logo-fanalca.png";
 import Horizm from "@/public/logo-horizm.png";
 import Keybotic from "@/public/logo-keybotic.png";
 import LegalPigeon from "@/public/logo-legalpigeon.png";
 import LetsLaw from "@/public/logo-letslaw.png";
-import Mailtrack from "@/public/logo-mailtrack.png";
-import MasterChef from "@/public/logo-masterchefworld.png";
 import Multiverse from "@/public/logo-multiverse.svg";
 import MyInvestor from "@/public/logo-myinvestor.png";
 import Osborne from "@/public/logo-osborne.svg";
 import PldSpace from "@/public/logo-pldspace.png";
 import Psonrie from "@/public/logo-psonrie.png";
 import Pwc from "@/public/logo-pwc.png";
+import Sade from "@/public/logo-sade.png";
 import Shakers from "@/public/logo-shakers.png";
 import Taxdown from "@/public/logo-taxdown.png";
 
@@ -35,21 +34,20 @@ export const clientLogos = {
   Caballero: Caballero,
   Cabiedes: Cabiedes,
   Criptan: Criptan,
-  DealCar: DealCar,
   DerechoCom: DerechoCom,
   Factorial: Factorial,
+  Fanalca: Fanalca,
   Horizm: Horizm,
   Keybotic: Keybotic,
   LegalPigeon: LegalPigeon,
   LetsLaw: LetsLaw,
-  Mailtrack: Mailtrack,
-  MasterChef: MasterChef,
   MyInvestor: MyInvestor,
   Multiverse: Multiverse,
   Osborne: Osborne,
   PldSpace: PldSpace,
   Psonrie: Psonrie,
   Pwc: Pwc,
+  Sade: Sade,
   Shakers: Shakers,
   Taxdown: Taxdown,
 };
