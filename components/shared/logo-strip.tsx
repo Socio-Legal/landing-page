@@ -3,7 +3,11 @@
 import { FC } from "react";
 import Image from "next/image";
 
-import { clientLogos, getClientLogo } from "@/config/client-logos";
+import {
+  clientLogos,
+  getClientLogo,
+  getClientLogoScale,
+} from "@/config/client-logos";
 
 type LogoName = keyof typeof clientLogos;
 
@@ -41,7 +45,10 @@ const LogoStrip: FC<LogoStripProps> = ({ label, primary, secondary }) => (
             title={name}
             fill
             sizes="128px"
-            style={{ objectFit: "contain" }}
+            style={{
+              objectFit: "contain",
+              transform: `scale(${getClientLogoScale(name)})`,
+            }}
             className="dark:invert"
           />
         </div>
@@ -61,7 +68,10 @@ const LogoStrip: FC<LogoStripProps> = ({ label, primary, secondary }) => (
               title={name}
               fill
               sizes="96px"
-              style={{ objectFit: "contain" }}
+              style={{
+              objectFit: "contain",
+              transform: `scale(${getClientLogoScale(name)})`,
+            }}
               className="dark:invert"
             />
           </div>

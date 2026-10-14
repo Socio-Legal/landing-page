@@ -52,7 +52,17 @@ export const clientLogos = {
   Taxdown: Taxdown,
 };
 
-export const getClientLogo = (logo: ClientLogo) => {
+// Corrección óptica: logos en negrita y recortados al borde que, en la misma
+// caja, pesan bastante más que el resto de la tira.
+const logoScale: Partial<Record<keyof typeof clientLogos, number>> = {
+  Barkibu: 0.75,
+  Sade: 0.65,
+};
+
+export const getClientLogoScale = (logo: ClientLogo) =>
+  logoScale[logo as keyof typeof clientLogos] ?? 1;
+
+export const getClientLogo =(logo: ClientLogo) => {
   // Solo logos locales del repositorio: nada de CDNs externos.
   return clientLogos[logo as keyof typeof clientLogos]?.src ?? "";
 };

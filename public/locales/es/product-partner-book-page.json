@@ -45,15 +45,15 @@
     "title": "CLIENTES QUE UTILIZAN EL LIBRO DE SOCIOS",
     "clients": [
       "Factorial",
-      "MyInvestor",
-      "Taxdown",
-      "PldSpace",
-      "Multiverse",
-      "Caballero",
-      "Barkibu",
       "Andbank",
       "Osborne",
+      "Taxdown",
+      "PldSpace",
+      "Caballero",
       "Fanalca",
+      "Multiverse",
+      "MyInvestor",
+      "Barkibu",
       "Sade"
     ]
   },

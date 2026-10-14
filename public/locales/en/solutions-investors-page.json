@@ -20,15 +20,15 @@
   "clients": {
     "title": "Companies using Sttok",
     "clients": [
-      "PldSpace",
       "Factorial",
-      "MyInvestor",
-      "Caballero",
-      "Shakers",
-      "Taxdown",
       "Andbank",
       "Osborne",
+      "Taxdown",
+      "PldSpace",
+      "Caballero",
       "Fanalca",
+      "MyInvestor",
+      "Shakers",
       "Sade"
     ]
   },

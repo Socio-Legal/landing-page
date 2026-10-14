@@ -4,7 +4,11 @@ import { FC } from "react";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
 
-import { clientLogos, getClientLogo } from "@/config/client-logos";
+import {
+  clientLogos,
+  getClientLogo,
+  getClientLogoScale,
+} from "@/config/client-logos";
 
 const ClientsSection: FC = () => {
   const { t } = useTranslation("home-clients-section");
@@ -35,7 +39,10 @@ const ClientsSection: FC = () => {
                 fill
                 sizes="112px"
                 title={logo}
-                style={{ objectFit: "contain" }}
+                style={{
+                  objectFit: "contain",
+                  transform: `scale(${getClientLogoScale(logo)})`,
+                }}
                 className="dark:invert"
               />
             </div>

@@ -20,12 +20,12 @@
   "clients": {
     "title": "Los abogados de estas empresas y despachos utilizan Sttok",
     "clients": [
-      "Multiverse",
-      "DerechoCom",
-      "LetsLaw",
       "Factorial",
       "PldSpace",
-      "LegalPigeon"
+      "Multiverse",
+      "DerechoCom",
+      "LegalPigeon",
+      "LetsLaw"
     ]
   },
   "features": {

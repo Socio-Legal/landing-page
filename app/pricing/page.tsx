@@ -76,20 +76,20 @@ const Page = () => {
           <LogoStrip
             label={t("pricing-page:clientsLabel")}
             primary={[
+              "Factorial",
               "Axa",
               "Andbank",
-              "Factorial",
-              "Multiverse",
-              "PldSpace",
               "Osborne",
+              "Taxdown",
+              "PldSpace",
             ]}
             secondary={[
               "Caballero",
-              "Taxdown",
-              "MyInvestor",
-              "Barkibu",
-              "DerechoCom",
               "Fanalca",
+              "Multiverse",
+              "MyInvestor",
+              "DerechoCom",
+              "Barkibu",
               "Sade",
             ]}
           />

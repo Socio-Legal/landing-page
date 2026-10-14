@@ -20,16 +20,16 @@
   "clients": {
     "title": "Companies that trust us",
     "clients": [
-      "PldSpace",
       "Factorial",
       "Axa",
-      "Multiverse",
-      "Caballero",
-      "Taxdown",
       "Andbank",
-      "MyInvestor",
       "Osborne",
+      "Taxdown",
+      "PldSpace",
+      "Caballero",
       "Fanalca",
+      "Multiverse",
+      "MyInvestor",
       "Sade"
     ]
   },

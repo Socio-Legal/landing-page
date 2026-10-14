@@ -42,13 +42,13 @@
     "title": "CLIENTS USING THE OPERATIONS SIMULATOR",
     "clients": [
       "Factorial",
-      "LegalPigeon",
-      "Banktrack",
-      "PldSpace",
-      "Barkibu",
       "Andbank",
       "Osborne",
+      "PldSpace",
       "Fanalca",
+      "LegalPigeon",
+      "Banktrack",
+      "Barkibu",
       "Sade"
     ]
   },
