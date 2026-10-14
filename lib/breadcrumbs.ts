@@ -6,8 +6,8 @@ const BASE_URL = "https://www.sttok.com";
 
 /**
  * Etiqueta y ruta de cada seccion de content/, indexadas por su ruta. Solo las
- * que tienen portada: /comparativas y /guias son un 404, y una miga que apunta
- * a un 404 es peor que ninguna. Sus documentos cuelgan directamente de Inicio.
+ * que tienen portada (hasIndex): una miga que apunta a un 404 es peor que
+ * ninguna, y los documentos de una seccion sin portada cuelgan de Inicio.
  */
 const SECTIONS_BY_PATH: Record<string, { name: string; path: string }> =
   Object.fromEntries(
