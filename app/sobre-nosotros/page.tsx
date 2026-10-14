@@ -94,6 +94,8 @@ const Page = () => {
               "MyInvestor",
               "Barkibu",
               "DerechoCom",
+              "Fanalca",
+              "Sade",
             ]}
           />
         </div>

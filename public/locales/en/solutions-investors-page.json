@@ -23,10 +23,13 @@
       "PldSpace",
       "Factorial",
       "MyInvestor",
-      "Yaba",
       "Caballero",
       "Shakers",
-      "Taxdown"
+      "Taxdown",
+      "Andbank",
+      "Osborne",
+      "Fanalca",
+      "Sade"
     ]
   },
   "features": {
@@ -74,12 +77,6 @@
         "role": "Head of Legal & Compliance, Factorial",
         "img": "",
         "description": "Sttok helped us digitize the process of creating and signing documents for our incentive plans.",
-        "stars": 5
-      },
-      {
-        "name": "Gerard Garcia",
-        "role": "CEO | Deale",
-        "description": "Sttok allows us to effectively manage employee incentive plans, shareholder register, operation simulations, and shareholder meetings.",
         "stars": 5
       },
       {

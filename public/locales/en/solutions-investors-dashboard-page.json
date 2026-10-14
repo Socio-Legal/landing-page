@@ -24,11 +24,12 @@
       "Factorial",
       "Axa",
       "MyInvestor",
-      "Deale",
-      "Yaba",
       "Taxdown",
       "Caballero",
-      "Andbank"
+      "Andbank",
+      "Osborne",
+      "Fanalca",
+      "Sade"
     ]
   },
   "features": {
@@ -61,12 +62,6 @@
         "role": "Head of Legal & Compliance, Factorial",
         "img": "",
         "description": "Sttok helped us digitize the process of creating and signing documents for incentive plans.",
-        "stars": 5
-      },
-      {
-        "name": "Gerard Garcia",
-        "role": "CEO | Deale",
-        "description": "Sttok allows us to effectively manage employee incentive plans, shareholder register, operation simulations, and shareholder meetings.",
         "stars": 5
       },
       {
