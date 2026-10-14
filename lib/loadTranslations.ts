@@ -29,7 +29,6 @@ import solutionsInvestorsDashboardPage from "../public/locales/es/solutions-inve
 
 import testimonialsPage from "../public/locales/es/testimonials-page.json";
 import testimonialsFactorialPage from "../public/locales/es/testimonials-factorial-page.json";
-import testimonialsBanktrackPage from "../public/locales/es/testimonials-banktrack-page.json";
 import testimonialsCaballeroPage from "../public/locales/es/testimonials-caballero-page.json";
 import testimonialsPldspacePage from "../public/locales/es/testimonials-pldspace-page.json";
 import testimonialsTaxdownPage from "../public/locales/es/testimonials-taxdown-page.json";
@@ -119,7 +118,6 @@ const loadTranslations = (lang: "es" | "en") => {
 
       "testimonials-page": testimonialsPage,
       "testimonials-factorial-page": testimonialsFactorialPage,
-      "testimonials-banktrack-page": testimonialsBanktrackPage,
       "testimonials-caballero-page": testimonialsCaballeroPage,
       "testimonials-pldspace-page": testimonialsPldspacePage,
       "testimonials-taxdown-page": testimonialsTaxdownPage,

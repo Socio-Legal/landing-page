@@ -60,8 +60,6 @@ Casos publicados:
 - TaxDown (fiscal): https://www.sttok.com/testimonios/Taxdown
 - Grupo Caballero, fundado en 1830 (bodegas): https://www.sttok.com/testimonios/Caballero
 - MyInvestor (neobanco): https://www.sttok.com/testimonios/MyInvestor
-- Derecho.com (legal): https://www.sttok.com/testimonios/DerechoCom
-- Banktrack (fintech): https://www.sttok.com/testimonios/Banktrack
 
 ## Cobertura geográfica
 

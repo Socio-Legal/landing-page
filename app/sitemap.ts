@@ -33,9 +33,7 @@ const MAIN_ROUTES = [
 const CASE_STUDIES = [
   "Factorial",
   "PldSpace",
-  "DerechoCom",
   "Taxdown",
-  "Banktrack",
   "Caballero",
   "MyInvestor",
 ].map((client) => `/testimonios/${client}`);

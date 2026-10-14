@@ -68,18 +68,18 @@ const nextConfig = {
         destination: "/startups",
         statusCode: 301,
       },
-      // Caso de exito retirado. Apunta al indice de casos, que es el
+      // Casos de exito retirados. Apuntan al indice de casos, que es el
       // contenido equivalente mas cercano: la home no lo es, y un 301 a la
       // home para una pagina retirada es un soft 404.
       // Va ANTES de la regla generica /testimonials/:client para que no
       // encadene dos saltos.
       {
-        source: "/testimonios/:client(Yaba|yaba|YABA)",
+        source: "/testimonios/:client(Yaba|yaba|YABA|Banktrack|banktrack|DerechoCom|derechocom)",
         destination: "/testimonios",
         statusCode: 301,
       },
       {
-        source: "/testimonials/:client(Yaba|yaba|YABA)",
+        source: "/testimonials/:client(Yaba|yaba|YABA|Banktrack|banktrack|DerechoCom|derechocom)",
         destination: "/testimonios",
         statusCode: 301,
       },
