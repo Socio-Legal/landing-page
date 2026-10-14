@@ -40,19 +40,6 @@ const CASE_STUDIES = [
   "MyInvestor",
 ].map((client) => `/testimonios/${client}`);
 
-const SEO_ROUTES = [
-  "/software-de-libro-de-socios",
-  "/software-de-juntas-de-accionistas",
-  "/software-de-gestion-de-captable",
-  "/software-de-captable",
-  "/simulador-de-ampliacion-de-capital",
-  "/secundario",
-  "/junta-de-accionistas-digital",
-  "/grupos-societarios",
-  "/documentacion-societaria",
-  "/consejos-de-administracion",
-];
-
 const LEGAL_ROUTES = ["/aviso-legal", "/privacidad", "/politica-seguridad"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -87,7 +74,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       entry(r, r === "" ? 1 : 0.8, r === "" ? "weekly" : "monthly"),
     ),
     ...CASE_STUDIES.map((r) => entry(r, 0.6, "monthly")),
-    ...SEO_ROUTES.map((r) => entry(r, 0.5, "monthly")),
     // Secciones de contenido: se recorren los archivos de content/, asi que
     // una pagina nueva entra en el sitemap el dia que se escribe, sin tocar
     // esta lista. Solo existen en castellano: sin alternates.

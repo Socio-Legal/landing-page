@@ -2,9 +2,9 @@ import Link from "next/link";
 import type { MDXComponents } from "mdx/types";
 
 /**
- * Estilos del contenido MDX. Siguen el mismo lenguaje visual que
- * components/shared/seo-landing.tsx: titular serif, cuerpo en muted, medidas
- * de linea cortas y separadores por borde.
+ * Estilos del contenido MDX. Siguen el mismo lenguaje visual que el resto
+ * del sitio: titular serif, cuerpo en muted, medidas de linea cortas y
+ * separadores por borde.
  *
  * Se mapea etiqueta por etiqueta en lugar de usar un plugin de tipografia
  * para no meter una dependencia mas y para que el resultado sea identico al
