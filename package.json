@@ -2,6 +2,9 @@
   "name": "startup-template",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "24.x"
+  },
   "scripts": {
     "dev": "next dev -p 3001",
     "build": "node scripts/ensure-git-history.mjs && node scripts/check-content-links.mjs && next build",
@@ -50,7 +53,7 @@
   },
   "devDependencies": {
     "@types/mdx": "^2.0.14",
-    "@types/node": "^20.11.28",
+    "@types/node": "^24.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "autoprefixer": "^10.4.18",
