@@ -48,7 +48,7 @@
     {
       "aspect": "Cost",
       "excel": "Free in licenses; expensive in hours and errors.",
-      "sttok": "From €450 per company per year, with one-week onboarding."
+      "sttok": "From €450 per company per year, with setup in a few hours."
     }
   ],
   "faq": {
@@ -57,7 +57,7 @@
     "items": [
       {
         "q": "Can I migrate my current Excel to Sttok?",
-        "a": "Yes. Onboarding includes migrating the registry and its history, and takes one week."
+        "a": "Yes. Onboarding includes migrating the registry and its history, and takes a few hours per company."
       },
       {
         "q": "What happens to my operation history?",
