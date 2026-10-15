@@ -14,7 +14,7 @@ const ThemeToggler: React.FC = () => {
   const [montado, setMontado] = useState(false);
   useEffect(() => setMontado(true), []);
 
-  const oscuro = resolvedTheme === "dark";
+  const oscuro = montado && resolvedTheme === "dark";
 
   return (
     <button
