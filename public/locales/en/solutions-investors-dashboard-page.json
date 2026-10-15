@@ -5,53 +5,17 @@
     "keywords": "investors, investees, portfolio, captable, document management, operations simulator, investor portal"
   },
   "hero": {
-    "slogan": "Solutions",
-    "title": "Portal for investors",
-    "description": "Give your investors access to a unique portal with all their detailed information. They will have their personalized partner profile, number of shares, and exact percentage. Integrate the Investor Portal with the design and image of the company's website.",
+    "slogan": "Investor portal",
+    "title": "For companies that want to keep their shareholders and investors informed",
+    "description": "Sttok gives each shareholder and investor their own access, with the company's branding. They see their position, download the certificates the company makes visible, respond to the notice, appoint a proxy or vote, and receive every communication with its proof of delivery.",
     "button": {
-      "text": "Request Demo",
+      "text": "Schedule demo",
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
       "light": "/funcionalidades/portal-del-accionista-light.png",
       "dark": "/funcionalidades/portal-del-accionista-dark.png"
     }
-  },
-  "clients": {
-    "title": "Companies that trust us",
-    "clients": [
-      "PldSpace",
-      "Factorial",
-      "Axa",
-      "MyInvestor",
-      "Taxdown",
-      "Caballero",
-      "Andbank",
-      "Osborne",
-      "Fanalca",
-      "Sade"
-    ]
-  },
-  "features": {
-    "title": "Main Features for Investors",
-    "description": "Sttok offers a personalized portal for investors, providing access to the portfolio of investees with updated and accurate data.",
-    "items": [
-      {
-        "icon": "Icon01",
-        "title": "Access for partners",
-        "description": "Consult cap table data, deeds, and other key documentation in real-time."
-      },
-      {
-        "icon": "Icon02",
-        "title": "Partner Profile",
-        "description": "Each partner will have access to their profile with their documents and certificates."
-      },
-      {
-        "icon": "Icon03",
-        "title": "Integration with your website",
-        "description": "Integrate the investor portal with your image, colors, logos, etc."
-      }
-    ]
   },
   "testimonials": {
     "title": "What our Clients say",
@@ -77,6 +41,72 @@
         "img": "/logo-banktrack-mini.png",
         "description": "Now with Sttok you can perform simulations of capital increases or convertible notes. We also easily manage our team's phantom shares. Finally, as an investor, I have my investments organized and I clearly know what I have.",
         "stars": 5
+      }
+    ]
+  },
+  "includes": {
+    "eyebrow": "What's included",
+    "title": "What each shareholder sees in their portal"
+  },
+  "situations": {
+    "eyebrow": "Common cases",
+    "title": "Common situations with shareholders",
+    "guideLabel": "See how",
+    "rows": [
+      {
+        "situation": "An investor asks for their certificate",
+        "action": "They download it themselves from their portal, if the company has made it visible."
+      },
+      {
+        "situation": "The general meeting is called",
+        "action": "Each shareholder sees the notice in their portal and responds: attend, appoint a proxy or vote."
+      },
+      {
+        "situation": "A shareholder cannot attend the meeting",
+        "action": "They sign a proxy or vote early on each item from their portal."
+      },
+      {
+        "situation": "The company informs all its shareholders",
+        "action": "Every communication is logged with its status and proof of delivery."
+      },
+      {
+        "situation": "The company wants the portal in its own branding",
+        "action": "The portal carries the company's brand colour, with a white-label option."
+      }
+    ],
+    "columns": {
+      "situation": "Situation",
+      "action": "What Sttok does",
+      "guide": "More information"
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions about the investor portal",
+    "items": [
+      {
+        "q": "What does each shareholder see?",
+        "a": "Their position, their visible certificates, the meetings they are called to and the documents the company shares with them."
+      },
+      {
+        "q": "Can they see other shareholders' data?",
+        "a": "No. Each shareholder sees only their own."
+      },
+      {
+        "q": "Can they vote from the portal?",
+        "a": "Yes. They can sign a proxy, vote early and vote at the meeting."
+      },
+      {
+        "q": "Does the portal carry the company's branding?",
+        "a": "Yes. It uses the company's brand colour, and there is a white-label option."
+      },
+      {
+        "q": "How does each shareholder log in?",
+        "a": "With their own user account. They can also sign in with a Google or Microsoft account."
+      },
+      {
+        "q": "Does it work for companies in Latin America?",
+        "a": "The platform adapts to each country's terminology: shareholder ledger, general shareholders' meeting, board of directors. Compliance with each country's regulations is assessed case by case."
       }
     ]
   }

@@ -1,43 +1,53 @@
 "use client";
 
-import React from "react";
-import { useTranslation } from "react-i18next";
+import ModulePage from "@/components/product/module-page";
 
-import CallToActionSection from "@/components/landing/cta-section";
-import TestimonialsSection, {
-  TestimonialsSectionProps,
-} from "@/components/product/testimonials-section";
-import FeaturesSection, {
-  FeaturesSectionProps,
-} from "@/components/product/features-section";
-import ClientsSection, {
-  ClientsSectionProps,
-} from "@/components/product/clients-section";
-import HeroSection, {
-  HeroSectionProps,
-} from "@/components/product/hero-section";
-
-const Page = () => {
-  const { t } = useTranslation("solutions-lawyers-page");
-
-  const hero = t("hero", { returnObjects: true }) as HeroSectionProps;
-  const clients = t("clients", { returnObjects: true }) as ClientsSectionProps;
-  const features = t("features", {
-    returnObjects: true,
-  }) as FeaturesSectionProps;
-  const testimonials = t("testimonials", {
-    returnObjects: true,
-  }) as TestimonialsSectionProps;
-
-  return (
-    <>
-      <HeroSection {...hero} />
-      <ClientsSection {...clients} />
-      <FeaturesSection {...features} />
-      <TestimonialsSection {...testimonials} />
-      <CallToActionSection />
-    </>
-  );
+// Por módulo, las funcionalidades del catálogo que importan a este perfil.
+const SELECCION = {
+  "grupos": [
+    "Todas las sociedades en una portada",
+    "Trabajos en varias sociedades",
+    "Colecciones de sociedades",
+    "Permisos por sociedad"
+  ],
+  "socios": [
+    "Libro de socios oficial",
+    "Lectura de escrituras con IA",
+    "Transmisiones",
+    "Certificados de titularidad y de valor"
+  ],
+  "juntas": [
+    "Convocatoria",
+    "Delegación de voto con firma",
+    "Acta automática",
+    "Certificación de acuerdos"
+  ],
+  "consejo": [
+    "Convocar el consejo",
+    "Acta y certificación",
+    "Cargos con vigencia",
+    "Apoderados y poderes"
+  ],
+  "simulador": [
+    "Ampliación de capital",
+    "Compraventa",
+    "Operaciones encadenadas",
+    "Borradores de documentos"
+  ],
+  "documentos": [
+    "Libros de actas",
+    "Legalización del libro registro",
+    "Reglas de la sociedad",
+    "Firma electrónica"
+  ]
 };
+
+const Page = () => (
+  <ModulePage
+    ns="solutions-lawyers-page"
+    modulos={Object.keys(SELECCION)}
+    seleccion={SELECCION}
+  />
+);
 
 export default Page;

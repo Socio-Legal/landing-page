@@ -71,8 +71,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageAbogados,
     meta: {
       en: {
-        title: "Sttok for Lawyers",
-        description: "Corporate management software for Lawyers. Sttok allows you to manage the shareholder register, incentive plans, shareholder meetings, board of directors, etc.",
+        title: "Shareholder registers, meetings and minutes for law firms and corporate advisers",
+        description: "Every company the firm manages on one screen: shareholder registers and minute books, meetings, certificates and register legalisation, with permissions per company.",
       keywords: "corporate management, lawyers, captable, shareholder register, incentive plans, shareholder meetings, boards, testimonials",
       },
     },
@@ -90,8 +90,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageEmpresas,
     meta: {
       en: {
-        title: "Companies and Corporate Groups - Sttok",
-        description: "Corporate management software for companies and corporate groups. Shareholder Register, Shareholder Meetings, etc.",
+        title: "Shareholder register, meetings and board for companies with many shareholders and groups",
+        description: "Corporate records for every company in the group: register with encumbrances and co-owners, general meeting, board, officers with terms and beneficial owner, with permissions per company.",
       keywords: "Shareholder Register, Company, corporate group, shareholder meeting, incentive plans, board of directors",
       },
     },
@@ -100,8 +100,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageInversores,
     meta: {
       en: {
-        title: "Sttok for Investors",
-        description: "Discover the solutions we offer for investors and their investees",
+        title: "Investee tracking for funds, family offices and holding companies",
+        description: "Investees with their percentage and value, chain of control on any date, and simulation of capital increases, convertible notes and sales.",
       keywords: "investors, investees, portfolio, captable, shareholder register, investor",
       },
     },
@@ -167,8 +167,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PagePortalDelInversor,
     meta: {
       en: {
-        title: "Investor Portal",
-        description: "Discover the solutions we offer for investors and companies to give access to their shareholders",
+        title: "Investor portal: each shareholder's position, certificates and meetings",
+        description: "Each shareholder and investor with their own access and the company's branding: their position, their certificates, the meeting and communications with proof of delivery.",
       keywords: "investors, investees, portfolio, captable, document management, operations simulator, investor portal",
       },
     },

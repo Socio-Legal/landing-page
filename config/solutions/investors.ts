@@ -1,9 +1,9 @@
 import { routes } from "../routes";
 
 export const metadata = {
-  title: "Software de Gestión de Participadas para Inversores", // ej., "Nombre del Producto"
+  title: "Seguimiento de participadas para fondos, family offices y holdings",
   description:
-    "Descubre las soluciones que ofrecemos para los inversores y sus participadas", // ej., "Una breve descripción del producto o servicio"
+    "Participadas con su porcentaje y su valor, cadena de control a cualquier fecha y simulación de ampliaciones, notas convertibles y ventas.",
   keywords:
     "inversores, participadas, cartera, captable, libro de socios, inversor", // ej., "palabra_clave1, palabra_clave2, palabra_clave3"
 };
@@ -84,7 +84,7 @@ export const testimonials = {
   description: "Empresas que ya han mejorado su gestión societaria con Sttok.", // ej., "Lee testimonios de clientes satisfechos"
   items: [
     {
-      name: "Lucía Bauza", // ej., "Juan Pérez"
+      name: "Lucía Bouzá", // ej., "Juan Pérez"
       role: "Head of Legal & Compliance, Factorial", // ej., "CEO de Empresa A"
       img: "", // ej., "https://ejemplo.com/juan-perez.jpg"
       description:

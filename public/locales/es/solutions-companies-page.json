@@ -5,89 +5,17 @@
     "keywords": "Libro de socios, Empresa, grupo de empresas, junta de accionistas, planes de incentivos, consejo de administración"
   },
   "hero": {
-    "slogan": "Soluciones",
-    "title": "Solución para Empresas y Grupos de Sociedades",
-    "description": "Gestión digital de sociedades para Empresas y Grupos de Sociedades. Automatiza la gestión societaria.",
+    "slogan": "Empresas y grupos de sociedades",
+    "title": "Para empresas con muchos socios y grupos de sociedades",
+    "description": "Sttok lleva el registro societario de cada sociedad del grupo: el libro de socios con sus cargas y cotitulares, la junta general y el consejo, los cargos con su vigencia y quién controla cada sociedad al final de la cadena. Cada persona ve solo las sociedades que le corresponden.",
     "button": {
-      "text": "Solicitar Demo",
+      "text": "Solicitar demo",
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
       "light": "/funcionalidades/diagrama-del-grupo-light.png",
       "dark": "/funcionalidades/diagrama-del-grupo-dark.png"
     }
-  },
-  "clients": {
-    "title": "Empresas que confían en nosotros",
-    "clients": [
-      "PldSpace",
-      "Factorial",
-      "Axa",
-      "Multiverse",
-      "Caballero",
-      "Taxdown",
-      "Andbank",
-      "MyInvestor",
-      "Osborne",
-      "Fanalca",
-      "Sade"
-    ]
-  },
-  "features": {
-    "title": "Principales Funcionalidades",
-    "description": "Sttok digitaliza la gestión societaria para Empresas y Grupos de Sociedades, optimizando tareas clave como la administración del libro de socios, juntas de accionistas, consejos y planes de incentivos.",
-    "items": [
-      {
-        "icon": "Icon01",
-        "title": "Libro de Socios",
-        "description": "Gestiona el libro de socios con datos siempre actualizados y accesibles."
-      },
-      {
-        "icon": "Icon02",
-        "title": "Planes de Incentivos",
-        "description": "Automatiza la creación y gestión de stock options y otros planes de incentivos."
-      },
-      {
-        "icon": "Icon03",
-        "title": "Simulador de Operaciones",
-        "description": "Calcula ampliaciones de capital y escenarios de inversión con precisión."
-      },
-      {
-        "icon": "Icon04",
-        "title": "Juntas de Accionistas",
-        "description": "Convoca, vota y gestiona digitalmente juntas de accionistas."
-      },
-      {
-        "icon": "Icon05",
-        "title": "Consejos de Administración",
-        "description": "Gestiona digitalmente las reuniones y votaciones del Consejo."
-      },
-      {
-        "icon": "Icon06",
-        "title": "Documentación Societaria",
-        "description": "Genera y administra actas, certificados y otros documentos de manera automática."
-      },
-      {
-        "icon": "Icon07",
-        "title": "Firma digital",
-        "description": "Firma digital integrada para poder firmar documentos de manera automática."
-      },
-      {
-        "icon": "Icon08",
-        "title": "Acceso para los socios",
-        "description": "Puedes dar acceso a los inversores para que puedan tener disponible la documentación e información societaria."
-      },
-      {
-        "icon": "Icon09",
-        "title": "Portal del Inversor",
-        "description": "Sttok te ofrece la posibilidad de tener el Portal del Inversor completamente integrado en tu página web"
-      },
-      {
-        "icon": "SecondaryBook",
-        "title": "Transacciones",
-        "description": "Registro de todas las operaciones: ampliaciones, compraventas, transmisiones, canjes, herencias, reducciones, renumeraciones, etc."
-      }
-    ]
   },
   "testimonials": {
     "title": "Testimonios de Clientes",
@@ -99,6 +27,83 @@
         "img": "/logo-factorial-mini.png",
         "description": "Sttok nos ha permitido digitalizar el proceso de creación y firma de documentos para nuestros planes de incentivos",
         "stars": 5
+      }
+    ]
+  },
+  "includes": {
+    "eyebrow": "Qué incluye",
+    "title": "Lo que usa una empresa con muchos socios o un grupo de sociedades",
+    "allLink": "Ver todas las funcionalidades de Sttok"
+  },
+  "situations": {
+    "eyebrow": "Casos habituales",
+    "title": "Situaciones habituales en empresas con muchos socios y grupos",
+    "guideLabel": "Ver cómo",
+    "rows": [
+      {
+        "situation": "Fallece un accionista de la familia",
+        "action": "Registra la herencia, reparte la numeración entre los herederos y deja la cotitularidad con su representante.",
+        "href": "/guias/herencia-de-participaciones"
+      },
+      {
+        "situation": "La junta necesita el quórum de cientos de socios",
+        "action": "Recoge delegaciones firmadas y votos anticipados, y calcula el quórum con lo ya comprometido.",
+        "href": "/funcionalidades/voto-electronico-en-juntas"
+      },
+      {
+        "situation": "Entra una filial nueva en el grupo",
+        "action": "La sociedad entra con su histórico y aparece en el diagrama con su cadena de control.",
+        "href": "/funcionalidades/diagrama-del-grupo"
+      },
+      {
+        "situation": "Hay que identificar al titular real",
+        "action": "Calcula quién supera el 25 % del capital o de los votos al final de la cadena.",
+        "href": "/funcionalidades/titular-real"
+      },
+      {
+        "situation": "Caduca el cargo de un consejero",
+        "action": "Avisa de cada cargo que caduca y registra el nuevo nombramiento con su vigencia.",
+        "href": "/funcionalidades/consejo-de-administracion"
+      },
+      {
+        "situation": "Los estatutos fijan una valoración anual",
+        "action": "Emite el certificado de valor con la valoración que la sociedad tenga configurada.",
+        "href": "/funcionalidades/certificados-de-titularidad-y-valor"
+      }
+    ],
+    "columns": {
+      "situation": "Situación",
+      "action": "Qué hace Sttok",
+      "guide": "Más información"
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Preguntas frecuentes de empresas y grupos",
+    "items": [
+      {
+        "q": "¿Sirve para una empresa familiar con varias ramas?",
+        "a": "Sí. El panel agrupa a los accionistas por rama familiar y el libro recoge las herencias, la cotitularidad y el usufructo de cada generación."
+      },
+      {
+        "q": "¿Puedo llevar todas las sociedades del grupo?",
+        "a": "Sí. Cada sociedad tiene su libro, sus órganos y sus permisos, y una sociedad del grupo puede ser socia de otra. La portada reúne lo pendiente de todas."
+      },
+      {
+        "q": "¿Funciona con cientos o miles de socios?",
+        "a": "Sí. Sttok gestiona más de 250.000 socios y accionistas, con sociedades de cientos y de miles de socios."
+      },
+      {
+        "q": "¿Cada persona ve solo sus sociedades?",
+        "a": "Sí. Los permisos se dan por sociedad y por secciones, así que cada persona ve y gestiona solo lo que le corresponde."
+      },
+      {
+        "q": "¿Cuánto cuesta para un grupo?",
+        "a": "Para grupos y sociedades con más de 50 socios hay un plan a medida, que es el caso más habitual. Los planes estándar están en la página de precios."
+      },
+      {
+        "q": "¿Sirve para sociedades de Latinoamérica?",
+        "a": "La plataforma se adapta a la denominación de cada país: libro de accionistas, asamblea general de accionistas, junta directiva o directorio. La adecuación a la normativa de cada país se valora caso por caso."
       }
     ]
   }

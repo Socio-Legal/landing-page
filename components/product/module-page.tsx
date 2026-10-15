@@ -34,10 +34,21 @@ const Arrow = () => (
   />
 );
 
+/** Página de cada módulo en inglés; las que no tienen versión inglesa, sin enlace. */
+const HREF_EN: Record<string, string> = {
+  socios: "/en/partners-book",
+  juntas: "/en/shareholder-meetings",
+  incentivos: "/en/incentive-plans",
+  simulador: "/en/operation-drafts",
+  secundario: "/en/secondary-market",
+};
+
 /** Textos del catálogo en el idioma de la página; el castellano es el original. */
 const enIngles = (m: Modulo, en: boolean) => ({
   titulo: (en && m.en?.titulo) || m.titulo,
   resumen: (en && m.en?.resumen) || m.resumen,
+  href: en ? HREF_EN[m.id] : m.href,
+  total: m.funcionalidades.length,
   funcionalidades: m.funcionalidades.map((f) => ({
     titulo: (en && f.en?.titulo) || f.titulo,
     descripcion: (en && f.en?.descripcion) || f.descripcion,
@@ -51,6 +62,12 @@ type ModulePageProps = {
   ns: string;
   /** Módulos del catálogo (lib/funcionalidades-catalogo.ts) que cubre la página. */
   modulos: string[];
+  /**
+   * Páginas de solución: por módulo, las funcionalidades (títulos del
+   * catálogo en castellano) que importan a ese perfil, en ese orden. Sin
+   * selección se muestran todas.
+   */
+  seleccion?: Record<string, string[]>;
 };
 
 /**
@@ -59,14 +76,25 @@ type ModulePageProps = {
  * /producto. La lista de funcionalidades sale del catálogo, la misma fuente
  * que /funcionalidades, para que las dos páginas no se contradigan.
  */
-const ModulePage: FC<ModulePageProps> = ({ ns, modulos }) => {
+const ModulePage: FC<ModulePageProps> = ({ ns, modulos, seleccion }) => {
   const { t, i18n } = useTranslation([ns, "product-hero-section"]);
   const en = i18n.language === "en";
 
   const hero = t(`${ns}:hero`, { returnObjects: true }) as HeroSectionProps;
-  const grupos = CATALOGO.filter((m) => modulos.includes(m.id)).map((m) =>
-    enIngles(m, en),
-  );
+  const grupos = modulos
+    .map((id) => CATALOGO.find((m) => m.id === id))
+    .filter((m): m is Modulo => Boolean(m))
+    .map((m) => {
+      const elegidas = seleccion?.[m.id];
+      if (!elegidas) return enIngles(m, en);
+      const filtrado = {
+        ...m,
+        funcionalidades: elegidas
+          .map((t) => m.funcionalidades.find((f) => f.titulo === t))
+          .filter((f): f is Modulo["funcionalidades"][number] => Boolean(f)),
+      };
+      return { ...enIngles(filtrado, en), total: m.funcionalidades.length };
+    });
   const rows = asArray<SituationRow>(
     t(`${ns}:situations.rows`, { returnObjects: true }),
   );
@@ -107,6 +135,7 @@ const ModulePage: FC<ModulePageProps> = ({ ns, modulos }) => {
               "Banktrack",
               "LegalPigeon",
               "Cabiedes",
+              "Shakers",
             ]}
           />
         </div>
@@ -129,7 +158,14 @@ const ModulePage: FC<ModulePageProps> = ({ ns, modulos }) => {
               >
                 <div className="md:col-span-4">
                   <h3 className="font-serif text-2xl font-normal leading-7 text-foreground">
-                    {g.titulo}
+                    {seleccion && g.href ? (
+                      <Link href={g.href} className={linkClass}>
+                        {g.titulo}
+                        <Arrow />
+                      </Link>
+                    ) : (
+                      g.titulo
+                    )}
                   </h3>
                   <p className="mt-3 max-w-[30ch] text-[0.9375rem] leading-relaxed text-muted-foreground">
                     {g.resumen}
