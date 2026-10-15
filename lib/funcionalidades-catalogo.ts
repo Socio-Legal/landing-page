@@ -82,7 +82,7 @@ export const CATALOGO: Modulo[] = [
     href: "/soluciones/secretaria-del-consejo",
     funcionalidades: [
       { titulo: "Órgano de administración", descripcion: "Consejo de administración, administrador único o administradores, con su composición.", en: { titulo: "Governing body", descripcion: "Board of directors, sole director or joint directors, with their composition." } },
-      { titulo: "Convocar el consejo", descripcion: "Fecha, orden del día, convocados y revisión, con su invitación de calendario.", href: `${F}/consejo-de-administracion`, en: { titulo: "Calling a board meeting", descripcion: "Date, agenda, attendees and review, with its calendar invitation." } },
+      { titulo: "Convocar el consejo", descripcion: "Fecha, orden del día, convocados y revisión, con envío opcional por correo y cita de calendario.", href: `${F}/consejo-de-administracion`, en: { titulo: "Calling a board meeting", descripcion: "Date, agenda, attendees and review, with optional email delivery and a calendar invitation." } },
       { titulo: "Orden del día", descripcion: "Cada punto para debatir o para acordar, con ponente, tiempo y documentación.", en: { titulo: "Agenda", descripcion: "Each item for discussion or for resolution, with presenter, time and documents." } },
       { titulo: "Calendario del consejo", descripcion: "Las reuniones del año reservadas, con la respuesta de cada consejero.", en: { titulo: "Board calendar", descripcion: "The year's meetings booked, with each director's response." } },
       { titulo: "Acta y certificación", descripcion: "El acta del consejo y el certificado de cada acuerdo.", en: { titulo: "Minutes and certification", descripcion: "The board minutes and the certificate for each resolution." } },
