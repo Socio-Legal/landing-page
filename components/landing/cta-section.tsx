@@ -7,7 +7,12 @@ import { useTranslation } from "react-i18next";
 
 import { trackDemoClick, trackMeetingClick } from "@/lib/analytics";
 
-const CallToActionSection: FC = () => {
+type CallToActionSectionProps = {
+  /** Sustituye al botón secundario por defecto, que enlaza a /producto. */
+  secondary?: { text: string; link: string };
+};
+
+const CallToActionSection: FC<CallToActionSectionProps> = ({ secondary }) => {
   const { t } = useTranslation("home-cta-section");
 
   return (
@@ -35,11 +40,11 @@ const CallToActionSection: FC = () => {
               <ArrowRightIcon className="h-4 w-4" />
             </Link>
             <Link
-              href={t("header.secondaryButtonLink")}
+              href={secondary?.link ?? t("header.secondaryButtonLink")}
               onClick={() => trackDemoClick("cta-final-secondary")}
               className="inline-flex items-center gap-2 rounded-md border border-navy-muted/40 bg-transparent px-5 py-2.5 text-sm font-medium text-navy-foreground hover:bg-navy-foreground/10 transition-colors"
             >
-              {t("header.secondaryButtonText")}
+              {secondary?.text ?? t("header.secondaryButtonText")}
             </Link>
           </div>
         </div>

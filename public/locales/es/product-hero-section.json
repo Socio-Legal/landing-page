@@ -5,72 +5,329 @@
     "eu": "Datos cifrados en la UE"
   },
   "metadata": {
-    "title": "Producto",
-    "description": "Todos los datos y documentación societaria actualizada en un único sitio. Gestiona socios, inversores, planes de incentivos, simulación de operaciones, juntas de accionistas, consejos, actas y escrituras en pocos minutos.",
-    "keywords": "planes de incentivos, phantoms, opciones sobre acciones, compensación flexible, gestión de incentivos, vesting"
+    "title": "Libro de socios, juntas y consejo de administración: el producto",
+    "description": "Sttok lleva el libro de socios con numeración por rangos, las juntas y el consejo hasta el acta certificada, los planes de incentivos, los grupos de sociedades y su documentación.",
+    "keywords": "libro de socios, libro registro de acciones nominativas, junta general, consejo de administración, grupos de sociedades, titular real, planes de incentivos"
   },
   "hero": {
     "slogan": "Producto",
-    "title": "Producto",
-    "description": "Todos los datos y documentación societaria actualizada en un único sitio. Gestiona socios, inversores, planes de incentivos, simulación de operaciones, juntas de accionistas, consejos, actas y escrituras en pocos minutos.",
+    "title": "Libro de socios, juntas y consejo de administración en una sola plataforma",
+    "description": "Sttok lleva el registro societario de tu empresa: el libro de socios con la numeración por rangos, las juntas y el consejo hasta el acta certificada, los planes de incentivos y los grupos de sociedades. Cada operación queda documentada y firmada en el mismo sitio.",
     "button": {
-      "text": "Prueba ahora",
-      "link": "https://app.sttok.com/#/demo"
+      "text": "Solicitar demo",
+      "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/hero/hero-product-dark.png",
-      "dark": "/hero/hero-product-light.png"
+      "light": "/hero/hero-product-light.png",
+      "dark": "/hero/hero-product-dark.png"
     }
   },
-  "items": [
-    {
-      "icon": "Icon01",
-      "title": "Libro de Socios (Captable)",
-      "description": "Libro de socios digital para gestionar el equity. Actualizado sin errores.",
-      "link": "/libro-de-socios/"
+  "modules": {
+    "eyebrow": "Módulos",
+    "title": "Qué hace Sttok en cada parte de la vida societaria",
+    "groups": [
+      {
+        "title": "Socios y libro registro",
+        "href": "/libro-de-socios",
+        "items": [
+          {
+            "title": "Libro de socios oficial",
+            "description": "Libro registro de socios o de acciones nominativas, con clases, numeración por rangos y exportación en formato legalizable."
+          },
+          {
+            "title": "Transmisiones y cargas",
+            "description": "Compraventas, herencias, donaciones, splits y renumeraciones. Prenda, usufructo, nuda propiedad, cotitularidad y opciones quedan como posiciones separadas."
+          },
+          {
+            "title": "Certificados de titularidad y de valor",
+            "description": "El certificado que pide el banco o el notario, y el valor de las participaciones según la valoración de la sociedad.",
+            "href": "/funcionalidades/certificados-de-titularidad-y-valor"
+          },
+          {
+            "title": "Alta desde las escrituras",
+            "description": "Sttok lee las escrituras con IA, encadena las operaciones y señala los huecos del histórico.",
+            "href": "/funcionalidades/lectura-de-escrituras-con-ia"
+          },
+          {
+            "title": "Portal del accionista",
+            "description": "Cada socio entra con su usuario y ve su posición, sus certificados y las juntas a las que está convocado.",
+            "href": "/funcionalidades/portal-del-accionista"
+          },
+          {
+            "title": "Acreedores y notas convertibles",
+            "description": "Cada nota convertible con la ficha de su acreedor, junto al resto del registro de la sociedad."
+          }
+        ],
+        "summary": "El registro oficial de quién es socio, con qué y desde cuándo."
+      },
+      {
+        "title": "Juntas y consejo",
+        "href": "/juntas-consejos",
+        "items": [
+          {
+            "title": "Junta general",
+            "description": "Convocatoria, acreditación, delegación de voto con firma, voto anticipado y votación en vivo. El acta se compone con el resultado.",
+            "href": "/funcionalidades/voto-electronico-en-juntas"
+          },
+          {
+            "title": "Consejo de administración",
+            "description": "Convocatoria con orden del día, comités, acta y certificación de acuerdos.",
+            "href": "/funcionalidades/consejo-de-administracion"
+          },
+          {
+            "title": "Cargos y poderes",
+            "description": "Consejeros, administradores, apoderados y auditores con su vigencia, el alcance de cada poder y su inscripción."
+          },
+          {
+            "title": "Reglas de la sociedad",
+            "description": "Estatutos y pactos ordenados por tema, con la mayoría que exige cada acuerdo y el calendario de obligaciones."
+          }
+        ],
+        "summary": "Los órganos de la sociedad, de la convocatoria al acta certificada."
+      },
+      {
+        "title": "Grupos de sociedades",
+        "href": "/soluciones/grupos-de-sociedades",
+        "items": [
+          {
+            "title": "Todas las sociedades en una portada",
+            "description": "Lo pendiente de cada sociedad del grupo, ordenado por plazo, con permisos por sociedad."
+          },
+          {
+            "title": "Diagrama del grupo",
+            "description": "Participadas y cadena de control a cualquier fecha. Una sociedad del grupo puede ser socia de otra.",
+            "href": "/funcionalidades/diagrama-del-grupo"
+          },
+          {
+            "title": "Titular real",
+            "description": "Quién supera el 25 % del capital o de los votos al final de la cadena, calculado desde los libros.",
+            "href": "/funcionalidades/titular-real"
+          },
+          {
+            "title": "Sociedades nuevas",
+            "description": "Cada sociedad entra con su histórico. Si se acaba de constituir, Sttok lee la escritura de constitución."
+          }
+        ],
+        "summary": "Todas las sociedades del grupo y quién controla cada una."
+      },
+      {
+        "title": "Planes de incentivos",
+        "href": "/planes-de-incentivos",
+        "items": [
+          {
+            "title": "Phantom shares y stock options",
+            "description": "Cada plan con sus instrumentos, su pool y el acuerdo de junta que lo aprueba."
+          },
+          {
+            "title": "Vesting y asignaciones",
+            "description": "Calendario de consolidación por beneficiario, con su carta de invitación firmada."
+          },
+          {
+            "title": "Portal del beneficiario",
+            "description": "Cada empleado ve su asignación, lo consolidado y los documentos que ha firmado.",
+            "href": "/funcionalidades/portal-del-beneficiario"
+          },
+          {
+            "title": "Tender offers y liquidez",
+            "description": "Ventanas de compra sobre los derechos consolidados, con su retención y su registro en el plan.",
+            "href": "/funcionalidades/liquidez-planes-de-incentivos"
+          }
+        ],
+        "summary": "Los planes de empleados y directivos, conectados al libro."
+      },
+      {
+        "title": "Simulador de operaciones",
+        "href": "/simulador",
+        "items": [
+          {
+            "title": "Ampliaciones y reducciones",
+            "description": "El efecto de cada operación sobre el libro real, incluidos el pool y la conversión de notas."
+          },
+          {
+            "title": "Compraventas y notas convertibles",
+            "description": "Quién queda con qué porcentaje después de cada paso, encadenando varias operaciones."
+          },
+          {
+            "title": "Cascada de liquidación",
+            "description": "Qué recibe cada socio en una venta, con las preferencias de cada clase."
+          },
+          {
+            "title": "Borradores de documentos",
+            "description": "La operación simulada sale con sus borradores en Word para el notario o el despacho."
+          }
+        ],
+        "summary": "El efecto de una operación antes de firmarla."
+      },
+      {
+        "title": "Mercado secundario",
+        "href": "/mercado-secundario",
+        "items": [
+          {
+            "title": "Ofertas de venta",
+            "description": "Un socio publica cuántas acciones vende, a qué precio y en qué plazo."
+          },
+          {
+            "title": "Ofertas de compra",
+            "description": "La sociedad o un socio lanza una oferta de compra a varios socios a la vez."
+          },
+          {
+            "title": "Libro de ofertas",
+            "description": "Precio medio, volumen y estado de cada oferta, con su histórico."
+          },
+          {
+            "title": "Registro en el libro",
+            "description": "Cada operación ejecutada se anota en el libro de socios con su documentación. Se contrata como módulo adicional."
+          }
+        ],
+        "summary": "Compraventas entre socios con su registro en el libro."
+      },
+      {
+        "title": "Documentos, firma y comunicaciones",
+        "items": [
+          {
+            "title": "Documentos y libros de actas",
+            "description": "Repositorio por sociedad con los libros de actas por órgano y ejercicio, preparados para legalizar.",
+            "href": "/funcionalidades/libro-de-actas"
+          },
+          {
+            "title": "Firma electrónica",
+            "description": "Sobres de firma con recordatorios y plazos. Incluida en los planes Avanzado y Pro."
+          },
+          {
+            "title": "Comunicaciones certificadas",
+            "description": "Cada convocatoria y cada aviso queda registrado con su certificado de envío."
+          },
+          {
+            "title": "Sttok AI",
+            "description": "Preguntas sobre el registro en lenguaje natural, con la fuente enlazada en cada respuesta."
+          }
+        ],
+        "summary": "Lo que se firma y se envía, guardado por sociedad."
+      }
+    ],
+    "lede": "Todos los módulos trabajan sobre el mismo registro. Lo que cambia en el libro se refleja en la junta, en el certificado y en el diagrama del grupo.",
+    "linkLabel": "Ver",
+    "allLink": "Ver todas las funcionalidades, una a una"
+  },
+  "situations": {
+    "eyebrow": "Casos habituales",
+    "title": "Situaciones frecuentes y qué hace Sttok en cada una",
+    "columns": {
+      "situation": "Situación",
+      "action": "Qué hace Sttok",
+      "guide": "Guía"
     },
-    {
-      "icon": "Icon02",
-      "title": "Planes de Incentivos",
-      "description": "La forma más profesional de crear y mantener todo tipo de planes.",
-      "link": "/planes-de-incentivos/"
-    },
-    {
-      "icon": "Icon03",
-      "title": "Simulador de Operaciones",
-      "description": "Calcula todo tipo de operaciones con los datos reales actualizados.",
-      "link": "/simulador/"
-    },
-    {
-      "icon": "Icon04",
-      "title": "Juntas Accionistas",
-      "description": "Gestiona las juntas: Convocatoria, delegaciones, votos, etc.",
-      "link": "/juntas-consejos/"
-    },
-    {
-      "icon": "Icon05",
-      "title": "Ofertas de Compra",
-      "description": "Gestiona y ejecuta operaciones de secundario. Tender offers."
-    },
-    {
-      "icon": "Icon06",
-      "title": "Documentación Societaria",
-      "description": "Genera documentos, escrituras, certificados o actas en segundos."
-    },
-    {
-      "icon": "Icon07",
-      "title": "Grupos de Sociedades",
-      "description": "Todas las sociedades bajo un sistema digital de gestión."
-    },
-    {
-      "icon": "Icon08",
-      "title": "Consejos de Administración",
-      "description": "Gestiona digitalmente la convocatoria, delegaciones, votos, etc."
-    },
-    {
-      "icon": "Icon09",
-      "title": "Firma Electrónica Integrada",
-      "description": "Firma electrónica integrada para todos los documentos y operaciones."
+    "guideLabel": "Leer la guía",
+    "rows": [
+      {
+        "situation": "El banco pide un certificado de titularidad",
+        "action": "Lo genera desde el libro con los datos del día.",
+        "href": "/guias/plantillas-societarias"
+      },
+      {
+        "situation": "Toca convocar la junta general",
+        "action": "Prepara la convocatoria, controla las delegaciones y compone el acta con el resultado de la votación.",
+        "href": "/guias/junta-general-telematica"
+      },
+      {
+        "situation": "Un socio quiere vender",
+        "action": "Gestiona el derecho de adquisición preferente con sus comunicaciones y plazos, y anota la transmisión por rangos.",
+        "href": "/guias/derecho-de-adquisicion-preferente"
+      },
+      {
+        "situation": "Hay que legalizar el libro registro",
+        "action": "Exporta el libro en el formato que se presenta en el Registro Mercantil.",
+        "href": "/guias/libro-registro-socios-legalizacion"
+      },
+      {
+        "situation": "El libro lleva años sin actualizar",
+        "action": "Reconstruye el histórico a partir de las escrituras durante el onboarding.",
+        "href": "/guias/reconstruir-libro-de-socios"
+      },
+      {
+        "situation": "Hay que identificar al titular real del grupo",
+        "action": "Calcula la titularidad última sobre la cadena completa de sociedades.",
+        "href": "/guias/titular-real-grupos-sociedades"
+      },
+      {
+        "situation": "Fallece un socio",
+        "action": "Registra la herencia, reparte la numeración entre los herederos y deja la cotitularidad con su representante.",
+        "href": "/guias/herencia-de-participaciones"
+      }
+    ]
+  },
+  "onboarding": {
+    "eyebrow": "Puesta en marcha",
+    "title": "Cómo llegan tus datos a Sttok",
+    "paragraphs": [
+      "La puesta en marcha de una sociedad lleva unas horas. En grupos con muchas sociedades, el plazo depende del número de sociedades y del histórico que haya que cargar.",
+      "Si el libro lleva años sin actualizar, Sttok lo reconstruye a partir de las escrituras. Si hoy los datos están en Excel, en Carta o en el despacho, la migración forma parte del mismo proceso."
+    ],
+    "link": {
+      "text": "Cómo se migra a Sttok",
+      "href": "/soluciones/migrar"
     }
-  ]
+  },
+  "figures": {
+    "eyebrow": "Cifras",
+    "title": "Sociedades que ya llevan su registro en Sttok",
+    "items": [
+      {
+        "value": "+250",
+        "label": "clientes"
+      },
+      {
+        "value": "+500",
+        "label": "sociedades gestionadas"
+      },
+      {
+        "value": "+250.000",
+        "label": "socios y accionistas"
+      },
+      {
+        "value": "+20.000 M€",
+        "label": "en equity bajo gestión"
+      }
+    ],
+    "note": "Más de 250 clientes gestionan más de 500 sociedades. La media de dos sociedades por cliente refleja el perfil de grupo de quienes usan Sttok."
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Preguntas frecuentes sobre el producto",
+    "items": [
+      {
+        "q": "¿Qué es Sttok?",
+        "a": "Una plataforma española para llevar el libro de socios, las juntas, el consejo de administración, los planes de incentivos y los grupos de sociedades. Más de 250 clientes gestionan con ella más de 500 sociedades."
+      },
+      {
+        "q": "¿Sttok sustituye al libro registro de socios?",
+        "a": "Sttok lleva el libro de socios o el libro registro de acciones nominativas como registro oficial. Lo exporta en el formato que se presenta para su legalización en el Registro Mercantil."
+      },
+      {
+        "q": "¿Puedo gestionar todas las sociedades de mi grupo?",
+        "a": "Sí. Cada sociedad tiene su libro, sus órganos y sus permisos, y una sociedad del grupo puede ser socia de otra. El diagrama muestra la cadena de control a cualquier fecha."
+      },
+      {
+        "q": "¿Cuánto tarda la puesta en marcha?",
+        "a": "Unas horas por sociedad. En grupos con muchas sociedades, el plazo depende del número de sociedades y del histórico que haya que cargar."
+      },
+      {
+        "q": "¿Qué tiene coste adicional?",
+        "a": "El mercado secundario se contrata como módulo aparte. La firma electrónica integrada está incluida en los planes Avanzado y Pro."
+      },
+      {
+        "q": "¿Sirve para sociedades de Latinoamérica?",
+        "a": "La plataforma se adapta a la denominación de cada país: libro de accionistas, asamblea general de accionistas, junta directiva o directorio. La adecuación a la normativa de cada país se valora caso por caso."
+      },
+      {
+        "q": "¿Dónde se guardan los datos?",
+        "a": "Cifrados y alojados en la Unión Europea. Sttok tiene la certificación ISO 27001 y cumple el RGPD."
+      }
+    ]
+  },
+  "cta": {
+    "secondaryText": "Ver precios",
+    "secondaryLink": "/precios"
+  },
+  "clientsLabel": "Más de 250 clientes llevan su registro en Sttok"
 }
