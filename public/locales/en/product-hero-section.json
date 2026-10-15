@@ -226,7 +226,7 @@
       },
       {
         "situation": "The register is years out of date",
-        "action": "It rebuilds the history from the deeds during onboarding."
+        "action": "It rebuilds the history from the deeds in a few minutes."
       },
       {
         "situation": "The group's beneficial owner has to be identified",
@@ -242,8 +242,8 @@
     "eyebrow": "Getting started",
     "title": "How your data gets into Sttok",
     "paragraphs": [
-      "Setting up a company takes a few hours. For groups with many companies, the time depends on the number of companies and on the history to be loaded.",
-      "If the register is years out of date, Sttok rebuilds it from the deeds. If your data is in Excel, in Carta or with your law firm, migration is part of the same process."
+      "Setting up a company takes a few hours. For groups with many companies, the time depends on the number of companies.",
+      "If the register is years out of date, Sttok rebuilds it from the deeds in a few minutes. If your data is in Excel, in Carta or with your law firm, migration is part of the same process."
     ]
   },
   "figures": {
@@ -287,7 +287,7 @@
       },
       {
         "q": "How long does it take to get started?",
-        "a": "A few hours per company. For groups with many companies, the time depends on the number of companies and on the history to be loaded."
+        "a": "A few hours per company. For groups with many companies, the time depends on the number of companies."
       },
       {
         "q": "What costs extra?",
