@@ -5,90 +5,17 @@
     "keywords": "shareholder meetings, board meetings, digital meeting management, convocations, vote delegations, digital minutes"
   },
   "hero": {
-    "slogan": "Product",
-    "title": "Meetings and Boards",
-    "description": "At Sttok, we understand the importance of meetings and boards for the proper functioning and decision-making in a company. With Sttok, you can convene, manage delegations, votes, and generate minutes and certificates digitally in just a few minutes.",
+    "slogan": "Meetings and boards",
+    "title": "General meetings and board of directors: notice, voting and minutes",
+    "description": "Sttok runs the general meeting and the board of directors from the notice to the certified minutes. It tracks proxies and quorum, collects early and live votes, and drafts the minutes with the result of each vote.",
     "button": {
-      "text": "Manage Your Meeting",
-      "link": "https://app.sttok.com/#/demo"
+      "text": "Schedule demo",
+      "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/hero/hero-product-juntas-consejos.png",
-      "dark": "/hero/hero-product-juntas-consejos.png"
+      "light": "/modulos/juntas-consejos-light.png",
+      "dark": "/modulos/juntas-consejos-dark.png"
     }
-  },
-  "topFeatures": {
-    "title": "Main Features",
-    "description": "Optimize the management of meetings and boards with tools that simplify each step of the process.",
-    "items": [
-      {
-        "title": "Digital Convocation",
-        "description": "Send digital convocations with all necessary information to your shareholders and board members in one click.",
-        "animation": "AnimatedBeam01_ShareholderMeeting"
-      },
-      {
-        "title": "Vote and Delegation Management",
-        "description": "Allow shareholders to delegate their votes and manage voting securely and transparently.",
-        "animation": "AnimatedBeam03"
-      },
-      {
-        "title": "Automatic Minutes Generation",
-        "description": "Create meeting minutes and certificates of agreements automatically in just a few minutes.",
-        "animation": "AnimatedDocScanner"
-      }
-    ]
-  },
-  "clients": {
-    "title": "CLIENTS USING MEETINGS AND BOARDS",
-    "clients": [
-      "Factorial",
-      "Shakers",
-      "Taxdown",
-      "PldSpace",
-      "MyInvestor",
-      "Multiverse",
-      "Barkibu",
-      "Andbank",
-      "Osborne",
-      "Fanalca",
-      "Sade"
-    ]
-  },
-  "features": {
-    "title": "All Features",
-    "description": "Explore all the features that make our product unique.",
-    "items": [
-      {
-        "icon": "Icon01",
-        "title": "Meeting Convocation",
-        "description": "Create and send meeting convocations to shareholders and board members digitally, with all relevant details."
-      },
-      {
-        "icon": "Icon02",
-        "title": "Digital Vote Delegations",
-        "description": "Facilitate secure vote delegation, allowing partners to represent their interests in meetings."
-      },
-      {
-        "icon": "Icon03",
-        "title": "Electronic Voting",
-        "description": "Manage agreement voting with full transparency and efficiency, ensuring real-time results."
-      },
-      {
-        "icon": "Icon04",
-        "title": "Automatic Minutes",
-        "description": "Generate minutes and certificates of agreements at the end of each meeting, saving time and eliminating errors."
-      },
-      {
-        "icon": "Icon05",
-        "title": "Certifications",
-        "description": "Automatic generation of certifications for convocations, delegations, and voting."
-      },
-      {
-        "icon": "Icon06",
-        "title": "Meeting History",
-        "description": "Access the complete history of all previous meetings and agreements, all stored in the cloud."
-      }
-    ]
   },
   "testimonials": {
     "title": "What Our Clients Say",
@@ -126,23 +53,71 @@
   },
   "faq": {
     "eyebrow": "FAQ",
-    "title": "Meetings and boards FAQs",
+    "title": "Frequently asked questions about meetings and boards",
     "items": [
       {
-        "q": "Can I convene meetings digitally?",
-        "a": "Yes. Sttok manages convening, proxies and voting, and generates the minutes instantly."
+        "q": "Can I call the general meeting from Sttok?",
+        "a": "Yes. The notice is prepared with its agenda and documents, sent to each shareholder, and the proof of delivery is kept."
       },
       {
-        "q": "How do voting proxies work?",
-        "a": "They are digital, with full record and traceability of who delegates to whom."
+        "q": "How does proxy voting work?",
+        "a": "The shareholder chooses a proxy and instructions and signs the proxy. The meeting shows at all times how much capital has been delegated."
       },
       {
-        "q": "Does it calculate quorums?",
-        "a": "Automatically, using the real, up-to-date registry data."
+        "q": "Does it calculate the quorum?",
+        "a": "Yes. It calculates the quorum for first and second call with confirmed attendance, proxies and early votes."
       },
       {
-        "q": "Does it also work for boards of directors?",
-        "a": "Yes: convening, proxies, voting and minutes for boards, with the same guarantees."
+        "q": "Does Sttok provide the video call?",
+        "a": "No. The company uses its usual tool. Sttok handles attendance, voting and the minutes."
+      },
+      {
+        "q": "Does it also cover the board of directors?",
+        "a": "Yes. It calls board meetings with their agenda, keeps the minutes, certifies resolutions and records officers with their terms."
+      },
+      {
+        "q": "Does it work for companies in Latin America?",
+        "a": "The platform adapts to each country's terminology: shareholder ledger, general shareholders' meeting, board of directors. Compliance with each country's regulations is assessed case by case."
+      }
+    ]
+  },
+  "includes": {
+    "eyebrow": "What's included",
+    "title": "Everything the general meeting and the board cover"
+  },
+  "situations": {
+    "eyebrow": "Common cases",
+    "title": "Common situations in meetings and boards",
+    "columns": {
+      "situation": "Situation",
+      "action": "What Sttok does",
+      "guide": "More information"
+    },
+    "guideLabel": "See how",
+    "rows": [
+      {
+        "situation": "The annual general meeting has to be called",
+        "action": "The notice is prepared with the agenda and documents, sent to each shareholder and kept with its proof of delivery."
+      },
+      {
+        "situation": "Many shareholders cannot attend",
+        "action": "Signed proxies and early votes are collected, and the quorum is calculated with what is already committed."
+      },
+      {
+        "situation": "The meeting is held remotely",
+        "action": "Live voting is run item by item. The company provides the video call with its own tool."
+      },
+      {
+        "situation": "A resolution needs an enhanced majority",
+        "action": "The majority is derived for each item, with a warning when a resolution triggers withdrawal rights."
+      },
+      {
+        "situation": "The board meets every quarter",
+        "action": "Dates are booked, the agenda starts from the previous meeting and the notice goes out with a calendar invitation."
+      },
+      {
+        "situation": "The minute book has to be legalised",
+        "action": "One book is kept per governing body and financial year, with its legalisation recorded."
       }
     ]
   }

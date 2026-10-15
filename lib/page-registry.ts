@@ -110,8 +110,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageJuntasConsejos,
     meta: {
       en: {
-        title: "Meetings and Boards",
-        description: "Efficiently manage shareholder meetings and board meetings with Sttok, including convocations, delegations, votes, and minutes.",
+        title: "General meetings and board of directors: notice, voting and minutes",
+        description: "Notice, signed proxies, early and live voting, quorum, minutes and certification for the general meeting and the board of directors.",
       keywords: "shareholder meetings, board meetings, digital meeting management, convocations, vote delegations, digital minutes",
       },
     },
@@ -122,8 +122,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageLibroDeSocios,
     meta: {
       en: {
-        title: "Shareholder Register",
-        description: "Official Shareholder Register, updated and error-free. Stop using inefficient Excel sheets. A single shareholder register ready to submit to the Registry and to easily calculate operations.",
+        title: "Digital shareholder register: numbered share ranges, encumbrances and certificates",
+        description: "Sttok keeps the shareholder register as the official record, with transfers by share range, encumbrances, co-owners and certificates, exportable for legalisation.",
       keywords: "Shareholder Register, Shareholders, Registry, Operations, Excel",
       },
     },
@@ -134,8 +134,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageMercadoSecundario,
     meta: {
       en: {
-        title: "Secondary Market — share transfers between partners",
-        description: "Organize share transfers between partners and tender offers with automatic recording in the shareholder registry.",
+        title: "Secondary market for shares between shareholders",
+        description: "Share sales between shareholders and purchase offers to several shareholders at once, recorded in the shareholder register with their documents. Add-on module.",
       keywords: "secondary market, share transfers, tender offer, liquidity",
       },
     },
@@ -146,8 +146,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PagePlanesDeIncentivos,
     meta: {
       en: {
-        title: "Incentive Plans",
-        description: "Manage incentive plans (phantom share plan, stock option plans, etc.) for your company efficiently and professionally.",
+        title: "Incentive plans: phantom shares and stock options",
+        description: "Pool approved by the general meeting, grants, vesting, invitation letters, beneficiary portal and tender offers, calculated on the actual shareholder register.",
       keywords: "incentive plans, phantoms, stock options, flexible compensation, incentive management, vesting",
       },
     },
@@ -218,8 +218,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageSimulador,
     meta: {
       en: {
-        title: "Operations Simulator",
-        description: "Simulate and calculate any corporate operation with precision in seconds, including investment rounds, capital increases, and more.",
+        title: "Corporate transaction simulator: capital increases, share sales and notes",
+        description: "Simulate capital increases, reductions, share sales and convertible notes on the actual shareholder register, with liquidation waterfall and Word drafts.",
       keywords: "operations simulator, investment rounds, capital increases, convertible notes, corporate simulations",
       },
     },

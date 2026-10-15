@@ -1,9 +1,9 @@
 import { routes } from "../routes";
 
 export const metadata = {
-  title: "Simulador de Operaciones", // ej., "Nombre del Producto"
+  title: "Simulador de operaciones societarias: ampliaciones, compraventas y notas",
   description:
-    "Simula y calcula cualquier operación corporativa con precisión en segundos, incluyendo rondas de inversión, ampliaciones de capital y más.", // ej., "Una breve descripción del producto o servicio"
+    "Simula ampliaciones, reducciones, compraventas y notas convertibles sobre el libro de socios real, con cascada de liquidación y borradores en Word.",
   keywords:
     "simulador de operaciones, rondas de inversión, ampliaciones de capital, notas convertibles, simulaciones corporativas", // ej., "palabra_clave1, palabra_clave2, palabra_clave3"
 };

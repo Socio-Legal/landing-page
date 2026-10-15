@@ -1,9 +1,9 @@
 import { routes } from "../routes";
 
 export const metadata = {
-  title: "Juntas y Consejos", // ej., "Nombre del Producto"
+  title: "Juntas de socios y consejos de administración: convocatoria, voto y acta",
   description:
-    "Gestiona juntas y consejos de administración de manera eficiente con Sttok, incluyendo convocatorias, delegaciones, votos y actas.", // ej., "Una breve descripción del producto o servicio"
+    "Convocatoria, delegaciones con firma, voto anticipado y en vivo, quórum, acta y certificación de la junta general y del consejo de administración.",
   keywords:
     "juntas de socios, consejos de administración, gestión digital de juntas, convocatorias, delegaciones de voto, actas digitales", // ej., "palabra_clave1, palabra_clave2, palabra_clave3"
 };

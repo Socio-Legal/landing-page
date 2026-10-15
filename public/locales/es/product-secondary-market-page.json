@@ -1,52 +1,16 @@
 {
   "hero": {
-    "slogan": "Producto",
-    "title": "Mercado Secundario",
-    "description": "Mercado de acciones entre socios para comprar, vender y lanzar ofertas de compra en un entorno seguro y 100% digital.",
+    "slogan": "Mercado secundario",
+    "title": "Mercado secundario de participaciones: compraventas entre socios registradas en el libro",
+    "description": "Sttok organiza las compraventas entre socios y las ofertas de compra a varios socios a la vez. Cada operación ejecutada se anota en el libro de socios con su documentación. Es un módulo con coste adicional.",
     "button": {
       "text": "Solicitar demo",
-      "link": "https://app.sttok.com/#/demo"
+      "link": "https://calendly.com/sttok/30min"
     },
     "image": {
       "light": "/hero/hero-product-secondary-market.png",
       "dark": "/hero/hero-product-secondary-market.png"
     }
-  },
-  "features": {
-    "title": "Mercado de acciones entre socios",
-    "description": "Gestiona operaciones de secundario de principio a fin: publicación de ofertas, aceptación, ejecución y seguimiento.",
-    "items": [
-      {
-        "icon": "SecondarySell",
-        "title": "Vender mis acciones",
-        "description": "Publica ofertas de venta indicando acciones, precio por acción, fechas y condiciones de ejecución."
-      },
-      {
-        "icon": "SecondaryBuy",
-        "title": "Comprar acciones",
-        "description": "Consulta ofertas activas y completa compras de forma guiada con resumen de importe y validaciones."
-      },
-      {
-        "icon": "SecondaryBid",
-        "title": "Lanzar oferta de compra",
-        "description": "Publica interés de compra para captar vendedores y activar operaciones cuando no encuentres oferta disponible."
-      },
-      {
-        "icon": "SecondaryBook",
-        "title": "Libro de ofertas y contexto de precio",
-        "description": "Visualiza precio medio, volumen y detalle de ofertas de compra y venta para decidir con más información."
-      },
-      {
-        "icon": "SecondaryTracking",
-        "title": "Operaciones con estado y trazabilidad",
-        "description": "Sigue cada operación por estado (activa, aceptada, etc.) y conserva histórico para control interno."
-      },
-      {
-        "icon": "SecondaryIntegration",
-        "title": "Integrado con la gestión societaria",
-        "description": "Conecta el secundario con captable y documentación para mantener la información societaria actualizada."
-      }
-    ]
   },
   "faq": {
     "eyebrow": "FAQ",
@@ -54,19 +18,57 @@
     "items": [
       {
         "q": "¿Qué es el mercado secundario de Sttok?",
-        "a": "Un espacio para gestionar compraventas de participaciones entre socios y ofertas de compra (tender offers)."
+        "a": "Un módulo para organizar compraventas de participaciones entre socios y ofertas de compra a varios socios a la vez."
       },
       {
         "q": "¿Quién puede participar?",
-        "a": "Los socios e inversores autorizados por la sociedad, con los permisos que esta defina."
+        "a": "Los socios e inversores que autoriza la sociedad, con los permisos que esta defina."
       },
       {
         "q": "¿Cómo queda registrada cada operación?",
-        "a": "Automáticamente en el libro de socios, con su documentación asociada."
+        "a": "En el libro de socios, sobre los rangos transmitidos, con su documentación asociada."
       },
       {
         "q": "¿Está incluido en los planes?",
-        "a": "Es una funcionalidad con coste extra: se contrata como módulo adicional sobre cualquier plan."
+        "a": "No. Se contrata como módulo adicional sobre cualquier plan."
+      },
+      {
+        "q": "¿Sirve para sociedades de Latinoamérica?",
+        "a": "La plataforma se adapta a la denominación de cada país: libro de accionistas, asamblea general de accionistas, junta directiva o directorio. La adecuación a la normativa de cada país se valora caso por caso."
+      }
+    ]
+  },
+  "includes": {
+    "eyebrow": "Qué incluye",
+    "title": "Cómo funciona el mercado secundario en Sttok",
+    "allLink": "Ver todas las funcionalidades de Sttok"
+  },
+  "situations": {
+    "eyebrow": "Casos habituales",
+    "title": "Situaciones habituales en el mercado secundario",
+    "columns": {
+      "situation": "Situación",
+      "action": "Qué hace Sttok",
+      "guide": "Más información"
+    },
+    "guideLabel": "Ver cómo",
+    "rows": [
+      {
+        "situation": "Un socio quiere vender y no encuentra comprador",
+        "action": "Publica su oferta de venta para los socios que la sociedad autoriza."
+      },
+      {
+        "situation": "La sociedad quiere dar liquidez a varios socios",
+        "action": "Lanza una oferta de compra a varios socios a la vez, con precio y plazo."
+      },
+      {
+        "situation": "Los estatutos prevén un derecho de adquisición preferente",
+        "action": "La transmisión respeta las comunicaciones y los plazos que fijan los estatutos.",
+        "href": "/guias/derecho-de-adquisicion-preferente"
+      },
+      {
+        "situation": "Se cierra una compraventa",
+        "action": "Se anota en el libro sobre los rangos transmitidos, con su documentación."
       }
     ]
   }
