@@ -241,7 +241,7 @@
       },
       {
         "situation": "El libro lleva años sin actualizar",
-        "action": "Reconstruye el histórico a partir de las escrituras durante el onboarding.",
+        "action": "Reconstruye el histórico a partir de las escrituras en pocos minutos.",
         "href": "/guias/reconstruir-libro-de-socios"
       },
       {
@@ -260,8 +260,8 @@
     "eyebrow": "Puesta en marcha",
     "title": "Cómo llegan tus datos a Sttok",
     "paragraphs": [
-      "La puesta en marcha de una sociedad lleva unas horas. En grupos con muchas sociedades, el plazo depende del número de sociedades y del histórico que haya que cargar.",
-      "Si el libro lleva años sin actualizar, Sttok lo reconstruye a partir de las escrituras. Si hoy los datos están en Excel, en Carta o en el despacho, la migración forma parte del mismo proceso."
+      "La puesta en marcha de una sociedad lleva unas horas. En grupos con muchas sociedades, el plazo depende del número de sociedades.",
+      "Si el libro lleva años sin actualizar, Sttok lo reconstruye a partir de las escrituras en pocos minutos. Si hoy los datos están en Excel, en Carta o en el despacho, la migración forma parte del mismo proceso."
     ],
     "link": {
       "text": "Cómo se migra a Sttok",
@@ -309,7 +309,7 @@
       },
       {
         "q": "¿Cuánto tarda la puesta en marcha?",
-        "a": "Unas horas por sociedad. En grupos con muchas sociedades, el plazo depende del número de sociedades y del histórico que haya que cargar."
+        "a": "Unas horas por sociedad. En grupos con muchas sociedades, el plazo depende del número de sociedades."
       },
       {
         "q": "¿Qué tiene coste adicional?",
