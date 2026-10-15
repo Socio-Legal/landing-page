@@ -13,8 +13,8 @@
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/hero/hero-solutions-inversor.png",
-      "dark": "/hero/hero-solutions-inversor.png"
+      "light": "/capturas/participadas-light.png",
+      "dark": "/capturas/participadas-dark.png"
     }
   },
   "clients": {
@@ -64,7 +64,7 @@
       {
         "icon": "Icon06",
         "title": "Portafolio",
-        "description": "Dispondrás del esquema y arbol del portafolio de tus participadas."
+        "description": "Dispondrás del esquema y árbol del portafolio de tus participadas."
       }
     ]
   },
@@ -73,7 +73,7 @@
     "description": "Empresas que ya han mejorado su gestión societaria con Sttok.",
     "items": [
       {
-        "name": "Lucía Bauza",
+        "name": "Lucía Bouzá",
         "role": "Head of Legal & Compliance, Factorial",
         "img": "",
         "description": "Sttok nos ayudó a digitalizar el proceso de creación y firma de documentos para nuestros planes de incentivos.",
@@ -83,7 +83,7 @@
         "name": "Johan Longo",
         "role": "Contract Manager | PLD Space",
         "img": "/logo-pldspace-mini.png",
-        "description": "Sttok nos sirve para poder tener organizada toda la información sobre socios, junas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
+        "description": "Sttok nos sirve para poder tener organizada toda la información sobre socios, juntas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
         "stars": 5
       },
       {
