@@ -11,8 +11,7 @@
       "pain": "Outdated spreadsheets, manual certificates, ledgers in folders. Every corporate change means hours of work and risk of errors.",
       "with": "Official shareholder book in real time, individual records with full meeting history, instant certificate generation and a centralized repository accessible to all stakeholders.",
       "case": "AXA Agrupació Mutua centralizes the management of over 200,000 members with Sttok, saving hours of manual certificate and corporate process work.",
-      "icon": "Building2",
-      "image": "/who-uses-sttok-companies.png"
+      "icon": "Building2"
     },
     {
       "id": 2,
@@ -20,8 +19,7 @@
       "pain": "Phantom plans in spreadsheets, letters in Word, signatures by email, beneficiaries with no visibility on what they hold.",
       "with": "Phantom plans always up to date, invitation letters generated, beneficiary records configured and DocuSign signing in minutes. Each employee accesses their portal and sees their own holdings.",
       "case": "Factorial runs its global incentive plan for hundreds of employees on Sttok, saving hundreds of hours of plan administration.",
-      "icon": "Handshake",
-      "image": "/who-uses-sttok-startups.png"
+      "icon": "Handshake"
     },
     {
       "id": 3,
@@ -29,8 +27,7 @@
       "pain": "Notices by email, delegations on paper, quorums calculated by hand, minutes drafted after the fact.",
       "with": "One-click notice, digital delegations, automatic quorum calculation, electronic voting and instantly generated minutes.",
       "case": "PLD Space optimizes its meetings with multiple investor vehicles: centralized notices, delegations and votes, with zero manual tasks.",
-      "icon": "Vote",
-      "image": "/who-uses-sttok-companies.png"
+      "icon": "Vote"
     },
     {
       "id": 4,
@@ -38,8 +35,7 @@
       "pain": "Every client with their own spreadsheet, folder and criteria. Impossible to scale beyond a handful of companies without losing track.",
       "with": "Multi-company dashboard for all your clients, full history, auto-generated documents and access portal for clients and their shareholders.",
       "case": "Corporate law firms across Spain centralize their clients' corporate management on Sttok. Zero spreadsheets, zero folders, always up to date.",
-      "icon": "Scale",
-      "image": "who-uses-sttok-lawyers.png"
+      "icon": "Scale"
     },
     {
       "id": 5,
@@ -47,8 +43,7 @@
       "pain": "Day-to-day corporate work is scattered across emails, spreadsheets and the external law firm. Little traceability and too much dependency on third parties.",
       "with": "The group's entire corporate life in a single platform: shareholder registry, meetings, boards and documentation, with full traceability and role-based access.",
       "case": "In-house legal teams of corporate groups centralize in Sttok the shareholder registry, meetings and documentation of all their companies.",
-      "icon": "BriefcaseBusiness",
-      "image": "/who-uses-sttok-companies.png"
+      "icon": "BriefcaseBusiness"
     },
     {
       "id": 6,
@@ -56,8 +51,7 @@
       "pain": "The legal department needs a tool, and the alternative is internal developments or shared spreadsheets nobody wants to maintain.",
       "with": "A market-standard solution, ISO 27001 and GDPR certified, with SSO, OTP access and dedicated instances. Deployed in a week with no maintenance debt.",
       "case": "IT teams roll out Sttok as the corporate standard for their legal and corporate departments, with security validated by their CISO.",
-      "icon": "ServerCog",
-      "image": "/who-uses-sttok-companies.png"
+      "icon": "ServerCog"
     }
   ]
 }

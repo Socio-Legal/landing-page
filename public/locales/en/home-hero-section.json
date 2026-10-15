@@ -10,10 +10,6 @@
     "secondaryButton": {
       "text": "See features",
       "link": "/producto"
-    },
-    "image": {
-      "light": "hero/hero-dark.png",
-      "dark": "hero/hero-dark.png"
     }
   }
 }

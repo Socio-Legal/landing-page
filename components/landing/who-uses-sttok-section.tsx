@@ -19,7 +19,6 @@ interface ProfileItem {
   with: string;
   case: string;
   icon: string;
-  image?: string;
 }
 
 const ProfileIcons: Record<string, React.ComponentType<{ className?: string }>> = {
