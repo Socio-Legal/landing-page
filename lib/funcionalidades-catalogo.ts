@@ -76,7 +76,7 @@ export const CATALOGO: Modulo[] = [
     href: "/soluciones/secretaria-del-consejo",
     funcionalidades: [
       { titulo: "Órgano de administración", descripcion: "Consejo de administración, administrador único o administradores, con su composición." },
-      { titulo: "Convocar el consejo", descripcion: "Fecha, orden del día, convocados y revisión, con su invitación de calendario.", href: `${F}/consejo-de-administracion` },
+      { titulo: "Convocar el consejo", descripcion: "Fecha, orden del día, convocados y revisión, con envío opcional por correo y cita de calendario.", href: `${F}/consejo-de-administracion` },
       { titulo: "Orden del día", descripcion: "Cada punto para debatir o para acordar, con ponente, tiempo y documentación." },
       { titulo: "Calendario del consejo", descripcion: "Las reuniones del año reservadas, con la respuesta de cada consejero." },
       { titulo: "Acta y certificación", descripcion: "El acta del consejo y el certificado de cada acuerdo." },
