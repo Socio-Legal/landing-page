@@ -40,7 +40,7 @@
       },
       {
         "q": "How long does implementation take?",
-        "a": "A few hours per company, including data migration from Excel or other tools. For groups with many companies, it depends on the number of companies and the history to be loaded."
+        "a": "A few hours per company, including data migration from Excel or other tools. For groups with many companies, it depends on the number of companies. If the register is years out of date, Sttok rebuilds the history from the deeds in a few minutes."
       },
       {
         "q": "How can I get Sttok?",

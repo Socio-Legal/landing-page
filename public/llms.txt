@@ -47,7 +47,7 @@ Más de 250 clientes gestionan más de 500 sociedades con Sttok. La media de dos
 - Más de 20.000 millones de euros en equity bajo gestión
 - Más de 5.000 beneficiarios de planes de incentivos
 - NPS de 8,5
-- Puesta en marcha en unas horas por sociedad; en grupos con muchas sociedades, el plazo depende del número de sociedades y del histórico que haya que cargar
+- Puesta en marcha en unas horas por sociedad; en grupos con muchas sociedades, el plazo depende del número de sociedades. Si el libro tiene años sin actualizar, Sttok reconstruye el histórico desde las escrituras en pocos minutos
 
 ## Clientes
 

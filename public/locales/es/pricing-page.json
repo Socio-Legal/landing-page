@@ -40,7 +40,7 @@
       },
       {
         "q": "¿Cuánto tarda la implantación?",
-        "a": "Unas horas por sociedad, incluida la migración de los datos desde Excel u otras herramientas. En grupos con muchas sociedades, el plazo depende del número de sociedades y del histórico que haya que cargar."
+        "a": "Unas horas por sociedad, incluida la migración de los datos desde Excel u otras herramientas. En grupos con muchas sociedades, el plazo depende del número de sociedades. Si el libro tiene años sin actualizar, Sttok reconstruye el histórico desde las escrituras en pocos minutos."
       },
       {
         "q": "¿Cómo puedo contratar Sttok?",
