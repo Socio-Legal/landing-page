@@ -1,0 +1,79 @@
+---
+title: "Mayorías de la junta general y derecho de separación"
+description: "Sttok deriva la mayoría de cada punto del orden del día según sea limitada o anónima, calcula el umbral con la asistencia y avisa cuando un acuerdo da derecho de separación a los socios."
+slug: "/funcionalidades/mayorias-y-derecho-de-separacion"
+section: "funcionalidades"
+canonical: "https://www.sttok.com/funcionalidades/mayorias-y-derecho-de-separacion"
+---
+
+# Mayorías de la junta general y derecho de separación
+
+Sttok asigna a cada punto del orden del día la mayoría que exige, según el punto y la forma de la sociedad. La mayoría no se elige a mano. En la anónima, el umbral se recalcula con el capital que asiste. Si un acuerdo da derecho de separación, Sttok lo avisa al preparar la junta y el acta identifica a quién le corresponde.
+
+<Captura
+  nombre="mayorias-y-derecho-de-separacion"
+  alt="Orden del día de una junta en Sttok con la mayoría reforzada de cada punto, el umbral calculado y el aviso de derecho de separación"
+  pie="Ficha de una junta, orden del día. Datos de ejemplo."
+/>
+
+## Las mayorías que aplica Sttok
+
+| Sociedad | Mayoría | Qué exige | Sobre qué capital |
+|---|---|---|---|
+| Limitada | Ordinaria | Al menos un tercio del capital y más votos a favor que en contra | El capital con derecho a voto |
+| Limitada | Reforzada, para modificar estatutos | Más de la mitad de los votos del capital | El capital con derecho a voto |
+| Anónima | Simple | Más votos a favor que en contra | El capital presente y representado |
+| Anónima | Reforzada | Mayoría absoluta si asiste más de la mitad del capital; dos tercios si, en segunda convocatoria, asiste entre el 25 % y la mitad | El capital presente y representado |
+| Cualquiera | No se vota | Nada: es un punto informativo, como Ruegos y preguntas | Ninguno |
+
+## Cómo funciona
+
+1. Al preparar la junta, cada punto tipo de la biblioteca lleva su clase de mayoría. Sttok la resuelve con el régimen de la sociedad, limitada o anónima.
+2. En el orden del día, cada punto muestra su mayoría y el artículo que la fija. Configurar abre el punto con «Mayoría exigible» y la nota «No se elige».
+3. Con la junta convocada, la ficha calcula el umbral de cada punto con el capital comprometido. Una barra reparte a favor, en contra, abstención y sin definir.
+4. Cada punto lleva un veredicto: Sale adelante, No sale o Indeterminado. Si es indeterminado, Sttok dice qué voto lo decide, por ejemplo una delegación sin instrucciones.
+5. Al pulsar un punto se abren la propuesta, el umbral y la base de cómputo. Las pestañas Quién ha comprometido su voto y Quién puede cambiarlo completan el detalle.
+
+## La junta va a modificar los estatutos
+
+El punto tipo de modificación de estatutos lleva mayoría reforzada. En una limitada, Sttok exige más de la mitad del capital con derecho a voto. En una anónima, el umbral depende de cuánto capital asista.
+
+El mismo punto trae su documentación obligatoria, el texto íntegro y el informe del órgano de administración. En la anónima, Sttok avisa además de que el orden del día exige quórum reforzado. El quórum se sigue en [asistencia y quórum](/funcionalidades/asistencia-y-quorum).
+
+## En la anónima asiste menos de la mitad del capital
+
+La mayoría reforzada de la anónima no es un número fijo. Con más de la mitad del capital presente basta la mayoría absoluta. Si en segunda convocatoria asiste entre el 25 % y la mitad, hacen falta dos tercios del capital presente. Sttok recalcula el umbral cada vez que cambia la asistencia y lo escribe en la fila del punto.
+
+En la limitada no pasa lo mismo. La base es el capital con derecho a voto, no el presente, y el umbral no cambia con la asistencia.
+
+## La junta sustituye el objeto social y hay socios que no votan a favor
+
+La sustitución del objeto social genera derecho de separación. Al añadir el punto, la biblioteca lo marca con la etiqueta «separación». El punto muestra el aviso «Genera derecho de separación», y la lista de comprobaciones lo recuerda antes de convocar.
+
+Si el acuerdo se adopta, el acta incluye la sección Derecho de separación. Lista a cada socio que votó en contra, se abstuvo, no emitió voto o no asistió, con su porcentaje de capital. También indica si el plazo para ejercer el derecho ha empezado a correr y recoge lo que un socio pidió que constara en acta. La ficha del [acta de la junta](/funcionalidades/acta-de-la-junta) explica cómo se compone el resto del documento.
+
+## Preguntas frecuentes
+
+**¿Se puede cambiar a mano la mayoría de un punto?**
+No. La mayoría sale del punto y del régimen de la sociedad. La pantalla del punto lo indica con la nota «Sale del punto y del régimen de la sociedad. No se elige».
+
+**¿Qué mayoría exige modificar los estatutos?**
+En la limitada, más de la mitad de los votos del capital social. En la anónima, mayoría absoluta o dos tercios del capital presente, según la asistencia (artículos 199.a y 201.2 de la Ley de Sociedades de Capital).
+
+**¿Quién tiene derecho de separación?**
+Los socios que no votaron a favor del acuerdo, no solo quienes votaron en contra (artículo 346 de la Ley de Sociedades de Capital). Por eso el acta incluye también la abstención y la ausencia.
+
+**¿Cuenta la abstención para la mayoría simple de la anónima?**
+No suma a favor ni en contra. El acuerdo sale con más votos a favor que en contra. Para el derecho de separación sí cuenta, porque quien se abstiene no votó a favor.
+
+**¿Y si la sociedad no lleva un registro nominal de asistencia?**
+El acta no puede nombrar a los titulares y lo dice. El derecho existe igual para todo socio que no votara a favor.
+
+**¿Sirve para una asamblea de accionistas en Latinoamérica?**
+La plataforma se adapta a la denominación de cada país, como asamblea general de accionistas. La adecuación a la normativa de cada país se valora caso por caso.
+
+## Sttok en cifras
+
+Más de 250 clientes gestionan más de 500 sociedades con Sttok, una media de dos por cliente que refleja el perfil de grupo. Gestionan más de 250.000 socios y accionistas. La puesta en marcha lleva unas horas por sociedad.
+
+[Solicita una demo](https://calendly.com/sttok/30min) o consulta los [precios](/precios). Las mayorías y el derecho de separación forman parte de [juntas y consejos](/juntas-consejos).

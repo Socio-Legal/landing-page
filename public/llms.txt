@@ -157,6 +157,14 @@ Funcionalidad con coste adicional: mercado secundario.
 - Autocartera: https://www.sttok.com/funcionalidades/autocartera
 - Acreedores y notas convertibles: https://www.sttok.com/funcionalidades/acreedores-y-notas-convertibles
 - Equity Story: evolución del capital: https://www.sttok.com/funcionalidades/equity-story
+- Preparar la junta general: orden del día, documentación y plazos: https://www.sttok.com/funcionalidades/preparar-la-junta
+- Convocatoria de la junta general: https://www.sttok.com/funcionalidades/convocatoria-de-la-junta
+- Asistencia y quórum de la junta: https://www.sttok.com/funcionalidades/asistencia-y-quorum
+- Mayorías reforzadas y derecho de separación: https://www.sttok.com/funcionalidades/mayorias-y-derecho-de-separacion
+- Proyección de las votaciones en la sala: https://www.sttok.com/funcionalidades/proyeccion-en-la-sala
+- Acta de la junta general: https://www.sttok.com/funcionalidades/acta-de-la-junta
+- Certificación de acuerdos: https://www.sttok.com/funcionalidades/certificacion-de-acuerdos
+- Juntas presenciales, telemáticas e híbridas: https://www.sttok.com/funcionalidades/juntas-presenciales-telematicas-e-hibridas
 - Equipo: https://www.sttok.com/sobre-nosotros
 - Blog: https://blog.sttok.com/recursos
 - Dossier comercial (español): https://www.sttok.com/docs/sttok-dossier-es.pdf
