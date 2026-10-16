@@ -117,6 +117,7 @@ Funcionalidad con coste adicional: mercado secundario.
 - Guía: plantillas societarias, qué debe constar en una convocatoria, un acta y un certificado: https://www.sttok.com/guias/plantillas-societarias
 - Guía: fiscalidad de phantom shares y stock options en España tras la Ley de Startups: https://www.sttok.com/guias/fiscalidad-phantom-shares-stock-options
 - Guía: titular real y Registro de Titularidades Reales en grupos de sociedades: https://www.sttok.com/guias/titular-real-grupos-sociedades
+- Guía: libro de actas de junta y de consejo, contenido, aprobación, certificaciones y legalización telemática: https://www.sttok.com/guias/libro-de-actas
 - Guía: libro registro de socios, cómo llevarlo y cómo legalizarlo en el Registro Mercantil: https://www.sttok.com/guias/libro-registro-socios-legalizacion
 - Guía: junta general telemática, requisitos legales y cómo celebrarla: https://www.sttok.com/guias/junta-general-telematica
 - Guía: un socio quiere vender, derecho de adquisición preferente y restricciones estatutarias: https://www.sttok.com/guias/derecho-de-adquisicion-preferente
