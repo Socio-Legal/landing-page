@@ -54,7 +54,7 @@
       },
       {
         "q": "¿Puedo migrar el libro desde un Excel?",
-        "a": "Sí. La migración forma parte de la puesta en marcha, que lleva unas horas por sociedad. Si faltan años por registrar, el histórico se reconstruye a partir de las escrituras."
+        "a": "Sí. La migración forma parte de la puesta en marcha, que lleva unas horas por sociedad. Si faltan años por registrar, el histórico se reconstruye a partir de las escrituras en pocos minutos."
       },
       {
         "q": "¿Gestiona numeración, clases y cargas?",
@@ -111,7 +111,7 @@
       },
       {
         "situation": "El libro lleva años sin actualizar",
-        "action": "Lo reconstruye a partir de las escrituras y señala los huecos del histórico.",
+        "action": "Lo reconstruye a partir de las escrituras en pocos minutos y señala los huecos del histórico.",
         "href": "/guias/reconstruir-libro-de-socios"
       },
       {

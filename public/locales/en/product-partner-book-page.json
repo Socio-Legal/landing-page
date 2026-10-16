@@ -54,7 +54,7 @@
       },
       {
         "q": "Can I migrate the register from Excel?",
-        "a": "Yes. Migration is part of setup, which takes a few hours per company. If years are missing, the history is rebuilt from the deeds."
+        "a": "Yes. Migration is part of setup, which takes a few hours per company. If years are missing, the history is rebuilt from the deeds in a few minutes."
       },
       {
         "q": "Does it handle numbering, classes and encumbrances?",
@@ -106,7 +106,7 @@
       },
       {
         "situation": "The register is years out of date",
-        "action": "It is rebuilt from the deeds, with any gaps in the history flagged."
+        "action": "It is rebuilt from the deeds in a few minutes, with any gaps in the history flagged."
       },
       {
         "situation": "A shareholder dies",

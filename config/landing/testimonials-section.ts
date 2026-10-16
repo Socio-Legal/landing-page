@@ -32,7 +32,7 @@ export const items = [
     stars: 5,
   },
   {
-    name: "Lucía Bauza",
+    name: "Lucía Bouzá",
     role: "Head of Legal & Compliance | Factorial",
     img: "/logo-factorial-mini.png",
     description:
