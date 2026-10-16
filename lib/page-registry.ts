@@ -20,6 +20,7 @@ import PageSobreNosotros from "@/app/sobre-nosotros/page";
 import PageStartups from "@/app/solutions/startups/page";
 import PageSttokVsExcel from "@/app/sttok-vs-excel/page";
 import PageTestimonios from "@/app/testimonials/page";
+import FeaturesPageEn from "@/components/product/features-page-en";
 import type { Locale } from "@/lib/locales";
 
 /**
@@ -153,6 +154,17 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     },
     softwareApplication: true,
     productModule: true,
+  },
+  // El castellano lo sirve app/funcionalidades (MDX); esta entrada solo da
+  // la versión inglesa del catálogo.
+  "/funcionalidades": {
+    Component: FeaturesPageEn,
+    meta: {
+      en: {
+        title: "Sttok features: shareholder register, meetings, board, groups and incentive plans",
+        description: "Every Sttok feature by module: shareholder register and transfers, general meeting and e-voting, board and officers, groups of companies, documents, incentive plans and the transaction simulator.",
+      },
+    },
   },
   "/politica-seguridad": {
     Component: PagePoliticaSeguridad,
