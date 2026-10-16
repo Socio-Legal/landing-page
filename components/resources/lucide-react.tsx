@@ -2210,6 +2210,8 @@ export const LucideReactIcons = {
   ImageOff: <ImageOff className={iconClassName} />,
   ImagePlus: <ImagePlus className={iconClassName} />,
   ImageUp: <ImageUp className={iconClassName} />,
+  // Es el icono Image de lucide, no un <img>: la regla lo confunde por el nombre.
+  // eslint-disable-next-line jsx-a11y/alt-text
   Image: <Image className={iconClassName} />,
   Images: <Images className={iconClassName} />,
   Import: <Import className={iconClassName} />,

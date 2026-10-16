@@ -129,9 +129,9 @@ comprobarlo en producción tras el despliegue.
   uses `git log` para fechas sin tener esto en cuenta.
 - **Todo el sitio es SSR dinámico**: el layout raíz llama a `headers()`, así que
   no hay prerenderizado ni caché de CDN en ninguna ruta.
-- `app/[locale]/layout.tsx` aplica un `marginTop: -56px` a todas las rutas con
-  prefijo, no solo a la portada. Es incoherente con el castellano y está
-  anotado en el propio archivo.
+- El `marginTop: -56px` que sube el hero bajo la cabecera solo lo lleva la
+  portada de cada idioma: `app/(landing)/layout.tsx` en castellano y
+  `app/[locale]/layout.tsx` en `/en`, que la detecta por `x-pathname`.
 - `app/solutions/` no tiene `page.tsx`: es solo un prefijo de ruta de las cinco
   páginas de soluciones. La sección castellana vive en `app/soluciones/`.
 - Los archivos de `config/product`, `config/solutions`, `config/legal`,

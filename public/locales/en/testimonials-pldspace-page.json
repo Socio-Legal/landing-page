@@ -32,7 +32,7 @@
       },
       {
         "key": "Functionalities",
-        "value": "Investor Portal, Cap Table, Incentive Plans, Shareholder Meetings, Automated Signing, etc"
+        "value": "Investor portal, shareholder register, incentive plans, shareholder meetings and e-signature"
       }
     ]
   },
@@ -46,9 +46,7 @@
       {
         "title": "A bit about PLD Space",
         "texts": [
-          "PLD Space is a pioneering Spanish company in the aerospace sector and a reference in Europe in the development of reusable launchers, with a reference trajectory in the sector and a solid development program. Through its family of MIURA space rockets (MIURA 1 and MIURA 5), PLD Space will position Spain among the small number of countries with the capacity to successfully send small satellites into space.",
-          "Founded in 2011 by Raúl Torres and Raúl Verdú, PLD Space has a team of more than 200 people. The company is headquartered in Elche (Alicante) with technical facilities in Teruel, Huelva and French Guiana.",
-          "On October 7, 2023, PLD Space made history after successfully completing the launch of a first private European rocket, MIURA 1."
+          "PLD Space is a Spanish company that develops reusable rockets to put satellites into orbit. It is headquartered in Elche (Alicante)."
         ]
       },
       {
@@ -56,8 +54,8 @@
         "texts": [
           "1. To offer the Investor Portal.",
           "2. For the automation of manual tasks.",
-          "3. For the management of the Shareholder Register (Cap Table).",
-          "4. For document generation and automated signing.",
+          "3. For the management of the shareholder register.",
+          "4. For document generation and e-signature.",
           "5. For the management of Incentive Plans."
         ]
       }

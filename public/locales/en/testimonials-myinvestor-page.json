@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "title": "MyInvestor uses Sttok for comprehensive corporate governance management",
+    "title": "MyInvestor runs its board, meetings and shareholder register with Sttok",
     "description": "MyInvestor relies on Sttok for digital management of its governing bodies, corporate documentation, and corporate processes",
     "keywords": "MyInvestor, Sttok, MyInvestor and Sttok, digital corporate governance, corporate management, sttok clients"
   },
@@ -46,8 +46,7 @@
       {
         "title": "About MyInvestor",
         "texts": [
-          "MyInvestor is a leading digital financial institution in Spain operating as an Andbank agent. It has positioned itself as one of the most innovative neobanks in the Spanish market, offering investment services, mortgages, and current accounts with highly competitive conditions.",
-          "The entity has experienced exponential growth since its launch, surpassing €1 billion in assets under management and more than 125,000 clients, establishing itself as one of the main players in the Spanish fintech sector. As a regulated financial institution, MyInvestor maintains the highest standards of corporate governance and regulatory compliance."
+          "MyInvestor is a digital financial institution operating as an agent of Andbank. It offers investment services, mortgages and current accounts."
         ]
       },
       {
@@ -57,7 +56,6 @@
           "2. For the legal security provided by the platform in document management and traceability of corporate agreements.",
           "3. For the efficiency in conducting digital board meetings and managing online voting.",
           "4. For the automation in generating corporate documentation and minutes.",
-          "5. For compliance with the highest regulatory standards in the financial sector and adaptation to regulated entity regulations.",
           "6. For the ability to digitally manage the shareholder registry and corporate documentation."
         ]
       }

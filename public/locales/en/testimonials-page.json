@@ -1,56 +1,81 @@
 {
-  "readCase": "Read their story",
+  "readCase": "Read the case",
   "metadata": {
-    "title": "Testimonials and Success Stories",
-    "description": "Here you will find testimonials and success stories from our clients",
-    "keywords": "testimonials, success stories, clients, companies, businesses, success, satisfaction, recommendation"
+    "title": "Sttok customers: case studies and testimonials",
+    "description": "How Factorial, PLD Space, Grupo Caballero, TaxDown and MyInvestor run their shareholder register, meetings and incentive plans, and what Sttok customers say.",
+    "keywords": "Sttok customers, case studies, testimonials, shareholder register, incentive plans, meetings"
   },
   "hero": {
     "slogan": "Customers",
-    "title": "Testimonials and Success Stories",
-    "description": "Sttok helps our clients digitize corporate management, automating manual tasks and managing multiple related tasks such as Shareholder Register, Incentive Plans, Meetings, Operation Calculations (Rounds, Capital Increases, Sales, etc.). They no longer use Excel as they did before and now work professionally.",
+    "title": "Sttok customers: case studies and testimonials",
+    "description": "More than 250 customers manage more than 500 companies with Sttok, an average of two each, which reflects the group profile. These are their stories: how they run the shareholder register, meetings and incentive plans, and what they say about the platform.",
     "button": {
-      "text": "",
-      "link": ""
-    },
-    "image": {
-      "light": "/hero/hero-testimonials.png",
-      "dark": "/hero/hero-testimonials.png"
+      "text": "Book a demo",
+      "link": "https://calendly.com/sttok/30min"
     }
   },
   "features": {
-    "title": "Companies using Sttok",
-    "description": "Sttok is the most comprehensive company management platform in the market. Discover all the functionalities it offers you.",
+    "title": "Customers",
+    "description": "Companies that keep their register in Sttok",
     "items": [
+      {
+        "icon": "",
+        "logo": "Axa",
+        "title": "",
+        "description": "Insurance group. AXA is a Sttok customer.",
+        "alt": "AXA, a Sttok customer",
+        "case": false
+      },
       {
         "icon": "",
         "logo": "Factorial",
         "title": "",
-        "description": "Factorial is a human resources software company that simplifies people management in businesses."
+        "description": "HR software for companies.",
+        "alt": "Factorial, a Sttok customer"
+      },
+      {
+        "icon": "",
+        "logo": "Multiverse",
+        "title": "",
+        "description": "Multiverse Computing, a Spanish quantum software and artificial intelligence company.",
+        "alt": "Multiverse Computing, a Sttok customer",
+        "case": false
       },
       {
         "icon": "",
         "logo": "PldSpace",
         "title": "",
-        "description": "PLD Space is a Spanish company that develops reusable rockets to launch satellites into space."
+        "description": "Spanish company that develops reusable rockets to put satellites into orbit.",
+        "alt": "PLD Space, a Sttok customer"
+      },
+      {
+        "icon": "",
+        "logo": "Osborne",
+        "title": "",
+        "description": "Family group founded in 1772, with several hundred family shareholders and four generations of shareholders at once.",
+        "alt": "Osborne, a Sttok customer",
+        "case": false
       },
       {
         "icon": "",
         "logo": "Caballero",
         "title": "",
-        "description": "The Caballero Group is a family business founded in 1830, based in Puerto de Santa María in Cádiz, Spain"
+        "description": "Grupo Caballero, a family business founded in 1830 in El Puerto de Santa María (Cádiz).",
+        "alt": "Grupo Caballero, a Sttok customer"
       },
       {
         "icon": "",
         "logo": "Taxdown",
         "title": "",
-        "description": "Taxdown is a software company that helps people file their tax returns easily."
+        "description": "Software for filing income tax returns easily.",
+        "alt": "TaxDown, a Sttok customer"
       },
       {
         "icon": "",
         "logo": "MyInvestor",
         "title": "",
-        "description": "MyInvestor is a leading digital financial institution in Spain operating as an Andbank agent."
+        "description": "Digital financial institution operating as an agent of Andbank.",
+        "alt": "MyInvestor, a Sttok customer"
       }
     ]
   }
