@@ -137,9 +137,7 @@ const PAGES: Record<string, { label: Label; section?: SectionKey }> = {
 
 /** Nombre visible de cada caso de exito (config/testimonials/clients/*.ts). */
 const CLIENTS: Record<string, string> = {
-  Banktrack: "Banktrack",
   Caballero: "Grupo Caballero",
-  DerechoCom: "DerechoCom",
   Factorial: "Factorial",
   MyInvestor: "MyInvestor",
   PldSpace: "PLD Space",
