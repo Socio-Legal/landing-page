@@ -106,7 +106,6 @@ const ModulePage: FC<ModulePageProps> = ({ ns, modulos, seleccion }) => {
               "Multiverse",
               "MyInvestor",
               "DerechoCom",
-              "Pwc",
               "Shakers",
               "Cabiedes",
               "LegalPigeon",
