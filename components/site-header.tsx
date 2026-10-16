@@ -10,8 +10,6 @@ import Drawer from "@/components/drawer";
 import Menu from "@/components/menu";
 import { cn } from "@/lib/utils";
 
-import ThemeToggler from "./ui/theme-toggler";
-import LanguageSwitcher from "./language-switcher";
 import { useTranslation } from "react-i18next";
 import { trackDemoClick, trackLoginClick } from "@/lib/analytics";
 import { localizedHref } from "@/lib/localized-href";
@@ -71,11 +69,6 @@ export function SiteHeader() {
                 {t(cta.text)}
               </Link>
             ))}
-
-            <div className="ml-1 flex items-center gap-1">
-              <ThemeToggler />
-              <LanguageSwitcher />
-            </div>
           </div>
         </div>
 
