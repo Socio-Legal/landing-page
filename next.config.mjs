@@ -53,6 +53,8 @@ const LANDINGS_RETIRADAS = {
   "/grupos-societarios": "/soluciones/grupos-de-sociedades",
   "/consejos-de-administracion": "/soluciones/secretaria-del-consejo",
   "/documentacion-societaria": "/producto",
+  // Nunca fue una pagina: la seguridad vive en la politica de seguridad.
+  "/seguridad": "/politica-seguridad",
 };
 
 /**

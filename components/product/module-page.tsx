@@ -15,7 +15,7 @@ import SectionHeading from "@/components/shared/section-heading";
 import LogoStrip from "@/components/shared/logo-strip";
 import FaqSection, { FaqItem } from "@/components/shared/faq-section";
 import CallToActionSection from "@/components/landing/cta-section";
-import { CATALOGO, Modulo } from "@/lib/funcionalidades-catalogo";
+import { CATALOGO, Modulo, enIngles } from "@/lib/funcionalidades-catalogo";
 
 type SituationRow = { situation: string; action: string; href?: string };
 type Figure = { value: string; label: string };
@@ -33,29 +33,6 @@ const Arrow = () => (
     className="h-3.5 w-3.5 shrink-0 transition-transform duration-200 group-hover/link:translate-x-0.5"
   />
 );
-
-/** Página de cada módulo en inglés; las que no tienen versión inglesa, sin enlace. */
-const HREF_EN: Record<string, string> = {
-  socios: "/en/partners-book",
-  juntas: "/en/shareholder-meetings",
-  incentivos: "/en/incentive-plans",
-  simulador: "/en/operation-drafts",
-  secundario: "/en/secondary-market",
-};
-
-/** Textos del catálogo en el idioma de la página; el castellano es el original. */
-const enIngles = (m: Modulo, en: boolean) => ({
-  titulo: (en && m.en?.titulo) || m.titulo,
-  resumen: (en && m.en?.resumen) || m.resumen,
-  href: en ? HREF_EN[m.id] : m.href,
-  total: m.funcionalidades.length,
-  funcionalidades: m.funcionalidades.map((f) => ({
-    titulo: (en && f.en?.titulo) || f.titulo,
-    descripcion: (en && f.en?.descripcion) || f.descripcion,
-    // Las fichas de /funcionalidades solo existen en castellano.
-    href: en ? undefined : f.href,
-  })),
-});
 
 type ModulePageProps = {
   /** Namespace de i18next con los textos de la página. */
@@ -116,26 +93,26 @@ const ModulePage: FC<ModulePageProps> = ({ ns, modulos, seleccion }) => {
           <LogoStrip
             label={t("product-hero-section:clientsLabel")}
             primary={[
+              "Factorial",
               "Axa",
               "Andbank",
-              "Factorial",
-              "Multiverse",
-              "PldSpace",
               "Osborne",
+              "Taxdown",
+              "PldSpace",
+              "Caballero",
               "Fanalca",
-              "Sade",
             ]}
             secondary={[
-              "Caballero",
-              "Taxdown",
+              "Multiverse",
               "MyInvestor",
-              "Barkibu",
               "DerechoCom",
               "Pwc",
-              "Banktrack",
-              "LegalPigeon",
-              "Cabiedes",
               "Shakers",
+              "Cabiedes",
+              "LegalPigeon",
+              "Banktrack",
+              "Barkibu",
+              "Sade",
             ]}
           />
         </div>

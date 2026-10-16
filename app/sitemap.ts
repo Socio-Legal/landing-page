@@ -82,6 +82,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: lastCommitDate(doc.file) ?? undefined,
       changeFrequency: "monthly" as const,
       priority: doc.name === "index" ? 0.8 : 0.7,
+      // Solo /funcionalidades tiene gemela inglesa (el catálogo, /en/features).
+      ...(ROUTE_MAP[doc.url]
+        ? {
+            alternates: {
+              languages: {
+                es: `${BASE_URL}${doc.url}`,
+                en: `${BASE_URL}${ROUTE_MAP[doc.url]}`,
+                "x-default": `${BASE_URL}${doc.url}`,
+              },
+            },
+          }
+        : {}),
     })),
     ...LEGAL_ROUTES.map((r) => entry(r, 0.2, "yearly")),
   ];

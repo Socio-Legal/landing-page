@@ -1,19 +1,19 @@
 {
   "metadata": {
-    "title": "Security Policy",
-    "description": "Sttok's Information Security Policy: ISO 27001 certification, GDPR compliance, encryption, European hosting and the confidentiality, integrity and availability of information.",
+    "title": "Sttok security: ISO 27001, GDPR and security policy",
+    "description": "Sttok holds ISO 27001 certification and complies with the GDPR. Data in AWS Europe encrypted with TLS 1.3 and AES-256, sign-in with Google or Microsoft SSO or a one-time code, and permissions per company.",
     "keywords": ""
   },
   "hero": {
     "slogan": "Legal",
-    "title": "Security Policy",
-    "description": "Sttok holds ISO 27001 certification and complies with the GDPR. This is the policy it follows to protect its customers' corporate information."
+    "title": "Sttok security: ISO 27001, GDPR and security policy",
+    "description": "Sttok holds ISO 27001 certification, complies with the GDPR and hosts data in AWS Europe, encrypted with TLS 1.3 and AES-256. Users sign in with Google or Microsoft SSO or a one-time code, and each user only sees the companies assigned to them."
   },
   "content": [
     {
       "title": "Certifications and compliance",
       "content": [
-        "Sttok holds ISO 27001 certification in information security and complies with the General Data Protection Regulation (GDPR).",
+        "Sttok holds ISO 27001 certification in information security and complies with the General Data Protection Regulation (GDPR). It is also audited by Bureau Veritas.",
         "The information it protects includes shareholder registers, minutes, resolutions and the documentation of the meetings of the companies it manages."
       ]
     },
@@ -24,6 +24,61 @@
         "Information is encrypted in transit with TLS 1.3 and at rest with AES-256.",
         "The data processing agreement (DPA) is available on request.",
         "The service level agreement (SLA) is available on custom plans."
+      ]
+    },
+    {
+      "title": "Access and permissions",
+      "content": [
+        "Users sign in with Google or Microsoft single sign-on (SSO), using their company account. Users without SSO sign in with a one-time code (OTP).",
+        "Permissions are assigned per company. In a group or a law firm, each user only sees the companies assigned to them.",
+        "Shareholders, investors and incentive plan beneficiaries sign in to their own portal and only see their position, their certificates and their documents.",
+        "Communications to shareholders and directors keep their delivery history and proof of delivery."
+      ]
+    },
+    {
+      "title": "What is protected and how",
+      "content": [
+        {
+          "type": "table",
+          "headers": [
+            "Area",
+            "Measure"
+          ],
+          "rows": [
+            [
+              "Certification",
+              "ISO 27001 and Bureau Veritas audit"
+            ],
+            [
+              "Data protection",
+              "GDPR; data processing agreement (DPA) on request"
+            ],
+            [
+              "Hosting",
+              "AWS Europe, with no international data transfers"
+            ],
+            [
+              "Encryption",
+              "TLS 1.3 in transit and AES-256 at rest"
+            ],
+            [
+              "Access",
+              "Google or Microsoft SSO, or a one-time code"
+            ],
+            [
+              "Permissions",
+              "Per company; shareholders and beneficiaries in their own portal"
+            ],
+            [
+              "Communications",
+              "Delivery history and proof of delivery"
+            ],
+            [
+              "Availability",
+              "Business continuity plans; SLA on custom plans"
+            ]
+          ]
+        }
       ]
     },
     {
@@ -53,7 +108,39 @@
     },
     {
       "title": "Policy's date:",
-      "content": ["October, 2026"]
+      "content": [
+        "October, 2026"
+      ]
     }
-  ]
+  ],
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions about Sttok security",
+    "items": [
+      {
+        "q": "Does Sttok hold ISO 27001 certification?",
+        "a": "Yes. Sttok holds ISO 27001 certification in information security and is audited by Bureau Veritas."
+      },
+      {
+        "q": "Where is the data stored?",
+        "a": "In AWS Europe, with no international data transfers. It is encrypted in transit with TLS 1.3 and at rest with AES-256."
+      },
+      {
+        "q": "Can users sign in with their company account?",
+        "a": "Yes, with Google or Microsoft single sign-on. Users without SSO sign in with a one-time code."
+      },
+      {
+        "q": "Does every user see all the companies in the group?",
+        "a": "No. Permissions are assigned per company and each user only sees the companies assigned to them."
+      },
+      {
+        "q": "Do you sign a data processing agreement?",
+        "a": "Yes. The data processing agreement (DPA) is available on request."
+      },
+      {
+        "q": "Is there a service level agreement?",
+        "a": "Yes, on custom plans, which are the plans for groups and companies with more than 50 shareholders."
+      }
+    ]
+  }
 }

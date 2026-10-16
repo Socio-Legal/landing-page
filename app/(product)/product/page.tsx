@@ -67,32 +67,32 @@ const Page = () => {
     <>
       <HeroSection {...hero} />
 
-      {/* Clientes, en el orden fijo de la lista del brief: 8 arriba y 9
+      {/* Clientes por relevancia, los más potentes primero: 8 arriba y 9
           abajo, para que ninguna fila quede con un logo suelto */}
       <section id="clients" className="border-t border-border">
         <div className="container mx-auto px-4 py-14 md:py-16">
           <LogoStrip
             label={t("clientsLabel")}
             primary={[
+              "Factorial",
               "Axa",
               "Andbank",
-              "Factorial",
-              "Multiverse",
-              "PldSpace",
               "Osborne",
+              "Taxdown",
+              "PldSpace",
+              "Caballero",
               "Fanalca",
-              "Sade",
             ]}
             secondary={[
-              "Caballero",
-              "Taxdown",
+              "Multiverse",
               "MyInvestor",
-              "Barkibu",
               "DerechoCom",
               "Pwc",
-              "Banktrack",
-              "LegalPigeon",
               "Cabiedes",
+              "LegalPigeon",
+              "Banktrack",
+              "Barkibu",
+              "Sade",
             ]}
           />
         </div>

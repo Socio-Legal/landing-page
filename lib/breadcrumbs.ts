@@ -150,6 +150,9 @@ function toEsPath(pathname: string): string {
 
 type Crumb = { name: string; path: string };
 
+/** Portadas de content/ con versión inglesa (ROUTE_MAP): su nombre en inglés. */
+const SECTION_EN: Record<string, string> = { funcionalidades: "Features" };
+
 /** Migas de una ruta, de la home a la pagina actual. Vacio en la home. */
 export function breadcrumbTrail(pathname: string, locale: Locale): Crumb[] {
   const esPath = toEsPath(normalize(pathname));
@@ -179,7 +182,12 @@ export function breadcrumbTrail(pathname: string, locale: Locale): Crumb[] {
     if (doc.name === "index") {
       return [
         home,
-        { name: sectionLabel?.name ?? docLabel(doc), path: esPath },
+        {
+          name:
+            (locale === "en" && SECTION_EN[doc.section]) ||
+            (sectionLabel?.name ?? docLabel(doc)),
+          path: esPath,
+        },
       ];
     }
     return [

@@ -26,6 +26,8 @@ export const ROUTE_MAP: Record<string, string> = {
   "/aviso-legal": "/en/disclaimer",
   "/privacidad": "/en/privacy",
   "/politica-seguridad": "/en/security",
+  // Solo el catálogo: las fichas de /funcionalidades/* siguen solo en castellano.
+  "/funcionalidades": "/en/features",
 };
 
 const EN_TO_ES = Object.fromEntries(

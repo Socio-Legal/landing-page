@@ -20,6 +20,7 @@ import PageSobreNosotros from "@/app/sobre-nosotros/page";
 import PageStartups from "@/app/solutions/startups/page";
 import PageSttokVsExcel from "@/app/sttok-vs-excel/page";
 import PageTestimonios from "@/app/testimonials/page";
+import FeaturesPageEn from "@/components/product/features-page-en";
 import type { Locale } from "@/lib/locales";
 
 /**
@@ -154,12 +155,23 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     softwareApplication: true,
     productModule: true,
   },
+  // El castellano lo sirve app/funcionalidades (MDX); esta entrada solo da
+  // la versión inglesa del catálogo.
+  "/funcionalidades": {
+    Component: FeaturesPageEn,
+    meta: {
+      en: {
+        title: "Sttok features: shareholder register, meetings, board, groups and incentive plans",
+        description: "Every Sttok feature by module: shareholder register and transfers, general meeting and e-voting, board and officers, groups of companies, documents, incentive plans and the transaction simulator.",
+      },
+    },
+  },
   "/politica-seguridad": {
     Component: PagePoliticaSeguridad,
     meta: {
       en: {
-        title: "Security Policy",
-        description: "Sttok's Information Security Policy: ISO 27001 certification, GDPR compliance, encryption, European hosting and the confidentiality, integrity and availability of information.",
+        title: "Sttok security: ISO 27001, GDPR and security policy",
+        description: "Sttok holds ISO 27001 certification and complies with the GDPR. Data in AWS Europe encrypted with TLS 1.3 and AES-256, sign-in with Google or Microsoft SSO or a one-time code, and permissions per company.",
       },
     },
   },

@@ -8,6 +8,7 @@ import TextContentSection, {
   TextSectionProps,
 } from "@/components/legal/text-content";
 import CallToActionSection from "@/components/landing/cta-section";
+import FaqSection, { FaqItem } from "@/components/shared/faq-section";
 
 const Page = () => {
   const { t } = useTranslation(["common", "legal-security-page"]);
@@ -20,10 +21,19 @@ const Page = () => {
     returnObjects: true,
   }) as TextSectionProps[];
 
+  const faq = t("legal-security-page:faq.items", {
+    returnObjects: true,
+  }) as FaqItem[];
+
   return (
     <>
       <HeroSection {...hero} />
       <TextContentSection content={content} hideTopSpace />
+      <FaqSection
+        eyebrow={t("legal-security-page:faq.eyebrow")}
+        title={t("legal-security-page:faq.title")}
+        items={faq}
+      />
       <CallToActionSection />
     </>
   );
