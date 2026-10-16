@@ -1,7 +1,7 @@
 "use client";
 
 import * as Accordion from "@radix-ui/react-accordion";
-import { AnimatePresence, motion, useInView } from "framer-motion";
+import { useInView } from "framer-motion";
 import React, {
   forwardRef,
   ReactNode,
@@ -11,7 +11,6 @@ import React, {
 } from "react";
 
 import { cn } from "@/lib/utils";
-import { useTheme } from "next-themes";
 import Image from "next/image";
 
 type AccordionItemProps = {
@@ -85,7 +84,7 @@ type CardDataProps = {
   title: string;
   content: string;
   image: ImageByThemeProps;
-  video?: string;
+  video?: string | ImageByThemeProps;
   icon?: React.ReactNode;
 };
 
@@ -102,7 +101,6 @@ export default function Features({
   linePosition = "left",
   data = [],
 }: FeaturesProps) {
-  const { theme } = useTheme();
 
   const [currentIndex, setCurrentIndex] = useState<number>(-1);
 
@@ -276,58 +274,74 @@ export default function Features({
             }`}
           >
             <div className="aspect-video w-full relative">
-              <AnimatePresence mode="wait">
-                {data[currentIndex]?.image && (
-                  <motion.div
-                    key={`image-${currentIndex}`}
-                    className="absolute inset-0"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.3, ease: "easeInOut" }}
+              {/*
+                Todas las pantallas se pintan a la vez, apiladas, y solo cambia
+                la opacidad: la siguiente ya está cargada cuando le toca y el
+                fundido es cruzado. Con AnimatePresence en modo "wait" la vieja
+                se iba a cero, quedaba el hueco vacío y la nueva llegaba a medio
+                cargar: se veía un parpadeo. El tema lo resuelve el CSS (dark:),
+                no el JS, para no pintar nunca la versión equivocada.
+              */}
+              {data.map((item, index) => {
+                const activa = index === Math.max(currentIndex, 0);
+                const video =
+                  typeof item.video === "string"
+                    ? { light: item.video, dark: item.video }
+                    : item.video;
+                const capa = "object-cover object-top rounded-lg shadow-lg border";
+                return (
+                  <div
+                    key={item.id}
+                    className={cn(
+                      "absolute inset-0 transition-opacity duration-500 ease-in-out",
+                      activa ? "opacity-100" : "pointer-events-none opacity-0"
+                    )}
+                    aria-hidden={!activa}
                   >
-                    {/* <img
-                      src={
-                        data[currentIndex].image[
-                          theme as keyof ImageByThemeProps
-                        ]
-                      }
-                      alt="feature"
-                      className="aspect-auto w-full h-full object-cover rounded-lg shadow-lg relative border"
-                    /> */}
-                    <Image
-                      src={
-                        data[currentIndex].image[
-                          theme === "dark" ? "dark" : "light"
-                        ]
-                      }
-                      alt="feature"
-                      className="aspect-auto w-full h-full object-cover rounded-lg shadow-lg relative border"
-                      layout="fill"
-                    />
-                  </motion.div>
-                )}
-                {data[currentIndex]?.video && (
-                  <motion.div
-                    key={`video-${currentIndex}`}
-                    className="absolute inset-0"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.3, ease: "easeInOut" }}
-                  >
-                    <video
-                      src={data[currentIndex].video}
-                      className="w-full h-full object-cover rounded-lg shadow-lg"
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                    />
-                  </motion.div>
-                )}
-              </AnimatePresence>
-              {!data[currentIndex]?.image && !data[currentIndex]?.video && (
+                    {video ? (
+                      <>
+                        <video
+                          src={video.light}
+                          poster={item.image?.light}
+                          className={cn("h-full w-full dark:hidden", capa)}
+                          autoPlay
+                          loop
+                          muted
+                          playsInline
+                        />
+                        <video
+                          src={video.dark}
+                          poster={item.image?.dark}
+                          className={cn("hidden h-full w-full dark:block", capa)}
+                          autoPlay
+                          loop
+                          muted
+                          playsInline
+                        />
+                      </>
+                    ) : item.image ? (
+                      <>
+                        <Image
+                          src={item.image.light}
+                          alt={item.title}
+                          fill
+                          sizes="(max-width: 1152px) 100vw, 72rem"
+                          priority={index === 0}
+                          className={cn("dark:hidden", capa)}
+                        />
+                        <Image
+                          src={item.image.dark}
+                          alt={item.title}
+                          fill
+                          sizes="(max-width: 1152px) 100vw, 72rem"
+                          className={cn("hidden dark:block", capa)}
+                        />
+                      </>
+                    ) : null}
+                  </div>
+                );
+              })}
+              {data.length === 0 && (
                 <div className="w-full h-full rounded-lg border border-border bg-muted p-1"></div>
               )}
             </div>
