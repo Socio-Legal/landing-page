@@ -8,7 +8,7 @@ export const metadata = {
 
 export const summary = {
   client: "Grupo Caballero",
-  title: "Grupo Caballero gestiona Captable y sus Socios con Sttok",
+  title: "Grupo Caballero lleva su libro de socios y sus juntas con Sttok",
   description: "",
   quote: {
     text: "“Sttok ha sido una herramienta clave para la gestión de nuestro Captable y Juntas de Socios. Nos ha permitido automatizar tareas manuales y ahorrar tiempo en la generación de documentos y firmas electrónicas.”",
@@ -35,7 +35,7 @@ export const summary = {
     {
       key: "Funcionalidades",
       value:
-        "Captable, Juntas de Socios, Generación de documentos, Firma automatizada, etc",
+        "Libro de socios, juntas de socios, generación de documentos y firma electrónica",
     },
   ],
 };
@@ -50,7 +50,7 @@ export const content = {
     {
       title: "Un poco sobre Grupo Caballero",
       texts: [
-        "Grupo Caballero es una empresa de bebidas líder en el mercado español, con una amplia gama de productos y marcas reconocidas a nivel internacional. La compañía ha experimentado un crecimiento significativo desde su fundación, destacando en la innovación y calidad de sus productos.",
+        "Grupo Caballero es una empresa familiar fundada en 1830 en El Puerto de Santa María (Cádiz).",
       ],
     },
     {
@@ -58,8 +58,8 @@ export const content = {
       texts: [
         "1. Por la facilidad de uso de la plataforma.",
         "2. Por la automatización de tareas manuales.",
-        "3. Por la gestión del Libro de Socios (Captable).",
-        "4. Por la generación de documentos y firma automatizada.",
+        "3. Por la gestión del libro de socios.",
+        "4. Por la generación de documentos y la firma electrónica.",
         "5. Por la gestión de Juntas de Socios.",
       ],
     },

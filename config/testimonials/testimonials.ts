@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Testimonios y Casos de Éxito",
+  title: "Clientes de Sttok: casos de éxito y testimonios",
   description:
-    "Aquí encontrarás testimonios y casos de éxito de nuestros clientes",
+    "Cómo llevan el libro de socios, las juntas y los planes de incentivos Factorial, PLD Space, Grupo Caballero, TaxDown y MyInvestor, y lo que dicen los clientes de Sttok.",
   keywords:
-    "testimonios, casos de éxito, clientes, empresas, empresas, éxito, satisfacción, recomendación",
+    "clientes de Sttok, casos de éxito, testimonios, libro de socios, planes de incentivos, juntas",
 };

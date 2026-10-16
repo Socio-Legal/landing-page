@@ -1,7 +1,7 @@
 {
   "summary": {
     "client": "Grupo Caballero",
-    "title": "Grupo Caballero manages Cap Table and Shareholders with Sttok",
+    "title": "Grupo Caballero runs its shareholder register and meetings with Sttok",
     "description": "",
     "quote": {
       "text": "'Sttok has been a key tool for managing our Cap Table and Shareholder meetings. It has allowed us to automate manual tasks and save time in generating documents and electronic signatures.'",
@@ -27,7 +27,7 @@
       },
       {
         "key": "Functionalities",
-        "value": "Cap Table, Shareholder meetings, Document Generation, Automated Signing, etc"
+        "value": "Shareholder register, shareholder meetings, document generation and e-signature"
       }
     ]
   },
@@ -41,7 +41,7 @@
       {
         "title": "A bit about Grupo Caballero",
         "texts": [
-          "Grupo Caballero is a leading beverage company in the Spanish market, with a wide range of products and internationally recognized brands. The company has experienced significant growth since its foundation, excelling in product innovation and quality."
+          "Grupo Caballero is a family business founded in 1830 in El Puerto de Santa María (Cádiz)."
         ]
       },
       {
@@ -49,8 +49,8 @@
         "texts": [
           "1. For the ease of use of the platform.",
           "2. For the automation of manual tasks.",
-          "3. For the management of the Shareholder Register (Cap Table).",
-          "4. For document generation and automated signing.",
+          "3. For the management of the shareholder register.",
+          "4. For document generation and e-signature.",
           "5. For the management of Shareholder meetings."
         ]
       }
