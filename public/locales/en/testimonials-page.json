@@ -30,7 +30,8 @@
         "icon": "",
         "logo": "Factorial",
         "title": "",
-        "description": "HR software for companies."
+        "description": "HR software for companies.",
+        "alt": "Factorial, a Sttok customer"
       },
       {
         "icon": "",
@@ -44,7 +45,8 @@
         "icon": "",
         "logo": "PldSpace",
         "title": "",
-        "description": "Spanish company that develops reusable rockets to put satellites into orbit."
+        "description": "Spanish company that develops reusable rockets to put satellites into orbit.",
+        "alt": "PLD Space, a Sttok customer"
       },
       {
         "icon": "",
@@ -58,19 +60,22 @@
         "icon": "",
         "logo": "Caballero",
         "title": "",
-        "description": "Grupo Caballero, a family business founded in 1830 in El Puerto de Santa María (Cádiz)."
+        "description": "Grupo Caballero, a family business founded in 1830 in El Puerto de Santa María (Cádiz).",
+        "alt": "Grupo Caballero, a Sttok customer"
       },
       {
         "icon": "",
         "logo": "Taxdown",
         "title": "",
-        "description": "Software for filing income tax returns easily."
+        "description": "Software for filing income tax returns easily.",
+        "alt": "TaxDown, a Sttok customer"
       },
       {
         "icon": "",
         "logo": "MyInvestor",
         "title": "",
-        "description": "Digital financial institution operating as an agent of Andbank."
+        "description": "Digital financial institution operating as an agent of Andbank.",
+        "alt": "MyInvestor, a Sttok customer"
       }
     ]
   }

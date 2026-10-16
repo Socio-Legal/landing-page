@@ -31,7 +31,7 @@
         "logo": "Factorial",
         "title": "",
         "description": "Software de recursos humanos para empresas.",
-        "alt": "Factorial gestiona Captable y Planes de Incentivos con Sttok"
+        "alt": "Factorial, cliente de Sttok"
       },
       {
         "icon": "",
@@ -46,7 +46,7 @@
         "logo": "PldSpace",
         "title": "",
         "description": "Empresa española que desarrolla cohetes reutilizables para poner satélites en órbita.",
-        "alt": "PLD Space utiliza Sttok para gestionar la relación con sus socios mediante el Portal del Inversor"
+        "alt": "PLD Space, cliente de Sttok"
       },
       {
         "icon": "",
@@ -61,21 +61,21 @@
         "logo": "Caballero",
         "title": "",
         "description": "Grupo Caballero, empresa familiar fundada en 1830 en El Puerto de Santa María (Cádiz).",
-        "alt": "Grupo Caballero gestiona Captable y sus Socios con Sttok"
+        "alt": "Grupo Caballero, cliente de Sttok"
       },
       {
         "icon": "",
         "logo": "Taxdown",
         "title": "",
         "description": "Software para hacer la declaración de la renta de forma sencilla.",
-        "alt": "Taxdown gestiona Captable y Planes de Incentivos con Sttok"
+        "alt": "TaxDown, cliente de Sttok"
       },
       {
         "icon": "",
         "logo": "MyInvestor",
         "title": "",
         "description": "Entidad financiera digital que opera como agente de Andbank.",
-        "alt": "MyInvestor digitaliza su gestión societaria con Sttok"
+        "alt": "MyInvestor, cliente de Sttok"
       }
     ]
   }

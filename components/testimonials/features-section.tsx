@@ -7,7 +7,11 @@ import { useTranslation } from "react-i18next";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 import SectionHeading from "@/components/shared/section-heading";
-import { clientLogos, getClientLogo } from "@/config/client-logos";
+import {
+  clientLogos,
+  getClientLogo,
+  getClientLogoScale,
+} from "@/config/client-logos";
 
 type Feature = {
   icon?: string;
@@ -24,6 +28,15 @@ export type FeaturesSectionProps = {
   description: string;
   items: Feature[];
 };
+
+/**
+ * Logos que en la caja común se ven pequeños: AXA es cuadrado y en 28 px de
+ * alto queda muy por debajo de los logotipos de texto; Multiverse es muy
+ * apaisado y de trazo fino. Todos van en una fila de 40 px para que los
+ * textos de las tarjetas queden alineados.
+ */
+const CAJA: Record<string, string> = { Axa: "h-10 w-10" };
+const ESCALA: Record<string, number> = { Multiverse: 1.6 };
 
 const CARD =
   "flex flex-col gap-4 rounded-lg border border-border bg-card p-6";
@@ -51,14 +64,23 @@ const FeaturesSection: FC<FeaturesSectionProps> = ({
             .map((feature, index) => {
               const cuerpo = (
                 <>
-                  <div className="relative h-7 w-32 opacity-70 grayscale">
-                    <Image
-                      src={getClientLogo(feature.logo as keyof typeof clientLogos)}
-                      alt={feature.alt || feature.logo}
-                      fill
-                      style={{ objectFit: "contain", objectPosition: "left" }}
-                      className="dark:invert"
-                    />
+                  <div className="flex h-10 items-center">
+                    <div
+                      className={`relative ${CAJA[feature.logo] ?? "h-7 w-32"} opacity-70 grayscale`}
+                    >
+                      <Image
+                        src={getClientLogo(feature.logo as keyof typeof clientLogos)}
+                        alt={feature.alt || feature.logo}
+                        fill
+                        style={{
+                          objectFit: "contain",
+                          objectPosition: "left",
+                          transform: `scale(${ESCALA[feature.logo] ?? getClientLogoScale(feature.logo as keyof typeof clientLogos)})`,
+                          transformOrigin: "left center",
+                        }}
+                        className="dark:invert"
+                      />
+                    </div>
                   </div>
                   <p className="flex-1 text-sm leading-relaxed text-muted-foreground">
                     {feature.description}
