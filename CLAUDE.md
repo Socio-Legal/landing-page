@@ -53,8 +53,11 @@ Las redirecciones usan `statusCode: 301` explícito. `permanent: true` emite
 
 ## Contenido en MDX
 
-Las secciones `/soluciones`, `/comparativas` y `/guias` son carpetas castellanas
-reales, sin rewrite detrás, fuera de `ROUTE_MAP` y fuera de i18next.
+Las secciones `/soluciones`, `/comparativas`, `/guias` y `/funcionalidades` son
+carpetas castellanas reales, sin rewrite detrás y fuera de i18next. Solo una
+portada tiene gemela inglesa: `/funcionalidades` ↔ `/en/features`, que está en
+`ROUTE_MAP` y la sirve `components/product/features-page-en.tsx` con el mismo
+catálogo. Las fichas de cada funcionalidad son solo castellanas.
 
 - El contenido vive en `content/<sección>/*.mdx`. **La URL la manda la ruta del
   archivo**, no el frontmatter: `content/soluciones/index.mdx` → `/soluciones`,
