@@ -136,6 +136,10 @@ Funcionalidad con coste adicional: mercado secundario.
 - Titular real en grupos de sociedades: https://www.sttok.com/funcionalidades/titular-real
 - Portal del beneficiario de planes de incentivos: https://www.sttok.com/funcionalidades/portal-del-beneficiario
 - Liquidez y tender offers en planes de incentivos: https://www.sttok.com/funcionalidades/liquidez-planes-de-incentivos
+- Reglas de la sociedad (estatutos y pactos por tema, calendario de obligaciones): https://www.sttok.com/funcionalidades/reglas-de-la-sociedad
+- Apoderados y poderes: https://www.sttok.com/funcionalidades/apoderados-y-poderes
+- Firma electrónica: https://www.sttok.com/funcionalidades/firma-electronica
+- Comunicaciones a socios con certificado de envío: https://www.sttok.com/funcionalidades/comunicaciones-a-socios
 - Equipo: https://www.sttok.com/sobre-nosotros
 - Blog: https://blog.sttok.com/recursos
 - Dossier comercial (español): https://www.sttok.com/docs/sttok-dossier-es.pdf
