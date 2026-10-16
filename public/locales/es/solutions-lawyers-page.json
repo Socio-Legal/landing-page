@@ -5,69 +5,17 @@
     "keywords": "gestión societaria, abogados, captable, libro de socios, planes de incentivos, juntas de accionistas, consejos, testimonios"
   },
   "hero": {
-    "slogan": "Soluciones",
-    "title": "Solución para Abogados",
-    "description": "Con Sttok digitalizas la gestión de sociedades incrementando el número de sociedades que gestiona un abogado, ahorrando tiempo y evitando errores. Sttok te permite dar un mejor servicio a los clientes ganando tiempo y aportando valor.",
+    "slogan": "Despachos y asesores",
+    "title": "Para despachos y asesores que llevan las sociedades de sus clientes",
+    "description": "Sttok reúne en una portada todas las sociedades que lleva el despacho, con lo pendiente de cada una ordenado por plazo. Desde ahí se llevan los libros de socios y de actas, se convocan juntas, se emiten certificados y se legalizan los libros.",
     "button": {
-      "text": "Solicitar Demo",
+      "text": "Solicitar demo",
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
       "light": "/capturas/sociedades-light.png",
       "dark": "/capturas/sociedades-dark.png"
     }
-  },
-  "clients": {
-    "title": "Los abogados de estas empresas y despachos utilizan Sttok",
-    "clients": [
-      "Multiverse",
-      "DerechoCom",
-      "LetsLaw",
-      "Factorial",
-      "PldSpace",
-      "LegalPigeon"
-    ]
-  },
-  "features": {
-    "title": "Funcionalidades Clave para Abogados",
-    "description": "Sttok permite a los abogados digitalizar la gestión de sociedades, optimizando tareas como el libro de socios, juntas de accionistas, Consejos o planes de incentivos.",
-    "items": [
-      {
-        "icon": "Icon01",
-        "title": "Libro de Socios",
-        "description": "Gestiona digitalmente el libro de socios de manera eficiente y sin errores."
-      },
-      {
-        "icon": "Icon02",
-        "title": "Simulador de Operaciones",
-        "description": "Realiza cálculos exactos para operaciones societarias en pocos minutos."
-      },
-      {
-        "icon": "Icon03",
-        "title": "Planes de Incentivos",
-        "description": "Automatiza la gestión de stock options y otros planes de incentivos."
-      },
-      {
-        "icon": "Icon04",
-        "title": "Juntas de Accionistas",
-        "description": "Convoca, vota y gestiona digitalmente juntas de accionistas."
-      },
-      {
-        "icon": "Icon05",
-        "title": "Consejos de Administración",
-        "description": "Gestiona digitalmente las reuniones y votaciones del Consejo."
-      },
-      {
-        "icon": "Icon06",
-        "title": "Documentación Societaria",
-        "description": "Genera y administra actas, certificados y otros documentos de manera automática."
-      },
-      {
-        "icon": "SecondaryBook",
-        "title": "Transacciones",
-        "description": "Registro de todas las operaciones: ampliaciones, compraventas, transmisiones, canjes, herencias, reducciones, renumeraciones, etc."
-      }
-    ]
   },
   "testimonials": {
     "title": "Lo que Dicen Nuestros Clientes",
@@ -84,6 +32,81 @@
         "role": "Abogado Socio, LetsLaw",
         "description": "Sttok ha automatizado gran parte de la gestión de sociedades, permitiéndonos ofrecer un mejor servicio a nuestros clientes.",
         "stars": 5
+      }
+    ]
+  },
+  "includes": {
+    "eyebrow": "Qué incluye",
+    "title": "Lo que usa un despacho que lleva sociedades de sus clientes",
+    "allLink": "Ver todas las funcionalidades de Sttok"
+  },
+  "situations": {
+    "eyebrow": "Casos habituales",
+    "title": "Situaciones habituales en un despacho",
+    "guideLabel": "Ver cómo",
+    "rows": [
+      {
+        "situation": "Llega abril y hay que legalizar los libros",
+        "action": "Muestra los libros de cada sociedad, cuáles están fuera de plazo y registra cada legalización.",
+        "href": "/funcionalidades/libro-de-actas"
+      },
+      {
+        "situation": "Toca la junta ordinaria en muchas sociedades",
+        "action": "Lanza el trabajo en varias sociedades a la vez y sigue en qué punto está cada una."
+      },
+      {
+        "situation": "Un cliente trae años de escrituras sin registrar",
+        "action": "Lee las escrituras con IA, encadena las operaciones y señala los huecos del histórico.",
+        "href": "/funcionalidades/lectura-de-escrituras-con-ia"
+      },
+      {
+        "situation": "El banco de un cliente pide un certificado",
+        "action": "Lo genera desde el libro con los datos del día, listo para firmar.",
+        "href": "/funcionalidades/certificados-de-titularidad-y-valor"
+      },
+      {
+        "situation": "Un socio quiere vender y hay derecho preferente",
+        "action": "Gestiona las comunicaciones y los plazos que fijan los estatutos y anota la transmisión.",
+        "href": "/guias/derecho-de-adquisicion-preferente"
+      },
+      {
+        "situation": "Cada abogado lleva sus propios clientes",
+        "action": "Los permisos se dan por sociedad: cada persona del despacho ve solo las suyas."
+      }
+    ],
+    "columns": {
+      "situation": "Situación",
+      "action": "Qué hace Sttok",
+      "guide": "Más información"
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Preguntas frecuentes de despachos",
+    "items": [
+      {
+        "q": "¿Puedo llevar sociedades de distintos clientes?",
+        "a": "Sí. Todas aparecen en una portada, con lo pendiente de cada una, y se pueden agrupar en colecciones por cliente o por abogado."
+      },
+      {
+        "q": "¿El cliente puede acceder a su sociedad?",
+        "a": "Sí, con el rol que le dé el despacho: administrador, consejero, socio o solo consulta."
+      },
+      {
+        "q": "¿Puedo cargar el histórico de un cliente desde las escrituras?",
+        "a": "Sí. Sttok lee las escrituras, propone cada operación para revisarla y señala los huecos y las erratas del histórico."
+      },
+      {
+        "q": "¿Se pueden preparar juntas de varias sociedades a la vez?",
+        "a": "Sí. Los trabajos recurrentes, como la junta ordinaria, la formulación o el depósito de cuentas, se lanzan para varias sociedades y se siguen desde la portada."
+      },
+      {
+        "q": "¿Genera actas y certificados?",
+        "a": "Sí. El acta de la junta se compone con la asistencia y los resultados, y los certificados salen del libro con los datos del día."
+      },
+      {
+        "q": "¿Sirve para sociedades de Latinoamérica?",
+        "a": "La plataforma se adapta a la denominación de cada país: libro de accionistas, asamblea general de accionistas, junta directiva o directorio. La adecuación a la normativa de cada país se valora caso por caso."
       }
     ]
   }

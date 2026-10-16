@@ -1,9 +1,9 @@
 import { routes } from "../routes";
 
 export const metadata = {
-  title: "Software para Abogados Gestión Libro de Socios", // ej., "Nombre del Producto"
+  title: "Libros de socios, juntas y actas para despachos y asesores mercantilistas",
   description:
-    "Software gestión sociedades para Abogados. Sttok te permite gestionar el libro de socios, planes de incentivos, juntas de accionistas, consejos de administración, etc.", // ej., "Una breve descripción del producto o servicio"
+    "Todas las sociedades que lleva el despacho en una portada: libros de socios y de actas, juntas, certificados y legalización de libros, con permisos por sociedad.",
   keywords:
     "gestión societaria, abogados, captable, libro de socios, planes de incentivos, juntas de accionistas, consejos, testimonios", // ej., "palabra_clave1, palabra_clave2, palabra_clave3"
 };

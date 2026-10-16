@@ -1,43 +1,41 @@
 "use client";
 
-import React from "react";
-import { useTranslation } from "react-i18next";
+import ModulePage from "@/components/product/module-page";
 
-import CallToActionSection from "@/components/landing/cta-section";
-import TestimonialsSection, {
-  TestimonialsSectionProps,
-} from "@/components/product/testimonials-section";
-import FeaturesSection, {
-  FeaturesSectionProps,
-} from "@/components/product/features-section";
-import ClientsSection, {
-  ClientsSectionProps,
-} from "@/components/product/clients-section";
-import HeroSection, {
-  HeroSectionProps,
-} from "@/components/product/hero-section";
-
-const Page = () => {
-  const { t } = useTranslation("solutions-investors-page");
-
-  const hero = t("hero", { returnObjects: true }) as HeroSectionProps;
-  const clients = t("clients", { returnObjects: true }) as ClientsSectionProps;
-  const features = t("features", {
-    returnObjects: true,
-  }) as FeaturesSectionProps;
-  const testimonials = t("testimonials", {
-    returnObjects: true,
-  }) as TestimonialsSectionProps;
-
-  return (
-    <>
-      <HeroSection {...hero} />
-      <ClientsSection {...clients} />
-      <FeaturesSection {...features} />
-      <TestimonialsSection {...testimonials} />
-      <CallToActionSection />
-    </>
-  );
+// Por módulo, las funcionalidades del catálogo que importan a este perfil.
+const SELECCION = {
+  "grupos": [
+    "Participadas",
+    "Diagrama del grupo",
+    "Comparar fechas",
+    "Cuentas depositadas"
+  ],
+  "socios": [
+    "Ficha del socio",
+    "Clases de acciones",
+    "Acreedores y notas convertibles",
+    "Certificados de titularidad y de valor"
+  ],
+  "simulador": [
+    "Ampliación de capital",
+    "Nota convertible",
+    "Operaciones encadenadas",
+    "Cascada de liquidación"
+  ],
+  "secundario": [
+    "Ofertas de venta",
+    "Ofertas de compra",
+    "Libro de ofertas",
+    "Registro en el libro"
+  ]
 };
+
+const Page = () => (
+  <ModulePage
+    ns="solutions-investors-page"
+    modulos={Object.keys(SELECCION)}
+    seleccion={SELECCION}
+  />
+);
 
 export default Page;

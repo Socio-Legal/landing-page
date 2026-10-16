@@ -5,68 +5,17 @@
     "keywords": "investors, investees, portfolio, captable, shareholder register, investor"
   },
   "hero": {
-    "slogan": "Solutions",
-    "title": "Solution for Investors, VCs and Funds",
-    "description": "All the portfolio of investees in a single place with real and updated data. You'll be able to know exactly the % ND, %FD and potential FD, have access to transaction deeds, shareholder meetings, etc.",
+    "slogan": "Investors and holding companies",
+    "title": "For funds, family offices and holding companies with investees",
+    "description": "Sttok brings together your investees with their percentage, their shares and their value, draws the chain of control on any date and simulates each transaction before it is signed: a capital increase, a note conversion or the waterfall of a sale.",
     "button": {
-      "text": "Request Demo",
+      "text": "Schedule demo",
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
       "light": "/capturas/participadas-light.png",
       "dark": "/capturas/participadas-dark.png"
     }
-  },
-  "clients": {
-    "title": "Companies using Sttok",
-    "clients": [
-      "PldSpace",
-      "Factorial",
-      "MyInvestor",
-      "Caballero",
-      "Shakers",
-      "Taxdown",
-      "Andbank",
-      "Osborne",
-      "Fanalca",
-      "Sade"
-    ]
-  },
-  "features": {
-    "title": "Main Features for Investors",
-    "description": "Sttok provides investors access to their portfolio of investees with real-time updated data, allowing round simulations and document management.",
-    "items": [
-      {
-        "icon": "Icon01",
-        "title": "Access to Investee Portfolio",
-        "description": "Consult updated information about shareholdings and their valuation."
-      },
-      {
-        "icon": "Icon02",
-        "title": "Operations Simulator",
-        "description": "Perform simulations of rounds and capital operations with exact data in just a few minutes."
-      },
-      {
-        "icon": "Icon03",
-        "title": "Document Management",
-        "description": "Access deeds, minutes, and certificates of all operations in a single portal."
-      },
-      {
-        "icon": "Icon04",
-        "title": "Meetings",
-        "description": "Simplify delegations, voting, and documentation for meetings."
-      },
-      {
-        "icon": "Icon05",
-        "title": "Partner profile",
-        "description": "You'll have access to your profile with updated information, deeds, and data."
-      },
-      {
-        "icon": "Icon06",
-        "title": "Portfolio",
-        "description": "You'll have the scheme and tree of your investee portfolio."
-      }
-    ]
   },
   "testimonials": {
     "title": "What our Clients say",
@@ -92,6 +41,72 @@
         "img": "/logo-banktrack-mini.png",
         "description": "Now with Sttok you can perform simulations of capital increases or convertible notes. We also easily manage our team's phantom shares. Finally, as an investor, I have my investments organized and I clearly know what I have.",
         "stars": 5
+      }
+    ]
+  },
+  "includes": {
+    "eyebrow": "What's included",
+    "title": "What an investor with several investees uses"
+  },
+  "situations": {
+    "eyebrow": "Common cases",
+    "title": "Common situations for an investor",
+    "guideLabel": "See how",
+    "rows": [
+      {
+        "situation": "You need to know what you hold in each company",
+        "action": "Each investee appears with its percentage, its shares and its book value."
+      },
+      {
+        "situation": "An investee increases its capital",
+        "action": "The simulator calculates the price per share, the new shares and each shareholder's dilution."
+      },
+      {
+        "situation": "A convertible note converts",
+        "action": "It calculates the resulting shares and their effect on the other shareholders."
+      },
+      {
+        "situation": "The sale of an investee is being negotiated",
+        "action": "The liquidation waterfall shows what each shareholder receives, with the preferences of each class."
+      },
+      {
+        "situation": "The committee asks for the group picture at year-end",
+        "action": "The chart shows the chain of control on any date and what changed between two year-ends."
+      }
+    ],
+    "columns": {
+      "situation": "Situation",
+      "action": "What Sttok does",
+      "guide": "More information"
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions from investors",
+    "items": [
+      {
+        "q": "Can I see all my investees in one place?",
+        "a": "Yes. They are shown as cards or a table, grouped by relationship, level and country, with their percentage and value."
+      },
+      {
+        "q": "Does it calculate my stake when I hold it through several routes?",
+        "a": "Yes. The chart adds up the routes and shows the effective percentage alongside the direct one."
+      },
+      {
+        "q": "Can I simulate a capital increase in an investee?",
+        "a": "Yes, on the investee's shareholder register when it is kept in Sttok. A simulation records nothing."
+      },
+      {
+        "q": "Can I request my investees' filed accounts?",
+        "a": "Yes. Sttok requests them from the Companies Registry, at a cost per company."
+      },
+      {
+        "q": "Can shareholders buy and sell shares between them?",
+        "a": "Yes, with the secondary market, which is an add-on module."
+      },
+      {
+        "q": "Does it work for companies in Latin America?",
+        "a": "The platform adapts to each country's terminology: shareholder ledger, general shareholders' meeting, board of directors. Compliance with each country's regulations is assessed case by case."
       }
     ]
   }

@@ -1,9 +1,9 @@
 import { routes } from "../routes";
 
 export const metadata = {
-  title: "Software para Portal del Inversor", // ej., "Nombre del Producto"
+  title: "Portal del inversor: posición, certificados y juntas de cada socio",
   description:
-    "Descubre las soluciones que ofrecemos para los inversores y empresas para dar acceso a sus accionistas", // ej., "Una breve descripción del producto o servicio"
+    "Cada socio e inversor con su propio acceso y la imagen de la sociedad: su posición, sus certificados, la junta y las comunicaciones con certificado de envío.",
   keywords:
     "inversores, participadas, cartera, captable, gestión documental, simulador de operaciones, portal del inversor", // ej., "palabra_clave1, palabra_clave2, palabra_clave3"
 };
