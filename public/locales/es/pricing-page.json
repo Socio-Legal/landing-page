@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Precios",
-    "description": "Planes desde 450€ por sociedad al año. Libro de socios, planes de incentivos, juntas y consejos. Sin coste de implantación y onboarding en una semana.",
+    "description": "Planes desde 450€ por sociedad al año. Libro de socios, planes de incentivos, juntas y consejos. Sin coste de implantación y con puesta en marcha en unas horas por sociedad.",
     "keywords": "planes, precios, tarifas, costes, suscripción, anual, libro de socios, captable"
   },
   "hero": {
@@ -32,7 +32,7 @@
       },
       {
         "q": "¿Qué incluyen todos los planes?",
-        "a": "Comunicaciones, onboarding completo en una semana y soporte en español e inglés. Sin coste de implantación oculto. La firma electrónica integrada se incluye en los planes Avanzado y Pro."
+        "a": "Comunicaciones, puesta en marcha y soporte en español e inglés. Sin coste de implantación oculto. La firma electrónica integrada se incluye en los planes Avanzado y Pro."
       },
       {
         "q": "¿Qué funcionalidades tienen coste extra?",
@@ -40,7 +40,7 @@
       },
       {
         "q": "¿Cuánto tarda la implantación?",
-        "a": "El onboarding completo se hace en una semana, incluida la migración de los datos desde Excel u otras herramientas."
+        "a": "Unas horas por sociedad, incluida la migración de los datos desde Excel u otras herramientas. En grupos con muchas sociedades, el plazo depende del número de sociedades. Si el libro tiene años sin actualizar, Sttok reconstruye el histórico desde las escrituras en pocos minutos."
       },
       {
         "q": "¿Cómo puedo contratar Sttok?",
