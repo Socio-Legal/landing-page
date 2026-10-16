@@ -10,7 +10,7 @@ type LogoName = keyof typeof clientLogos;
 
 /**
  * Tira de clientes de la home. Usa LogoStrip, como el resto del sitio: los
- * ocho primeros en grande y el resto debajo, en rejilla para que ninguna fila
+ * nueve primeros en grande y el resto debajo, en rejilla para que ninguna fila
  * quede con logos sueltos. El orden es el de home-clients-section.json.
  */
 const ClientsSection: FC = () => {
@@ -27,8 +27,8 @@ const ClientsSection: FC = () => {
       <div className="container mx-auto px-4 py-12 md:py-16">
         <LogoStrip
           label={t("header.description")}
-          primary={companies.slice(0, 8)}
-          secondary={companies.slice(8)}
+          primary={companies.slice(0, 9)}
+          secondary={companies.slice(9)}
         />
       </div>
     </section>

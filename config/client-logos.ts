@@ -51,9 +51,11 @@ export const clientLogos = {
 };
 
 // Corrección óptica: logos en negrita y recortados al borde que, en la misma
-// caja, pesan bastante más que el resto de la tira.
+// caja, pesan bastante más que el resto de la tira; y Multiverse, muy
+// apaisado y de trazo fino, que se queda pequeño.
 const logoScale: Partial<Record<keyof typeof clientLogos, number>> = {
   Barkibu: 0.75,
+  Multiverse: 1.2,
   Sade: 0.65,
 };
 
