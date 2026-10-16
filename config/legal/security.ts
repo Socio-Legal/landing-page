@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "Política de Seguridad",
+  title: "Seguridad de Sttok: ISO 27001, RGPD y política de seguridad",
   description:
-    "Política de Seguridad de la Información de Sttok: certificación ISO 27001, cumplimiento del RGPD, cifrado, alojamiento en Europa y garantía de confidencialidad, integridad y disponibilidad de la información.",
+    "Sttok tiene la certificación ISO 27001 y cumple el RGPD. Datos en AWS Europa cifrados con TLS 1.3 y AES-256, acceso con SSO de Google o Microsoft o con código de un solo uso, y permisos por sociedad.",
   keywords: "",
 };
