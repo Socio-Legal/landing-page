@@ -10,9 +10,9 @@ import {
 } from "@/lib/structured-data";
 
 const page = {
-  title: "Mercado Secundario",
+  title: "Mercado secundario de participaciones entre socios",
   description:
-    "Mercado de acciones entre socios con gestión digital de ofertas de compra y venta.",
+    "Compraventas entre socios y ofertas de compra a varios socios a la vez, registradas en el libro de socios con su documentación. Módulo con coste adicional.",
   keywords: "mercado secundario, acciones entre socios, compraventa de acciones",
 };
 

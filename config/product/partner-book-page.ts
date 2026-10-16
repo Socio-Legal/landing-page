@@ -1,9 +1,9 @@
 import { routes } from "../routes";
 
 export const metadata = {
-  title: "Libro de Socios",
+  title: "Libro de socios digital: numeración por rangos, cargas y certificados",
   description:
-    "Libro de Socios oficial, actualizado y sin errores. Deja de utilizar excel ineficientes. Un único libro de socios listo para presentar al Registro y para poder calcular operaciones fácilmente.",
+    "Sttok lleva el libro registro de socios o de acciones nominativas como registro oficial, con transmisiones por rangos, cargas, cotitulares y certificados, exportable en formato legalizable.",
   keywords: "Libro de Socios, Socios, Registro, Operaciones, Excel",
 };
 

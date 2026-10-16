@@ -71,9 +71,9 @@ export const clients = {
 };
 
 export const features = {
-  title: "Planes de Incentivos",
+  title: "Planes de incentivos: phantom shares y stock options",
   description:
-    "Sttok ofrece una gestión completa y profesional de planes de incentivos para empleados y colaboradores. Descubre todas las funcionalidades que te ofrece.",
+    "Pool aprobado por la junta, asignaciones, vesting, cartas de invitación, portal del beneficiario y tender offers, calculados sobre el capital real del libro de socios.",
   items: [
     {
       icon: "Icon01",

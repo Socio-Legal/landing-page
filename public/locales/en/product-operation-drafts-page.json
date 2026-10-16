@@ -5,88 +5,17 @@
     "keywords": "operations simulator, investment rounds, capital increases, convertible notes, corporate simulations"
   },
   "hero": {
-    "slogan": "Product",
-    "title": "Operations Simulator",
-    "description": "Easily calculate all types of operations and scenarios in seconds. Calculate rounds, expansions, sales, convertible notes, etc. It also generates documentation for the simulations in just a few minutes.",
+    "slogan": "Transaction simulator",
+    "title": "Corporate transaction simulator: capital increases, share sales and convertible notes",
+    "description": "Sttok simulates a capital increase, a reduction, a share sale or a note conversion on the actual data in the shareholder register. It chains several transactions, calculates the liquidation waterfall and prepares draft documents.",
     "button": {
       "text": "Schedule demo",
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/hero/hero-product-simulador.png",
-      "dark": "/hero/hero-product-simulador.png"
+      "light": "/modulos/simulador-light.png",
+      "dark": "/modulos/simulador-dark.png"
     }
-  },
-  "topFeatures": {
-    "title": "Main Features",
-    "description": "Discover the most advanced tools to calculate any type of corporate operation.",
-    "items": [
-      {
-        "title": "Automatic Calculations",
-        "description": "Automate the calculation of operations such as investment rounds, capital increases, and share sales.",
-        "icon": "Calculator"
-      },
-      {
-        "title": "Real-Time Simulations",
-        "description": "Automatically simulate complex financial scenarios, allowing you to make decisions with accurate data.",
-        "icon": "Users"
-      },
-      {
-        "title": "Automatic Documentation",
-        "description": "Generate all necessary documents for your operations in a matter of minutes.",
-        "icon": "FileCheck"
-      }
-    ]
-  },
-  "clients": {
-    "title": "CLIENTS USING THE OPERATIONS SIMULATOR",
-    "clients": [
-      "Factorial",
-      "LegalPigeon",
-      "Banktrack",
-      "PldSpace",
-      "Barkibu",
-      "Andbank",
-      "Osborne",
-      "Fanalca",
-      "Sade"
-    ]
-  },
-  "features": {
-    "title": "All Features",
-    "description": "Explore all the features that make our product unique.",
-    "items": [
-      {
-        "icon": "Icon01",
-        "title": "Investment Round Calculations",
-        "description": "Automatically calculate the impact of investment rounds on your company's capital structure."
-      },
-      {
-        "icon": "Icon02",
-        "title": "Capital Increases",
-        "description": "Simulate capital increases and generate the necessary documentation in minutes."
-      },
-      {
-        "icon": "Icon03",
-        "title": "Convertible Notes",
-        "description": "Easily manage and simulate convertible note conversions."
-      },
-      {
-        "icon": "Icon04",
-        "title": "Sale Scenarios",
-        "description": "Simulate share sale scenarios and their effects on partners and the shareholding structure."
-      },
-      {
-        "icon": "Icon05",
-        "title": "Automatic Document Generation",
-        "description": "Automatically create minutes, contracts, and other documents for all your corporate operations."
-      },
-      {
-        "icon": "Icon06",
-        "title": "Exact and Real Data",
-        "description": "Access real-time updated calculations for all your operations and make informed decisions."
-      }
-    ]
   },
   "testimonials": {
     "title": "What Our Clients Say",
@@ -124,23 +53,67 @@
   },
   "faq": {
     "eyebrow": "FAQ",
-    "title": "Simulator FAQs",
+    "title": "Frequently asked questions about the simulator",
     "items": [
       {
-        "q": "What operations can I simulate?",
-        "a": "Financing rounds, capital increases, convertible notes and liquidation scenarios."
+        "q": "What transactions can I simulate?",
+        "a": "Capital increases and reductions, share sales and convertible note conversions, also chained together, and the liquidation waterfall of a sale."
       },
       {
         "q": "What data does it use?",
-        "a": "The real, up-to-date cap table from the shareholder registry, without copying data to Excel."
+        "a": "The company's actual shareholder register, with its numbering, its classes and its capital as of the date."
       },
       {
-        "q": "Can I compare scenarios?",
-        "a": "Yes, you can create as many drafts as you need before executing an operation."
+        "q": "Does a simulation change the register?",
+        "a": "No. A simulation records nothing. The transaction enters the register when it is recorded with its deed."
       },
       {
-        "q": "Can a draft become a real operation?",
-        "a": "Yes: the simulation can be executed and recorded in the shareholder registry."
+        "q": "Can I describe the transaction in words?",
+        "a": "Yes. The simulator's assistant builds the transaction from a description: valuation, who contributes, who sells and how much."
+      },
+      {
+        "q": "Who can see the simulations?",
+        "a": "The company's directors. Each simulation is saved and can be shared with them."
+      },
+      {
+        "q": "Does it work for companies in Latin America?",
+        "a": "The platform adapts to each country's terminology: shareholder ledger, general shareholders' meeting, board of directors. Compliance with each country's regulations is assessed case by case."
+      }
+    ]
+  },
+  "includes": {
+    "eyebrow": "What's included",
+    "title": "What you can simulate in Sttok"
+  },
+  "situations": {
+    "eyebrow": "Common cases",
+    "title": "Common situations for the simulator",
+    "columns": {
+      "situation": "Situation",
+      "action": "What Sttok does",
+      "guide": "More information"
+    },
+    "guideLabel": "See how",
+    "rows": [
+      {
+        "situation": "A new shareholder comes in through a capital increase",
+        "action": "Price per share, new shares and each shareholder's dilution are calculated before the meeting is called."
+      },
+      {
+        "situation": "One family branch wants to buy from another",
+        "action": "The sale is simulated and each shareholder's position afterwards is shown."
+      },
+      {
+        "situation": "A convertible note converts",
+        "action": "The resulting shares and their effect on the other shareholders are calculated."
+      },
+      {
+        "situation": "The sale of the company is being negotiated",
+        "action": "The liquidation waterfall shows what each shareholder receives, with the preferences of each class."
+      },
+      {
+        "situation": "The transaction has to go to the notary",
+        "action": "Draft documents in Word are prepared with the simulation data."
       }
     ]
   }

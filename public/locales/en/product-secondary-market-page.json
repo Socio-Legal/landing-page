@@ -1,8 +1,8 @@
 {
   "hero": {
-    "slogan": "Product",
-    "title": "Secondary Market",
-    "description": "Share trading between shareholders to buy, sell, and launch buy offers in a secure and fully digital environment.",
+    "slogan": "Secondary market",
+    "title": "Secondary market for shares: sales between shareholders recorded in the register",
+    "description": "Sttok organises sales between shareholders and purchase offers to several shareholders at once. Each completed transaction is entered in the shareholder register with its documents. It is an add-on module.",
     "button": {
       "text": "Schedule demo",
       "link": "https://calendly.com/sttok/30min"
@@ -12,61 +12,61 @@
       "dark": "/hero/hero-product-secondary-market.png"
     }
   },
-  "features": {
-    "title": "Share trading between shareholders",
-    "description": "Manage secondary transactions end-to-end: listing offers, acceptance, execution, and tracking.",
-    "items": [
-      {
-        "icon": "SecondarySell",
-        "title": "Sell my shares",
-        "description": "Publish sell offers with share amount, price per share, dates, and execution conditions."
-      },
-      {
-        "icon": "SecondaryBuy",
-        "title": "Buy shares",
-        "description": "Browse active sell offers and complete purchases with guided steps, validations, and purchase summary."
-      },
-      {
-        "icon": "SecondaryBid",
-        "title": "Launch buy offer",
-        "description": "Publish buying interest to attract sellers and trigger transactions when no suitable offer is available."
-      },
-      {
-        "icon": "SecondaryBook",
-        "title": "Order book and price context",
-        "description": "Track average price, volume, and detailed buy/sell offers to make better-informed decisions."
-      },
-      {
-        "icon": "SecondaryTracking",
-        "title": "Status and full traceability",
-        "description": "Follow each transaction by status (active, accepted, etc.) and keep historical records for control."
-      },
-      {
-        "icon": "SecondaryIntegration",
-        "title": "Integrated with corporate management",
-        "description": "Connect secondary operations with cap table and documentation to keep ownership data up to date."
-      }
-    ]
-  },
   "faq": {
     "eyebrow": "FAQ",
-    "title": "Secondary market FAQs",
+    "title": "Frequently asked questions about the secondary market",
     "items": [
       {
         "q": "What is Sttok's secondary market?",
-        "a": "A space to manage share transfers between partners and tender offers."
+        "a": "A module for organising share sales between shareholders and purchase offers to several shareholders at once."
       },
       {
-        "q": "Who can participate?",
-        "a": "Partners and investors authorized by the company, with the permissions it defines."
+        "q": "Who can take part?",
+        "a": "Shareholders and investors authorised by the company, with the permissions it sets."
       },
       {
-        "q": "How is each operation recorded?",
-        "a": "Automatically in the shareholder registry, with its associated documentation."
+        "q": "How is each transaction recorded?",
+        "a": "In the shareholder register, against the transferred ranges, with its documents."
       },
       {
         "q": "Is it included in the plans?",
-        "a": "It is an extra-cost feature: it is added as an additional module on any plan."
+        "a": "No. It is an add-on module available on any plan."
+      },
+      {
+        "q": "Does it work for companies in Latin America?",
+        "a": "The platform adapts to each country's terminology: shareholder ledger, general shareholders' meeting, board of directors. Compliance with each country's regulations is assessed case by case."
+      }
+    ]
+  },
+  "includes": {
+    "eyebrow": "What's included",
+    "title": "How the secondary market works in Sttok"
+  },
+  "situations": {
+    "eyebrow": "Common cases",
+    "title": "Common situations in the secondary market",
+    "columns": {
+      "situation": "Situation",
+      "action": "What Sttok does",
+      "guide": "More information"
+    },
+    "guideLabel": "See how",
+    "rows": [
+      {
+        "situation": "A shareholder wants to sell and cannot find a buyer",
+        "action": "They publish a sell offer to the shareholders the company authorises."
+      },
+      {
+        "situation": "The company wants to give several shareholders liquidity",
+        "action": "It makes a purchase offer to several shareholders at once, with price and deadline."
+      },
+      {
+        "situation": "The articles provide for a pre-emption right",
+        "action": "The transfer follows the notices and deadlines set in the articles of association."
+      },
+      {
+        "situation": "A sale is completed",
+        "action": "It is recorded in the register against the transferred ranges, with its documents."
       }
     ]
   }

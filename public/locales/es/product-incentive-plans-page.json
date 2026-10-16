@@ -5,106 +5,17 @@
     "keywords": "planes de incentivos, phantoms, opciones sobre acciones, compensación flexible, gestión de incentivos, vesting"
   },
   "hero": {
-    "slogan": "Producto",
-    "title": "Planes de Incentivos",
-    "description": "La forma más profesional de crear y mantener planes de phantoms y opciones sobre acciones. Sttok te hace todos los cálculos, documentos y calendario. Además, podrás dar acceso a los beneficiarios a su plan.",
+    "slogan": "Planes de incentivos",
+    "title": "Planes de incentivos: phantom shares y stock options conectados al libro de socios",
+    "description": "Sttok gestiona cada plan desde el pool que aprueba la junta hasta la liquidez: asignaciones, vesting, cartas de invitación y portal del beneficiario. Las unidades se calculan sobre el capital real del libro de socios.",
     "button": {
       "text": "Solicitar demo",
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/hero/hero-product-planes-incentivos.png",
-      "dark": "/hero/hero-product-planes-incentivos.png"
+      "light": "/modulos/planes-de-incentivos-light.png",
+      "dark": "/modulos/planes-de-incentivos-dark.png"
     }
-  },
-  "topFeatures": {
-    "title": "Características Principales",
-    "description": "Conoce cómo la gestión de Planes de Incentivos con Sttok te permiten optimizar la gestión y dar acceso a tu equipo.",
-    "items": [
-      {
-        "title": "Personalización de Planes",
-        "description": "Crea planes de incentivos adaptados a las necesidades de tu organización.",
-        "animation": "AnimatedCard4"
-      },
-      {
-        "title": "Automatización de Cálculos",
-        "description": "Automatiza la firma, el cálculo, el vesting y el seguimiento de los planes para cada empleado.",
-        "animation": "AnimatedCard9_IncentivePlan"
-      },
-      {
-        "title": "Acceso para beneficiarios",
-        "description": "Los empleados pueden visualizar y seguir el estado de sus incentivos.",
-        "animation": "AnimatedCard3"
-      }
-    ]
-  },
-  "clients": {
-    "title": "CLIENTES QUE UTILIZAN LOS PLANES DE INCENTIVOS",
-    "clients": [
-      "Factorial",
-      "DerechoCom",
-      "Shakers",
-      "Taxdown",
-      "PldSpace",
-      "Multiverse",
-      "MyInvestor",
-      "Barkibu",
-      "Andbank",
-      "Osborne",
-      "Fanalca",
-      "Sade"
-    ]
-  },
-  "features": {
-    "title": "Planes de Incentivos",
-    "description": "Sttok ofrece una gestión completa y profesional de planes de incentivos para empleados y colaboradores. Descubre todas las funcionalidades que te ofrece.",
-    "items": [
-      {
-        "icon": "Icon01",
-        "title": "Múltiples Tipos de Planes",
-        "description": "Crea y gestiona diversos tipos de planes como Stock Options, Phantom Shares y más, adaptándose a tus necesidades específicas"
-      },
-      {
-        "icon": "Icon02",
-        "title": "Configuración Personalizada",
-        "description": "Configura períodos de vesting y cliff flexibles para cada plan, precios de ejercicio o incluso condiciones individuales."
-      },
-      {
-        "icon": "Icon03",
-        "title": "Acceso para Beneficiarios",
-        "description": "Cada beneficiario tendrá acceso a su ficha con todos los datos actualizados con detalle de calendarios, documentos y simulaciones."
-      },
-      {
-        "icon": "Icon04",
-        "title": "Informes en Tiempo Real",
-        "description": "Monitorea de forma automatizada el estado de todas las opciones; otorgadas, 'vesteadas' y ejercitadas, con actualizaciones instantáneas."
-      },
-      {
-        "icon": "Icon05",
-        "title": "Cálculos Automáticos",
-        "description": "Realiza cálculos automáticos de dilución y ajustes en el captable cada vez que se producen cambios en los planes de incentivos."
-      },
-      {
-        "icon": "Icon06",
-        "title": "Generación de Documentos y Firma",
-        "description": "Crea automáticamente todos los documentos legales necesarios relacionados con los planes de incentivos así como su firma digital."
-      },
-      {
-        "icon": "Icon07",
-        "title": "Sistema de Notificaciones",
-        "description": "Envía notificaciones automáticas a los beneficiarios sobre hitos importantes, como vestings próximos o opciones a punto de expirar."
-      },
-      {
-        "icon": "Icon08",
-        "title": "Simulaciones y Proyecciones",
-        "description": "Integración con el módulo de simulación para realizar proyecciones futuras y analizar diferentes escenarios de planes de incentivos."
-      },
-      {
-        "icon": "Icon09",
-        "title": "Tender offers. Ventas",
-        "description": "Gestiona ofertas de venta, recompra o tender offers. Incluye cálculo de retenciones, firma de contrato, etc."
-      }
-    ]
   },
   "testimonials": {
     "title": "Lo que Dicen Nuestros Clientes",
@@ -124,20 +35,73 @@
     "title": "Preguntas frecuentes sobre planes de incentivos",
     "items": [
       {
-        "q": "¿Gestiona phantom shares y stock options?",
-        "a": "Sí, ambos y otros tipos de plan, con calendarios de vesting configurables (incluido cliff)."
+        "q": "¿Qué instrumentos gestiona?",
+        "a": "Phantom shares, stock options y restricted shares. Cada plan tiene su instrumento, sus condiciones y su precio de ejercicio."
       },
       {
         "q": "¿Qué ve cada beneficiario?",
-        "a": "Un portal individual con su plan, su calendario de vesting y sus documentos firmados."
+        "a": "Sus unidades concedidas, lo consolidado, el próximo tramo, sus documentos y, si hay una ventana abierta, lo que puede vender."
       },
       {
-        "q": "¿Cómo se firman las cartas de invitación?",
-        "a": "Se generan automáticamente y se firman con la firma electrónica integrada, en minutos."
+        "q": "¿Cómo se gestionan las cartas de invitación?",
+        "a": "Cada asignación tiene su carta. La sociedad ve cuáles están aceptadas y cuáles pendientes, y las unidades pendientes no consolidan hasta que se acepta."
       },
       {
         "q": "¿Calcula la dilución del plan?",
-        "a": "Sí. El pool de incentivos y su efecto en el captable se calculan con los datos reales del libro de socios."
+        "a": "Sí. Muestra el pool sobre el capital diluido y lo asignado sobre el pool, con el capital real del libro de socios."
+      },
+      {
+        "q": "¿Sirve para empresas familiares y grupos?",
+        "a": "Sí. Los planes de directivos se gestionan igual: pool aprobado por la junta, asignaciones, consolidación y liquidez."
+      },
+      {
+        "q": "¿Sirve para sociedades de Latinoamérica?",
+        "a": "La plataforma se adapta a la denominación de cada país: libro de accionistas, asamblea general de accionistas, junta directiva o directorio. La adecuación a la normativa de cada país se valora caso por caso."
+      }
+    ]
+  },
+  "includes": {
+    "eyebrow": "Qué incluye",
+    "title": "Todo lo que cubre un plan de incentivos en Sttok",
+    "allLink": "Ver todas las funcionalidades de Sttok"
+  },
+  "situations": {
+    "eyebrow": "Casos habituales",
+    "title": "Situaciones habituales en un plan de incentivos",
+    "columns": {
+      "situation": "Situación",
+      "action": "Qué hace Sttok",
+      "guide": "Más información"
+    },
+    "guideLabel": "Ver cómo",
+    "rows": [
+      {
+        "situation": "La junta aprueba ampliar el pool",
+        "action": "Registra el acuerdo y actualiza las unidades disponibles del plan."
+      },
+      {
+        "situation": "Entra un directivo con un plan",
+        "action": "Crea la asignación, prepara la carta de invitación y arranca su calendario de consolidación.",
+        "href": "/funcionalidades/portal-del-beneficiario"
+      },
+      {
+        "situation": "Un empleado pregunta cuánto tiene consolidado",
+        "action": "Lo ve en su portal: lo consolidado, lo pendiente y la fecha del próximo tramo.",
+        "href": "/funcionalidades/portal-del-beneficiario"
+      },
+      {
+        "situation": "Un beneficiario deja la empresa",
+        "action": "Las unidades que no han consolidado vuelven al pool del plan."
+      },
+      {
+        "situation": "La sociedad abre una ventana de liquidez",
+        "action": "Calcula para cada beneficiario el precio, el tope, la retención y el importe neto.",
+        "href": "/funcionalidades/liquidez-planes-de-incentivos"
+      },
+      {
+        "situation": "Hay que entender la fiscalidad del plan",
+        "action": "Cada liquidación guarda su retención. La guía explica cómo tributa cada instrumento.",
+        "href": "/guias/fiscalidad-phantom-shares-stock-options"
       }
     ]
   }
