@@ -87,11 +87,11 @@ const Page = () => {
               "Osborne",
               "Taxdown",
               "PldSpace",
+              "Multiverse",
             ]}
             secondary={[
               "Caballero",
               "Fanalca",
-              "Multiverse",
               "MyInvestor",
               "DerechoCom",
               "Barkibu",

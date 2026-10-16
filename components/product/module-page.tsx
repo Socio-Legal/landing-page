@@ -101,9 +101,9 @@ const ModulePage: FC<ModulePageProps> = ({ ns, modulos, seleccion }) => {
               "PldSpace",
               "Caballero",
               "Fanalca",
+              "Multiverse",
             ]}
             secondary={[
-              "Multiverse",
               "MyInvestor",
               "DerechoCom",
               "Shakers",

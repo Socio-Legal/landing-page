@@ -67,7 +67,7 @@ const Page = () => {
     <>
       <HeroSection {...hero} />
 
-      {/* Clientes por relevancia, los más potentes primero: 8 arriba y 9
+      {/* Clientes por relevancia, los más potentes primero: 9 arriba y 8
           abajo, para que ninguna fila quede con un logo suelto */}
       <section id="clients" className="border-t border-border">
         <div className="container mx-auto px-4 py-14 md:py-16">
@@ -82,9 +82,9 @@ const Page = () => {
               "PldSpace",
               "Caballero",
               "Fanalca",
+              "Multiverse",
             ]}
             secondary={[
-              "Multiverse",
               "MyInvestor",
               "DerechoCom",
               "Shakers",

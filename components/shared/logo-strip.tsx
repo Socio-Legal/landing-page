@@ -63,7 +63,9 @@ const LogoStrip: FC<LogoStripProps> = ({ label, primary, secondary }) => (
     )}
 
     <div
-      className={`${ROW} max-w-5xl gap-x-6 gap-y-6 lg:gap-x-8`}
+      // Con 9 logos la fila se ensancha para que cada uno conserve el tamaño
+      // que tiene con 8.
+      className={`${ROW} ${primary.length > 8 ? "max-w-6xl" : "max-w-5xl"} gap-x-6 gap-y-6 lg:gap-x-8`}
       style={rowStyle(primary.length)}
     >
       {primary.map((name) => (
