@@ -9,7 +9,7 @@
     "dev": "next dev -p 3001",
     "build": "node scripts/ensure-git-history.mjs && node scripts/check-content-links.mjs && next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint app components lib",
     "check:orphans": "node scripts/check-orphans.mjs"
   },
   "dependencies": {
@@ -52,12 +52,13 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
     "@types/mdx": "^2.0.14",
     "@types/node": "^24.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "autoprefixer": "^10.4.18",
-    "eslint": "^8.57.0",
+    "eslint": "^9.39.5",
     "eslint-config-next": "15.5.20",
     "postcss": "^8.5.16",
     "tailwindcss": "^3.4.1",
