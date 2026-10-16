@@ -1,103 +1,116 @@
 {
   "metadata": {
-    "title": "Sttok para Startups",
-    "description": "Soluciones de captable, planes incentivos y mucho más para tu startup",
-    "keywords": "startup, sttok, captable, phantoms, incentivos, beneficiarios"
+    "title": "Sttok para scale-ups: libro de socios, planes de incentivos y simulador de operaciones",
+    "description": "Para empresas en crecimiento con varias rondas, muchos inversores y un plan de incentivos: libro de socios con clases, simulador de ampliaciones y notas convertibles, phantom shares, stock options y tender offers.",
+    "keywords": "scale-up, libro de socios, planes de incentivos, phantom shares, stock options, tender offer, nota convertible, ampliación de capital"
   },
   "hero": {
-    "slogan": "Soluciones",
-    "title": "Solución para Startups",
-    "description": "Gestión societaria digital para startups, scale-ups y empresas en crecimiento. Céntrate en hacer crecer la empresa y usa Sttok para cálculos de rondas, planes de incentivos, libro de socios y juntas.",
+    "slogan": "Scale-ups",
+    "title": "Para scale-ups con muchos inversores y un plan de incentivos",
+    "description": "Cada ronda suma inversores, clases de acciones y notas convertibles, y el plan de incentivos crece con la plantilla. Sttok lleva el libro de socios oficial, simula cada operación sobre el libro real antes de firmarla y gestiona el plan de cada empleado, con tender offers para darle liquidez.",
     "button": {
-      "text": "Solicitar Demo",
+      "text": "Solicitar demo",
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/hero/hero-solutions-startups.png",
-      "dark": "/hero/hero-solutions-startups.png"
+      "light": "/funcionalidades/portal-del-beneficiario-light.png",
+      "dark": "/funcionalidades/portal-del-beneficiario-dark.png"
     }
   },
-  "clients": {
-    "title": "Confían en Sttok",
-    "clients": [
-      "Factorial",
-      "Andbank",
-      "Osborne",
-      "Taxdown",
-      "PldSpace",
-      "Fanalca",
-      "Multiverse",
-      "MyInvestor",
-      "Shakers",
-      "Barkibu",
-      "Sade"
-    ]
-  },
-  "features": {
-    "title": "Todas las Características",
-    "description": "Las funcionalidades que hacen de Sttok la herramienta esencial para startups, scale-ups y empresas en crecimiento.",
-    "items": [
-      {
-        "icon": "Icon01",
-        "title": "Libro de Socios Oficial",
-        "description": "Gestiona y actualiza fácilmente el libro de socios de tu startup."
-      },
-      {
-        "icon": "Icon02",
-        "title": "Planes de Incentivos",
-        "description": "Administra stock options y phantoms, y da acceso a los empleados a sus incentivos."
-      },
-      {
-        "icon": "Icon03",
-        "title": "Juntas y Consejos",
-        "description": "Automatiza la gestión de juntas de accionistas y consejos con votación digital y proxy."
-      },
-      {
-        "icon": "Icon04",
-        "title": "Simulador de Operaciones",
-        "description": "Calcula rondas de financiación y ampliaciones de capital con precisión y rapidez."
-      },
-      {
-        "icon": "Icon05",
-        "title": "Acceso a los socios",
-        "description": "Si quieres puedes dar acceso profesional a tus inversores"
-      },
-      {
-        "icon": "Icon06",
-        "title": "Sindicación",
-        "description": "Configura la sindicación de forma fácil para simplificar la gestión de tu empresa"
-      },
-      {
-        "icon": "SecondaryBook",
-        "title": "Transacciones",
-        "description": "Registro de todas las operaciones: ampliaciones, compraventas, transmisiones, canjes, herencias, reducciones, renumeraciones, etc."
-      }
-    ]
-  },
   "testimonials": {
-    "title": "",
-    "description": "",
+    "title": "Testimonios de Clientes",
+    "description": "Empresas en crecimiento que llevan su libro de socios y sus planes de incentivos en Sttok.",
     "items": [
       {
         "name": "Lucía Bouzá",
-        "role": "Head of Legal & Compliance | Factorial",
+        "role": "Head of Legal & Compliance, Factorial",
         "img": "/logo-factorial-mini.png",
         "description": "Sttok nos permite tener toda la información de socios y planes de incentivos centralizada y actualizada. Nos facilita la gestión de juntas y la relación con los inversores.",
         "stars": 5
       },
       {
         "name": "Johan Longo",
-        "role": "Contract Manager | PLD Space",
+        "role": "Contract Manager, PLD Space",
         "img": "/logo-pldspace-mini.png",
         "description": "Sttok nos sirve para poder tener organizada toda la información sobre socios, juntas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
         "stars": 5
+      }
+    ]
+  },
+  "includes": {
+    "eyebrow": "Qué incluye",
+    "title": "Lo que usa una scale-up con varias rondas y un plan de incentivos",
+    "allLink": "Ver todas las funcionalidades de Sttok"
+  },
+  "situations": {
+    "eyebrow": "Casos habituales",
+    "title": "Situaciones habituales en una scale-up",
+    "guideLabel": "Ver cómo",
+    "rows": [
+      {
+        "situation": "Entra un inversor nuevo con una ampliación",
+        "action": "Simula la ampliación sobre el libro real, con el pool y la conversión de notas, y prepara los borradores en Word.",
+        "href": "/simulador"
       },
       {
-        "name": "Nacho González",
-        "role": "CEO y Fundador | Banktrack",
-        "img": "/logo-banktrack-mini.png",
-        "description": "Ahora con Sttok puedes realizar simulaciones de ampliaciones o notas convertibles. Además también gestionamos las phantoms de nuestro equipo fácilmente. Finalmente como inversor tengo organizadas mis participadas y conozco claramente qué es lo que tengo.",
-        "stars": 5
+        "situation": "Convierte una nota convertible",
+        "action": "Calcula la conversión y su dilución, y anota las nuevas participaciones con su numeración.",
+        "href": "/simulador"
+      },
+      {
+        "situation": "Los empleados quieren vender parte de lo consolidado",
+        "action": "Abre una tender offer con precio, topes, retención y el neto de cada beneficiario.",
+        "href": "/funcionalidades/liquidez-planes-de-incentivos"
+      },
+      {
+        "situation": "Un empleado pregunta cuánto ha consolidado",
+        "action": "Lo ve en su portal: sus unidades, su calendario de vesting y sus documentos.",
+        "href": "/funcionalidades/portal-del-beneficiario"
+      },
+      {
+        "situation": "Un socio quiere vender a otro",
+        "action": "Publica la oferta en el mercado secundario y la transmisión queda anotada en el libro al cerrarse.",
+        "href": "/mercado-secundario"
+      },
+      {
+        "situation": "La junta tiene que aprobar la ronda",
+        "action": "Convoca, recoge delegaciones firmadas y votos anticipados, y redacta el acta con el resultado.",
+        "href": "/funcionalidades/voto-electronico-en-juntas"
+      }
+    ],
+    "columns": {
+      "situation": "Situación",
+      "action": "Qué hace Sttok",
+      "guide": "Más información"
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Preguntas frecuentes de scale-ups",
+    "items": [
+      {
+        "q": "¿Sttok sirve para una scale-up o solo para empresas consolidadas?",
+        "a": "Para las dos. Una scale-up con varias rondas ya tiene muchos socios, clases de acciones y un plan de incentivos. Sttok lleva el libro de socios oficial desde el principio, y crece con la sociedad."
+      },
+      {
+        "q": "¿Puedo simular una operación antes de firmarla?",
+        "a": "Sí. El simulador calcula ampliaciones y reducciones de capital, compraventas, notas convertibles y cascadas de liquidación sobre el libro real, y prepara los borradores en Word."
+      },
+      {
+        "q": "¿Qué planes de incentivos gestiona?",
+        "a": "Phantom shares, stock options y restricted shares, con su pool, sus asignaciones, el vesting y el cliff, la carta de invitación y el portal de cada beneficiario."
+      },
+      {
+        "q": "¿Los empleados pueden vender lo que han consolidado?",
+        "a": "Sí, con tender offers: ventanas de compra con precio, topes, retención y el neto de cada beneficiario."
+      },
+      {
+        "q": "¿El mercado secundario está incluido?",
+        "a": "Es un módulo con coste adicional. Las ventas entre socios quedan anotadas en el libro con sus documentos."
+      },
+      {
+        "q": "¿Cuánto cuesta?",
+        "a": "Los planes estándar van de 450 €/año hasta 10 socios o beneficiarios a 850 €/año hasta 50. Con más de 50, hay un plan a medida. Están en la página de precios."
       }
     ]
   }

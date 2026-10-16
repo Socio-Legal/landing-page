@@ -1,43 +1,52 @@
 "use client";
 
-import React from "react";
-import { useTranslation } from "react-i18next";
+import ModulePage from "@/components/product/module-page";
 
-import CallToActionSection from "@/components/landing/cta-section";
-import TestimonialsSection, {
-  TestimonialsSectionProps,
-} from "@/components/product/testimonials-section";
-import FeaturesSection, {
-  FeaturesSectionProps,
-} from "@/components/product/features-section";
-import ClientsSection, {
-  ClientsSectionProps,
-} from "@/components/product/clients-section";
-import HeroSection, {
-  HeroSectionProps,
-} from "@/components/product/hero-section";
-
-const Page = () => {
-  const { t } = useTranslation("solutions-startups-page");
-
-  const hero = t("hero", { returnObjects: true }) as HeroSectionProps;
-  const clients = t("clients", { returnObjects: true }) as ClientsSectionProps;
-  const features = t("features", {
-    returnObjects: true,
-  }) as FeaturesSectionProps;
-  const testimonials = t("testimonials", {
-    returnObjects: true,
-  }) as TestimonialsSectionProps;
-
-  return (
-    <>
-      <HeroSection {...hero} />
-      <ClientsSection {...clients} />
-      <FeaturesSection {...features} />
-      <TestimonialsSection {...testimonials} />
-      <CallToActionSection />
-    </>
-  );
+// Por módulo, las funcionalidades del catálogo que importan a una scale-up.
+const SELECCION = {
+  "socios": [
+    "Libro de socios oficial",
+    "Clases de acciones",
+    "Acreedores y notas convertibles",
+    "Certificados de titularidad y de valor",
+    "Portal del accionista",
+    "Equity Story"
+  ],
+  "incentivos": [
+    "Phantom shares y stock options",
+    "Restricted shares",
+    "Vesting y cliff",
+    "Tender offers",
+    "Carta de invitación",
+    "Portal del beneficiario"
+  ],
+  "simulador": [
+    "Ampliación de capital",
+    "Nota convertible",
+    "Operaciones encadenadas",
+    "Cascada de liquidación",
+    "Borradores de documentos"
+  ],
+  "secundario": [
+    "Ofertas de venta",
+    "Ofertas de compra",
+    "Participantes autorizados",
+    "Registro en el libro"
+  ],
+  "juntas": [
+    "Convocatoria",
+    "Delegación de voto con firma",
+    "Voto anticipado",
+    "Acta automática"
+  ]
 };
+
+const Page = () => (
+  <ModulePage
+    ns="solutions-startups-page"
+    modulos={Object.keys(SELECCION)}
+    seleccion={SELECCION}
+  />
+);
 
 export default Page;

@@ -90,7 +90,7 @@ const PAGES: Record<string, { label: Label; section?: SectionKey }> = {
     section: "solutions",
   },
   "/startups": {
-    label: { es: "Startups", en: "Startups" },
+    label: { es: "Scale-ups", en: "Scale-ups" },
     section: "solutions",
   },
   "/inversores": {
