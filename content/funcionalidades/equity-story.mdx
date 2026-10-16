@@ -1,0 +1,78 @@
+---
+title: "Equity Story: la evolución del capital de la sociedad operación a operación"
+description: "La vista Equity Story del libro de socios de Sttok muestra, en una sola tabla, cuántas acciones tenía cada socio tras cada operación y qué porcentaje del capital sumaba."
+slug: "/funcionalidades/equity-story"
+section: "funcionalidades"
+canonical: "https://www.sttok.com/funcionalidades/equity-story"
+---
+
+# Equity Story: historial del capital por operación
+
+La Equity Story es una vista del libro de socios con la historia del capital en una sola tabla. Cada operación ocupa un grupo de columnas, por orden de fecha. Cada fila es una persona que ha tenido acciones alguna vez. Las celdas dicen cuántas acciones recibió o transmitió, con cuántas se quedó y qué porcentaje del capital tenía después.
+
+<Captura
+  nombre="equity-story"
+  alt="Vista Equity Story del libro de socios en Sttok, con una columna por operación y el número de acciones y el porcentaje de cada socio tras cada una"
+  pie="Libro de socios, vista Equity Story. Datos de ejemplo."
+/>
+
+## Qué columnas tiene cada operación
+
+| Operación | Columnas | Qué se lee en ellas |
+|---|---|---|
+| Constitución | Nuevas, % | Las acciones suscritas al fundar la sociedad y el reparto inicial |
+| Ampliación, split y reducción | Nuevas, Total, % | Las acciones que entran o salen, el total resultante y el nuevo porcentaje |
+| Compraventa | Origen, Post C-V, Total, % | Lo que tenía cada parte, lo que transmitió o recibió y cómo quedó |
+| Herencia | Origen, Post herencia, Total, % | Las acciones del causante y las que pasan a cada heredero |
+| Donación | Origen, Post donación, Total, % | Las acciones del donante y las que recibe el donatario |
+
+## Cómo se consulta
+
+1. En Socios, se abre el libro de socios. La vista por defecto es el resumen detallado.
+2. En el selector de vista de la cabecera se elige «Equity story».
+3. La primera columna, Accionistas, da el nombre de cada titular. Le sigue un grupo de columnas por operación, con su tipo y su fecha en la cabecera.
+4. Se recorre en horizontal para seguir el capital en el tiempo. La fila TOTAL, fija al pie, da las cifras de la sociedad tras cada operación.
+
+## Cómo se construye
+
+La tabla no se rellena a mano. Sale de las operaciones registradas en el libro: cada [transmisión](/funcionalidades/transmisiones) y cada [ampliación o reducción de capital](/funcionalidades/ampliaciones-y-reducciones-de-capital) añade su grupo de columnas. El total y el porcentaje de cada columna arrastran el efecto de todas las operaciones anteriores.
+
+Las filas incluyen a quien ya no es socio. Un socio que vendió todas sus acciones sigue en la tabla, con sus cifras hasta la operación en la que salió. La autocartera aparece como un titular más.
+
+## Un inversor pide el historial de la tabla de capitalización
+
+En una due diligence, el inversor quiere ver cómo se llegó al reparto actual. La Equity Story responde con una tabla: quién entró en cada ronda, quién vendió y a quién, y cómo cambió el porcentaje de cada socio. Ya no hace falta rehacer el historial en una hoja de cálculo a partir de las escrituras.
+
+## La familia quiere entender cómo se repartió el capital entre generaciones
+
+En una empresa familiar, las herencias y las donaciones mueven el capital entre ramas. La vista enseña cada una con las acciones de origen, las que pasan a cada heredero o donatario y el porcentaje resultante. La [guía de herencia de participaciones](/guias/herencia-de-participaciones) explica cómo se anota cada transmisión en el libro.
+
+## Hay que reconstruir un libro con huecos
+
+Si el libro se ha llevado en papel o en hojas sueltas, la Equity Story ayuda a comprobar la reconstrucción. El total de cada operación debe coincidir con el capital que recoge su escritura. Si no coincide, falta alguna operación por registrar. La [guía para reconstruir el libro de socios](/guias/reconstruir-libro-de-socios) describe el proceso.
+
+## Preguntas frecuentes
+
+**¿Hay que introducir los datos de la Equity Story por separado?**
+No. Se genera a partir de las operaciones registradas en el libro de socios. Cada operación nueva añade su grupo de columnas.
+
+**¿Aparecen los socios que ya no lo son?**
+Sí. La vista es el historial completo de quien ha tenido acciones alguna vez. Un antiguo socio conserva su fila con las cifras hasta su salida.
+
+**¿Qué tipos de operación recoge?**
+La constitución, las ampliaciones, los splits, las reducciones, las compraventas, las herencias y las donaciones. Cada tipo tiene sus propias columnas.
+
+**¿Se puede ocultar la vista?**
+Sí. En la configuración de la sociedad, la pestaña Funcionalidades tiene un interruptor para mostrar u ocultar la Equity Story en el libro de socios.
+
+**¿En qué se diferencia del libro registro oficial?**
+El [libro registro oficial](/funcionalidades/libro-registro-oficial) es el documento que se legaliza, con la numeración y las cargas de cada socio. La Equity Story es una vista de trabajo que enseña la evolución del capital por operación.
+
+**¿Sirve en Latinoamérica?**
+La vista se apoya en el libro de accionistas, sea cual sea su denominación en cada país. La plataforma se adapta a esa denominación; la adecuación a la normativa de cada país se valora caso por caso.
+
+## Sttok en cifras
+
+Más de 250 clientes gestionan más de 500 sociedades con Sttok, una media de dos por cliente que refleja el perfil de grupo. Gestionan más de 250.000 socios y accionistas. La puesta en marcha lleva unas horas por sociedad.
+
+[Solicita una demo](https://calendly.com/sttok/30min) o consulta los [precios](/precios). La Equity Story forma parte del [libro de socios](/libro-de-socios).

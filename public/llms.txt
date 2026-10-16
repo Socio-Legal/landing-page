@@ -140,6 +140,19 @@ Funcionalidad con coste adicional: mercado secundario.
 - Apoderados y poderes: https://www.sttok.com/funcionalidades/apoderados-y-poderes
 - Firma electrónica: https://www.sttok.com/funcionalidades/firma-electronica
 - Comunicaciones a socios con certificado de envío: https://www.sttok.com/funcionalidades/comunicaciones-a-socios
+- Libro registro de socios oficial y su legalización: https://www.sttok.com/funcionalidades/libro-registro-oficial
+- Numeración de participaciones y acciones por rangos: https://www.sttok.com/funcionalidades/numeracion-por-rangos
+- Transmisiones de participaciones y acciones: https://www.sttok.com/funcionalidades/transmisiones
+- Ampliaciones y reducciones de capital: https://www.sttok.com/funcionalidades/ampliaciones-y-reducciones-de-capital
+- Cargas sobre participaciones: prenda, usufructo, cotitularidad y opciones: https://www.sttok.com/funcionalidades/cargas-sobre-participaciones
+- Ficha del socio: https://www.sttok.com/funcionalidades/ficha-del-socio
+- Clases de acciones: https://www.sttok.com/funcionalidades/clases-de-acciones
+- Reparto de dividendos: https://www.sttok.com/funcionalidades/reparto-de-dividendos
+- Categorías de socios: https://www.sttok.com/funcionalidades/categorias-de-socios
+- Representantes de socios: https://www.sttok.com/funcionalidades/representantes
+- Autocartera: https://www.sttok.com/funcionalidades/autocartera
+- Acreedores y notas convertibles: https://www.sttok.com/funcionalidades/acreedores-y-notas-convertibles
+- Equity Story: evolución del capital: https://www.sttok.com/funcionalidades/equity-story
 - Equipo: https://www.sttok.com/sobre-nosotros
 - Blog: https://blog.sttok.com/recursos
 - Dossier comercial (español): https://www.sttok.com/docs/sttok-dossier-es.pdf
