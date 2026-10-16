@@ -15,8 +15,8 @@ export const summary = {
   description: "",
   quote: {
     text: "“Para gestionar la relación con nuestros socios e inversores utilizamos Sttok. Además las de las principales funcionalidades como libro de socios, juntas de accionistas, planes de incentivos y consejo de administración, etc.”",
-    author: "-",
-    position: "PLD Space",
+    author: "PLD Space",
+    position: "",
   },
   button: {
     text: "Ir al sitio de PLD Space",
@@ -56,7 +56,6 @@ export const content = {
         "PLD Space es una compañía española del sector aeroespacial pionera y referente en Europa en el desarrollo de lanzadores reutilizables, con trayectoria de referencia en el sector y un sólido programa de desarrollo. A través de su familia de cohetes espaciales MIURA (MIURA 1 y MIURA 5), PLD Space situará a España entre el reducido número de países con capacidad para enviar al espacio con éxito satélites de pequeño tamaño.",
         "Fundada en 2011 por Raúl Torres y Raúl Verdú, PLD Space cuenta con un equipo de más de 200 personas. La compañía, con sede en Elche (Alicante) y con instalaciones técnicas en Teruel, Huelva y Guayana Francesa.",
         "El 7 de octubre de 2023, PLD Space hizo historia tras completar con éxito el lanzamiento de un primer cohete europeo privado, MIURA 1.",
-        "En 2022, PLD Space cerró una ronda de 120 millones, liderada por el fondo Atomico y contó con la participación de inversores como Tiger Global, CRV, K-Fund y Creandum. PLD Space es considerado un “unicornio”, término utilizado para describir a las startups que superan los 1.000 millones de dólares en valoración.",
       ],
     },
     {

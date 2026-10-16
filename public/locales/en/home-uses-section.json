@@ -49,7 +49,7 @@
       "id": 6,
       "title": "Technology teams serving the legal department",
       "pain": "The legal department needs a tool, and the alternative is internal developments or shared spreadsheets nobody wants to maintain.",
-      "with": "A market-standard solution, ISO 27001 and GDPR certified, with SSO, OTP access and dedicated instances. Deployed in a week with no maintenance debt.",
+      "with": "A market-standard solution, ISO 27001 and GDPR certified, with SSO, OTP access and dedicated instances. Set up in a few hours with no maintenance debt.",
       "case": "IT teams roll out Sttok as the corporate standard for their legal and corporate departments, with security validated by their CISO.",
       "icon": "ServerCog"
     }

@@ -12,8 +12,8 @@ export const summary = {
   description: "",
   quote: {
     text: "“Sttok ha sido una herramienta clave para la gestión de nuestro Captable y Juntas de Socios. Nos ha permitido automatizar tareas manuales y ahorrar tiempo en la generación de documentos y firmas electrónicas.”",
-    author: "...",
-    position: "...",
+    author: "Grupo Caballero",
+    position: "",
   },
   button: {
     text: "Ir al sitio de Grupo Caballero",
