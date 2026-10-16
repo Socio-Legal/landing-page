@@ -9,8 +9,8 @@
     "title": "Libro de Socios",
     "description": "Libro de Socios oficial, actualizado y sin errores. Deja de utilizar excel ineficientes. Un único libro de socios listo para presentar al Registro y para poder calcular operaciones fácilmente.",
     "button": {
-      "text": "Gestiona tu Libro de Socios",
-      "link": "https://app.sttok.com/#/demo"
+      "text": "Solicitar demo",
+      "link": "https://calendly.com/sttok/30min"
     },
     "image": {
       "light": "/hero/hero-product-libro-de-socios-light.png",
@@ -108,7 +108,7 @@
         "name": "Johan Longo",
         "role": "Contract Manager | PLD Space",
         "img": "/logo-pldspace-mini.png",
-        "description": "Sttok nos sirve para poder tener organizada toda la información sobre socios, junas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
+        "description": "Sttok nos sirve para poder tener organizada toda la información sobre socios, juntas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
         "stars": 5
       },
       {
@@ -130,7 +130,7 @@
       },
       {
         "q": "¿Puedo migrar mi libro de socios desde Excel?",
-        "a": "Sí. El onboarding incluye la migración de datos y se completa en una semana."
+        "a": "Sí. El onboarding incluye la migración de datos y se completa en unas horas por sociedad."
       },
       {
         "q": "¿Los socios pueden consultar su participación?",

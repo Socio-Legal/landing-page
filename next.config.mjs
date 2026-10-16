@@ -36,17 +36,23 @@ const ES_TO_FOLDER = {
   "/aviso-legal": "/disclaimer",
   "/privacidad": "/privacy",
   "/politica-seguridad": "/security",
-  // Landings SEO
-  "/software-de-libro-de-socios": "/software-partner-book",
-  "/software-de-juntas-de-accionistas": "/software-shareholder-meetings",
-  "/software-de-gestion-de-captable": "/software-captable-management",
-  "/software-de-captable": "/software-captable",
-  "/simulador-de-ampliacion-de-capital": "/capital-increase-simulator",
-  "/secundario": "/secondary",
-  "/junta-de-accionistas-digital": "/digital-shareholder-meetings",
-  "/grupos-societarios": "/corporate-groups",
-  "/documentacion-societaria": "/corporate-documentation",
-  "/consejos-de-administracion": "/board-of-directors",
+};
+
+/**
+ * Landings SEO de una sola pagina que duplicaban paginas principales. Se
+ * retiraron; cada slug redirige a la pagina que cubre el mismo tema.
+ */
+const LANDINGS_RETIRADAS = {
+  "/software-de-libro-de-socios": "/libro-de-socios",
+  "/software-de-captable": "/libro-de-socios",
+  "/software-de-gestion-de-captable": "/libro-de-socios",
+  "/software-de-juntas-de-accionistas": "/juntas-consejos",
+  "/junta-de-accionistas-digital": "/juntas-consejos",
+  "/simulador-de-ampliacion-de-capital": "/simulador",
+  "/secundario": "/mercado-secundario",
+  "/grupos-societarios": "/soluciones/grupos-de-sociedades",
+  "/consejos-de-administracion": "/soluciones/secretaria-del-consejo",
+  "/documentacion-societaria": "/producto",
 };
 
 /**
@@ -68,21 +74,27 @@ const nextConfig = {
         destination: "/startups",
         statusCode: 301,
       },
-      // Caso de exito retirado. Apunta al indice de casos, que es el
+      // Casos de exito retirados. Apuntan al indice de casos, que es el
       // contenido equivalente mas cercano: la home no lo es, y un 301 a la
       // home para una pagina retirada es un soft 404.
       // Va ANTES de la regla generica /testimonials/:client para que no
       // encadene dos saltos.
       {
-        source: "/testimonios/:client(Yaba|yaba|YABA)",
+        source: "/testimonios/:client(Yaba|yaba|YABA|Banktrack|banktrack|DerechoCom|derechocom)",
         destination: "/testimonios",
         statusCode: 301,
       },
       {
-        source: "/testimonials/:client(Yaba|yaba|YABA)",
+        source: "/testimonials/:client(Yaba|yaba|YABA|Banktrack|banktrack|DerechoCom|derechocom)",
         destination: "/testimonios",
         statusCode: 301,
       },
+      // Landings SEO retiradas: cada una 301 a la pagina principal de su tema.
+      ...Object.entries(LANDINGS_RETIRADAS).map(([source, destination]) => ({
+        source,
+        destination,
+        statusCode: 301,
+      })),
       // Carpeta interna -> slug publico castellano. 301 explicito (no
       // `permanent: true`, que en Next emite 308).
       ...Object.entries(ES_TO_FOLDER)

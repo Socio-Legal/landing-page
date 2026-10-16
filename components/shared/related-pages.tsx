@@ -4,51 +4,61 @@ import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 /**
  * Enlaces a paginas relacionadas, emitidos desde el layout (Server Component)
- * de cada pagina. Existe porque las 10 landings SEO de app/(empty-pages) no
- * recibian NI UN enlace interno: solo eran alcanzables por el sitemap.
- *
- * El mapa va por ruta publica castellana. Las landings solo existen en
- * castellano, asi que este bloque no se pinta en las rutas /en.
+ * de cada pagina de producto. Llevan a las guias y soluciones de content/ que
+ * tratan el mismo tema, que solo existen en castellano: este bloque no se
+ * pinta en las rutas /en.
  */
 const RELACIONADAS: Record<string, { href: string; label: string }[]> = {
   "/libro-de-socios": [
-    { href: "/software-de-libro-de-socios", label: "Software de libro de socios" },
-    { href: "/software-de-captable", label: "Software de captable" },
     {
-      href: "/software-de-gestion-de-captable",
-      label: "Software de gestión de captable",
+      href: "/guias/reconstruir-libro-de-socios",
+      label: "Reconstruir el libro de socios",
+    },
+    {
+      href: "/guias/libro-registro-socios-legalizacion",
+      label: "Legalizar el libro registro de socios",
+    },
+    {
+      href: "/guias/cotitularidad-usufructo-nuda-propiedad",
+      label: "Cotitularidad, usufructo y nuda propiedad",
     },
   ],
   "/juntas-consejos": [
     {
-      href: "/software-de-juntas-de-accionistas",
-      label: "Software de juntas de accionistas",
+      href: "/guias/junta-general-telematica",
+      label: "Junta general telemática",
     },
     {
-      href: "/junta-de-accionistas-digital",
-      label: "Junta de accionistas digital",
+      href: "/soluciones/secretaria-del-consejo",
+      label: "Secretaría del consejo de administración",
     },
     {
-      href: "/consejos-de-administracion",
-      label: "Consejos de administración",
+      href: "/guias/plantillas-societarias",
+      label: "Convocatorias, actas y certificados",
     },
   ],
   "/simulador": [
     {
-      href: "/simulador-de-ampliacion-de-capital",
-      label: "Simulador de ampliación de capital",
+      href: "/guias/fiscalidad-phantom-shares-stock-options",
+      label: "Fiscalidad de phantom shares y stock options",
     },
   ],
   "/mercado-secundario": [
-    { href: "/secundario", label: "Mercado secundario de participaciones" },
+    {
+      href: "/guias/derecho-de-adquisicion-preferente",
+      label: "Derecho de adquisición preferente",
+    },
   ],
   "/empresas": [
-    { href: "/grupos-societarios", label: "Grupos societarios" },
-    { href: "/documentacion-societaria", label: "Documentación societaria" },
+    {
+      href: "/soluciones/grupos-de-sociedades",
+      label: "Grupos de sociedades",
+    },
+    {
+      href: "/guias/titular-real-grupos-sociedades",
+      label: "Titular real en grupos de sociedades",
+    },
   ],
-  // Las paginas de content/ reciben enlaces de sus hermanas de seccion, pero
-  // una seccion con un solo documento no tiene hermanas. Se enlaza desde la
-  // comparativa que ya existia, que ademas es el tema contiguo.
   "/sttok-vs-excel": [
     { href: "/comparativas/sttok-vs-carta", label: "Sttok frente a Carta" },
   ],

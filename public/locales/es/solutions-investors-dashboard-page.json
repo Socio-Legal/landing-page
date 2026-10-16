@@ -49,7 +49,7 @@
       {
         "icon": "Icon03",
         "title": "Integración con tu web",
-        "description": "Integra el portal del inversor con tu imagen, colores, logoos, etc."
+        "description": "Integra el portal del inversor con tu imagen, colores, logos, etc."
       }
     ]
   },
@@ -58,7 +58,7 @@
     "description": "Inversores que ya han mejorado su gestión con Sttok.",
     "items": [
       {
-        "name": "Lucía Bauza",
+        "name": "Lucía Bouzá",
         "role": "Head of Legal & Compliance, Factorial",
         "img": "",
         "description": "Sttok nos ayudó a digitalizar el proceso de creación y firma de documentos para los planes de incentivos.",
@@ -68,7 +68,7 @@
         "name": "Johan Longo",
         "role": "Contract Manager | PLD Space",
         "img": "/logo-pldspace-mini.png",
-        "description": "Sttok nos sirve para poder tener organizada toda la información sobre socios, junas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
+        "description": "Sttok nos sirve para poder tener organizada toda la información sobre socios, juntas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
         "stars": 5
       },
       {

@@ -8,6 +8,7 @@ import { Icons } from "./icons";
 import { siteConfig } from "@/config/site-config";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./language-switcher";
+import ThemeToggler from "./ui/theme-toggler";
 import { localizedHref } from "@/lib/localized-href";
 import { useLocale } from "@/lib/use-locale";
 
@@ -107,12 +108,14 @@ export function SiteFooter() {
             ))}
           </div>
 
-          {/* Right side: copyright + language */}
+          {/* Right side: copyright, idioma y tema (fuera de la cabecera para no
+              competir con la llamada a la acción) */}
           <div className="flex items-center gap-4">
             <p className="text-xs text-muted-foreground">
               {t("allRightsReserved")}
             </p>
             <LanguageSwitcher />
+            <ThemeToggler />
           </div>
         </div>
       </div>
