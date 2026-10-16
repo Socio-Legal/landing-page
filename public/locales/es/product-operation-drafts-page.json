@@ -9,8 +9,8 @@
     "title": "Simulador de Operaciones",
     "description": "Calcula fácilmente en pocos segundos todo tipo de operaciones y escenarios. Calcula rondas, ampliaciones, ventas, notas convertibles, etc. Además genera la documentación de las simulaciones en pocos minutos.",
     "button": {
-      "text": "Empieza a Simular",
-      "link": "https://app.sttok.com/#/demo"
+      "text": "Solicitar demo",
+      "link": "https://calendly.com/sttok/30min"
     },
     "image": {
       "light": "/hero/hero-product-simulador.png",
@@ -117,7 +117,7 @@
         "name": "Johan Longo",
         "role": "Contract Manager | PLD Space",
         "img": "/logo-pldspace-mini.png",
-        "description": "Sttok nos sirve para poder tener organizada toda la información sobre socios, junas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
+        "description": "Sttok nos sirve para poder tener organizada toda la información sobre socios, juntas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
         "stars": 5
       }
     ]
