@@ -1,60 +1,56 @@
 {
-  "readCase": "Leer su caso",
+  "readCase": "Leer el caso",
   "metadata": {
-    "title": "Testimonios y Casos de Éxito",
-    "description": "Aquí encontrarás testimonios y casos de éxito de nuestros clientes",
-    "keywords": "testimonios, casos de éxito, clientes, empresas, empresas, éxito, satisfacción, recomendación"
+    "title": "Clientes de Sttok: casos de éxito y testimonios",
+    "description": "Cómo llevan el libro de socios, las juntas y los planes de incentivos Factorial, PLD Space, Grupo Caballero, TaxDown y MyInvestor, y lo que dicen los clientes de Sttok.",
+    "keywords": "clientes de Sttok, casos de éxito, testimonios, libro de socios, planes de incentivos, juntas"
   },
   "hero": {
     "slogan": "Clientes",
-    "title": "Testimonios y Casos de Éxito",
-    "description": "Sttok ayuda a nuestros clientes a digitalizar la gestión societaria, automatizando tareas manuales y gestionando múltiples tareas relacionadas como Libro de Socios, Planes de Incentivos, Juntas, Cálculo de Operaciones (Rondas, Ampliaciones, Compraventas, etc.). Ya no utilizan el excel como se hacía antes y ahora trabajan profesionalmente.",
+    "title": "Clientes de Sttok: casos de éxito y testimonios",
+    "description": "Más de 250 clientes gestionan más de 500 sociedades con Sttok, una media de dos por cliente que refleja el perfil de grupo. Estos son sus casos: cómo llevan el libro de socios, las juntas y los planes de incentivos, y qué dicen de la plataforma.",
     "button": {
-      "text": "",
-      "link": ""
-    },
-    "image": {
-      "light": "/hero/hero-testimonials.png",
-      "dark": "/hero/hero-testimonials.png"
+      "text": "Solicitar demo",
+      "link": "https://calendly.com/sttok/30min"
     }
   },
   "features": {
-    "title": "Empresas que usan Sttok",
-    "description": "Sttok es la plataforma de gestión de sociedades más completa del mercado. Descubre todas las funcionalidades que te ofrece.",
+    "title": "Casos de clientes",
+    "description": "Cómo trabajan con Sttok",
     "items": [
       {
         "icon": "",
         "logo": "Factorial",
         "title": "",
-        "description": "Factorial es una empresa de software de recursos humanos que simplifica la gestión de las personas en las empresas.",
+        "description": "Software de recursos humanos para empresas.",
         "alt": "Factorial gestiona Captable y Planes de Incentivos con Sttok"
       },
       {
         "icon": "",
         "logo": "PldSpace",
         "title": "",
-        "description": "PLD Space es una empresa española que desarrolla cohetes reutilizables para lanzar satélites al espacio.",
+        "description": "Empresa española que desarrolla cohetes reutilizables para poner satélites en órbita.",
         "alt": "PLD Space utiliza Sttok para gestionar la relación con sus socios mediante el Portal del Inversor"
       },
       {
         "icon": "",
         "logo": "Caballero",
         "title": "",
-        "description": "El Grupo Caballero una empresa familiar fundada en 1830, radicada en el Puerto de Santa María en Cádiz, España",
+        "description": "Grupo Caballero, empresa familiar fundada en 1830 en El Puerto de Santa María (Cádiz).",
         "alt": "Grupo Caballero gestiona Captable y sus Socios con Sttok"
       },
       {
         "icon": "",
         "logo": "Taxdown",
         "title": "",
-        "description": "Taxdown es una empresa de software que ayuda a las personas a hacer la declaración de la renta de forma sencilla.",
+        "description": "Software para hacer la declaración de la renta de forma sencilla.",
         "alt": "Taxdown gestiona Captable y Planes de Incentivos con Sttok"
       },
       {
         "icon": "",
         "logo": "MyInvestor",
         "title": "",
-        "description": "MyInvestor es una entidad financiera digital líder en España que opera como agente de Andbank.",
+        "description": "Entidad financiera digital que opera como agente de Andbank.",
         "alt": "MyInvestor digitaliza su gestión societaria con Sttok"
       }
     ]

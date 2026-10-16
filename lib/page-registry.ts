@@ -272,9 +272,9 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageTestimonios,
     meta: {
       en: {
-        title: "Testimonials and Success Stories",
-        description: "Here you will find testimonials and success stories from our clients",
-      keywords: "testimonials, success stories, clients, companies, businesses, success, satisfaction, recommendation",
+        title: "Sttok customers: case studies and testimonials",
+        description: "How Factorial, PLD Space, Grupo Caballero, TaxDown and MyInvestor run their shareholder register, meetings and incentive plans, and what Sttok customers say.",
+      keywords: "Sttok customers, case studies, testimonials, shareholder register, incentive plans, meetings",
       },
     },
   },
