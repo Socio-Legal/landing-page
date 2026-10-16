@@ -12,6 +12,7 @@ import React, {
 
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import VideoTema from "@/components/shared/video-tema";
 
 type AccordionItemProps = {
   children: React.ReactNode;
@@ -84,7 +85,10 @@ type CardDataProps = {
   title: string;
   content: string;
   image: ImageByThemeProps;
-  video?: string | ImageByThemeProps;
+  /** Ruta base de una animación en /animaciones, sin tema ni extensión. */
+  video?: string;
+  /** Cuánto se queda en pantalla (ms). Una animación necesita su duración entera. */
+  duracion?: number;
   icon?: React.ReactNode;
 };
 
@@ -103,6 +107,8 @@ export default function Features({
 }: FeaturesProps) {
 
   const [currentIndex, setCurrentIndex] = useState<number>(-1);
+  // Cada pestaña dura lo suyo: una animación de 20 s no cabe en los 5 de una captura.
+  const espera = (i: number) => data[i]?.duracion ?? collapseDelay;
 
   const carouselRef = useRef<HTMLUListElement>(null);
   const ref = useRef(null);
@@ -147,7 +153,7 @@ export default function Features({
       setCurrentIndex((prevIndex) =>
         prevIndex !== undefined ? (prevIndex + 1) % data.length : 0
       );
-    }, collapseDelay);
+    }, espera(currentIndex));
 
     return () => clearInterval(timer);
   }, [currentIndex]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -159,7 +165,7 @@ export default function Features({
       scrollToIndex(nextIndex);
     };
 
-    const autoScrollTimer = setInterval(handleAutoScroll, collapseDelay);
+    const autoScrollTimer = setInterval(handleAutoScroll, espera(currentIndex));
 
     return () => clearInterval(autoScrollTimer);
   }, [currentIndex]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -221,7 +227,7 @@ export default function Features({
                         style={{
                           transitionDuration:
                             currentIndex === index
-                              ? `${collapseDelay}ms`
+                              ? `${espera(index)}ms`
                               : "0s",
                         }}
                       ></div>
@@ -243,7 +249,7 @@ export default function Features({
                         style={{
                           transitionDuration:
                             currentIndex === index
-                              ? `${collapseDelay}ms`
+                              ? `${espera(index)}ms`
                               : "0s",
                         }}
                       ></div>
@@ -284,10 +290,6 @@ export default function Features({
               */}
               {data.map((item, index) => {
                 const activa = index === Math.max(currentIndex, 0);
-                const video =
-                  typeof item.video === "string"
-                    ? { light: item.video, dark: item.video }
-                    : item.video;
                 const capa = "object-cover object-top rounded-lg shadow-lg border";
                 return (
                   <div
@@ -298,27 +300,13 @@ export default function Features({
                     )}
                     aria-hidden={!activa}
                   >
-                    {video ? (
-                      <>
-                        <video
-                          src={video.light}
-                          poster={item.image?.light}
-                          className={cn("h-full w-full dark:hidden", capa)}
-                          autoPlay
-                          loop
-                          muted
-                          playsInline
-                        />
-                        <video
-                          src={video.dark}
-                          poster={item.image?.dark}
-                          className={cn("hidden h-full w-full dark:block", capa)}
-                          autoPlay
-                          loop
-                          muted
-                          playsInline
-                        />
-                      </>
+                    {item.video ? (
+                      <VideoTema
+                        base={item.video}
+                        alt={item.title}
+                        activo={activa}
+                        className={cn("absolute inset-0 h-full w-full", capa)}
+                      />
                     ) : item.image ? (
                       <>
                         <Image
@@ -370,7 +358,7 @@ export default function Features({
                     } origin-top bg-primary transition-all ease-linear dark:bg-white`}
                     style={{
                       transitionDuration:
-                        currentIndex === index ? `${collapseDelay}ms` : "0s",
+                        currentIndex === index ? `${espera(index)}ms` : "0s",
                     }}
                   ></div>
                 </div>

@@ -7,6 +7,7 @@ import { useTranslation } from "react-i18next";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 import { trackDemoClick } from "@/lib/analytics";
+import VideoTema from "@/components/shared/video-tema";
 
 export type HeroSectionProps = {
   slogan?: string;
@@ -20,6 +21,8 @@ export type HeroSectionProps = {
     light: string;
     dark: string;
   };
+  /** Ruta base de una animación en /animaciones: sustituye a la imagen. */
+  video?: string;
 };
 
 /**
@@ -34,11 +37,12 @@ const HeroSection: FC<HeroSectionProps> = ({
   description,
   button,
   image,
+  video,
 }) => {
   const { t } = useTranslation("product-hero-section");
 
   const hasButton = !!(button?.text && button?.link);
-  const hasImage = !!(image?.light || image?.dark);
+  const hasImage = !!(video || image?.light || image?.dark);
 
   return (
     <section id="product-hero" className="relative overflow-hidden">
@@ -114,26 +118,36 @@ const HeroSection: FC<HeroSectionProps> = ({
           {hasImage && (
             <div className="relative">
               <div className="relative overflow-hidden rounded-lg border border-border bg-card shadow-xl">
-                <Image
-                  alt={t(title)}
-                  className="relative hidden h-auto w-full rounded-[inherit] dark:block"
-                  src={image.dark || image.light}
-                  height={0}
-                  width={0}
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  style={{ width: "100%", height: "auto" }}
-                  priority
-                />
-                <Image
-                  alt={t(title)}
-                  className="relative block h-auto w-full rounded-[inherit] dark:hidden"
-                  src={image.light || image.dark}
-                  height={0}
-                  width={0}
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                  style={{ width: "100%", height: "auto" }}
-                  priority
-                />
+                {video ? (
+                  <VideoTema
+                    base={video}
+                    alt={t(title)}
+                    className="relative h-auto w-full rounded-[inherit]"
+                  />
+                ) : image ? (
+                  <>
+                    <Image
+                      alt={t(title)}
+                      className="relative hidden h-auto w-full rounded-[inherit] dark:block"
+                      src={image.dark || image.light}
+                      height={0}
+                      width={0}
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      style={{ width: "100%", height: "auto" }}
+                      priority
+                    />
+                    <Image
+                      alt={t(title)}
+                      className="relative block h-auto w-full rounded-[inherit] dark:hidden"
+                      src={image.light || image.dark}
+                      height={0}
+                      width={0}
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      style={{ width: "100%", height: "auto" }}
+                      priority
+                    />
+                  </>
+                ) : null}
               </div>
             </div>
           )}
