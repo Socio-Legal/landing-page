@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Pricing",
-    "description": "Plans from €450 per company per year. Shareholder registry, incentive plans, shareholder and board meetings. No implementation cost, onboarding in one week.",
+    "description": "Plans from €450 per company per year. Shareholder registry, incentive plans, shareholder and board meetings. No implementation cost, setup in a few hours per company.",
     "keywords": "plans, pricing, rates, costs, subscription, annual, shareholder registry, cap table"
   },
   "hero": {
@@ -32,7 +32,7 @@
       },
       {
         "q": "What does every plan include?",
-        "a": "Communications, electronic signature, full onboarding in one week and support in Spanish and English. No hidden implementation fees."
+        "a": "Communications, setup and support in Spanish and English. No hidden implementation fees. Integrated electronic signature is included in the Advanced and Pro plans."
       },
       {
         "q": "Which features have an extra cost?",
@@ -40,7 +40,7 @@
       },
       {
         "q": "How long does implementation take?",
-        "a": "Full onboarding takes one week, including data migration from Excel or other tools."
+        "a": "A few hours per company, including data migration from Excel or other tools. For groups with many companies, it depends on the number of companies. If the register is years out of date, Sttok rebuilds the history from the deeds in a few minutes."
       },
       {
         "q": "How can I get Sttok?",

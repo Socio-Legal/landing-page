@@ -116,30 +116,11 @@ const PAGES: Record<string, { label: Label; section?: SectionKey }> = {
     label: { es: "Política de seguridad", en: "Security policy" },
   },
 
-  // Landings SEO (solo existen en castellano)
-  "/software-de-libro-de-socios": { label: "Software de libro de socios" },
-  "/software-de-juntas-de-accionistas": {
-    label: "Software de juntas de accionistas",
-  },
-  "/software-de-gestion-de-captable": {
-    label: "Software de gestión de captable",
-  },
-  "/software-de-captable": { label: "Software de captable" },
-  "/simulador-de-ampliacion-de-capital": {
-    label: "Simulador de ampliación de capital",
-  },
-  "/secundario": { label: "Mercado secundario" },
-  "/junta-de-accionistas-digital": { label: "Junta de accionistas digital" },
-  "/grupos-societarios": { label: "Grupos societarios" },
-  "/documentacion-societaria": { label: "Documentación societaria" },
-  "/consejos-de-administracion": { label: "Consejos de administración" },
 };
 
 /** Nombre visible de cada caso de exito (config/testimonials/clients/*.ts). */
 const CLIENTS: Record<string, string> = {
-  Banktrack: "Banktrack",
   Caballero: "Grupo Caballero",
-  DerechoCom: "DerechoCom",
   Factorial: "Factorial",
   MyInvestor: "MyInvestor",
   PldSpace: "PLD Space",

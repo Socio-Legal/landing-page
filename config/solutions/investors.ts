@@ -84,7 +84,7 @@ export const testimonials = {
   description: "Empresas que ya han mejorado su gestión societaria con Sttok.", // ej., "Lee testimonios de clientes satisfechos"
   items: [
     {
-      name: "Lucía Bauza", // ej., "Juan Pérez"
+      name: "Lucía Bouzá", // ej., "Juan Pérez"
       role: "Head of Legal & Compliance, Factorial", // ej., "CEO de Empresa A"
       img: "", // ej., "https://ejemplo.com/juan-perez.jpg"
       description:
