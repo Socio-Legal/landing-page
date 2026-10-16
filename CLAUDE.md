@@ -134,7 +134,6 @@ comprobarlo en producción tras el despliegue.
 - Los archivos de `config/product`, `config/solutions`, `config/legal`,
   `config/pricing.ts` y `config/testimonials/testimonials.ts` solo exportan
   `metadata`, que es lo que leen los layouts. El contenido de las páginas vive
-  en `public/locales/<idioma>/*.json`. `config/solutions/startups.ts` conserva
-  sus objetos antiguos: la página `/startups` no se toca.
+  en `public/locales/<idioma>/*.json`.
 - La lista de funcionalidades de `/funcionalidades`, de las páginas de módulo
   y de las de solución sale de un solo archivo, `lib/funcionalidades-catalogo.ts`.

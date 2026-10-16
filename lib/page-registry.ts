@@ -240,9 +240,9 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageStartups,
     meta: {
       en: {
-        title: "Sttok for Startups",
-        description: "Cap table solutions, incentive plans, and much more for your startup",
-      keywords: "startup, sttok, captable, phantoms, incentives, beneficiaries",
+        title: "Sttok for scale-ups: shareholder register, incentive plans and transaction simulator",
+        description: "For growing companies with several rounds, many investors and an incentive plan: shareholder register with share classes, simulation of capital increases and convertible notes, phantom shares, stock options and tender offers.",
+      keywords: "scale-up, shareholder register, incentive plans, phantom shares, stock options, tender offer, convertible note, capital increase",
       },
     },
   },

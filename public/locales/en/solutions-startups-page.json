@@ -1,103 +1,116 @@
 {
   "metadata": {
-    "title": "Sttok for Startups",
-    "description": "Cap table solutions, incentive plans, and much more for your startup",
-    "keywords": "startup, sttok, captable, phantoms, incentives, beneficiaries"
+    "title": "Sttok for scale-ups: shareholder register, incentive plans and transaction simulator",
+    "description": "For growing companies with several rounds, many investors and an incentive plan: shareholder register with share classes, simulation of capital increases and convertible notes, phantom shares, stock options and tender offers.",
+    "keywords": "scale-up, shareholder register, incentive plans, phantom shares, stock options, tender offer, convertible note, capital increase"
   },
   "hero": {
-    "slogan": "Solutions",
-    "title": "Solution for Startups",
-    "description": "Digital corporate management for startups, scale-ups and growing companies. Focus on growing the business and use Sttok for round calculations, incentive plans, shareholder registry and meetings.",
+    "slogan": "Scale-ups",
+    "title": "For scale-ups with many investors and an incentive plan",
+    "description": "Every round adds investors, share classes and convertible notes, and the incentive plan grows with the team. Sttok keeps the official shareholder register, simulates each transaction on the actual register before it is signed and runs each employee's plan, with tender offers to give them liquidity.",
     "button": {
-      "text": "Request Demo",
+      "text": "Book a demo",
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/hero/hero-solutions-startups.png",
-      "dark": "/hero/hero-solutions-startups.png"
+      "light": "/funcionalidades/portal-del-beneficiario-light.png",
+      "dark": "/funcionalidades/portal-del-beneficiario-dark.png"
     }
   },
-  "clients": {
-    "title": "They trust Sttok",
-    "clients": [
-      "Factorial",
-      "PldSpace",
-      "Taxdown",
-      "MyInvestor",
-      "Shakers",
-      "Barkibu",
-      "Multiverse",
-      "Andbank",
-      "Osborne",
-      "Fanalca",
-      "Sade"
-    ]
-  },
-  "features": {
-    "title": "All Features",
-    "description": "The features that make Sttok the essential tool for startups, scale-ups and growing companies.",
-    "items": [
-      {
-        "icon": "Icon01",
-        "title": "Official Shareholder Register",
-        "description": "Easily manage and update your startup's shareholder register."
-      },
-      {
-        "icon": "Icon02",
-        "title": "Incentive Plans",
-        "description": "Manage stock options and phantoms, and give employees access to their incentives."
-      },
-      {
-        "icon": "Icon03",
-        "title": "Meetings and Boards",
-        "description": "Automate the management of shareholder meetings and boards with digital voting and proxy."
-      },
-      {
-        "icon": "Icon04",
-        "title": "Operations Simulator",
-        "description": "Calculate funding rounds and capital increases accurately and quickly."
-      },
-      {
-        "icon": "Icon05",
-        "title": "Access for partners",
-        "description": "If you want, you can give professional access to your investors"
-      },
-      {
-        "icon": "Icon06",
-        "title": "Syndication",
-        "description": "Configure syndication easily to simplify your company's management"
-      },
-      {
-        "icon": "SecondaryBook",
-        "title": "Transactions",
-        "description": "A record of every operation: capital increases, sales, transfers, swaps, inheritances, reductions, renumbering and more."
-      }
-    ]
-  },
   "testimonials": {
-    "title": "",
-    "description": "",
+    "title": "Customer Testimonials",
+    "description": "Growing companies that keep their shareholder register and incentive plans in Sttok.",
     "items": [
       {
         "name": "Lucía Bouzá",
-        "role": "Head of Legal & Compliance | Factorial",
+        "role": "Head of Legal & Compliance, Factorial",
         "img": "/logo-factorial-mini.png",
         "description": "Sttok allows us to have all the information about partners and incentive plans centralized and updated. It facilitates the management of meetings and the relationship with investors.",
         "stars": 5
       },
       {
         "name": "Johan Longo",
-        "role": "Contract Manager | PLD Space",
+        "role": "Contract Manager, PLD Space",
         "img": "/logo-pldspace-mini.png",
         "description": "Sttok helps us keep all the information about partners, meetings, and incentive plans of our company organized. It facilitates the management of the cap table and the relationship with investors.",
         "stars": 5
+      }
+    ]
+  },
+  "includes": {
+    "eyebrow": "What's included",
+    "title": "What a scale-up with several rounds and an incentive plan uses",
+    "allLink": ""
+  },
+  "situations": {
+    "eyebrow": "Common cases",
+    "title": "Common situations at a scale-up",
+    "guideLabel": "See how",
+    "rows": [
+      {
+        "situation": "A new investor comes in with a capital increase",
+        "action": "It simulates the increase on the actual register, including the pool and note conversion, and prepares the drafts in Word.",
+        "href": "/en/operation-drafts"
       },
       {
-        "name": "Nacho González",
-        "role": "CEO and Founder | Banktrack",
-        "img": "/logo-banktrack-mini.png",
-        "description": "Now with Sttok you can perform simulations of capital increases or convertible notes. We also easily manage our team's phantom shares. Finally, as an investor, I have my investments organized and I clearly know what I have.",
-        "stars": 5
+        "situation": "A convertible note converts",
+        "action": "It calculates the conversion and its dilution, and records the new shares with their numbering.",
+        "href": "/en/operation-drafts"
+      },
+      {
+        "situation": "Employees want to sell part of what has vested",
+        "action": "It opens a tender offer with price, caps, withholding and each beneficiary's net amount.",
+        "href": "/en/incentive-plans"
+      },
+      {
+        "situation": "An employee asks how much has vested",
+        "action": "They see it in their portal: their units, their vesting schedule and their documents.",
+        "href": "/en/incentive-plans"
+      },
+      {
+        "situation": "A shareholder wants to sell to another",
+        "action": "The offer is published on the secondary market and the transfer is recorded in the register when it closes.",
+        "href": "/en/secondary-market"
+      },
+      {
+        "situation": "The general meeting has to approve the round",
+        "action": "It sends the notice, collects signed proxies and early votes, and drafts the minutes with the result.",
+        "href": "/en/shareholder-meetings"
+      }
+    ],
+    "columns": {
+      "situation": "Situation",
+      "action": "What Sttok does",
+      "guide": "Learn more"
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions from scale-ups",
+    "items": [
+      {
+        "q": "Is Sttok for scale-ups or only for established companies?",
+        "a": "Both. A scale-up with several rounds already has many shareholders, share classes and an incentive plan. Sttok keeps the official shareholder register from the start, and grows with the company."
+      },
+      {
+        "q": "Can I simulate a transaction before signing it?",
+        "a": "Yes. The simulator calculates capital increases and reductions, share sales, convertible notes and liquidation waterfalls on the actual register, and prepares the drafts in Word."
+      },
+      {
+        "q": "Which incentive plans does it manage?",
+        "a": "Phantom shares, stock options and restricted shares, with their pool, grants, vesting and cliff, invitation letter and each beneficiary's portal."
+      },
+      {
+        "q": "Can employees sell what has vested?",
+        "a": "Yes, through tender offers: purchase windows with price, caps, withholding and each beneficiary's net amount."
+      },
+      {
+        "q": "Is the secondary market included?",
+        "a": "It is an add-on module at extra cost. Sales between shareholders are recorded in the register with their documents."
+      },
+      {
+        "q": "How much does it cost?",
+        "a": "Standard plans range from €450/year for up to 10 shareholders or beneficiaries to €850/year for up to 50. Above 50, there is a custom plan. See the pricing page."
       }
     ]
   }
