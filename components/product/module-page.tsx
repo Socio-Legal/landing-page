@@ -116,26 +116,26 @@ const ModulePage: FC<ModulePageProps> = ({ ns, modulos, seleccion }) => {
           <LogoStrip
             label={t("product-hero-section:clientsLabel")}
             primary={[
+              "Factorial",
               "Axa",
               "Andbank",
-              "Factorial",
-              "Multiverse",
-              "PldSpace",
               "Osborne",
+              "Taxdown",
+              "PldSpace",
+              "Caballero",
               "Fanalca",
-              "Sade",
             ]}
             secondary={[
-              "Caballero",
-              "Taxdown",
+              "Multiverse",
               "MyInvestor",
-              "Barkibu",
               "DerechoCom",
               "Pwc",
-              "Banktrack",
-              "LegalPigeon",
-              "Cabiedes",
               "Shakers",
+              "Cabiedes",
+              "LegalPigeon",
+              "Banktrack",
+              "Barkibu",
+              "Sade",
             ]}
           />
         </div>

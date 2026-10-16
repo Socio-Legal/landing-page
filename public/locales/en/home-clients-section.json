@@ -7,24 +7,24 @@
     "buttonLink": ""
   },
   "companies": [
+    "Factorial",
     "Axa",
     "Andbank",
-    "Factorial",
-    "Multiverse",
-    "PldSpace",
     "Osborne",
-    "Fanalca",
-    "Sade",
-    "Caballero",
     "Taxdown",
+    "PldSpace",
+    "Caballero",
+    "Fanalca",
+    "Multiverse",
     "MyInvestor",
-    "Barkibu",
     "DerechoCom",
     "Pwc",
-    "Banktrack",
-    "LegalPigeon",
-    "Cabiedes",
     "Shakers",
-    "LetsLaw"
+    "Cabiedes",
+    "LegalPigeon",
+    "LetsLaw",
+    "Banktrack",
+    "Barkibu",
+    "Sade"
   ]
 }
