@@ -197,9 +197,9 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageProducto,
     meta: {
       en: {
-        title: "Product",
-        description: "All updated corporate data and documentation in one place. Manage partners, investors, incentive plans, operation simulation, shareholder meetings, boards, minutes and deeds in minutes.",
-      keywords: "incentive plans, phantoms, stock options, flexible compensation, incentive management, vesting",
+        title: "Shareholder register, general meetings and board of directors",
+        description: "Sttok keeps the shareholder register with numbered share ranges, runs general meetings and the board through to certified minutes, and manages incentive plans, company groups and their documents.",
+      keywords: "shareholder register, share ledger, general meeting, board of directors, company groups, beneficial owner, incentive plans",
       },
     },
     softwareApplication: true,
