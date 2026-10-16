@@ -11,12 +11,11 @@ const linkClass =
  * solo va el catálogo, con los módulos enlazados a sus páginas inglesas.
  *
  * Mismas medidas que la portada castellana (DocPage): artículo de 64rem y
- * texto en su columna de lectura. El padding superior suma los 56 px que
- * app/[locale]/layout.tsx resta a todas las rutas inglesas.
+ * texto en su columna de lectura.
  */
 export default function FeaturesPageEn() {
   return (
-    <article className="container mx-auto max-w-5xl px-4 pb-16 pt-[120px] md:pt-[152px]">
+    <article className="container mx-auto max-w-5xl px-4 pb-16 pt-16 md:pt-24">
       <h1 className="mb-6 max-w-[22ch] font-serif text-4xl font-normal leading-tight text-balance text-foreground sm:text-5xl">
         Sttok features
       </h1>
