@@ -33,9 +33,13 @@ const SQUARE: LogoName[] = ["Axa"];
 const rowStyle = (count: number): CSSProperties => {
   // Más de 9 logos no caben en una fila: se reparten en dos iguales.
   const cols = count <= 9 ? count : Math.ceil(count / 2);
+  // En estrecho, un número de columnas entre 3 y 5 que divida el total, para
+  // que todas las filas vayan llenas: 9 logos son tres filas de 3, no 5 + 4.
+  const narrow =
+    [5, 4, 3].find((d) => count % d === 0) ?? Math.ceil(cols / 2);
   return {
     "--cols": cols,
-    "--cols-narrow": Math.ceil(cols / 2),
+    "--cols-narrow": narrow,
   } as CSSProperties;
 };
 

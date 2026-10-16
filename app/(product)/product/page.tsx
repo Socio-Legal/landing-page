@@ -87,7 +87,7 @@ const Page = () => {
               "Multiverse",
               "MyInvestor",
               "DerechoCom",
-              "Pwc",
+              "Shakers",
               "Cabiedes",
               "LegalPigeon",
               "Banktrack",

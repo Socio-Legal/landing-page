@@ -18,7 +18,6 @@ import MyInvestor from "@/public/logo-myinvestor.png";
 import Osborne from "@/public/logo-osborne.svg";
 import PldSpace from "@/public/logo-pldspace.png";
 import Psonrie from "@/public/logo-psonrie.png";
-import Pwc from "@/public/logo-pwc.png";
 import Sade from "@/public/logo-sade.png";
 import Shakers from "@/public/logo-shakers.png";
 import Taxdown from "@/public/logo-taxdown.png";
@@ -46,7 +45,6 @@ export const clientLogos = {
   Osborne: Osborne,
   PldSpace: PldSpace,
   Psonrie: Psonrie,
-  Pwc: Pwc,
   Sade: Sade,
   Shakers: Shakers,
   Taxdown: Taxdown,
