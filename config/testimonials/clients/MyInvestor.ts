@@ -1,6 +1,6 @@
 export const metadata = {
   title:
-    "MyInvestor utiliza Sttok para la gestión integral de su gobierno corporativo y socios",
+    "MyInvestor lleva su consejo, sus juntas y su libro de socios con Sttok",
   description:
     "MyInvestor confía en Sttok para la gestión digital de sus órganos de gobierno, gestión de socios y procesos corporativos",
   keywords:
@@ -51,8 +51,7 @@ export const content = {
     {
       title: "Un poco sobre MyInvestor",
       texts: [
-        "MyInvestor es una entidad financiera digital líder en España que opera como agente de Andbank. Se ha posicionado como uno de los neobancos más innovadores del mercado español, ofreciendo servicios de inversión, hipotecas y cuentas corrientes con condiciones altamente competitivas.",
-        "La entidad ha experimentado un crecimiento exponencial desde su lanzamiento, superando los 1.000 millones de euros en activos bajo gestión y más de 125.000 clientes, consolidándose como uno de los principales actores en el sector fintech español. Como entidad financiera regulada, MyInvestor mantiene los más altos estándares de gobierno corporativo y cumplimiento normativo.",
+        "MyInvestor es una entidad financiera digital que opera como agente de Andbank. Ofrece servicios de inversión, hipotecas y cuentas corrientes.",
       ],
     },
     {
@@ -61,8 +60,7 @@ export const content = {
         "1. Por la necesidad de digitalizar sus procesos de gobierno corporativo de manera segura y eficiente.",
         "2. Por la seguridad jurídica que ofrece la plataforma en la gestión documental y trazabilidad de acuerdos societarios.",
         "3. Por la eficiencia en la celebración de consejos de administración digitales y la gestión de votaciones online.",
-        "4. Por la automatización en la generación de documentación societaria y actas.",
-        "5. Por el cumplimiento de los más altos estándares regulatorios del sector financiero y la adaptación a la normativa de entidades reguladas.",
+        "4. Por la automatización en la generación de documentación societaria y actas.",
         "6. Por la capacidad de gestionar de forma digital el libro registro de socios y la documentación corporativa.",
       ],
     },

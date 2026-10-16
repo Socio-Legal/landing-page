@@ -50,7 +50,7 @@
     "items": [
       {
         "q": "¿Sttok lleva el libro de socios oficial?",
-        "a": "Sí. Lleva el libro registro de socios o de acciones nominativas como registro oficial y lo exporta en el formato que se presenta para su legalización en el Registro Mercantil."
+        "a": "Sí. Lleva el libro registro de socios o de acciones nominativas como registro oficial y lo exporta en formato legalizable. Desde Sttok se puede presentar por vía telemática en el Registro Mercantil, cuando la sociedad lo decide."
       },
       {
         "q": "¿Puedo migrar el libro desde un Excel?",
