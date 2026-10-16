@@ -16,8 +16,11 @@
       "id": "price_1",
       "name": "Básico",
       "description": "Sociedades de hasta 10 socios o beneficiarios",
-      "features": ["Libro de Socios", "Planes Incentivos", "Simulador rondas"],
-      "monthlyPrice": 4000,
+      "features": [
+        "Libro de Socios",
+        "Planes Incentivos",
+        "Simulador rondas"
+      ],
       "yearlyPrice": 45000,
       "isMostPopular": false
     },
@@ -33,7 +36,6 @@
         "Consejos administración",
         "Firma electrónica integrada"
       ],
-      "monthlyPrice": 6000,
       "yearlyPrice": 65000,
       "isMostPopular": true
     },
@@ -49,7 +51,6 @@
         "Consejos administración",
         "Firma electrónica integrada"
       ],
-      "monthlyPrice": 8000,
       "yearlyPrice": 85000,
       "isMostPopular": false
     }

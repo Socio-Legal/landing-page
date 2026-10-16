@@ -131,5 +131,10 @@ comprobarlo en producción tras el despliegue.
   anotado en el propio archivo.
 - `app/solutions/` no tiene `page.tsx`: es solo un prefijo de ruta de las cinco
   páginas de soluciones. La sección castellana vive en `app/soluciones/`.
-- Los archivos de `config/*.ts` conservan objetos de contenido que ya **no se
-  usan**; de ellos solo sigue vivo el export `metadata`.
+- Los archivos de `config/product`, `config/solutions`, `config/legal`,
+  `config/pricing.ts` y `config/testimonials/testimonials.ts` solo exportan
+  `metadata`, que es lo que leen los layouts. El contenido de las páginas vive
+  en `public/locales/<idioma>/*.json`. `config/solutions/startups.ts` conserva
+  sus objetos antiguos: la página `/startups` no se toca.
+- La lista de funcionalidades de `/funcionalidades`, de las páginas de módulo
+  y de las de solución sale de un solo archivo, `lib/funcionalidades-catalogo.ts`.

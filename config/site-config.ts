@@ -260,7 +260,6 @@ export const siteConfig = {
         },
       ],
       [
-        // TODO: create legal pages
         { id: 13, title: "menu.Legal", url: "#", isHeader: true },
         {
           id: 14,

@@ -13,7 +13,6 @@ type Plan = {
   name: string;
   description: string;
   features: string[];
-  monthlyPrice: number;
   yearlyPrice: number;
   isMostPopular: boolean;
 };

@@ -21,7 +21,6 @@
         "Incentive Plans",
         "Round Simulator"
       ],
-      "monthlyPrice": 4000,
       "yearlyPrice": 45000,
       "isMostPopular": false
     },
@@ -37,7 +36,6 @@
         "Board of Directors",
         "Integrated Electronic Signature"
       ],
-      "monthlyPrice": 6000,
       "yearlyPrice": 65000,
       "isMostPopular": true
     },
@@ -53,7 +51,6 @@
         "Board of Directors",
         "Integrated Electronic Signature"
       ],
-      "monthlyPrice": 8000,
       "yearlyPrice": 85000,
       "isMostPopular": false
     }
