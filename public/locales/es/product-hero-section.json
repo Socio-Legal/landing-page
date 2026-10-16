@@ -14,12 +14,12 @@
     "title": "Producto",
     "description": "Todos los datos y documentación societaria actualizada en un único sitio. Gestiona socios, inversores, planes de incentivos, simulación de operaciones, juntas de accionistas, consejos, actas y escrituras en pocos minutos.",
     "button": {
-      "text": "Prueba ahora",
-      "link": "https://app.sttok.com/#/demo"
+      "text": "Solicitar demo",
+      "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/hero/hero-product-dark.png",
-      "dark": "/hero/hero-product-light.png"
+      "light": "/hero/hero-product-light.png",
+      "dark": "/hero/hero-product-dark.png"
     }
   },
   "items": [

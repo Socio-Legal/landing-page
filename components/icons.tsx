@@ -34,11 +34,11 @@ export const Icons = {
         <clipPath id="6ba0f28c19">
           <path
             d="M 0.175781 5 L 92.820312 5 L 92.820312 125 L 0.175781 125 Z M 0.175781 5 "
-            clip-rule="nonzero"
+            clipRule="nonzero"
           />
         </clipPath>
       </defs>
-      <g clip-path="url(#6ba0f28c19)">
+      <g clipPath="url(#6ba0f28c19)">
         <g fill="#6576ff" fillOpacity="1">
           <g transform="translate(-5.958466, 123.240776)">
             <g>
@@ -94,9 +94,9 @@ export const Icons = {
           y2="0.000206102"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0001" stop-color="#E59CFF" />
-          <stop offset="0.5001" stop-color="#BA9CFF" />
-          <stop offset="1" stop-color="#9CB2FF" />
+          <stop offset="0.0001" stopColor="#E59CFF" />
+          <stop offset="0.5001" stopColor="#BA9CFF" />
+          <stop offset="1" stopColor="#9CB2FF" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_484_5398"
@@ -106,9 +106,9 @@ export const Icons = {
           y2="0.000206102"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0001" stop-color="#E59CFF" />
-          <stop offset="0.5001" stop-color="#BA9CFF" />
-          <stop offset="1" stop-color="#9CB2FF" />
+          <stop offset="0.0001" stopColor="#E59CFF" />
+          <stop offset="0.5001" stopColor="#BA9CFF" />
+          <stop offset="1" stopColor="#9CB2FF" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_484_5398"
@@ -118,9 +118,9 @@ export const Icons = {
           y2="0.000206102"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0.0001" stop-color="#E59CFF" />
-          <stop offset="0.5001" stop-color="#BA9CFF" />
-          <stop offset="1" stop-color="#9CB2FF" />
+          <stop offset="0.0001" stopColor="#E59CFF" />
+          <stop offset="0.5001" stopColor="#BA9CFF" />
+          <stop offset="1" stopColor="#9CB2FF" />
         </linearGradient>
       </defs>
     </svg>

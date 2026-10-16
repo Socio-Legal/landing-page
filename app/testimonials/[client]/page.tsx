@@ -17,9 +17,7 @@ import { ArrowLeft } from "lucide-react";
 
 import * as Factorial from "@/config/testimonials/clients/Factorial";
 import * as PldSpace from "@/config/testimonials/clients/PldSpace";
-import * as DerechoCom from "@/config/testimonials/clients/DerechoCom";
 import * as Taxdown from "@/config/testimonials/clients/Taxdown";
-import * as Banktrack from "@/config/testimonials/clients/Banktrack";
 import * as Caballero from "@/config/testimonials/clients/Caballero";
 import * as MyInvestor from "@/config/testimonials/clients/MyInvestor";
 
@@ -69,9 +67,7 @@ type TestimonialProps = {
 const testimonialPages = {
   Factorial: Factorial,
   PldSpace: PldSpace,
-  DerechoCom: DerechoCom,
   Taxdown: Taxdown,
-  Banktrack: Banktrack,
   Caballero: Caballero,
   MyInvestor: MyInvestor,
 };
@@ -145,10 +141,14 @@ const Page: FC<PageProps> = ({ params }) => {
                 </blockquote>
                 <figcaption className="text-sm">
                   <span className="font-semibold">{summary.quote.author}</span>
-                  <br />
-                  <span className="text-muted-foreground">
-                    {summary.quote.position}
-                  </span>
+                  {summary.quote.position && (
+                    <>
+                      <br />
+                      <span className="text-muted-foreground">
+                        {summary.quote.position}
+                      </span>
+                    </>
+                  )}
                 </figcaption>
               </figure>
             )}
