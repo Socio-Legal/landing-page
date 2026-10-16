@@ -48,7 +48,7 @@
     {
       "aspect": "Coste",
       "excel": "Gratis en licencias; caro en horas y en errores.",
-      "sttok": "Desde 450€ por sociedad al año, con onboarding en una semana."
+      "sttok": "Desde 450€ por sociedad al año, con puesta en marcha en unas horas."
     }
   ],
   "faq": {
@@ -57,7 +57,7 @@
     "items": [
       {
         "q": "¿Puedo migrar mi Excel actual a Sttok?",
-        "a": "Sí. El onboarding incluye la migración del libro de socios y del histórico, y se completa en una semana."
+        "a": "Sí. El onboarding incluye la migración del libro de socios y del histórico, y se completa en unas horas por sociedad."
       },
       {
         "q": "¿Qué pasa con mi histórico de operaciones?",

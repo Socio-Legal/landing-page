@@ -1,4 +1,4 @@
-import Axa from "@/public/logo-axa-border.png";
+import Axa from "@/public/logo-axa.png";
 import Andbank from "@/public/logo-andbank.png";
 import Banktrack from "@/public/logo-banktrack.png";
 import Barkibu from "@/public/logo-barkibu.png";

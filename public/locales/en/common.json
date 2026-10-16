@@ -45,7 +45,10 @@
     "Security": "Security Policy",
     "Glossary": "Corporate glossary",
     "About": "About us",
-    "VsExcel": "Sttok vs Excel"
+    "VsExcel": "Sttok vs Excel",
+    "Guides": "Guides",
+    "Comparisons": "Comparisons",
+    "Features": "Features"
   },
   "cta": {
     "login": "Log in",

@@ -1,43 +1,41 @@
 "use client";
 
-import React from "react";
-import { useTranslation } from "react-i18next";
+import ModulePage from "@/components/product/module-page";
 
-import CallToActionSection from "@/components/landing/cta-section";
-import TestimonialsSection, {
-  TestimonialsSectionProps,
-} from "@/components/product/testimonials-section";
-import FeaturesSection, {
-  FeaturesSectionProps,
-} from "@/components/product/features-section";
-import ClientsSection, {
-  ClientsSectionProps,
-} from "@/components/product/clients-section";
-import HeroSection, {
-  HeroSectionProps,
-} from "@/components/product/hero-section";
-
-const Page = () => {
-  const { t } = useTranslation("solutions-investors-dashboard-page");
-
-  const hero = t("hero", { returnObjects: true }) as HeroSectionProps;
-  const clients = t("clients", { returnObjects: true }) as ClientsSectionProps;
-  const features = t("features", {
-    returnObjects: true,
-  }) as FeaturesSectionProps;
-  const testimonials = t("testimonials", {
-    returnObjects: true,
-  }) as TestimonialsSectionProps;
-
-  return (
-    <>
-      <HeroSection {...hero} />
-      <ClientsSection {...clients} />
-      <FeaturesSection {...features} />
-      <TestimonialsSection {...testimonials} />
-      <CallToActionSection />
-    </>
-  );
+// Por módulo, las funcionalidades del catálogo que importan a este perfil.
+const SELECCION = {
+  "socios": [
+    "Portal del accionista",
+    "Certificados de titularidad y de valor",
+    "Ficha del socio",
+    "Equity Story"
+  ],
+  "juntas": [
+    "Vista del socio",
+    "Delegación de voto con firma",
+    "Voto anticipado",
+    "Convocatoria"
+  ],
+  "documentos": [
+    "Comunicaciones certificadas",
+    "Repositorio de documentos",
+    "Firma electrónica",
+    "Remitente propio"
+  ],
+  "plataforma": [
+    "Personalización",
+    "Roles",
+    "Usuarios y permisos",
+    "Inicio de sesión con Google y Microsoft"
+  ]
 };
+
+const Page = () => (
+  <ModulePage
+    ns="solutions-investors-dashboard-page"
+    modulos={Object.keys(SELECCION)}
+    seleccion={SELECCION}
+  />
+);
 
 export default Page;

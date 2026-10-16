@@ -18,7 +18,7 @@
     }
   },
   "clients": {
-    "title": "Confian en Sttok",
+    "title": "Confían en Sttok",
     "clients": [
       "Factorial",
       "Andbank",
@@ -65,7 +65,7 @@
       {
         "icon": "Icon06",
         "title": "Sindicación",
-        "description": "Configura la sindiación de forma fácil para simplificar la gestión de tu empresa"
+        "description": "Configura la sindicación de forma fácil para simplificar la gestión de tu empresa"
       },
       {
         "icon": "SecondaryBook",
@@ -89,7 +89,7 @@
         "name": "Johan Longo",
         "role": "Contract Manager | PLD Space",
         "img": "/logo-pldspace-mini.png",
-        "description": "Sttok nos sirve para poder tener organizada toda la información sobre socios, junas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
+        "description": "Sttok nos sirve para poder tener organizada toda la información sobre socios, juntas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
         "stars": 5
       },
       {

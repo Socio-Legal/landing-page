@@ -71,8 +71,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageAbogados,
     meta: {
       en: {
-        title: "Sttok for Lawyers",
-        description: "Corporate management software for Lawyers. Sttok allows you to manage the shareholder register, incentive plans, shareholder meetings, board of directors, etc.",
+        title: "Shareholder registers, meetings and minutes for law firms and corporate advisers",
+        description: "Every company the firm manages on one screen: shareholder registers and minute books, meetings, certificates and register legalisation, with permissions per company.",
       keywords: "corporate management, lawyers, captable, shareholder register, incentive plans, shareholder meetings, boards, testimonials",
       },
     },
@@ -90,8 +90,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageEmpresas,
     meta: {
       en: {
-        title: "Companies and Corporate Groups - Sttok",
-        description: "Corporate management software for companies and corporate groups. Shareholder Register, Shareholder Meetings, etc.",
+        title: "Shareholder register, meetings and board for companies with many shareholders and groups",
+        description: "Corporate records for every company in the group: register with encumbrances and co-owners, general meeting, board, officers with terms and beneficial owner, with permissions per company.",
       keywords: "Shareholder Register, Company, corporate group, shareholder meeting, incentive plans, board of directors",
       },
     },
@@ -100,8 +100,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageInversores,
     meta: {
       en: {
-        title: "Sttok for Investors",
-        description: "Discover the solutions we offer for investors and their investees",
+        title: "Investee tracking for funds, family offices and holding companies",
+        description: "Investees with their percentage and value, chain of control on any date, and simulation of capital increases, convertible notes and sales.",
       keywords: "investors, investees, portfolio, captable, shareholder register, investor",
       },
     },
@@ -110,8 +110,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageJuntasConsejos,
     meta: {
       en: {
-        title: "Meetings and Boards",
-        description: "Efficiently manage shareholder meetings and board meetings with Sttok, including convocations, delegations, votes, and minutes.",
+        title: "General meetings and board of directors: notice, voting and minutes",
+        description: "Notice, signed proxies, early and live voting, quorum, minutes and certification for the general meeting and the board of directors.",
       keywords: "shareholder meetings, board meetings, digital meeting management, convocations, vote delegations, digital minutes",
       },
     },
@@ -122,8 +122,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageLibroDeSocios,
     meta: {
       en: {
-        title: "Shareholder Register",
-        description: "Official Shareholder Register, updated and error-free. Stop using inefficient Excel sheets. A single shareholder register ready to submit to the Registry and to easily calculate operations.",
+        title: "Digital shareholder register: numbered share ranges, encumbrances and certificates",
+        description: "Sttok keeps the shareholder register as the official record, with transfers by share range, encumbrances, co-owners and certificates, exportable for legalisation.",
       keywords: "Shareholder Register, Shareholders, Registry, Operations, Excel",
       },
     },
@@ -134,8 +134,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageMercadoSecundario,
     meta: {
       en: {
-        title: "Secondary Market — share transfers between partners",
-        description: "Organize share transfers between partners and tender offers with automatic recording in the shareholder registry.",
+        title: "Secondary market for shares between shareholders",
+        description: "Share sales between shareholders and purchase offers to several shareholders at once, recorded in the shareholder register with their documents. Add-on module.",
       keywords: "secondary market, share transfers, tender offer, liquidity",
       },
     },
@@ -146,8 +146,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PagePlanesDeIncentivos,
     meta: {
       en: {
-        title: "Incentive Plans",
-        description: "Manage incentive plans (phantom share plan, stock option plans, etc.) for your company efficiently and professionally.",
+        title: "Incentive plans: phantom shares and stock options",
+        description: "Pool approved by the general meeting, grants, vesting, invitation letters, beneficiary portal and tender offers, calculated on the actual shareholder register.",
       keywords: "incentive plans, phantoms, stock options, flexible compensation, incentive management, vesting",
       },
     },
@@ -167,8 +167,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PagePortalDelInversor,
     meta: {
       en: {
-        title: "Investor Portal",
-        description: "Discover the solutions we offer for investors and companies to give access to their shareholders",
+        title: "Investor portal: each shareholder's position, certificates and meetings",
+        description: "Each shareholder and investor with their own access and the company's branding: their position, their certificates, the meeting and communications with proof of delivery.",
       keywords: "investors, investees, portfolio, captable, document management, operations simulator, investor portal",
       },
     },
@@ -178,7 +178,7 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     meta: {
       en: {
         title: "Pricing — Sttok corporate management software",
-        description: "Plans from €450 per company per year. Shareholder registry, incentive plans, meetings and boards. No implementation cost, onboarding in one week.",
+        description: "Plans from €450 per company per year. Shareholder registry, incentive plans, meetings and boards. No implementation cost, setup in a few hours per company.",
       keywords: "corporate management pricing, cap table software pricing, shareholder registry software",
       },
     },
@@ -197,9 +197,9 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageProducto,
     meta: {
       en: {
-        title: "Product",
-        description: "All updated corporate data and documentation in one place. Manage partners, investors, incentive plans, operation simulation, shareholder meetings, boards, minutes and deeds in minutes.",
-      keywords: "incentive plans, phantoms, stock options, flexible compensation, incentive management, vesting",
+        title: "Shareholder register, general meetings and board of directors",
+        description: "Sttok keeps the shareholder register with numbered share ranges, runs general meetings and the board through to certified minutes, and manages incentive plans, company groups and their documents.",
+      keywords: "shareholder register, share ledger, general meeting, board of directors, company groups, beneficial owner, incentive plans",
       },
     },
     softwareApplication: true,
@@ -218,8 +218,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageSimulador,
     meta: {
       en: {
-        title: "Operations Simulator",
-        description: "Simulate and calculate any corporate operation with precision in seconds, including investment rounds, capital increases, and more.",
+        title: "Corporate transaction simulator: capital increases, share sales and notes",
+        description: "Simulate capital increases, reductions, share sales and convertible notes on the actual shareholder register, with liquidation waterfall and Word drafts.",
       keywords: "operations simulator, investment rounds, capital increases, convertible notes, corporate simulations",
       },
     },

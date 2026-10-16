@@ -5,75 +5,24 @@
     "keywords": "inversores, participadas, cartera, captable, libro de socios, inversor"
   },
   "hero": {
-    "slogan": "Soluciones",
-    "title": "Solución para Inversores, VC y Fondos",
-    "description": "Toda la cartera de participadas en un único sitio con los datos reales y actualizados. Podrás saber exactamente el % ND, %FD y potencial FD, tener acceso a escrituras de transacciones, juntas de accionistas, etc.",
+    "slogan": "Inversores y sociedades holding",
+    "title": "Para fondos, family offices y sociedades holding con participadas",
+    "description": "Sttok reúne las participadas con su porcentaje, sus títulos y su valor, dibuja la cadena de control a cualquier fecha y simula cada operación antes de firmarla: una ampliación, la conversión de una nota o el reparto de una venta.",
     "button": {
-      "text": "Solicitar Demo",
+      "text": "Solicitar demo",
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/hero/hero-solutions-inversor.png",
-      "dark": "/hero/hero-solutions-inversor.png"
+      "light": "/capturas/participadas-light.png",
+      "dark": "/capturas/participadas-dark.png"
     }
-  },
-  "clients": {
-    "title": "Empresas que utilizan Sttok",
-    "clients": [
-      "Factorial",
-      "Andbank",
-      "Osborne",
-      "Taxdown",
-      "PldSpace",
-      "Caballero",
-      "Fanalca",
-      "MyInvestor",
-      "Shakers",
-      "Sade"
-    ]
-  },
-  "features": {
-    "title": "Principales Funcionalidades para Inversores",
-    "description": "Sttok proporciona a los inversores acceso a su cartera de participadas con datos actualizados en tiempo real, permitiendo la simulación de rondas y la gestión de la documentación.",
-    "items": [
-      {
-        "icon": "Icon01",
-        "title": "Acceso a la Cartera de Participadas",
-        "description": "Consulta la información actualizada sobre las participaciones y su valorización."
-      },
-      {
-        "icon": "Icon02",
-        "title": "Simulador de Operaciones",
-        "description": "Realiza simulaciones de rondas y operaciones de capital con datos exactos y en pocos minutos."
-      },
-      {
-        "icon": "Icon03",
-        "title": "Gestión de Documentación",
-        "description": "Accede a escrituras, actas y certificados de todas las operaciones en un único portal."
-      },
-      {
-        "icon": "Icon04",
-        "title": "Juntas",
-        "description": "Simplifica delegaciones, votaciones y documentación para las juntas."
-      },
-      {
-        "icon": "Icon05",
-        "title": "Ficha del socio",
-        "description": "Tendrás acceso a tu ficha con la información, escrituras y datos actualizados."
-      },
-      {
-        "icon": "Icon06",
-        "title": "Portafolio",
-        "description": "Dispondrás del esquema y arbol del portafolio de tus participadas."
-      }
-    ]
   },
   "testimonials": {
     "title": "Lo que dicen nuestros Clientes",
     "description": "Empresas que ya han mejorado su gestión societaria con Sttok.",
     "items": [
       {
-        "name": "Lucía Bauza",
+        "name": "Lucía Bouzá",
         "role": "Head of Legal & Compliance, Factorial",
         "img": "",
         "description": "Sttok nos ayudó a digitalizar el proceso de creación y firma de documentos para nuestros planes de incentivos.",
@@ -83,7 +32,7 @@
         "name": "Johan Longo",
         "role": "Contract Manager | PLD Space",
         "img": "/logo-pldspace-mini.png",
-        "description": "Sttok nos sirve para poder tener organizada toda la información sobre socios, junas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
+        "description": "Sttok nos sirve para poder tener organizada toda la información sobre socios, juntas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
         "stars": 5
       },
       {
@@ -92,6 +41,74 @@
         "img": "/logo-banktrack-mini.png",
         "description": "Ahora con Sttok puedes realizar simulaciones de ampliaciones o notas convertibles. Además también gestionamos las phantoms de nuestro equipo fácilmente. Finalmente como inversor tengo organizadas mis participadas y conozco claramente qué es lo que tengo.",
         "stars": 5
+      }
+    ]
+  },
+  "includes": {
+    "eyebrow": "Qué incluye",
+    "title": "Lo que usa un inversor con varias participadas",
+    "allLink": "Ver todas las funcionalidades de Sttok"
+  },
+  "situations": {
+    "eyebrow": "Casos habituales",
+    "title": "Situaciones habituales para un inversor",
+    "guideLabel": "Ver cómo",
+    "rows": [
+      {
+        "situation": "Hay que saber qué se tiene en cada sociedad",
+        "action": "Cada participada aparece con su porcentaje, sus títulos y su valor en libros."
+      },
+      {
+        "situation": "Una participada amplía capital",
+        "action": "El simulador calcula el precio por acción, las acciones nuevas y la dilución de cada socio."
+      },
+      {
+        "situation": "Se convierte una nota convertible",
+        "action": "Calcula las acciones que resultan y su efecto sobre el resto de socios."
+      },
+      {
+        "situation": "Se negocia la venta de una participada",
+        "action": "La cascada de liquidación muestra qué recibe cada socio con las preferencias de cada clase."
+      },
+      {
+        "situation": "El comité pide la foto del grupo a cierre",
+        "action": "El diagrama muestra la cadena de control a cualquier fecha y qué ha cambiado entre dos cierres.",
+        "href": "/funcionalidades/diagrama-del-grupo"
+      }
+    ],
+    "columns": {
+      "situation": "Situación",
+      "action": "Qué hace Sttok",
+      "guide": "Más información"
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Preguntas frecuentes de inversores",
+    "items": [
+      {
+        "q": "¿Puedo ver todas mis participadas en un sitio?",
+        "a": "Sí. Se ven en tarjetas o en tabla, agrupadas por relación, nivel y país, con su porcentaje y su valor."
+      },
+      {
+        "q": "¿Calcula mi porcentaje cuando participo por varias vías?",
+        "a": "Sí. El diagrama suma las vías y muestra el porcentaje efectivo junto al directo."
+      },
+      {
+        "q": "¿Puedo simular una ampliación en una participada?",
+        "a": "Sí, sobre el libro de socios de la participada cuando se lleva en Sttok. La simulación no registra nada."
+      },
+      {
+        "q": "¿Puedo pedir las cuentas depositadas de las participadas?",
+        "a": "Sí. Sttok las pide al Registro Mercantil, con un coste por sociedad."
+      },
+      {
+        "q": "¿Puedo comprar o vender participaciones entre socios?",
+        "a": "Sí, con el mercado secundario, que se contrata como módulo adicional."
+      },
+      {
+        "q": "¿Sirve para sociedades de Latinoamérica?",
+        "a": "La plataforma se adapta a la denominación de cada país: libro de accionistas, asamblea general de accionistas, junta directiva o directorio. La adecuación a la normativa de cada país se valora caso por caso."
       }
     ]
   }

@@ -49,16 +49,26 @@ export default async function DocPage({ doc }: { doc: Doc }) {
   // olvido de redaccion: cada documento nuevo queda enlazado desde el resto.
   const hermanas = getSectionDocs(doc.section).filter((d) => d.url !== doc.url);
 
+  // Las fichas de /funcionalidades llevan capturas de la app: el artículo es
+  // más ancho (64rem) para que se lean, y el texto sigue en su columna de
+  // lectura, alineado al mismo borde izquierdo que la captura.
+  const ficha = doc.section === "funcionalidades";
+  const ancho = ficha ? "max-w-5xl" : "max-w-3xl";
+
   return (
     <>
       {faq.length > 0 && <JsonLd data={faqPageJsonLd(faq)} />}
-      <article className="container mx-auto max-w-3xl px-4 pb-16 pt-16 md:pt-24">
+      <article
+        className={`container mx-auto ${ancho} px-4 pb-16 pt-16 md:pt-24${
+          ficha ? " [&>*:not(figure):not(.catalogo)]:max-w-3xl [&_h1]:tracking-normal" : ""
+        }`}
+      >
         {content}
       </article>
 
       {hermanas.length > 0 && (
         <section id="related" className="border-t border-border">
-          <div className="container mx-auto max-w-3xl px-4 py-10">
+          <div className={`container mx-auto ${ancho} px-4 py-10`}>
             <p className="mb-4 text-xs font-medium uppercase tracking-widest text-muted-foreground">
               Más en {SECTIONS[doc.section].label}
             </p>

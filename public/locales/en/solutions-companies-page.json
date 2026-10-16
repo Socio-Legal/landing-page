@@ -5,100 +5,98 @@
     "keywords": "Shareholder Register, Company, corporate group, shareholder meeting, incentive plans, board of directors"
   },
   "hero": {
-    "slogan": "Solutions",
-    "title": "Solution for Companies and Corporate Groups",
-    "description": "Digital management of companies for Businesses and Corporate Groups. Automate corporate management.",
+    "slogan": "Companies and groups",
+    "title": "For companies with many shareholders and corporate groups",
+    "description": "Sttok keeps the corporate records of every company in the group: the shareholder register with its encumbrances and co-owners, the general meeting and the board, officers with their terms and who controls each company at the end of the chain. Each person sees only the companies they are responsible for.",
     "button": {
-      "text": "Request Demo",
+      "text": "Schedule demo",
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/hero/hero-solutions-empresas-grupos-empresas.png",
-      "dark": "/hero/hero-solutions-empresas-grupos-empresas.png"
+      "light": "/funcionalidades/diagrama-del-grupo-light.png",
+      "dark": "/funcionalidades/diagrama-del-grupo-dark.png"
     }
-  },
-  "clients": {
-    "title": "Companies that trust us",
-    "clients": [
-      "Factorial",
-      "Axa",
-      "Andbank",
-      "Osborne",
-      "Taxdown",
-      "PldSpace",
-      "Caballero",
-      "Fanalca",
-      "Multiverse",
-      "MyInvestor",
-      "Sade"
-    ]
-  },
-  "features": {
-    "title": "Main Features",
-    "description": "Sttok digitizes corporate management for Companies and Corporate Groups, optimizing key tasks such as shareholder register administration, shareholder meetings, board meetings, and incentive plans.",
-    "items": [
-      {
-        "icon": "Icon01",
-        "title": "Shareholder Register",
-        "description": "Manage the shareholder register with always up-to-date and accessible data."
-      },
-      {
-        "icon": "Icon02",
-        "title": "Incentive Plans",
-        "description": "Automate the creation and management of stock options and other incentive plans."
-      },
-      {
-        "icon": "Icon03",
-        "title": "Operations Simulator",
-        "description": "Calculate capital increases and investment scenarios with precision."
-      },
-      {
-        "icon": "Icon04",
-        "title": "Shareholder Meetings",
-        "description": "Convene, vote, and manage shareholder meetings digitally."
-      },
-      {
-        "icon": "Icon05",
-        "title": "Board of Directors",
-        "description": "Digitally manage Board meetings and voting."
-      },
-      {
-        "icon": "Icon06",
-        "title": "Corporate Documentation",
-        "description": "Generate and manage minutes, certificates, and other documents automatically."
-      },
-      {
-        "icon": "Icon07",
-        "title": "Digital Signature",
-        "description": "Integrated digital signature to automatically sign documents."
-      },
-      {
-        "icon": "Icon08",
-        "title": "Shareholder Access",
-        "description": "You can grant access to investors so they can have corporate documentation and information available."
-      },
-      {
-        "icon": "Icon09",
-        "title": "Investor Portal",
-        "description": "Sttok offers you the possibility of having the Investor Portal fully integrated into your website"
-      },
-      {
-        "icon": "SecondaryBook",
-        "title": "Transactions",
-        "description": "A record of every operation: capital increases, sales, transfers, swaps, inheritances, reductions, renumbering and more."
-      }
-    ]
   },
   "testimonials": {
     "title": "Client Testimonials",
     "description": "Companies that have already improved their corporate management with Sttok.",
     "items": [
       {
-        "name": "Lucía Bauza",
+        "name": "Lucía Bouzá",
         "role": "Head of Legal & Compliance, Factorial",
         "img": "/logo-factorial-mini.png",
         "description": "Sttok has allowed us to digitize the process of creating and signing documents for our incentive plans",
         "stars": 5
+      }
+    ]
+  },
+  "includes": {
+    "eyebrow": "What's included",
+    "title": "What a company with many shareholders or a corporate group uses"
+  },
+  "situations": {
+    "eyebrow": "Common cases",
+    "title": "Common situations in companies with many shareholders and groups",
+    "guideLabel": "See how",
+    "rows": [
+      {
+        "situation": "A family shareholder dies",
+        "action": "The inheritance is recorded, the share numbers are split among the heirs and co-ownership is set up with its representative."
+      },
+      {
+        "situation": "The general meeting needs a quorum from hundreds of shareholders",
+        "action": "Signed proxies and early votes are collected, and the quorum is calculated with what is already committed."
+      },
+      {
+        "situation": "A new subsidiary joins the group",
+        "action": "The company comes in with its history and appears in the chart with its chain of control."
+      },
+      {
+        "situation": "The beneficial owner has to be identified",
+        "action": "It calculates who holds more than 25% of the capital or the votes at the end of the chain."
+      },
+      {
+        "situation": "A director's term expires",
+        "action": "It flags each expiring term and records the new appointment with its term."
+      },
+      {
+        "situation": "The articles set an annual valuation",
+        "action": "It issues the value certificate with the valuation the company has configured."
+      }
+    ],
+    "columns": {
+      "situation": "Situation",
+      "action": "What Sttok does",
+      "guide": "More information"
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions from companies and groups",
+    "items": [
+      {
+        "q": "Does it work for a family business with several branches?",
+        "a": "Yes. The dashboard groups shareholders by family branch, and the register records each generation's inheritances, co-ownership and usufruct."
+      },
+      {
+        "q": "Can I manage every company in the group?",
+        "a": "Yes. Each company has its own register, governing bodies and permissions, and one group company can be a shareholder of another. The home screen brings together what is pending in all of them."
+      },
+      {
+        "q": "Does it work with hundreds or thousands of shareholders?",
+        "a": "Yes. Sttok manages more than 250,000 shareholders and partners, including companies with hundreds and thousands of shareholders."
+      },
+      {
+        "q": "Does each person see only their companies?",
+        "a": "Yes. Permissions are granted per company and per section, so each person sees and manages only what they are responsible for."
+      },
+      {
+        "q": "How much does it cost for a group?",
+        "a": "Groups and companies with more than 50 shareholders have a custom plan, which is the most common case. Standard plans are on the pricing page."
+      },
+      {
+        "q": "Does it work for companies in Latin America?",
+        "a": "The platform adapts to each country's terminology: shareholder ledger, general shareholders' meeting, board of directors. Compliance with each country's regulations is assessed case by case."
       }
     ]
   }

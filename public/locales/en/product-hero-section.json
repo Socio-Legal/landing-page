@@ -5,72 +5,306 @@
     "eu": "Data encrypted in the EU"
   },
   "metadata": {
-    "title": "Product",
-    "description": "All updated corporate data and documentation in one place. Manage partners, investors, incentive plans, operation simulation, shareholder meetings, boards, minutes and deeds in minutes.",
-    "keywords": "incentive plans, phantoms, stock options, flexible compensation, incentive management, vesting"
+    "title": "Shareholder register, general meetings and board of directors: the product",
+    "description": "Sttok keeps the shareholder register with numbered share ranges, runs general meetings and the board through to certified minutes, and manages incentive plans, company groups and their documents.",
+    "keywords": "shareholder register, share ledger, general meeting, board of directors, company groups, beneficial owner, incentive plans"
   },
   "hero": {
     "slogan": "Product",
-    "title": "Product",
-    "description": "All updated corporate data and documentation in one place. Manage partners, investors, incentive plans, operation simulation, shareholder meetings, boards, minutes and deeds in minutes.",
+    "title": "Shareholder register, general meetings and board of directors in one platform",
+    "description": "Sttok keeps your company's corporate records: the shareholder register with numbered share ranges, general meetings and the board through to certified minutes, incentive plans and company groups. Every transaction is documented and signed in the same place.",
     "button": {
-      "text": "Try now",
-      "link": "https://app.sttok.com/#/demo"
+      "text": "Schedule demo",
+      "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/hero/hero-product.png",
-      "dark": "/hero/hero-product.png"
+      "light": "/capturas/sociedades-light.png",
+      "dark": "/capturas/sociedades-dark.png"
     }
   },
-  "items": [
-    {
-      "icon": "Icon01",
-      "title": "Shareholder Register (Cap Table)",
-      "description": "Digital shareholder register to manage equity. Updated without errors.",
-      "link": "/shareholder-register/"
+  "clientsLabel": "More than 250 clients keep their records in Sttok",
+  "modules": {
+    "eyebrow": "Modules",
+    "title": "What Sttok does at every stage of a company's corporate life",
+    "lede": "Every module works on the same register. What changes in the register is reflected in the meeting, in the certificate and in the group chart.",
+    "groups": [
+      {
+        "title": "Shareholders and register",
+        "summary": "The official record of who owns what, and since when.",
+        "href": "/en/partners-book",
+        "items": [
+          {
+            "title": "Official shareholder register",
+            "description": "Register of partners or of registered shares, with share classes, numbered ranges and export in a format ready for legalisation."
+          },
+          {
+            "title": "Transfers and encumbrances",
+            "description": "Sales, inheritances, gifts, splits and renumbering. Pledges, usufruct, bare ownership, co-ownership and options are kept as separate positions."
+          },
+          {
+            "title": "Ownership and value certificates",
+            "description": "The certificate the bank or the notary asks for, and the value of the shares according to the company's valuation."
+          },
+          {
+            "title": "Onboarding from deeds",
+            "description": "Sttok reads the deeds with AI, chains the transactions together and flags gaps in the history."
+          },
+          {
+            "title": "Shareholder portal",
+            "description": "Each shareholder logs in and sees their position, their certificates and the meetings they are called to."
+          },
+          {
+            "title": "Creditors and convertible notes",
+            "description": "Each convertible note with its creditor's record, alongside the rest of the company's register."
+          }
+        ]
+      },
+      {
+        "title": "General meetings and board",
+        "summary": "The company's governing bodies, from the notice to the certified minutes.",
+        "href": "/en/shareholder-meetings",
+        "items": [
+          {
+            "title": "General meeting",
+            "description": "Notice, attendance, signed proxies, early voting and live voting. The minutes are drafted from the results."
+          },
+          {
+            "title": "Board of directors",
+            "description": "Notice with agenda, committees, minutes and certification of resolutions."
+          },
+          {
+            "title": "Officers and powers of attorney",
+            "description": "Directors, administrators, attorneys and auditors with their term, the scope of each power and its registration."
+          },
+          {
+            "title": "Company rules",
+            "description": "Articles of association and shareholder agreements organised by topic, with the majority each resolution requires and the calendar of obligations."
+          }
+        ]
+      },
+      {
+        "title": "Company groups",
+        "summary": "Every company in the group and who controls each one.",
+        "href": "/en/solutions/companies",
+        "items": [
+          {
+            "title": "All companies on one screen",
+            "description": "What is pending in each company of the group, sorted by deadline, with permissions per company."
+          },
+          {
+            "title": "Group chart",
+            "description": "Subsidiaries and the chain of control on any date. A group company can be a shareholder of another."
+          },
+          {
+            "title": "Beneficial owner",
+            "description": "Who holds more than 25% of the capital or the votes at the end of the chain, calculated from the registers."
+          },
+          {
+            "title": "New companies",
+            "description": "Each company comes in with its history. If it has just been incorporated, Sttok reads the deed of incorporation."
+          }
+        ]
+      },
+      {
+        "title": "Incentive plans",
+        "summary": "Employee and management plans, connected to the register.",
+        "href": "/en/incentive-plans",
+        "items": [
+          {
+            "title": "Phantom shares and stock options",
+            "description": "Each plan with its instruments, its pool and the shareholder resolution that approves it."
+          },
+          {
+            "title": "Vesting and grants",
+            "description": "Vesting schedule for each beneficiary, with their signed invitation letter."
+          },
+          {
+            "title": "Beneficiary portal",
+            "description": "Each employee sees their grant, what has vested and the documents they have signed."
+          },
+          {
+            "title": "Tender offers and liquidity",
+            "description": "Purchase windows on vested rights, with withholding and a record in the plan."
+          }
+        ]
+      },
+      {
+        "title": "Transaction simulator",
+        "summary": "The effect of a transaction before it is signed.",
+        "href": "/en/operation-drafts",
+        "items": [
+          {
+            "title": "Capital increases and reductions",
+            "description": "The effect of each transaction on the actual register, including the pool and note conversion."
+          },
+          {
+            "title": "Sales and convertible notes",
+            "description": "Who ends up with what percentage after each step, chaining several transactions."
+          },
+          {
+            "title": "Liquidation waterfall",
+            "description": "What each shareholder receives in a sale, with the preferences of each class."
+          },
+          {
+            "title": "Draft documents",
+            "description": "The simulated transaction comes with its drafts in Word for the notary or the law firm."
+          }
+        ]
+      },
+      {
+        "title": "Secondary market",
+        "summary": "Sales between shareholders, recorded in the register.",
+        "href": "/en/secondary-market",
+        "items": [
+          {
+            "title": "Sell offers",
+            "description": "A shareholder publishes how many shares they are selling, at what price and by when."
+          },
+          {
+            "title": "Buy offers",
+            "description": "The company or a shareholder makes a purchase offer to several shareholders at once."
+          },
+          {
+            "title": "Order book",
+            "description": "Average price, volume and status of each offer, with its history."
+          },
+          {
+            "title": "Recorded in the register",
+            "description": "Each completed transaction is entered in the shareholder register with its documents. Available as an add-on module."
+          }
+        ]
+      },
+      {
+        "title": "Documents, signature and communications",
+        "summary": "What is signed and sent, filed by company.",
+        "items": [
+          {
+            "title": "Documents and minute books",
+            "description": "A repository per company with minute books by governing body and financial year, ready for legalisation."
+          },
+          {
+            "title": "Electronic signature",
+            "description": "Signature envelopes with reminders and deadlines. Included in the Advanced and Pro plans."
+          },
+          {
+            "title": "Certified communications",
+            "description": "Every notice and every message is logged with its proof of delivery."
+          },
+          {
+            "title": "Sttok AI",
+            "description": "Questions about the register in plain language, with the source linked in every answer."
+          }
+        ]
+      }
+    ]
+  },
+  "situations": {
+    "eyebrow": "Common cases",
+    "title": "Frequent situations and what Sttok does in each one",
+    "columns": {
+      "situation": "Situation",
+      "action": "What Sttok does",
+      "guide": "Guide"
     },
-    {
-      "icon": "Icon02",
-      "title": "Incentive Plans",
-      "description": "The most professional way to create and maintain all types of plans.",
-      "link": "/incentive-plans/"
-    },
-    {
-      "icon": "Icon03",
-      "title": "Operations Simulator",
-      "description": "Calculate all types of operations with updated real data.",
-      "link": "/simulator/"
-    },
-    {
-      "icon": "Icon04",
-      "title": "Shareholder Meetings",
-      "description": "Manage meetings: Convening, delegations, voting, etc.",
-      "link": "/meetings-boards/"
-    },
-    {
-      "icon": "Icon05",
-      "title": "Purchase Offers",
-      "description": "Manage and execute secondary market operations. Tender offers."
-    },
-    {
-      "icon": "Icon06",
-      "title": "Corporate Documentation",
-      "description": "Generate documents, deeds, certificates or minutes in seconds."
-    },
-    {
-      "icon": "Icon07",
-      "title": "Groups of Companies",
-      "description": "All companies under a digital management system."
-    },
-    {
-      "icon": "Icon08",
-      "title": "Board of Directors",
-      "description": "Digitally manage convening, delegations, voting, etc."
-    },
-    {
-      "icon": "Icon09",
-      "title": "Integrated Electronic Signature",
-      "description": "Integrated electronic signature for all documents and operations."
-    }
-  ]
+    "guideLabel": "Read the guide",
+    "rows": [
+      {
+        "situation": "The bank asks for a certificate of ownership",
+        "action": "It is generated from the register with today's data."
+      },
+      {
+        "situation": "The general meeting has to be called",
+        "action": "Sttok prepares the notice, tracks proxies and drafts the minutes with the voting results."
+      },
+      {
+        "situation": "A shareholder wants to sell",
+        "action": "It manages the pre-emption right with its notices and deadlines, and records the transfer by share range."
+      },
+      {
+        "situation": "The register has to be legalised",
+        "action": "It exports the register in the format filed with the Companies Registry."
+      },
+      {
+        "situation": "The register is years out of date",
+        "action": "It rebuilds the history from the deeds in a few minutes."
+      },
+      {
+        "situation": "The group's beneficial owner has to be identified",
+        "action": "It calculates ultimate ownership across the whole chain of companies."
+      },
+      {
+        "situation": "A shareholder dies",
+        "action": "It records the inheritance, splits the share numbers among the heirs and sets up co-ownership with its representative."
+      }
+    ]
+  },
+  "onboarding": {
+    "eyebrow": "Getting started",
+    "title": "How your data gets into Sttok",
+    "paragraphs": [
+      "Setting up a company takes a few hours. For groups with many companies, the time depends on the number of companies.",
+      "If the register is years out of date, Sttok rebuilds it from the deeds in a few minutes. If your data is in Excel, in Carta or with your law firm, migration is part of the same process."
+    ]
+  },
+  "figures": {
+    "eyebrow": "Figures",
+    "title": "Companies that already keep their records in Sttok",
+    "items": [
+      {
+        "value": "+250",
+        "label": "clients"
+      },
+      {
+        "value": "+500",
+        "label": "companies managed"
+      },
+      {
+        "value": "+250,000",
+        "label": "shareholders and partners"
+      },
+      {
+        "value": "+€20bn",
+        "label": "equity under management"
+      }
+    ],
+    "note": "More than 250 clients manage more than 500 companies. The average of two companies per client reflects the group profile of Sttok's users."
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions about the product",
+    "items": [
+      {
+        "q": "What is Sttok?",
+        "a": "A Spanish platform for keeping the shareholder register, general meetings, the board of directors, incentive plans and company groups. More than 250 clients use it to manage more than 500 companies."
+      },
+      {
+        "q": "Does Sttok replace the shareholder register?",
+        "a": "Sttok keeps the register of partners or of registered shares as the official record. It exports it in the format filed for legalisation with the Companies Registry."
+      },
+      {
+        "q": "Can I manage every company in my group?",
+        "a": "Yes. Each company has its own register, governing bodies and permissions, and one group company can be a shareholder of another. The chart shows the chain of control on any date."
+      },
+      {
+        "q": "How long does it take to get started?",
+        "a": "A few hours per company. For groups with many companies, the time depends on the number of companies."
+      },
+      {
+        "q": "What costs extra?",
+        "a": "The secondary market is a separate add-on module. Integrated electronic signature is included in the Advanced and Pro plans."
+      },
+      {
+        "q": "Does it work for companies in Latin America?",
+        "a": "The platform adapts to each country's terminology: shareholder ledger, general shareholders' meeting, board of directors. Compliance with each country's regulations is assessed case by case."
+      },
+      {
+        "q": "Where is the data stored?",
+        "a": "Encrypted and hosted in the European Union. Sttok is ISO 27001 certified and complies with the GDPR."
+      }
+    ]
+  },
+  "cta": {
+    "secondaryText": "See pricing",
+    "secondaryLink": "/en/pricing"
+  }
 }

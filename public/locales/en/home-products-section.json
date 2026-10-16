@@ -12,8 +12,8 @@
       "title": "Shareholders",
       "content": "Cap table, Official Shareholder Register, %, shareholder access, etc",
       "image": {
-        "light": "/sttok-products-shareholders-dark.png",
-        "dark": "/sttok-products-shareholders-dark.png"
+        "light": "/modulos/libro-de-socios-light.png",
+        "dark": "/modulos/libro-de-socios-dark.png"
       },
       "icon": "BarChart3"
     },
@@ -22,8 +22,8 @@
       "title": "Incentive Plans",
       "content": "Phantoms, stock options, employee access, vesting, etc",
       "image": {
-        "light": "/sttok-products-incentive-plans-dark.png",
-        "dark": "/sttok-products-incentive-plans-dark.png"
+        "light": "/modulos/planes-de-incentivos-light.png",
+        "dark": "/modulos/planes-de-incentivos-dark.png"
       },
       "icon": "Brain"
     },
@@ -32,8 +32,8 @@
       "title": "Meetings and Boards",
       "content": "Digital convening, delegations, voting, etc",
       "image": {
-        "light": "/sttok-products-boards-dark.png",
-        "dark": "/sttok-products-boards-dark.png"
+        "light": "/modulos/juntas-consejos-light.png",
+        "dark": "/modulos/juntas-consejos-dark.png"
       },
       "icon": "LineChart"
     },
@@ -42,8 +42,8 @@
       "title": "Operations Simulator",
       "content": "Calculation of rounds, capital increases, convertible notes, etc",
       "image": {
-        "light": "/sttok-products-simulator-dark.png",
-        "dark": "/sttok-products-simulator-dark.png"
+        "light": "/modulos/simulador-light.png",
+        "dark": "/modulos/simulador-dark.png"
       },
       "icon": "FileText"
     }

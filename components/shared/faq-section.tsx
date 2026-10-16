@@ -12,6 +12,8 @@ type FaqSectionProps = {
   eyebrow?: string;
   title: string;
   items: FaqItem[];
+  /** Variante de la cabecera; ver SectionHeading. */
+  headingVariant?: "ledger" | "plain";
 };
 
 /**
@@ -19,7 +21,12 @@ type FaqSectionProps = {
  * estructurados FAQPage emitidos en el mismo HTML del servidor: sirve a
  * la vez para rich results de Google y para citación por motores de IA.
  */
-const FaqSection: FC<FaqSectionProps> = ({ eyebrow, title, items }) => {
+const FaqSection: FC<FaqSectionProps> = ({
+  eyebrow,
+  title,
+  items,
+  headingVariant,
+}) => {
   const safeItems = Array.isArray(items) ? items : [];
   if (safeItems.length === 0) return null;
 
@@ -39,10 +46,26 @@ const FaqSection: FC<FaqSectionProps> = ({ eyebrow, title, items }) => {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <div className="container mx-auto max-w-3xl px-4 py-14 md:py-20">
-        <SectionHeading eyebrow={eyebrow} title={title} />
+      <div
+        className={
+          headingVariant === "plain"
+            ? "container mx-auto px-4 py-20 md:py-28"
+            : "container mx-auto max-w-3xl px-4 py-14 md:py-20"
+        }
+      >
+        <SectionHeading
+          eyebrow={eyebrow}
+          title={title}
+          variant={headingVariant}
+        />
 
-        <div>
+        <div
+          className={
+            headingVariant === "plain"
+              ? "max-w-[46rem] border-t border-border"
+              : undefined
+          }
+        >
           {safeItems.map((item, i) => (
             <details key={i} className="group border-b border-border">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-4 text-sm font-semibold text-foreground [&::-webkit-details-marker]:hidden">

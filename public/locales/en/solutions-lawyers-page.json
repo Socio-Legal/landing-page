@@ -5,69 +5,17 @@
     "keywords": "corporate management, lawyers, captable, shareholder register, incentive plans, shareholder meetings, boards, testimonials"
   },
   "hero": {
-    "slogan": "Solutions",
-    "title": "Solution for Lawyers",
-    "description": "With Sttok, you digitize corporate management, increasing the number of companies a lawyer can manage, saving time and avoiding errors. Sttok allows you to provide better service to clients by saving time and adding value.",
+    "slogan": "Law firms and advisers",
+    "title": "For law firms and advisers who manage their clients’ companies",
+    "description": "Sttok brings together on one screen every company the firm manages, with what is pending in each one sorted by deadline. From there the firm keeps shareholder registers and minute books, calls meetings, issues certificates and legalises registers.",
     "button": {
-      "text": "Request Demo",
+      "text": "Schedule demo",
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/hero/hero-solutions-abogados.png",
-      "dark": "/hero/hero-solutions-abogados.png"
+      "light": "/capturas/sociedades-light.png",
+      "dark": "/capturas/sociedades-dark.png"
     }
-  },
-  "clients": {
-    "title": "Lawyers from these companies and law firms use Sttok",
-    "clients": [
-      "Factorial",
-      "PldSpace",
-      "Multiverse",
-      "DerechoCom",
-      "LegalPigeon",
-      "LetsLaw"
-    ]
-  },
-  "features": {
-    "title": "Key Features for Lawyers",
-    "description": "Sttok allows lawyers to digitize corporate management, optimizing tasks such as shareholder registers, shareholder meetings, Boards, or incentive plans.",
-    "items": [
-      {
-        "icon": "Icon01",
-        "title": "Shareholder Register",
-        "description": "Efficiently manage the shareholder register digitally and without errors."
-      },
-      {
-        "icon": "Icon02",
-        "title": "Operations Simulator",
-        "description": "Perform exact calculations for corporate operations in minutes."
-      },
-      {
-        "icon": "Icon03",
-        "title": "Incentive Plans",
-        "description": "Automate the management of stock options and other incentive plans."
-      },
-      {
-        "icon": "Icon04",
-        "title": "Shareholder Meetings",
-        "description": "Convene, vote, and manage shareholder meetings digitally."
-      },
-      {
-        "icon": "Icon05",
-        "title": "Board of Directors",
-        "description": "Digitally manage Board meetings and voting."
-      },
-      {
-        "icon": "Icon06",
-        "title": "Corporate Documentation",
-        "description": "Generate and manage minutes, certificates, and other documents automatically."
-      },
-      {
-        "icon": "SecondaryBook",
-        "title": "Transactions",
-        "description": "A record of every operation: capital increases, sales, transfers, swaps, inheritances, reductions, renumbering and more."
-      }
-    ]
   },
   "testimonials": {
     "title": "What Our Clients Say",
@@ -84,6 +32,76 @@
         "role": "Partner Lawyer, LetsLaw",
         "description": "Sttok has automated a large part of corporate management, allowing us to offer better service to our clients.",
         "stars": 5
+      }
+    ]
+  },
+  "includes": {
+    "eyebrow": "What's included",
+    "title": "What a firm that manages its clients' companies uses"
+  },
+  "situations": {
+    "eyebrow": "Common cases",
+    "title": "Common situations in a law firm",
+    "guideLabel": "See how",
+    "rows": [
+      {
+        "situation": "Registers have to be legalised by April",
+        "action": "It shows each company's books, which are overdue, and records each legalisation."
+      },
+      {
+        "situation": "The annual general meeting is due in many companies",
+        "action": "The work is launched across several companies at once and each one is tracked."
+      },
+      {
+        "situation": "A client brings years of unrecorded deeds",
+        "action": "It reads the deeds with AI, chains the transactions and flags gaps in the history."
+      },
+      {
+        "situation": "A client's bank asks for a certificate",
+        "action": "It is generated from the register with today's data, ready to sign."
+      },
+      {
+        "situation": "A shareholder wants to sell and there is a pre-emption right",
+        "action": "It manages the notices and deadlines set in the articles and records the transfer."
+      },
+      {
+        "situation": "Each lawyer handles their own clients",
+        "action": "Permissions are granted per company: each person at the firm sees only theirs."
+      }
+    ],
+    "columns": {
+      "situation": "Situation",
+      "action": "What Sttok does",
+      "guide": "More information"
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently asked questions from law firms",
+    "items": [
+      {
+        "q": "Can I manage companies for different clients?",
+        "a": "Yes. They all appear on one screen, with what is pending in each, and can be grouped into collections by client or by lawyer."
+      },
+      {
+        "q": "Can the client access their company?",
+        "a": "Yes, with the role the firm gives them: administrator, director, shareholder or read-only."
+      },
+      {
+        "q": "Can I load a client's history from the deeds?",
+        "a": "Yes. Sttok reads the deeds, proposes each transaction for review and flags gaps and errors in the history."
+      },
+      {
+        "q": "Can I prepare meetings for several companies at once?",
+        "a": "Yes. Recurring work, such as the annual general meeting or preparing and filing accounts, is launched for several companies and tracked from the home screen."
+      },
+      {
+        "q": "Does it generate minutes and certificates?",
+        "a": "Yes. The meeting minutes are drafted from attendance and results, and certificates are generated from the register with today's data."
+      },
+      {
+        "q": "Does it work for companies in Latin America?",
+        "a": "The platform adapts to each country's terminology: shareholder ledger, general shareholders' meeting, board of directors. Compliance with each country's regulations is assessed case by case."
       }
     ]
   }

@@ -5,88 +5,17 @@
     "keywords": "simulador de operaciones, rondas de inversión, ampliaciones de capital, notas convertibles, simulaciones corporativas"
   },
   "hero": {
-    "slogan": "Producto",
-    "title": "Simulador de Operaciones",
-    "description": "Calcula fácilmente en pocos segundos todo tipo de operaciones y escenarios. Calcula rondas, ampliaciones, ventas, notas convertibles, etc. Además genera la documentación de las simulaciones en pocos minutos.",
+    "slogan": "Simulador de operaciones",
+    "title": "Simulador de operaciones societarias: ampliaciones, compraventas y notas convertibles",
+    "description": "Sttok simula una ampliación, una reducción, una compraventa o la conversión de una nota sobre los datos reales del libro de socios. Encadena varias operaciones, calcula la cascada de liquidación y prepara los borradores de documentos.",
     "button": {
-      "text": "Empieza a Simular",
-      "link": "https://app.sttok.com/#/demo"
+      "text": "Solicitar demo",
+      "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/hero/hero-product-simulador.png",
-      "dark": "/hero/hero-product-simulador.png"
+      "light": "/modulos/simulador-light.png",
+      "dark": "/modulos/simulador-dark.png"
     }
-  },
-  "topFeatures": {
-    "title": "Características Principales",
-    "description": "Descubre las herramientas más avanzadas para calcular cualquier tipo de operación corporativa.",
-    "items": [
-      {
-        "title": "Cálculos Automáticos",
-        "description": "Automatiza el cálculo de operaciones como rondas de inversión, ampliaciones de capital y ventas de acciones.",
-        "icon": "Calculator"
-      },
-      {
-        "title": "Simulaciones en Tiempo Real",
-        "description": "Simula escenarios financieros complejos automáticamente, permitiéndote tomar decisiones con datos precisos.",
-        "icon": "Users"
-      },
-      {
-        "title": "Documentación Automática",
-        "description": "Genera todos los documentos necesarios para tus operaciones en cuestión de minutos.",
-        "icon": "FileCheck"
-      }
-    ]
-  },
-  "clients": {
-    "title": "CLIENTES QUE UTILIZAN EL SIMULADOR DE OPERACIONES",
-    "clients": [
-      "Factorial",
-      "Andbank",
-      "Osborne",
-      "PldSpace",
-      "Fanalca",
-      "LegalPigeon",
-      "Banktrack",
-      "Barkibu",
-      "Sade"
-    ]
-  },
-  "features": {
-    "title": "Todas las Características",
-    "description": "Explora todas las características que hacen único a nuestro producto.",
-    "items": [
-      {
-        "icon": "Icon01",
-        "title": "Cálculos de Rondas de Inversión",
-        "description": "Calcula el impacto de las rondas de inversión en la estructura de capital de tu empresa de manera automática."
-      },
-      {
-        "icon": "Icon02",
-        "title": "Ampliaciones de Capital",
-        "description": "Simula ampliaciones de capital y genera la documentación necesaria en minutos."
-      },
-      {
-        "icon": "Icon03",
-        "title": "Notas Convertibles",
-        "description": "Gestiona y simula las conversiones de notas convertibles con facilidad."
-      },
-      {
-        "icon": "Icon04",
-        "title": "Escenarios de Venta",
-        "description": "Simula escenarios de venta de acciones y sus efectos sobre los socios y la estructura accionarial."
-      },
-      {
-        "icon": "Icon05",
-        "title": "Generación Automática de Documentos",
-        "description": "Crea automáticamente actas, contratos y otros documentos para todas tus operaciones corporativas."
-      },
-      {
-        "icon": "Icon06",
-        "title": "Datos exactos y reales",
-        "description": "Accede a cálculos actualizados en tiempo real para todas tus operaciones y toma decisiones informadas."
-      }
-    ]
   },
   "testimonials": {
     "title": "Lo que Dicen Nuestros Clientes",
@@ -117,7 +46,7 @@
         "name": "Johan Longo",
         "role": "Contract Manager | PLD Space",
         "img": "/logo-pldspace-mini.png",
-        "description": "Sttok nos sirve para poder tener organizada toda la información sobre socios, junas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
+        "description": "Sttok nos sirve para poder tener organizada toda la información sobre socios, juntas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
         "stars": 5
       }
     ]
@@ -128,19 +57,64 @@
     "items": [
       {
         "q": "¿Qué operaciones puedo simular?",
-        "a": "Rondas de financiación, ampliaciones de capital, notas convertibles y escenarios de liquidación."
+        "a": "Ampliaciones y reducciones de capital, compraventas y conversiones de notas convertibles, también encadenadas, y la cascada de liquidación de una venta."
       },
       {
         "q": "¿Con qué datos calcula?",
-        "a": "Con el captable real y actualizado del libro de socios, sin copiar datos a Excel."
+        "a": "Con el libro de socios real de la sociedad, con su numeración, sus clases y su capital a la fecha."
       },
       {
-        "q": "¿Puedo comparar escenarios?",
-        "a": "Sí, puedes crear tantos borradores como necesites antes de ejecutar una operación."
+        "q": "¿Una simulación cambia el libro de socios?",
+        "a": "No. La simulación no registra nada. La operación entra en el libro cuando se registra con su escritura."
       },
       {
-        "q": "¿Un borrador se puede convertir en operación real?",
-        "a": "Sí: la simulación puede ejecutarse y quedar registrada en el libro de socios."
+        "q": "¿Puedo describir la operación con palabras?",
+        "a": "Sí. El asistente del simulador monta la operación a partir de una descripción: valoración, quién aporta, quién vende y cuánto."
+      },
+      {
+        "q": "¿Quién ve las simulaciones?",
+        "a": "Los administradores de la sociedad. Cada simulación se guarda y se puede compartir con ellos."
+      },
+      {
+        "q": "¿Sirve para sociedades de Latinoamérica?",
+        "a": "La plataforma se adapta a la denominación de cada país: libro de accionistas, asamblea general de accionistas, junta directiva o directorio. La adecuación a la normativa de cada país se valora caso por caso."
+      }
+    ]
+  },
+  "includes": {
+    "eyebrow": "Qué incluye",
+    "title": "Qué se puede simular en Sttok",
+    "allLink": "Ver todas las funcionalidades de Sttok"
+  },
+  "situations": {
+    "eyebrow": "Casos habituales",
+    "title": "Situaciones habituales para el simulador",
+    "columns": {
+      "situation": "Situación",
+      "action": "Qué hace Sttok",
+      "guide": "Más información"
+    },
+    "guideLabel": "Ver cómo",
+    "rows": [
+      {
+        "situation": "Entra un socio nuevo con una ampliación",
+        "action": "Calcula el precio por acción, las acciones nuevas y la dilución de cada socio antes de convocar la junta."
+      },
+      {
+        "situation": "Una rama familiar quiere comprar a otra",
+        "action": "Simula la compraventa y muestra la posición de cada socio después."
+      },
+      {
+        "situation": "Se convierte una nota convertible",
+        "action": "Calcula las acciones que resultan de la conversión y su efecto sobre el resto de socios."
+      },
+      {
+        "situation": "Se negocia la venta de la sociedad",
+        "action": "La cascada de liquidación muestra qué recibe cada socio con las preferencias de cada clase."
+      },
+      {
+        "situation": "La operación tiene que ir al notario",
+        "action": "Prepara los borradores de documentos en Word con los datos de la simulación."
       }
     ]
   }

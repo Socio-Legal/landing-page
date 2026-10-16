@@ -5,90 +5,17 @@
     "keywords": "juntas de socios, consejos de administración, gestión digital de juntas, convocatorias, delegaciones de voto, actas digitales"
   },
   "hero": {
-    "slogan": "Producto",
-    "title": "Juntas y Consejos",
-    "description": "En Sttok, entendemos la importancia de las juntas y consejos para el buen funcionamiento y toma de decisiones en una empresa. Con Sttok podrás convocar, gestionar delegaciones, votaciones y generar las actas y certificados de forma digital y en pocos minutos.",
+    "slogan": "Juntas y consejos",
+    "title": "Juntas de socios y consejos de administración: convocatoria, voto y acta",
+    "description": "Sttok lleva la junta general y el consejo de administración de la convocatoria al acta certificada. Controla delegaciones y quórum, recoge el voto anticipado y en vivo, y compone el acta con el resultado de cada votación.",
     "button": {
-      "text": "Gestiona tu Junta",
-      "link": "https://app.sttok.com/#/demo"
+      "text": "Solicitar demo",
+      "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/hero/hero-product-juntas-consejos.png",
-      "dark": "/hero/hero-product-juntas-consejos.png"
+      "light": "/modulos/juntas-consejos-light.png",
+      "dark": "/modulos/juntas-consejos-dark.png"
     }
-  },
-  "topFeatures": {
-    "title": "Características Principales",
-    "description": "Optimiza la gestión de juntas y consejos con herramientas que simplifican cada paso del proceso.",
-    "items": [
-      {
-        "title": "Convocatoria Digital",
-        "description": "Envía convocatorias digitales con toda la información necesaria a tus accionistas y consejeros en un clic.",
-        "animation": "AnimatedBeam01_ShareholderMeeting"
-      },
-      {
-        "title": "Gestión de Votos y Delegaciones",
-        "description": "Permite a los accionistas delegar sus votos y gestionar las votaciones de manera segura y transparente.",
-        "animation": "AnimatedBeam03"
-      },
-      {
-        "title": "Generación Automática de Actas",
-        "description": "Crea actas de reuniones y certificados de acuerdos de manera automática y en pocos minutos.",
-        "animation": "AnimatedDocScanner"
-      }
-    ]
-  },
-  "clients": {
-    "title": "CLIENTES QUE UTILIZAN LAS JUNTAS Y CONSEJOS",
-    "clients": [
-      "Factorial",
-      "Andbank",
-      "Osborne",
-      "Taxdown",
-      "PldSpace",
-      "Fanalca",
-      "Multiverse",
-      "MyInvestor",
-      "Shakers",
-      "Barkibu",
-      "Sade"
-    ]
-  },
-  "features": {
-    "title": "Todas las Características",
-    "description": "Explora todas las características que hacen único a nuestro producto.",
-    "items": [
-      {
-        "icon": "Icon01",
-        "title": "Convocatoria de Juntas",
-        "description": "Crea y envía convocatorias de juntas a accionistas y consejeros de forma digital, con todos los detalles relevantes."
-      },
-      {
-        "icon": "Icon02",
-        "title": "Delegaciones Digitales de Voto",
-        "description": "Facilita la delegación de votos de forma segura, permitiendo a los socios representar sus intereses en las reuniones."
-      },
-      {
-        "icon": "Icon03",
-        "title": "Votaciones Electrónicas",
-        "description": "Gestiona votaciones de acuerdos con total transparencia y eficiencia, garantizando resultados en tiempo real."
-      },
-      {
-        "icon": "Icon04",
-        "title": "Actas Automáticas",
-        "description": "Genera actas y certificados de acuerdos al finalizar cada reunión, ahorrando tiempo y eliminando errores."
-      },
-      {
-        "icon": "Icon05",
-        "title": "Certificaciones",
-        "description": "Generación automática de certificaciones de convocatoria, delegaciones y votaciones."
-      },
-      {
-        "icon": "Icon06",
-        "title": "Historial de Reuniones",
-        "description": "Accede al historial completo de todas las reuniones y acuerdos anteriores, todo almacenado en la nube."
-      }
-    ]
   },
   "testimonials": {
     "title": "Lo que Dicen Nuestros Clientes",
@@ -98,7 +25,7 @@
         "name": "Johan Longo",
         "role": "Contract Manager | PLD Space",
         "img": "/logo-pldspace-mini.png",
-        "description": "Sttok nos sirve para poder tener organizada toda la información sobre socios, junas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
+        "description": "Sttok nos sirve para poder tener organizada toda la información sobre socios, juntas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
         "stars": 5
       },
       {
@@ -129,20 +56,74 @@
     "title": "Preguntas frecuentes sobre juntas y consejos",
     "items": [
       {
-        "q": "¿Puedo convocar la junta digitalmente?",
-        "a": "Sí. Sttok gestiona la convocatoria, las delegaciones y las votaciones, y genera el acta al instante."
+        "q": "¿Puedo convocar la junta desde Sttok?",
+        "a": "Sí. Se prepara la convocatoria con su orden del día y su documentación, se envía a cada socio y queda el certificado de envío."
       },
       {
         "q": "¿Cómo funcionan las delegaciones de voto?",
-        "a": "Son digitales, con registro y trazabilidad completa de quién delega en quién."
+        "a": "El socio elige a su representante y sus instrucciones y firma la delegación. La junta ve en todo momento cuánto capital está delegado."
       },
       {
-        "q": "¿Calcula los quórums?",
-        "a": "Automáticamente, con los datos reales y actualizados del libro de socios."
+        "q": "¿Calcula el quórum?",
+        "a": "Sí. Calcula el quórum de primera y segunda convocatoria con la asistencia confirmada, las delegaciones y los votos anticipados."
       },
       {
-        "q": "¿Sirve también para consejos de administración?",
-        "a": "Sí: convocatoria, delegaciones, votaciones y actas de los consejos, con las mismas garantías."
+        "q": "¿Pone Sttok la videollamada?",
+        "a": "No. La sociedad usa su herramienta habitual. Sttok lleva la asistencia, la votación y el acta."
+      },
+      {
+        "q": "¿Sirve también para el consejo de administración?",
+        "a": "Sí. Convoca el consejo con su orden del día, lleva el acta y certifica los acuerdos, y registra los cargos con su vigencia."
+      },
+      {
+        "q": "¿Sirve para sociedades de Latinoamérica?",
+        "a": "La plataforma se adapta a la denominación de cada país: libro de accionistas, asamblea general de accionistas, junta directiva o directorio. La adecuación a la normativa de cada país se valora caso por caso."
+      }
+    ]
+  },
+  "includes": {
+    "eyebrow": "Qué incluye",
+    "title": "Todo lo que cubre la junta general y el consejo",
+    "allLink": "Ver todas las funcionalidades de Sttok"
+  },
+  "situations": {
+    "eyebrow": "Casos habituales",
+    "title": "Situaciones habituales en juntas y consejos",
+    "columns": {
+      "situation": "Situación",
+      "action": "Qué hace Sttok",
+      "guide": "Más información"
+    },
+    "guideLabel": "Ver cómo",
+    "rows": [
+      {
+        "situation": "Toca convocar la junta ordinaria",
+        "action": "Prepara la convocatoria con el orden del día y la documentación, la envía a cada socio y guarda el certificado de envío.",
+        "href": "/guias/plantillas-societarias"
+      },
+      {
+        "situation": "Muchos socios no pueden asistir",
+        "action": "Recoge delegaciones firmadas y votos anticipados, y calcula el quórum con lo ya comprometido.",
+        "href": "/funcionalidades/voto-electronico-en-juntas"
+      },
+      {
+        "situation": "La junta se celebra a distancia",
+        "action": "Lleva la votación en vivo de cada punto. La videollamada la pone la sociedad con su herramienta.",
+        "href": "/guias/junta-general-telematica"
+      },
+      {
+        "situation": "Un acuerdo exige mayoría reforzada",
+        "action": "Deriva la mayoría de cada punto y avisa cuando un acuerdo abre el derecho de separación."
+      },
+      {
+        "situation": "El consejo se reúne cada trimestre",
+        "action": "Reserva las fechas, parte del orden del día del consejo anterior y convoca con su invitación de calendario.",
+        "href": "/funcionalidades/consejo-de-administracion"
+      },
+      {
+        "situation": "Hay que legalizar el libro de actas",
+        "action": "Lleva un libro por órgano y ejercicio y registra su legalización.",
+        "href": "/funcionalidades/libro-de-actas"
       }
     ]
   }

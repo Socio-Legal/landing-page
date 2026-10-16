@@ -23,8 +23,9 @@ export const CONTENT_DIR = path.join(process.cwd(), "content");
 /** Secciones publicadas. La etiqueta se usa en las migas. */
 export const SECTIONS = {
   soluciones: { label: "Soluciones", hasIndex: true },
-  comparativas: { label: "Comparativas", hasIndex: false },
-  guias: { label: "Guías", hasIndex: false },
+  comparativas: { label: "Comparativas", hasIndex: true },
+  guias: { label: "Guías", hasIndex: true },
+  funcionalidades: { label: "Funcionalidades", hasIndex: true },
 } as const;
 
 export type Section = keyof typeof SECTIONS;

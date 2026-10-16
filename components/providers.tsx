@@ -26,7 +26,10 @@ export default function Providers({
   return (
     <ThemeProvider
       attribute="class"
-      defaultTheme="dark"
+      // Sigue el modo del sistema del visitante; el interruptor del pie lo
+      // cambia y la elección se recuerda.
+      defaultTheme="system"
+      enableSystem
       disableTransitionOnChange
     >
       <GoogleAnalytics gaId="G-LWNDHYBY2N" />

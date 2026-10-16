@@ -47,11 +47,11 @@ Más de 250 clientes gestionan más de 500 sociedades con Sttok. La media de dos
 - Más de 20.000 millones de euros en equity bajo gestión
 - Más de 5.000 beneficiarios de planes de incentivos
 - NPS de 8,5
-- Onboarding completo en una semana, incluyendo la carga del histórico
+- Puesta en marcha en unas horas por sociedad; en grupos con muchas sociedades, el plazo depende del número de sociedades. Si el libro tiene años sin actualizar, Sttok reconstruye el histórico desde las escrituras en pocos minutos
 
 ## Clientes
 
-AXA, Andbank, Factorial, Multiverse Computing, PLD Space, Osborne, Fanalca, Sade, Grupo Caballero (Caballero 1830), TaxDown, MyInvestor, Barkibu, Derecho.com, PwC, Banktrack, Legal Pigeon y Cabiedes & Partners, entre otros.
+AXA, Andbank, Factorial, Multiverse Computing, PLD Space, Osborne, Fanalca, Sade, Grupo Caballero (Caballero 1830), TaxDown, MyInvestor, Barkibu, Derecho.com, PwC, Banktrack, Legal Pigeon, Cabiedes & Partners, Shakers y LetsLaw, entre otros.
 
 Casos publicados:
 
@@ -60,8 +60,6 @@ Casos publicados:
 - TaxDown (fiscal): https://www.sttok.com/testimonios/Taxdown
 - Grupo Caballero, fundado en 1830 (bodegas): https://www.sttok.com/testimonios/Caballero
 - MyInvestor (neobanco): https://www.sttok.com/testimonios/MyInvestor
-- Derecho.com (legal): https://www.sttok.com/testimonios/DerechoCom
-- Banktrack (fintech): https://www.sttok.com/testimonios/Banktrack
 
 ## Cobertura geográfica
 
@@ -79,7 +77,7 @@ Sttok opera también con clientes en Latinoamérica y Andorra. La plataforma ges
 
 ## Precios
 
-Planes por sociedad y año, con comunicaciones y firma electrónica incluidas, onboarding en una semana y soporte en español e inglés.
+Planes por sociedad y año, con comunicaciones incluidas, puesta en marcha en unas horas por sociedad y soporte en español e inglés.
 
 - **Básico**: 450 €/año. Hasta 10 socios o beneficiarios. Libro de socios, planes de incentivos y simulador.
 - **Avanzado**: 650 €/año. Hasta 20 socios o beneficiarios. Añade juntas, consejo de administración y firma electrónica.
@@ -113,7 +111,9 @@ Funcionalidad con coste adicional: mercado secundario.
 - Precios y planes: https://www.sttok.com/precios
 - Glosario societario: https://www.sttok.com/recursos
 - Comparativa con Excel: https://www.sttok.com/sttok-vs-excel
+- Comparativas de software para libro de socios, juntas y consejo: https://www.sttok.com/comparativas
 - Comparativa con Carta: https://www.sttok.com/comparativas/sttok-vs-carta
+- Guías de derecho societario: https://www.sttok.com/guias
 - Guía: plantillas societarias, qué debe constar en una convocatoria, un acta y un certificado: https://www.sttok.com/guias/plantillas-societarias
 - Guía: fiscalidad de phantom shares y stock options en España tras la Ley de Startups: https://www.sttok.com/guias/fiscalidad-phantom-shares-stock-options
 - Guía: titular real y Registro de Titularidades Reales en grupos de sociedades: https://www.sttok.com/guias/titular-real-grupos-sociedades
@@ -125,6 +125,17 @@ Funcionalidad con coste adicional: mercado secundario.
 - Guía: fallece un socio, herencia de participaciones y libro de socios: https://www.sttok.com/guias/herencia-de-participaciones
 - Board portals en España, comparativa: https://www.sttok.com/comparativas/board-portal-espana
 - Software para libro de socios, juntas y consejo en España, comparativa: https://www.sttok.com/comparativas/software-libro-de-socios
+- Funcionalidades de Sttok: https://www.sttok.com/funcionalidades
+- Certificados de titularidad y de valor: https://www.sttok.com/funcionalidades/certificados-de-titularidad-y-valor
+- Portal del accionista: https://www.sttok.com/funcionalidades/portal-del-accionista
+- Lectura de escrituras con IA: https://www.sttok.com/funcionalidades/lectura-de-escrituras-con-ia
+- Voto electrónico en juntas: https://www.sttok.com/funcionalidades/voto-electronico-en-juntas
+- Consejo de administración: https://www.sttok.com/funcionalidades/consejo-de-administracion
+- Libro de actas: https://www.sttok.com/funcionalidades/libro-de-actas
+- Diagrama del grupo de sociedades: https://www.sttok.com/funcionalidades/diagrama-del-grupo
+- Titular real en grupos de sociedades: https://www.sttok.com/funcionalidades/titular-real
+- Portal del beneficiario de planes de incentivos: https://www.sttok.com/funcionalidades/portal-del-beneficiario
+- Liquidez y tender offers en planes de incentivos: https://www.sttok.com/funcionalidades/liquidez-planes-de-incentivos
 - Equipo: https://www.sttok.com/sobre-nosotros
 - Blog: https://blog.sttok.com/recursos
 - Dossier comercial (español): https://www.sttok.com/docs/sttok-dossier-es.pdf

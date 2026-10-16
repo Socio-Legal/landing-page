@@ -1,9 +1,7 @@
 export const getTestimonialNamespaces = (client: string): string[] => {
   const validClients = [
     "factorial",
-    "banktrack",
     "caballero",
-    "derechocom",
     "pldspace",
     "taxdown",
     "myinvestor",

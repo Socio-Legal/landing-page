@@ -5,93 +5,17 @@
     "keywords": "Shareholder Register, Shareholders, Registry, Operations, Excel"
   },
   "hero": {
-    "slogan": "Product",
-    "title": "Shareholder Register",
-    "description": "Official Shareholder Register, updated and error-free. Stop using inefficient Excel sheets. A single shareholder register ready to submit to the Registry and to easily calculate operations.",
+    "slogan": "Shareholder register",
+    "title": "Digital shareholder register, with numbered share ranges and up-to-date certificates",
+    "description": "Sttok keeps the register of partners or of registered shares as the official record. Every transfer is recorded against numbered ranges, with its encumbrances and co-owners, and the register is exported in a format ready for legalisation.",
     "button": {
-      "text": "Manage your Shareholder Register",
-      "link": "https://app.sttok.com/#/demo"
+      "text": "Schedule demo",
+      "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/hero/hero-product-libro-de-socios.png",
-      "dark": "/hero/hero-product-libro-de-socios.png"
+      "light": "/modulos/libro-de-socios-light.png",
+      "dark": "/modulos/libro-de-socios-dark.png"
     }
-  },
-  "topFeatures": {
-    "title": "Shareholder Register",
-    "description": "The 3 best reasons to manage your Shareholder Register with Sttok",
-    "items": [
-      {
-        "title": "Updated Shareholder Register",
-        "description": "Information, numbering, % and premiums updated and current. Make decisions with accurate data and correct dilutions.",
-        "animation": "AnimatedBeam01_PartnerBook",
-        "image": "Feature1"
-      },
-      {
-        "title": "Access for Shareholders and Investors",
-        "description": "Professionally manage the company by facilitating access to individual data, documents, and certificates for each shareholder.",
-        "animation": "AnimatedBeam03",
-        "image": "Feature2"
-      },
-      {
-        "title": "Exportable Official Register",
-        "description": "You'll have the Shareholder Register updated and ready to share, present to official registries, or to simulate any operation.",
-        "animation": "AnimatedBeam02",
-        "image": "Feature3"
-      }
-    ]
-  },
-  "clients": {
-    "title": "CLIENTS USING THE SHAREHOLDER REGISTER",
-    "clients": [
-      "Factorial",
-      "Andbank",
-      "Osborne",
-      "Taxdown",
-      "PldSpace",
-      "Caballero",
-      "Fanalca",
-      "Multiverse",
-      "MyInvestor",
-      "Barkibu",
-      "Sade"
-    ]
-  },
-  "features": {
-    "title": "Features",
-    "description": "Sttok is the most comprehensive company management platform on the market. Discover all the functionalities it offers you.",
-    "items": [
-      {
-        "icon": "Icon01",
-        "title": "Shareholder Register (Cap Table)",
-        "description": "Digital shareholder register to manage equity. Updated without errors."
-      },
-      {
-        "icon": "Icon02",
-        "title": "Access for Shareholders",
-        "description": "The most professional way to interact with shareholders and investors."
-      },
-      {
-        "icon": "Icon03",
-        "title": "Operations Simulator",
-        "description": "Calculate all types of operations with updated real data."
-      },
-      {
-        "icon": "Icon04",
-        "title": "Share Numbering",
-        "description": "Shareholder register with details of numbering, classes, encumbrances, and co-holders"
-      },
-      {
-        "icon": "Icon05",
-        "title": "Documentation",
-        "description": "List of transactions with access to the deed or document."
-      },
-      {
-        "icon": "Icon06",
-        "title": "Up-to-date Information",
-        "description": "You'll have exact and updated numbers and %, ready for decision-making."
-      }
-    ]
   },
   "testimonials": {
     "title": "Testimonials",
@@ -122,23 +46,71 @@
   },
   "faq": {
     "eyebrow": "FAQ",
-    "title": "Shareholder registry FAQs",
+    "title": "Frequently asked questions about the shareholder register",
     "items": [
       {
-        "q": "Is a digital shareholder registry valid?",
-        "a": "Yes. Sttok keeps the official registry up to date and exportable, ready to file with the Registry and official bodies."
+        "q": "Does Sttok keep the official shareholder register?",
+        "a": "Yes. It keeps the register of partners or of registered shares as the official record and exports it in the format filed for legalisation with the Companies Registry."
       },
       {
-        "q": "Can I migrate my registry from Excel?",
-        "a": "Yes. Onboarding includes data migration and is completed in one week."
+        "q": "Can I migrate the register from Excel?",
+        "a": "Yes. Migration is part of setup, which takes a few hours per company. If years are missing, the history is rebuilt from the deeds in a few minutes."
       },
       {
-        "q": "Can shareholders check their stake?",
-        "a": "Each shareholder accesses their own file with data, documents, transactions and individual certificates."
+        "q": "Does it handle numbering, classes and encumbrances?",
+        "a": "Yes. Every share has its number and class. Pledge, usufruct, bare ownership, co-ownership and options are kept as separate positions."
       },
       {
-        "q": "Does it manage numbering, classes and liens?",
-        "a": "Yes: share numbering, classes, liens and co-owners, with always exact percentages and dilutions."
+        "q": "Can shareholders see their holding?",
+        "a": "Yes. Each shareholder logs in and sees their position, their certificates and the meetings they are called to."
+      },
+      {
+        "q": "Does it work for a public limited company (SA)?",
+        "a": "Yes. For an SA it keeps the register of registered shares, with the same numbering, classes and encumbrances."
+      },
+      {
+        "q": "Does it work for companies in Latin America?",
+        "a": "The platform adapts to each country's terminology: shareholder ledger, general shareholders' meeting, board of directors. Compliance with each country's regulations is assessed case by case."
+      }
+    ]
+  },
+  "includes": {
+    "eyebrow": "What's included",
+    "title": "Everything recorded in the shareholder register"
+  },
+  "situations": {
+    "eyebrow": "Common cases",
+    "title": "Common situations with the shareholder register",
+    "columns": {
+      "situation": "Situation",
+      "action": "What Sttok does",
+      "guide": "More information"
+    },
+    "guideLabel": "See how",
+    "rows": [
+      {
+        "situation": "The bank asks for a certificate of ownership",
+        "action": "It is generated from the register with today's data, including encumbrances."
+      },
+      {
+        "situation": "A shareholder sells part of their shares",
+        "action": "The transfer is recorded against the specific ranges and both positions are updated."
+      },
+      {
+        "situation": "A usufruct or a pledge is created",
+        "action": "The bare owner's and the usufructuary's positions are kept apart, or the pledge is recorded on the ranges affected."
+      },
+      {
+        "situation": "The register has to be legalised",
+        "action": "It is exported in the format filed with the Companies Registry."
+      },
+      {
+        "situation": "The register is years out of date",
+        "action": "It is rebuilt from the deeds in a few minutes, with any gaps in the history flagged."
+      },
+      {
+        "situation": "A shareholder dies",
+        "action": "The inheritance is recorded, the share numbers are split among the heirs and co-ownership is set up with its representative."
       }
     ]
   }

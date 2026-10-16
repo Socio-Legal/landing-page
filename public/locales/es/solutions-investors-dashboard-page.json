@@ -5,60 +5,24 @@
     "keywords": "inversores, participadas, cartera, captable, gestión documental, simulador de operaciones, portal del inversor"
   },
   "hero": {
-    "slogan": "Soluciones",
-    "title": "Portal para inversores",
-    "description": "Da acceso a tus inversores a un portal único con toda su información detallada. Dispondrán de su ficha de socio personalizada, número de participaciones y % exacto. Integra el Portal del Inversor con el diseño e imagen de la web de la empresa.",
+    "slogan": "Portal del inversor",
+    "title": "Para sociedades que quieren tener informados a sus socios e inversores",
+    "description": "Sttok da a cada socio e inversor su propio acceso, con la imagen de la sociedad. Ve su posición, descarga los certificados que la sociedad marca como visibles, responde a la convocatoria, delega o vota, y recibe cada comunicación con su certificado de envío.",
     "button": {
-      "text": "Solicitar Demo",
+      "text": "Solicitar demo",
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/hero/hero-solutions-portal-inversor.png",
-      "dark": "/hero/hero-solutions-portal-inversor.png"
+      "light": "/funcionalidades/portal-del-accionista-light.png",
+      "dark": "/funcionalidades/portal-del-accionista-dark.png"
     }
-  },
-  "clients": {
-    "title": "Empresas que confían en nosotros",
-    "clients": [
-      "Factorial",
-      "Axa",
-      "Andbank",
-      "Osborne",
-      "Taxdown",
-      "PldSpace",
-      "Caballero",
-      "Fanalca",
-      "MyInvestor",
-      "Sade"
-    ]
-  },
-  "features": {
-    "title": "Principales Funcionalidades para Inversores",
-    "description": "Sttok ofrece un portal personalizado para inversores, proporcionando acceso a la cartera de participadas con datos actualizados y exactos.",
-    "items": [
-      {
-        "icon": "Icon01",
-        "title": "Acceso a los socios",
-        "description": "Consulta los datos del captable, escrituras y otras documentaciones clave en tiempo real."
-      },
-      {
-        "icon": "Icon02",
-        "title": "Ficha del Socio",
-        "description": "Cada socio tendrá acceso a su ficha con sus documentos y certificados."
-      },
-      {
-        "icon": "Icon03",
-        "title": "Integración con tu web",
-        "description": "Integra el portal del inversor con tu imagen, colores, logoos, etc."
-      }
-    ]
   },
   "testimonials": {
     "title": "Lo que dicen nuestros Clientes",
     "description": "Inversores que ya han mejorado su gestión con Sttok.",
     "items": [
       {
-        "name": "Lucía Bauza",
+        "name": "Lucía Bouzá",
         "role": "Head of Legal & Compliance, Factorial",
         "img": "",
         "description": "Sttok nos ayudó a digitalizar el proceso de creación y firma de documentos para los planes de incentivos.",
@@ -68,7 +32,7 @@
         "name": "Johan Longo",
         "role": "Contract Manager | PLD Space",
         "img": "/logo-pldspace-mini.png",
-        "description": "Sttok nos sirve para poder tener organizada toda la información sobre socios, junas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
+        "description": "Sttok nos sirve para poder tener organizada toda la información sobre socios, juntas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
         "stars": 5
       },
       {
@@ -77,6 +41,76 @@
         "img": "/logo-banktrack-mini.png",
         "description": "Ahora con Sttok puedes realizar simulaciones de ampliaciones o notas convertibles. Además también gestionamos las phantoms de nuestro equipo fácilmente. Finalmente como inversor tengo organizadas mis participadas y conozco claramente qué es lo que tengo.",
         "stars": 5
+      }
+    ]
+  },
+  "includes": {
+    "eyebrow": "Qué incluye",
+    "title": "Lo que ve cada socio en su portal",
+    "allLink": "Ver todas las funcionalidades de Sttok"
+  },
+  "situations": {
+    "eyebrow": "Casos habituales",
+    "title": "Situaciones habituales con los socios",
+    "guideLabel": "Ver cómo",
+    "rows": [
+      {
+        "situation": "Un inversor pide su certificado",
+        "action": "Lo descarga él mismo desde su portal, si la sociedad lo ha marcado como visible.",
+        "href": "/funcionalidades/certificados-de-titularidad-y-valor"
+      },
+      {
+        "situation": "Se convoca la junta",
+        "action": "Cada socio ve la convocatoria en su portal y responde: asiste, delega o vota.",
+        "href": "/funcionalidades/portal-del-accionista"
+      },
+      {
+        "situation": "Un socio no puede ir a la junta",
+        "action": "Delega con firma o vota por anticipado cada punto desde su portal.",
+        "href": "/funcionalidades/voto-electronico-en-juntas"
+      },
+      {
+        "situation": "La sociedad informa a todos sus socios",
+        "action": "Cada comunicación queda registrada con su estado y su certificado de envío."
+      },
+      {
+        "situation": "La sociedad quiere el portal con su imagen",
+        "action": "El portal lleva el color de marca de la sociedad, con opción de marca blanca."
+      }
+    ],
+    "columns": {
+      "situation": "Situación",
+      "action": "Qué hace Sttok",
+      "guide": "Más información"
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Preguntas frecuentes sobre el portal del inversor",
+    "items": [
+      {
+        "q": "¿Qué ve cada socio?",
+        "a": "Su posición, sus certificados visibles, las juntas a las que está convocado y los documentos que la sociedad comparte con él."
+      },
+      {
+        "q": "¿Ve los datos de los demás socios?",
+        "a": "No. Cada socio ve solo lo suyo."
+      },
+      {
+        "q": "¿Puede votar desde el portal?",
+        "a": "Sí. Puede delegar con firma, votar por anticipado y votar en la junta."
+      },
+      {
+        "q": "¿El portal lleva la imagen de la sociedad?",
+        "a": "Sí. Lleva su color de marca, y existe la opción de marca blanca."
+      },
+      {
+        "q": "¿Cómo entra cada socio?",
+        "a": "Con su usuario. También se puede entrar con una cuenta de Google o de Microsoft."
+      },
+      {
+        "q": "¿Sirve para sociedades de Latinoamérica?",
+        "a": "La plataforma se adapta a la denominación de cada país: libro de accionistas, asamblea general de accionistas, junta directiva o directorio. La adecuación a la normativa de cada país se valora caso por caso."
       }
     ]
   }

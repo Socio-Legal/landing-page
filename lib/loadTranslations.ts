@@ -20,7 +20,6 @@ import productShareholderMeetingsPage from "../public/locales/es/product-shareho
 import productOperationDraftsPage from "../public/locales/es/product-operation-drafts-page.json";
 import productSecondaryMarketPage from "../public/locales/es/product-secondary-market-page.json";
 
-import solutionsPage from "../public/locales/es/solutions-page.json";
 import solutionsCompaniesPage from "../public/locales/es/solutions-companies-page.json";
 import solutionsLawyersPage from "../public/locales/es/solutions-lawyers-page.json";
 import solutionsStartupsPage from "../public/locales/es/solutions-startups-page.json";
@@ -29,7 +28,6 @@ import solutionsInvestorsDashboardPage from "../public/locales/es/solutions-inve
 
 import testimonialsPage from "../public/locales/es/testimonials-page.json";
 import testimonialsFactorialPage from "../public/locales/es/testimonials-factorial-page.json";
-import testimonialsBanktrackPage from "../public/locales/es/testimonials-banktrack-page.json";
 import testimonialsCaballeroPage from "../public/locales/es/testimonials-caballero-page.json";
 import testimonialsPldspacePage from "../public/locales/es/testimonials-pldspace-page.json";
 import testimonialsTaxdownPage from "../public/locales/es/testimonials-taxdown-page.json";
@@ -67,7 +65,6 @@ import productShareholderMeetingsPageEN from "../public/locales/en/product-share
 import productOperationDraftsPageEN from "../public/locales/en/product-operation-drafts-page.json";
 import productSecondaryMarketPageEN from "../public/locales/en/product-secondary-market-page.json";
 
-import solutionsPageEN from "../public/locales/en/solutions-page.json";
 import solutionsCompaniesPageEN from "../public/locales/en/solutions-companies-page.json";
 import solutionsLawyersPageEN from "../public/locales/en/solutions-lawyers-page.json";
 import solutionsStartupsPageEN from "../public/locales/en/solutions-startups-page.json";
@@ -110,7 +107,6 @@ const loadTranslations = (lang: "es" | "en") => {
       "product-operation-drafts-page": productOperationDraftsPage,
       "product-secondary-market-page": productSecondaryMarketPage,
 
-      "solutions-page": solutionsPage,
       "solutions-companies-page": solutionsCompaniesPage,
       "solutions-lawyers-page": solutionsLawyersPage,
       "solutions-startups-page": solutionsStartupsPage,
@@ -119,7 +115,6 @@ const loadTranslations = (lang: "es" | "en") => {
 
       "testimonials-page": testimonialsPage,
       "testimonials-factorial-page": testimonialsFactorialPage,
-      "testimonials-banktrack-page": testimonialsBanktrackPage,
       "testimonials-caballero-page": testimonialsCaballeroPage,
       "testimonials-pldspace-page": testimonialsPldspacePage,
       "testimonials-taxdown-page": testimonialsTaxdownPage,
@@ -159,7 +154,6 @@ const loadTranslations = (lang: "es" | "en") => {
     "product-operation-drafts-page": productOperationDraftsPageEN,
     "product-secondary-market-page": productSecondaryMarketPageEN,
 
-    "solutions-page": solutionsPageEN,
     "solutions-companies-page": solutionsCompaniesPageEN,
     "solutions-lawyers-page": solutionsLawyersPageEN,
     "solutions-startups-page": solutionsStartupsPageEN,
