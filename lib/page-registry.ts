@@ -158,8 +158,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PagePoliticaSeguridad,
     meta: {
       en: {
-        title: "Security Policy",
-        description: "Sttok's Information Security Policy: ISO 27001 certification, GDPR compliance, encryption, European hosting and the confidentiality, integrity and availability of information.",
+        title: "Sttok security: ISO 27001, GDPR and security policy",
+        description: "Sttok holds ISO 27001 certification and complies with the GDPR. Data in AWS Europe encrypted with TLS 1.3 and AES-256, sign-in with Google or Microsoft SSO or a one-time code, and permissions per company.",
       },
     },
   },
