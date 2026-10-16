@@ -77,7 +77,7 @@ Sttok opera también con clientes en Latinoamérica y Andorra. La plataforma ges
 
 ## Precios
 
-Planes por sociedad y año, con comunicaciones y firma electrónica incluidas, onboarding en una semana y soporte en español e inglés.
+Planes por sociedad y año, con comunicaciones incluidas, onboarding en una semana y soporte en español e inglés.
 
 - **Básico**: 450 €/año. Hasta 10 socios o beneficiarios. Libro de socios, planes de incentivos y simulador.
 - **Avanzado**: 650 €/año. Hasta 20 socios o beneficiarios. Añade juntas, consejo de administración y firma electrónica.
