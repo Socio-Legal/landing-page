@@ -1,0 +1,83 @@
+---
+title: "Titular real en grupos de sociedades: cálculo sobre la cadena de participaciones"
+description: "Sttok calcula el titular real de cada sociedad recorriendo la cadena de participaciones del libro, separa capital y votos y compara el resultado con la última declaración presentada."
+slug: "/funcionalidades/titular-real"
+section: "funcionalidades"
+canonical: "https://www.sttok.com/funcionalidades/titular-real"
+---
+
+# Titular real en grupos de sociedades: cálculo sobre la cadena de participaciones
+
+Sttok calcula quién es el titular real de una sociedad a partir del libro de socios y de la cadena de participaciones del grupo. Suma lo que cada persona física tiene directamente y lo que le llega a través de otras sociedades. Si nadie supera el 25 % del capital o de los votos ni controla la sociedad por otros medios, la pantalla pasa a los administradores.
+
+<Captura
+  nombre="titular-real"
+  alt="Pantalla de titulares reales de Sttok con el aviso de declaración desactualizada y la tabla de titulares por propiedad con su porcentaje de capital y de votos"
+  pie="Titulares reales, apartado por propiedad. Datos de ejemplo."
+/>
+
+## Los tres apartados de la declaración
+
+La pantalla sigue el orden del modelo de declaración. Los tres apartados se aplican en cascada y aparecen siempre, aunque estén vacíos, con el motivo escrito.
+
+| Apartado | Quién entra | Qué hace Sttok |
+|---|---|---|
+| A. Por propiedad | La persona física con más del 25 % del capital o de los votos, directa o indirectamente | Lo calcula sobre la cadena y muestra capital y votos por separado |
+| B. Por control por otros medios | Quien controla por un pacto, un veto o la facultad de nombrar a la mayoría del órgano | No lo deriva del libro; señala las agrupaciones de socios que superan el umbral para revisarlas |
+| C. Por administración | Los administradores, solo si A y B están vacíos | Los lee del órgano de administración con su cargo y su fecha de nombramiento |
+
+## Cómo funciona
+
+1. Se abre Titulares reales en el menú de la sociedad. Arriba aparecen el número de titulares, el porcentaje más alto atribuido y la fecha de la última declaración.
+2. En el apartado por propiedad, cada titular sale con su porcentaje de capital, su porcentaje de votos y el camino por el que lo es, por ejemplo «a través de» una sociedad intermedia con su porcentaje.
+3. El bloque «Lo que falta para presentarla» cuenta los datos que faltan de cada titular: documento identificativo, nacionalidad o fecha de nacimiento.
+4. La tarjeta de la declaración presentada compara lo declarado con lo que hoy sale del libro. Si no coincide, el botón Rectificar la declaración abre el alta con los titulares ya calculados.
+5. En el alta solo se indica la fecha, la vía de presentación y el justificante en PDF. Las vías son el depósito de cuentas anuales, el Registro Central de Titularidades Reales o el acta notarial.
+
+## Una persona supera el umbral a través de otra sociedad
+
+El porcentaje que cuenta es el efectivo. Sttok multiplica cada tramo de la cadena y suma las vías de una misma persona. Quien tiene un 22 % directo y un 6 % a través de una sociedad intermedia aparece como titular real con el total.
+
+La columna Cómo lo es dice si la titularidad es directa, indirecta o mixta. También dice si el umbral se cruza por capital, por votos o por los dos. El detalle de este cálculo está en la [guía del titular real en grupos de sociedades](/guias/titular-real-grupos-sociedades).
+
+## El capital y los votos no dan el mismo porcentaje
+
+Con autocartera o con una clase de participaciones sin voto, las dos bases se separan. La tarjeta «Sobre qué se mide» resta la autocartera y las acciones sin voto del capital y muestra la base de voto resultante. Así se ve por qué un socio con un 22 % del capital puede superar el 25 % de los votos.
+
+## El grupo tiene siete sociedades y cada una declara la suya
+
+La titularidad real se declara por sociedad. La tarjeta «Y las demás sociedades del grupo» baja el cálculo a cada participada y da una de tres respuestas: los nombres, sus administradores o «no consta aquí». La tercera aparece cuando hay capital fuera del grupo que el libro no conoce.
+
+Las participaciones que alimentan este cálculo son las del [diagrama del grupo](/funcionalidades/diagrama-del-grupo). Si una participada cambia de manos, la titularidad real de toda la cadena se recalcula.
+
+## Nadie llega al 25 %
+
+En una empresa familiar con varias ramas es frecuente que ninguna persona física supere el umbral. Sttok lo muestra como resultado, no como hueco. La lista «Quién no llega al umbral» enseña a cada persona desde el 1 %, con su porcentaje de capital y de votos.
+
+En ese caso los titulares reales son los administradores. La pantalla los toma del órgano de administración, así que un cese o un nombramiento se refleja sin teclearlo dos veces.
+
+## Preguntas frecuentes
+
+**¿Qué umbral usa Sttok?**
+Más del 25 % del capital o de los derechos de voto, directa o indirectamente, que es el criterio del artículo 4 de la Ley 10/2010 de prevención del blanqueo de capitales.
+
+**¿Calcula el control por otros medios?**
+No. El control por un pacto de socios o un protocolo familiar no consta en el libro. Sttok señala las agrupaciones que superan el umbral para que quien conoce esos documentos decida.
+
+**¿Sirve como certificado de titularidad real?**
+La pantalla se puede imprimir, pero es una lectura del libro. El documento que acredita es la declaración depositada o el acta notarial.
+
+**¿Qué pasa si una sociedad intermedia está fuera de España?**
+Se registra como un tramo más de la cadena, con su porcentaje. El cálculo multiplica igual cualquier sociedad intermedia que conste en el grupo.
+
+**¿Avisa cuando la declaración queda desactualizada?**
+Sí. Si lo calculado no coincide con lo declarado, aparece un aviso arriba con los nombres que faltan o sobran y el botón para rectificar.
+
+**¿Sirve en Latinoamérica?**
+La plataforma se adapta a la denominación de cada país, como libro de accionistas o directorio. La adecuación a la normativa de cada país sobre beneficiario final se valora caso por caso.
+
+## Sttok en cifras
+
+Más de 250 clientes gestionan más de 500 sociedades con Sttok, una media de dos por cliente que refleja el perfil de grupo. Gestionan más de 250.000 socios y accionistas. La puesta en marcha lleva unas horas por sociedad.
+
+[Solicita una demo](https://calendly.com/sttok/30min) o consulta los [precios](/precios). El cálculo del titular real forma parte de la solución para [grupos de sociedades](/soluciones/grupos-de-sociedades).

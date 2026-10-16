@@ -252,6 +252,12 @@ export const siteConfig = {
           url: "/comparativas",
           alt: "Comparativas de software societario",
         },
+        {
+          id: 127,
+          title: "menu.Features",
+          url: "/funcionalidades",
+          alt: "Funcionalidades de Sttok",
+        },
       ],
       [
         // TODO: create legal pages

@@ -25,6 +25,7 @@ export const SECTIONS = {
   soluciones: { label: "Soluciones", hasIndex: true },
   comparativas: { label: "Comparativas", hasIndex: true },
   guias: { label: "Guías", hasIndex: true },
+  funcionalidades: { label: "Funcionalidades", hasIndex: true },
 } as const;
 
 export type Section = keyof typeof SECTIONS;

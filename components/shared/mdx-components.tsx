@@ -1,5 +1,88 @@
+import fs from "node:fs";
+import path from "node:path";
+
+import Image from "next/image";
+import CatalogoFuncionalidades from "@/components/shared/catalogo-funcionalidades";
 import Link from "next/link";
 import type { MDXComponents } from "mdx/types";
+
+/** Ancho y alto de un PNG, leídos de su cabecera (bytes 16 a 23). */
+function pngSize(file: string): { width: number; height: number } {
+  const buf = fs.readFileSync(path.join(process.cwd(), "public", file));
+  return { width: buf.readUInt32BE(16), height: buf.readUInt32BE(20) };
+}
+
+/**
+ * Captura de la app en versión clara y oscura:
+ * public/funcionalidades/<nombre>-light.png y <nombre>-dark.png.
+ *
+ * Se presenta sobre un panel neutro, con la pantalla saliendo del borde
+ * inferior: sin marco ni sombra dura, la interfaz es lo único que se ve.
+ * Ocupa el ancho del artículo, así que comparte eje izquierdo con el texto.
+ */
+const Captura = ({
+  nombre,
+  alt,
+  pie,
+}: {
+  nombre: string;
+  alt: string;
+  pie?: string;
+}) => {
+  const src = (variante: string, tema: string) =>
+    `/funcionalidades/${nombre}${variante}-${tema}.png`;
+  const { width, height } = pngSize(src("", "light"));
+  // Recorte opcional para móvil: <nombre>-detalle-*.png. La pantalla entera
+  // no se lee a 375 px, así que en móvil se enseña solo la parte que importa.
+  const detalle = fs.existsSync(
+    path.join(process.cwd(), "public", src("-detalle", "light")),
+  )
+    ? pngSize(src("-detalle", "light"))
+    : null;
+
+  const img = (
+    variante: string,
+    tema: "light" | "dark",
+    dims: { width: number; height: number },
+    visible: string,
+  ) => (
+    <Image
+      src={src(variante, tema)}
+      alt={alt}
+      width={dims.width}
+      height={dims.height}
+      sizes={variante ? "100vw" : "(max-width: 1100px) 100vw, 64rem"}
+      className={`h-auto w-full ${visible}`}
+    />
+  );
+
+  return (
+    <figure className="my-14">
+      <div className="overflow-hidden rounded-2xl bg-muted px-4 pt-4 sm:px-10 sm:pt-10 lg:px-14 lg:pt-14">
+        <div className="overflow-hidden rounded-t-lg ring-1 ring-black/5 dark:ring-white/10">
+          {detalle ? (
+            <>
+              {img("-detalle", "light", detalle, "block sm:hidden dark:hidden")}
+              {img("-detalle", "dark", detalle, "hidden dark:block dark:sm:hidden")}
+              {img("", "light", { width, height }, "hidden sm:block sm:dark:hidden")}
+              {img("", "dark", { width, height }, "hidden sm:dark:block")}
+            </>
+          ) : (
+            <>
+              {img("", "light", { width, height }, "block dark:hidden")}
+              {img("", "dark", { width, height }, "hidden dark:block")}
+            </>
+          )}
+        </div>
+      </div>
+      {pie && (
+        <figcaption className="mt-3 text-xs text-muted-foreground">
+          {pie}
+        </figcaption>
+      )}
+    </figure>
+  );
+};
 
 /**
  * Estilos del contenido MDX. Siguen el mismo lenguaje visual que el resto
@@ -11,9 +94,11 @@ import type { MDXComponents } from "mdx/types";
  * del resto del sitio.
  */
 export const mdxComponents: MDXComponents = {
+  Captura,
+  Catalogo: CatalogoFuncionalidades,
   h1: (props) => (
     <h1
-      className="mx-auto mb-6 max-w-[22ch] font-serif text-4xl font-normal leading-tight tracking-tight text-balance text-foreground sm:text-5xl"
+      className="mb-6 max-w-[22ch] font-serif text-4xl font-normal leading-tight tracking-tight text-balance text-foreground sm:text-5xl"
       {...props}
     />
   ),
