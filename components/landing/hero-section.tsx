@@ -78,20 +78,20 @@ export default function HeroSection() {
           <div className="relative animate-fade-up opacity-0 [--animation-delay:200ms]">
             <div className="relative rounded-xl border border-border bg-card shadow-xl overflow-hidden">
               <Image
-                src="/hero/hero-dark.png"
-                alt="Sttok, panel de gestión de sociedades"
-                width={1200}
-                height={676}
+                src="/capturas/panel-dark.png"
+                alt="Panel de una sociedad en Sttok: capital social, reparto entre ramas familiares y vencimientos"
+                width={2368}
+                height={1720}
                 sizes="(max-width: 768px) 100vw, 50vw"
                 priority
                 className="w-full h-auto hidden dark:block"
                 style={{ borderRadius: "inherit" }}
               />
               <Image
-                src="/hero/hero-light.png"
-                alt="Sttok, panel de gestión de sociedades"
-                width={1200}
-                height={675}
+                src="/capturas/panel-light.png"
+                alt="Panel de una sociedad en Sttok: capital social, reparto entre ramas familiares y vencimientos"
+                width={2368}
+                height={1720}
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="w-full h-auto block dark:hidden"
                 style={{ borderRadius: "inherit" }}
