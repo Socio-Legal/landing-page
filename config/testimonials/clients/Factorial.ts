@@ -1,6 +1,6 @@
 export const metadata = {
   title:
-    "Factorial utiliza Sttok para gestionar planes de incentivos y su captable", // ej., "Nombre del Producto"
+    "Factorial gestiona sus planes de incentivos y su libro de socios con Sttok", // ej., "Nombre del Producto"
   description:
     "Factorial para la gestión de Planes de Incentivos utiliza Sttok. Además para gestión societaria también Libro de Socios, Planes de incentivos, Juntas de accionistas, etc.", // ej., "Una breve descripción del producto o servicio"
   keywords:
@@ -9,7 +9,7 @@ export const metadata = {
 
 export const summary = {
   client: "Factorial",
-  title: "Factorial gestiona Captable y Planes de Incentivos con Sttok",
+  title: "Factorial lleva su libro de socios y sus planes de incentivos con Sttok",
   description: "",
   quote: {
     text: "“Para gestionar toda la documentación de planes de incentivos nos ha ayudado a digitalizar el proceso de creación, firma y control de los beneficiarios. Además de la gestión del Libro de Socios (Captable)”",
@@ -36,7 +36,7 @@ export const summary = {
     {
       key: "Funcionalidades",
       value:
-        "Captable, Planes de Incentivos, Generación de documentos, Firma automatizada, etc",
+        "Libro de socios, planes de incentivos, generación de documentos y firma electrónica",
     },
   ],
 };
@@ -51,8 +51,7 @@ export const content = {
     {
       title: "Un poco sobre Factorial",
       texts: [
-        "Factorial es una empresa de software para la gestión de recursos humanos dirigido principalmente a pequeñas y medianas empresas. La compañía ha experimentado un crecimiento significativo desde su fundación, destacando en la automatización de tareas y trámites relacionados con la gestión de nóminas, gastos, firmas electrónicas, registro horario e informes analíticos para medir la productividad y la eficiencia de procesos.",
-        "En 2022, Factorial cerró una ronda de 120 millones, liderada por el fondo Atomico y contó con la participación de inversores como Tiger Global, CRV, K-Fund y Creandum. Factorial es considerado un “unicornio”, término utilizado para describir a las startups que superan los 1.000 millones de dólares en valoración.",
+        "Factorial es una empresa de software para la gestión de recursos humanos, dirigido sobre todo a pequeñas y medianas empresas.",
       ],
     },
     {
@@ -60,8 +59,8 @@ export const content = {
       texts: [
         "1. Por la facilidad de uso de la plataforma.",
         "2. Por la automatización de tareas manuales.",
-        "3. Por la gestión del Libro de Socios (Captable).",
-        "4. Por la generación de documentos y firma automatizada.",
+        "3. Por la gestión del libro de socios.",
+        "4. Por la generación de documentos y la firma electrónica.",
         "5. Por la gestión de Planes de Incentivos.",
       ],
     },

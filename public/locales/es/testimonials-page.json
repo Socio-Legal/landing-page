@@ -15,9 +15,17 @@
     }
   },
   "features": {
-    "title": "Casos de clientes",
-    "description": "Cómo trabajan con Sttok",
+    "title": "Clientes",
+    "description": "Empresas que llevan su registro en Sttok",
     "items": [
+      {
+        "icon": "",
+        "logo": "Axa",
+        "title": "",
+        "description": "Grupo asegurador. AXA es cliente de Sttok.",
+        "alt": "AXA, cliente de Sttok",
+        "case": false
+      },
       {
         "icon": "",
         "logo": "Factorial",
@@ -27,10 +35,26 @@
       },
       {
         "icon": "",
+        "logo": "Multiverse",
+        "title": "",
+        "description": "Multiverse Computing, empresa española de software cuántico e inteligencia artificial.",
+        "alt": "Multiverse Computing, cliente de Sttok",
+        "case": false
+      },
+      {
+        "icon": "",
         "logo": "PldSpace",
         "title": "",
         "description": "Empresa española que desarrolla cohetes reutilizables para poner satélites en órbita.",
         "alt": "PLD Space utiliza Sttok para gestionar la relación con sus socios mediante el Portal del Inversor"
+      },
+      {
+        "icon": "",
+        "logo": "Osborne",
+        "title": "",
+        "description": "Grupo familiar fundado en 1772, con varios cientos de accionistas familiares y cuatro generaciones de socios a la vez.",
+        "alt": "Osborne, cliente de Sttok",
+        "case": false
       },
       {
         "icon": "",

@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "title": "TaxDown uses Sttok to manage incentive plans and its cap table",
+    "title": "TaxDown runs its incentive plans and shareholder register with Sttok",
     "description": "TaxDown uses Sttok for effective Incentive Plan management. Additionally, for corporate management, it also uses Shareholder Register and Shareholder Meetings, etc.",
     "keywords": "TaxDown, Sttok, TaxDown and Sttok, Shareholder Register, incentive plans, Sttok clients"
   },
   "summary": {
     "client": "Taxdown",
-    "title": "Taxdown manages Cap Table and Incentive Plans with Sttok",
+    "title": "TaxDown runs its shareholder register and incentive plans with Sttok",
     "description": "",
     "quote": {
       "text": "'We use Sttok to efficiently manage our company's Incentive Plans'",
@@ -32,7 +32,7 @@
       },
       {
         "key": "Functionalities",
-        "value": "Cap Table, Incentive Plans, Document Generation, Automated Signing, etc"
+        "value": "Shareholder register, incentive plans, document generation and e-signature"
       }
     ]
   },
@@ -47,7 +47,7 @@
         "title": "A bit about Taxdown",
         "texts": [
           "Taxdown is a software company that helps people file their tax returns easily.",
-          "With hundreds of thousands of clients and a growing team, Taxdown uses Sttok for managing incentive plans and shareholder relations for meetings, shareholder register, etc."
+          "TaxDown uses Sttok to manage its incentive plans and its relationship with shareholders: meetings and the shareholder register."
         ]
       },
       {
@@ -55,8 +55,8 @@
         "texts": [
           "1. For the ease of use of the platform.",
           "2. For the automation of manual tasks.",
-          "3. For the management of the Shareholder Register (Cap Table).",
-          "4. For document generation and automated signing.",
+          "3. For the management of the shareholder register.",
+          "4. For document generation and e-signature.",
           "5. For the management of Incentive Plans."
         ]
       }

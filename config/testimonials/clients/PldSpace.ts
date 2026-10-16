@@ -38,7 +38,7 @@ export const summary = {
     {
       key: "Funcionalidades",
       value:
-        "Portal del Inversor, Captable, Planes de Incentivos, Junta de Accionistas, Firma automatizada, etc",
+        "Portal del inversor, libro de socios, planes de incentivos, junta de accionistas y firma electrónica",
     },
   ],
 };
@@ -53,9 +53,7 @@ export const content = {
     {
       title: "Un poco sobre PLD Space",
       texts: [
-        "PLD Space es una compañía española del sector aeroespacial pionera y referente en Europa en el desarrollo de lanzadores reutilizables, con trayectoria de referencia en el sector y un sólido programa de desarrollo. A través de su familia de cohetes espaciales MIURA (MIURA 1 y MIURA 5), PLD Space situará a España entre el reducido número de países con capacidad para enviar al espacio con éxito satélites de pequeño tamaño.",
-        "Fundada en 2011 por Raúl Torres y Raúl Verdú, PLD Space cuenta con un equipo de más de 200 personas. La compañía, con sede en Elche (Alicante) y con instalaciones técnicas en Teruel, Huelva y Guayana Francesa.",
-        "El 7 de octubre de 2023, PLD Space hizo historia tras completar con éxito el lanzamiento de un primer cohete europeo privado, MIURA 1.",
+        "PLD Space es una empresa española que desarrolla cohetes reutilizables para poner satélites en órbita. Tiene su sede en Elche (Alicante).",
       ],
     },
     {
@@ -63,8 +61,8 @@ export const content = {
       texts: [
         "1. Para ofrecer el Portal del Inversor.",
         "2. Por la automatización de tareas manuales.",
-        "3. Por la gestión del Libro de Socios (Captable).",
-        "4. Por la generación de documentos y firma automatizada.",
+        "3. Por la gestión del libro de socios.",
+        "4. Por la generación de documentos y la firma electrónica.",
         "5. Por la gestión de Planes de Incentivos.",
       ],
     },

@@ -15,9 +15,17 @@
     }
   },
   "features": {
-    "title": "Case studies",
-    "description": "How they work with Sttok",
+    "title": "Customers",
+    "description": "Companies that keep their register in Sttok",
     "items": [
+      {
+        "icon": "",
+        "logo": "Axa",
+        "title": "",
+        "description": "Insurance group. AXA is a Sttok customer.",
+        "alt": "AXA, a Sttok customer",
+        "case": false
+      },
       {
         "icon": "",
         "logo": "Factorial",
@@ -26,9 +34,25 @@
       },
       {
         "icon": "",
+        "logo": "Multiverse",
+        "title": "",
+        "description": "Multiverse Computing, a Spanish quantum software and artificial intelligence company.",
+        "alt": "Multiverse Computing, a Sttok customer",
+        "case": false
+      },
+      {
+        "icon": "",
         "logo": "PldSpace",
         "title": "",
         "description": "Spanish company that develops reusable rockets to put satellites into orbit."
+      },
+      {
+        "icon": "",
+        "logo": "Osborne",
+        "title": "",
+        "description": "Family group founded in 1772, with several hundred family shareholders and four generations of shareholders at once.",
+        "alt": "Osborne, a Sttok customer",
+        "case": false
       },
       {
         "icon": "",
