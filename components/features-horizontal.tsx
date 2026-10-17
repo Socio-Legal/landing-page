@@ -1,7 +1,7 @@
 "use client";
 
 import * as Accordion from "@radix-ui/react-accordion";
-import { AnimatePresence, motion, useInView } from "framer-motion";
+import { useInView } from "framer-motion";
 import React, {
   forwardRef,
   ReactNode,
@@ -11,8 +11,8 @@ import React, {
 } from "react";
 
 import { cn } from "@/lib/utils";
-import { useTheme } from "next-themes";
 import Image from "next/image";
+import VideoTema from "@/components/shared/video-tema";
 
 type AccordionItemProps = {
   children: React.ReactNode;
@@ -85,7 +85,10 @@ type CardDataProps = {
   title: string;
   content: string;
   image: ImageByThemeProps;
+  /** Ruta base de una animación en /animaciones, sin tema ni extensión. */
   video?: string;
+  /** Cuánto se queda en pantalla (ms). Una animación necesita su duración entera. */
+  duracion?: number;
   icon?: React.ReactNode;
 };
 
@@ -102,9 +105,10 @@ export default function Features({
   linePosition = "left",
   data = [],
 }: FeaturesProps) {
-  const { theme } = useTheme();
 
   const [currentIndex, setCurrentIndex] = useState<number>(-1);
+  // Cada pestaña dura lo suyo: una animación de 20 s no cabe en los 5 de una captura.
+  const espera = (i: number) => data[i]?.duracion ?? collapseDelay;
 
   const carouselRef = useRef<HTMLUListElement>(null);
   const ref = useRef(null);
@@ -149,7 +153,7 @@ export default function Features({
       setCurrentIndex((prevIndex) =>
         prevIndex !== undefined ? (prevIndex + 1) % data.length : 0
       );
-    }, collapseDelay);
+    }, espera(currentIndex));
 
     return () => clearInterval(timer);
   }, [currentIndex]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -161,7 +165,7 @@ export default function Features({
       scrollToIndex(nextIndex);
     };
 
-    const autoScrollTimer = setInterval(handleAutoScroll, collapseDelay);
+    const autoScrollTimer = setInterval(handleAutoScroll, espera(currentIndex));
 
     return () => clearInterval(autoScrollTimer);
   }, [currentIndex]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -223,7 +227,7 @@ export default function Features({
                         style={{
                           transitionDuration:
                             currentIndex === index
-                              ? `${collapseDelay}ms`
+                              ? `${espera(index)}ms`
                               : "0s",
                         }}
                       ></div>
@@ -245,7 +249,7 @@ export default function Features({
                         style={{
                           transitionDuration:
                             currentIndex === index
-                              ? `${collapseDelay}ms`
+                              ? `${espera(index)}ms`
                               : "0s",
                         }}
                       ></div>
@@ -276,58 +280,56 @@ export default function Features({
             }`}
           >
             <div className="aspect-video w-full relative">
-              <AnimatePresence mode="wait">
-                {data[currentIndex]?.image && (
-                  <motion.div
-                    key={`image-${currentIndex}`}
-                    className="absolute inset-0"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.3, ease: "easeInOut" }}
+              {/*
+                Todas las pantallas se pintan a la vez, apiladas, y solo cambia
+                la opacidad: la siguiente ya está cargada cuando le toca y el
+                fundido es cruzado. Con AnimatePresence en modo "wait" la vieja
+                se iba a cero, quedaba el hueco vacío y la nueva llegaba a medio
+                cargar: se veía un parpadeo. El tema lo resuelve el CSS (dark:),
+                no el JS, para no pintar nunca la versión equivocada.
+              */}
+              {data.map((item, index) => {
+                const activa = index === Math.max(currentIndex, 0);
+                const capa = "object-cover object-top rounded-lg shadow-lg border";
+                return (
+                  <div
+                    key={item.id}
+                    className={cn(
+                      "absolute inset-0 transition-opacity duration-500 ease-in-out",
+                      activa ? "opacity-100" : "pointer-events-none opacity-0"
+                    )}
+                    aria-hidden={!activa}
                   >
-                    {/* <img
-                      src={
-                        data[currentIndex].image[
-                          theme as keyof ImageByThemeProps
-                        ]
-                      }
-                      alt="feature"
-                      className="aspect-auto w-full h-full object-cover rounded-lg shadow-lg relative border"
-                    /> */}
-                    <Image
-                      src={
-                        data[currentIndex].image[
-                          theme === "dark" ? "dark" : "light"
-                        ]
-                      }
-                      alt="feature"
-                      className="aspect-auto w-full h-full object-cover rounded-lg shadow-lg relative border"
-                      layout="fill"
-                    />
-                  </motion.div>
-                )}
-                {data[currentIndex]?.video && (
-                  <motion.div
-                    key={`video-${currentIndex}`}
-                    className="absolute inset-0"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.3, ease: "easeInOut" }}
-                  >
-                    <video
-                      src={data[currentIndex].video}
-                      className="w-full h-full object-cover rounded-lg shadow-lg"
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                    />
-                  </motion.div>
-                )}
-              </AnimatePresence>
-              {!data[currentIndex]?.image && !data[currentIndex]?.video && (
+                    {item.video ? (
+                      <VideoTema
+                        base={item.video}
+                        alt={item.title}
+                        activo={activa}
+                        className={cn("absolute inset-0 h-full w-full", capa)}
+                      />
+                    ) : item.image ? (
+                      <>
+                        <Image
+                          src={item.image.light}
+                          alt={item.title}
+                          fill
+                          sizes="(max-width: 1152px) 100vw, 72rem"
+                          priority={index === 0}
+                          className={cn("dark:hidden", capa)}
+                        />
+                        <Image
+                          src={item.image.dark}
+                          alt={item.title}
+                          fill
+                          sizes="(max-width: 1152px) 100vw, 72rem"
+                          className={cn("hidden dark:block", capa)}
+                        />
+                      </>
+                    ) : null}
+                  </div>
+                );
+              })}
+              {data.length === 0 && (
                 <div className="w-full h-full rounded-lg border border-border bg-muted p-1"></div>
               )}
             </div>
@@ -356,7 +358,7 @@ export default function Features({
                     } origin-top bg-primary transition-all ease-linear dark:bg-white`}
                     style={{
                       transitionDuration:
-                        currentIndex === index ? `${collapseDelay}ms` : "0s",
+                        currentIndex === index ? `${espera(index)}ms` : "0s",
                     }}
                   ></div>
                 </div>

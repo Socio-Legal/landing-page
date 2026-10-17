@@ -12,40 +12,48 @@
       "title": "Shareholders",
       "content": "Cap table, Official Shareholder Register, %, shareholder access, etc",
       "image": {
-        "light": "/modulos/libro-de-socios-light.png",
-        "dark": "/modulos/libro-de-socios-dark.png"
+        "light": "/animaciones/accionistas-light-poster.webp",
+        "dark": "/animaciones/accionistas-dark-poster.webp"
       },
-      "icon": "BarChart3"
+      "icon": "BarChart3",
+      "video": "/animaciones/accionistas",
+      "duracion": 20500
     },
     {
       "id": 2,
       "title": "Incentive Plans",
       "content": "Phantoms, stock options, employee access, vesting, etc",
       "image": {
-        "light": "/modulos/planes-de-incentivos-light.png",
-        "dark": "/modulos/planes-de-incentivos-dark.png"
+        "light": "/animaciones/liquidez-planes-de-incentivos-light-poster.webp",
+        "dark": "/animaciones/liquidez-planes-de-incentivos-dark-poster.webp"
       },
-      "icon": "Brain"
+      "icon": "Brain",
+      "video": "/animaciones/liquidez-planes-de-incentivos",
+      "duracion": 20000
     },
     {
       "id": 3,
       "title": "Meetings and Boards",
       "content": "Digital convening, delegations, voting, etc",
       "image": {
-        "light": "/modulos/juntas-consejos-light.png",
-        "dark": "/modulos/juntas-consejos-dark.png"
+        "light": "/animaciones/voto-electronico-en-juntas-light-poster.webp",
+        "dark": "/animaciones/voto-electronico-en-juntas-dark-poster.webp"
       },
-      "icon": "LineChart"
+      "icon": "LineChart",
+      "video": "/animaciones/voto-electronico-en-juntas",
+      "duracion": 20000
     },
     {
       "id": 4,
       "title": "Operations Simulator",
       "content": "Calculation of rounds, capital increases, convertible notes, etc",
       "image": {
-        "light": "/modulos/simulador-light.png",
-        "dark": "/modulos/simulador-dark.png"
+        "light": "/animaciones/simulador-light-poster.webp",
+        "dark": "/animaciones/simulador-dark-poster.webp"
       },
-      "icon": "FileText"
+      "icon": "FileText",
+      "video": "/animaciones/simulador",
+      "duracion": 16500
     }
   ]
 }
