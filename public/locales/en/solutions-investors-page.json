@@ -13,9 +13,10 @@
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/capturas/participadas-light.png",
-      "dark": "/capturas/participadas-dark.png"
-    }
+      "light": "/animaciones/participadas-light-poster.webp",
+      "dark": "/animaciones/participadas-dark-poster.webp"
+    },
+    "video": "/animaciones/participadas"
   },
   "testimonials": {
     "title": "What our Clients say",

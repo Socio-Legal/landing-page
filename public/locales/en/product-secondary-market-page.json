@@ -8,9 +8,10 @@
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/hero/mercado-secundario-light.png",
-      "dark": "/hero/mercado-secundario-dark.png"
-    }
+      "light": "/animaciones/compraventa-light-poster.webp",
+      "dark": "/animaciones/compraventa-dark-poster.webp"
+    },
+    "video": "/animaciones/compraventa"
   },
   "faq": {
     "eyebrow": "FAQ",

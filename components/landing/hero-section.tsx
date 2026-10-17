@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import VideoTema from "@/components/shared/video-tema";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
@@ -77,24 +78,12 @@ export default function HeroSection() {
 
           <div className="relative animate-fade-up opacity-0 [--animation-delay:200ms]">
             <div className="relative rounded-xl border border-border bg-card shadow-xl overflow-hidden">
-              <Image
-                src="/capturas/panel-dark.png"
-                alt="Panel de una sociedad en Sttok: capital social, reparto entre ramas familiares y vencimientos"
-                width={2368}
-                height={1720}
-                sizes="(max-width: 768px) 100vw, 50vw"
-                priority
-                className="w-full h-auto hidden dark:block"
-                style={{ borderRadius: "inherit" }}
-              />
-              <Image
-                src="/capturas/panel-light.png"
-                alt="Panel de una sociedad en Sttok: capital social, reparto entre ramas familiares y vencimientos"
-                width={2368}
-                height={1720}
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="w-full h-auto block dark:hidden"
-                style={{ borderRadius: "inherit" }}
+              <VideoTema
+                base="/animaciones/panel"
+                alt="Panel de una sociedad en Sttok: capital social, reparto entre ramas familiares, juntas y vencimientos"
+                width={1280}
+                height={930}
+                className="w-full h-auto"
               />
             </div>
           </div>
