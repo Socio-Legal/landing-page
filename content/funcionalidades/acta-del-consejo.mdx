@@ -1,0 +1,83 @@
+---
+title: "Acta del consejo de administración y certificación de acuerdos del consejo"
+description: "Sttok guarda el acta de cada consejo en su ficha, sigue su recorrido hasta el Registro Mercantil y genera la certificación de acuerdos del consejo a partir del acta ya firmada."
+slug: "/funcionalidades/acta-del-consejo"
+section: "funcionalidades"
+canonical: "https://www.sttok.com/funcionalidades/acta-del-consejo"
+---
+
+# Acta del consejo de administración y certificación de acuerdos
+
+Sttok guarda el acta de cada consejo en la ficha de la sesión, con su fecha de redacción y de firma. Sigue su recorrido hasta la inscripción en el Registro Mercantil. Cuando el acta está firmada, genera la certificación de acuerdos del consejo con los datos de la sesión.
+
+<Captura
+  nombre="acta-del-consejo"
+  alt="Ficha de un consejo de administración en Sttok con el bloque Acta y certificado y su recorrido registral: redactada, firmada, elevada a público e inscrita"
+  pie="Ficha de un consejo, bloque Acta y certificado. Datos de ejemplo."
+/>
+
+## El recorrido del acta
+
+| Paso | Qué significa | Qué muestra Sttok |
+|---|---|---|
+| Redactada | El acta de la sesión existe como documento | La fecha del acta |
+| Firmada | La mesa del consejo ha firmado el acta | La fecha de la firma, por la mesa |
+| Certificación | Se ha expedido el certificado de los acuerdos | El documento y su fecha |
+| Elevada a público | Los acuerdos constan en escritura | La fecha, o «no procede» si no hay acuerdos inscribibles |
+| Inscrita | Los acuerdos están inscritos en el Registro Mercantil | La fecha, o «no oponible» mientras falta |
+
+## Cómo funciona
+
+1. Tras la sesión, la ficha del consejo pasa a Pendiente firma. El bloque Acta y certificado muestra el acta redactada y lo que falta.
+2. Sttok marca en rojo solo el primer paso pendiente. Los siguientes quedan en neutro, porque el recorrido es una cadena: no se eleva un acta sin firmar.
+3. Con el acta firmada, la ficha pasa a Finalizado. La certificación se genera desde Documentos, con Crear y la plantilla Certificación de acuerdos del consejo.
+4. Se elige la sesión, la fecha de emisión y quién puede verla. Sttok enseña el nombre del archivo antes de pulsar Generar.
+5. La certificación queda en Documentos, sección Actas y certificaciones, con el origen Generado por Sttok.
+
+## Un acta sigue sin firmar
+
+No se pueden certificar acuerdos que no consten en un acta aprobada y firmada o en acta notarial (artículo 109.4 del Reglamento del Registro Mercantil). Por eso la plantilla solo ofrece las sesiones con el acta firmada. Si no hay ninguna, Sttok lo dice y no abre el formulario.
+
+En el repositorio de documentos, el acta pendiente lleva la nota Sin firmar. El asistente para convocar el siguiente consejo propone añadir su aprobación al [orden del día](/funcionalidades/orden-del-dia-del-consejo). Con la firma electrónica integrada, incluida en los planes Avanzado y Pro, la mesa firma en Sttok. Lo explica la ficha de [firma electrónica](/funcionalidades/firma-electronica).
+
+## Los acuerdos de la sesión no son inscribibles
+
+Un consejo de seguimiento no siempre adopta acuerdos que se eleven a público. En ese caso, los pasos Elevada a público e Inscrita aparecen como no procede, en neutro. La ficha dice «Firmada. Sus acuerdos no son inscribibles.» y no lo trata como un defecto.
+
+Cuando el acuerdo sí es inscribible y falta la inscripción, el paso Inscrita lleva la nota no oponible. Es lo que decide si el acuerdo se puede oponer a un tercero.
+
+## El consejo no llegó a constituirse
+
+Si no se alcanzó el quórum, se levanta acta de la no constitución. La ficha guarda esa acta firmada y no reclama ninguna certificación: dice «No hubo acuerdos que certificar.». Un documento que no tiene que existir no aparece como pendiente.
+
+## Una sesión celebrada no tiene acta
+
+Las actas del consejo van a un libro y las firman el presidente y el secretario (artículo 250 de la Ley de Sociedades de Capital). Si un consejo celebrado no tiene acta, la ficha muestra Acta sin redactar. Documentos lo lista como un documento que falta, con su consecuencia.
+
+Las actas firmadas forman el [libro de actas](/funcionalidades/libro-de-actas) del consejo, que se legaliza por ejercicio.
+
+## Preguntas frecuentes
+
+**¿Quién aparece como presidente y secretario del acta?**
+Quien tenía el cargo el día de la sesión. Sttok guarda la composición del consejo con cada sesión, así que un cambio posterior de presidencia no altera las actas antiguas.
+
+**¿Puede el consejero consultar el acta?**
+Sí. En la [vista del consejero](/funcionalidades/vista-del-consejero) ve el acta, si está firmada y la certificación. El recorrido registral queda para el secretario.
+
+**¿La certificación del consejo es visible para los socios?**
+Por defecto, solo para los administradores. Al generarla se puede elegir que también la vean los interesados.
+
+**¿En qué se diferencia de la certificación de la junta?**
+Sale del acta del consejo y no del acta de la junta. La de la junta se explica en la ficha de [certificación de acuerdos](/funcionalidades/certificacion-de-acuerdos).
+
+**¿Dónde se guardan las actas?**
+En la ficha de cada consejo y en Documentos, sección Actas y certificaciones. El acta y la certificación de cada sesión enlazan con su ficha.
+
+**¿Sirve para una junta directiva o un directorio en Latinoamérica?**
+La plataforma se adapta a la denominación de cada país, como el acta de la junta directiva o del directorio. La adecuación a la normativa de cada país se valora caso por caso.
+
+## Sttok en cifras
+
+Más de 250 clientes gestionan más de 500 sociedades con Sttok, una media de dos por cliente que refleja el perfil de grupo. Gestionan más de 250.000 socios y accionistas. La puesta en marcha lleva unas horas por sociedad.
+
+[Solicita una demo](https://calendly.com/sttok/30min) o consulta los [precios](/precios). El acta del consejo forma parte de [juntas y consejos](/juntas-consejos), y la [secretaría del consejo](/soluciones/secretaria-del-consejo) explica cómo lo usan los secretarios.

@@ -165,6 +165,16 @@ Funcionalidad con coste adicional: mercado secundario.
 - Acta de la junta general: https://www.sttok.com/funcionalidades/acta-de-la-junta
 - Certificación de acuerdos: https://www.sttok.com/funcionalidades/certificacion-de-acuerdos
 - Juntas presenciales, telemáticas e híbridas: https://www.sttok.com/funcionalidades/juntas-presenciales-telematicas-e-hibridas
+- Órgano de administración: consejo, administrador único o administradores: https://www.sttok.com/funcionalidades/organo-de-administracion
+- Orden del día del consejo de administración: https://www.sttok.com/funcionalidades/orden-del-dia-del-consejo
+- Calendario del consejo de administración: https://www.sttok.com/funcionalidades/calendario-del-consejo
+- Acta del consejo y certificación de acuerdos: https://www.sttok.com/funcionalidades/acta-del-consejo
+- Consejo por escrito y sin sesión: https://www.sttok.com/funcionalidades/consejo-por-escrito-y-sin-sesion
+- Vista del consejero: https://www.sttok.com/funcionalidades/vista-del-consejero
+- Registro de cargos con su vigencia: https://www.sttok.com/funcionalidades/cargos-con-vigencia
+- Comisiones y comités del consejo: https://www.sttok.com/funcionalidades/comites-del-consejo
+- Registro de auditores de cuentas: https://www.sttok.com/funcionalidades/auditores
+- Elección de consejeros con compromisos de apoyo: https://www.sttok.com/funcionalidades/eleccion-de-consejeros
 - Equipo: https://www.sttok.com/sobre-nosotros
 - Blog: https://blog.sttok.com/recursos
 - Dossier comercial (español): https://www.sttok.com/docs/sttok-dossier-es.pdf
