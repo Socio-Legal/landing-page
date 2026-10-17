@@ -66,6 +66,25 @@ const SIN_PAGINA = ["/solutions"];
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  /**
+   * Las animaciones no llevan hash en el nombre: un día fresco en el navegador
+   * y una semana sirviendo la copia guardada mientras se revalida. Sin esto
+   * salen con max-age=0 y cada visita vuelve a preguntar por ellas.
+   */
+  async headers() {
+    return [
+      {
+        source: "/animaciones/:archivo*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=86400, stale-while-revalidate=604800",
+          },
+        ],
+      },
+    ];
+  },
+
   async redirects() {
     return [
       {

@@ -122,7 +122,9 @@ const HeroSection: FC<HeroSectionProps> = ({
                   <VideoTema
                     base={video}
                     alt={t(title)}
-                    className="relative h-auto w-full rounded-[inherit]"
+                    prioridad
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    className="rounded-[inherit]"
                   />
                 ) : image ? (
                   <>

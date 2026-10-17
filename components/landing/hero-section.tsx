@@ -81,9 +81,8 @@ export default function HeroSection() {
               <VideoTema
                 base="/animaciones/panel"
                 alt="Panel de una sociedad en Sttok: capital social, reparto entre ramas familiares, juntas y vencimientos"
-                width={1280}
-                height={930}
-                className="w-full h-auto"
+                prioridad
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           </div>
