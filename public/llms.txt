@@ -117,12 +117,16 @@ Funcionalidad con coste adicional: mercado secundario.
 - Guía: plantillas societarias, qué debe constar en una convocatoria, un acta y un certificado: https://www.sttok.com/guias/plantillas-societarias
 - Guía: fiscalidad de phantom shares y stock options en España tras la Ley de Startups: https://www.sttok.com/guias/fiscalidad-phantom-shares-stock-options
 - Guía: titular real y Registro de Titularidades Reales en grupos de sociedades: https://www.sttok.com/guias/titular-real-grupos-sociedades
+- Guía: libro de actas de junta y de consejo, contenido, aprobación, certificaciones y legalización telemática: https://www.sttok.com/guias/libro-de-actas
 - Guía: libro registro de socios, cómo llevarlo y cómo legalizarlo en el Registro Mercantil: https://www.sttok.com/guias/libro-registro-socios-legalizacion
+- Guía: convocatoria de la junta general, quién convoca, cómo se publica y con qué plazo: https://www.sttok.com/guias/convocatoria-junta-general
 - Guía: junta general telemática, requisitos legales y cómo celebrarla: https://www.sttok.com/guias/junta-general-telematica
+- Guía: junta universal, requisitos, acta y diferencias con la junta convocada y con las decisiones del socio único: https://www.sttok.com/guias/junta-universal
 - Guía: un socio quiere vender, derecho de adquisición preferente y restricciones estatutarias: https://www.sttok.com/guias/derecho-de-adquisicion-preferente
 - Guía: reconstruir un libro de socios desactualizado a partir de las escrituras: https://www.sttok.com/guias/reconstruir-libro-de-socios
 - Guía: cotitularidad, usufructo y nuda propiedad en el libro de socios: https://www.sttok.com/guias/cotitularidad-usufructo-nuda-propiedad
 - Guía: fallece un socio, herencia de participaciones y libro de socios: https://www.sttok.com/guias/herencia-de-participaciones
+- Guía: valoración anual de participaciones y acciones en los estatutos, qué precio se aplica en cada caso: https://www.sttok.com/guias/valoracion-anual-acciones-estatutos
 - Board portals en España, comparativa: https://www.sttok.com/comparativas/board-portal-espana
 - Software para libro de socios, juntas y consejo en España, comparativa: https://www.sttok.com/comparativas/software-libro-de-socios
 - Funcionalidades de Sttok: https://www.sttok.com/funcionalidades
@@ -140,6 +144,27 @@ Funcionalidad con coste adicional: mercado secundario.
 - Apoderados y poderes: https://www.sttok.com/funcionalidades/apoderados-y-poderes
 - Firma electrónica: https://www.sttok.com/funcionalidades/firma-electronica
 - Comunicaciones a socios con certificado de envío: https://www.sttok.com/funcionalidades/comunicaciones-a-socios
+- Libro registro de socios oficial y su legalización: https://www.sttok.com/funcionalidades/libro-registro-oficial
+- Numeración de participaciones y acciones por rangos: https://www.sttok.com/funcionalidades/numeracion-por-rangos
+- Transmisiones de participaciones y acciones: https://www.sttok.com/funcionalidades/transmisiones
+- Ampliaciones y reducciones de capital: https://www.sttok.com/funcionalidades/ampliaciones-y-reducciones-de-capital
+- Cargas sobre participaciones: prenda, usufructo, cotitularidad y opciones: https://www.sttok.com/funcionalidades/cargas-sobre-participaciones
+- Ficha del socio: https://www.sttok.com/funcionalidades/ficha-del-socio
+- Clases de acciones: https://www.sttok.com/funcionalidades/clases-de-acciones
+- Reparto de dividendos: https://www.sttok.com/funcionalidades/reparto-de-dividendos
+- Categorías de socios: https://www.sttok.com/funcionalidades/categorias-de-socios
+- Representantes de socios: https://www.sttok.com/funcionalidades/representantes
+- Autocartera: https://www.sttok.com/funcionalidades/autocartera
+- Acreedores y notas convertibles: https://www.sttok.com/funcionalidades/acreedores-y-notas-convertibles
+- Equity Story: evolución del capital: https://www.sttok.com/funcionalidades/equity-story
+- Preparar la junta general: orden del día, documentación y plazos: https://www.sttok.com/funcionalidades/preparar-la-junta
+- Convocatoria de la junta general: https://www.sttok.com/funcionalidades/convocatoria-de-la-junta
+- Asistencia y quórum de la junta: https://www.sttok.com/funcionalidades/asistencia-y-quorum
+- Mayorías reforzadas y derecho de separación: https://www.sttok.com/funcionalidades/mayorias-y-derecho-de-separacion
+- Proyección de las votaciones en la sala: https://www.sttok.com/funcionalidades/proyeccion-en-la-sala
+- Acta de la junta general: https://www.sttok.com/funcionalidades/acta-de-la-junta
+- Certificación de acuerdos: https://www.sttok.com/funcionalidades/certificacion-de-acuerdos
+- Juntas presenciales, telemáticas e híbridas: https://www.sttok.com/funcionalidades/juntas-presenciales-telematicas-e-hibridas
 - Equipo: https://www.sttok.com/sobre-nosotros
 - Blog: https://blog.sttok.com/recursos
 - Dossier comercial (español): https://www.sttok.com/docs/sttok-dossier-es.pdf

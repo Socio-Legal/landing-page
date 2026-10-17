@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { compileMDX } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
 
+import Breadcrumbs from "@/components/shared/breadcrumbs";
 import JsonLd from "@/components/shared/json-ld";
 import { mdxComponents } from "@/components/shared/mdx-components";
 import Link from "next/link";
@@ -63,6 +64,7 @@ export default async function DocPage({ doc }: { doc: Doc }) {
           ficha ? " [&>*:not(figure):not(.catalogo)]:max-w-3xl [&_h1]:tracking-normal" : ""
         }`}
       >
+        <Breadcrumbs path={doc.url} />
         {content}
       </article>
 
