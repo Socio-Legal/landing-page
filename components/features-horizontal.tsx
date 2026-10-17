@@ -1,7 +1,7 @@
 "use client";
 
 import * as Accordion from "@radix-ui/react-accordion";
-import { AnimatePresence, motion, useInView } from "framer-motion";
+import { useInView } from "framer-motion";
 import React, {
   forwardRef,
   ReactNode,
@@ -275,61 +275,44 @@ export default function Features({
               ltr && "md:order-1"
             }`}
           >
+            {/* Las capturas son más altas que 16:9: se anclan arriba para que el
+                título de cada pantalla no quede cortado. Se montan todas a la vez
+                y solo cambia la opacidad: sin hueco ni salto al pasar de una a
+                otra, y sin esperar a que cargue la siguiente. */}
             <div className="aspect-video w-full relative">
-              <AnimatePresence mode="wait">
-                {data[currentIndex]?.image && (
-                  <motion.div
-                    key={`image-${currentIndex}`}
-                    className="absolute inset-0"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.3, ease: "easeInOut" }}
+              {data.map((item, index) => {
+                const visible = index === Math.max(currentIndex, 0);
+                return (
+                  <div
+                    key={item.id}
+                    className={cn(
+                      "absolute inset-0 transition-opacity duration-500 ease-in-out",
+                      visible ? "opacity-100" : "opacity-0"
+                    )}
+                    aria-hidden={!visible}
                   >
-                    {/* <img
-                      src={
-                        data[currentIndex].image[
-                          theme as keyof ImageByThemeProps
-                        ]
-                      }
-                      alt="feature"
-                      className="aspect-auto w-full h-full object-cover rounded-lg shadow-lg relative border"
-                    /> */}
-                    <Image
-                      src={
-                        data[currentIndex].image[
-                          theme === "dark" ? "dark" : "light"
-                        ]
-                      }
-                      alt="feature"
-                      className="aspect-auto w-full h-full object-cover rounded-lg shadow-lg relative border"
-                      layout="fill"
-                    />
-                  </motion.div>
-                )}
-                {data[currentIndex]?.video && (
-                  <motion.div
-                    key={`video-${currentIndex}`}
-                    className="absolute inset-0"
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    transition={{ duration: 0.3, ease: "easeInOut" }}
-                  >
-                    <video
-                      src={data[currentIndex].video}
-                      className="w-full h-full object-cover rounded-lg shadow-lg"
-                      autoPlay
-                      loop
-                      muted
-                      playsInline
-                    />
-                  </motion.div>
-                )}
-              </AnimatePresence>
-              {!data[currentIndex]?.image && !data[currentIndex]?.video && (
-                <div className="w-full h-full rounded-lg border border-border bg-muted p-1"></div>
-              )}
+                    {item.video ? (
+                      <video
+                        src={item.video}
+                        className="w-full h-full object-cover object-top rounded-lg shadow-lg"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                      />
+                    ) : (
+                      <Image
+                        src={item.image[theme === "dark" ? "dark" : "light"]}
+                        alt={item.title}
+                        fill
+                        sizes="(max-width: 1152px) 100vw, 72rem"
+                        priority={index === 0}
+                        className="object-cover object-top rounded-lg shadow-lg border"
+                      />
+                    )}
+                  </div>
+                );
+              })}
             </div>
           </div>
 

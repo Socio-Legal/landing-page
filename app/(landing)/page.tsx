@@ -12,7 +12,6 @@ import WhoUsesSttokSection from "@/components/landing/who-uses-sttok-section";
 import TestimonialsSection from "@/components/landing/testimonials-section";
 import SecuritySection from "@/components/landing/security-section";
 import IntegrationsSection from "@/components/landing/integrations-section";
-import PricingAnchorSection from "@/components/landing/pricing-anchor-section";
 import CallToActionSection from "@/components/landing/cta-section";
 
 export default function Page() {
@@ -23,7 +22,6 @@ export default function Page() {
     "home-ai-section",
     "home-cta-section",
     "home-hero-section",
-    "home-pricing-anchor",
     "home-products-section",
     "home-security-section",
     "home-integrations-section",
@@ -42,7 +40,6 @@ export default function Page() {
       <TestimonialsSection />
       <SecuritySection />
       <IntegrationsSection />
-      <PricingAnchorSection />
       <CallToActionSection />
     </>
   );
