@@ -13,9 +13,10 @@
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/modulos/libro-de-socios-light.png",
-      "dark": "/modulos/libro-de-socios-dark.png"
-    }
+      "light": "/animaciones/accionistas-light-poster.webp",
+      "dark": "/animaciones/accionistas-dark-poster.webp"
+    },
+    "video": "/animaciones/accionistas"
   },
   "testimonials": {
     "title": "Testimonials",

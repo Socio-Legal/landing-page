@@ -13,9 +13,10 @@
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/funcionalidades/portal-del-accionista-light.png",
-      "dark": "/funcionalidades/portal-del-accionista-dark.png"
-    }
+      "light": "/animaciones/portal-del-accionista-light-poster.webp",
+      "dark": "/animaciones/portal-del-accionista-dark-poster.webp"
+    },
+    "video": "/animaciones/portal-del-accionista"
   },
   "testimonials": {
     "title": "Lo que dicen nuestros Clientes",

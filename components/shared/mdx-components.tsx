@@ -4,6 +4,7 @@ import path from "node:path";
 import Image from "next/image";
 import CatalogoFuncionalidades from "@/components/shared/catalogo-funcionalidades";
 import Link from "next/link";
+import VideoTema from "@/components/shared/video-tema";
 import type { MDXComponents } from "mdx/types";
 
 /** Ancho y alto de un PNG, leídos de su cabecera (bytes 16 a 23). */
@@ -19,15 +20,20 @@ function pngSize(file: string): { width: number; height: number } {
  * Se presenta sobre un panel neutro, con la pantalla saliendo del borde
  * inferior: sin marco ni sombra dura, la interfaz es lo único que se ve.
  * Ocupa el ancho del artículo, así que comparte eje izquierdo con el texto.
+ *
+ * Con `video`, la pantalla se enseña en movimiento (public/animaciones/<video>-*)
+ * desde sm; en móvil se queda el recorte estático, que es lo que se lee a 375 px.
  */
 const Captura = ({
   nombre,
   alt,
   pie,
+  video,
 }: {
   nombre: string;
   alt: string;
   pie?: string;
+  video?: string;
 }) => {
   const src = (variante: string, tema: string) =>
     `/funcionalidades/${nombre}${variante}-${tema}.png`;
@@ -60,7 +66,19 @@ const Captura = ({
     <figure className="my-14">
       <div className="overflow-hidden rounded-2xl bg-muted px-4 pt-4 sm:px-10 sm:pt-10 lg:px-14 lg:pt-14">
         <div className="overflow-hidden rounded-t-lg ring-1 ring-black/5 dark:ring-white/10">
-          {detalle ? (
+          {video ? (
+            <>
+              {detalle ? (
+                <>
+                  {img("-detalle", "light", detalle, "block sm:hidden dark:hidden")}
+                  {img("-detalle", "dark", detalle, "hidden dark:block dark:sm:hidden")}
+                </>
+              ) : null}
+              <div className={detalle ? "hidden sm:block" : undefined}>
+                <VideoTema base={`/animaciones/${video}`} alt={alt} className="h-auto w-full" />
+              </div>
+            </>
+          ) : detalle ? (
             <>
               {img("-detalle", "light", detalle, "block sm:hidden dark:hidden")}
               {img("-detalle", "dark", detalle, "hidden dark:block dark:sm:hidden")}

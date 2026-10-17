@@ -13,9 +13,10 @@
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/funcionalidades/portal-del-beneficiario-light.png",
-      "dark": "/funcionalidades/portal-del-beneficiario-dark.png"
-    }
+      "light": "/animaciones/portal-del-beneficiario-light-poster.webp",
+      "dark": "/animaciones/portal-del-beneficiario-dark-poster.webp"
+    },
+    "video": "/animaciones/portal-del-beneficiario"
   },
   "testimonials": {
     "title": "Testimonios de Clientes",

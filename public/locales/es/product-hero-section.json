@@ -18,9 +18,10 @@
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/capturas/sociedades-light.png",
-      "dark": "/capturas/sociedades-dark.png"
-    }
+      "light": "/animaciones/sociedades-light-poster.webp",
+      "dark": "/animaciones/sociedades-dark-poster.webp"
+    },
+    "video": "/animaciones/sociedades"
   },
   "modules": {
     "eyebrow": "Módulos",
