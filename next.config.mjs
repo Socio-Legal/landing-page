@@ -74,7 +74,7 @@ const nextConfig = {
   async headers() {
     return [
       {
-        source: "/animaciones/:archivo*",
+        source: "/:carpeta(animaciones|og)/:archivo*",
         headers: [
           {
             key: "Cache-Control",
