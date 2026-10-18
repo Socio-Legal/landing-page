@@ -14,7 +14,7 @@ const SELECCION = {
   ],
   "incentivos": [
     "Phantom shares y stock options",
-    "Restricted shares",
+    "Pool del plan",
     "Vesting y cliff",
     "Tender offers",
     "Carta de invitación",

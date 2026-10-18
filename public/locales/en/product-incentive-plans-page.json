@@ -37,7 +37,7 @@
     "items": [
       {
         "q": "Which instruments does it handle?",
-        "a": "Phantom shares, stock options and restricted shares. Each plan has its instrument, its conditions and its exercise price."
+        "a": "Phantom shares and stock options. Each plan has its instrument, its conditions and its exercise price."
       },
       {
         "q": "What does each beneficiary see?",
