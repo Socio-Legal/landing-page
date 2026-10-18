@@ -57,7 +57,9 @@ export function buildMetadata({
   // y su pantalla); las inglesas y las que no tienen, la general.
   const propia = locale === "es" ? OG_IMAGENES[path] : undefined;
   const ogImagen = propia ?? OG_IMAGE;
-  const ogAlt = propia ? `${title.split(" | ")[0]} · Sttok` : locale === "en"
+  const ogAlt = propia
+    ? `${title.split(" | ")[0]} · Sttok`
+    : locale === "en"
       ? "Sttok, corporate governance software"
       : "Sttok, software de gestión de sociedades";
 
