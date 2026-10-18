@@ -24,9 +24,9 @@
     {
       "id": 3,
       "title": "Board Secretaries and shareholder meetings",
-      "pain": "Notices by email, delegations on paper, quorums calculated by hand, minutes drafted after the fact.",
-      "with": "One-click notice, digital delegations, automatic quorum calculation, electronic voting and instantly generated minutes.",
-      "case": "PLD Space optimizes its meetings with multiple investor vehicles: centralized notices, delegations and votes, with zero manual tasks.",
+      "pain": "Notices by email, proxies on paper, quorums calculated by hand, minutes drafted after the fact.",
+      "with": "One-click notice, digital proxies, automatic quorum calculation, electronic voting and instantly generated minutes.",
+      "case": "PLD Space optimizes its meetings with multiple investor vehicles: centralized notices, proxies and votes, with zero manual tasks.",
       "icon": "Vote"
     },
     {
