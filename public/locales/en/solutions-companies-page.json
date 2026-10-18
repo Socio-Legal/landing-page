@@ -13,10 +13,10 @@
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/animaciones/diagrama-del-grupo-light-poster.webp",
-      "dark": "/animaciones/diagrama-del-grupo-dark-poster.webp"
+      "light": "/animaciones/en/diagrama-del-grupo-light-poster.webp",
+      "dark": "/animaciones/en/diagrama-del-grupo-dark-poster.webp"
     },
-    "video": "/animaciones/diagrama-del-grupo"
+    "video": "/animaciones/en/diagrama-del-grupo"
   },
   "testimonials": {
     "title": "Client Testimonials",

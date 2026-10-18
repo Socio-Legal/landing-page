@@ -18,10 +18,10 @@
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/animaciones/sociedades-light-poster.webp",
-      "dark": "/animaciones/sociedades-dark-poster.webp"
+      "light": "/animaciones/en/sociedades-light-poster.webp",
+      "dark": "/animaciones/en/sociedades-dark-poster.webp"
     },
-    "video": "/animaciones/sociedades"
+    "video": "/animaciones/en/sociedades"
   },
   "clientsLabel": "More than 250 clients keep their records in Sttok",
   "modules": {

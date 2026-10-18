@@ -13,10 +13,10 @@
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/animaciones/voto-electronico-en-juntas-light-poster.webp",
-      "dark": "/animaciones/voto-electronico-en-juntas-dark-poster.webp"
+      "light": "/animaciones/en/voto-electronico-en-juntas-light-poster.webp",
+      "dark": "/animaciones/en/voto-electronico-en-juntas-dark-poster.webp"
     },
-    "video": "/animaciones/voto-electronico-en-juntas"
+    "video": "/animaciones/en/voto-electronico-en-juntas"
   },
   "testimonials": {
     "title": "What Our Clients Say",
