@@ -13,10 +13,10 @@
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/animaciones/liquidez-planes-de-incentivos-light-poster.webp",
-      "dark": "/animaciones/liquidez-planes-de-incentivos-dark-poster.webp"
+      "light": "/animaciones/en/liquidez-planes-de-incentivos-light-poster.webp",
+      "dark": "/animaciones/en/liquidez-planes-de-incentivos-dark-poster.webp"
     },
-    "video": "/animaciones/liquidez-planes-de-incentivos"
+    "video": "/animaciones/en/liquidez-planes-de-incentivos"
   },
   "testimonials": {
     "title": "What Our Clients Say",
@@ -37,7 +37,7 @@
     "items": [
       {
         "q": "Which instruments does it handle?",
-        "a": "Phantom shares, stock options and restricted shares. Each plan has its instrument, its conditions and its exercise price."
+        "a": "Phantom shares and stock options. Each plan has its instrument, its conditions and its exercise price."
       },
       {
         "q": "What does each beneficiary see?",

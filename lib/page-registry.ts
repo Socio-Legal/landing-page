@@ -113,7 +113,7 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
       en: {
         title: "General meetings and board of directors: notice, voting and minutes",
         description: "Notice, signed proxies, early and live voting, quorum, minutes and certification for the general meeting and the board of directors.",
-      keywords: "shareholder meetings, board meetings, digital meeting management, convocations, vote delegations, digital minutes",
+        keywords: "shareholder meetings, board meetings, digital meeting management, meeting notices, proxy voting, digital minutes",
       },
     },
     softwareApplication: true,

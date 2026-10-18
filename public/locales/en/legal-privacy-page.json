@@ -28,7 +28,7 @@
     {
       "title": "3. Recipients and Categories of Data Processors",
       "content": [
-        "The data may be communicated to Public Registries, for contract execution; Public Administrations for compliance with legal obligations; Banking Entities for managing collections and invoice payments; and to duly selected Data Processors. Additionally, Sttok may transfer personal data to Processors located outside the European Economic Area, in which case Sttok will have previously adopted appropriate data protection guarantees to carry out the international data transfer."
+        "The data may be communicated to Public Registries, for contract execution; Public Administrations for compliance with legal obligations; Banking Entities for managing collections and invoice payments; and to duly selected Data Processors."
       ]
     },
     {
@@ -71,6 +71,11 @@
               "Persistent \n\nPersistent \n\nPersistent"
             ],
             [
+              "Advertising: these cookies measure the effectiveness of advertising campaigns and manage the ads shown to the user. They are only installed if the user accepts them.",
+              "_gcl_au – Google Ads",
+              "90 days"
+            ],
+            [
               "Technical: these are cookies that allow the user to navigate through a web page, platform or application and use the different options or services that exist in it, including those that the publisher uses to allow the management and operation of the web page and enable its functions and services, such as, for example, controlling traffic and data communication, identifying the session, accessing restricted access parts, remembering the elements that make up an order, carrying out the purchase process of an order, managing payment, controlling fraud linked to the security of the service, carrying out the request for registration or participation in an event, counting visits for the purpose of billing licenses for the software with which the service works (website, platform or application), using security elements during navigation, storing content for the dissemination of videos or sound, enabling dynamic content (for example, loading animation of a text or image) or sharing content through social networks.",
               "_lr_hb_-audwrk%2Fsttok – Own",
               "Persistent"
@@ -83,7 +88,7 @@
           ]
         },
         "4. How can I block or delete the cookies used by this Website?",
-        "The user can allow, block or delete cookies through the configuration panel made available to him. In addition, it should be noted that, if you accept third-party cookies, you can delete them from your browser options or from the system offered by the third party itself.",
+        "The user can allow, block or delete cookies through the configuration panel, which can be reopened at any time from the “Cookie settings” link in the footer. In addition, it should be noted that, if you accept third-party cookies, you can delete them from your browser options or from the system offered by the third party itself.",
         "Blocking the installation of cookies does not prevent the effective use of the Website by the user",
         "You can find out about transfers to third countries that, where applicable, the third parties identified in the table above make in their respective policies. In the case of Google it would be: https://www.google.com/about/company/user-consent-policy-help/ and in the case of Mixpanel it would be: https://mixpanel.com/legal/privacy-policy/"
       ]

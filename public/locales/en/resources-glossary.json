@@ -42,7 +42,7 @@
     },
     {
       "term": "Quorum",
-      "def": "The minimum percentage of capital that must be present or represented for the meeting to be validly held and vote.",
+      "def": "In a public limited company (SA), the minimum capital present or represented for the meeting to be validly constituted: 25% on first call and any amount on second call, unless the law or the bylaws require more (articles 193 and 194 LSC). In a limited liability company (SL) there is no legal quorum: what counts are the voting majorities.",
       "href": "/en/shareholder-meetings"
     },
     {
@@ -52,7 +52,7 @@
     },
     {
       "term": "Board of directors",
-      "def": "The collegiate body that manages the company when there is no sole director. Its meetings, votes and minutes follow their own rules.",
+      "def": "The collegiate management body. It is one of the forms allowed by law, alongside a sole director and several directors acting jointly or severally (article 210 LSC). Its meetings, votes and minutes follow their own rules.",
       "href": "/en/shareholder-meetings"
     },
     {

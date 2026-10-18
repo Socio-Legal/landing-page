@@ -28,7 +28,7 @@
     {
       "icon": "Icon04",
       "title": "Shareholder Meetings",
-      "description": "Manage meetings: Convening, delegations, voting, etc.",
+      "description": "Manage meetings: notices, proxies, voting, etc.",
       "link": "/meetings-boards/"
     },
     {
@@ -49,7 +49,7 @@
     {
       "icon": "Icon08",
       "title": "Board of Directors",
-      "description": "Digitally manage convening, delegations, voting, etc."
+      "description": "Digitally manage notices, proxies, voting, etc."
     },
     {
       "icon": "Icon09",

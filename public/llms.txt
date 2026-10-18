@@ -23,7 +23,7 @@ Sttok no es una herramienta de cap table para simular rondas de inversión. Resu
 
 - **Libro de socios y libro registro de acciones nominativas.** Registro oficial conforme a la legislación española, con numeración, clases, cargas, cotitulares y generación de certificados de titularidad.
 - **Juntas y consejos.** Convocatoria, acreditación, delegaciones de voto, votación electrónica, acta y certificación. Cubre junta general y consejo de administración, y sus equivalentes en otras jurisdicciones: asamblea general de accionistas, junta directiva y directorio.
-- **Planes de incentivos.** Phantom shares, stock options, restricted shares y planes de vesting, con portal individual para cada beneficiario.
+- **Planes de incentivos.** Phantom shares, stock options y planes de vesting, con portal individual para cada beneficiario.
 - **Simulador de operaciones.** Ampliaciones de capital, valoraciones y escenarios de liquidación aplicados al accionariado completo.
 - **Grupos de sociedades.** Gestión de todas las sociedades de un grupo desde un mismo acceso.
 - **Portal del inversor.** Cada socio o accionista consulta su posición, su histórico y la documentación que la sociedad comparte.
@@ -77,7 +77,7 @@ Sttok opera también con clientes en Latinoamérica y Andorra. La plataforma ges
 
 ## Precios
 
-Planes por sociedad y año, con comunicaciones incluidas, puesta en marcha en unas horas por sociedad y soporte en español e inglés.
+Planes por sociedad y año, IVA no incluido, con comunicaciones incluidas, puesta en marcha en unas horas por sociedad y soporte en español e inglés.
 
 - **Básico**: 450 €/año. Hasta 10 socios o beneficiarios. Libro de socios, planes de incentivos y simulador.
 - **Avanzado**: 650 €/año. Hasta 20 socios o beneficiarios. Añade juntas, consejo de administración y firma electrónica.
@@ -116,16 +116,21 @@ Funcionalidad con coste adicional: mercado secundario.
 - Guías de derecho societario: https://www.sttok.com/guias
 - Guía: plantillas societarias, qué debe constar en una convocatoria, un acta y un certificado: https://www.sttok.com/guias/plantillas-societarias
 - Guía: fiscalidad de phantom shares y stock options en España tras la Ley de Startups: https://www.sttok.com/guias/fiscalidad-phantom-shares-stock-options
+- Guía: sociedad unipersonal y socio único, declaración, decisiones y contratos con la matriz: https://www.sttok.com/guias/sociedad-unipersonal-socio-unico
 - Guía: titular real y Registro de Titularidades Reales en grupos de sociedades: https://www.sttok.com/guias/titular-real-grupos-sociedades
 - Guía: libro de actas de junta y de consejo, contenido, aprobación, certificaciones y legalización telemática: https://www.sttok.com/guias/libro-de-actas
 - Guía: libro registro de socios, cómo llevarlo y cómo legalizarlo en el Registro Mercantil: https://www.sttok.com/guias/libro-registro-socios-legalizacion
 - Guía: convocatoria de la junta general, quién convoca, cómo se publica y con qué plazo: https://www.sttok.com/guias/convocatoria-junta-general
+- Guía: junta ordinaria y cuentas anuales, formulación, aprobación, depósito y plazos: https://www.sttok.com/guias/junta-ordinaria-y-cuentas-anuales
 - Guía: junta general telemática, requisitos legales y cómo celebrarla: https://www.sttok.com/guias/junta-general-telematica
+- Guía: representación y delegación de voto en la junta general, quién puede representar al socio y cómo: https://www.sttok.com/guias/representacion-y-delegacion-de-voto-junta
 - Guía: junta universal, requisitos, acta y diferencias con la junta convocada y con las decisiones del socio único: https://www.sttok.com/guias/junta-universal
+- Guía: vencimiento del cargo de administrador, duración, caducidad, renovación e inscripción: https://www.sttok.com/guias/vencimiento-cargos-administradores
 - Guía: un socio quiere vender, derecho de adquisición preferente y restricciones estatutarias: https://www.sttok.com/guias/derecho-de-adquisicion-preferente
 - Guía: reconstruir un libro de socios desactualizado a partir de las escrituras: https://www.sttok.com/guias/reconstruir-libro-de-socios
 - Guía: cotitularidad, usufructo y nuda propiedad en el libro de socios: https://www.sttok.com/guias/cotitularidad-usufructo-nuda-propiedad
 - Guía: fallece un socio, herencia de participaciones y libro de socios: https://www.sttok.com/guias/herencia-de-participaciones
+- Guía: protocolo familiar, pacto de socios y estatutos, qué va en cada uno y a quién obliga: https://www.sttok.com/guias/protocolo-familiar-pacto-de-socios-estatutos
 - Guía: valoración anual de participaciones y acciones en los estatutos, qué precio se aplica en cada caso: https://www.sttok.com/guias/valoracion-anual-acciones-estatutos
 - Board portals en España, comparativa: https://www.sttok.com/comparativas/board-portal-espana
 - Software para libro de socios, juntas y consejo en España, comparativa: https://www.sttok.com/comparativas/software-libro-de-socios
@@ -183,6 +188,14 @@ Funcionalidad con coste adicional: mercado secundario.
 - Permisos por sociedad: https://www.sttok.com/funcionalidades/permisos-por-sociedad
 - Colecciones de sociedades: https://www.sttok.com/funcionalidades/colecciones-de-sociedades
 - Cuentas depositadas en el Registro Mercantil: https://www.sttok.com/funcionalidades/cuentas-depositadas
+- Calendario societario: cuentas, junta ordinaria, depósito, libros y cargos con su plazo: https://www.sttok.com/funcionalidades/calendario-societario
+- Legalización telemática del libro registro de socios: https://www.sttok.com/funcionalidades/legalizacion-del-libro-registro
+- Sttok AI: preguntas sobre el registro de la sociedad y del grupo: https://www.sttok.com/funcionalidades/sttok-ai
+- Documentación societaria: escrituras, actas, poderes y certificados por sociedad: https://www.sttok.com/funcionalidades/documentacion-societaria
+- Plan de phantom shares y stock options: cartas de invitación, firma y vesting: https://www.sttok.com/funcionalidades/phantom-shares-y-stock-options
+- Cascada de liquidación con preferencias por clase: https://www.sttok.com/funcionalidades/cascada-de-liquidacion
+- Borradores de escritura y certificación desde la operación simulada: https://www.sttok.com/funcionalidades/borradores-de-documentos
+- Ofertas de compra y venta de acciones entre socios: https://www.sttok.com/funcionalidades/ofertas-de-compra-y-venta-de-acciones
 - Equipo: https://www.sttok.com/sobre-nosotros
 - Blog: https://blog.sttok.com/recursos
 - Dossier comercial (español): https://www.sttok.com/docs/sttok-dossier-es.pdf

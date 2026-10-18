@@ -37,7 +37,7 @@
     "items": [
       {
         "q": "¿Qué instrumentos gestiona?",
-        "a": "Phantom shares, stock options y restricted shares. Cada plan tiene su instrumento, sus condiciones y su precio de ejercicio."
+        "a": "Phantom shares y stock options. Cada plan tiene su instrumento, sus condiciones y su precio de ejercicio."
       },
       {
         "q": "¿Qué ve cada beneficiario?",

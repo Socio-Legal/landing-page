@@ -1,8 +1,8 @@
 {
   "metadata": {
     "title": "Meetings and Boards",
-    "description": "Efficiently manage shareholder meetings and board meetings with Sttok, including convocations, delegations, votes, and minutes.",
-    "keywords": "shareholder meetings, board meetings, digital meeting management, convocations, vote delegations, digital minutes"
+    "description": "Efficiently manage shareholder meetings and board meetings with Sttok, including notices, proxies, votes, and minutes.",
+    "keywords": "shareholder meetings, board meetings, digital meeting management, meeting notices, proxy voting, digital minutes"
   },
   "hero": {
     "slogan": "Meetings and boards",
@@ -13,10 +13,10 @@
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/animaciones/voto-electronico-en-juntas-light-poster.webp",
-      "dark": "/animaciones/voto-electronico-en-juntas-dark-poster.webp"
+      "light": "/animaciones/en/voto-electronico-en-juntas-light-poster.webp",
+      "dark": "/animaciones/en/voto-electronico-en-juntas-dark-poster.webp"
     },
-    "video": "/animaciones/voto-electronico-en-juntas"
+    "video": "/animaciones/en/voto-electronico-en-juntas"
   },
   "testimonials": {
     "title": "What Our Clients Say",

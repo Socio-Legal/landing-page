@@ -8,10 +8,10 @@
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/animaciones/compraventa-light-poster.webp",
-      "dark": "/animaciones/compraventa-dark-poster.webp"
+      "light": "/animaciones/en/compraventa-light-poster.webp",
+      "dark": "/animaciones/en/compraventa-dark-poster.webp"
     },
-    "video": "/animaciones/compraventa"
+    "video": "/animaciones/en/compraventa"
   },
   "faq": {
     "eyebrow": "FAQ",

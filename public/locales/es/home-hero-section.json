@@ -10,6 +10,10 @@
     "secondaryButton": {
       "text": "Ver funcionalidades",
       "link": "/producto"
+    },
+    "video": {
+      "base": "/animaciones/panel",
+      "alt": "Panel de una sociedad en Sttok: capital social, reparto entre ramas familiares, juntas y vencimientos"
     }
   }
 }

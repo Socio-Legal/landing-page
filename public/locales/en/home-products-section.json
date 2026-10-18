@@ -12,48 +12,48 @@
       "title": "Shareholders",
       "content": "Cap table, Official Shareholder Register, %, shareholder access, etc",
       "image": {
-        "light": "/animaciones/accionistas-light-poster.webp",
-        "dark": "/animaciones/accionistas-dark-poster.webp"
+        "light": "/animaciones/en/accionistas-light-poster.webp",
+        "dark": "/animaciones/en/accionistas-dark-poster.webp"
       },
       "icon": "BarChart3",
-      "video": "/animaciones/accionistas",
-      "duracion": 20500
+      "video": "/animaciones/en/accionistas",
+      "duracion": 22500
     },
     {
       "id": 2,
       "title": "Incentive Plans",
       "content": "Phantoms, stock options, employee access, vesting, etc",
       "image": {
-        "light": "/animaciones/liquidez-planes-de-incentivos-light-poster.webp",
-        "dark": "/animaciones/liquidez-planes-de-incentivos-dark-poster.webp"
+        "light": "/animaciones/en/liquidez-planes-de-incentivos-light-poster.webp",
+        "dark": "/animaciones/en/liquidez-planes-de-incentivos-dark-poster.webp"
       },
       "icon": "Brain",
-      "video": "/animaciones/liquidez-planes-de-incentivos",
-      "duracion": 20000
+      "video": "/animaciones/en/liquidez-planes-de-incentivos",
+      "duracion": 23000
     },
     {
       "id": 3,
       "title": "Meetings and Boards",
-      "content": "Digital convening, delegations, voting, etc",
+      "content": "Digital notices, proxies, voting, etc",
       "image": {
-        "light": "/animaciones/voto-electronico-en-juntas-light-poster.webp",
-        "dark": "/animaciones/voto-electronico-en-juntas-dark-poster.webp"
+        "light": "/animaciones/en/voto-electronico-en-juntas-light-poster.webp",
+        "dark": "/animaciones/en/voto-electronico-en-juntas-dark-poster.webp"
       },
       "icon": "LineChart",
-      "video": "/animaciones/voto-electronico-en-juntas",
-      "duracion": 20000
+      "video": "/animaciones/en/voto-electronico-en-juntas",
+      "duracion": 25500
     },
     {
       "id": 4,
       "title": "Operations Simulator",
       "content": "Calculation of rounds, capital increases, convertible notes, etc",
       "image": {
-        "light": "/animaciones/simulador-light-poster.webp",
-        "dark": "/animaciones/simulador-dark-poster.webp"
+        "light": "/animaciones/en/simulador-light-poster.webp",
+        "dark": "/animaciones/en/simulador-dark-poster.webp"
       },
       "icon": "FileText",
-      "video": "/animaciones/simulador",
-      "duracion": 16500
+      "video": "/animaciones/en/simulador",
+      "duracion": 20000
     }
   ]
 }
