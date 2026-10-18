@@ -1,0 +1,74 @@
+---
+title: "Borradores de escritura y certificación de acuerdos en Word, desde la operación simulada"
+description: "El simulador de Sttok genera los borradores de cada operación simulada: certificación del acuerdo de la junta y escritura de aumento o reducción de capital, escritura de compraventa o contrato de préstamo convertible, con los datos del libro y los huecos por rellenar marcados."
+slug: "/funcionalidades/borradores-de-documentos"
+section: "funcionalidades"
+canonical: "https://www.sttok.com/funcionalidades/borradores-de-documentos"
+---
+
+# Borradores de escritura y certificación, desde la operación simulada
+
+Cada operación del simulador de Sttok sale con sus borradores: la certificación del acuerdo de la junta, la escritura de aumento o de reducción de capital, la de compraventa o el contrato de préstamo convertible. Llevan los datos del libro y de la simulación: capital, numeración, suscriptores y desembolsos. Lo que la simulación no sabe queda marcado como hueco. Se editan en pantalla y se descargan en Word.
+
+<Captura
+  nombre="borradores-de-documentos"
+  alt="Borrador de escritura de aumento de capital generado por el simulador de Sttok, con los datos de la sociedad, la numeración de las nuevas acciones, la tabla de suscriptores y los huecos por rellenar resaltados"
+  pie="Borrador de escritura de aumento de capital, con diez huecos por rellenar. Datos de ejemplo."
+/>
+
+## Qué borradores salen de cada operación
+
+| Operación simulada | Borradores |
+|---|---|
+| Ampliación de capital | Certificación del acuerdo de la junta y escritura de aumento de capital |
+| Reducción de capital | Certificación del acuerdo de la junta y escritura de reducción de capital |
+| Compraventa | Escritura de compraventa, rotulada en participaciones o en acciones según la forma de la sociedad |
+| Nota convertible | Contrato de préstamo convertible |
+
+## Qué rellena Sttok y qué queda por rellenar
+
+El borrador toma del registro la denominación, el domicilio, los datos registrales y el capital antes de la operación. De la simulación toma el importe, el nominal, la prima, el tipo de emisión y la tabla de suscriptores. La numeración de las nuevas acciones sale del libro: de la siguiente a la última emitida, sin teclearla.
+
+Quedan como huecos resaltados los datos que la simulación no conoce. Son el número de protocolo, la fecha del otorgamiento, el notario, el DNI del compareciente o el artículo de los estatutos que se modifica. También las decisiones que corresponden al abogado, como la renuncia o la supresión del derecho de suscripción preferente. La cabecera cuenta cuántos huecos quedan y baja cada vez que se rellena uno.
+
+## Cómo se trabaja con el borrador
+
+1. En la simulación, el botón de documento de cada paso abre la lista de borradores de esa operación.
+2. El borrador se abre en un editor de página con formato de texto, listas y deshacer.
+3. Los huecos se rellenan en el propio texto. Al quitar los corchetes, el hueco deja de estar resaltado.
+4. «Regenerar» vuelve a componer el borrador si la simulación ha cambiado.
+5. «Descargar .docx» lo baja en Word para seguir con el notario o con el despacho.
+
+## El abogado prepara la escritura antes de que la junta vote
+
+La simulación se monta con los números que se van a proponer a la junta. El borrador de la certificación y el de la escritura salen de esos mismos números. Si la junta cambia el importe o un suscriptor, se ajusta la simulación y se regenera el borrador.
+
+## Varios suscriptores con importes distintos
+
+La tabla de suscriptores de la escritura lleva a cada uno con sus acciones, su clase, su numeración y su desembolso. Los rangos se asignan en el orden de la simulación, sin solaparse, igual que en la [numeración por rangos](/funcionalidades/numeracion-por-rangos) del libro.
+
+## Preguntas frecuentes
+
+**¿El borrador sustituye al trabajo del notario o del abogado?**
+No. Es un punto de partida con los datos ya cuadrados. La redacción final y las decisiones jurídicas son de quien firma.
+
+**¿Se puede editar el borrador en Sttok?**
+Sí. El editor permite cambiar el texto y el formato antes de descargarlo.
+
+**¿Qué pasa con el libro de socios al generar el borrador?**
+Nada. La simulación no registra nada. Cuando la operación se firma, se da de alta con su escritura y el libro se actualiza; se explica en [ampliaciones y reducciones de capital](/funcionalidades/ampliaciones-y-reducciones-de-capital).
+
+**¿En qué formato se descarga?**
+En Word (.docx).
+
+**¿Sirven para una sociedad limitada?**
+Sí. La unidad sale de la forma de la sociedad: participaciones en la limitada y acciones en la anónima. Una escritura con la unidad equivocada no se puede firmar.
+
+**¿Y en Latinoamérica?**
+Los modelos siguen el derecho español. La plataforma usa la denominación de cada país, como asamblea general de accionistas; la adecuación a la normativa de cada país se valora caso por caso.
+
+## Sttok en cifras
+
+Más de 250 clientes gestionan más de 500 sociedades con Sttok, una media de dos por cliente que refleja el perfil de grupo. Gestionan más de 250.000 socios y accionistas. La puesta en marcha lleva unas horas por sociedad.
+
+[Solicita una demo](https://calendly.com/sttok/30min) o consulta los [precios](/precios). Los borradores forman parte del [simulador de operaciones](/simulador).

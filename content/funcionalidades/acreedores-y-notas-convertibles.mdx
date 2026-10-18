@@ -8,7 +8,7 @@ canonical: "https://www.sttok.com/funcionalidades/acreedores-y-notas-convertible
 
 # Acreedores y notas convertibles
 
-Sttok lleva un listado de quien ha prestado dinero a la sociedad mediante una nota convertible. Cada nota guarda una sola vez su vencimiento, su interés, su techo de valoración, su descuento y el hecho que la dispara. Cada acreedor tiene su ficha, con lo prestado y las acciones que recibiría si la nota convirtiera hoy.
+Sttok lleva un listado de quien ha prestado dinero a la sociedad mediante una nota convertible. Cada nota guarda una sola vez su vencimiento, su interés, su techo de valoración, su descuento y el hecho que la dispara. Cada acreedor tiene su ficha, con lo prestado y las acciones que recibiría si la nota convirtiera hoy. Su efecto de dilución se ve en el cap table y en la ficha de cada socio.
 
 <Captura
   nombre="acreedores-y-notas-convertibles"
@@ -53,9 +53,21 @@ La misma persona tiene dos posiciones: unas acciones y un crédito. Su ficha de 
 
 El porcentaje que muestra la ficha del acreedor es siempre condicional. Indica qué parte del capital totalmente diluido tendría si la nota convirtiera hoy, y lo dice en el rótulo.
 
+## La nota se registra y su dilución se ve en el cap table
+
+Una nota convertible no es una simulación: se registra en Sttok con sus condiciones y sus suscriptores, y desde ese momento forma parte del capital diluido. El libro de socios la muestra en su propia fila, Notas convertibles en vigor. El panel de la sociedad la suma al capital totalmente diluido.
+
+Cada socio ve en su [ficha](/funcionalidades/ficha-del-socio) cuánto perdería si todo convierte. La cifra «Dilución máx.» dice cuántos puntos de capital bajaría su posición si convirtieran las notas vivas y el resto de instrumentos.
+
+<Captura
+  nombre="acreedores-y-notas-convertibles-dilucion"
+  alt="Bloque de posición de la ficha de un socio en Sttok, con sus acciones, su porcentaje del capital no diluido y la cifra Dilución máxima en puntos si todo convierte"
+  pie="Posición de un socio, con la dilución máxima si todo convierte. Datos de ejemplo."
+/>
+
 ## Se acerca la ronda y hay que calcular la dilución
 
-El panel de la sociedad suma las notas convertibles vivas al capital diluido. El [simulador](/simulador) las incluye al calcular el capital potencial de una operación. Así se ve cuánto pesarían los acreedores antes de cerrar la ronda.
+El [simulador](/simulador) incluye las notas registradas al calcular el capital potencial de una operación. En una ampliación, la nota convierte con su techo y su descuento, y el resultado enseña cuánto pesarían los acreedores antes de cerrar la ronda. Cuando la conversión se firma, se da de alta y el acreedor pasa a ser socio con sus acciones numeradas.
 
 ## Preguntas frecuentes
 

@@ -1,0 +1,76 @@
+---
+title: "Cascada de liquidación: qué cobra cada socio en una venta, con las preferencias de cada clase"
+description: "El simulador de Sttok calcula la cascada de liquidación sobre el libro real: a un precio de venta, qué cobra cada clase con preferencia, qué queda para el resto y qué recibe cada socio, con su rentabilidad sobre lo invertido."
+slug: "/funcionalidades/cascada-de-liquidacion"
+section: "funcionalidades"
+canonical: "https://www.sttok.com/funcionalidades/cascada-de-liquidacion"
+---
+
+# Cascada de liquidación: qué cobra cada socio si se vende la sociedad
+
+El simulador de Sttok calcula la cascada de liquidación sobre el libro de socios real. Se escribe un precio de venta de la sociedad y la tabla dice qué cobra primero cada clase con preferencia, qué queda para el resto y cuánto recibe cada titular. Al lado figura lo que invirtió y su rentabilidad. Nada se registra en el libro.
+
+<Captura
+  nombre="cascada-de-liquidacion"
+  alt="Cascada de liquidación en el simulador de Sttok: el precio de venta, la elección entre pari passu y por antigüedad, lo que va a las preferencias y al resto, y lo que cobra cada titular con su inversión y su rentabilidad"
+  pie="Cascada de liquidación al final de una simulación. Datos de ejemplo."
+/>
+
+## Qué muestra la cascada
+
+| Bloque | Qué indica |
+|---|---|
+| Precio de venta de la sociedad | El importe que se reparte. Por defecto, el post-money de la última ampliación de la simulación |
+| Orden entre preferentes | Pari passu, todas las preferentes a la vez, o por antigüedad, de la más reciente a la más antigua |
+| A las preferencias | Lo que se llevan las clases con preferencia antes del reparto |
+| Al resto | Lo que se reparte a prorrata de las acciones |
+| Por acción ordinaria | Lo que cobra cada acción sin preferencia |
+| Cobra, por titular | El importe de cada titular y si le viene de su preferencia o de sus acciones |
+| Invertido y ROI | Lo que puso cada titular, cuando el registro lo tiene, y el múltiplo sobre esa inversión |
+| Por clase | La preferencia de cada clase, lo que le toca del resto y si le compensa convertir |
+
+## Cómo se calcula
+
+1. La cascada se abre en el resultado de cualquier simulación, al final de la cadena de operaciones. Parte del registro de hoy, no de una copia.
+2. Se escribe el precio de venta. Si ninguna clase tiene preferencia, el precio se reparte a prorrata de las acciones y la pantalla lo dice.
+3. Si hay dos o más clases con preferencia, se elige el orden entre ellas. La lista enseña cada clase con su fecha, y con el orden por antigüedad cada clase dice qué puesto ocupa.
+4. Cada clase cobra su preferencia, con su múltiplo y su condición de participativa o no participativa. Una no participativa convierte si le sale más a cuenta cobrar por acciones, y la tabla por clase lo marca.
+5. La autocartera no cobra, y la fila lo indica con su artículo.
+
+## Llega una oferta de compra por la sociedad
+
+Antes de negociar, el consejo quiere saber cuánto llega a cada socio con el precio ofrecido. La cascada da la cifra de cada titular y de cada clase con las preferencias pactadas. Si el precio cambia, se escribe el nuevo y la tabla se recalcula.
+
+## Los inversores de la última ronda tienen preferencia de liquidación
+
+La preferencia de cada clase se declara una vez en [clases de acciones](/funcionalidades/clases-de-acciones), y la cascada la aplica. Una preferencia 1x no participativa cobra lo invertido o convierte, lo que sea mayor. Una participativa cobra su preferencia y además su parte del resto.
+
+## La venta va después de una ampliación que todavía no se ha firmado
+
+La simulación encadena operaciones: primero la ampliación o la conversión de una nota, después la venta. La cascada se calcula sobre el capital que resulta al final de la cadena, con las clases nuevas que haya creado la ampliación.
+
+## Preguntas frecuentes
+
+**¿La cascada cambia el libro de socios?**
+No. Es parte de una simulación, que no registra nada. El libro solo cambia cuando la operación real se da de alta.
+
+**¿Qué diferencia hay entre pari passu y por antigüedad?**
+En pari passu, todas las clases preferentes cobran a la vez y, si el precio no llega, se reparte a prorrata de sus preferencias. Por antigüedad, cobra entera la clase más reciente y la siguiente solo cobra lo que quede.
+
+**¿Por qué algunos titulares no tienen rentabilidad?**
+Porque el registro no tiene el dato de lo que invirtieron. Sttok solo la calcula cuando ese dato existe.
+
+**¿Se puede sacar a Excel?**
+Sí. La cascada va también en la hoja de Excel de la simulación, con la misma hipótesis de precio y de orden.
+
+**¿Se puede guardar el escenario?**
+Sí. La hipótesis de precio y de orden se guarda con la simulación, que se comparte con los administradores.
+
+**¿Sirve para sociedades de Latinoamérica?**
+Sí. El cálculo es el mismo con independencia del país. La plataforma usa la denominación de cada país; la adecuación a la normativa de cada país se valora caso por caso.
+
+## Sttok en cifras
+
+Más de 250 clientes gestionan más de 500 sociedades con Sttok, una media de dos por cliente que refleja el perfil de grupo. Gestionan más de 250.000 socios y accionistas. La puesta en marcha lleva unas horas por sociedad.
+
+[Solicita una demo](https://calendly.com/sttok/30min) o consulta los [precios](/precios). La cascada forma parte del [simulador de operaciones](/simulador).
