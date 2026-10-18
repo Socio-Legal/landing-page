@@ -80,7 +80,7 @@ const AiSection: FC = () => {
                     </div>
                     <div>
                       <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground mb-1.5">
-                        Pregunta a Sttok AI
+                        {t("labels.prompt")}
                       </p>
                       <p className="text-sm text-foreground leading-snug">
                         {example.prompt}
@@ -91,7 +91,7 @@ const AiSection: FC = () => {
                 {/* Result block */}
                 <div className="p-5">
                   <p className="text-xs font-medium uppercase tracking-widest text-brand mb-1.5">
-                    Respuesta
+                    {t("labels.answer")}
                   </p>
                   <p className="text-sm text-muted-foreground leading-snug">
                     {example.result}
@@ -105,7 +105,7 @@ const AiSection: FC = () => {
         {/* Guardrails strip */}
         <div className="rounded-lg border border-border bg-backgroundbrand p-6 md:p-8 max-w-5xl mx-auto">
           <p className="text-center text-xs font-medium uppercase tracking-widest text-muted-foreground mb-6">
-            Confianza por defecto
+            {t("labels.guardrails")}
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
             {guardrails.map((g, i) => {
@@ -133,7 +133,7 @@ const AiSection: FC = () => {
             onClick={() => trackMeetingClick("ai-section")}
             className="inline-flex items-center gap-2 text-sm font-medium text-brand hover:underline"
           >
-            Ver Sttok AI en acción en una demo
+            {t("labels.demo")}
             <ArrowRightIcon className="h-4 w-4" />
           </Link>
         </div>

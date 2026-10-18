@@ -82,7 +82,10 @@ export function buildMetadata({
           url: OG_IMAGE,
           width: 1200,
           height: 630,
-          alt: "Sttok, software de gestión de sociedades",
+          alt:
+            locale === "en"
+              ? "Sttok, corporate governance software"
+              : "Sttok, software de gestión de sociedades",
         },
       ],
     },

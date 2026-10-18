@@ -9,7 +9,7 @@
     },
     "secondaryButton": {
       "text": "See features",
-      "link": "/producto"
+      "link": "/en/product"
     },
     "video": {
       "base": "/animaciones/en/panel",

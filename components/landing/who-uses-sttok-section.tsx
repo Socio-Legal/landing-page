@@ -74,7 +74,7 @@ const WhoUsesSttokSection: FC = () => {
                 <div className="space-y-4 flex-1">
                   <div>
                     <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-1.5">
-                      Hoy
+                      {t("labels.today")}
                     </p>
                     <p className="text-sm leading-relaxed text-muted-foreground">
                       {item.pain}
@@ -83,7 +83,7 @@ const WhoUsesSttokSection: FC = () => {
 
                   <div className="flex items-center gap-2 text-xs text-brand">
                     <ArrowRight className="h-3 w-3" />
-                    <span className="font-medium">Con Sttok</span>
+                    <span className="font-medium">{t("labels.withSttok")}</span>
                   </div>
 
                   <div>
@@ -95,7 +95,7 @@ const WhoUsesSttokSection: FC = () => {
 
                 <div className="mt-6 pt-6 border-t border-border">
                   <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-2">
-                    Caso real
+                    {t("labels.realCase")}
                   </p>
                   <p className="text-sm leading-snug text-foreground italic">
                     {item.case}

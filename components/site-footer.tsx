@@ -78,7 +78,11 @@ export function SiteFooter() {
                   <Link
                     key={link.id}
                     href={link.url ? localizedHref(link.url, locale) : "#"}
-                    title={link.alt}
+                    title={
+                      link.alt
+                        ? t(`footerLinkTitle.${link.id}`, { defaultValue: link.alt })
+                        : undefined
+                    }
                     className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                   >
                     {t(link.title)}
@@ -99,7 +103,7 @@ export function SiteFooter() {
               <div key={i} className="relative h-8 w-20">
                 <Image
                   src={logo}
-                  alt="Certificado de seguridad"
+                  alt={t("securityLogoAlt", { defaultValue: "Certificado de seguridad" })}
                   fill
                   style={{ objectFit: "contain" }}
                   className="opacity-70"

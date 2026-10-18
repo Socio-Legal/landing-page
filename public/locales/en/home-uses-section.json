@@ -53,5 +53,10 @@
       "case": "IT teams roll out Sttok as the corporate standard for their legal and corporate departments, with security validated by their CISO.",
       "icon": "ServerCog"
     }
-  ]
+  ],
+  "labels": {
+    "today": "Today",
+    "withSttok": "With Sttok",
+    "realCase": "Real case"
+  }
 }

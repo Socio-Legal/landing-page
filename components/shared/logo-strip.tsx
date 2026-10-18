@@ -8,6 +8,7 @@ import {
   getClientLogo,
   getClientLogoScale,
 } from "@/config/client-logos";
+import { useLocale } from "@/lib/use-locale";
 
 type LogoName = keyof typeof clientLogos;
 
@@ -50,7 +51,12 @@ const ROW =
  * Tira de logos de clientes en dos niveles: los más potentes primero,
  * más grandes; el resto debajo, más discreto. Grayscale siempre.
  */
-const LogoStrip: FC<LogoStripProps> = ({ label, primary, secondary }) => (
+const LogoStrip: FC<LogoStripProps> = ({ label, primary, secondary }) => {
+  const en = useLocale() === "en";
+  const alt = (name: string) =>
+    en ? `${name}, a Sttok customer` : `${name}, cliente de Sttok`;
+
+  return (
   <div className="text-center">
     {label && (
       <div className="mb-8 flex items-center justify-center gap-5">
@@ -78,7 +84,7 @@ const LogoStrip: FC<LogoStripProps> = ({ label, primary, secondary }) => (
         >
           <Image
             src={getClientLogo(name)}
-            alt={`${name}, cliente de Sttok`}
+            alt={alt(name)}
             title={name}
             fill
             sizes="128px"
@@ -104,7 +110,7 @@ const LogoStrip: FC<LogoStripProps> = ({ label, primary, secondary }) => (
           >
             <Image
               src={getClientLogo(name)}
-              alt={`${name}, cliente de Sttok`}
+              alt={alt(name)}
               title={name}
               fill
               sizes="96px"
@@ -119,6 +125,7 @@ const LogoStrip: FC<LogoStripProps> = ({ label, primary, secondary }) => (
       </div>
     )}
   </div>
-);
+  );
+};
 
 export default LogoStrip;

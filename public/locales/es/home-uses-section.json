@@ -53,5 +53,10 @@
       "case": "Equipos de IT despliegan Sttok como estándar corporativo para su departamento jurídico y societario, con la seguridad validada por su CISO.",
       "icon": "ServerCog"
     }
-  ]
+  ],
+  "labels": {
+    "today": "Hoy",
+    "withSttok": "Con Sttok",
+    "realCase": "Caso real"
+  }
 }

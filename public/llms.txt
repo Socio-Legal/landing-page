@@ -208,3 +208,29 @@ Sttok Barcelona, S.L. — C/ Ausias Marc 7, 3ª planta, 08010 Barcelona, España
 ## Idiomas
 
 Español, inglés
+
+## English version
+
+The product, solution and company pages are also available in English:
+
+- Home: https://www.sttok.com/en
+- Product overview: https://www.sttok.com/en/product
+- Features catalogue: https://www.sttok.com/en/features
+- Shareholder register: https://www.sttok.com/en/partners-book
+- General meetings and board of directors: https://www.sttok.com/en/shareholder-meetings
+- Incentive plans (phantom shares and stock options): https://www.sttok.com/en/incentive-plans
+- Transaction simulator: https://www.sttok.com/en/operation-drafts
+- Secondary market: https://www.sttok.com/en/secondary-market
+- Companies and corporate groups: https://www.sttok.com/en/solutions/companies
+- Law firms and advisers: https://www.sttok.com/en/solutions/lawyers
+- Scale-ups: https://www.sttok.com/en/solutions/startups
+- Funds, family offices and holding companies: https://www.sttok.com/en/solutions/investors
+- Investor portal: https://www.sttok.com/en/solutions/investors-dashboard
+- Customers and testimonials: https://www.sttok.com/en/testimonials
+- Pricing: https://www.sttok.com/en/pricing
+- Corporate glossary: https://www.sttok.com/en/resources
+- Sttok versus Excel: https://www.sttok.com/en/sttok-vs-excel
+- About Sttok: https://www.sttok.com/en/about
+- Security (ISO 27001, GDPR): https://www.sttok.com/en/security
+
+Guides, comparisons and feature pages are in Spanish only.

@@ -72,7 +72,9 @@ export default async function RootLayout({
               url: "https://www.sttok.com",
               logo: "https://www.sttok.com/logo-sttok.png",
               description:
-                "Software de gestión de sociedades: captable, libro de socios, planes de incentivos, juntas y consejos, simulador y mercado secundario.",
+                locale === "en"
+                  ? "Corporate governance software: cap table, shareholder register, incentive plans, general meetings and board, transaction simulator and secondary market."
+                  : "Software de gestión de sociedades: captable, libro de socios, planes de incentivos, juntas y consejos, simulador y mercado secundario.",
               email: "hola@sttok.com",
               address: {
                 "@type": "PostalAddress",

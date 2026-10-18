@@ -43,5 +43,11 @@
       "result": "Prima por participación, valor nominal, rango de numeración y total a desembolsar.",
       "icon": "Calculator"
     }
-  ]
+  ],
+  "labels": {
+    "prompt": "Pregunta a Sttok AI",
+    "answer": "Respuesta",
+    "guardrails": "Confianza por defecto",
+    "demo": "Ver Sttok AI en acción en una demo"
+  }
 }

@@ -5,6 +5,9 @@ import Link from "next/link";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { useTranslation } from "react-i18next";
 
+import { localizedHref } from "@/lib/localized-href";
+import { useLocale } from "@/lib/use-locale";
+
 type GlossaryTerm = {
   term: string;
   def: string;
@@ -19,6 +22,7 @@ type GlossaryTerm = {
  */
 const Glossary: FC = () => {
   const { t } = useTranslation("resources-glossary");
+  const locale = useLocale();
 
   const termsData = t("terms", { returnObjects: true }) as GlossaryTerm[];
   const terms: GlossaryTerm[] = Array.isArray(termsData) ? termsData : [];
@@ -27,7 +31,8 @@ const Glossary: FC = () => {
     "@context": "https://schema.org",
     "@type": "DefinedTermSet",
     name: t("header.title"),
-    url: "https://www.sttok.com/recursos",
+    url: `https://www.sttok.com${localizedHref("/recursos", locale)}`,
+    inLanguage: locale,
     hasDefinedTerm: terms.map((item) => ({
       "@type": "DefinedTerm",
       name: item.term,
