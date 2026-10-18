@@ -303,15 +303,17 @@ export default function Features({
                     {item.video ? (
                       <VideoTema
                         base={item.video}
-                        alt={item.title}
+                        alt={`${item.title} en Sttok: ${item.content}`}
                         activo={activa}
-                        className={cn("absolute inset-0 h-full w-full", capa)}
+                        rellenar
+                        sizes="(max-width: 1152px) 100vw, 72rem"
+                        className="rounded-lg shadow-lg border"
                       />
                     ) : item.image ? (
                       <>
                         <Image
                           src={item.image.light}
-                          alt={item.title}
+                          alt={`${item.title} en Sttok: ${item.content}`}
                           fill
                           sizes="(max-width: 1152px) 100vw, 72rem"
                           priority={index === 0}
@@ -319,7 +321,7 @@ export default function Features({
                         />
                         <Image
                           src={item.image.dark}
-                          alt={item.title}
+                          alt={`${item.title} en Sttok: ${item.content}`}
                           fill
                           sizes="(max-width: 1152px) 100vw, 72rem"
                           className={cn("hidden dark:block", capa)}

@@ -75,7 +75,7 @@ const Captura = ({
                 </>
               ) : null}
               <div className={detalle ? "hidden sm:block" : undefined}>
-                <VideoTema base={`/animaciones/${video}`} alt={alt} className="h-auto w-full" />
+                <VideoTema base={`/animaciones/${video}`} alt={alt} sizes="(max-width: 1100px) 100vw, 64rem" />
               </div>
             </>
           ) : detalle ? (

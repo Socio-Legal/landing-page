@@ -2,6 +2,7 @@ import { Metadata } from "next";
 
 import type { Locale } from "@/lib/locales";
 import { ROUTE_MAP } from "@/lib/localized-href";
+import { OG_IMAGENES } from "@/lib/og-imagenes";
 
 const BASE_URL = "https://www.sttok.com";
 const OG_IMAGE = "/og-image.png";
@@ -52,6 +53,12 @@ export function buildMetadata({
   const enUrl = enPath ? `${BASE_URL}${enPath}` : undefined;
   const canonical = locale === "en" && enUrl ? enUrl : esUrl;
 
+  // Cada página en castellano lleva su propia imagen al compartirla (su titular
+  // y su pantalla); las inglesas y las que no tienen, la general.
+  const propia = locale === "es" ? OG_IMAGENES[path] : undefined;
+  const ogImagen = propia ?? OG_IMAGE;
+  const ogAlt = propia ? `${title.split(" | ")[0]} · Sttok` : "Sttok, software de gestión de sociedades";
+
   const languages =
     enUrl !== undefined
       ? {
@@ -79,10 +86,10 @@ export function buildMetadata({
       description,
       images: [
         {
-          url: OG_IMAGE,
+          url: ogImagen,
           width: 1200,
           height: 630,
-          alt: "Sttok, software de gestión de sociedades",
+          alt: ogAlt,
         },
       ],
     },
@@ -90,7 +97,7 @@ export function buildMetadata({
       card: "summary_large_image",
       title,
       description,
-      images: [OG_IMAGE],
+      images: [ogImagen],
     },
   };
 }
