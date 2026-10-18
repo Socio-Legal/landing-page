@@ -14,6 +14,8 @@ const ALTO: Record<string, number> = {
   panel: 930, sociedades: 930, participadas: 930, "portal-del-beneficiario": 930,
   compraventa: 930, "convocatoria-de-la-junta": 930,
   "ampliaciones-y-reducciones-de-capital": 930, "asistencia-y-quorum": 930,
+  "consejo-de-administracion": 930, "eleccion-de-consejeros": 930, "reparto-de-dividendos": 930,
+  "comunicaciones-a-socios": 930, "acta-de-la-junta": 930,
 };
 const altoDe = (base: string) => ALTO[base.split("/").pop() || ""] ?? 800;
 
