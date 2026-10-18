@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Precios",
-    "description": "Planes desde 450€ por sociedad al año. Libro de socios, planes de incentivos, juntas y consejos. Sin coste de implantación y con puesta en marcha en unas horas por sociedad.",
+    "description": "Planes desde 450€ + IVA por sociedad al año. Libro de socios, planes de incentivos, juntas y consejos. Sin coste de implantación y con puesta en marcha en unas horas por sociedad.",
     "keywords": "planes, precios, tarifas, costes, suscripción, anual, libro de socios, captable"
   },
   "hero": {
@@ -11,7 +11,7 @@
     "description": "Ahorra tiempo automatizando tareas manuales, evita errores y dispón de datos siempre actualizados. Aporta valor a todos los stakeholders."
   },
   "plans": {
-    "perYear": "por sociedad, al año",
+    "perYear": "por sociedad, al año (IVA no incluido)",
     "recommended": "Recomendado",
     "cta": "Solicitar demo",
     "ctaLink": "https://calendly.com/sttok/30min",
@@ -28,7 +28,7 @@
     "items": [
       {
         "q": "¿Cuánto cuesta Sttok?",
-        "a": "Desde 450€ por sociedad al año en el plan Básico (hasta 10 socios o beneficiarios). El plan Avanzado cuesta 650€/año (hasta 20) y el Pro 850€/año (hasta 50). Para grupos de sociedades o necesidades mayores hay planes personalizados."
+        "a": "Desde 450€ por sociedad al año en el plan Básico (hasta 10 socios o beneficiarios). El plan Avanzado cuesta 650€/año (hasta 20) y el Pro 850€/año (hasta 50). Para grupos de sociedades o necesidades mayores hay planes personalizados. Los precios no incluyen IVA."
       },
       {
         "q": "¿Qué incluyen todos los planes?",

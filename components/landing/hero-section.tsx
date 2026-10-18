@@ -81,9 +81,8 @@ export default function HeroSection() {
               <VideoTema
                 base={t("home-hero-section:hero.video.base")}
                 alt={t("home-hero-section:hero.video.alt")}
-                width={1280}
-                height={930}
-                className="w-full h-auto"
+                prioridad
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           </div>

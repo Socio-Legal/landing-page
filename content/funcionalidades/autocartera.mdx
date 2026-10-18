@@ -1,6 +1,6 @@
 ---
 title: "Autocartera: las acciones propias de la sociedad en el libro de socios"
-description: "Sttok registra la autocartera como un titular más del libro y la excluye sola de la base de voto, del quórum, de la convocatoria y del reparto de dividendos."
+description: "Sttok registra la autocartera como un titular más del libro, la deja fuera de la convocatoria y del voto, y reparte su parte del dividendo entre las demás acciones."
 slug: "/funcionalidades/autocartera"
 section: "funcionalidades"
 canonical: "https://www.sttok.com/funcionalidades/autocartera"
@@ -8,7 +8,7 @@ canonical: "https://www.sttok.com/funcionalidades/autocartera"
 
 # Autocartera y acciones propias
 
-Sttok anota la autocartera como un titular del libro de socios, con su numeración y su clase. A partir de ahí la separa del capital que vota y cobra. La descuenta de la base de voto y del quórum de la junta. Tampoco la convoca, y en un reparto de dividendos atribuye su parte a los demás socios.
+Sttok anota la autocartera como un titular del libro de socios, con su numeración y su clase. A partir de ahí la separa del capital que vota y cobra. No la convoca ni la cuenta entre los asistentes, y en un reparto de dividendos atribuye su parte a los demás socios. En la anónima sigue computando en el capital para calcular el quórum y las mayorías de la junta (artículo 148 de la Ley de Sociedades de Capital).
 
 <Captura
   nombre="autocartera"
@@ -22,7 +22,7 @@ Sttok anota la autocartera como un titular del libro de socios, con su numeraci�
 |---|---|
 | Panel de la sociedad | La marca con la etiqueta «no vota» y calcula la base de voto real sin ella |
 | Convocatoria de junta | No la incluye entre los destinatarios |
-| Lista de asistentes | No la cuenta para el quórum, porque sus derechos están en suspenso |
+| Lista de asistentes | No la cuenta como capital presente ni representado, porque su voto está en suspenso |
 | Reparto de dividendos | Calcula el importe por acción sin ella y reparte su parte entre las demás |
 | Reducción de capital | Ofrece la finalidad «Amortización de acciones propias», que solo amortiza autocartera |
 
@@ -36,9 +36,9 @@ Sttok anota la autocartera como un titular del libro de socios, con su numeraci�
 
 ## La junta tiene que alcanzar una mayoría reforzada
 
-Una mayoría se mide sobre las acciones que votan, no sobre el capital emitido. Si la sociedad tiene acciones propias, el porcentaje de cada socio sobre el voto es mayor que su porcentaje sobre el capital. El panel muestra las dos cifras con un clic en el selector de base.
+En la anónima, las acciones propias no votan, pero se computan en el capital para calcular las cuotas de constitución y de adopción de acuerdos (artículo 148.b de la Ley de Sociedades de Capital). Una mayoría reforzada sobre el capital se mide, por tanto, con la autocartera dentro del total. El panel muestra el porcentaje de cada socio sobre el capital y sobre los votos con un clic en el selector de base.
 
-En la lista de asistentes, la autocartera no suma para el quórum. El recuento que usa el [voto electrónico en juntas](/funcionalidades/voto-electronico-en-juntas) parte ya de esa base.
+En la lista de asistentes, la autocartera no figura como presente ni representada. La votación se gestiona en el [voto electrónico en juntas](/funcionalidades/voto-electronico-en-juntas).
 
 ## La sociedad reparte un dividendo
 
@@ -58,7 +58,7 @@ El resto del proceso, con la numeración anulada y el nuevo capital, se describe
 Sí. Es un titular más del libro, con su numeración y su clase. En el listado de accionistas se distingue por el color de su avatar.
 
 **¿Vota la autocartera en la junta?**
-No. Sus derechos están en suspenso mientras la sociedad tenga esas acciones. Sttok la excluye del censo de voto, del quórum y de la convocatoria.
+No. Su derecho de voto está en suspenso mientras la sociedad tenga esas acciones. Sttok la deja fuera del censo de voto y de la convocatoria. En la anónima sigue contando en el capital para calcular el quórum y las mayorías (artículo 148 de la Ley de Sociedades de Capital).
 
 **¿Cobra dividendos?**
 No. Al registrar un reparto, Sttok calcula el importe por acción sin ella y lo dice en la propia pantalla. Su parte se reparte entre las demás acciones.

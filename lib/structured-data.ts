@@ -73,6 +73,13 @@ export function softwareApplicationJsonLd(locale: Locale) {
       name: `Sttok ${plan.name[locale]}`,
       price: plan.price,
       priceCurrency: "EUR",
+      // Los precios se publican sin IVA (art. 10.1.f LSSI).
+      priceSpecification: {
+        "@type": "UnitPriceSpecification",
+        price: plan.price,
+        priceCurrency: "EUR",
+        valueAddedTaxIncluded: false,
+      },
       url,
     })),
   };

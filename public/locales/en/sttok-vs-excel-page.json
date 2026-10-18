@@ -48,7 +48,7 @@
     {
       "aspect": "Cost",
       "excel": "Free in licenses; expensive in hours and errors.",
-      "sttok": "From €450 per company per year, with setup in a few hours."
+      "sttok": "From €450 + VAT per company per year, with setup in a few hours."
     }
   ],
   "faq": {
@@ -65,7 +65,7 @@
       },
       {
         "q": "What if I only have one small company?",
-        "a": "The Basic plan (€450/year, up to 10 shareholders) covers the registry, incentive plans and the simulator. Excel becomes more expensive as soon as there is one operation."
+        "a": "The Basic plan (€450/year + VAT, up to 10 shareholders) covers the registry, incentive plans and the simulator. Excel becomes more expensive as soon as there is one operation."
       }
     ]
   }

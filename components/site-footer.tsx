@@ -11,6 +11,7 @@ import LanguageSwitcher from "./language-switcher";
 import ThemeToggler from "./ui/theme-toggler";
 import { localizedHref } from "@/lib/localized-href";
 import { useLocale } from "@/lib/use-locale";
+import { CookieSettingsButton } from "./consent-analytics";
 
 const FooterIcons = {
   LinkedIn: <LinkedInLogoIcon className="h-5 w-5" />,
@@ -118,6 +119,7 @@ export function SiteFooter() {
             <p className="text-xs text-muted-foreground">
               {t("allRightsReserved")}
             </p>
+            <CookieSettingsButton label={t("cookieSettings")} />
             <LanguageSwitcher />
             <ThemeToggler />
           </div>

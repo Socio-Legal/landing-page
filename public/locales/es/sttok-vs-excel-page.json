@@ -48,7 +48,7 @@
     {
       "aspect": "Coste",
       "excel": "Gratis en licencias; caro en horas y en errores.",
-      "sttok": "Desde 450€ por sociedad al año, con puesta en marcha en unas horas."
+      "sttok": "Desde 450€ + IVA por sociedad al año, con puesta en marcha en unas horas."
     }
   ],
   "faq": {
@@ -65,7 +65,7 @@
       },
       {
         "q": "¿Y si solo tengo una sociedad pequeña?",
-        "a": "El plan Básico (450€/año, hasta 10 socios) cubre libro de socios, planes de incentivos y simulador. Excel sale más caro en cuanto hay una operación."
+        "a": "El plan Básico (450€/año + IVA, hasta 10 socios) cubre libro de socios, planes de incentivos y simulador. Excel sale más caro en cuanto hay una operación."
       }
     ]
   }
