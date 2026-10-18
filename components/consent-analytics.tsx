@@ -24,8 +24,13 @@ declare global {
   }
 }
 
-/** Interacciones con la página que cuentan como aceptación si no hay respuesta al banner. */
-const INTERACTIONS = ["click", "scroll", "keydown"] as const;
+/**
+ * Interacciones con la página que cuentan como aceptación si no hay respuesta
+ * al banner. Solo eventos que produce una persona: el evento «scroll» también
+ * salta cuando el navegador restaura la posición al recargar, y aceptaría sin
+ * que el visitante hiciera nada.
+ */
+const INTERACTIONS = ["pointerdown", "wheel", "touchmove", "keydown"] as const;
 
 /**
  * Google Analytics y Google Ads según el consentimiento de Cookiebot.
@@ -34,7 +39,7 @@ const INTERACTIONS = ["click", "scroll", "keydown"] as const;
  * Al cargar la página no se instala ninguna cookie de Google.
  *
  * Decisión de negocio: si el visitante no responde al banner pero interactúa
- * con la página (clic, scroll o teclado), se registra en Cookiebot la
+ * con la página (clic o toque, rueda del ratón, gesto táctil o teclado), se registra en Cookiebot la
  * aceptación de las cookies estadísticas y de marketing. Los clics dentro del
  * banner y en «Configurar cookies» no cuentan: ahí el visitante está
  * decidiendo. Si rechaza en el banner, no se instala nada.
