@@ -175,6 +175,14 @@ Funcionalidad con coste adicional: mercado secundario.
 - Comisiones y comités del consejo: https://www.sttok.com/funcionalidades/comites-del-consejo
 - Registro de auditores de cuentas: https://www.sttok.com/funcionalidades/auditores
 - Elección de consejeros con compromisos de apoyo: https://www.sttok.com/funcionalidades/eleccion-de-consejeros
+- Portada multisociedad: lo pendiente de todas las sociedades del grupo: https://www.sttok.com/funcionalidades/portada-multisociedad
+- Participadas del grupo por relación, nivel y país: https://www.sttok.com/funcionalidades/participadas
+- Comparar el grupo entre dos fechas: https://www.sttok.com/funcionalidades/comparar-fechas-del-grupo
+- Sociedades del grupo que son socias de otras: https://www.sttok.com/funcionalidades/sociedades-socias-de-otras
+- Trabajos en varias sociedades a la vez: https://www.sttok.com/funcionalidades/trabajos-en-varias-sociedades
+- Permisos por sociedad: https://www.sttok.com/funcionalidades/permisos-por-sociedad
+- Colecciones de sociedades: https://www.sttok.com/funcionalidades/colecciones-de-sociedades
+- Cuentas depositadas en el Registro Mercantil: https://www.sttok.com/funcionalidades/cuentas-depositadas
 - Equipo: https://www.sttok.com/sobre-nosotros
 - Blog: https://blog.sttok.com/recursos
 - Dossier comercial (español): https://www.sttok.com/docs/sttok-dossier-es.pdf
