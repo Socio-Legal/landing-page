@@ -71,7 +71,7 @@
               "Persistent \n\nPersistent \n\nPersistent"
             ],
             [
-              "Advertising: these cookies measure the effectiveness of advertising campaigns and manage the ads shown to the user. They are only installed if the user accepts them.",
+              "Advertising: these cookies measure the effectiveness of advertising campaigns and manage the ads shown to the user. They are only installed if the user accepts them, either expressly or by continuing to browse as described in section 4.",
               "_gcl_au – Google Ads",
               "90 days"
             ],
@@ -88,7 +88,7 @@
           ]
         },
         "4. How can I block or delete the cookies used by this Website?",
-        "The user can allow, block or delete cookies through the configuration panel, which can be reopened at any time from the “Cookie settings” link in the footer. In addition, it should be noted that, if you accept third-party cookies, you can delete them from your browser options or from the system offered by the third party itself.",
+        "The user can allow, block or delete cookies through the configuration panel, which can be reopened at any time from the “Cookie settings” link in the footer. If the user does not respond to the cookie notice and continues browsing the Website (clicks, scrolls or uses the keyboard), the user is deemed to accept analytics and advertising cookies. They are not installed when the page loads, before any interaction. In addition, it should be noted that, if you accept third-party cookies, you can delete them from your browser options or from the system offered by the third party itself.",
         "Blocking the installation of cookies does not prevent the effective use of the Website by the user",
         "You can find out about transfers to third countries that, where applicable, the third parties identified in the table above make in their respective policies. In the case of Google it would be: https://www.google.com/about/company/user-consent-policy-help/ and in the case of Mixpanel it would be: https://mixpanel.com/legal/privacy-policy/"
       ]
