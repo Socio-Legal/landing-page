@@ -45,6 +45,21 @@ export default async function RootLayout({
       <head>
         {/* Scripts de terceros vía next/script: se inyectan tras la
             hidratación y no provocan mismatches con el HTML del servidor */}
+        {/* Consent Mode de Google en «denied» antes de cualquier etiqueta:
+            sin consentimiento, Google Analytics y Google Ads no instalan
+            cookies. components/consent-analytics.tsx lo actualiza con la
+            decisión del visitante en Cookiebot. */}
+        <Script id="consent-default" strategy="beforeInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+          window.gtag = function () { window.dataLayer.push(arguments); };
+          window.gtag('consent', 'default', {
+            analytics_storage: 'denied',
+            ad_storage: 'denied',
+            ad_user_data: 'denied',
+            ad_personalization: 'denied',
+            wait_for_update: 500
+          });`}
+        </Script>
         <Script
           id="Cookiebot"
           src="https://consent.cookiebot.com/uc.js"
