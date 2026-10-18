@@ -10,6 +10,10 @@
     "secondaryButton": {
       "text": "See features",
       "link": "/producto"
+    },
+    "video": {
+      "base": "/animaciones/en/panel",
+      "alt": "A company dashboard in Sttok: share capital, split between family branches, meetings and deadlines"
     }
   }
 }

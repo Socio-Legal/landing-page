@@ -79,8 +79,8 @@ export default function HeroSection() {
           <div className="relative animate-fade-up opacity-0 [--animation-delay:200ms]">
             <div className="relative rounded-xl border border-border bg-card shadow-xl overflow-hidden">
               <VideoTema
-                base="/animaciones/panel"
-                alt="Panel de una sociedad en Sttok: capital social, reparto entre ramas familiares, juntas y vencimientos"
+                base={t("home-hero-section:hero.video.base")}
+                alt={t("home-hero-section:hero.video.alt")}
                 width={1280}
                 height={930}
                 className="w-full h-auto"

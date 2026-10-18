@@ -13,10 +13,10 @@
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/animaciones/liquidez-planes-de-incentivos-light-poster.webp",
-      "dark": "/animaciones/liquidez-planes-de-incentivos-dark-poster.webp"
+      "light": "/animaciones/en/liquidez-planes-de-incentivos-light-poster.webp",
+      "dark": "/animaciones/en/liquidez-planes-de-incentivos-dark-poster.webp"
     },
-    "video": "/animaciones/liquidez-planes-de-incentivos"
+    "video": "/animaciones/en/liquidez-planes-de-incentivos"
   },
   "testimonials": {
     "title": "What Our Clients Say",

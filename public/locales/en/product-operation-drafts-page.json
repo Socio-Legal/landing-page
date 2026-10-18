@@ -13,10 +13,10 @@
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/animaciones/simulador-light-poster.webp",
-      "dark": "/animaciones/simulador-dark-poster.webp"
+      "light": "/animaciones/en/simulador-light-poster.webp",
+      "dark": "/animaciones/en/simulador-dark-poster.webp"
     },
-    "video": "/animaciones/simulador"
+    "video": "/animaciones/en/simulador"
   },
   "testimonials": {
     "title": "What Our Clients Say",
