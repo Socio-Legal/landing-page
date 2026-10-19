@@ -13,7 +13,7 @@
     {
       "title": "Certificaciones y cumplimiento",
       "content": [
-        "Sttok cuenta con la certificación ISO 27001 en seguridad de la información y cumple el Reglamento General de Protección de Datos (RGPD). Cuenta además con auditoría de Bureau Veritas.",
+        "Sttok cuenta con la certificación ISO 27001 en seguridad de la información y cumple el Reglamento General de Protección de Datos (RGPD). Bureau Veritas audita esa certificación.",
         "La información que protege son los libros de socios, las actas, los acuerdos y la documentación de juntas y consejos de las sociedades que gestiona."
       ]
     },
@@ -47,7 +47,7 @@
           "rows": [
             [
               "Certificación",
-              "ISO 27001 y auditoría de Bureau Veritas"
+              "ISO 27001 auditada por Bureau Veritas"
             ],
             [
               "Protección de datos",
@@ -119,7 +119,7 @@
     "items": [
       {
         "q": "¿Sttok tiene la certificación ISO 27001?",
-        "a": "Sí. Sttok cuenta con la certificación ISO 27001 en seguridad de la información y con auditoría de Bureau Veritas."
+        "a": "Sí. Sttok cuenta con la certificación ISO 27001 en seguridad de la información, auditada por Bureau Veritas."
       },
       {
         "q": "¿Dónde se guardan los datos?",
