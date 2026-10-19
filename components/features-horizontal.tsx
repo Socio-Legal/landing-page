@@ -11,6 +11,7 @@ import React, {
 } from "react";
 
 import { cn } from "@/lib/utils";
+import { useLocale } from "@/lib/use-locale";
 import Image from "next/image";
 import VideoTema from "@/components/shared/video-tema";
 
@@ -105,6 +106,8 @@ export default function Features({
   linePosition = "left",
   data = [],
 }: FeaturesProps) {
+  // Texto alternativo de cada pantalla, en el idioma de la página.
+  const enSttok = useLocale() === "en" ? "in Sttok" : "en Sttok";
 
   const [currentIndex, setCurrentIndex] = useState<number>(-1);
   // Cada pestaña dura lo suyo: una animación de 20 s no cabe en los 5 de una captura.
@@ -303,7 +306,7 @@ export default function Features({
                     {item.video ? (
                       <VideoTema
                         base={item.video}
-                        alt={`${item.title} en Sttok: ${item.content}`}
+                        alt={`${item.title} ${enSttok}: ${item.content}`}
                         activo={activa}
                         rellenar
                         sizes="(max-width: 1152px) 100vw, 72rem"
@@ -313,7 +316,7 @@ export default function Features({
                       <>
                         <Image
                           src={item.image.light}
-                          alt={`${item.title} en Sttok: ${item.content}`}
+                          alt={`${item.title} ${enSttok}: ${item.content}`}
                           fill
                           sizes="(max-width: 1152px) 100vw, 72rem"
                           priority={index === 0}
@@ -321,7 +324,7 @@ export default function Features({
                         />
                         <Image
                           src={item.image.dark}
-                          alt={`${item.title} en Sttok: ${item.content}`}
+                          alt={`${item.title} ${enSttok}: ${item.content}`}
                           fill
                           sizes="(max-width: 1152px) 100vw, 72rem"
                           className={cn("hidden dark:block", capa)}
