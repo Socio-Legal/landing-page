@@ -134,6 +134,7 @@ Funcionalidad con coste adicional: mercado secundario.
 - Guía: valoración anual de participaciones y acciones en los estatutos, qué precio se aplica en cada caso: https://www.sttok.com/guias/valoracion-anual-acciones-estatutos
 - Board portals en España, comparativa: https://www.sttok.com/comparativas/board-portal-espana
 - Software para libro de socios, juntas y consejo en España, comparativa: https://www.sttok.com/comparativas/software-libro-de-socios
+- Entity management para grupos de sociedades en España, comparativa: https://www.sttok.com/comparativas/entity-management-grupos
 - Funcionalidades de Sttok: https://www.sttok.com/funcionalidades
 - Certificados de titularidad y de valor: https://www.sttok.com/funcionalidades/certificados-de-titularidad-y-valor
 - Portal del accionista: https://www.sttok.com/funcionalidades/portal-del-accionista
