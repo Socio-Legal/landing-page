@@ -33,11 +33,13 @@
         "items": [
           {
             "title": "Libro de socios oficial",
-            "description": "Libro registro de socios o de acciones nominativas, con clases, numeración por rangos y exportación en formato legalizable."
+            "description": "Libro registro de socios o de acciones nominativas, con clases, numeración por rangos y exportación en formato legalizable.",
+            "href": "/funcionalidades/libro-registro-oficial"
           },
           {
             "title": "Transmisiones y cargas",
-            "description": "Compraventas, herencias, donaciones, splits y renumeraciones. Prenda, usufructo, nuda propiedad, cotitularidad y opciones quedan como posiciones separadas."
+            "description": "Compraventas, herencias, donaciones, splits y renumeraciones. Prenda, usufructo, nuda propiedad, cotitularidad y opciones quedan como posiciones separadas.",
+            "href": "/funcionalidades/transmisiones"
           },
           {
             "title": "Certificados de titularidad y de valor",
@@ -56,7 +58,8 @@
           },
           {
             "title": "Acreedores y notas convertibles",
-            "description": "Cada nota convertible con la ficha de su acreedor, junto al resto del registro de la sociedad."
+            "description": "Cada nota convertible con la ficha de su acreedor, junto al resto del registro de la sociedad.",
+            "href": "/funcionalidades/acreedores-y-notas-convertibles"
           }
         ],
         "summary": "El registro oficial de quién es socio, con qué y desde cuándo."
@@ -77,11 +80,13 @@
           },
           {
             "title": "Cargos y poderes",
-            "description": "Consejeros, administradores, apoderados y auditores con su vigencia, el alcance de cada poder y su inscripción."
+            "description": "Consejeros, administradores, apoderados y auditores con su vigencia, el alcance de cada poder y su inscripción.",
+            "href": "/funcionalidades/cargos-con-vigencia"
           },
           {
             "title": "Reglas de la sociedad",
-            "description": "Estatutos y pactos ordenados por tema, con la mayoría que exige cada acuerdo y el calendario de obligaciones."
+            "description": "Estatutos y pactos ordenados por tema, con la mayoría que exige cada acuerdo y el calendario de obligaciones.",
+            "href": "/funcionalidades/reglas-de-la-sociedad"
           }
         ],
         "summary": "Los órganos de la sociedad, de la convocatoria al acta certificada."
@@ -92,7 +97,8 @@
         "items": [
           {
             "title": "Todas las sociedades en una portada",
-            "description": "Lo pendiente de cada sociedad del grupo, ordenado por plazo, con permisos por sociedad."
+            "description": "Lo pendiente de cada sociedad del grupo, ordenado por plazo, con permisos por sociedad.",
+            "href": "/funcionalidades/portada-multisociedad"
           },
           {
             "title": "Diagrama del grupo",
@@ -117,7 +123,8 @@
         "items": [
           {
             "title": "Phantom shares y stock options",
-            "description": "Cada plan con sus instrumentos, su pool y el acuerdo de junta que lo aprueba."
+            "description": "Cada plan con sus instrumentos, su pool y el acuerdo de junta que lo aprueba.",
+            "href": "/funcionalidades/phantom-shares-y-stock-options"
           },
           {
             "title": "Vesting y asignaciones",
@@ -150,11 +157,13 @@
           },
           {
             "title": "Cascada de liquidación",
-            "description": "Qué recibe cada socio en una venta, con las preferencias de cada clase."
+            "description": "Qué recibe cada socio en una venta, con las preferencias de cada clase.",
+            "href": "/funcionalidades/cascada-de-liquidacion"
           },
           {
             "title": "Borradores de documentos",
-            "description": "La operación simulada sale con sus borradores en Word para el notario o el despacho."
+            "description": "La operación simulada sale con sus borradores en Word para el notario o el despacho.",
+            "href": "/funcionalidades/borradores-de-documentos"
           }
         ],
         "summary": "El efecto de una operación antes de firmarla."
@@ -165,7 +174,8 @@
         "items": [
           {
             "title": "Ofertas de venta",
-            "description": "Un socio publica cuántas acciones vende, a qué precio y en qué plazo."
+            "description": "Un socio publica cuántas acciones vende, a qué precio y en qué plazo.",
+            "href": "/funcionalidades/ofertas-de-compra-y-venta-de-acciones"
           },
           {
             "title": "Ofertas de compra",
@@ -184,6 +194,7 @@
       },
       {
         "title": "Documentos, firma y comunicaciones",
+        "href": "/funcionalidades/documentacion-societaria",
         "items": [
           {
             "title": "Documentos y libros de actas",
@@ -192,15 +203,18 @@
           },
           {
             "title": "Firma electrónica",
-            "description": "Sobres de firma con recordatorios y plazos. Incluida en los planes Avanzado y Pro."
+            "description": "Sobres de firma con recordatorios y plazos. Incluida en los planes Avanzado y Pro.",
+            "href": "/funcionalidades/firma-electronica"
           },
           {
             "title": "Comunicaciones certificadas",
-            "description": "Cada convocatoria y cada aviso queda registrado con su certificado de envío."
+            "description": "Cada convocatoria y cada aviso queda registrado con su certificado de envío.",
+            "href": "/funcionalidades/comunicaciones-a-socios"
           },
           {
             "title": "Sttok AI",
-            "description": "Preguntas sobre el registro en lenguaje natural, con la fuente enlazada en cada respuesta."
+            "description": "Preguntas sobre el registro en lenguaje natural, con la fuente enlazada en cada respuesta.",
+            "href": "/funcionalidades/sttok-ai"
           }
         ],
         "summary": "Lo que se firma y se envía, guardado por sociedad."

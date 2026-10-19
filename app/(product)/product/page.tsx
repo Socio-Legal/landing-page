@@ -67,37 +67,6 @@ const Page = () => {
     <>
       <HeroSection {...hero} />
 
-      {/* Clientes por relevancia, los más potentes primero: 9 arriba y 8
-          abajo, para que ninguna fila quede con un logo suelto */}
-      <section id="clients" className="border-t border-border">
-        <div className="container mx-auto px-4 py-14 md:py-16">
-          <LogoStrip
-            label={t("clientsLabel")}
-            primary={[
-              "Factorial",
-              "Axa",
-              "Andbank",
-              "Osborne",
-              "Taxdown",
-              "PldSpace",
-              "Caballero",
-              "Fanalca",
-              "Multiverse",
-            ]}
-            secondary={[
-              "MyInvestor",
-              "DerechoCom",
-              "Shakers",
-              "Cabiedes",
-              "LegalPigeon",
-              "Banktrack",
-              "Barkibu",
-              "Sade",
-            ]}
-          />
-        </div>
-      </section>
-
       {/* Módulos: una fila por parte de la vida societaria. Retícula de 12
           columnas: el nombre del módulo ocupa 4 y sus funciones, 8. */}
       <section id="modules" className="border-t border-border">
@@ -164,6 +133,37 @@ const Page = () => {
               </Link>
             </p>
           )}
+        </div>
+      </section>
+
+      {/* Clientes por relevancia, los más potentes primero: 9 arriba y 8
+          abajo, para que ninguna fila quede con un logo suelto */}
+      <section id="clients" className="border-t border-border">
+        <div className="container mx-auto px-4 py-14 md:py-16">
+          <LogoStrip
+            label={t("clientsLabel")}
+            primary={[
+              "Factorial",
+              "Axa",
+              "Andbank",
+              "Osborne",
+              "Taxdown",
+              "PldSpace",
+              "Caballero",
+              "Fanalca",
+              "Multiverse",
+            ]}
+            secondary={[
+              "MyInvestor",
+              "DerechoCom",
+              "Shakers",
+              "Cabiedes",
+              "LegalPigeon",
+              "Banktrack",
+              "Barkibu",
+              "Sade",
+            ]}
+          />
         </div>
       </section>
 

@@ -2,7 +2,7 @@
   "header": {
     "slogan": "Products",
     "title": "Discover our features",
-    "description": "Sttok is a platform designed for companies, lawyers, and startups looking for a comprehensive solution for company management.",
+    "description": "Sttok runs the shareholder register, meetings, board and incentive plans of companies, corporate groups, law firms and startups.",
     "buttonText": "View features",
     "buttonLink": "#"
   },
@@ -17,7 +17,7 @@
       },
       "icon": "BarChart3",
       "video": "/animaciones/en/accionistas",
-      "duracion": 22500
+      "duracion": 28000
     },
     {
       "id": 2,
