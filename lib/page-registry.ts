@@ -58,8 +58,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageHome,
     meta: {
       en: {
-        title: "Sttok — Corporate management software: cap table, meetings & incentives",
-        description: "Corporate management software: shareholder registry (cap table), incentive plans, meetings, boards and operations simulator. ISO 27001 and GDPR. 250+ companies trust Sttok.",
+        title: "Sttok: cap table, shareholder register, meetings and incentives",
+        description: "Corporate governance software: shareholder register and cap table, incentive plans, general meetings, board and transaction simulator. ISO 27001 and GDPR.",
         keywords:
           "corporate management software, shareholder registry, cap table, incentive plans, shareholder meetings, corporate governance, equity management",
       },
@@ -72,8 +72,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageAbogados,
     meta: {
       en: {
-        title: "Shareholder registers, meetings and minutes for law firms and corporate advisers",
-        description: "Every company the firm manages on one screen: shareholder registers and minute books, meetings, certificates and register legalisation, with permissions per company.",
+        title: "Shareholder registers and minutes for law firms and advisers",
+        description: "Every company the firm manages on one screen: shareholder registers, minute books, meetings, certificates and legalisation, with permissions per company.",
       keywords: "corporate management, lawyers, captable, shareholder register, incentive plans, shareholder meetings, boards, testimonials",
       },
     },
@@ -91,8 +91,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageEmpresas,
     meta: {
       en: {
-        title: "Shareholder register, meetings and board for companies with many shareholders and groups",
-        description: "Corporate records for every company in the group: register with encumbrances and co-owners, general meeting, board, officers with terms and beneficial owner, with permissions per company.",
+        title: "Corporate records for groups and companies with many shareholders",
+        description: "Register with encumbrances and co-owners, general meeting, board, officers and beneficial owner for every group company, with permissions per company.",
       keywords: "Shareholder Register, Company, corporate group, shareholder meeting, incentive plans, board of directors",
       },
     },
@@ -111,7 +111,7 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageJuntasConsejos,
     meta: {
       en: {
-        title: "General meetings and board of directors: notice, voting and minutes",
+        title: "General meetings and board: notice, voting and minutes",
         description: "Notice, signed proxies, early and live voting, quorum, minutes and certification for the general meeting and the board of directors.",
         keywords: "shareholder meetings, board meetings, digital meeting management, meeting notices, proxy voting, digital minutes",
       },
@@ -123,8 +123,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageLibroDeSocios,
     meta: {
       en: {
-        title: "Digital shareholder register: numbered share ranges, encumbrances and certificates",
-        description: "Sttok keeps the shareholder register as the official record, with transfers by share range, encumbrances, co-owners and certificates, exportable for legalisation.",
+        title: "Digital shareholder register with numbered share ranges",
+        description: "The shareholder register as the official record: transfers by share range, encumbrances, co-owners and certificates, exportable for legalisation.",
       keywords: "Shareholder Register, Shareholders, Registry, Operations, Excel",
       },
     },
@@ -161,8 +161,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: FeaturesPageEn,
     meta: {
       en: {
-        title: "Sttok features: shareholder register, meetings, board, groups and incentive plans",
-        description: "Every Sttok feature by module: shareholder register and transfers, general meeting and e-voting, board and officers, groups of companies, documents, incentive plans and the transaction simulator.",
+        title: "Sttok features: register, meetings, board, groups and incentives",
+        description: "Every Sttok feature by module: shareholder register, general meeting and e-voting, board, groups of companies, documents, incentive plans and simulator.",
       },
     },
   },
@@ -171,7 +171,7 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     meta: {
       en: {
         title: "Sttok security: ISO 27001, GDPR and security policy",
-        description: "Sttok holds ISO 27001 certification and complies with the GDPR. Data in AWS Europe encrypted with TLS 1.3 and AES-256, sign-in with Google or Microsoft SSO or a one-time code, and permissions per company.",
+        description: "ISO 27001 certified and GDPR compliant. Data in AWS Europe encrypted with TLS 1.3 and AES-256, Google or Microsoft SSO, and permissions per company.",
       },
     },
   },
@@ -179,8 +179,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PagePortalDelInversor,
     meta: {
       en: {
-        title: "Investor portal: each shareholder's position, certificates and meetings",
-        description: "Each shareholder and investor with their own access and the company's branding: their position, their certificates, the meeting and communications with proof of delivery.",
+        title: "Investor portal: shareholder positions, certificates and meetings",
+        description: "Each shareholder and investor with their own access: position, certificates, meetings and communications with proof of delivery, with your branding.",
       keywords: "investors, investees, portfolio, captable, document management, operations simulator, investor portal",
       },
     },
@@ -190,7 +190,7 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     meta: {
       en: {
         title: "Pricing — Sttok corporate management software",
-        description: "Plans from €450 per company per year. Shareholder registry, incentive plans, meetings and boards. No implementation cost, setup in a few hours per company.",
+        description: "Plans from €450 per company per year. Shareholder register, incentive plans, meetings and board. No implementation cost, setup in a few hours per company.",
       keywords: "corporate management pricing, cap table software pricing, shareholder registry software",
       },
     },
@@ -210,7 +210,7 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     meta: {
       en: {
         title: "Shareholder register, general meetings and board of directors",
-        description: "Sttok keeps the shareholder register with numbered share ranges, runs general meetings and the board through to certified minutes, and manages incentive plans, company groups and their documents.",
+        description: "Shareholder register with numbered share ranges, general meetings and board through to certified minutes, incentive plans and company groups.",
       keywords: "shareholder register, share ledger, general meeting, board of directors, company groups, beneficial owner, incentive plans",
       },
     },
@@ -221,7 +221,7 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     meta: {
       en: {
         title: "Corporate glossary — cap table, phantom shares, vesting and more",
-        description: "The terms of corporate management explained in one sentence: cap table, shareholder registry, phantom shares, stock options, vesting, meetings, quorum, dilution and more.",
+        description: "Corporate terms explained in one sentence: cap table, shareholder register, phantom shares, stock options, vesting, quorum, dilution and more.",
       keywords: "corporate glossary, what is a cap table, phantom shares, vesting, dilution",
       },
     },
@@ -230,7 +230,7 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageSimulador,
     meta: {
       en: {
-        title: "Corporate transaction simulator: capital increases, share sales and notes",
+        title: "Transaction simulator: capital increases, share sales and notes",
         description: "Simulate capital increases, reductions, share sales and convertible notes on the actual shareholder register, with liquidation waterfall and Word drafts.",
       keywords: "operations simulator, investment rounds, capital increases, convertible notes, corporate simulations",
       },
@@ -243,7 +243,7 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     meta: {
       en: {
         title: "About us — the team behind Sttok",
-        description: "Sttok is built by a team with technical and legal backgrounds. Today it is the leading corporate management platform in the Spanish-speaking market: 250+ companies and €20bn in equity managed.",
+        description: "Sttok is built by a team with technical and legal backgrounds. Over 250 customers and more than €20bn in equity under management.",
       keywords: "about Sttok, Sttok team, corporate management company",
       },
     },
@@ -252,8 +252,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageStartups,
     meta: {
       en: {
-        title: "Sttok for scale-ups: shareholder register, incentive plans and transaction simulator",
-        description: "For growing companies with several rounds, many investors and an incentive plan: shareholder register with share classes, simulation of capital increases and convertible notes, phantom shares, stock options and tender offers.",
+        title: "Sttok for scale-ups: cap table, incentive plans and simulator",
+        description: "For companies with several rounds and many investors: share classes, simulation of capital increases and notes, phantom shares, stock options and tender offers.",
       keywords: "scale-up, shareholder register, incentive plans, phantom shares, stock options, tender offer, convertible note, capital increase",
       },
     },
@@ -263,7 +263,7 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     meta: {
       en: {
         title: "Sttok versus Excel — comparison for managing your cap table",
-        description: "Shareholder registry in Excel or in corporate management software? An honest comparison: errors, versions, certificates, meetings, security, due diligence and cost.",
+        description: "Shareholder register in Excel or in dedicated software? An honest comparison: errors, versions, certificates, meetings, security, due diligence and cost.",
       keywords: "cap table excel, shareholder registry excel, excel alternative cap table",
       },
     },

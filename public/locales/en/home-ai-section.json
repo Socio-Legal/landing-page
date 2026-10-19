@@ -43,5 +43,11 @@
       "result": "Premium per share, par value, numbering range and total to be paid in.",
       "icon": "Calculator"
     }
-  ]
+  ],
+  "labels": {
+    "prompt": "Ask Sttok AI",
+    "answer": "Answer",
+    "guardrails": "Trust by default",
+    "demo": "See Sttok AI in action in a demo"
+  }
 }

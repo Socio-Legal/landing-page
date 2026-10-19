@@ -59,5 +59,28 @@
   },
   "sttokTitle": "Company Management Software",
   "allRightsReserved": "All rights reserved",
+  "securityLogoAlt": "Security certification",
+  "footerLinkTitle": {
+    "1": "Shareholder register software",
+    "2": "Incentive plan software",
+    "3": "Transaction simulator",
+    "4": "General meeting and board software",
+    "6": "Software for companies",
+    "7": "Software for law firms",
+    "8": "Investor portal software",
+    "9": "Software for investors",
+    "11": "Testimonials and case studies",
+    "14": "Legal notice",
+    "15": "Privacy and cookie policy",
+    "16": "Security policy",
+    "17": "Secondary market software",
+    "18": "Software for scale-ups",
+    "122": "Corporate glossary",
+    "123": "About Sttok",
+    "124": "Sttok vs Excel",
+    "125": "Corporate law guides (in Spanish)",
+    "126": "Corporate software comparisons (in Spanish)",
+    "127": "Sttok features"
+  },
   "cookieSettings": "Cookie settings"
 }
