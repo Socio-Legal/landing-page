@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 import { cn } from "@/lib/utils";
+import VERSION from "@/lib/animaciones-version.json";
 
 /**
  * Alto de cada animación a 1280 px de ancho. Lo grabado a 1184 × 860 px CSS
@@ -18,6 +19,16 @@ const ALTO: Record<string, number> = {
   "comunicaciones-a-socios": 930, "acta-de-la-junta": 930,
 };
 const altoDe = (base: string) => ALTO[base.split("/").pop() || ""] ?? 800;
+
+/**
+ * Huella del contenido de la animación (scripts/version-animaciones.mjs, dentro
+ * de `pnpm build`). Va en la URL del vídeo y del póster: un archivo regrabado
+ * con el mismo nombre cambia de URL y no se queda días en la caché.
+ */
+const versionDe = (base: string) => {
+  const v = (VERSION as Record<string, string>)[base.replace(/^\/animaciones\//, "")];
+  return v ? `?v=${v}` : "";
+};
 
 /**
  * Una pantalla de la app en movimiento, en versión clara y oscura.
@@ -58,6 +69,7 @@ export default function VideoTema({
 }) {
   const width = 1280;
   const height = altoDe(base);
+  const v = versionDe(base);
   const caja = useRef<HTMLDivElement>(null);
   const video = useRef<HTMLVideoElement>(null);
   const [tema, setTema] = useState<"light" | "dark" | null>(null);
@@ -130,7 +142,7 @@ export default function VideoTema({
 
   const imagen = (t: "light" | "dark", visibleEn: string) => (
     <Image
-      src={`${base}-${t}-poster.webp`}
+      src={`${base}-${t}-poster.webp${v}`}
       alt={alt}
       {...(rellenar ? { fill: true } : { width, height })}
       sizes={sizes}
@@ -162,8 +174,8 @@ export default function VideoTema({
           tabIndex={-1}
           onPlaying={() => setEnMarcha(true)}
         >
-          <source src={`${base}-${tema}${movil ? "-m" : ""}.webm`} type="video/webm" />
-          <source src={`${base}-${tema}${movil ? "-m" : ""}.mp4`} type="video/mp4" />
+          <source src={`${base}-${tema}${movil ? "-m" : ""}.webm${v}`} type="video/webm" />
+          <source src={`${base}-${tema}${movil ? "-m" : ""}.mp4${v}`} type="video/mp4" />
         </video>
       )}
     </div>
