@@ -139,6 +139,13 @@ comprobarlo en producción tras el despliegue.
   `scripts/ensure-git-history.mjs` completa la historia antes del build, y
   `lib/git-dates.ts` descarta los commits frontera si no lo consigue. Nunca
   uses `git log` para fechas sin tener esto en cuenta.
+- **Las animaciones de `public/animaciones` se cachean un día** (y una semana
+  más con `stale-while-revalidate`) con el mismo nombre de archivo. Por eso
+  `VideoTema` añade `?v=<huella del contenido>` a cada vídeo y póster, sacada
+  de `lib/animaciones-version.json`. `pnpm build` regenera ese JSON con
+  `scripts/version-animaciones.mjs`. Si regrabas una animación, ejecuta el
+  script y versiona el JSON junto a los vídeos, o `next dev` servirá la huella
+  antigua.
 - **Todo el sitio es SSR dinámico**: el layout raíz llama a `headers()`, así que
   no hay prerenderizado ni caché de CDN en ninguna ruta.
 - El `marginTop: -56px` que sube el hero bajo la cabecera solo lo lleva la

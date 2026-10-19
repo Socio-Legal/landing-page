@@ -69,7 +69,9 @@ const nextConfig = {
   /**
    * Las animaciones no llevan hash en el nombre: un día fresco en el navegador
    * y una semana sirviendo la copia guardada mientras se revalida. Sin esto
-   * salen con max-age=0 y cada visita vuelve a preguntar por ellas.
+   * salen con max-age=0 y cada visita vuelve a preguntar por ellas. Para que
+   * un vídeo regrabado no siga saliendo viejo, VideoTema les añade ?v=<huella>
+   * (lib/animaciones-version.json, que regenera `pnpm build`).
    */
   async headers() {
     return [
