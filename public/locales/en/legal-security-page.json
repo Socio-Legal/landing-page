@@ -13,7 +13,7 @@
     {
       "title": "Certifications and compliance",
       "content": [
-        "Sttok holds ISO 27001 certification in information security and complies with the General Data Protection Regulation (GDPR). It is also audited by Bureau Veritas.",
+        "Sttok holds ISO 27001 certification in information security and complies with the General Data Protection Regulation (GDPR). Bureau Veritas audits that certification.",
         "The information it protects includes shareholder registers, minutes, resolutions and the documentation of the meetings of the companies it manages."
       ]
     },
@@ -47,7 +47,7 @@
           "rows": [
             [
               "Certification",
-              "ISO 27001 and Bureau Veritas audit"
+              "ISO 27001 audited by Bureau Veritas"
             ],
             [
               "Data protection",
@@ -119,7 +119,7 @@
     "items": [
       {
         "q": "Does Sttok hold ISO 27001 certification?",
-        "a": "Yes. Sttok holds ISO 27001 certification in information security and is audited by Bureau Veritas."
+        "a": "Yes. Sttok holds ISO 27001 certification in information security, audited by Bureau Veritas."
       },
       {
         "q": "Where is the data stored?",

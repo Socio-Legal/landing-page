@@ -41,7 +41,7 @@ Sttok no es una herramienta de cap table para simular rondas de inversión. Resu
 
 ## Sttok en cifras
 
-Más de 250 clientes gestionan más de 500 sociedades con Sttok. La media de dos sociedades por cliente refleja el perfil habitual: grupos societarios, no sociedades aisladas.
+Cifras a octubre de 2026. Más de 250 clientes gestionan más de 500 sociedades con Sttok. La media de dos sociedades por cliente refleja el perfil habitual: grupos societarios, no sociedades aisladas.
 
 - Más de 250.000 socios y accionistas gestionados
 - Más de 20.000 millones de euros en equity bajo gestión
@@ -71,7 +71,7 @@ Sttok opera también con clientes en Latinoamérica y Andorra. La plataforma ges
 
 - ISO 27001 certificado
 - Cumplimiento del RGPD
-- Auditoría de Bureau Veritas
+- Certificación ISO 27001 auditada por Bureau Veritas
 - Cifrado SSL/TLS
 - Seguridad y política de seguridad de la información (ISO 27001, RGPD, AWS Europa, SSO, permisos por sociedad): https://www.sttok.com/politica-seguridad
 
