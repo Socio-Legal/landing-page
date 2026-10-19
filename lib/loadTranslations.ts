@@ -72,6 +72,11 @@ import solutionsInvestorsPageEN from "../public/locales/en/solutions-investors-p
 import solutionsInvestorsDashboardPageEN from "../public/locales/en/solutions-investors-dashboard-page.json";
 
 import testimonialsPageEN from "../public/locales/en/testimonials-page.json";
+import testimonialsFactorialPageEN from "../public/locales/en/testimonials-factorial-page.json";
+import testimonialsCaballeroPageEN from "../public/locales/en/testimonials-caballero-page.json";
+import testimonialsPldspacePageEN from "../public/locales/en/testimonials-pldspace-page.json";
+import testimonialsTaxdownPageEN from "../public/locales/en/testimonials-taxdown-page.json";
+import testimonialsMyInvestorPageEN from "../public/locales/en/testimonials-myinvestor-page.json";
 
 import pricingPageEN from "../public/locales/en/pricing-page.json";
 import resourcesGlossaryEN from "../public/locales/en/resources-glossary.json";
@@ -161,6 +166,11 @@ const loadTranslations = (lang: "es" | "en") => {
     "solutions-investors-dashboard-page": solutionsInvestorsDashboardPageEN,
 
     "testimonials-page": testimonialsPageEN,
+    "testimonials-factorial-page": testimonialsFactorialPageEN,
+    "testimonials-caballero-page": testimonialsCaballeroPageEN,
+    "testimonials-pldspace-page": testimonialsPldspacePageEN,
+    "testimonials-taxdown-page": testimonialsTaxdownPageEN,
+    "testimonials-myinvestor-page": testimonialsMyInvestorPageEN,
 
     "pricing-page": pricingPageEN,
     "resources-glossary": resourcesGlossaryEN,

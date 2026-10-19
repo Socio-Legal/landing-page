@@ -1,25 +1,25 @@
 {
   "metadata": {
-    "title": "PLD Space uses Sttok to manage its Investor Portal, shareholder register, and incentive plans.",
-    "description": "PLD Space uses Sttok for effective Incentive Plan management. Additionally, for corporate management, it also uses Shareholder Register and Shareholder Meetings, etc.",
-    "keywords": "PLD, Sttok, PLD Space and Sttok, Shareholder Register, incentive plans, Sttok clients"
+    "title": "PLD Space uses Sttok for its investor portal, shareholder register and incentive plans",
+    "description": "PLD Space uses Sttok to manage its incentive plans, its shareholder register, its general meetings and the relationship with its investors.",
+    "keywords": "PLD Space, Sttok, investor portal, shareholder register, incentive plans, Sttok customers"
   },
   "summary": {
     "client": "PLD Space",
-    "title": "PLD Space uses Sttok to manage relationships with its partners through the Investor Portal",
+    "title": "PLD Space manages its relationship with shareholders through Sttok's investor portal",
     "description": "",
     "quote": {
-      "text": "'We use Sttok to manage relationships with our partners and investors. In addition to the main features such as shareholder register, shareholder meetings, incentive plans and board of directors, etc.'",
+      "text": "We use Sttok to manage our relationship with our shareholders and investors, along with its main features such as the shareholder register, general meetings, incentive plans and the board of directors.",
       "author": "PLD Space",
       "position": ""
     },
     "button": {
-      "text": "Go to PLD Space's website",
+      "text": "Visit PLD Space",
       "link": "https://www.pldspace.com"
     },
     "features": [
       {
-        "key": "Client",
+        "key": "Customer",
         "value": "PLD Space"
       },
       {
@@ -31,8 +31,8 @@
         "value": "Aerospace"
       },
       {
-        "key": "Functionalities",
-        "value": "Investor portal, shareholder register, incentive plans, shareholder meetings and e-signature"
+        "key": "Features",
+        "value": "Investor portal, shareholder register, incentive plans, general meeting and e-signature"
       }
     ]
   },
@@ -44,19 +44,19 @@
     },
     "sections": [
       {
-        "title": "A bit about PLD Space",
+        "title": "About PLD Space",
         "texts": [
-          "PLD Space is a Spanish company that develops reusable rockets to put satellites into orbit. It is headquartered in Elche (Alicante)."
+          "PLD Space is a Spanish company that develops reusable rockets to put satellites into orbit. It is based in Elche (Alicante, Spain)."
         ]
       },
       {
-        "title": "Why did they choose us?",
+        "title": "Why they chose Sttok",
         "texts": [
-          "1. To offer the Investor Portal.",
-          "2. For the automation of manual tasks.",
-          "3. For the management of the shareholder register.",
-          "4. For document generation and e-signature.",
-          "5. For the management of Incentive Plans."
+          "1. To offer an investor portal.",
+          "2. Automation of manual tasks.",
+          "3. Management of the shareholder register.",
+          "4. Document generation and e-signature.",
+          "5. Management of incentive plans."
         ]
       }
     ]

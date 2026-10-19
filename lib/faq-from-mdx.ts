@@ -17,7 +17,10 @@ import type { FaqItem } from "@/components/shared/faq-section";
 export function extractFaq(body: string): FaqItem[] {
   const lines = body.split(/\r?\n/);
 
-  const start = lines.findIndex((l) => /^##\s+Preguntas frecuentes\s*$/i.test(l));
+  // En los documentos ingleses de content/en/, «Frequently asked questions».
+  const start = lines.findIndex((l) =>
+    /^##\s+(Preguntas frecuentes|Frequently asked questions)\s*$/i.test(l),
+  );
   if (start === -1) return [];
 
   const rest = lines.slice(start + 1);

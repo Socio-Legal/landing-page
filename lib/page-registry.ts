@@ -1,4 +1,11 @@
-import type { ComponentType } from "react";
+import { createElement, type ComponentType } from "react";
+
+import { TestimonialCase } from "@/components/testimonials/testimonial-case";
+import casoCaballeroEn from "@/public/locales/en/testimonials-caballero-page.json";
+import casoFactorialEn from "@/public/locales/en/testimonials-factorial-page.json";
+import casoMyInvestorEn from "@/public/locales/en/testimonials-myinvestor-page.json";
+import casoPldSpaceEn from "@/public/locales/en/testimonials-pldspace-page.json";
+import casoTaxdownEn from "@/public/locales/en/testimonials-taxdown-page.json";
 
 import PageHome from "@/app/(landing)/page";
 import PageAbogados from "@/app/solutions/lawyers/page";
@@ -278,4 +285,26 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
       },
     },
   },
+  ...casos(),
 };
+
+/**
+ * Casos de cliente con version inglesa: la plantilla de /testimonios/<cliente>
+ * con el cliente fijado, y la metadata inglesa del propio JSON del caso.
+ */
+function casos(): Record<string, PageEntry> {
+  const meta = {
+    Factorial: casoFactorialEn.metadata,
+    PldSpace: casoPldSpaceEn.metadata,
+    Caballero: casoCaballeroEn.metadata,
+    Taxdown: casoTaxdownEn.metadata,
+    MyInvestor: casoMyInvestorEn.metadata,
+  };
+  return Object.fromEntries(
+    Object.entries(meta).map(([client, en]) => {
+      const Component = () => createElement(TestimonialCase, { client });
+      Component.displayName = `Caso${client}`;
+      return [`/testimonios/${client}`, { Component, meta: { en } }];
+    }),
+  );
+}

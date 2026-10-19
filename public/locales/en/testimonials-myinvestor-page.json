@@ -1,38 +1,38 @@
 {
   "metadata": {
-    "title": "MyInvestor runs its board, meetings and shareholder register with Sttok",
-    "description": "MyInvestor relies on Sttok for digital management of its governing bodies, corporate documentation, and corporate processes",
-    "keywords": "MyInvestor, Sttok, MyInvestor and Sttok, digital corporate governance, corporate management, sttok clients"
+    "title": "MyInvestor runs its board, general meetings and shareholder register with Sttok",
+    "description": "MyInvestor relies on Sttok for the digital management of its governing bodies, its shareholders and its corporate processes.",
+    "keywords": "MyInvestor, Sttok, digital corporate governance, board of directors, shareholder register, Sttok customers"
   },
   "summary": {
     "client": "MyInvestor",
-    "title": "MyInvestor digitalizes its corporate management with Sttok",
+    "title": "MyInvestor digitises its corporate governance with Sttok",
     "description": "",
     "quote": {
-      "text": "'Sttok has enabled us to digitalize and automate all our corporate management, from board meetings to maintaining the shareholder registry, ensuring maximum legal security in all our corporate processes'",
-      "author": "Legal Affairs Director",
+      "text": "Sttok has allowed us to digitise and automate all our corporate governance, from holding board meetings to keeping the shareholder register, ensuring maximum legal certainty in all our corporate processes.",
+      "author": "Legal Department",
       "position": "MyInvestor"
     },
     "button": {
-      "text": "Visit MyInvestor website",
+      "text": "Visit MyInvestor",
       "link": "https://myinvestor.es/"
     },
     "features": [
       {
-        "key": "Client",
+        "key": "Customer",
         "value": "MyInvestor"
       },
       {
         "key": "Since",
-        "value": "2023"
+        "value": "2024"
       },
       {
-        "key": "Industry",
-        "value": "Financial Services"
+        "key": "Sector",
+        "value": "Financial services"
       },
       {
         "key": "Features",
-        "value": "Board of Directors, Shareholder Registry, Document Management, Shareholders Meetings"
+        "value": "Board of directors, shareholder register, document management, general meetings"
       }
     ]
   },
@@ -46,17 +46,17 @@
       {
         "title": "About MyInvestor",
         "texts": [
-          "MyInvestor is a digital financial institution operating as an agent of Andbank. It offers investment services, mortgages and current accounts."
+          "MyInvestor is a digital financial institution that operates as an agent of Andbank. It offers investment services, mortgages and current accounts."
         ]
       },
       {
-        "title": "Why did they choose us?",
+        "title": "Why they chose Sttok",
         "texts": [
-          "1. For the need to digitalize their corporate governance processes securely and efficiently.",
-          "2. For the legal security provided by the platform in document management and traceability of corporate agreements.",
-          "3. For the efficiency in conducting digital board meetings and managing online voting.",
-          "4. For the automation in generating corporate documentation and minutes.",
-          "6. For the ability to digitally manage the shareholder registry and corporate documentation."
+          "1. The need to digitise its corporate governance processes securely and efficiently.",
+          "2. The legal certainty the platform provides in document management and the traceability of corporate resolutions.",
+          "3. Efficiency in holding digital board meetings and managing online voting.",
+          "4. Automated generation of corporate documents and minutes.",
+          "5. The ability to manage the shareholder register and corporate documents digitally."
         ]
       }
     ]

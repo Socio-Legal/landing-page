@@ -1,20 +1,25 @@
 {
+  "metadata": {
+    "title": "Grupo Caballero runs its shareholder register and general meetings with Sttok",
+    "description": "Grupo Caballero, a family business founded in 1830, uses Sttok for its shareholder register, general meetings, corporate documents and e-signature.",
+    "keywords": "Grupo Caballero, Sttok, family business, shareholder register, general meetings, Sttok customers"
+  },
   "summary": {
     "client": "Grupo Caballero",
-    "title": "Grupo Caballero runs its shareholder register and meetings with Sttok",
+    "title": "Grupo Caballero runs its shareholder register and general meetings with Sttok",
     "description": "",
     "quote": {
-      "text": "'Sttok has been a key tool for managing our Cap Table and Shareholder meetings. It has allowed us to automate manual tasks and save time in generating documents and electronic signatures.'",
+      "text": "Sttok has been a key tool for managing our cap table and shareholders' meetings. It has let us automate manual tasks and save time generating documents and e-signatures.",
       "author": "Grupo Caballero",
       "position": ""
     },
     "button": {
-      "text": "Go to Grupo Caballero's website",
+      "text": "Visit Grupo Caballero",
       "link": "https://caballero.es/"
     },
     "features": [
       {
-        "key": "Client",
+        "key": "Customer",
         "value": "Grupo Caballero"
       },
       {
@@ -26,8 +31,8 @@
         "value": "Beverages"
       },
       {
-        "key": "Functionalities",
-        "value": "Shareholder register, shareholder meetings, document generation and e-signature"
+        "key": "Features",
+        "value": "Shareholder register, shareholders' meetings, document generation and e-signature"
       }
     ]
   },
@@ -39,19 +44,19 @@
     },
     "sections": [
       {
-        "title": "A bit about Grupo Caballero",
+        "title": "About Grupo Caballero",
         "texts": [
-          "Grupo Caballero is a family business founded in 1830 in El Puerto de Santa María (Cádiz)."
+          "Grupo Caballero is a family business founded in 1830 in El Puerto de Santa María (Cádiz, Spain)."
         ]
       },
       {
-        "title": "Why did they choose us?",
+        "title": "Why they chose Sttok",
         "texts": [
-          "1. For the ease of use of the platform.",
-          "2. For the automation of manual tasks.",
-          "3. For the management of the shareholder register.",
-          "4. For document generation and e-signature.",
-          "5. For the management of Shareholder meetings."
+          "1. Ease of use of the platform.",
+          "2. Automation of manual tasks.",
+          "3. Management of the shareholder register.",
+          "4. Document generation and e-signature.",
+          "5. Management of shareholders' meetings."
         ]
       }
     ]

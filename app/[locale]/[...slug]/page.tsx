@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 
+import DocPage, { docMetadata } from "@/components/shared/doc-page";
 import JsonLd from "@/components/shared/json-ld";
+import { getEnDoc } from "@/lib/content";
 import {
   esPathFor,
   localeFromSegment,
@@ -23,16 +25,22 @@ export function generateStaticParams() {
   return localeSlugParams();
 }
 
-/** Resuelve locale + slug a la entrada del registro. */
+/**
+ * Resuelve locale + slug a la entrada del registro o, si no la hay, al
+ * documento ingles de content/en/ (secciones de lib/content EN_SECTIONS).
+ */
 async function resolver(params: Promise<{ locale: string; slug: string[] }>) {
   const { locale: segmento, slug } = await params;
   const locale = localeFromSegment(segmento);
   if (!locale) return null;
-  const esPath = esPathFor(`${LOCALE_PREFIX[locale]}/${slug.join("/")}`);
+  const ruta = `${LOCALE_PREFIX[locale]}/${slug.join("/")}`;
+  const esPath = esPathFor(ruta);
   if (!esPath) return null;
   const entrada = PAGE_REGISTRY[esPath];
-  if (!entrada || !entrada.meta[locale]) return null;
-  return { locale, esPath, entrada };
+  if (entrada && entrada.meta[locale]) return { locale, esPath, entrada, doc: undefined };
+  const doc = locale === "en" ? getEnDoc(ruta) : undefined;
+  if (doc) return { locale, esPath, entrada: undefined, doc };
+  return null;
 }
 
 export async function generateMetadata({
@@ -42,8 +50,9 @@ export async function generateMetadata({
 }) {
   const r = await resolver(params);
   if (!r) return {};
+  if (r.doc) return docMetadata(r.doc);
   return buildMetadata({
-    ...r.entrada.meta[r.locale]!,
+    ...r.entrada!.meta[r.locale]!,
     path: r.esPath,
     locale: r.locale,
   });
@@ -56,15 +65,17 @@ export default async function Page({
 }) {
   const r = await resolver(params);
   if (!r) notFound();
+  if (r.doc) return <DocPage doc={r.doc} />;
 
-  const { Component } = r.entrada;
-  const meta = r.entrada.meta[r.locale]!;
+  const entrada = r.entrada!;
+  const { Component } = entrada;
+  const meta = entrada.meta[r.locale]!;
   return (
     <>
-      {r.entrada.softwareApplication && (
+      {entrada.softwareApplication && (
         <JsonLd data={softwareApplicationJsonLd(r.locale)} />
       )}
-      {r.entrada.productModule && (
+      {entrada.productModule && (
         <JsonLd
           data={productModuleJsonLd({
             locale: r.locale,

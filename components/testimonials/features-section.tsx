@@ -12,6 +12,8 @@ import {
   getClientLogo,
   getClientLogoScale,
 } from "@/config/client-logos";
+import { localizedHref } from "@/lib/localized-href";
+import { useLocale } from "@/lib/use-locale";
 
 type Feature = {
   icon?: string;
@@ -51,6 +53,7 @@ const FeaturesSection: FC<FeaturesSectionProps> = ({
   items,
 }) => {
   const { t } = useTranslation("testimonials-page");
+  const locale = useLocale();
   const safeItems = Array.isArray(items) ? items : [];
 
   return (
@@ -99,7 +102,7 @@ const FeaturesSection: FC<FeaturesSectionProps> = ({
               return (
                 <Link
                   key={index}
-                  href={`/testimonios/${feature.logo}`}
+                  href={localizedHref(`/testimonios/${feature.logo}`, locale)}
                   title={feature.alt || feature.logo}
                   className={`group ${CARD} transition-colors hover:border-foreground/30`}
                 >

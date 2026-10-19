@@ -4,25 +4,33 @@ import remarkGfm from "remark-gfm";
 
 import Breadcrumbs from "@/components/shared/breadcrumbs";
 import JsonLd from "@/components/shared/json-ld";
-import { mdxComponents } from "@/components/shared/mdx-components";
+import { mdxComponentsFor } from "@/components/shared/mdx-components";
 import Link from "next/link";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 
-import { getSectionDocs, SECTIONS, type Doc } from "@/lib/content";
+import {
+  EN_SECTIONS,
+  getEnSectionDocs,
+  getSectionDocs,
+  SECTIONS,
+  type Doc,
+} from "@/lib/content";
 import { extractFaq } from "@/lib/faq-from-mdx";
 import { buildMetadata } from "@/lib/seo";
 import { faqPageJsonLd } from "@/lib/structured-data";
 
 /**
- * Metadata de un documento de content/. Sin `pathEn`: estas paginas solo
- * existen en castellano, asi que buildMetadata no emite hreflang. El canonical
- * sale de la ruta del archivo, no del frontmatter (lib/content lo valida).
+ * Metadata de un documento de content/. `path` es siempre la ruta castellana:
+ * buildMetadata deriva de ROUTE_MAP el gemelo inglés y el hreflang, y los
+ * documentos que no tienen gemelo no lo emiten. El canonical sale de la ruta
+ * del archivo, no del frontmatter (lib/content lo valida).
  */
 export function docMetadata(doc: Doc): Metadata {
   return buildMetadata({
     title: doc.frontmatter.title,
     description: doc.frontmatter.description,
-    path: doc.url,
+    path: doc.esUrl,
+    locale: doc.locale,
   });
 }
 
@@ -34,7 +42,7 @@ export function docMetadata(doc: Doc): Metadata {
 export default async function DocPage({ doc }: { doc: Doc }) {
   const { content } = await compileMDX({
     source: doc.body,
-    components: mdxComponents,
+    components: mdxComponentsFor(doc.locale),
     options: {
       parseFrontmatter: false,
       // Sin remark-gfm las tablas de los documentos salen como texto plano
@@ -48,7 +56,11 @@ export default async function DocPage({ doc }: { doc: Doc }) {
   // Hermanas de la misma seccion. Se emiten aqui, no en el cuerpo, para que
   // ninguna pagina de content/ pueda quedarse sin enlaces entrantes por un
   // olvido de redaccion: cada documento nuevo queda enlazado desde el resto.
-  const hermanas = getSectionDocs(doc.section).filter((d) => d.url !== doc.url);
+  const en = doc.locale === "en";
+  const hermanas = (en ? getEnSectionDocs(doc.section) : getSectionDocs(doc.section)).filter(
+    (d) => d.url !== doc.url,
+  );
+  const seccion = en ? EN_SECTIONS[doc.section]?.label : SECTIONS[doc.section].label;
 
   // Las fichas de /funcionalidades llevan capturas de la app: el artículo es
   // más ancho (64rem) para que se lean, y el texto sigue en su columna de
@@ -64,7 +76,7 @@ export default async function DocPage({ doc }: { doc: Doc }) {
           ficha ? " [&>*:not(figure):not(.catalogo)]:max-w-3xl [&_h1]:tracking-normal" : ""
         }`}
       >
-        <Breadcrumbs path={doc.url} />
+        <Breadcrumbs path={doc.url} locale={doc.locale} />
         {content}
       </article>
 
@@ -72,7 +84,7 @@ export default async function DocPage({ doc }: { doc: Doc }) {
         <section id="related" className="border-t border-border">
           <div className={`container mx-auto ${ancho} px-4 py-10`}>
             <p className="mb-4 text-xs font-medium uppercase tracking-widest text-muted-foreground">
-              Más en {SECTIONS[doc.section].label}
+              {en ? `More in ${seccion}` : `Más en ${seccion}`}
             </p>
             <div className="flex flex-wrap gap-x-8 gap-y-3">
               {hermanas.map((d) => (

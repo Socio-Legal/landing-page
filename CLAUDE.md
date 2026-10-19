@@ -54,10 +54,22 @@ Las redirecciones usan `statusCode: 301` explícito. `permanent: true` emite
 ## Contenido en MDX
 
 Las secciones `/soluciones`, `/comparativas`, `/guias` y `/funcionalidades` son
-carpetas castellanas reales, sin rewrite detrás y fuera de i18next. Solo una
-portada tiene gemela inglesa: `/funcionalidades` ↔ `/en/features`, que está en
-`ROUTE_MAP` y la sirve `components/product/features-page-en.tsx` con el mismo
-catálogo. Las fichas de cada funcionalidad son solo castellanas.
+carpetas castellanas reales, sin rewrite detrás y fuera de i18next. Tienen
+gemela inglesa:
+
+- `/funcionalidades` ↔ `/en/features` (solo la portada), servida por
+  `components/product/features-page-en.tsx` con el mismo catálogo.
+- `/soluciones` y sus páginas ↔ `/en/solutions/*`: MDX ingleses en
+  `content/en/soluciones/<slug-inglés>.mdx`, servidos por `app/[locale]` cuando
+  la ruta no está en `PAGE_REGISTRY`. `lib/content.ts` (`EN_SECTIONS`) falla el
+  build si un documento inglés no es destino de una entrada de `ROUTE_MAP`.
+
+Guías, comparativas y fichas de funcionalidad son solo castellanas. En los MDX
+ingleses, un enlace a ellas lleva «(in Spanish)».
+
+Los casos de cliente (`/testimonios/<cliente>` ↔ `/en/testimonials/<cliente>`)
+no son MDX: una plantilla (`components/testimonials/testimonial-case.tsx`) con
+el texto en `testimonials-<cliente>-page.json` de cada idioma.
 
 - El contenido vive en `content/<sección>/*.mdx`. **La URL la manda la ruta del
   archivo**, no el frontmatter: `content/soluciones/index.mdx` → `/soluciones`,
