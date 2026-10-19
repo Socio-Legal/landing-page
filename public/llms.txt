@@ -231,11 +231,23 @@ The product, solution and company pages are also available in English:
 - Scale-ups: https://www.sttok.com/en/solutions/startups
 - Funds, family offices and holding companies: https://www.sttok.com/en/solutions/investors
 - Investor portal: https://www.sttok.com/en/solutions/investors-dashboard
+- Solutions by type of organisation: https://www.sttok.com/en/solutions
+- Family businesses: https://www.sttok.com/en/solutions/family-business
+- Corporate groups: https://www.sttok.com/en/solutions/corporate-groups
+- Entities with thousands of shareholders: https://www.sttok.com/en/solutions/large-shareholder-bases
+- Board secretariat: https://www.sttok.com/en/solutions/board-secretariat
+- In-house legal teams: https://www.sttok.com/en/solutions/in-house-legal
+- Migrating to Sttok: https://www.sttok.com/en/solutions/migrate
 - Customers and testimonials: https://www.sttok.com/en/testimonials
+- Case study, Factorial: https://www.sttok.com/en/testimonials/Factorial
+- Case study, PLD Space: https://www.sttok.com/en/testimonials/PldSpace
+- Case study, Grupo Caballero: https://www.sttok.com/en/testimonials/Caballero
+- Case study, Taxdown: https://www.sttok.com/en/testimonials/Taxdown
+- Case study, MyInvestor: https://www.sttok.com/en/testimonials/MyInvestor
 - Pricing: https://www.sttok.com/en/pricing
 - Corporate glossary: https://www.sttok.com/en/resources
 - Sttok versus Excel: https://www.sttok.com/en/sttok-vs-excel
 - About Sttok: https://www.sttok.com/en/about
 - Security (ISO 27001, GDPR): https://www.sttok.com/en/security
 
-Guides, comparisons and feature pages are in Spanish only.
+Guides, comparisons and individual feature pages are in Spanish only.

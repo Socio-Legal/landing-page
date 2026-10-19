@@ -55,7 +55,10 @@
     "demo": "Solicitar demo"
   },
   "testimonials": {
-    "goBackToTestimonials": "Volver a Testimonios"
+    "goBackToTestimonials": "Volver a Testimonios",
+    "related": "Testimonios relacionados",
+    "viewCase": "Ver Testimonio",
+    "imageAlt": "Web de {{client}}"
   },
   "sttokTitle": "Software de Gestión de Sociedades",
   "allRightsReserved": "Todos los derechos reservados",

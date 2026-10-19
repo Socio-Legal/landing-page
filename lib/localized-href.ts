@@ -28,6 +28,20 @@ export const ROUTE_MAP: Record<string, string> = {
   "/politica-seguridad": "/en/security",
   // Solo el catálogo: las fichas de /funcionalidades/* siguen solo en castellano.
   "/funcionalidades": "/en/features",
+  // Casos de cliente: misma plantilla, texto en testimonials-<cliente>-page.json.
+  "/testimonios/Factorial": "/en/testimonials/Factorial",
+  "/testimonios/PldSpace": "/en/testimonials/PldSpace",
+  "/testimonios/Caballero": "/en/testimonials/Caballero",
+  "/testimonios/Taxdown": "/en/testimonials/Taxdown",
+  "/testimonios/MyInvestor": "/en/testimonials/MyInvestor",
+  // Sección de soluciones: content/soluciones ↔ content/en/soluciones.
+  "/soluciones": "/en/solutions",
+  "/soluciones/empresa-familiar": "/en/solutions/family-business",
+  "/soluciones/grupos-de-sociedades": "/en/solutions/corporate-groups",
+  "/soluciones/accionariado-amplio": "/en/solutions/large-shareholder-bases",
+  "/soluciones/secretaria-del-consejo": "/en/solutions/board-secretariat",
+  "/soluciones/direccion-juridica-in-house": "/en/solutions/in-house-legal",
+  "/soluciones/migrar": "/en/solutions/migrate",
 };
 
 const EN_TO_ES = Object.fromEntries(

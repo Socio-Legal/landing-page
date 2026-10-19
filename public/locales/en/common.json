@@ -55,7 +55,10 @@
     "demo": "Schedule demo"
   },
   "testimonials": {
-    "goBackToTestimonials": "Go back to Testimonials"
+    "goBackToTestimonials": "Go back to Testimonials",
+    "related": "Related case studies",
+    "viewCase": "View case study",
+    "imageAlt": "{{client}} website"
   },
   "sttokTitle": "Company Management Software",
   "allRightsReserved": "All rights reserved",

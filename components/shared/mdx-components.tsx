@@ -7,6 +7,8 @@ import Link from "next/link";
 import VideoTema from "@/components/shared/video-tema";
 import type { MDXComponents } from "mdx/types";
 
+import type { Locale } from "@/lib/locales";
+
 /** Ancho y alto de un PNG, leídos de su cabecera (bytes 16 a 23). */
 function pngSize(file: string): { width: number; height: number } {
   const buf = fs.readFileSync(path.join(process.cwd(), "public", file));
@@ -29,22 +31,26 @@ const Captura = ({
   alt,
   pie,
   video,
+  locale = "es",
 }: {
   nombre: string;
   alt: string;
   pie?: string;
   video?: string;
+  locale?: Locale;
 }) => {
   const src = (variante: string, tema: string) =>
     `/funcionalidades/${nombre}${variante}-${tema}.png`;
   const { width, height } = pngSize(src("", "light"));
+  // En inglés, la animación grabada con la app en inglés (/animaciones/en/) y
+  // sin el recorte móvil, que es una captura en castellano.
+  const en = locale === "en" && !!video;
   // Recorte opcional para móvil: <nombre>-detalle-*.png. La pantalla entera
   // no se lee a 375 px, así que en móvil se enseña solo la parte que importa.
-  const detalle = fs.existsSync(
-    path.join(process.cwd(), "public", src("-detalle", "light")),
-  )
-    ? pngSize(src("-detalle", "light"))
-    : null;
+  const detalle =
+    !en && fs.existsSync(path.join(process.cwd(), "public", src("-detalle", "light")))
+      ? pngSize(src("-detalle", "light"))
+      : null;
 
   const img = (
     variante: string,
@@ -75,7 +81,7 @@ const Captura = ({
                 </>
               ) : null}
               <div className={detalle ? "hidden sm:block" : undefined}>
-                <VideoTema base={`/animaciones/${video}`} alt={alt} sizes="(max-width: 1100px) 100vw, 64rem" />
+                <VideoTema base={`/animaciones/${en ? "en/" : ""}${video}`} alt={alt} sizes="(max-width: 1100px) 100vw, 64rem" />
               </div>
             </>
           ) : detalle ? (
@@ -196,3 +202,15 @@ export const mdxComponents: MDXComponents = {
     />
   ),
 };
+
+/**
+ * Componentes MDX de un idioma: Captura sabe si la página es inglesa para
+ * enseñar la animación inglesa.
+ */
+export function mdxComponentsFor(locale: Locale): MDXComponents {
+  if (locale === "es") return mdxComponents;
+  return {
+    ...mdxComponents,
+    Captura: (props: Parameters<typeof Captura>[0]) => <Captura {...props} locale={locale} />,
+  };
+}

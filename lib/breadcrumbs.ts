@@ -1,4 +1,10 @@
-import { getAllDocs, SECTIONS as CONTENT_SECTIONS, type Doc } from "@/lib/content";
+import {
+  EN_SECTIONS,
+  getAllDocs,
+  getEnDoc,
+  SECTIONS as CONTENT_SECTIONS,
+  type Doc,
+} from "@/lib/content";
 import type { Locale } from "@/lib/locales";
 import { ROUTE_MAP, localizedHref } from "@/lib/localized-href";
 
@@ -41,7 +47,7 @@ const SECTIONS = {
   // /soluciones existe desde que hay content/soluciones/index.mdx. Es una
   // seccion solo castellana, asi que no se intercala en las rutas /en: en
   // ingles, /en/solutions/companies sigue colgando directamente de la home.
-  solutions: { path: "/soluciones", label: "Soluciones", esOnly: true },
+  solutions: { path: "/soluciones", label: { es: "Soluciones", en: "Solutions" } },
 } satisfies Record<
   string,
   { path: string; label: Label; esOnly?: boolean }
@@ -174,9 +180,13 @@ export function breadcrumbTrail(pathname: string, locale: Locale): Crumb[] {
 
   // Paginas de content/: se resuelven solas a partir de los archivos, asi que
   // una pagina nueva tiene migas sin tocar este modulo.
-  const doc = getAllDocs().find((d) => d.url === esPath);
+  const esDoc = getAllDocs().find((d) => d.url === esPath);
+  // En inglés, el título del documento inglés gemelo, si lo hay.
+  const doc = (locale === "en" && ROUTE_MAP[esPath] && getEnDoc(ROUTE_MAP[esPath])) || esDoc;
   if (doc) {
-    const sectionLabel = SECTIONS_BY_PATH[`/${doc.section}`];
+    const esLabel = SECTIONS_BY_PATH[`/${doc.section}`];
+    const enLabel = locale === "en" ? EN_SECTIONS[doc.section]?.label : undefined;
+    const sectionLabel = esLabel && { ...esLabel, name: enLabel ?? esLabel.name };
     // La portada de seccion es ya el segundo nivel: Inicio > Soluciones. Usa
     // el nombre de la seccion, no el titular SEO del documento.
     if (doc.name === "index") {
