@@ -155,6 +155,7 @@ Funcionalidad con coste adicional: mercado secundario.
 - Firma electrónica: https://www.sttok.com/funcionalidades/firma-electronica
 - Comunicaciones a socios con certificado de envío: https://www.sttok.com/funcionalidades/comunicaciones-a-socios
 - Libro registro de socios oficial: vistas, exportación y legalización: https://www.sttok.com/funcionalidades/libro-registro-oficial
+- Libro registro de títulos de acciones: https://www.sttok.com/funcionalidades/libro-registro-de-titulos
 - Numeración de participaciones y acciones por rangos: https://www.sttok.com/funcionalidades/numeracion-por-rangos
 - Transmisiones de participaciones y acciones: https://www.sttok.com/funcionalidades/transmisiones
 - Ampliaciones y reducciones de capital: https://www.sttok.com/funcionalidades/ampliaciones-y-reducciones-de-capital

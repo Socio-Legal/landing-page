@@ -20,7 +20,7 @@ Sttok construye el libro registro de socios, o el de acciones nominativas en la 
 
 | Bloque | Qué muestra |
 |---|---|
-| Socios | Todos los titulares, sin paginar, con su nombre, su identificación, su nacionalidad y su domicilio |
+| Socios | Todos los titulares, con su nombre, su identificación, su nacionalidad y su domicilio |
 | Acciones y clases | El número de participaciones o acciones de cada socio, por clase y en total, y la fila de totales de la sociedad |
 | Numeración | Los rangos de cada titular en cada clase, por ejemplo 520.001-720.000 (Ordinaria) |
 | Porcentajes | El porcentaje no diluido, el diluido con los instrumentos ya asignados y el totalmente diluido |
@@ -57,7 +57,21 @@ El libro no se rellena: es el resultado de registrar las operaciones de la socie
 3. Cada [transmisión](/funcionalidades/transmisiones) mueve un rango concreto de un titular a otro, y cada carga queda anotada sobre su rango.
 4. El libro suma lo que tiene cada titular a la fecha que se consulta. Como todo se registra sobre la [numeración por rangos](/funcionalidades/numeracion-por-rangos), el total cuadra con el capital de la sociedad.
 
-Si la sociedad llega con años de historia, Sttok [lee sus escrituras con IA](/funcionalidades/lectura-de-escrituras-con-ia) y las encadena en el mismo orden.
+Si la sociedad llega con años de historia, Sttok [lee sus escrituras con IA](/funcionalidades/lectura-de-escrituras-con-ia) y las encadena en el mismo orden. El libro se puede sacar a cualquier fecha: el de hoy o el que había el día que se indique.
+
+## Una operación se refleja en todos los sitios
+
+En Sttok una operación se registra una sola vez. Al registrar una constitución, una ampliación o una compraventa, la información se propaga sola a todo lo que depende de ella.
+
+| Dónde | Qué cambia con la operación |
+|---|---|
+| Listado de operaciones | La operación entra con su fecha, sus partes y su documento |
+| Libro registro | Las cinco vistas del libro, con los rangos y los porcentajes nuevos |
+| Socios | Se da de alta a quien entra, de baja a quien sale y se ajusta la posición de quien participa |
+| Ficha de cada socio | Sus transacciones, sus rangos y su historial |
+| Documentación | La escritura, el acta o el contrato quedan en la operación y en la ficha de cada socio afectado |
+
+Nadie tiene que copiar la operación a otra pantalla ni a otro documento. Por eso, al cerrar el ejercicio, el libro ya incluye cada operación del año entre sus movimientos.
 
 ## Cómo se legaliza
 
@@ -67,11 +81,7 @@ Si la sociedad llega con años de historia, Sttok [lee sus escrituras con IA](/f
 4. El tercer paso indica el plazo legal y el tiempo que queda. Al pulsar «Presentar al Registro», se elige el certificado electrónico de quien presenta, que exige el Registro, y Sttok envía el libro y el escrito por la vía telemática. Nada sale hacia el Registro sin ese paso. El proceso completo está en [legalización del libro registro](/funcionalidades/legalizacion-del-libro-registro).
 5. La presentación queda guardada con su justificante, y la obligación pasa a cumplida en el calendario de la sociedad. Si el libro se legaliza por otra vía, también se puede anotar en Sttok con su fecha.
 
-## El cierre del ejercicio trae una ampliación de capital
-
-La ampliación ya está anotada en Sttok con su escritura y sus nuevos rangos. Por eso el libro del ejercicio ya la incluye entre los movimientos del año. Nadie tiene que copiar la operación a un documento aparte.
-
-El libro se legaliza por vía telemática en los cuatro meses siguientes al cierre del ejercicio (artículo 18.1 de la Ley 14/2013). El asistente muestra esa fecha y avisa si ya ha pasado. La [guía de legalización del libro registro de socios](/guias/libro-registro-socios-legalizacion) explica el procedimiento.
+Si la sociedad prefiere presentarlo por su cuenta, basta con descargar el libro en Excel, CSV o PDF y presentarlo en el Registro. El libro se legaliza por vía telemática en los cuatro meses siguientes al cierre del ejercicio (artículo 18.1 de la Ley 14/2013). El asistente muestra esa fecha y avisa si ya ha pasado. La [guía de legalización del libro registro de socios](/guias/libro-registro-socios-legalizacion) explica el procedimiento.
 
 ## La sociedad ya presentó el libro por su cuenta
 
@@ -80,13 +90,16 @@ Si el libro se legalizó fuera de Sttok, la legalización se registra igualmente
 ## Preguntas frecuentes
 
 **¿Sirve para una sociedad anónima?**
-Sí. Sttok detecta la forma social y lleva el libro registro de acciones nominativas en la anónima y el libro registro de socios en la limitada.
+Sí. Sttok detecta la forma social y lleva el libro registro de acciones nominativas en la anónima y el libro registro de socios en la limitada. Si la sociedad emite títulos, Sttok lleva también el [libro registro de títulos](/funcionalidades/libro-registro-de-titulos).
 
 **¿Hay que legalizar el libro todos los años?**
 Solo los ejercicios en que el libro ha tenido movimientos. Sttok solo crea la tarea de legalizar cuando el ejercicio cerrado tuvo alguna operación.
 
+**¿Puedo sacar el libro registro a una fecha determinada?**
+Sí. El libro se consulta y se descarga tal como estaba en la fecha que se indique, porque sale de las operaciones registradas hasta ese día.
+
 **¿Puedo sacar el libro en Excel para el abogado o el auditor?**
-Sí. Cada vista del libro se descarga en Excel o en PDF desde la cabecera de la pantalla.
+Sí. Cada vista del libro se descarga en Excel o en PDF desde la cabecera de la pantalla, y el libro que se presenta al Registro también en CSV.
 
 **¿De dónde salen los datos del libro?**
 De las operaciones registradas en Sttok, cada una con su escritura, su acta o su contrato. Por eso las cinco vistas cuadran entre sí y con el capital de la sociedad.

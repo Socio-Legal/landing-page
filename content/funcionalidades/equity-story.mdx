@@ -8,12 +8,23 @@ canonical: "https://www.sttok.com/funcionalidades/equity-story"
 
 # Equity Story: historial del capital por operación
 
-La Equity Story es una vista del libro de socios con la historia del capital en una sola tabla. Cada operación ocupa un grupo de columnas, por orden de fecha. Cada fila es una persona que ha tenido acciones alguna vez. Las celdas dicen cuántas acciones recibió o transmitió, con cuántas se quedó y qué porcentaje del capital tenía después.
+La Equity Story es una vista del libro de socios con la historia del capital en una sola tabla. Cada operación ocupa un grupo de columnas, por orden de fecha. Cada fila es una persona que ha tenido acciones alguna vez. Las celdas dicen cuántas acciones recibió o transmitió, con cuántas se quedó y qué porcentaje del capital tenía después. La tabla se exporta a Excel o PDF, y la sociedad decide si los socios pueden consultarla o no.
 
 <Captura
   nombre="equity-story"
   alt="Vista Equity Story del libro de socios en Sttok, con una columna por operación y el número de acciones y el porcentaje de cada socio tras cada una"
   pie="Libro de socios, vista Equity Story. Datos de ejemplo."
+/>
+
+## Todas las operaciones de la sociedad
+
+La Equity Story recoge todas las operaciones que se registran en Sttok. El menú «Añadir operación» las reúne en un solo sitio: alta de un nuevo socio, constitución, ampliación y reducción de capital, compraventa, herencia, donación, endoso, transmisión, split, renumeración, reclasificación, reparto de dividendos, otras aportaciones, canje de títulos y operación informativa. La ampliación y la compraventa se pueden dar de alta también leyendo su escritura con IA, y cualquier operación registrada se puede deshacer.
+
+<Captura
+  nombre="operaciones"
+  video="operaciones"
+  alt="Pantalla Operaciones de Sttok con el listado de operaciones de la sociedad y el menú Añadir operación abierto, recorrido de arriba abajo: constitución, nuevo socio, ampliación y reducción de capital, compraventa, herencia, donación, endoso, transmisión, split, renumeración, reclasificación, reparto de dividendos, otras aportaciones, canje de títulos y operación informativa"
+  pie="Operaciones de la sociedad y el menú para añadir una nueva. Datos de ejemplo."
 />
 
 ## Qué columnas tiene cada operación
@@ -35,7 +46,9 @@ La Equity Story es una vista del libro de socios con la historia del capital en 
 
 ## Cómo se construye
 
-La tabla no se rellena a mano. Sale de las operaciones registradas en el libro: cada [transmisión](/funcionalidades/transmisiones) y cada [ampliación o reducción de capital](/funcionalidades/ampliaciones-y-reducciones-de-capital) añade su grupo de columnas. El total y el porcentaje de cada columna arrastran el efecto de todas las operaciones anteriores.
+La tabla no se rellena aparte. Sale de las operaciones registradas en el libro: cada [transmisión](/funcionalidades/transmisiones) y cada [ampliación o reducción de capital](/funcionalidades/ampliaciones-y-reducciones-de-capital) añade su grupo de columnas. El total y el porcentaje de cada columna arrastran el efecto de todas las operaciones anteriores.
+
+Las operaciones se dan de alta de dos maneras. A mano, rellenando el formulario de cada una. O con la IA de Sttok, aportando la documentación que las soporta: escrituras, actas o contratos. Sttok [lee el documento](/funcionalidades/lectura-de-escrituras-con-ia), propone los datos y una persona los revisa antes de registrar.
 
 Las filas incluyen a quien ya no es socio. Un socio que vendió todas sus acciones sigue en la tabla, con sus cifras hasta la operación en la que salió. La autocartera aparece como un titular más.
 
@@ -60,7 +73,13 @@ No. Se genera a partir de las operaciones registradas en el libro de socios. Cad
 Sí. La vista es el historial completo de quien ha tenido acciones alguna vez. Un antiguo socio conserva su fila con las cifras hasta su salida.
 
 **¿Qué tipos de operación recoge?**
-La constitución, las ampliaciones, los splits, las reducciones, las compraventas, las herencias y las donaciones. Cada tipo tiene sus propias columnas.
+Todas las que se registran en Sttok: constitución, nuevo socio, ampliaciones y reducciones de capital, compraventas, herencias, donaciones, endosos, transmisiones, splits, renumeraciones, reclasificaciones, repartos de dividendos, otras aportaciones, canjes de títulos y operaciones informativas.
+
+**¿Se puede exportar?**
+Sí. La Equity Story se descarga en Excel o en PDF, como las demás vistas del libro de socios.
+
+**¿La ven los socios?**
+Solo si la sociedad quiere. Por defecto es una vista de la sociedad; se puede dar acceso a los socios desde su portal o no dárselo.
 
 **¿Se puede ocultar la vista?**
 Sí. En la configuración de la sociedad, la pestaña Funcionalidades tiene un interruptor para mostrar u ocultar la Equity Story en el libro de socios.
