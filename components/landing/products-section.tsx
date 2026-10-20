@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { BarChart3, Brain, FileText, LineChart } from "lucide-react";
 
 import Features from "@/components/features-horizontal";
@@ -40,6 +42,9 @@ const ProductsHeader = () => {
 const ProductsSection = () => {
   const { t } = useTranslation("home-products-section");
 
+  const allText = t("header.buttonText", { defaultValue: "" });
+  const allLink = t("header.buttonLink", { defaultValue: "" });
+
   const productsData = t("items", { returnObjects: true }) as ProductProps[];
   const products: ProductProps[] | undefined = Array.isArray(productsData)
     ? productsData
@@ -61,6 +66,21 @@ const ProductsSection = () => {
           linePosition="bottom"
           data={parsedProducts(products)}
         />
+        {/* Enlace al catálogo completo: va en el HTML, no solo en las pestañas */}
+        {allText && allLink.startsWith("/") && (
+          <p className="mt-10 text-center text-sm">
+            <Link
+              href={allLink}
+              className="group/link inline-flex items-center gap-1.5 rounded-sm font-medium text-foreground underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-4 focus-visible:ring-offset-background"
+            >
+              {allText}
+              <ArrowRightIcon
+                aria-hidden
+                className="h-3.5 w-3.5 transition-transform duration-200 group-hover/link:translate-x-0.5"
+              />
+            </Link>
+          </p>
+        )}
       </div>
     </section>
   );

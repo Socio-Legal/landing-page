@@ -5,17 +5,17 @@
     "eu": "Data encrypted in the EU"
   },
   "metadata": {
-    "title": "Shareholder register, general meetings and board of directors: the product",
+    "title": "How Sttok works: shareholder register, meetings and board",
     "description": "Sttok keeps the shareholder register with numbered share ranges, runs general meetings and the board through to certified minutes, and manages incentive plans, company groups and their documents.",
     "keywords": "shareholder register, share ledger, general meeting, board of directors, company groups, beneficial owner, incentive plans"
   },
   "hero": {
     "slogan": "Product",
-    "title": "Shareholder register, general meetings and board of directors in one platform",
+    "title": "How Sttok works: shareholder register, meetings, board, incentive plans and corporate groups",
     "description": "Sttok keeps your company's corporate records: the shareholder register with numbered share ranges, general meetings and the board through to certified minutes, incentive plans and company groups. Every transaction is documented and signed in the same place.",
     "button": {
-      "text": "Schedule demo",
-      "link": "https://calendly.com/sttok/30min"
+      "text": "See features",
+      "link": "#modules"
     },
     "image": {
       "light": "/animaciones/en/sociedades-light-poster.webp",
@@ -39,8 +39,12 @@
             "description": "Register of partners or of registered shares, with share classes, numbered ranges and export in a format ready for legalisation."
           },
           {
+            "title": "Share certificate register",
+            "description": "If the company issues share certificates, as a public limited company does, Sttok keeps their register and generates the certificates automatically with each transaction."
+          },
+          {
             "title": "Transfers and encumbrances",
-            "description": "Sales, inheritances, gifts, splits and renumbering. Pledges, usufruct, bare ownership, co-ownership and options are kept as separate positions."
+            "description": "Sales, inheritances, gifts, splits and renumbering. Pledges, usufruct, bare ownership, co-ownership and options are kept as separate positions. Every transaction opens the deed, minutes or contract behind it."
           },
           {
             "title": "Ownership and value certificates",
@@ -61,17 +65,21 @@
         ]
       },
       {
-        "title": "General meetings and board",
+        "title": "Governance: meetings and boards",
         "summary": "The company's governing bodies, from the notice to the certified minutes.",
         "href": "/en/shareholder-meetings",
         "items": [
           {
-            "title": "General meeting",
-            "description": "Notice, attendance, signed proxies, early voting and live voting. The minutes are drafted from the results."
+            "title": "Shareholders' meeting",
+            "description": "Notice sent to each shareholder, attendance list, signed proxies and live voting. The minutes are drafted from the results and sent for signature."
           },
           {
             "title": "Board of directors",
-            "description": "Notice with agenda, committees, minutes and certification of resolutions."
+            "description": "Notice with agenda, minutes and certification of resolutions."
+          },
+          {
+            "title": "Committees",
+            "description": "The audit committee and the other board committees, with their members, their meetings and their minutes."
           },
           {
             "title": "Officers and powers of attorney",
@@ -103,6 +111,10 @@
           {
             "title": "New companies",
             "description": "Each company comes in with its history. If it has just been incorporated, Sttok reads the deed of incorporation."
+          },
+          {
+            "title": "Automatic documents",
+            "description": "Sttok generates the notices, minutes and certificates of each group company from its own data."
           }
         ]
       },
@@ -117,7 +129,11 @@
           },
           {
             "title": "Vesting and grants",
-            "description": "Vesting schedule for each beneficiary, with their signed invitation letter."
+            "description": "Sttok vests each beneficiary's units automatically, following their schedule, once they sign their invitation letter."
+          },
+          {
+            "title": "Beneficiary notifications",
+            "description": "With each vested tranche, Sttok notifies the beneficiary, who sees their granted, vested and pending units in their record."
           },
           {
             "title": "Beneficiary portal",
@@ -268,7 +284,7 @@
         "label": "equity under management"
       }
     ],
-    "note": "As of October 2026, more than 250 clients manage more than 500 companies. The average of two companies per client reflects the group profile of Sttok's users."
+    "note": "More than 250 clients manage more than 500 companies. The average of two companies per client reflects the group profile of Sttok's users."
   },
   "faq": {
     "eyebrow": "FAQ",

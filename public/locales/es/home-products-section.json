@@ -3,8 +3,8 @@
     "slogan": "Productos",
     "title": "Descubre nuestras funcionalidades",
     "description": "Sttok lleva el libro de socios, las juntas, el consejo y los planes de incentivos de empresas, grupos societarios, abogados y startups.",
-    "buttonText": "Ver funcionalidades",
-    "buttonLink": "#"
+    "buttonText": "Ver todas las funcionalidades",
+    "buttonLink": "/funcionalidades"
   },
   "items": [
     {

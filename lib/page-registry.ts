@@ -216,7 +216,7 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageProducto,
     meta: {
       en: {
-        title: "Shareholder register, general meetings and board of directors",
+        title: "How Sttok works: shareholder register, meetings and board",
         description: "Shareholder register with numbered share ranges, general meetings and board through to certified minutes, incentive plans and company groups.",
       keywords: "shareholder register, share ledger, general meeting, board of directors, company groups, beneficial owner, incentive plans",
       },

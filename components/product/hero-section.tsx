@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { FC } from "react";
 import { useTranslation } from "react-i18next";
-import { ArrowRightIcon } from "@radix-ui/react-icons";
+import { ArrowDownIcon, ArrowRightIcon } from "@radix-ui/react-icons";
 
 import { trackDemoClick } from "@/lib/analytics";
 import VideoTema from "@/components/shared/video-tema";
@@ -75,16 +75,28 @@ const HeroSection: FC<HeroSectionProps> = ({
                   hasImage ? "flex flex-wrap gap-3" : "flex justify-center"
                 }
               >
-                <Link
-                  href={button.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => trackDemoClick("inner-hero")}
-                  className="inline-flex items-center gap-2 rounded-md bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
-                >
-                  {t(button.text)}
-                  <ArrowRightIcon className="h-4 w-4" />
-                </Link>
+                {/* Un ancla (#modules en /producto) baja por la misma página:
+                    ni pestaña nueva ni clic de demo */}
+                {button.link.startsWith("#") ? (
+                  <a
+                    href={button.link}
+                    className="inline-flex items-center gap-2 rounded-md bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
+                  >
+                    {t(button.text)}
+                    <ArrowDownIcon className="h-4 w-4" />
+                  </a>
+                ) : (
+                  <Link
+                    href={button.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => trackDemoClick("inner-hero")}
+                    className="inline-flex items-center gap-2 rounded-md bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
+                  >
+                    {t(button.text)}
+                    <ArrowRightIcon className="h-4 w-4" />
+                  </Link>
+                )}
               </div>
             )}
 

@@ -69,7 +69,7 @@ const Page = () => {
 
       {/* Módulos: una fila por parte de la vida societaria. Retícula de 12
           columnas: el nombre del módulo ocupa 4 y sus funciones, 8. */}
-      <section id="modules" className="border-t border-border">
+      <section id="modules" className="scroll-mt-14 border-t border-border">
         <div className={SECTION}>
           <SectionHeading
             variant="plain"

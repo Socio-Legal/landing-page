@@ -40,6 +40,25 @@
       "img": "/logo-banktrack-mini.png",
       "description": "Now with Sttok you can perform simulations of capital increases or convertible notes. We also easily manage our team's phantom shares. Finally, as an investor, I have my investees organized and I clearly know what I have.",
       "stars": 5
+    },
+    {
+      "name": "Legal Department",
+      "role": "MyInvestor",
+      "description": "Sttok has allowed us to digitise and automate all our corporate governance, from holding board meetings to keeping the shareholder register, ensuring maximum legal certainty in all our corporate processes.",
+      "stars": 5
+    },
+    {
+      "name": "Grupo Caballero",
+      "role": "Family business founded in 1830",
+      "description": "Sttok has been a key tool for managing our cap table and shareholders' meetings. It has let us automate manual tasks and save time generating documents and e-signatures.",
+      "stars": 5
+    },
+    {
+      "name": "PLD Space",
+      "role": "Spanish aerospace company",
+      "img": "/logo-pldspace-mini.png",
+      "description": "We use Sttok to manage our relationship with our shareholders and investors, along with its main features such as the shareholder register, general meetings, incentive plans and the board of directors.",
+      "stars": 5
     }
   ]
 }
