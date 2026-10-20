@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Libro de socios, juntas y consejo de administración",
+  title: "Cómo funciona Sttok: libro de socios, juntas y consejo",
   description:
     "Sttok lleva el libro de socios con numeración por rangos, las juntas y el consejo hasta el acta certificada, los planes de incentivos, los grupos de sociedades y su documentación.",
   keywords:

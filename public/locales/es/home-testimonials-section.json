@@ -40,6 +40,25 @@
       "img": "/logo-banktrack-mini.png",
       "description": "Ahora con Sttok puedes realizar simulaciones de ampliaciones o notas convertibles. Además también gestionamos las phantoms de nuestro equipo fácilmente. Finalmente como inversor tengo organizadas mis participadas y conozco claramente qué es lo que tengo.",
       "stars": 5
+    },
+    {
+      "name": "Asesoría Jurídica",
+      "role": "MyInvestor",
+      "description": "Sttok nos ha permitido digitalizar y automatizar toda la gestión societaria, desde la celebración de consejos de administración hasta el mantenimiento del libro registro de socios, garantizando la máxima seguridad jurídica en todos nuestros procesos corporativos.",
+      "stars": 5
+    },
+    {
+      "name": "Grupo Caballero",
+      "role": "Empresa familiar fundada en 1830",
+      "description": "Sttok ha sido una herramienta clave para la gestión de nuestro Captable y Juntas de Socios. Nos ha permitido automatizar tareas manuales y ahorrar tiempo en la generación de documentos y firmas electrónicas.",
+      "stars": 5
+    },
+    {
+      "name": "PLD Space",
+      "role": "Empresa aeroespacial española",
+      "img": "/logo-pldspace-mini.png",
+      "description": "Para gestionar la relación con nuestros socios e inversores utilizamos Sttok. Además de las principales funcionalidades como libro de socios, juntas de accionistas, planes de incentivos y consejo de administración, etc.",
+      "stars": 5
     }
   ]
 }

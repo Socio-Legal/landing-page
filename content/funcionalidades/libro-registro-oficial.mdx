@@ -1,6 +1,6 @@
 ---
-title: "Libro registro de socios oficial y su legalización"
-description: "Sttok compone el libro registro de socios o de acciones nominativas con las operaciones anotadas, prepara cada ejercicio el libro y el escrito, y permite presentarlos por vía telemática en el Registro Mercantil."
+title: "Libro registro de socios oficial: vistas, exportación y legalización"
+description: "Sttok construye el libro registro de socios o de acciones nominativas con todas las operaciones de la sociedad, desde la constitución. Lo enseña en cinco vistas exportables a Excel o PDF y permite presentarlo a legalizar por vía telemática."
 slug: "/funcionalidades/libro-registro-oficial"
 section: "funcionalidades"
 canonical: "https://www.sttok.com/funcionalidades/libro-registro-oficial"
@@ -8,7 +8,7 @@ canonical: "https://www.sttok.com/funcionalidades/libro-registro-oficial"
 
 # Libro registro de socios oficial
 
-Sttok compone el libro registro de socios, o el de acciones nominativas en la sociedad anónima, con las operaciones que ya están anotadas. Nada se teclea aparte. Cuando un ejercicio ha tenido movimientos, prepara el libro y el escrito de solicitud de legalización. Ambos se revisan, se descargan y se pueden presentar por vía telemática en el Registro Mercantil desde la misma pantalla. La presentación no es automática: la hace la sociedad cuando la decide.
+Sttok construye el libro registro de socios, o el de acciones nominativas en la sociedad anónima, con todas las operaciones de la sociedad. Cada constitución, ampliación, compraventa o herencia queda registrada con su fecha, sus rangos y su escritura, y el libro sale de ese registro. Nada se teclea aparte. El mismo libro se consulta en cinco vistas, de la oficial que se presenta al Registro Mercantil a la Equity story, y cada vista se exporta a Excel o PDF.
 
 <Captura
   nombre="libro-registro-oficial"
@@ -20,11 +20,44 @@ Sttok compone el libro registro de socios, o el de acciones nominativas en la so
 
 | Bloque | Qué muestra |
 |---|---|
-| Titulares | Todos los socios de la sociedad, sin paginar, cada uno con sus participaciones o acciones por clase |
-| Total | El número total de participaciones o acciones de cada titular y la fila de totales de la sociedad |
+| Socios | Todos los titulares, sin paginar, con su nombre, su identificación, su nacionalidad y su domicilio |
+| Acciones y clases | El número de participaciones o acciones de cada socio, por clase y en total, y la fila de totales de la sociedad |
+| Numeración | Los rangos de cada titular en cada clase, por ejemplo 520.001-720.000 (Ordinaria) |
 | Porcentajes | El porcentaje no diluido, el diluido con los instrumentos ya asignados y el totalmente diluido |
+| Cargas | Prenda, embargo, usufructo y nuda propiedad, cotitularidad y opción, sobre el rango al que afectan |
+| Historial | Cada transacción del titular con su fecha, el tipo de operación, los rangos y, si la hubo, la notaría que otorgó la escritura |
 | Instrumentos | Opciones, phantom shares y notas convertibles en filas aparte, porque sus titulares todavía no son socios |
 | Movimientos del ejercicio | Las operaciones del año que se legaliza, con su fecha, en el libro que se presenta |
+
+## Vistas del libro
+
+Las cinco vistas salen de las mismas operaciones, así que siempre cuadran entre sí. Se cambia de una a otra en la cabecera de la pantalla Libro de socios, y cualquiera se descarga en Excel o en PDF.
+
+<Captura
+  nombre="libro-de-socios-vistas"
+  video="libro-de-socios-vistas"
+  alt="Selector de vistas del libro de socios en Sttok: Equity story, Registro mercantil, Resumen, Resumen detallado y Resumen con aportaciones, con el paso del Resumen detallado por clase de acciones a la Equity story operación a operación"
+  pie="Cambio de vista en el libro de socios. Datos de ejemplo."
+/>
+
+| Vista | Para qué sirve |
+|---|---|
+| Registro mercantil | El libro oficial que se presenta a legalizar: cada titular con su identificación, su numeración por clase, sus cargas y el historial de sus títulos |
+| Resumen | El reparto del capital de un vistazo: cada socio con su total y su porcentaje |
+| Resumen detallado | Las participaciones o acciones de cada socio por clase, con los instrumentos asignados y sin asignar y las notas convertibles en vigor |
+| Resumen con aportaciones | El resumen con lo que ha aportado cada socio a la sociedad |
+| [Equity story](/funcionalidades/equity-story) | La evolución del capital operación a operación, de la constitución a la última ampliación, con lo que entra y lo que pesa cada socio en cada paso |
+
+## Cómo se construye el libro
+
+El libro no se rellena: es el resultado de registrar las operaciones de la sociedad en orden, desde la constitución hasta la última. Cada operación se anota con su fecha, sus partes, los rangos que crea o transmite y el documento que la soporta, sea una escritura, un acta o un contrato. Desde cualquier transacción se abre ese documento.
+
+1. La constitución crea los primeros rangos de cada clase y sus titulares.
+2. Cada [ampliación o reducción](/funcionalidades/ampliaciones-y-reducciones-de-capital) numera las nuevas participaciones tras la última emitida, o retira las amortizadas.
+3. Cada [transmisión](/funcionalidades/transmisiones) mueve un rango concreto de un titular a otro, y cada carga queda anotada sobre su rango.
+4. El libro suma lo que tiene cada titular a la fecha que se consulta. Como todo se registra sobre la [numeración por rangos](/funcionalidades/numeracion-por-rangos), el total cuadra con el capital de la sociedad.
+
+Si la sociedad llega con años de historia, Sttok [lee sus escrituras con IA](/funcionalidades/lectura-de-escrituras-con-ia) y las encadena en el mismo orden.
 
 ## Cómo se legaliza
 
@@ -44,10 +77,6 @@ El libro se legaliza por vía telemática en los cuatro meses siguientes al cier
 
 Si el libro se legalizó fuera de Sttok, la legalización se registra igualmente desde las reglas de la sociedad. Se indica la fecha del asiento y, si se tiene, se adjunta el recibo o la diligencia del Registro. La obligación del calendario pasa a cumplida con esa fecha.
 
-## El abogado necesita el libro en otro formato
-
-El mismo libro se consulta en cinco vistas: Equity story, Registro mercantil, Resumen, Resumen detallado y Resumen con aportaciones. La tabla se descarga desde la cabecera de la pantalla. La vista [Equity story](/funcionalidades/equity-story) ordena el historial por operación, de la constitución a la última ampliación.
-
 ## Preguntas frecuentes
 
 **¿Sirve para una sociedad anónima?**
@@ -56,8 +85,11 @@ Sí. Sttok detecta la forma social y lleva el libro registro de acciones nominat
 **¿Hay que legalizar el libro todos los años?**
 Solo los ejercicios en que el libro ha tenido movimientos. Sttok solo crea la tarea de legalizar cuando el ejercicio cerrado tuvo alguna operación.
 
+**¿Puedo sacar el libro en Excel para el abogado o el auditor?**
+Sí. Cada vista del libro se descarga en Excel o en PDF desde la cabecera de la pantalla.
+
 **¿De dónde salen los datos del libro?**
-De las operaciones anotadas en Sttok: [transmisiones](/funcionalidades/transmisiones), [ampliaciones y reducciones](/funcionalidades/ampliaciones-y-reducciones-de-capital) y el resto. Cada una se registra sobre su [numeración por rangos](/funcionalidades/numeracion-por-rangos), así que el libro cuadra con el capital.
+De las operaciones registradas en Sttok, cada una con su escritura, su acta o su contrato. Por eso las cinco vistas cuadran entre sí y con el capital de la sociedad.
 
 **¿Sttok presenta el libro en el Registro Mercantil?**
 Sttok permite presentarlo por vía telemática desde la propia pantalla del libro. No lo hace de forma automática: la presentación la lanza la sociedad, después de revisar el libro y el escrito.
@@ -70,6 +102,6 @@ En muchos países el equivalente es el libro de accionistas. La plataforma se ad
 
 ## Sttok en cifras
 
-A octubre de 2026, más de 250 clientes gestionan más de 500 sociedades con Sttok, una media de dos por cliente que refleja el perfil de grupo. Gestionan más de 250.000 socios y accionistas. La puesta en marcha lleva unas horas por sociedad.
+Más de 250 clientes gestionan más de 500 sociedades con Sttok, una media de dos por cliente que refleja el perfil de grupo. Gestionan más de 250.000 socios y accionistas. La puesta en marcha lleva unas horas por sociedad.
 
 [Solicita una demo](https://calendly.com/sttok/30min) o consulta los [precios](/precios). El libro registro forma parte del [libro de socios](/libro-de-socios).

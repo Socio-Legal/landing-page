@@ -5,17 +5,17 @@
     "eu": "Datos cifrados en la UE"
   },
   "metadata": {
-    "title": "Libro de socios, juntas y consejo de administración: el producto",
+    "title": "Cómo funciona Sttok: libro de socios, juntas y consejo",
     "description": "Sttok lleva el libro de socios con numeración por rangos, las juntas y el consejo hasta el acta certificada, los planes de incentivos, los grupos de sociedades y su documentación.",
     "keywords": "libro de socios, libro registro de acciones nominativas, junta general, consejo de administración, grupos de sociedades, titular real, planes de incentivos"
   },
   "hero": {
     "slogan": "Producto",
-    "title": "Libro de socios, juntas y consejo de administración en una sola plataforma",
+    "title": "Cómo funciona Sttok: libro de socios, juntas, consejo, incentivos y grupos de sociedades",
     "description": "Sttok lleva el registro societario de tu empresa: el libro de socios con la numeración por rangos, las juntas y el consejo hasta el acta certificada, los planes de incentivos y los grupos de sociedades. Cada operación queda documentada y firmada en el mismo sitio.",
     "button": {
-      "text": "Solicitar demo",
-      "link": "https://calendly.com/sttok/30min"
+      "text": "Ver funcionalidades",
+      "link": "#modules"
     },
     "image": {
       "light": "/animaciones/sociedades-light-poster.webp",
@@ -37,8 +37,12 @@
             "href": "/funcionalidades/libro-registro-oficial"
           },
           {
+            "title": "Libro registro de títulos",
+            "description": "Si la sociedad emite títulos, como la anónima, Sttok lleva su libro registro y genera los títulos automáticamente con cada operación."
+          },
+          {
             "title": "Transmisiones y cargas",
-            "description": "Compraventas, herencias, donaciones, splits y renumeraciones. Prenda, usufructo, nuda propiedad, cotitularidad y opciones quedan como posiciones separadas.",
+            "description": "Compraventas, herencias, donaciones, splits y renumeraciones. Prenda, usufructo, nuda propiedad, cotitularidad y opciones quedan como posiciones separadas. Desde cada operación se abre la escritura, el acta o el contrato que la soporta.",
             "href": "/funcionalidades/transmisiones"
           },
           {
@@ -65,18 +69,23 @@
         "summary": "El registro oficial de quién es socio, con qué y desde cuándo."
       },
       {
-        "title": "Juntas y consejo",
+        "title": "Gobernanza: juntas y consejos",
         "href": "/juntas-consejos",
         "items": [
           {
-            "title": "Junta general",
-            "description": "Convocatoria, acreditación, delegación de voto con firma, voto anticipado y votación en vivo. El acta se compone con el resultado.",
+            "title": "Junta de accionistas",
+            "description": "Convocatoria y su envío a cada socio, lista de asistentes, delegación de voto con firma y votación en vivo. El acta sale del resultado y se envía a firmar.",
             "href": "/funcionalidades/voto-electronico-en-juntas"
           },
           {
             "title": "Consejo de administración",
-            "description": "Convocatoria con orden del día, comités, acta y certificación de acuerdos.",
+            "description": "Convocatoria con orden del día, acta y certificación de acuerdos.",
             "href": "/funcionalidades/consejo-de-administracion"
+          },
+          {
+            "title": "Comités",
+            "description": "La comisión de auditoría y las demás comisiones del consejo, con sus miembros, sus reuniones y sus actas.",
+            "href": "/funcionalidades/comites-del-consejo"
           },
           {
             "title": "Cargos y poderes",
@@ -113,6 +122,10 @@
           {
             "title": "Sociedades nuevas",
             "description": "Cada sociedad entra con su histórico. Si se acaba de constituir, Sttok lee la escritura de constitución."
+          },
+          {
+            "title": "Documentación automática",
+            "description": "Sttok genera las convocatorias, las actas y los certificados de cada sociedad del grupo con sus propios datos."
           }
         ],
         "summary": "Todas las sociedades del grupo y quién controla cada una."
@@ -128,7 +141,13 @@
           },
           {
             "title": "Vesting y asignaciones",
-            "description": "Calendario de consolidación por beneficiario, con su carta de invitación firmada."
+            "description": "Sttok consolida las unidades de cada beneficiario de forma automática, según su calendario, desde que firma su carta de invitación.",
+            "href": "/funcionalidades/phantom-shares-y-stock-options"
+          },
+          {
+            "title": "Aviso al beneficiario",
+            "description": "Con cada tramo consolidado, Sttok avisa al beneficiario. En su ficha ve las unidades asignadas, las consolidadas y las pendientes.",
+            "href": "/funcionalidades/portal-del-beneficiario"
           },
           {
             "title": "Portal del beneficiario",
@@ -304,7 +323,7 @@
         "label": "en equity bajo gestión"
       }
     ],
-    "note": "A octubre de 2026, más de 250 clientes gestionan más de 500 sociedades. La media de dos sociedades por cliente refleja el perfil de grupo de quienes usan Sttok."
+    "note": "Más de 250 clientes gestionan más de 500 sociedades. La media de dos sociedades por cliente refleja el perfil de grupo de quienes usan Sttok."
   },
   "faq": {
     "eyebrow": "FAQ",

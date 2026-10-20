@@ -41,7 +41,7 @@ Sttok no es una herramienta de cap table para simular rondas de inversión. Resu
 
 ## Sttok en cifras
 
-Cifras a octubre de 2026. Más de 250 clientes gestionan más de 500 sociedades con Sttok. La media de dos sociedades por cliente refleja el perfil habitual: grupos societarios, no sociedades aisladas.
+Más de 250 clientes gestionan más de 500 sociedades con Sttok. La media de dos sociedades por cliente refleja el perfil habitual: grupos societarios, no sociedades aisladas.
 
 - Más de 250.000 socios y accionistas gestionados
 - Más de 20.000 millones de euros en equity bajo gestión
@@ -154,7 +154,7 @@ Funcionalidad con coste adicional: mercado secundario.
 - Apoderados y poderes: https://www.sttok.com/funcionalidades/apoderados-y-poderes
 - Firma electrónica: https://www.sttok.com/funcionalidades/firma-electronica
 - Comunicaciones a socios con certificado de envío: https://www.sttok.com/funcionalidades/comunicaciones-a-socios
-- Libro registro de socios oficial y su legalización: https://www.sttok.com/funcionalidades/libro-registro-oficial
+- Libro registro de socios oficial: vistas, exportación y legalización: https://www.sttok.com/funcionalidades/libro-registro-oficial
 - Numeración de participaciones y acciones por rangos: https://www.sttok.com/funcionalidades/numeracion-por-rangos
 - Transmisiones de participaciones y acciones: https://www.sttok.com/funcionalidades/transmisiones
 - Ampliaciones y reducciones de capital: https://www.sttok.com/funcionalidades/ampliaciones-y-reducciones-de-capital
