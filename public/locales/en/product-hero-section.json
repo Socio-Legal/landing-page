@@ -113,6 +113,10 @@
             "description": "Each company comes in with its history. If it has just been incorporated, Sttok reads the deed of incorporation."
           },
           {
+            "title": "Access control and roles",
+            "description": "Who can enter each company and with which role. Partial access too, so other people only see the data opened to them."
+          },
+          {
             "title": "Automatic documents",
             "description": "Sttok generates the notices, minutes and certificates of each group company from its own data."
           }
@@ -132,16 +136,16 @@
             "description": "Sttok vests each beneficiary's units automatically, following their schedule, once they sign their invitation letter."
           },
           {
-            "title": "Beneficiary notifications",
-            "description": "With each vested tranche, Sttok notifies the beneficiary, who sees their granted, vested and pending units in their record."
-          },
-          {
             "title": "Beneficiary portal",
             "description": "Each employee sees their grant, what has vested and the documents they have signed."
           },
           {
             "title": "Tender offers and liquidity",
             "description": "Purchase windows on vested rights, with withholding and a record in the plan."
+          },
+          {
+            "title": "Beneficiary notifications",
+            "description": "With each vested tranche, Sttok notifies the beneficiary, who sees their granted, vested and pending units in their record."
           }
         ]
       },
@@ -217,7 +221,7 @@
   },
   "situations": {
     "eyebrow": "Common cases",
-    "title": "Frequent situations and what Sttok does in each one",
+    "title": "What happens in the legal department of a company or a group, and what Sttok does",
     "columns": {
       "situation": "Situation",
       "action": "What Sttok does",
@@ -226,32 +230,40 @@
     "guideLabel": "Read the guide",
     "rows": [
       {
-        "situation": "The bank asks for a certificate of ownership",
-        "action": "It is generated from the register with today's data."
+        "situation": "Year-end arrives and every subsidiary has to hold its annual general meeting",
+        "action": "Launches the accounts, the meetings and the filings of several companies at once, and shows on one screen what is missing in each."
       },
       {
-        "situation": "The general meeting has to be called",
-        "action": "Sttok prepares the notice, tracks proxies and drafts the minutes with the voting results."
+        "situation": "Directors’ terms expire in several group companies",
+        "action": "Flags each term that expires and those still unregistered, with the file for each appointment."
       },
       {
-        "situation": "A shareholder wants to sell",
-        "action": "It manages the pre-emption right with its notices and deadlines, and records the transfer by share range."
+        "situation": "The bank or the notary asks for a certificate of ownership",
+        "action": "Generates it from the register, with the company’s template or Sttok’s."
+      },
+      {
+        "situation": "A buyer or an investor asks for the shareholder register in a due diligence",
+        "action": "Exports the register in the view they ask for, in Excel or PDF, and every transaction carries its deed, minutes or contract."
+      },
+      {
+        "situation": "Compliance asks for the group’s beneficial owner",
+        "action": "Calculates ultimate ownership across the whole chain of companies."
+      },
+      {
+        "situation": "A shareholder wants to sell their shares",
+        "action": "Handles the pre-emption right with its notices and deadlines, and records the transfer by ranges."
+      },
+      {
+        "situation": "A family shareholder dies",
+        "action": "Records the inheritance, splits the numbering among the heirs and sets up co-ownership with its representative."
       },
       {
         "situation": "The register has to be legalised",
-        "action": "It exports the register in the format filed with the Companies Registry."
+        "action": "Prepares the register and the application, and lets you file them online or download them in Excel, CSV or PDF."
       },
       {
-        "situation": "The register is years out of date",
-        "action": "It rebuilds the history from the deeds in a few minutes."
-      },
-      {
-        "situation": "The group's beneficial owner has to be identified",
-        "action": "It calculates ultimate ownership across the whole chain of companies."
-      },
-      {
-        "situation": "A shareholder dies",
-        "action": "It records the inheritance, splits the share numbers among the heirs and sets up co-ownership with its representative."
+        "situation": "The external law firm needs to see only one company",
+        "action": "Grants access per company, also partial, so they can consult its data without entering the rest of the group."
       }
     ]
   },
@@ -260,7 +272,7 @@
     "title": "How your data gets into Sttok",
     "paragraphs": [
       "Setting up a company takes a few hours. For groups with many companies, the time depends on the number of companies.",
-      "If the register is years out of date, Sttok rebuilds it from the deeds in a few minutes. If your data is in Excel, in Carta or with your law firm, migration is part of the same process."
+      "If the register is years out of date, Sttok rebuilds it from the deeds in a few minutes. If your data is in Excel, in another application or with your law firm, migration is part of the same process."
     ]
   },
   "figures": {

@@ -8,7 +8,7 @@ canonical: "https://www.sttok.com/funcionalidades/lectura-de-escrituras-con-ia"
 
 # Lectura de escrituras con IA
 
-Sttok lee una escritura y propone la operación que contiene: tipo, notario, protocolo, partes, clase, numeración y precio. Cada dato lleva la página y la frase del documento de la que sale. También lee de una vez todas las escrituras de una sociedad, las ordena por fecha y señala dónde falta un documento. Lo leído es una propuesta que una persona revisa antes de registrar.
+Sttok lee una escritura y propone la operación que contiene: tipo, notario, protocolo, partes, clase, numeración y precio. Cada dato lleva la página y la frase del documento de la que sale. También lee de una vez todas las escrituras de una sociedad, las ordena por fecha y señala dónde falta un documento. Lo leído es una propuesta que una persona revisa antes de registrar. Además de escrituras, sirven documentos privados como un contrato de compraventa o un acta.
 
 <Captura
   nombre="lectura-de-escrituras-con-ia"
@@ -21,7 +21,7 @@ Sttok lee una escritura y propone la operación que contiene: tipo, notario, pro
 
 | Dónde | Qué se sube | Qué propone Sttok |
 |---|---|---|
-| Alta de una operación | Una escritura | Los campos del formulario, marcados hasta que se revisan |
+| Alta de una operación | Una escritura o un documento privado, como un contrato de compraventa o un acta | Los campos del formulario, marcados hasta que se revisan |
 | Varias escrituras a la vez | Las escrituras pendientes de una sociedad que ya está en Sttok | La cadena de operaciones desde el libro de hoy |
 | Alta desde las escrituras | Todas las escrituras de la sociedad, en cualquier orden | La cadena completa desde la constitución, con huecos y erratas señalados |
 
@@ -39,6 +39,14 @@ La escritura entra por Operaciones. Sttok propone una compraventa con el vendedo
 
 Sttok compara lo que dice el papel con el libro de socios. Si la numeración que se vende no es del vendedor, aparece un aviso con la cifra que no cuadra. Si el comprador no consta en el libro, la pantalla indica que se dará de alta al registrar.
 
+## La escritura trae también un nombramiento
+
+Una escritura puede recoger más de un acto: una ampliación de capital y, en el mismo documento, el nombramiento de un consejero o el cese de otro. Sttok lee también esos cargos. Da de alta al nombrado y de baja al cesado en el órgano de administración, con la fecha y la escritura que lo acredita, igual que con la operación de capital.
+
+## La compraventa se firmó en documento privado
+
+No todas las operaciones pasan por notario. Un contrato privado de compraventa o el acta de una junta sirven para dar de alta la operación del mismo modo: Sttok lee el documento, propone los datos con su cita y queda guardado como soporte de la operación.
+
 ## La sociedad llega a Sttok con una carpeta de escrituras
 
 El cliente entrega una carpeta con todas las escrituras, desordenadas y alguna repetida. Sttok las ordena y muestra cuántas encadenan y cuántas quedan por resolver. Donde falta un documento, intercala una fila «Falta un documento» que indica qué tipo de operación debería ser y cuántas participaciones debería mover.
@@ -55,7 +63,7 @@ La escritura de constitución se sube desde el alta de Operaciones. Sttok propon
 No. Cada dato leído queda marcado hasta que una persona lo revisa. El botón Registrar no se activa mientras quede un dato sin revisar o un aviso abierto.
 
 **¿Qué pasa si la lectura se equivoca?**
-Se corrige el valor en el propio campo. Corregirlo cuenta como revisarlo, y las comprobaciones contra el libro se rehacen al momento.
+Los datos leídos se muestran junto a la escritura, con el enlace a la frase de la que sale cada uno, así que se validan uno a uno antes de registrar. Si alguno está mal, se corrige en el propio campo. Corregirlo cuenta como revisarlo, y las comprobaciones contra el libro se rehacen al momento.
 
 **¿Puedo dejar una revisión a medias?**
 Sí. La lectura de una escritura es una pantalla propia con su estado, así que se puede retomar o la puede revisar otra persona. En el alta desde las escrituras, lo pendiente queda en la bandeja.

@@ -38,7 +38,8 @@
           },
           {
             "title": "Libro registro de títulos",
-            "description": "Si la sociedad emite títulos, como la anónima, Sttok lleva su libro registro y genera los títulos automáticamente con cada operación."
+            "description": "Si la sociedad emite títulos, como la anónima, Sttok lleva su libro registro y genera los títulos automáticamente con cada operación.",
+            "href": "/funcionalidades/libro-registro-de-titulos"
           },
           {
             "title": "Transmisiones y cargas",
@@ -124,6 +125,11 @@
             "description": "Cada sociedad entra con su histórico. Si se acaba de constituir, Sttok lee la escritura de constitución."
           },
           {
+            "title": "Control de accesos y roles",
+            "description": "Quién entra en cada sociedad y con qué rol. También acceso parcial, para que otras personas consulten solo los datos que se les abren.",
+            "href": "/funcionalidades/permisos-por-sociedad"
+          },
+          {
             "title": "Documentación automática",
             "description": "Sttok genera las convocatorias, las actas y los certificados de cada sociedad del grupo con sus propios datos."
           }
@@ -145,11 +151,6 @@
             "href": "/funcionalidades/phantom-shares-y-stock-options"
           },
           {
-            "title": "Aviso al beneficiario",
-            "description": "Con cada tramo consolidado, Sttok avisa al beneficiario. En su ficha ve las unidades asignadas, las consolidadas y las pendientes.",
-            "href": "/funcionalidades/portal-del-beneficiario"
-          },
-          {
             "title": "Portal del beneficiario",
             "description": "Cada empleado ve su asignación, lo consolidado y los documentos que ha firmado.",
             "href": "/funcionalidades/portal-del-beneficiario"
@@ -158,6 +159,11 @@
             "title": "Tender offers y liquidez",
             "description": "Ventanas de compra sobre los derechos consolidados, con su retención y su registro en el plan.",
             "href": "/funcionalidades/liquidez-planes-de-incentivos"
+          },
+          {
+            "title": "Aviso al beneficiario",
+            "description": "Con cada tramo consolidado, Sttok avisa al beneficiario. En su ficha ve las unidades asignadas, las consolidadas y las pendientes.",
+            "href": "/funcionalidades/portal-del-beneficiario"
           }
         ],
         "summary": "Los planes de empleados y directivos, conectados al libro."
@@ -245,7 +251,7 @@
   },
   "situations": {
     "eyebrow": "Casos habituales",
-    "title": "Situaciones frecuentes y qué hace Sttok en cada una",
+    "title": "Lo que pasa en la dirección jurídica de una sociedad o un grupo, y qué hace Sttok",
     "columns": {
       "situation": "Situación",
       "action": "Qué hace Sttok",
@@ -254,39 +260,47 @@
     "guideLabel": "Leer la guía",
     "rows": [
       {
-        "situation": "El banco pide un certificado de titularidad",
-        "action": "Lo genera desde el libro con los datos del día.",
+        "situation": "Llega el cierre y todas las filiales tienen que celebrar su junta ordinaria",
+        "action": "Lanza a la vez la formulación, las juntas y los depósitos de varias sociedades, y enseña en una portada lo que falta en cada una.",
+        "href": "/guias/junta-ordinaria-y-cuentas-anuales"
+      },
+      {
+        "situation": "Caducan cargos de administradores en varias sociedades del grupo",
+        "action": "Avisa de cada cargo que vence y de los que siguen sin inscribir, con el expediente de cada nombramiento.",
+        "href": "/guias/vencimiento-cargos-administradores"
+      },
+      {
+        "situation": "El banco o el notario piden un certificado de titularidad",
+        "action": "Lo genera desde el libro, con la plantilla de la sociedad o con la de Sttok.",
         "href": "/guias/plantillas-societarias"
       },
       {
-        "situation": "Toca convocar la junta general",
-        "action": "Prepara la convocatoria, controla las delegaciones y compone el acta con el resultado de la votación.",
-        "href": "/guias/junta-general-telematica"
+        "situation": "Un comprador o un inversor pide el libro de socios en una due diligence",
+        "action": "Exporta el libro en la vista que pidan, en Excel o en PDF, y cada operación lleva su escritura, su acta o su contrato."
       },
       {
-        "situation": "Un socio quiere vender",
-        "action": "Gestiona el derecho de adquisición preferente con sus comunicaciones y plazos, y anota la transmisión por rangos.",
-        "href": "/guias/derecho-de-adquisicion-preferente"
-      },
-      {
-        "situation": "Hay que legalizar el libro registro",
-        "action": "Exporta el libro en el formato que se presenta en el Registro Mercantil.",
-        "href": "/guias/libro-registro-socios-legalizacion"
-      },
-      {
-        "situation": "El libro lleva años sin actualizar",
-        "action": "Reconstruye el histórico a partir de las escrituras en pocos minutos.",
-        "href": "/guias/reconstruir-libro-de-socios"
-      },
-      {
-        "situation": "Hay que identificar al titular real del grupo",
+        "situation": "Compliance pide el titular real del grupo",
         "action": "Calcula la titularidad última sobre la cadena completa de sociedades.",
         "href": "/guias/titular-real-grupos-sociedades"
       },
       {
-        "situation": "Fallece un socio",
+        "situation": "Un socio quiere vender sus participaciones",
+        "action": "Gestiona el derecho de adquisición preferente con sus comunicaciones y plazos, y anota la transmisión por rangos.",
+        "href": "/guias/derecho-de-adquisicion-preferente"
+      },
+      {
+        "situation": "Fallece un socio de la familia",
         "action": "Registra la herencia, reparte la numeración entre los herederos y deja la cotitularidad con su representante.",
         "href": "/guias/herencia-de-participaciones"
+      },
+      {
+        "situation": "Hay que legalizar el libro registro",
+        "action": "Prepara el libro y el escrito, y permite presentarlos por vía telemática o descargarlos en Excel, CSV o PDF.",
+        "href": "/guias/libro-registro-socios-legalizacion"
+      },
+      {
+        "situation": "El despacho externo tiene que ver una sola sociedad",
+        "action": "Da acceso por sociedad, también parcial, para que consulte sus datos sin entrar en el resto del grupo."
       }
     ]
   },
@@ -295,7 +309,7 @@
     "title": "Cómo llegan tus datos a Sttok",
     "paragraphs": [
       "La puesta en marcha de una sociedad lleva unas horas. En grupos con muchas sociedades, el plazo depende del número de sociedades.",
-      "Si el libro lleva años sin actualizar, Sttok lo reconstruye a partir de las escrituras en pocos minutos. Si hoy los datos están en Excel, en Carta o en el despacho, la migración forma parte del mismo proceso."
+      "Si el libro lleva años sin actualizar, Sttok lo reconstruye a partir de las escrituras en pocos minutos. Si hoy los datos están en Excel, en otra aplicación o en el despacho, la migración forma parte del mismo proceso."
     ],
     "link": {
       "text": "Cómo se migra a Sttok",
