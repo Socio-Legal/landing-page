@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Pricing",
-    "description": "Plans from €450 + VAT per company per year. Shareholder registry, incentive plans, shareholder and board meetings. No implementation cost, setup in a few hours per company.",
+    "description": "Plans from €450 per company per year, taxes not included. Shareholder registry, incentive plans, shareholder and board meetings. No implementation cost, setup in a few hours per company.",
     "keywords": "plans, pricing, rates, costs, subscription, annual, shareholder registry, cap table"
   },
   "hero": {
@@ -11,7 +11,7 @@
     "description": "Save time by automating manual tasks, avoid errors and keep your data always up to date. Add value to all stakeholders."
   },
   "plans": {
-    "perYear": "per company, per year (excl. VAT)",
+    "perYear": "per company, per year (taxes not included)",
     "recommended": "Recommended",
     "cta": "Request a demo",
     "ctaLink": "https://calendly.com/sttok/30min",
@@ -28,7 +28,7 @@
     "items": [
       {
         "q": "How much does Sttok cost?",
-        "a": "From €450 per company per year on the Basic plan (up to 10 partners or beneficiaries). The Advanced plan is €650/year (up to 20) and Pro is €850/year (up to 50). Custom plans are available for company groups or larger needs. Prices exclude VAT."
+        "a": "From €450 per company per year on the Basic plan (up to 10 partners or beneficiaries). The Advanced plan is €650/year (up to 20) and Pro is €850/year (up to 50). Custom plans are available for company groups or larger needs. Prices exclude taxes."
       },
       {
         "q": "What does every plan include?",
@@ -45,6 +45,10 @@
       {
         "q": "How can I get Sttok?",
         "a": "Book a 30-minute demo with a corporate expert at calendly.com/sttok/30min. You will see the platform applied to your case before deciding."
+      },
+      {
+        "q": "Can I use Sttok outside Spain?",
+        "a": "Yes. Sttok is used in Spain, Portugal, Andorra and Latin America. We invoice in euros or US dollars, with payment by card or international bank transfer. Support is in Spanish and English and data is hosted in the European Union. The shareholder register supports the share numbering and company types of each country."
       }
     ]
   }
