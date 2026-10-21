@@ -60,8 +60,16 @@
         "icon": "",
         "logo": "Fanalca",
         "title": "",
-        "description": "Grupo industrial colombiano con sede en Cali: transporte, manufactura y servicios. Lleva el libro de accionistas de sus sociedades en Sttok.",
+        "description": "Grupo industrial colombiano con sede en Cali. Utiliza Sttok para la gestión corporativa y societaria de su grupo de empresas y filiales.",
         "alt": "Fanalca, cliente de Sttok",
+        "case": false
+      },
+      {
+        "icon": "",
+        "logo": "Gazelle",
+        "title": "",
+        "description": "Energía eólica marina flotante, con sociedades en Portugal y Reino Unido.",
+        "alt": "Gazelle Wind Power, cliente de Sttok",
         "case": false
       },
       {

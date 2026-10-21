@@ -60,8 +60,16 @@
         "icon": "",
         "logo": "Fanalca",
         "title": "",
-        "description": "Colombian industrial group based in Cali: transport, manufacturing and services. Keeps the shareholder register of its companies on Sttok.",
+        "description": "Colombian industrial group based in Cali. Uses Sttok for the corporate governance of its group of companies and subsidiaries.",
         "alt": "Fanalca, Sttok customer",
+        "case": false
+      },
+      {
+        "icon": "",
+        "logo": "Gazelle",
+        "title": "",
+        "description": "Floating offshore wind energy, with companies in Portugal and the United Kingdom.",
+        "alt": "Gazelle Wind Power, Sttok customer",
         "case": false
       },
       {
