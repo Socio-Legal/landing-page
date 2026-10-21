@@ -30,6 +30,11 @@ export const SECTIONS = {
   comparativas: { label: "Comparativas", hasIndex: true },
   guias: { label: "Guías", hasIndex: true },
   funcionalidades: { label: "Funcionalidades", hasIndex: true },
+  // Las paginas de pais cuelgan de la portada /jurisdicciones pero viven en
+  // la raiz (/colombia, no /jurisdicciones/colombia): son paginas de entrada
+  // y la URL corta es la que se busca y se recuerda. Cada una tiene su
+  // carpeta minima en app/ (app/colombia/page.tsx).
+  jurisdicciones: { label: "Jurisdicciones", hasIndex: true, hijasEnRaiz: true },
 } as const;
 
 export type Section = keyof typeof SECTIONS;
@@ -64,7 +69,9 @@ const BASE_URL = "https://www.sttok.com";
 
 /** URL publica de un archivo de contenido. */
 function urlFor(section: Section, name: string): string {
-  return name === "index" ? `/${section}` : `/${section}/${name}`;
+  if (name === "index") return `/${section}`;
+  const enRaiz = (SECTIONS[section] as { hijasEnRaiz?: boolean }).hijasEnRaiz;
+  return enRaiz ? `/${name}` : `/${section}/${name}`;
 }
 
 function readSection(section: Section): Doc[] {

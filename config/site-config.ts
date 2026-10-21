@@ -260,6 +260,12 @@ export const siteConfig = {
           url: "/funcionalidades",
           alt: "Funcionalidades de Sttok",
         },
+        {
+          id: 128,
+          title: "menu.Jurisdictions",
+          url: "/jurisdicciones",
+          alt: "Sttok fuera de España: jurisdicciones",
+        },
       ],
       [
         { id: 13, title: "menu.Legal", url: "#", isHeader: true },
