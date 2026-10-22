@@ -191,7 +191,7 @@ const WhoPill: FC<{ who: Who; text: string }> = ({ who, text }) => (
       "rounded-full px-2 py-0.5 text-[11px] font-medium",
       who === "sttok"
         ? "bg-brand/10 text-brand"
-        : "bg-amber-100 text-amber-800 dark:bg-amber-400/10 dark:text-amber-300",
+        : "bg-[#fef8e4] text-[#8a6300] dark:bg-amber-400/10 dark:text-amber-300",
     )}
   >
     {text}
@@ -206,7 +206,7 @@ const Spinner = () => (
 );
 
 const Done = () => (
-  <span className="mt-0.5 flex h-3.5 w-3.5 shrink-0 items-center justify-center rounded-full bg-emerald-500 text-white">
+  <span className="mt-0.5 flex h-3.5 w-3.5 shrink-0 items-center justify-center rounded-full bg-[#0c8e68] text-white">
     <Check aria-hidden className="h-2.5 w-2.5" strokeWidth={3} />
   </span>
 );
@@ -262,7 +262,7 @@ const ActionButton: FC<{
     return (
       <span
         className={cn(
-          "inline-flex animate-pop items-center justify-center gap-1.5 rounded-full bg-emerald-50 font-medium text-emerald-700 motion-reduce:animate-none dark:bg-emerald-400/10 dark:text-emerald-300",
+          "inline-flex animate-pop items-center justify-center gap-1.5 rounded-full bg-[#e6fcf6] font-medium text-[#097556] motion-reduce:animate-none dark:bg-[#0c8e68]/15 dark:text-[#7fe8c7]",
           e.big ? "w-full py-2.5 text-sm" : "px-3 py-1.5 text-xs",
         )}
       >
@@ -331,13 +331,13 @@ const StepElement: FC<{
           className={cn(
             "flex items-start gap-2 px-1 text-xs leading-snug",
             e.tone === "warn"
-              ? "text-amber-700 dark:text-amber-300"
+              ? "text-orange-700 dark:text-orange-300"
               : "text-muted-foreground",
             appear(revealed),
           )}
         >
           {e.tone === "warn" && (
-            <span aria-hidden className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-amber-500" />
+            <span aria-hidden className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-orange-500" />
           )}
           {e.text}
         </li>
@@ -374,7 +374,7 @@ const StepElement: FC<{
             aria-hidden
             className={cn(
               "mt-0.5 flex h-3.5 w-3.5 shrink-0 items-center justify-center rounded-[4px] border transition-colors duration-300",
-              revealed ? "border-amber-500 bg-amber-500 text-white" : "border-border",
+              revealed ? "border-[#e3b005] bg-[#fbe59f] text-[#8a6300] dark:border-amber-400 dark:bg-amber-400/30 dark:text-amber-200" : "border-border",
             )}
           >
             {revealed && <Check className="h-2.5 w-2.5" strokeWidth={3} />}
@@ -398,7 +398,7 @@ const StepElement: FC<{
       return (
         <li
           className={cn(
-            "space-y-1 rounded-xl border border-border bg-card p-3 text-xs leading-snug",
+            "space-y-1 rounded-[8px] border border-border bg-card p-3 text-xs leading-snug",
             appear(revealed),
           )}
         >
@@ -436,7 +436,7 @@ const StepElement: FC<{
           <p className="text-[13px] leading-snug text-foreground">{e.text}</p>
           <div className="mt-1 flex h-1.5 overflow-hidden rounded-full bg-muted">
             <div
-              className="h-full bg-emerald-500 transition-[width] duration-700 ease-out"
+              className="h-full bg-[#0c8e68] transition-[width] duration-700 ease-out"
               style={{ width: revealed ? `${e.for}%` : "0%" }}
             />
             <div
@@ -454,7 +454,7 @@ const StepElement: FC<{
               revealed ? "opacity-100" : "opacity-0",
             )}
           >
-            <span className="text-emerald-600 dark:text-emerald-400">
+            <span className="text-[#0c8e68] dark:text-[#7fe8c7]">
               {v.for} {pct(e.for)}
             </span>
             <span className="text-red-500">
@@ -476,7 +476,7 @@ const StepElement: FC<{
               className={cn(
                 "rounded-full border px-2.5 py-1 text-xs",
                 j === e.selected
-                  ? "border-amber-500 bg-amber-50 font-medium text-amber-900 dark:bg-amber-400/10 dark:text-amber-200"
+                  ? "border-[#e3b005] bg-[#fef8e4] font-medium text-[#8a6300] dark:bg-amber-400/10 dark:text-amber-200"
                   : "border-border text-muted-foreground",
               )}
             >
@@ -500,7 +500,7 @@ const StepElement: FC<{
                 {d.from}
               </span>
               <span className="flex-1 leading-snug text-foreground">{d.text}</span>
-              <span className="inline-flex items-center gap-0.5 text-[10px] font-medium text-emerald-600 dark:text-emerald-400">
+              <span className="inline-flex items-center gap-0.5 text-[10px] font-medium text-[#0c8e68] dark:text-[#7fe8c7]">
                 <PenLine aria-hidden className="h-3 w-3" />
                 {e.signed}
               </span>
@@ -573,7 +573,7 @@ const StepElement: FC<{
                   aria-hidden
                   className={cn(
                     "flex h-3.5 w-3.5 shrink-0 items-center justify-center rounded-[4px] border transition-colors duration-300",
-                    on ? "border-amber-500 bg-amber-500 text-white" : "border-border",
+                    on ? "border-[#e3b005] bg-[#fbe59f] text-[#8a6300] dark:border-amber-400 dark:bg-amber-400/30 dark:text-amber-200" : "border-border",
                   )}
                 >
                   {on && <Check className="h-2.5 w-2.5" strokeWidth={3} />}
@@ -613,7 +613,7 @@ const StepElement: FC<{
       const Icon = Icons[e.icon] ?? Check;
       return (
         <li className={cn("flex items-start gap-3", appear(revealed))}>
-          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 dark:bg-emerald-400/10 dark:text-emerald-300">
+          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-[8px] bg-[#e6fcf6] text-[#0c8e68] dark:bg-[#0c8e68]/15 dark:text-[#7fe8c7]">
             <Icon aria-hidden className="h-4 w-4" />
           </span>
           <span className="min-w-0 pt-0.5 text-[13px] leading-snug text-muted-foreground">
@@ -680,7 +680,7 @@ const StepElement: FC<{
       return (
         <li className={cn("grid grid-cols-3 gap-1.5", appear(live))}>
           {e.items.map((c) => (
-            <span key={c.label} className="rounded-xl bg-muted/70 px-1 py-2 text-center">
+            <span key={c.label} className="rounded-[8px] bg-muted/70 px-1 py-2 text-center">
               <span className="block text-xl font-medium tabular-nums text-foreground">
                 {Math.round(c.to * frac)}
               </span>
@@ -729,7 +729,7 @@ const FlowPanel: FC<{
   const hidden = flow.log.filter((l) => !visible(l));
 
   return (
-    <div className="rounded-3xl border border-border bg-card p-5 sm:p-8">
+    <div className="rounded-[12px] border border-border bg-backgroundbrand p-5 sm:p-8">
       <div className="mb-8 flex items-center justify-between gap-4">
         <p className="font-serif text-2xl font-normal tracking-tight text-foreground sm:text-[28px]">
           {flow.headline}
@@ -764,8 +764,8 @@ const FlowPanel: FC<{
                 i < pos.step
                   ? "border-foreground bg-foreground"
                   : i === pos.step
-                    ? "border-foreground bg-card ring-4 ring-foreground/10"
-                    : "border-border bg-card",
+                    ? "border-foreground bg-backgroundbrand ring-4 ring-foreground/10"
+                    : "border-border bg-backgroundbrand",
               )}
             />
           </li>
@@ -795,7 +795,7 @@ const FlowPanel: FC<{
             <li
               key={i}
               className={cn(
-                "flex flex-col rounded-2xl border bg-background p-5 transition-all duration-500",
+                "flex flex-col rounded-[8px] border bg-card p-5 transition-all duration-500",
                 active
                   ? "border-foreground/60 shadow-[0_12px_32px_-16px_rgba(0,0,0,0.25)]"
                   : "border-border",
@@ -805,11 +805,11 @@ const FlowPanel: FC<{
               )}
             >
               <div className="mb-4 flex items-center justify-between">
-                <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-muted">
+                <span className="flex h-9 w-9 items-center justify-center rounded-[8px] bg-muted">
                   <Icon aria-hidden className="h-4 w-4 text-foreground" />
                 </span>
                 {done ? (
-                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-500 text-white">
+                  <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#0c8e68] text-white">
                     <Check aria-hidden className="h-3 w-3" strokeWidth={3} />
                   </span>
                 ) : (
@@ -839,7 +839,7 @@ const FlowPanel: FC<{
       </ol>
 
       {/* Log discreto: acompaña, no protagoniza */}
-      <div className="mt-6 overflow-x-auto rounded-xl bg-muted/50 px-4 py-3 font-mono text-[11px] leading-5 text-muted-foreground">
+      <div className="mt-6 overflow-x-auto rounded-[8px] bg-muted/50 px-4 py-3 font-mono text-[11px] leading-5 text-muted-foreground">
         <p className="mb-1 font-sans text-[10px] font-medium uppercase tracking-widest text-muted-foreground/80">
           {labels.logTitle}
         </p>
