@@ -12,7 +12,8 @@ import path from "node:path";
 import os from "node:os";
 import { execFileSync } from "node:child_process";
 
-const TMP = path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, "$1"));
+// Los HTML intermedios y el perfil de Chrome van a un temporal, no al repo.
+const TMP = fs.mkdtempSync(path.join(os.tmpdir(), "capturas-paises-"));
 const DESTINO = process.argv[2] || "public/funcionalidades";
 const CHROME = "C:/Program Files/Google/Chrome/Application/chrome.exe";
 
