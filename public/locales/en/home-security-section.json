@@ -8,12 +8,14 @@
     {
       "title": "ISO 27001",
       "description": "Information security certification audited by Bureau Veritas.",
-      "logo": "/logo-bureau-veritas.png"
+      "logo": "/logo-bureau-veritas.png",
+      "alt": "Sttok, ISO 27001 certification audited by Bureau Veritas"
     },
     {
       "title": "GDPR and DPA",
       "description": "GDPR compliant. DPA available on request.",
-      "logo": "/logo-gdpr-compliant.png"
+      "logo": "/logo-gdpr-compliant.png",
+      "alt": "Sttok complies with the GDPR"
     },
     {
       "title": "EU AI Act",
@@ -23,12 +25,14 @@
     {
       "title": "Data in Europe",
       "description": "Hosted on AWS Europe. No international data transfers.",
-      "logo": "/logo-eu-flag.svg"
+      "logo": "/logo-eu-flag.svg",
+      "alt": "Sttok processes data in the European Union"
     },
     {
       "title": "End-to-end encryption",
       "description": "TLS 1.3 in transit and AES-256 at rest for all data.",
-      "logo": "/logo-ssl.png"
+      "logo": "/logo-ssl.png",
+      "alt": "Sttok encrypts data with SSL"
     },
     {
       "title": "Guaranteed SLA",

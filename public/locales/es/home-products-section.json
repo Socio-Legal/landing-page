@@ -10,7 +10,8 @@
     {
       "id": 1,
       "title": "Socios",
-      "content": "Captable, Libro de Socios oficial, %, acceso de los socios, etc",
+      "content": "Libro de socios oficial, porcentajes, acceso de los socios y libro registro de títulos",
+      "alt": "Libro de socios en Sttok: lista de accionistas con sus acciones, nominal y prima, y su porcentaje sin diluir y diluido",
       "image": {
         "light": "/animaciones/accionistas-light-poster.webp",
         "dark": "/animaciones/accionistas-dark-poster.webp"
@@ -20,21 +21,10 @@
       "duracion": 28000
     },
     {
-      "id": 2,
-      "title": "Planes de Incentivos",
-      "content": "Phantoms, stock options, acceso empleados, vesting, etc",
-      "image": {
-        "light": "/animaciones/liquidez-planes-de-incentivos-light-poster.webp",
-        "dark": "/animaciones/liquidez-planes-de-incentivos-dark-poster.webp"
-      },
-      "icon": "Brain",
-      "video": "/animaciones/liquidez-planes-de-incentivos",
-      "duracion": 21500
-    },
-    {
       "id": 3,
       "title": "Juntas y Consejos",
-      "content": "Convocatoria digital, delegaciones, votaciones, etc",
+      "content": "Convocatoria digital, delegaciones, quórum, votaciones y acta",
+      "alt": "Junta general en Sttok: quórum de constitución en primera convocatoria, presentes, representados y votación abierta por puntos",
       "image": {
         "light": "/animaciones/voto-electronico-en-juntas-light-poster.webp",
         "dark": "/animaciones/voto-electronico-en-juntas-dark-poster.webp"
@@ -44,9 +34,23 @@
       "duracion": 25000
     },
     {
+      "id": 2,
+      "title": "Planes de Incentivos",
+      "content": "Phantoms, stock options, vesting y portal del empleado",
+      "alt": "Plan de incentivos en Sttok: portal del beneficiario de phantoms con sus unidades consolidadas, su valor y una ventana de venta abierta",
+      "image": {
+        "light": "/animaciones/liquidez-planes-de-incentivos-light-poster.webp",
+        "dark": "/animaciones/liquidez-planes-de-incentivos-dark-poster.webp"
+      },
+      "icon": "Brain",
+      "video": "/animaciones/liquidez-planes-de-incentivos",
+      "duracion": 21500
+    },
+    {
       "id": 4,
       "title": "Simulador de Operaciones",
-      "content": "Cálculo de rondas, ampliaciones, notas convertibles, etc",
+      "content": "Ampliaciones, reducciones, compraventas y notas convertibles",
+      "alt": "Simulador de operaciones de Sttok: ampliación de capital con valoración pre-money, precio por acción, dilución e inversores",
       "image": {
         "light": "/animaciones/simulador-light-poster.webp",
         "dark": "/animaciones/simulador-dark-poster.webp"

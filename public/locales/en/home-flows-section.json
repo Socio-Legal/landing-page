@@ -1,0 +1,551 @@
+{
+  "header": {
+    "slogan": "How Sttok works",
+    "title": "From the deeds to the signed minutes, without switching apps",
+    "description": "Sttok does the repetitive work and leaves you what needs your judgement: reviewing and approving."
+  },
+  "labels": {
+    "sttok": "Sttok",
+    "you": "You",
+    "pause": "Pause",
+    "play": "Play",
+    "paused": "Paused",
+    "logTitle": "Activity log",
+    "more": "How it works",
+    "demo": "See Sttok in a demo",
+    "mailTo": "To",
+    "mailSubject": "Subject",
+    "votes": {
+      "for": "For",
+      "against": "Against",
+      "abstain": "Abst."
+    }
+  },
+  "flows": [
+    {
+      "tab": "Shareholder register",
+      "headline": "From the deeds to the shareholder register, in minutes",
+      "link": {
+        "text": "AI deed reading (in Spanish)",
+        "href": "/funcionalidades/lectura-de-escrituras-con-ia"
+      },
+      "steps": [
+        {
+          "who": "you",
+          "icon": "Upload",
+          "label": "You upload the deeds",
+          "elements": [
+            {
+              "t": "deck",
+              "items": [
+                "2009 · Incorporation",
+                "2012 · Capital increase",
+                "2014 · Share transfer",
+                "2017 · Inheritance",
+                "2020 · Capital increase",
+                "2023 · Share transfer"
+              ]
+            },
+            {
+              "t": "note",
+              "text": "6 deeds in PDF, in any order"
+            },
+            {
+              "t": "note",
+              "text": "Or the Excel file with your register"
+            }
+          ]
+        },
+        {
+          "who": "sttok",
+          "icon": "ScanText",
+          "label": "It extracts everything",
+          "elements": [
+            {
+              "t": "task",
+              "text": "Sorted by date"
+            },
+            {
+              "t": "task",
+              "text": "Shareholders and transactions"
+            },
+            {
+              "t": "task",
+              "text": "Directors and officers"
+            },
+            {
+              "t": "task",
+              "text": "Share number ranges"
+            },
+            {
+              "t": "task",
+              "text": "Encumbrances and co-ownership"
+            },
+            {
+              "t": "note",
+              "tone": "warn",
+              "text": "1 gap to review: shares 2,401 to 3,000"
+            }
+          ]
+        },
+        {
+          "who": "you",
+          "icon": "UserCheck",
+          "label": "You approve",
+          "elements": [
+            {
+              "t": "check",
+              "text": "Extracted data reviewed"
+            },
+            {
+              "t": "check",
+              "text": "Shares 2,401 to 3,000 resolved"
+            },
+            {
+              "t": "button",
+              "text": "Approve",
+              "done": "Approved"
+            }
+          ]
+        },
+        {
+          "who": "sttok",
+          "icon": "BookOpenCheck",
+          "label": "Register ready",
+          "elements": [
+            {
+              "t": "result",
+              "icon": "ArrowLeftRight",
+              "value": "312",
+              "text": "transactions recorded in detail",
+              "link": {
+                "text": "See an example (in Spanish)",
+                "href": "/funcionalidades/equity-story"
+              }
+            },
+            {
+              "t": "result",
+              "icon": "BookOpenCheck",
+              "text": "Shareholder register up to date",
+              "link": {
+                "text": "See an example (in Spanish)",
+                "href": "/funcionalidades/libro-registro-oficial"
+              }
+            },
+            {
+              "t": "result",
+              "icon": "Users",
+              "value": "48",
+              "text": "shareholder records updated",
+              "avatars": [
+                "ER",
+                "LP",
+                "RV",
+                "JF"
+              ],
+              "link": {
+                "text": "See an example (in Spanish)",
+                "href": "/funcionalidades/ficha-del-socio"
+              }
+            }
+          ]
+        }
+      ],
+      "log": [
+        {
+          "step": 0,
+          "who": "you",
+          "time": "10:30:02",
+          "event": "deeds.uploaded",
+          "data": "n=6"
+        },
+        {
+          "step": 1,
+          "who": "sttok",
+          "time": "10:31:52",
+          "event": "history.extracted",
+          "data": "transactions=312"
+        },
+        {
+          "step": 2,
+          "who": "you",
+          "time": "10:41:15",
+          "event": "history.approved",
+          "data": "by=e.riba"
+        },
+        {
+          "step": 3,
+          "who": "sttok",
+          "time": "10:41:16",
+          "event": "register.built",
+          "data": "shareholders=48 records=48"
+        }
+      ]
+    },
+    {
+      "tab": "General meeting",
+      "headline": "The meeting, from the notice to the signed minutes",
+      "link": {
+        "text": "meeting notices (in Spanish)",
+        "href": "/funcionalidades/convocatoria-de-la-junta"
+      },
+      "steps": [
+        {
+          "who": "you",
+          "icon": "CalendarDays",
+          "label": "You prepare the notice",
+          "elements": [
+            {
+              "t": "check",
+              "text": "You set the agenda: 3 items"
+            },
+            {
+              "t": "auto",
+              "text": "Sttok drafts the notice and the email"
+            },
+            {
+              "t": "mail",
+              "to": "48 shareholders",
+              "subject": "2026 annual general meeting",
+              "attachment": "notice.pdf",
+              "toHint": "emails from the register"
+            },
+            {
+              "t": "button",
+              "big": true,
+              "text": "Send",
+              "done": "Sent to 48 shareholders"
+            }
+          ]
+        },
+        {
+          "who": "sttok",
+          "icon": "Send",
+          "label": "Sttok handles it",
+          "elements": [
+            {
+              "t": "meter",
+              "text": "Expected quorum",
+              "to": 78.4,
+              "decimals": 1,
+              "suffix": " %"
+            },
+            {
+              "t": "counters",
+              "items": [
+                {
+                  "label": "Attending",
+                  "to": 31
+                },
+                {
+                  "label": "By proxy",
+                  "to": 6
+                },
+                {
+                  "label": "Not attending",
+                  "to": 4
+                }
+              ]
+            },
+            {
+              "t": "task",
+              "text": "Delivery verified and certified"
+            },
+            {
+              "t": "ticker",
+              "items": [
+                "Proxy received · L. Puig → E. Riba",
+                "Attendance confirmed · M. Soler",
+                "Proxy received · R. Vallcorba → E. Riba",
+                "Not attending · A. Prat",
+                "Attendance confirmed · J. Ferrer",
+                "Proxy received · N. Soler → J. Ferrer"
+              ],
+              "done": "41 replies collected"
+            },
+            {
+              "t": "task",
+              "text": "Proxies signed and filed"
+            }
+          ]
+        },
+        {
+          "who": "you",
+          "icon": "Vote",
+          "label": "On the day",
+          "elements": [
+            {
+              "t": "task",
+              "text": "Meeting quorate: 98.6 % of the capital"
+            },
+            {
+              "t": "vote",
+              "text": "Item 1 · 2025 accounts",
+              "for": 94.1,
+              "against": 3.1,
+              "abstain": 2.8
+            },
+            {
+              "t": "vote",
+              "text": "Item 2 · Profit allocation",
+              "for": 91.6,
+              "against": 5.6,
+              "abstain": 2.8
+            },
+            {
+              "t": "vote",
+              "text": "Item 3 · Auditor",
+              "for": 88.3,
+              "against": 7.4,
+              "abstain": 4.3
+            },
+            {
+              "t": "button",
+              "text": "Draft the minutes",
+              "done": "Minutes drafted"
+            }
+          ]
+        },
+        {
+          "who": "sttok",
+          "icon": "PenLine",
+          "label": "Built-in e-signature",
+          "elements": [
+            {
+              "t": "signers",
+              "items": [
+                {
+                  "initials": "ER",
+                  "text": "Chair",
+                  "checked": true
+                },
+                {
+                  "initials": "JF",
+                  "text": "Secretary",
+                  "checked": true
+                },
+                {
+                  "initials": "37",
+                  "text": "Attendees, for the list",
+                  "checked": false
+                }
+              ]
+            },
+            {
+              "t": "button",
+              "big": true,
+              "text": "Request signatures",
+              "done": "Signatures requested"
+            },
+            {
+              "t": "task",
+              "text": "Signatures placed on the minutes, certificate and list"
+            },
+            {
+              "t": "task",
+              "text": "Sent to every signer"
+            },
+            {
+              "t": "task",
+              "text": "Reminder to whoever is missing",
+              "ms": 400
+            },
+            {
+              "t": "task",
+              "text": "Signed and filed"
+            },
+            {
+              "t": "link",
+              "text": "See the feature (in Spanish)",
+              "href": "/funcionalidades/firma-electronica"
+            }
+          ]
+        }
+      ],
+      "log": [
+        {
+          "step": 0,
+          "who": "you",
+          "time": "09:00:00",
+          "event": "notice.sent",
+          "data": "shareholders=48"
+        },
+        {
+          "step": 1,
+          "who": "sttok",
+          "time": "09:00:05",
+          "event": "notice.certified",
+          "data": "delivered=48/48"
+        },
+        {
+          "step": 2,
+          "who": "you",
+          "time": "12:01:40",
+          "event": "minutes.drafted",
+          "data": "items=3"
+        },
+        {
+          "step": 3,
+          "who": "sttok",
+          "time": "12:05:30",
+          "event": "minutes.signed",
+          "data": "signatures=39/39"
+        }
+      ]
+    },
+    {
+      "tab": "Certificates",
+      "headline": "Every shareholder's certificates, in one click",
+      "link": {
+        "text": "ownership and value certificates (in Spanish)",
+        "href": "/funcionalidades/certificados-de-titularidad-y-valor"
+      },
+      "steps": [
+        {
+          "who": "you",
+          "icon": "FileText",
+          "label": "You pick the certificate",
+          "elements": [
+            {
+              "t": "options",
+              "items": [
+                "Income tax",
+                "Ownership",
+                "Wealth tax"
+              ],
+              "selected": 0
+            },
+            {
+              "t": "check",
+              "text": "For all 48 shareholders · tax year 2025"
+            },
+            {
+              "t": "button",
+              "text": "Generate",
+              "done": "Requested"
+            }
+          ]
+        },
+        {
+          "who": "sttok",
+          "icon": "Sparkles",
+          "label": "Sttok prepares them from the register",
+          "elements": [
+            {
+              "t": "task",
+              "text": "Each shareholder's transactions in the year"
+            },
+            {
+              "t": "task",
+              "text": "Shares and amounts"
+            },
+            {
+              "t": "task",
+              "text": "Dividends and tax withheld"
+            },
+            {
+              "t": "deck",
+              "items": [
+                "E. Riba · Tax 2025",
+                "L. Puig · Tax 2025",
+                "R. Vallcorba · Tax 2025",
+                "J. Ferrer · Tax 2025",
+                "N. Soler · Tax 2025"
+              ]
+            },
+            {
+              "t": "button",
+              "big": true,
+              "text": "Approve",
+              "done": "48 certificates approved"
+            }
+          ]
+        },
+        {
+          "who": "sttok",
+          "icon": "Send",
+          "label": "Each shareholder receives them",
+          "elements": [
+            {
+              "t": "meter",
+              "text": "Delivered",
+              "to": 48,
+              "decimals": 0,
+              "suffix": ""
+            },
+            {
+              "t": "task",
+              "text": "In the Documents tab of their record"
+            },
+            {
+              "t": "task",
+              "text": "By email, if they prefer"
+            },
+            {
+              "t": "task",
+              "text": "E-signed"
+            },
+            {
+              "t": "link",
+              "text": "See the feature (in Spanish)",
+              "href": "/funcionalidades/certificados-de-titularidad-y-valor"
+            }
+          ]
+        },
+        {
+          "who": "sttok",
+          "icon": "Clock",
+          "label": "Time saved",
+          "elements": [
+            {
+              "t": "saved",
+              "text": "Looking up each shareholder's transactions"
+            },
+            {
+              "t": "saved",
+              "text": "Working out amounts and tax withheld"
+            },
+            {
+              "t": "saved",
+              "text": "Drafting 48 certificates"
+            },
+            {
+              "t": "saved",
+              "text": "Emailing them one by one"
+            }
+          ]
+        }
+      ],
+      "log": [
+        {
+          "step": 0,
+          "who": "you",
+          "time": "16:00:00",
+          "event": "certificates.requested",
+          "data": "type=income_tax shareholders=48"
+        },
+        {
+          "step": 1,
+          "who": "you",
+          "time": "16:00:14",
+          "event": "certificates.approved",
+          "data": "n=48 by=e.riba"
+        },
+        {
+          "step": 2,
+          "who": "sttok",
+          "time": "16:00:20",
+          "event": "certificates.delivered",
+          "data": "record=48 email=21"
+        },
+        {
+          "step": 3,
+          "who": "sttok",
+          "time": "16:00:20",
+          "event": "task.closed",
+          "data": "manual=0"
+        }
+      ]
+    }
+  ]
+}

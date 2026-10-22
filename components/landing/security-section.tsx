@@ -9,6 +9,7 @@ interface SecurityItem {
   title: string;
   description: string;
   logo?: string | null;
+  alt?: string;
 }
 
 const SecurityIcons = [ShieldCheck, FileCheck2, Cpu, Globe2, Lock, Activity];
@@ -47,7 +48,7 @@ const SecuritySection: FC = () => {
                     <div className="relative h-10 w-10 shrink-0">
                       <Image
                         src={item.logo}
-                        alt={item.title}
+                        alt={item.alt ?? item.title}
                         fill
                         style={{ objectFit: "contain" }}
                       />

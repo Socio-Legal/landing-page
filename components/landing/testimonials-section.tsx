@@ -12,6 +12,7 @@ type TestimonialCardProps = {
   img?: string;
   description: string;
   stars?: number;
+  photoAlt?: string;
 };
 
 const TestimonialCard: FC<TestimonialCardProps> = ({
@@ -19,6 +20,7 @@ const TestimonialCard: FC<TestimonialCardProps> = ({
   name,
   img,
   role,
+  photoAlt,
 }) => (
   <figure className="mb-8 flex break-inside-avoid flex-col gap-4 border-l border-border pl-6">
     <blockquote className="font-serif text-base italic leading-relaxed text-foreground">
@@ -28,7 +30,7 @@ const TestimonialCard: FC<TestimonialCardProps> = ({
       {img && (
         <Image
           src={img}
-          alt={name}
+          alt={photoAlt ?? name}
           width={32}
           height={32}
           className="h-8 w-8 rounded-full grayscale"
@@ -63,7 +65,20 @@ const TestimonialsSection: FC = () => {
 
         <div className="mx-auto max-w-5xl gap-x-12 md:columns-2 xl:columns-3">
           {testimonials.map((card, idx) => (
-            <TestimonialCard {...card} key={idx} />
+            <TestimonialCard
+              {...card}
+              photoAlt={
+                card.img?.includes("/logo-")
+                  ? // El logo es el de la empresa: va detrás de «|» en el cargo.
+                    t("labels.logo", {
+                      name: card.role.includes("|")
+                        ? card.role.split("|").pop()?.trim()
+                        : card.name,
+                    })
+                  : t("labels.photo", { name: card.name })
+              }
+              key={idx}
+            />
           ))}
         </div>
       </div>

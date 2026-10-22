@@ -8,7 +8,7 @@ import homeProductsSection from "../public/locales/es/home-products-section.json
 import homeTestimonialsSection from "../public/locales/es/home-testimonials-section.json";
 import homeUsesSection from "../public/locales/es/home-uses-section.json";
 import homeNumbersSection from "../public/locales/es/home-numbers-section.json";
-import homeAiSection from "../public/locales/es/home-ai-section.json";
+import homeFlowsSection from "../public/locales/es/home-flows-section.json";
 import homeSecuritySection from "../public/locales/es/home-security-section.json";
 import homeIntegrationsSection from "../public/locales/es/home-integrations-section.json";
 import homePricingAnchor from "../public/locales/es/home-pricing-anchor.json";
@@ -53,7 +53,7 @@ import homeProductsSectionEN from "../public/locales/en/home-products-section.js
 import homeTestimonialsSectionEN from "../public/locales/en/home-testimonials-section.json";
 import homeUsesSectionEN from "../public/locales/en/home-uses-section.json";
 import homeNumbersSectionEN from "../public/locales/en/home-numbers-section.json";
-import homeAiSectionEN from "../public/locales/en/home-ai-section.json";
+import homeFlowsSectionEN from "../public/locales/en/home-flows-section.json";
 import homeSecuritySectionEN from "../public/locales/en/home-security-section.json";
 import homeIntegrationsSectionEN from "../public/locales/en/home-integrations-section.json";
 import homePricingAnchorEN from "../public/locales/en/home-pricing-anchor.json";
@@ -100,7 +100,7 @@ const loadTranslations = (lang: "es" | "en") => {
       "home-testimonials-section": homeTestimonialsSection,
       "home-uses-section": homeUsesSection,
       "home-numbers-section": homeNumbersSection,
-      "home-ai-section": homeAiSection,
+      "home-flows-section": homeFlowsSection,
       "home-security-section": homeSecuritySection,
       "home-integrations-section": homeIntegrationsSection,
       "home-pricing-anchor": homePricingAnchor,
@@ -147,7 +147,7 @@ const loadTranslations = (lang: "es" | "en") => {
     "home-testimonials-section": homeTestimonialsSectionEN,
     "home-uses-section": homeUsesSectionEN,
     "home-numbers-section": homeNumbersSectionEN,
-    "home-ai-section": homeAiSectionEN,
+    "home-flows-section": homeFlowsSectionEN,
     "home-security-section": homeSecuritySectionEN,
     "home-integrations-section": homeIntegrationsSectionEN,
     "home-pricing-anchor": homePricingAnchorEN,

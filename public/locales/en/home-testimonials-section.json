@@ -60,5 +60,9 @@
       "description": "We use Sttok to manage our relationship with our shareholders and investors, along with its main features such as the shareholder register, general meetings, incentive plans and the board of directors.",
       "stars": 5
     }
-  ]
+  ],
+  "labels": {
+    "photo": "Photo of {{name}}",
+    "logo": "{{name}} logo"
+  }
 }

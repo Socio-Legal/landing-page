@@ -2,7 +2,7 @@
   "hero": {
     "badge": "+250 companies and +250,000 shareholders trust Sttok",
     "title": "All your company governance, on a single platform",
-    "description": "Captable (shareholder book), incentive plans (phantoms and stock options), shareholder meetings, boards, corporate groups, secondary market and operations simulator. With AI assistant and ISO 27001 and GDPR compliance.",
+    "description": "Shareholder register (cap table), incentive plans (phantoms and stock options), shareholder meetings, boards, corporate groups, secondary market and operations simulator. With AI assistant and ISO 27001 and GDPR compliance.",
     "button": {
       "text": "Request personalized demo",
       "link": "https://calendly.com/sttok/30min"
@@ -14,6 +14,11 @@
     "video": {
       "base": "/animaciones/en/panel",
       "alt": "A company dashboard in Sttok: share capital, split between family branches, meetings, deadlines and a shareholder record"
+    },
+    "certifications": {
+      "iso": "Sttok holds ISO 27001 certification",
+      "gdpr": "Sttok complies with the GDPR",
+      "ssl": "Sttok encrypts communications with SSL"
     }
   }
 }

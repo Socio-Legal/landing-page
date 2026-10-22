@@ -1,6 +1,7 @@
 "use client";
 
 import { FC } from "react";
+import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import {
   ArrowRight,
@@ -18,6 +19,7 @@ interface ProfileItem {
   pain: string;
   with: string;
   case: string;
+  caseLink?: { text: string; href: string };
   icon: string;
 }
 
@@ -100,6 +102,15 @@ const WhoUsesSttokSection: FC = () => {
                   <p className="text-sm leading-snug text-foreground italic">
                     {item.case}
                   </p>
+                  {item.caseLink && (
+                    <Link
+                      href={item.caseLink.href}
+                      className="mt-2 inline-flex items-center gap-1 text-sm font-medium text-brand underline-offset-4 hover:underline"
+                    >
+                      {item.caseLink.text}
+                      <ArrowRight aria-hidden className="h-3.5 w-3.5" />
+                    </Link>
+                  )}
                 </div>
               </article>
             );

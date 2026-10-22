@@ -85,5 +85,11 @@
     "126": "Corporate software comparisons (in Spanish)",
     "127": "Sttok features"
   },
-  "cookieSettings": "Cookie settings"
+  "cookieSettings": "Cookie settings",
+  "securityLogoAlts": [
+    "Sttok complies with the GDPR",
+    "Sttok holds ISO 27001 certification",
+    "Sttok encrypts communications with SSL",
+    "Sttok, ISO 27001 certification audited by Bureau Veritas"
+  ]
 }

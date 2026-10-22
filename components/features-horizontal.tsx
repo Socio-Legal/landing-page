@@ -85,6 +85,8 @@ type CardDataProps = {
   id: number;
   title: string;
   content: string;
+  /** Texto alternativo de la pantalla; si falta, se compone con título y texto. */
+  alt?: string;
   image: ImageByThemeProps;
   /** Ruta base de una animación en /animaciones, sin tema ni extensión. */
   video?: string;
@@ -306,7 +308,7 @@ export default function Features({
                     {item.video ? (
                       <VideoTema
                         base={item.video}
-                        alt={`${item.title} ${enSttok}: ${item.content}`}
+                        alt={item.alt ?? `${item.title} ${enSttok}: ${item.content}`}
                         activo={activa}
                         rellenar
                         sizes="(max-width: 1152px) 100vw, 72rem"
@@ -316,7 +318,7 @@ export default function Features({
                       <>
                         <Image
                           src={item.image.light}
-                          alt={`${item.title} ${enSttok}: ${item.content}`}
+                          alt={item.alt ?? `${item.title} ${enSttok}: ${item.content}`}
                           fill
                           sizes="(max-width: 1152px) 100vw, 72rem"
                           priority={index === 0}
@@ -324,7 +326,7 @@ export default function Features({
                         />
                         <Image
                           src={item.image.dark}
-                          alt={`${item.title} ${enSttok}: ${item.content}`}
+                          alt={item.alt ?? `${item.title} ${enSttok}: ${item.content}`}
                           fill
                           sizes="(max-width: 1152px) 100vw, 72rem"
                           className={cn("hidden dark:block", capa)}

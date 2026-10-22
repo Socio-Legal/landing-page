@@ -56,17 +56,17 @@ export default function HeroSection() {
 
             <div className="flex items-center gap-4 pt-2 animate-fade-in opacity-0 [--animation-delay:400ms]">
               {[
-                "/logo-iso-27001.png",
-                "/logo-gdpr-compliant.png",
-                "/logo-ssl.png",
-              ].map((src) => (
+                ["/logo-iso-27001.png", "iso"],
+                ["/logo-gdpr-compliant.png", "gdpr"],
+                ["/logo-ssl.png", "ssl"],
+              ].map(([src, key]) => (
                 <div
                   key={src}
                   className="relative h-8 w-20 opacity-60 grayscale"
                 >
                   <Image
                     src={src}
-                    alt=""
+                    alt={t(`home-hero-section:hero.certifications.${key}`)}
                     fill
                     style={{ objectFit: "contain" }}
                     className="dark:invert"

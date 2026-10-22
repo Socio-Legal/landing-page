@@ -2,7 +2,7 @@
   "hero": {
     "badge": "+250 empresas y +250.000 socios confían en Sttok",
     "title": "Toda la gestión societaria de tu empresa, en una sola plataforma",
-    "description": "Captable (libro de socios), planes de incentivos (phantoms y stock options), juntas, consejos, grupos de sociedades, mercado secundario y simulador de operaciones. Con asistente de IA y cumplimiento ISO 27001 y RGPD.",
+    "description": "Libro de socios (cap table), planes de incentivos (phantoms y stock options), juntas, consejos, grupos de sociedades, mercado secundario y simulador de operaciones. Con asistente de IA y cumplimiento ISO 27001 y RGPD.",
     "button": {
       "text": "Solicitar demo personalizada",
       "link": "https://calendly.com/sttok/30min"
@@ -14,6 +14,11 @@
     "video": {
       "base": "/animaciones/panel",
       "alt": "Panel de una sociedad en Sttok: capital social, reparto entre ramas familiares, juntas, vencimientos y la ficha de un accionista"
+    },
+    "certifications": {
+      "iso": "Sttok cuenta con la certificación ISO 27001",
+      "gdpr": "Sttok cumple el RGPD",
+      "ssl": "Sttok cifra las comunicaciones con SSL"
     }
   }
 }

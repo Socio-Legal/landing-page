@@ -1,0 +1,551 @@
+{
+  "header": {
+    "slogan": "Cómo trabaja Sttok",
+    "title": "De las escrituras a la junta firmada, sin cambiar de aplicación",
+    "description": "Sttok hace el trabajo repetitivo y te deja lo que requiere tu criterio: revisar y validar."
+  },
+  "labels": {
+    "sttok": "Sttok",
+    "you": "Tú",
+    "pause": "Pausar",
+    "play": "Reproducir",
+    "paused": "En pausa",
+    "logTitle": "Log de actividad",
+    "more": "Cómo funciona",
+    "demo": "Ver Sttok en una demo",
+    "mailTo": "Para",
+    "mailSubject": "Asunto",
+    "votes": {
+      "for": "Sí",
+      "against": "No",
+      "abstain": "Abst."
+    }
+  },
+  "flows": [
+    {
+      "tab": "Libro de socios",
+      "headline": "De las escrituras al libro de socios, en minutos",
+      "link": {
+        "text": "lectura de escrituras con IA",
+        "href": "/funcionalidades/lectura-de-escrituras-con-ia"
+      },
+      "steps": [
+        {
+          "who": "you",
+          "icon": "Upload",
+          "label": "Subes las escrituras",
+          "elements": [
+            {
+              "t": "deck",
+              "items": [
+                "2009 · Constitución",
+                "2012 · Ampliación",
+                "2014 · Compraventa",
+                "2017 · Herencia",
+                "2020 · Ampliación",
+                "2023 · Compraventa"
+              ]
+            },
+            {
+              "t": "note",
+              "text": "6 escrituras en PDF, en cualquier orden"
+            },
+            {
+              "t": "note",
+              "text": "O el Excel de tu libro de socios"
+            }
+          ]
+        },
+        {
+          "who": "sttok",
+          "icon": "ScanText",
+          "label": "Extrae toda la información",
+          "elements": [
+            {
+              "t": "task",
+              "text": "Ordenadas por fecha"
+            },
+            {
+              "t": "task",
+              "text": "Socios y operaciones"
+            },
+            {
+              "t": "task",
+              "text": "Administradores y cargos"
+            },
+            {
+              "t": "task",
+              "text": "Rangos de numeración"
+            },
+            {
+              "t": "task",
+              "text": "Cargas y cotitularidades"
+            },
+            {
+              "t": "note",
+              "tone": "warn",
+              "text": "1 hueco por revisar: participaciones 2.401 a 3.000"
+            }
+          ]
+        },
+        {
+          "who": "you",
+          "icon": "UserCheck",
+          "label": "Validas",
+          "elements": [
+            {
+              "t": "check",
+              "text": "Datos extraídos revisados"
+            },
+            {
+              "t": "check",
+              "text": "Participaciones 2.401 a 3.000 resueltas"
+            },
+            {
+              "t": "button",
+              "text": "Validar",
+              "done": "Validado"
+            }
+          ]
+        },
+        {
+          "who": "sttok",
+          "icon": "BookOpenCheck",
+          "label": "Libro listo",
+          "elements": [
+            {
+              "t": "result",
+              "icon": "ArrowLeftRight",
+              "value": "312",
+              "text": "operaciones registradas con su detalle",
+              "link": {
+                "text": "Ver ejemplo",
+                "href": "/funcionalidades/equity-story"
+              }
+            },
+            {
+              "t": "result",
+              "icon": "BookOpenCheck",
+              "text": "Libro de socios actualizado",
+              "link": {
+                "text": "Ver ejemplo",
+                "href": "/funcionalidades/libro-registro-oficial"
+              }
+            },
+            {
+              "t": "result",
+              "icon": "Users",
+              "value": "48",
+              "text": "fichas de socio actualizadas",
+              "avatars": [
+                "ER",
+                "LP",
+                "RV",
+                "JF"
+              ],
+              "link": {
+                "text": "Ver ejemplo",
+                "href": "/funcionalidades/ficha-del-socio"
+              }
+            }
+          ]
+        }
+      ],
+      "log": [
+        {
+          "step": 0,
+          "who": "you",
+          "time": "10:30:02",
+          "event": "escrituras.subidas",
+          "data": "n=6"
+        },
+        {
+          "step": 1,
+          "who": "sttok",
+          "time": "10:31:52",
+          "event": "historico.extraido",
+          "data": "operaciones=312"
+        },
+        {
+          "step": 2,
+          "who": "you",
+          "time": "10:41:15",
+          "event": "historico.validado",
+          "data": "por=e.riba"
+        },
+        {
+          "step": 3,
+          "who": "sttok",
+          "time": "10:41:16",
+          "event": "libro.generado",
+          "data": "socios=48 fichas=48"
+        }
+      ]
+    },
+    {
+      "tab": "Junta general",
+      "headline": "La junta, de la convocatoria al acta firmada",
+      "link": {
+        "text": "convocatoria de la junta",
+        "href": "/funcionalidades/convocatoria-de-la-junta"
+      },
+      "steps": [
+        {
+          "who": "you",
+          "icon": "CalendarDays",
+          "label": "Preparas la convocatoria",
+          "elements": [
+            {
+              "t": "check",
+              "text": "Fijas el orden del día: 3 puntos"
+            },
+            {
+              "t": "auto",
+              "text": "Sttok redacta la convocatoria y el correo"
+            },
+            {
+              "t": "mail",
+              "to": "48 socios",
+              "subject": "Junta general ordinaria 2026",
+              "attachment": "convocatoria.pdf",
+              "toHint": "correos del libro"
+            },
+            {
+              "t": "button",
+              "big": true,
+              "text": "Enviar",
+              "done": "Enviada a 48 socios"
+            }
+          ]
+        },
+        {
+          "who": "sttok",
+          "icon": "Send",
+          "label": "Sttok la gestiona",
+          "elements": [
+            {
+              "t": "meter",
+              "text": "Quórum previsto",
+              "to": 78.4,
+              "decimals": 1,
+              "suffix": " %"
+            },
+            {
+              "t": "counters",
+              "items": [
+                {
+                  "label": "Asistirán",
+                  "to": 31
+                },
+                {
+                  "label": "Delegan",
+                  "to": 6
+                },
+                {
+                  "label": "No asistirán",
+                  "to": 4
+                }
+              ]
+            },
+            {
+              "t": "task",
+              "text": "Entrega verificada y certificada"
+            },
+            {
+              "t": "ticker",
+              "items": [
+                "Delegación recibida · L. Puig → E. Riba",
+                "Asistencia confirmada · M. Soler",
+                "Delegación recibida · R. Vallcorba → E. Riba",
+                "No asistirá · A. Prat",
+                "Asistencia confirmada · J. Ferrer",
+                "Delegación recibida · N. Soler → J. Ferrer"
+              ],
+              "done": "41 respuestas recogidas"
+            },
+            {
+              "t": "task",
+              "text": "Delegaciones firmadas y archivadas"
+            }
+          ]
+        },
+        {
+          "who": "you",
+          "icon": "Vote",
+          "label": "El día de la junta",
+          "elements": [
+            {
+              "t": "task",
+              "text": "Junta constituida: 98,6 % del capital"
+            },
+            {
+              "t": "vote",
+              "text": "Punto 1 · Cuentas 2025",
+              "for": 94.1,
+              "against": 3.1,
+              "abstain": 2.8
+            },
+            {
+              "t": "vote",
+              "text": "Punto 2 · Resultado",
+              "for": 91.6,
+              "against": 5.6,
+              "abstain": 2.8
+            },
+            {
+              "t": "vote",
+              "text": "Punto 3 · Auditor",
+              "for": 88.3,
+              "against": 7.4,
+              "abstain": 4.3
+            },
+            {
+              "t": "button",
+              "text": "Generar el acta",
+              "done": "Acta generada"
+            }
+          ]
+        },
+        {
+          "who": "sttok",
+          "icon": "PenLine",
+          "label": "Firma electrónica integrada",
+          "elements": [
+            {
+              "t": "signers",
+              "items": [
+                {
+                  "initials": "ER",
+                  "text": "Presidenta",
+                  "checked": true
+                },
+                {
+                  "initials": "JF",
+                  "text": "Secretario",
+                  "checked": true
+                },
+                {
+                  "initials": "37",
+                  "text": "Asistentes, para la lista",
+                  "checked": false
+                }
+              ]
+            },
+            {
+              "t": "button",
+              "big": true,
+              "text": "Solicitar firmas",
+              "done": "Firmas solicitadas"
+            },
+            {
+              "t": "task",
+              "text": "Firmas colocadas en el acta, la certificación y la lista"
+            },
+            {
+              "t": "task",
+              "text": "Enviado a cada firmante"
+            },
+            {
+              "t": "task",
+              "text": "Recordatorio a quien falta",
+              "ms": 400
+            },
+            {
+              "t": "task",
+              "text": "Firmado y archivado"
+            },
+            {
+              "t": "link",
+              "text": "Ver la funcionalidad",
+              "href": "/funcionalidades/firma-electronica"
+            }
+          ]
+        }
+      ],
+      "log": [
+        {
+          "step": 0,
+          "who": "you",
+          "time": "09:00:00",
+          "event": "convocatoria.enviada",
+          "data": "socios=48"
+        },
+        {
+          "step": 1,
+          "who": "sttok",
+          "time": "09:00:05",
+          "event": "convocatoria.certificada",
+          "data": "entregas=48/48"
+        },
+        {
+          "step": 2,
+          "who": "you",
+          "time": "12:01:40",
+          "event": "acta.generada",
+          "data": "puntos=3"
+        },
+        {
+          "step": 3,
+          "who": "sttok",
+          "time": "12:05:30",
+          "event": "acta.firmada",
+          "data": "firmas=39/39"
+        }
+      ]
+    },
+    {
+      "tab": "Certificados",
+      "headline": "Los certificados de todos los socios, en un clic",
+      "link": {
+        "text": "certificados de titularidad y valor",
+        "href": "/funcionalidades/certificados-de-titularidad-y-valor"
+      },
+      "steps": [
+        {
+          "who": "you",
+          "icon": "FileText",
+          "label": "Eliges el certificado",
+          "elements": [
+            {
+              "t": "options",
+              "items": [
+                "IRPF",
+                "Titularidad",
+                "Patrimonio"
+              ],
+              "selected": 0
+            },
+            {
+              "t": "check",
+              "text": "Para los 48 socios · ejercicio 2025"
+            },
+            {
+              "t": "button",
+              "text": "Generar",
+              "done": "Solicitado"
+            }
+          ]
+        },
+        {
+          "who": "sttok",
+          "icon": "Sparkles",
+          "label": "Sttok los prepara con los datos del libro",
+          "elements": [
+            {
+              "t": "task",
+              "text": "Operaciones del año de cada socio"
+            },
+            {
+              "t": "task",
+              "text": "Participaciones e importes"
+            },
+            {
+              "t": "task",
+              "text": "Dividendos y retenciones"
+            },
+            {
+              "t": "deck",
+              "items": [
+                "E. Riba · IRPF 2025",
+                "L. Puig · IRPF 2025",
+                "R. Vallcorba · IRPF 2025",
+                "J. Ferrer · IRPF 2025",
+                "N. Soler · IRPF 2025"
+              ]
+            },
+            {
+              "t": "button",
+              "big": true,
+              "text": "Aprobar",
+              "done": "48 certificados aprobados"
+            }
+          ]
+        },
+        {
+          "who": "sttok",
+          "icon": "Send",
+          "label": "Cada socio los recibe",
+          "elements": [
+            {
+              "t": "meter",
+              "text": "Entregados",
+              "to": 48,
+              "decimals": 0,
+              "suffix": ""
+            },
+            {
+              "t": "task",
+              "text": "En la pestaña Documentación de su ficha"
+            },
+            {
+              "t": "task",
+              "text": "Por correo, si el socio lo prefiere"
+            },
+            {
+              "t": "task",
+              "text": "Con firma electrónica"
+            },
+            {
+              "t": "link",
+              "text": "Ver la funcionalidad",
+              "href": "/funcionalidades/certificados-de-titularidad-y-valor"
+            }
+          ]
+        },
+        {
+          "who": "sttok",
+          "icon": "Clock",
+          "label": "Tiempo ahorrado",
+          "elements": [
+            {
+              "t": "saved",
+              "text": "Buscar las operaciones de cada socio"
+            },
+            {
+              "t": "saved",
+              "text": "Calcular importes y retenciones"
+            },
+            {
+              "t": "saved",
+              "text": "Redactar 48 certificados"
+            },
+            {
+              "t": "saved",
+              "text": "Enviarlos uno a uno por correo"
+            }
+          ]
+        }
+      ],
+      "log": [
+        {
+          "step": 0,
+          "who": "you",
+          "time": "16:00:00",
+          "event": "certificados.solicitados",
+          "data": "tipo=irpf socios=48"
+        },
+        {
+          "step": 1,
+          "who": "you",
+          "time": "16:00:14",
+          "event": "certificados.aprobados",
+          "data": "n=48 por=e.riba"
+        },
+        {
+          "step": 2,
+          "who": "sttok",
+          "time": "16:00:20",
+          "event": "certificados.entregados",
+          "data": "ficha=48 correo=21"
+        },
+        {
+          "step": 3,
+          "who": "sttok",
+          "time": "16:00:20",
+          "event": "tarea.cerrada",
+          "data": "manual=0"
+        }
+      ]
+    }
+  ]
+}
