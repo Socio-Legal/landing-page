@@ -1,0 +1,91 @@
+---
+title: "Chile: registro de accionistas digital para SpA y S.A."
+description: "Software para llevar el registro de accionistas de una SpA o una S.A. chilena: acciones nominativas, transferencias inscritas, gravámenes, junta de accionistas y certificados. Datos en la Unión Europea, soporte en español."
+slug: "/chile"
+section: "jurisdicciones"
+canonical: "https://www.sttok.com/chile"
+---
+
+{/* REVISIÓN JURÍDICA PENDIENTE: Ley 18.046 y su Reglamento (registro de accionistas, llevanza electrónica) y Código de Comercio arts. 424 y siguientes para la SpA. Validar con un abogado chileno antes de publicar. */}
+
+# Registro de accionistas digital para SpA y S.A. en Chile
+
+Toda sociedad anónima y toda sociedad por acciones chilena lleva un registro de accionistas: quién es titular de cuántas acciones, desde qué fecha, con qué gravámenes y qué parte del capital tiene pagada. Las acciones son nominativas y la transferencia no produce efectos frente a la sociedad hasta que se inscribe. Sttok lleva ese registro con el histórico completo, el documento detrás de cada inscripción y la junta de accionistas gestionada desde la misma plataforma.
+
+<Captura
+  nombre="libro-chile"
+  alt="Registro de accionistas de una SpA chilena en Sttok, con las acciones identificadas por series y su titular"
+  pie="El registro de accionistas de una SpA, con las acciones por serie, el RUT de cada accionista y los gravámenes. Datos de ejemplo."
+/>
+
+## Qué exige la ley chilena
+
+La Ley 18.046 sobre sociedades anónimas establece que las acciones son nominativas y que su suscripción y transferencia se inscriben en el registro de accionistas. El Reglamento de Sociedades Anónimas detalla su contenido mínimo: nombre, domicilio y RUT de cada accionista, la serie y el número de acciones de que es titular, la fecha de inscripción y, en las acciones suscritas y no pagadas, la forma y las oportunidades de pago. En el registro se inscriben también los gravámenes y los derechos reales distintos del dominio, y se deja referencia a los pactos sobre cesión de acciones. El registro se abre el día de la escritura de constitución.
+
+La sociedad por acciones, regulada en el Código de Comercio desde 2007, lleva un registro de accionistas con los mismos datos, bajo la responsabilidad del gerente o de los administradores. Puede llevarse por cualquier medio, incluido el electrónico, siempre que ofrezca seguridad de que no habrá intercalaciones.
+
+Hay dos regímenes según cómo se constituyó la sociedad. Las SpA y las sociedades anónimas cerradas constituidas o migradas al Registro de Empresas y Sociedades («Tu Empresa en un Día») deben llevar, desde febrero de 2023, el registro de accionistas electrónico de ese Registro, y actualizarlo con cada emisión, compraventa o disminución de acciones; mientras no lo hagan, el Registro bloquea nuevas modificaciones de la sociedad. Las sociedades constituidas por escritura pública tradicional llevan el registro de forma interna, sin inscripción pública.
+
+Sttok genera y mantiene el registro con el contenido que exige el Reglamento, con el histórico y el documento de cada inscripción. En las sociedades del Registro de Empresas y Sociedades, la actualización del registro electrónico sigue siendo un trámite del cliente o de su asesor, con los datos que salen de Sttok.
+
+## Lo que un Excel no resuelve
+
+Series de acciones, acciones suscritas y no pagadas, transferencias parciales, prendas y la fecha exacta de cada inscripción. En una hoja de cálculo todo eso lo mantiene una persona y la composición accionaria a una fecha pasada hay que reconstruirla a mano. Con varias sociedades, hay tantos registros como Excels.
+
+## Cómo lo resuelve Sttok
+
+- **Acciones por series y rangos.** Cada accionista tiene sus acciones identificadas, y las transferencias parciales dividen los rangos sin solapamientos. La [numeración por rangos](/funcionalidades/numeracion-por-rangos) es la base del registro.
+- **Series y preferencias.** Acciones ordinarias y preferentes, series con derechos distintos. Las [clases de acciones](/funcionalidades/clases-de-acciones) se configuran por sociedad.
+- **Transferencias inscritas con documento.** Cada traspaso se inscribe con su fecha y su documento, y el histórico reconstruye la composición accionaria en cualquier momento. Son las [transmisiones](/funcionalidades/transmisiones) del registro.
+- **Acciones suscritas y no pagadas.** El capital suscrito y el pagado se llevan por acción, con las cuotas pendientes.
+- **Prendas, gravámenes y embargos.** Las [cargas sobre participaciones](/funcionalidades/cargas-sobre-participaciones) se anotan sobre el rango de acciones que afectan.
+- **Junta de accionistas.** Citación con la antelación que fije la ley o los estatutos, acreditación, quórum, votación y acta. Sttok gestiona la [convocatoria](/funcionalidades/convocatoria-de-la-junta), la [asistencia y el quórum](/funcionalidades/asistencia-y-quorum) y el [acta](/funcionalidades/acta-de-la-junta) con el nombre de órgano que corresponda, también para el directorio.
+- **Certificados.** El certificado de acciones o de composición accionaria que pide un banco o un auditor sale de los datos del registro, con los [certificados de titularidad y valor](/funcionalidades/certificados-de-titularidad-y-valor).
+- **Portal del accionista.** Cada accionista ve su posición y su histórico en el [portal del accionista](/funcionalidades/portal-del-accionista).
+- **Sociedades de varios países en un mismo panel.** Cada sociedad lleva su libro, su moneda y la denominación de sus órganos, y el grupo entero se ve desde un solo acceso.
+
+## España y Chile, lado a lado
+
+| | España | Chile |
+|---|---|---|
+| Tipo societario habitual | SL, SA | SpA, S.A., Ltda. |
+| Libro | Libro registro de socios / de acciones nominativas | Registro de accionistas |
+| Unidad | Participación o acción numerada | Acción nominativa, por series |
+| Transmisión | Escritura pública o documento privado, según el tipo | Traspaso firmado e inscrito en el registro |
+| Órgano de socios | Junta general | Junta de accionistas |
+| Órgano de administración | Consejo de administración o administradores | Directorio o administrador |
+| Formalidad del libro | Legalización en el Registro Mercantil | Registro electrónico en el Registro de Empresas y Sociedades si la sociedad se constituyó en «Tu Empresa en un Día»; interno en las demás |
+
+La denominación de los órganos y de los cargos se configura por sociedad en las [reglas de la sociedad](/funcionalidades/reglas-de-la-sociedad), así que una SpA y una SL española conviven en el mismo panel, cada una con su vocabulario.
+
+## Grupos con matriz en España o en Chile
+
+Una empresa española con su filial chilena, o un grupo chileno con una sociedad en España. Sttok lleva [todas las sociedades del grupo](/soluciones/grupos-de-sociedades) desde un único acceso, con las participaciones entre ellas y la consolidación de la titularidad final, cada sociedad en su moneda. Los [despachos](/abogados) con oficina en ambos países trabajan con el mismo panel multisociedad.
+
+## Operativa
+
+- **Facturación en euros o en dólares**, con pago por tarjeta o transferencia internacional. [Precios](/precios) por sociedad y año.
+- **Soporte en español.**
+- **Datos alojados en la Unión Europea**, con certificación ISO 27001.
+- **Puesta en marcha en unas horas por sociedad.** Si el registro lleva años sin actualizarse, el histórico se reconstruye a partir de los traspasos y las actas.
+
+## Preguntas frecuentes
+
+**¿El registro de accionistas de Sttok vale como registro oficial de la sociedad?**
+En las sociedades constituidas por escritura pública, el registro puede llevarse por medios electrónicos y Sttok lo lleva con el contenido que exige el Reglamento, con el histórico y los documentos de cada inscripción. En las constituidas en «Tu Empresa en un Día», el registro oficial es el electrónico del Registro de Empresas y Sociedades: Sttok lleva el libro completo, con documentos, cargas y asamblea, y el cliente actualiza ese registro con los datos que salen de la plataforma.
+
+**¿Sirve para una SpA con un solo accionista?**
+Sí. El registro es el mismo con uno o con cien accionistas. La diferencia está en cuánto trabajo da la junta, que con pocos accionistas es mínimo.
+
+**¿Puedo llevar sociedades de Chile y de España en el mismo panel?**
+Sí. Cada sociedad tiene su registro, su moneda y la denominación de sus órganos, y el grupo se ve entero desde un solo acceso.
+
+**¿En qué moneda se paga?**
+En euros o en dólares estadounidenses. Los precios se publican en euros.
+
+**¿Quién me atiende?**
+El equipo de Sttok, en español, en horario de España. Las comunicaciones y la puesta en marcha son en español.
+
+## Empezar
+
+[Solicitar una demo](https://calendly.com/sttok/30min) · [Ver precios](/precios) · [Otras jurisdicciones](/jurisdicciones)

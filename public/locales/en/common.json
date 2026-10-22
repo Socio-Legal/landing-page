@@ -48,7 +48,8 @@
     "VsExcel": "Sttok vs Excel",
     "Guides": "Guides",
     "Comparisons": "Comparisons",
-    "Features": "Features"
+    "Features": "Features",
+    "Jurisdictions": "Jurisdictions"
   },
   "cta": {
     "login": "Log in",
@@ -83,7 +84,8 @@
     "124": "Sttok vs Excel",
     "125": "Corporate law guides (in Spanish)",
     "126": "Corporate software comparisons (in Spanish)",
-    "127": "Sttok features"
+    "127": "Sttok features",
+    "128": "Jurisdictions (in Spanish)"
   },
   "cookieSettings": "Cookie settings",
   "securityLogoAlts": [
