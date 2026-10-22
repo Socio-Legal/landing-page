@@ -33,22 +33,22 @@
         {
           "who": "you",
           "icon": "Upload",
-          "label": "Subes las escrituras",
+          "label": "Subes escrituras, actas o contratos",
           "elements": [
             {
               "t": "deck",
               "items": [
-                "2009 · Constitución",
-                "2012 · Ampliación",
-                "2014 · Compraventa",
-                "2017 · Herencia",
-                "2020 · Ampliación",
-                "2023 · Compraventa"
+                "2009 · Escritura",
+                "2012 · Acta de junta",
+                "2014 · Contrato",
+                "2017 · Escritura",
+                "2020 · Acta de junta",
+                "2023 · Contrato"
               ]
             },
             {
               "t": "note",
-              "text": "6 escrituras en PDF, en cualquier orden"
+              "text": "6 documentos en PDF, en cualquier orden"
             },
             {
               "t": "note",
@@ -156,7 +156,7 @@
           "step": 0,
           "who": "you",
           "time": "10:30:02",
-          "event": "escrituras.subidas",
+          "event": "documentos.subidos",
           "data": "n=6"
         },
         {
@@ -326,7 +326,7 @@
                 },
                 {
                   "initials": "37",
-                  "text": "Asistentes, para la lista",
+                  "text": "Lista de asistentes",
                   "checked": false
                 }
               ]
@@ -339,7 +339,7 @@
             },
             {
               "t": "task",
-              "text": "Firmas colocadas en el acta, la certificación y la lista"
+              "text": "Firmas colocadas en el acta y la certificación"
             },
             {
               "t": "task",
