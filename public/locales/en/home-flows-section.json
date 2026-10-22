@@ -33,22 +33,22 @@
         {
           "who": "you",
           "icon": "Upload",
-          "label": "You upload the deeds",
+          "label": "You upload deeds, minutes or contracts",
           "elements": [
             {
               "t": "deck",
               "items": [
-                "2009 · Incorporation",
-                "2012 · Capital increase",
-                "2014 · Share transfer",
-                "2017 · Inheritance",
-                "2020 · Capital increase",
-                "2023 · Share transfer"
+                "2009 · Deed",
+                "2012 · Minutes",
+                "2014 · Contract",
+                "2017 · Deed",
+                "2020 · Minutes",
+                "2023 · Contract"
               ]
             },
             {
               "t": "note",
-              "text": "6 deeds in PDF, in any order"
+              "text": "6 documents in PDF, in any order"
             },
             {
               "t": "note",
@@ -156,7 +156,7 @@
           "step": 0,
           "who": "you",
           "time": "10:30:02",
-          "event": "deeds.uploaded",
+          "event": "documents.uploaded",
           "data": "n=6"
         },
         {
@@ -326,7 +326,7 @@
                 },
                 {
                   "initials": "37",
-                  "text": "Attendees, for the list",
+                  "text": "Attendance list",
                   "checked": false
                 }
               ]
@@ -339,7 +339,7 @@
             },
             {
               "t": "task",
-              "text": "Signatures placed on the minutes, certificate and list"
+              "text": "Signatures placed on the minutes and certificate"
             },
             {
               "t": "task",
