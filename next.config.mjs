@@ -67,6 +67,15 @@ const SIN_PAGINA = ["/solutions"];
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   /**
+   * La Captura de los MDX lee con fs los PNG de public/funcionalidades, y el
+   * trazado de archivos mete por eso todo public/ en cada función: unos 250 MB,
+   * el límite de Vercel. En tiempo de ejecución solo se leen esos PNG; vídeos,
+   * imágenes Open Graph y heroes los sirve la CDN.
+   */
+  outputFileTracingExcludes: {
+    "/**": ["./public/animaciones/**/*", "./public/og/**/*", "./public/hero/**/*"],
+  },
+  /**
    * Las animaciones no llevan hash en el nombre: un día fresco en el navegador
    * y una semana sirviendo la copia guardada mientras se revalida. Sin esto
    * salen con max-age=0 y cada visita vuelve a preguntar por ellas. Para que
