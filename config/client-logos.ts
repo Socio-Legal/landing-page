@@ -50,6 +50,21 @@ export const clientLogos = {
   Taxdown: Taxdown,
 };
 
+// Nombre comercial de cada cliente, para el texto alternativo del logo.
+const clientNames: Partial<Record<keyof typeof clientLogos, string>> = {
+  Axa: "AXA",
+  Caballero: "Grupo Caballero",
+  Cabiedes: "Cabiedes & Partners",
+  DerechoCom: "Derecho.com",
+  LegalPigeon: "Legal Pigeon",
+  Multiverse: "Multiverse Computing",
+  PldSpace: "PLD Space",
+  Taxdown: "TaxDown",
+};
+
+export const getClientName = (logo: ClientLogo) =>
+  clientNames[logo as keyof typeof clientLogos] ?? logo;
+
 // Corrección óptica: logos en negrita y recortados al borde que, en la misma
 // caja, pesan bastante más que el resto de la tira; y Multiverse, muy
 // apaisado y de trazo fino, que se queda pequeño.

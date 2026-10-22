@@ -125,6 +125,37 @@ const config = {
           from: { transform: "translateY(0)" },
           to: { transform: "translateY(calc(-100% - var(--gap)))" },
         },
+        // Log de la home: cada línea se escribe carácter a carácter (--n caracteres).
+        typing: {
+          from: { width: "0" },
+          to: { width: "calc(var(--n) * 1ch)" },
+        },
+        blink: {
+          "50%": { opacity: "0" },
+        },
+        // Aviso que salta cuando un paso pide tu validación.
+        pop: {
+          "0%": { opacity: "0", transform: "scale(0.9)" },
+          "60%": { opacity: "1", transform: "scale(1.04)" },
+          "100%": { opacity: "1", transform: "scale(1)" },
+        },
+        // Cursor que llega al botón y lo pulsa (sección «Cómo trabaja Sttok»).
+        cursor: {
+          "0%": { opacity: "0", transform: "translate(36px, 28px)" },
+          "55%": { opacity: "1", transform: "translate(0, 0)" },
+          "75%": { transform: "translate(0, 0) scale(0.85)" },
+          "100%": { opacity: "1", transform: "translate(0, 0) scale(1)" },
+        },
+        // Letrero de aeropuerto: cada mensaje entra girando sobre su eje.
+        flip: {
+          "0%": { opacity: "0", transform: "perspective(400px) rotateX(-80deg)" },
+          "100%": { opacity: "1", transform: "perspective(400px) rotateX(0)" },
+        },
+        press: {
+          "0%, 68%": { transform: "scale(1)" },
+          "78%": { transform: "scale(0.96)" },
+          "100%": { transform: "scale(1)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -136,6 +167,12 @@ const config = {
         shimmer: "shimmer 8s infinite",
         marquee: "marquee var(--duration) infinite linear",
         "marquee-vertical": "marquee-vertical var(--duration) linear infinite",
+        typing: "typing calc(var(--n) * 22ms) steps(var(--n)) both",
+        blink: "blink 1s steps(1) infinite",
+        pop: "pop 450ms ease-out both",
+        cursor: "cursor 1.3s ease-out both",
+        press: "press 1.3s ease-out both",
+        flip: "flip 350ms ease-out both",
       },
     },
   },

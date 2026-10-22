@@ -13,6 +13,7 @@ interface ProductProps {
   id: number;
   title: string;
   content: string;
+  alt?: string;
   image: {
     light: string;
     dark: string;

@@ -10,7 +10,8 @@
     {
       "id": 1,
       "title": "Shareholders",
-      "content": "Cap table, Official Shareholder Register, %, shareholder access, etc",
+      "content": "Official shareholder register, percentages, shareholder access and share certificate register",
+      "alt": "Shareholder register in Sttok: list of shareholders with their shares, par value and premium, and their undiluted and fully diluted percentage",
       "image": {
         "light": "/animaciones/en/accionistas-light-poster.webp",
         "dark": "/animaciones/en/accionistas-dark-poster.webp"
@@ -20,21 +21,10 @@
       "duracion": 28000
     },
     {
-      "id": 2,
-      "title": "Incentive Plans",
-      "content": "Phantoms, stock options, employee access, vesting, etc",
-      "image": {
-        "light": "/animaciones/en/liquidez-planes-de-incentivos-light-poster.webp",
-        "dark": "/animaciones/en/liquidez-planes-de-incentivos-dark-poster.webp"
-      },
-      "icon": "Brain",
-      "video": "/animaciones/en/liquidez-planes-de-incentivos",
-      "duracion": 23000
-    },
-    {
       "id": 3,
       "title": "Meetings and Boards",
-      "content": "Digital notices, proxies, voting, etc",
+      "content": "Digital notices, proxies, quorum, voting and minutes",
+      "alt": "Shareholder meeting in Sttok: quorum on first call, shareholders present and represented, and voting open item by item",
       "image": {
         "light": "/animaciones/en/voto-electronico-en-juntas-light-poster.webp",
         "dark": "/animaciones/en/voto-electronico-en-juntas-dark-poster.webp"
@@ -44,9 +34,23 @@
       "duracion": 25500
     },
     {
+      "id": 2,
+      "title": "Incentive Plans",
+      "content": "Phantoms, stock options, vesting and employee portal",
+      "alt": "Incentive plan in Sttok: phantom beneficiary portal with vested units, their value and an open sale window",
+      "image": {
+        "light": "/animaciones/en/liquidez-planes-de-incentivos-light-poster.webp",
+        "dark": "/animaciones/en/liquidez-planes-de-incentivos-dark-poster.webp"
+      },
+      "icon": "Brain",
+      "video": "/animaciones/en/liquidez-planes-de-incentivos",
+      "duracion": 23000
+    },
+    {
       "id": 4,
       "title": "Operations Simulator",
-      "content": "Calculation of rounds, capital increases, convertible notes, etc",
+      "content": "Capital increases, reductions, share transfers and convertible notes",
+      "alt": "Sttok operations simulator: capital increase with pre-money valuation, price per share, dilution and investors",
       "image": {
         "light": "/animaciones/en/simulador-light-poster.webp",
         "dark": "/animaciones/en/simulador-dark-poster.webp"

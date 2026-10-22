@@ -60,5 +60,9 @@
       "description": "Para gestionar la relación con nuestros socios e inversores utilizamos Sttok. Además de las principales funcionalidades como libro de socios, juntas de accionistas, planes de incentivos y consejo de administración, etc.",
       "stars": 5
     }
-  ]
+  ],
+  "labels": {
+    "photo": "Foto de {{name}}",
+    "logo": "Logo de {{name}}"
+  }
 }

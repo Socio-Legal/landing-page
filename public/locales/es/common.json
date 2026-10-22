@@ -62,5 +62,11 @@
   },
   "sttokTitle": "Software de Gestión de Sociedades",
   "allRightsReserved": "Todos los derechos reservados",
-  "cookieSettings": "Configurar cookies"
+  "cookieSettings": "Configurar cookies",
+  "securityLogoAlts": [
+    "Sttok cumple el RGPD",
+    "Sttok cuenta con la certificación ISO 27001",
+    "Sttok cifra las comunicaciones con SSL",
+    "Sttok, certificación ISO 27001 auditada por Bureau Veritas"
+  ]
 }

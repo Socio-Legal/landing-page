@@ -19,7 +19,11 @@
       "pain": "Phantom plans in spreadsheets, letters in Word, signatures by email, beneficiaries with no visibility on what they hold.",
       "with": "Phantom plans always up to date, invitation letters generated, beneficiary records configured and DocuSign signing in minutes. Each employee accesses their portal and sees their own holdings.",
       "case": "Factorial runs its global incentive plan for hundreds of employees on Sttok, saving hundreds of hours of plan administration.",
-      "icon": "Handshake"
+      "icon": "Handshake",
+      "caseLink": {
+        "text": "Read the Factorial case",
+        "href": "/en/testimonials/Factorial"
+      }
     },
     {
       "id": 3,
@@ -27,7 +31,11 @@
       "pain": "Notices by email, proxies on paper, quorums calculated by hand, minutes drafted after the fact.",
       "with": "One-click notice, digital proxies, automatic quorum calculation, electronic voting and instantly generated minutes.",
       "case": "PLD Space optimizes its meetings with multiple investor vehicles: centralized notices, proxies and votes, with zero manual tasks.",
-      "icon": "Vote"
+      "icon": "Vote",
+      "caseLink": {
+        "text": "Read the PLD Space case",
+        "href": "/en/testimonials/PldSpace"
+      }
     },
     {
       "id": 4,

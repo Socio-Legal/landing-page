@@ -7,6 +7,7 @@ import {
   clientLogos,
   getClientLogo,
   getClientLogoScale,
+  getClientName,
 } from "@/config/client-logos";
 import { useLocale } from "@/lib/use-locale";
 
@@ -54,7 +55,9 @@ const ROW =
 const LogoStrip: FC<LogoStripProps> = ({ label, primary, secondary }) => {
   const en = useLocale() === "en";
   const alt = (name: string) =>
-    en ? `${name}, a Sttok customer` : `${name}, cliente de Sttok`;
+    en
+      ? `${getClientName(name)}, a Sttok customer`
+      : `${getClientName(name)}, cliente de Sttok`;
 
   return (
   <div className="text-center">

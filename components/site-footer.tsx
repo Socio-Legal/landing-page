@@ -104,7 +104,9 @@ export function SiteFooter() {
               <div key={i} className="relative h-8 w-20">
                 <Image
                   src={logo}
-                  alt={t("securityLogoAlt", { defaultValue: "Certificado de seguridad" })}
+                  alt={t(`securityLogoAlts.${i}`, {
+                    defaultValue: t("securityLogoAlt"),
+                  })}
                   fill
                   style={{ objectFit: "contain" }}
                   className="opacity-70"

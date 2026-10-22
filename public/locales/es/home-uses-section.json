@@ -19,7 +19,11 @@
       "pain": "Excel de phantoms, cartas en Word, firmas por email, beneficiarios sin visibilidad sobre lo que tienen.",
       "with": "Plan de phantoms al día, cartas de invitación generadas, ficha de cada beneficiario configurada y firma con DocuSign en minutos. Cada empleado accede a su portal y ve lo suyo.",
       "case": "Factorial gestiona su plan de incentivos global para cientos de empleados con Sttok, ahorrando centenares de horas en administración del plan.",
-      "icon": "Handshake"
+      "icon": "Handshake",
+      "caseLink": {
+        "text": "Ver el caso de Factorial",
+        "href": "/testimonios/Factorial"
+      }
     },
     {
       "id": 3,
@@ -27,7 +31,11 @@
       "pain": "Convocatorias por email, delegaciones en papel, quórums calculados a mano, actas redactadas a posteriori.",
       "with": "Convocatoria en un click, delegaciones digitales, cálculo automático de quórums, votaciones electrónicas y acta generada al instante.",
       "case": "PLD Space optimiza sus juntas con múltiples vehículos de inversores: convocatorias, delegaciones y votaciones centralizadas, sin tareas manuales.",
-      "icon": "Vote"
+      "icon": "Vote",
+      "caseLink": {
+        "text": "Ver el caso de PLD Space",
+        "href": "/testimonios/PldSpace"
+      }
     },
     {
       "id": 4,
