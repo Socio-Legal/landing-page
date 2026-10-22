@@ -87,6 +87,7 @@ const Page = () => {
             secondary={[
               "Caballero",
               "Fanalca",
+              "Gazelle",
               "MyInvestor",
               "DerechoCom",
               "Barkibu",

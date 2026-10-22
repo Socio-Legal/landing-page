@@ -154,6 +154,7 @@ const Page = () => {
               "Multiverse",
             ]}
             secondary={[
+              "Gazelle",
               "MyInvestor",
               "DerechoCom",
               "Shakers",
