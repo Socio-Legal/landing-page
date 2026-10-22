@@ -9,9 +9,10 @@
 // la captura espanola para que el reparto cuadre.
 import fs from "node:fs";
 import path from "node:path";
+import os from "node:os";
 import { execFileSync } from "node:child_process";
 
-const AQUI = path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, "$1"));
+const TMP = path.dirname(new URL(import.meta.url).pathname.replace(/^\/([A-Za-z]:)/, "$1"));
 const DESTINO = process.argv[2] || "public/funcionalidades";
 const CHROME = "C:/Program Files/Google/Chrome/Application/chrome.exe";
 
@@ -143,12 +144,12 @@ function html(pais, tema) {
 fs.mkdirSync(DESTINO, { recursive: true });
 for (const pais of Object.keys(PAISES)) {
   for (const tema of ["light", "dark"]) {
-    const archivo = path.join(AQUI, `${pais}-${tema}.html`);
+    const archivo = path.join(TMP, `${pais}-${tema}.html`);
     fs.writeFileSync(archivo, html(pais, tema));
     const salida = path.join(DESTINO, `libro-${pais}-${tema}.png`);
     execFileSync(CHROME, [
       "--headless=new", "--hide-scrollbars", "--disable-gpu", "--no-first-run", "--no-default-browser-check",
-      `--user-data-dir=${path.join(AQUI, "perfil")}`,
+      `--user-data-dir=${path.join(TMP, "perfil")}`,
       "--window-size=1240,660", "--force-device-scale-factor=2",
       `--screenshot=${salida}`, `file:///${archivo.replace(/\\/g, "/")}`,
     ], { stdio: "ignore", timeout: 60000 });
