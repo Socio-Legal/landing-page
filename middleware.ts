@@ -24,7 +24,12 @@ export function middleware(request: NextRequest) {
 
 export const config = {
   // Todo excepto assets estáticos, imágenes, y rutas internas de Next.
+  //
+  // El punto de la extensión va doblemente escapado: en una cadena JS "\."
+  // es solo ".", y con ese comodín el matcher excluía cualquier ruta
+  // terminada en ico, txt, xml, ttf... (/mexico acaba en "ico"), que se
+  // quedaba sin x-locale ni x-pathname y, por tanto, sin migas.
   matcher: [
-    "/((?!_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|.*\.(?:png|jpg|jpeg|gif|svg|ico|webp|pdf|txt|xml|woff|woff2|ttf)$).*)",
+    "/((?!_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|.*\\.(?:png|jpg|jpeg|gif|svg|ico|webp|pdf|txt|xml|woff|woff2|ttf)$).*)",
   ],
 };
