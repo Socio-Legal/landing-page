@@ -58,6 +58,22 @@
       },
       {
         "icon": "",
+        "logo": "Fanalca",
+        "title": "",
+        "description": "Grupo industrial colombiano con sede en Cali: transporte, manufactura y servicios. Lleva el libro de accionistas de sus sociedades en Sttok.",
+        "alt": "Fanalca, cliente de Sttok",
+        "case": false
+      },
+      {
+        "icon": "",
+        "logo": "Andbank",
+        "title": "",
+        "description": "Banca privada con sede en Andorra y presencia en Europa y América.",
+        "alt": "Andbank, cliente de Sttok",
+        "case": false
+      },
+      {
+        "icon": "",
         "logo": "Caballero",
         "title": "",
         "description": "Grupo Caballero, empresa familiar fundada en 1830 en El Puerto de Santa María (Cádiz).",

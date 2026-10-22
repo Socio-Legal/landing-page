@@ -11,6 +11,8 @@ export const siteConfig = {
     "software gestión de sociedades",
     "libro de socios digital",
     "captable España",
+    "libro de registro de accionistas",
+    "registro de accionistas software",
     "planes de incentivos empleados",
     "phantom shares software",
     "stock options gestión",

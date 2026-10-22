@@ -58,6 +58,22 @@
       },
       {
         "icon": "",
+        "logo": "Fanalca",
+        "title": "",
+        "description": "Colombian industrial group based in Cali: transport, manufacturing and services. Keeps the shareholder register of its companies on Sttok.",
+        "alt": "Fanalca, Sttok customer",
+        "case": false
+      },
+      {
+        "icon": "",
+        "logo": "Andbank",
+        "title": "",
+        "description": "Private bank headquartered in Andorra, with a presence in Europe and the Americas.",
+        "alt": "Andbank, Sttok customer",
+        "case": false
+      },
+      {
+        "icon": "",
         "logo": "Caballero",
         "title": "",
         "description": "Grupo Caballero, a family business founded in 1830 in El Puerto de Santa María (Cádiz).",
