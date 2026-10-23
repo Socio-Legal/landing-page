@@ -722,7 +722,10 @@ const FlowPanel: FC<{
   labels: Record<string, string>;
   numberLocale: string;
   paused: boolean;
-}> = ({ flow, pos, labels, numberLocale, paused }) => {
+  playing: boolean;
+  animated: boolean;
+  onToggle: () => void;
+}> = ({ flow, pos, labels, numberLocale, paused, playing, animated, onToggle }) => {
   const final = pos.step >= flow.steps.length;
   const visible = (l: LogLine) => pos.step > l.step;
   const shown = flow.log.filter(visible);
@@ -736,12 +739,27 @@ const FlowPanel: FC<{
         </p>
         <span
           className={cn(
-            "shrink-0 rounded-full bg-muted px-2.5 py-1 text-[11px] font-medium text-muted-foreground transition-opacity duration-300",
+            "hidden shrink-0 rounded-full bg-muted px-2.5 py-1 text-[11px] font-medium text-muted-foreground transition-opacity duration-300 sm:inline",
             paused && !final ? "opacity-100" : "opacity-0",
           )}
         >
           {labels.paused}
         </span>
+        {/* En móvil, la pausa vive junto al titular: el botón de arriba queda lejos */}
+        {animated && (
+          <button
+            type="button"
+            onClick={onToggle}
+            aria-label={playing ? labels.pause : labels.play}
+            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-border bg-card text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:hidden"
+          >
+            {playing ? (
+              <Pause aria-hidden className="h-4 w-4" />
+            ) : (
+              <Play aria-hidden className="h-4 w-4" />
+            )}
+          </button>
+        )}
       </div>
 
       {/* Progreso: cada punto cae sobre el centro de su tarjeta */}
@@ -937,7 +955,7 @@ const FlowsSection: FC = () => {
           <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
             <div
               role="tablist"
-              className="inline-flex max-w-full overflow-x-auto rounded-full bg-muted p-1"
+              className="inline-flex max-w-full overflow-x-auto rounded-full bg-muted p-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
             >
               {flows.map((f, i) => (
                 <button
@@ -949,7 +967,7 @@ const FlowsSection: FC = () => {
                   aria-controls={`flow-panel-${i}`}
                   onClick={() => select(i)}
                   className={cn(
-                    "shrink-0 whitespace-nowrap rounded-full px-3.5 py-1.5 text-sm transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+                    "shrink-0 whitespace-nowrap rounded-full px-2.5 py-1.5 text-[13px] transition-all sm:px-3.5 sm:text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
                     flow === i
                       ? "bg-background font-medium text-foreground shadow-sm"
                       : "text-muted-foreground hover:text-foreground",
@@ -963,7 +981,7 @@ const FlowsSection: FC = () => {
               <button
                 type="button"
                 onClick={() => setPlaying((p) => !p)}
-                className="inline-flex items-center gap-1.5 rounded-full border border-border px-3 py-1.5 text-sm text-foreground transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                className="hidden items-center gap-1.5 rounded-full border border-border px-3 py-1.5 text-sm text-foreground transition-colors hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring sm:inline-flex"
               >
                 {playing ? (
                   <Pause aria-hidden className="h-3.5 w-3.5" />
@@ -997,6 +1015,9 @@ const FlowsSection: FC = () => {
                 labels={labels}
                 numberLocale={numberLocale}
                 paused={animated && (!playing || hovered)}
+                playing={playing}
+                animated={animated}
+                onToggle={() => setPlaying((p) => !p)}
               />
               <p className="mt-4 text-sm">
                 <Link
