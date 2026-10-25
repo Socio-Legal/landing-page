@@ -818,8 +818,11 @@ const FlowPanel: FC<{
                   ? "border-foreground/60 shadow-[0_12px_32px_-16px_rgba(0,0,0,0.25)]"
                   : "border-border",
                 !live && "opacity-50",
-                // En móvil, mientras se anima, solo se ve el paso en curso
-                !final && !active && "max-lg:hidden",
+                // En móvil, mientras se anima, solo se ve el paso en curso; al
+                // terminar, el último
+                animated &&
+                  i !== Math.min(pos.step, flow.steps.length - 1) &&
+                  "max-lg:hidden",
               )}
             >
               <div className="mb-4 flex items-center justify-between">
