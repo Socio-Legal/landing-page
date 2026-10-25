@@ -56,50 +56,54 @@ const WhoUsesSttokSection: FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-6xl mx-auto">
+        {/* En filas, como una tabla: Hoy · Con Sttok · Caso real. No se parece a
+            ninguna otra sección de la home. */}
+        <div className="mx-auto max-w-6xl overflow-hidden rounded-lg border border-border bg-card">
+          <div className="hidden grid-cols-[1.15fr_1fr_1fr_1fr] gap-8 border-b border-border bg-muted/50 px-8 py-3 text-xs font-semibold uppercase tracking-widest text-muted-foreground md:grid">
+            <span />
+            <span>{t("labels.today")}</span>
+            <span className="text-brand">{t("labels.withSttok")}</span>
+            <span>{t("labels.realCase")}</span>
+          </div>
           {items.map((item) => {
             const Icon = ProfileIcons[item.icon] || Building2;
             return (
               <article
                 key={item.id}
-                className="rounded-lg border border-border bg-card p-6 md:p-8 flex flex-col"
+                className="grid grid-cols-1 gap-4 border-b border-border px-6 py-6 last:border-b-0 md:grid-cols-[1.15fr_1fr_1fr_1fr] md:gap-8 md:px-8 md:py-7"
               >
-                <div className="flex items-start gap-4 mb-6">
-                  <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-md bg-brand/10">
-                    <Icon className="h-5 w-5 text-brand" />
+                <div className="flex items-start gap-3">
+                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-brand/10">
+                    <Icon className="h-4 w-4 text-brand" />
                   </div>
-                  <h3 className="font-serif text-xl font-normal text-foreground leading-tight">
+                  <h3 className="font-serif text-lg font-normal leading-snug text-foreground">
                     {item.title}
                   </h3>
                 </div>
 
-                <div className="space-y-4 flex-1">
-                  <div>
-                    <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-1.5">
-                      {t("labels.today")}
-                    </p>
-                    <p className="text-sm leading-relaxed text-muted-foreground">
-                      {item.pain}
-                    </p>
-                  </div>
-
-                  <div className="flex items-center gap-2 text-xs text-brand">
-                    <ArrowRight className="h-3 w-3" />
-                    <span className="font-medium">{t("labels.withSttok")}</span>
-                  </div>
-
-                  <div>
-                    <p className="text-sm leading-relaxed text-foreground">
-                      {item.with}
-                    </p>
-                  </div>
+                <div>
+                  <p className="mb-1 text-xs font-semibold uppercase tracking-widest text-muted-foreground md:hidden">
+                    {t("labels.today")}
+                  </p>
+                  <p className="text-sm leading-relaxed text-muted-foreground">
+                    {item.pain}
+                  </p>
                 </div>
 
-                <div className="mt-6 pt-6 border-t border-border">
-                  <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground mb-2">
+                <div>
+                  <p className="mb-1 text-xs font-semibold uppercase tracking-widest text-brand md:hidden">
+                    {t("labels.withSttok")}
+                  </p>
+                  <p className="text-sm leading-relaxed text-foreground">
+                    {item.with}
+                  </p>
+                </div>
+
+                <div>
+                  <p className="mb-1 text-xs font-semibold uppercase tracking-widest text-muted-foreground md:hidden">
                     {t("labels.realCase")}
                   </p>
-                  <p className="text-sm leading-snug text-foreground italic">
+                  <p className="text-sm italic leading-snug text-foreground">
                     {item.case}
                   </p>
                   {item.caseLink && (
