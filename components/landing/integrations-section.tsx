@@ -1,8 +1,11 @@
 "use client";
 
 import { FC } from "react";
+import Image from "next/image";
+import Link from "next/link";
 import { useTranslation } from "react-i18next";
-import { FileSignature, KeyRound, Users2, Server } from "lucide-react";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
+import { FileSignature, KeyRound, Server, ShieldCheck } from "lucide-react";
 
 interface IntegrationItem {
   title: string;
@@ -10,13 +13,27 @@ interface IntegrationItem {
   description: string;
 }
 
-const IntegrationIcons = [FileSignature, KeyRound, Users2, Server];
+interface TrustItem {
+  logo: string;
+  text: string;
+  alt: string;
+}
 
+// En el orden de las tarjetas: SSO, OTP, instancias dedicadas y firma
+const IntegrationIcons = [KeyRound, ShieldCheck, Server, FileSignature];
+
+/**
+ * Integraciones y, debajo, la seguridad en una sola franja: lo que antes era
+ * una sección de tarjetas propia. El detalle vive en la política de seguridad.
+ */
 const IntegrationsSection: FC = () => {
   const { t } = useTranslation("home-integrations-section");
 
   const itemsData = t("items", { returnObjects: true }) as IntegrationItem[];
   const items: IntegrationItem[] = Array.isArray(itemsData) ? itemsData : [];
+
+  const trustData = t("trust.items", { returnObjects: true }) as TrustItem[];
+  const trust: TrustItem[] = Array.isArray(trustData) ? trustData : [];
 
   return (
     <section id="integrations" className="border-t border-border bg-backgroundbrand">
@@ -57,6 +74,31 @@ const IntegrationsSection: FC = () => {
             );
           })}
         </div>
+
+        {trust.length > 0 && (
+          <div className="mx-auto mt-10 flex max-w-5xl flex-col gap-5 border-t border-border pt-8 md:flex-row md:items-center md:justify-between">
+            <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
+              {t("trust.label")}
+            </p>
+            <ul className="flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-center sm:gap-x-8">
+              {trust.map((it) => (
+                <li key={it.logo} className="flex items-center gap-2.5 text-sm text-foreground">
+                  <span className="relative h-7 w-7 shrink-0 grayscale">
+                    <Image src={it.logo} alt={it.alt} fill style={{ objectFit: "contain" }} />
+                  </span>
+                  {it.text}
+                </li>
+              ))}
+            </ul>
+            <Link
+              href={t("trust.link.href")}
+              className="inline-flex shrink-0 items-center gap-1 text-sm font-medium text-brand underline-offset-4 hover:underline"
+            >
+              {t("trust.link.text")}
+              <ArrowRightIcon aria-hidden className="h-3.5 w-3.5" />
+            </Link>
+          </div>
+        )}
       </div>
     </section>
   );

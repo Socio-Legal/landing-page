@@ -1,6 +1,6 @@
 {
   "header": {
-    "slogan": "Integraciones",
+    "slogan": "Integraciones y seguridad",
     "title": "Conectado con tu stack actual",
     "description": "Sttok se integra con las herramientas que ya usas para no romper tu flujo de trabajo."
   },
@@ -25,5 +25,29 @@
       "subtitle": "DocuSign incluido",
       "description": "Firma legalmente vinculante para actas, documentos societarios y planes de incentivos. Incluida en los planes Avanzado y Pro."
     }
-  ]
+  ],
+  "trust": {
+    "label": "Seguridad",
+    "items": [
+      {
+        "logo": "/logo-bureau-veritas.png",
+        "text": "ISO 27001 auditada por Bureau Veritas",
+        "alt": "Sttok, certificación ISO 27001 auditada por Bureau Veritas"
+      },
+      {
+        "logo": "/logo-gdpr-compliant.png",
+        "text": "Cumple el RGPD",
+        "alt": "Sttok cumple el RGPD"
+      },
+      {
+        "logo": "/logo-eu-flag.svg",
+        "text": "Datos tratados en la UE",
+        "alt": "Sttok trata los datos en la Unión Europea"
+      }
+    ],
+    "link": {
+      "text": "Política de seguridad",
+      "href": "/politica-seguridad"
+    }
+  }
 }

@@ -1,6 +1,6 @@
 {
   "header": {
-    "slogan": "Integrations",
+    "slogan": "Integrations and security",
     "title": "Connected to your existing stack",
     "description": "Sttok integrates with the tools you already use so you don't break your workflow."
   },
@@ -25,5 +25,29 @@
       "subtitle": "DocuSign included",
       "description": "Legally binding signatures for minutes, corporate documents and incentive plans. Included in the Advanced and Pro plans."
     }
-  ]
+  ],
+  "trust": {
+    "label": "Security",
+    "items": [
+      {
+        "logo": "/logo-bureau-veritas.png",
+        "text": "ISO 27001 audited by Bureau Veritas",
+        "alt": "Sttok, ISO 27001 certification audited by Bureau Veritas"
+      },
+      {
+        "logo": "/logo-gdpr-compliant.png",
+        "text": "GDPR compliant",
+        "alt": "Sttok complies with the GDPR"
+      },
+      {
+        "logo": "/logo-eu-flag.svg",
+        "text": "Data processed in the EU",
+        "alt": "Sttok processes data in the European Union"
+      }
+    ],
+    "link": {
+      "text": "Security policy",
+      "href": "/en/security"
+    }
+  }
 }
