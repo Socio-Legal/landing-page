@@ -48,7 +48,7 @@ export default async function RootLayout({
         {/* Consent Mode de Google en «denied» antes de cualquier etiqueta:
             sin consentimiento, Google Analytics y Google Ads no instalan
             cookies. components/consent-analytics.tsx lo actualiza con la
-            decisión del visitante en Cookiebot. */}
+            decisión del visitante en CookieYes. */}
         <Script id="consent-default" strategy="beforeInteractive">
           {`window.dataLayer = window.dataLayer || [];
           window.gtag = function () { window.dataLayer.push(arguments); };
@@ -61,17 +61,10 @@ export default async function RootLayout({
           });`}
         </Script>
         <Script
-          id="Cookiebot"
-          src="https://consent.cookiebot.com/uc.js"
-          data-cbid="7f81f189-cd77-4a4b-9728-d58e81f20737"
-          data-blockingmode="auto"
+          id="cookieyes"
+          src="https://cdn-cookieyes.com/client_data/ef4cb665a693d21d21ad91fc24e93ee0/script.js"
           strategy="afterInteractive"
         />
-        <Script id="cookiebot-onload" strategy="afterInteractive">
-          {`window.addEventListener('CookiebotOnLoad', function () {
-            console.log('CookieBot loaded');
-          });`}
-        </Script>
         {/* Datos estructurados de la organización (SEO/GEO) */}
         <script
           type="application/ld+json"
