@@ -131,3 +131,10 @@
   background-color: #ffffff20;
   cursor: pointer;
 }
+
+/* Botón flotante de CookieYes para revisar el consentimiento: sobra, porque
+   «Configurar cookies» del pie (components/consent-analytics.tsx) ya reabre
+   el panel. */
+.cky-btn-revisit-wrapper {
+  display: none !important;
+}
