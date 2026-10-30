@@ -49,7 +49,8 @@
     "Guides": "Guides",
     "Comparisons": "Comparisons",
     "Features": "Features",
-    "Jurisdictions": "Jurisdictions"
+    "Jurisdictions": "Jurisdictions",
+    "Help": "Help center"
   },
   "cta": {
     "login": "Log in",
@@ -85,7 +86,8 @@
     "125": "Corporate law guides (in Spanish)",
     "126": "Corporate software comparisons (in Spanish)",
     "127": "Sttok features",
-    "128": "Jurisdictions (in Spanish)"
+    "128": "Jurisdictions (in Spanish)",
+    "129": "Sttok help center"
   },
   "cookieSettings": "Cookie settings",
   "securityLogoAlts": [
