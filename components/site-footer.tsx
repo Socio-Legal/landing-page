@@ -78,7 +78,13 @@ export function SiteFooter() {
                 ) : (
                   <Link
                     key={link.id}
-                    href={link.url ? localizedHref(link.url, locale) : "#"}
+                    href={
+                      locale === "en" && link.urlEn
+                        ? link.urlEn
+                        : link.url
+                          ? localizedHref(link.url, locale)
+                          : "#"
+                    }
                     title={
                       link.alt
                         ? t(`footerLinkTitle.${link.id}`, { defaultValue: link.alt })

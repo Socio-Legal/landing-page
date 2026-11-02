@@ -26,4 +26,6 @@ export const routes = {
   APP_LOGIN: "https://app.sttok.com/#/login",
   APP_CALENDLY: "https://calendly.com/sttok/30min",
   APP_BLOG: "https://blog.sttok.com/recursos",
+  APP_HELP: "https://ayuda.sttok.com/",
+  APP_HELP_EN: "https://ayuda.sttok.com/en/",
 };

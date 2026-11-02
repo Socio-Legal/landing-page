@@ -225,6 +225,15 @@ export const siteConfig = {
           url: routes.APP_BLOG,
         },
         {
+          // Externo y con su propia versión inglesa: localizedHref no la
+          // conoce, así que el pie usa urlEn en /en.
+          id: 129,
+          title: "menu.Help",
+          url: routes.APP_HELP,
+          urlEn: routes.APP_HELP_EN,
+          alt: "Centro de ayuda de Sttok",
+        },
+        {
           id: 122,
           title: "menu.Glossary",
           url: "/recursos",
