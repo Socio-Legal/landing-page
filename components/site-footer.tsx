@@ -11,7 +11,7 @@ import LanguageSwitcher from "./language-switcher";
 import ThemeToggler from "./ui/theme-toggler";
 import { localizedHref } from "@/lib/localized-href";
 import { useLocale } from "@/lib/use-locale";
-import { CookieSettingsButton } from "./consent-analytics";
+import { CookieSettingsButton } from "./cookie-consent";
 
 const FooterIcons = {
   LinkedIn: <LinkedInLogoIcon className="h-5 w-5" />,

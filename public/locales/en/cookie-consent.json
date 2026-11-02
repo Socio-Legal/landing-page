@@ -1,0 +1,61 @@
+{
+  "banner": {
+    "title": "We use cookies",
+    "text": "We use our own necessary cookies to make the website work and, only if you agree, Google cookies to measure how the website is used and how well our advertising performs. You can accept them, reject them or choose which ones. More information in our <link>Privacy and Cookies Policy</link>.",
+    "accept": "Accept",
+    "reject": "Reject",
+    "configure": "Customise"
+  },
+  "settings": {
+    "title": "Cookie settings",
+    "intro": "Choose which cookies you accept. Necessary cookies cannot be switched off because the website does not work without them. You can change your mind at any time from \"Cookie settings\" at the bottom of every page.",
+    "close": "Close without saving",
+    "alwaysActive": "Always active",
+    "showCookies": "Show cookies ({{count}})",
+    "save": "Save selection",
+    "acceptAll": "Accept all",
+    "rejectAll": "Reject all",
+    "columns": {
+      "name": "Name",
+      "provider": "Provider",
+      "purpose": "Purpose",
+      "duration": "Duration"
+    }
+  },
+  "categories": {
+    "necessary": {
+      "title": "Necessary",
+      "description": "Essential for the website to work and to remember your preferences. They do not require consent."
+    },
+    "analytics": {
+      "title": "Analytics",
+      "description": "Let us count visits and see which pages are used most (Google Analytics), so we can improve the website."
+    },
+    "advertising": {
+      "title": "Advertising",
+      "description": "Let Google measure how well our advertising campaigns perform and personalise the Sttok ads you see on other websites."
+    }
+  },
+  "cookies": {
+    "sttok_consent": {
+      "purpose": "Stores your cookie choice so we do not ask you again.",
+      "duration": "13 months"
+    },
+    "theme": {
+      "purpose": "Remembers whether you choose the light or dark theme (browser local storage, not a cookie).",
+      "duration": "Until you delete it"
+    },
+    "_ga": {
+      "purpose": "Distinguishes visitors for usage statistics.",
+      "duration": "2 years"
+    },
+    "_ga_id": {
+      "purpose": "Keeps the session state for usage statistics.",
+      "duration": "2 years"
+    },
+    "_gcl_au": {
+      "purpose": "Attributes visits and conversions to our ads.",
+      "duration": "3 months"
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import common from "../public/locales/es/common.json";
+import cookieConsent from "../public/locales/es/cookie-consent.json";
 import homeClientsSection from "../public/locales/es/home-clients-section.json";
 import homeCtaSection from "../public/locales/es/home-cta-section.json";
 import homeFeaturesSection from "../public/locales/es/home-features-section.json";
@@ -42,6 +43,7 @@ import legalSecurityPage from "../public/locales/es/legal-security-page.json";
 import legalPrivacyPage from "../public/locales/es/legal-privacy-page.json";
 
 import commonEN from "../public/locales/en/common.json";
+import cookieConsentEN from "../public/locales/en/cookie-consent.json";
 
 import homeClientsSectionEN from "../public/locales/en/home-clients-section.json";
 import homeCtaSectionEN from "../public/locales/en/home-cta-section.json";
@@ -89,6 +91,7 @@ const loadTranslations = (lang: "es" | "en") => {
   if (lang === "es") {
     return {
       common,
+      "cookie-consent": cookieConsent,
       "home-clients-section": homeClientsSection,
       "home-cta-section": homeCtaSection,
       "home-features-section": homeFeaturesSection,
@@ -135,6 +138,7 @@ const loadTranslations = (lang: "es" | "en") => {
 
   return {
     common: commonEN,
+    "cookie-consent": cookieConsentEN,
     "home-clients-section": homeClientsSectionEN,
     "home-cta-section": homeCtaSectionEN,
     "home-features-section": homeFeaturesSectionEN,
