@@ -54,6 +54,9 @@ const CATEGORIES = [
 const isAnalyticsCookie = (name: string) =>
   name === "_ga" || name.startsWith("_ga_");
 const isAdvertisingCookie = (name: string) => name.startsWith("_gcl_");
+/** Restos de los gestores anteriores (Cookiebot y CookieYes): ya no se usan. */
+const isLegacyConsentCookie = (name: string) =>
+  name === "cookieyes-consent" || name.startsWith("CookieConsent");
 
 /**
  * Banner de consentimiento propio (art. 22.2 LSSI y Guía de cookies de la
@@ -75,6 +78,8 @@ export function CookieConsent({ gaId }: { gaId: string }) {
   const advertising = Boolean(record?.advertising);
   const hydrated = state !== null;
   const gaLoaded = useRef(false);
+
+  useEffect(() => deleteCookies(isLegacyConsentCookie), []);
 
   useEffect(() => {
     if (!hydrated) return;
