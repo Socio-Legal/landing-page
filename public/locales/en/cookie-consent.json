@@ -1,7 +1,7 @@
 {
   "banner": {
     "title": "We use cookies",
-    "text": "We use our own necessary cookies to make the website work and, only if you agree, Google cookies to measure how the website is used and how well our advertising performs. You can accept them, reject them or choose which ones. More information in our <link>Privacy and Cookies Policy</link>.",
+    "text": "We use our own necessary cookies to make the website work and, only if you agree, Google cookies to measure how the website is used and how well our advertising performs. You can accept them, reject them or choose which ones; your choice applies to sttok.com and to the help center (ayuda.sttok.com). More information in our <link>Privacy and Cookies Policy</link>.",
     "accept": "Accept",
     "reject": "Reject",
     "configure": "Customise"
@@ -38,7 +38,7 @@
   },
   "cookies": {
     "sttok_consent": {
-      "purpose": "Stores your cookie choice so we do not ask you again.",
+      "purpose": "Stores your cookie choice so we do not ask you again, on sttok.com and ayuda.sttok.com.",
       "duration": "13 months"
     },
     "theme": {

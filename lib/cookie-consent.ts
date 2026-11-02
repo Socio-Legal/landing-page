@@ -54,13 +54,31 @@ function parse(raw: string): ConsentRecord | null {
   }
 }
 
+/**
+ * La decisión se comparte con ayuda.sttok.com: en sttok.com y sus
+ * subdominios la cookie va al dominio raíz. En local, sin dominio.
+ */
+function cookieDomain() {
+  const host = location.hostname;
+  return host === "sttok.com" || host.endsWith(".sttok.com")
+    ? "; Domain=.sttok.com"
+    : "";
+}
+
+/**
+ * Puede haber dos copias: la antigua, solo de www.sttok.com, y la del
+ * dominio raíz. Vale la decisión más reciente.
+ */
 function readCookie(): ConsentRecord | null {
   const prefix = `${CONSENT_COOKIE}=`;
-  const raw = document.cookie
+  return document.cookie
     .split("; ")
-    .find((c) => c.startsWith(prefix))
-    ?.slice(prefix.length);
-  return raw ? parse(raw) : null;
+    .filter((c) => c.startsWith(prefix))
+    .map((c) => parse(c.slice(prefix.length)))
+    .reduce<ConsentRecord | null>(
+      (best, r) => (r && (!best || r.date > best.date) ? r : best),
+      null,
+    );
 }
 
 function writeCookie(record: ConsentRecord) {
@@ -73,9 +91,13 @@ function writeCookie(record: ConsentRecord) {
     }),
   );
   const secure = location.protocol === "https:" ? "; Secure" : "";
+  const domain = cookieDomain();
+  // Fuera la copia antigua solo de este host, para que no quede una
+  // decisión vieja al lado de la compartida.
+  if (domain) document.cookie = `${CONSENT_COOKIE}=; Max-Age=0; Path=/`;
   document.cookie = `${CONSENT_COOKIE}=${value}; Max-Age=${
     CONSENT_MAX_AGE_DAYS * 24 * 60 * 60
-  }; Path=/; SameSite=Lax${secure}`;
+  }; Path=/${domain}; SameSite=Lax${secure}`;
 }
 
 /**
@@ -122,7 +144,13 @@ export function subscribeConsent(listener: () => void) {
 }
 
 export function getConsentState(): State {
-  if (!state) state = { record: readCookie(), settingsOpen: false };
+  if (!state) {
+    const record = readCookie();
+    // Quien decidió antes de compartir la cookie con la ayuda conserva su
+    // decisión, con su fecha: se reescribe en el dominio raíz.
+    if (record) writeCookie(record);
+    state = { record, settingsOpen: false };
+  }
   return state;
 }
 
