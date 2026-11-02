@@ -47,8 +47,8 @@ export default async function RootLayout({
             hidratación y no provocan mismatches con el HTML del servidor */}
         {/* Consent Mode de Google en «denied» antes de cualquier etiqueta:
             sin consentimiento, Google Analytics y Google Ads no instalan
-            cookies. components/consent-analytics.tsx lo actualiza con la
-            decisión del visitante en CookieYes. */}
+            cookies. components/cookie-consent.tsx lo actualiza con la
+            decisión del visitante en el banner de cookies propio. */}
         <Script id="consent-default" strategy="beforeInteractive">
           {`window.dataLayer = window.dataLayer || [];
           window.gtag = function () { window.dataLayer.push(arguments); };
@@ -60,11 +60,6 @@ export default async function RootLayout({
             wait_for_update: 500
           });`}
         </Script>
-        <Script
-          id="cookieyes"
-          src="https://cdn-cookieyes.com/client_data/ef4cb665a693d21d21ad91fc24e93ee0/script.js"
-          strategy="afterInteractive"
-        />
         {/* Datos estructurados de la organización (SEO/GEO) */}
         <script
           type="application/ld+json"

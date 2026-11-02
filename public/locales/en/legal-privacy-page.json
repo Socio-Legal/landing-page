@@ -77,8 +77,8 @@
             ],
             [
               "Technical: these are cookies that allow the user to navigate through a web page, platform or application and use the different options or services that exist in it, including those that the publisher uses to allow the management and operation of the web page and enable its functions and services, such as, for example, controlling traffic and data communication, identifying the session, accessing restricted access parts, remembering the elements that make up an order, carrying out the purchase process of an order, managing payment, controlling fraud linked to the security of the service, carrying out the request for registration or participation in an event, counting visits for the purpose of billing licenses for the software with which the service works (website, platform or application), using security elements during navigation, storing content for the dissemination of videos or sound, enabling dynamic content (for example, loading animation of a text or image) or sharing content through social networks.",
-              "cookieyes-consent – CookieYes, on behalf of Sttok (stores the user's cookie choices)",
-              "1 year"
+              "sttok_consent – Sttok (stores the user's cookie choices) \n\ntheme – Sttok (browser local storage, not a cookie: remembers whether the user chooses the light or dark theme)",
+              "13 months \n\nUntil the user deletes it"
             ]
           ]
         },

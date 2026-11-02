@@ -1,0 +1,61 @@
+{
+  "banner": {
+    "title": "Usamos cookies",
+    "text": "Usamos cookies propias necesarias para que la web funcione y, solo si lo aceptas, cookies de Google para medir cómo se usa la web y la eficacia de nuestra publicidad. Puedes aceptarlas, rechazarlas o elegir cuáles. Más información en nuestra <link>Política de privacidad y cookies</link>.",
+    "accept": "Aceptar",
+    "reject": "Rechazar",
+    "configure": "Configurar"
+  },
+  "settings": {
+    "title": "Configurar cookies",
+    "intro": "Elige qué cookies aceptas. Las necesarias no se pueden desactivar porque sin ellas la web no funciona. Puedes cambiar de opinión cuando quieras desde «Configurar cookies», al pie de cada página.",
+    "close": "Cerrar sin guardar",
+    "alwaysActive": "Siempre activas",
+    "showCookies": "Ver cookies ({{count}})",
+    "save": "Guardar selección",
+    "acceptAll": "Aceptar todo",
+    "rejectAll": "Rechazar todo",
+    "columns": {
+      "name": "Nombre",
+      "provider": "Titular",
+      "purpose": "Finalidad",
+      "duration": "Duración"
+    }
+  },
+  "categories": {
+    "necessary": {
+      "title": "Necesarias",
+      "description": "Imprescindibles para que la web funcione y para recordar tus preferencias. No requieren consentimiento."
+    },
+    "analytics": {
+      "title": "Analíticas",
+      "description": "Nos permiten contar las visitas y saber qué páginas se usan más (Google Analytics), para mejorar la web."
+    },
+    "advertising": {
+      "title": "Publicidad",
+      "description": "Permiten a Google medir la eficacia de nuestras campañas de publicidad y personalizar los anuncios de Sttok que ves en otros sitios."
+    }
+  },
+  "cookies": {
+    "sttok_consent": {
+      "purpose": "Guarda tu decisión sobre las cookies para no volver a preguntarte.",
+      "duration": "13 meses"
+    },
+    "theme": {
+      "purpose": "Recuerda si eliges el tema claro u oscuro (almacenamiento local del navegador, no es una cookie).",
+      "duration": "Hasta que lo borres"
+    },
+    "_ga": {
+      "purpose": "Distingue a los visitantes para las estadísticas de uso.",
+      "duration": "2 años"
+    },
+    "_ga_id": {
+      "purpose": "Mantiene el estado de la sesión para las estadísticas de uso.",
+      "duration": "2 años"
+    },
+    "_gcl_au": {
+      "purpose": "Atribuye a nuestros anuncios las visitas y conversiones que generan.",
+      "duration": "90 días"
+    }
+  }
+}

@@ -4,7 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { I18nextProvider } from "react-i18next";
 
-import { ConsentAnalytics } from "@/components/consent-analytics";
+import { CookieConsent } from "@/components/cookie-consent";
 
 import { getI18n } from "@/lib/i18n";
 import type { Locale } from "@/lib/locales";
@@ -33,9 +33,9 @@ export default function Providers({
       enableSystem
       disableTransitionOnChange
     >
-      <ConsentAnalytics gaId="G-LWNDHYBY2N" />
-
       <I18nextProvider i18n={getI18n(locale)}>
+        {/* Antes que la página: es lo primero que se alcanza con el teclado. */}
+        <CookieConsent gaId="G-LWNDHYBY2N" />
         <MenuProvider>{children}</MenuProvider>
       </I18nextProvider>
 
