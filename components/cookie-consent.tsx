@@ -140,10 +140,12 @@ function ConsentBanner() {
             }}
           />
         </p>
-        <div className="mt-4 grid grid-cols-3 gap-2 sm:flex sm:justify-end">
-          <Button onClick={() => saveConsent(ALL)}>{t("banner.accept")}</Button>
+        {/* Tres botones del mismo ancho (el del más largo) y estilo:
+            ninguno destaca sobre los demás. */}
+        <div className="mt-4 grid grid-flow-col auto-cols-fr gap-2 sm:ml-auto sm:w-fit">
           <Button onClick={() => saveConsent(NONE)}>{t("banner.reject")}</Button>
           <Button onClick={openConsentSettings}>{t("banner.configure")}</Button>
+          <Button onClick={() => saveConsent(ALL)}>{t("banner.accept")}</Button>
         </div>
       </div>
     </div>
@@ -273,10 +275,12 @@ function ConsentSettings({
         })}
       </div>
 
-      <div className="grid gap-2 border-t border-border p-5 sm:flex sm:justify-end">
-        <Button onClick={() => saveConsent(NONE)}>{t("settings.rejectAll")}</Button>
-        <Button onClick={() => saveConsent(choice)}>{t("settings.save")}</Button>
-        <Button onClick={() => saveConsent(ALL)}>{t("settings.acceptAll")}</Button>
+      <div className="border-t border-border p-5">
+        <div className="grid gap-2 sm:ml-auto sm:w-fit sm:grid-flow-col sm:auto-cols-fr">
+          <Button onClick={() => saveConsent(NONE)}>{t("settings.rejectAll")}</Button>
+          <Button onClick={() => saveConsent(choice)}>{t("settings.save")}</Button>
+          <Button onClick={() => saveConsent(ALL)}>{t("settings.acceptAll")}</Button>
+        </div>
       </div>
     </dialog>
   );
