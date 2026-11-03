@@ -137,15 +137,15 @@
           },
           {
             "title": "Beneficiary portal",
-            "description": "Each employee sees their grant, what has vested and the documents they have signed."
+            "description": "Each employee sees their plan on a computer or a phone: their units, their estimated value and their vesting schedule, always up to date."
           },
           {
             "title": "Tender offers and liquidity",
             "description": "Purchase windows on vested rights, with withholding and a record in the plan."
           },
           {
-            "title": "Beneficiary notifications",
-            "description": "With each vested tranche, Sttok notifies the beneficiary, who sees their granted, vested and pending units in their record."
+            "title": "Invitation letters in bulk",
+            "description": "From a spreadsheet of beneficiaries, Sttok generates each one's personalised letter, from one to a thousand, and sends it for signature with DocuSign. Once signed, it is filed in the beneficiary's record."
           }
         ]
       },

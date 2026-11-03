@@ -14,10 +14,10 @@ const SELECCION = {
   ],
   "incentivos": [
     "Phantom shares y stock options",
-    "Pool del plan",
+    "Cartas de invitación en bloque",
     "Vesting y cliff",
     "Tender offers",
-    "Carta de invitación",
+    "Fully diluted y cap table",
     "Portal del beneficiario"
   ],
   "simulador": [

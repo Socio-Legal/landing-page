@@ -7,7 +7,7 @@
   "hero": {
     "slogan": "Planes de incentivos",
     "title": "Planes de incentivos: phantom shares y stock options conectados al libro de socios",
-    "description": "Sttok gestiona cada plan desde el pool que aprueba la junta hasta la liquidez: asignaciones, vesting, cartas de invitación y portal del beneficiario. Las unidades se calculan sobre el capital real del libro de socios.",
+    "description": "Sttok gestiona cada plan desde el pool que aprueba la junta hasta la liquidez. Genera de una vez las cartas de invitación de todos los beneficiarios, las envía a firmar con DocuSign y da a cada empleado su portal con sus unidades, su valor y su calendario de vesting. Las unidades se calculan sobre el capital real del libro de socios.",
     "button": {
       "text": "Solicitar demo",
       "link": "https://calendly.com/sttok/30min"
@@ -41,15 +41,15 @@
       },
       {
         "q": "¿Qué ve cada beneficiario?",
-        "a": "Sus unidades concedidas, lo consolidado, el próximo tramo, sus documentos y, si hay una ventana abierta, lo que puede vender."
+        "a": "La ficha de su plan, desde el ordenador o el móvil: sus unidades concedidas, lo consolidado, el valor estimado, el calendario de vesting, que se actualiza mes a mes o trimestre a trimestre, sus documentos y, si hay una ventana abierta, lo que puede vender."
       },
       {
         "q": "¿Cómo se gestionan las cartas de invitación?",
-        "a": "Cada asignación tiene su carta. La sociedad ve cuáles están aceptadas y cuáles pendientes, y las unidades pendientes no consolidan hasta que se acepta."
+        "a": "Se sube un Excel con los beneficiarios y Sttok genera la carta personalizada de cada uno, con sus datos, sus unidades y su calendario de vesting, sea uno o sean mil. Las envía por correo para firmar con DocuSign y, firmadas, se guardan solas en la documentación y en la ficha del beneficiario. Las unidades no consolidan hasta que la carta está firmada."
       },
       {
         "q": "¿Calcula la dilución del plan?",
-        "a": "Sí. Muestra el pool sobre el capital diluido y lo asignado sobre el pool, con el capital real del libro de socios."
+        "a": "Sí. Muestra el pool y lo asignado sobre el capital totalmente diluido (fully diluted), con el capital real del libro de socios, para ver cómo afectan los planes al cap table."
       },
       {
         "q": "¿Sirve para empresas familiares y grupos?",
@@ -77,13 +77,9 @@
     "guideLabel": "Ver cómo",
     "rows": [
       {
-        "situation": "La junta aprueba ampliar el pool",
-        "action": "Registra el acuerdo y actualiza las unidades disponibles del plan."
-      },
-      {
-        "situation": "Entra un directivo con un plan",
-        "action": "Crea la asignación, prepara la carta de invitación y arranca su calendario de consolidación.",
-        "href": "/funcionalidades/portal-del-beneficiario"
+        "situation": "Hay que lanzar el plan a decenas o cientos de empleados",
+        "action": "Con un Excel de beneficiarios genera todas las cartas personalizadas a la vez, las envía a firmar con DocuSign y crea la ficha de cada uno.",
+        "href": "/funcionalidades/phantom-shares-y-stock-options"
       },
       {
         "situation": "Un empleado pregunta cuánto tiene consolidado",
@@ -91,13 +87,26 @@
         "href": "/funcionalidades/portal-del-beneficiario"
       },
       {
-        "situation": "Un beneficiario deja la empresa",
-        "action": "Las unidades que no han consolidado vuelven al pool del plan."
-      },
-      {
         "situation": "La sociedad abre una ventana de liquidez",
         "action": "Calcula para cada beneficiario el precio, el tope, la retención y el importe neto.",
         "href": "/funcionalidades/liquidez-planes-de-incentivos"
+      },
+      {
+        "situation": "Un inversor pregunta por el capital totalmente diluido",
+        "action": "Enseña el cap table fully diluted, con el pool y lo asignado de cada plan sobre el capital real del libro de socios."
+      },
+      {
+        "situation": "Entra un directivo con un plan",
+        "action": "Crea la asignación, prepara la carta de invitación y arranca su calendario de consolidación.",
+        "href": "/funcionalidades/portal-del-beneficiario"
+      },
+      {
+        "situation": "La junta aprueba ampliar el pool",
+        "action": "Registra el acuerdo y actualiza las unidades disponibles del plan."
+      },
+      {
+        "situation": "Un beneficiario deja la empresa",
+        "action": "Las unidades que no han consolidado vuelven al pool del plan."
       },
       {
         "situation": "Hay que entender la fiscalidad del plan",
