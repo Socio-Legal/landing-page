@@ -409,9 +409,9 @@
             {
               "t": "options",
               "items": [
-                "IRPF",
+                "Renta",
                 "Titularidad",
-                "Patrimonio"
+                "Valor"
               ],
               "selected": 0
             },
@@ -446,11 +446,11 @@
             {
               "t": "deck",
               "items": [
-                "E. Riba · IRPF 2025",
-                "L. Puig · IRPF 2025",
-                "R. Vallcorba · IRPF 2025",
-                "J. Ferrer · IRPF 2025",
-                "N. Soler · IRPF 2025"
+                "E. Riba · Renta 2025",
+                "L. Puig · Renta 2025",
+                "R. Vallcorba · Renta 2025",
+                "J. Ferrer · Renta 2025",
+                "N. Soler · Renta 2025"
               ]
             },
             {
@@ -522,7 +522,7 @@
           "who": "you",
           "time": "16:00:00",
           "event": "certificados.solicitados",
-          "data": "tipo=irpf socios=48"
+          "data": "tipo=renta socios=48"
         },
         {
           "step": 1,

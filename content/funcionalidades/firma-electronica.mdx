@@ -1,6 +1,6 @@
 ---
 title: "Firma electrónica de actas, cuentas anuales y contratos societarios"
-description: "Sttok envía actas, cuentas anuales y contratos a firma electrónica en sobres con plazo, recordatorios y reenvío, y guarda quién firmó, cuándo y el documento firmado. Incluida en Avanzado y Pro."
+description: "Sttok envía actas, cuentas anuales y contratos a firma electrónica en sobres con plazo y recordatorios, y guarda quién firmó, cuándo y el documento firmado. Incluida en Avanzado y Pro."
 slug: "/funcionalidades/firma-electronica"
 section: "funcionalidades"
 canonical: "https://www.sttok.com/funcionalidades/firma-electronica"
@@ -8,48 +8,46 @@ canonical: "https://www.sttok.com/funcionalidades/firma-electronica"
 
 # Firma electrónica de actas y documentos societarios
 
-Sttok envía a firma electrónica las actas de consejo y de junta, las cuentas anuales y los contratos de la sociedad. Cada envío es un sobre con su documento, sus firmantes y un plazo. La pantalla Firmas muestra qué sobres siguen pendientes, quién falta por firmar y cuándo caducan. La firma electrónica está incluida en los planes Avanzado y Pro.
+Sttok envía a firma electrónica las actas de consejo y de junta, las cuentas anuales y los contratos de la sociedad. Cada envío es un sobre con su documento, sus firmantes y una fecha en la que expira. La pantalla Firmas muestra qué sobres siguen pendientes, quién falta por firmar y cuándo caducan. La firma se hace a través de DocuSign y está incluida en los planes Avanzado y Pro.
 
 <Captura
   nombre="firma-electronica"
   video="firma-electronica"
-  alt="Animación del alta de una firma en Sttok: se elige el documento, Sttok propone los firmantes según el tipo de documento, se revisa y se envía, y el sobre aparece pendiente en el listado de firmas"
-  pie="Nueva firma: documento, firmantes propuestos y envío. Datos de ejemplo."
+  alt="Animación del alta de una firma en Sttok: se elige el documento, se eligen los firmantes, se revisa y se envía, y el sobre aparece pendiente en el listado de firmas"
+  pie="Nueva firma: documento, firmantes y envío. Datos de ejemplo."
 />
 
 ## Los estados de un sobre
 
 | Estado | Cuándo se da | Qué se puede hacer |
 |---|---|---|
-| Pendiente | Faltan firmas y el plazo sigue abierto | Recordar a los pendientes, ampliar el plazo o cancelar el sobre |
-| Completado | Han firmado todos | Descargar el documento firmado con el certificado de firma |
-| Expirado | Venció el plazo sin todas las firmas | Reenviar con plazo nuevo, recordar o cancelar |
-| Rechazado | Un firmante se negó a firmar | Reenviar como sobre nuevo, recordar o cancelar |
-| Cancelado | La sociedad lo anuló, con su motivo | Consultar el historial |
+| Enviado | Faltan firmas y el plazo sigue abierto | Recordar a quien falta |
+| Completado | Han firmado todos | Descargar el documento firmado |
+| Rechazado | Un firmante se negó a firmar | Ver el motivo y mandar un sobre nuevo |
+| Expirado | Venció el plazo sin todas las firmas | Mandar un sobre nuevo |
+
+El estado cambia solo: depende de quién ha firmado y de la fecha. Nadie lo marca a mano.
 
 ## Cómo se hace
 
-1. En Firmas se pulsa Nueva firma. El alta tiene tres pasos: El documento, Quién firma y Revisión.
-2. Se sube el PDF y se indican el asunto y el tipo: acta de consejo, acta de junta, cuentas anuales, contrato u otro documento. Si es un acta, se elige la sesión de la que sale.
-3. Se eligen los firmantes y su papel. En un acta, Sttok propone al presidente y al secretario de la sesión. Se fija el plazo: 15, 30 o 60 días.
-4. Se pulsa Enviar a firmar. Cada firmante recibe un correo con el enlace al documento. El sobre queda pendiente hasta que firmen todos o venza el plazo.
-5. La ficha del sobre muestra el estado de cada firmante: sin abrir, lo ha abierto, firmó o rechazó. Desde ahí se envían recordatorios, se amplía el plazo o se cancela el sobre. Las mismas acciones están en el menú «···» de cada fila del listado, sin abrir la ficha.
+1. El acta y la certificación de una junta se mandan desde la propia junta, en su pestaña Acta, con Solicitar firma. Firman el presidente y el secretario y, si hace falta, los socios que asistieron.
+2. Cualquier otro documento se manda desde Firmas, con Nueva firma. Se sube el PDF y se eligen los firmantes por su papel en la sociedad: socios o accionistas, beneficiarios, acreedores o miembros del órgano de administración.
+3. Se escribe el mensaje y se envía. Cada firmante recibe un correo con el enlace al documento y firma sin necesidad de cuenta en Sttok.
+4. El sobre expira a los 60 días de enviarse. La ficha muestra cuándo expira, el progreso y el estado de cada firmante, con la cronología de todo lo que ha pasado.
 
 ## El presidente no ha firmado el acta del consejo
 
-La columna Pendiente de dice quién falta en cada sobre. Desde la ficha del sobre, o desde el menú de su fila en el listado, se envía un recordatorio a los pendientes. Cada recordatorio queda en el historial del sobre con su fecha.
+La columna Han firmado dice cuántos han firmado de cuántos en cada sobre. Desde la ficha del sobre, Enviar recordatorio manda un correo solo a quien todavía no ha firmado. Cada recordatorio queda en la cronología del sobre con su fecha.
 
-Mientras falte la firma, el consejo del que sale el acta sigue figurando como pendiente de firma. La ficha del sobre lo indica y enlaza a esa sesión. El [libro de actas](/funcionalidades/libro-de-actas) recoge el acta cuando el sobre se completa.
+El [libro de actas](/funcionalidades/libro-de-actas) recoge el acta cuando el sobre se completa.
 
 ## El plazo venció con una firma pendiente
 
-El sobre pasa a expirado y la cifra Caducados de la cabecera lo cuenta. Con Reenviar, en la ficha o en el menú de la fila, el mismo sobre recibe un plazo nuevo contado desde hoy. Las firmas ya recibidas se conservan y quienes faltan reciben otra vez el enlace.
-
-Si un firmante rechaza el documento, su motivo aparece en la ficha con su nombre y la fecha. Reenviar crea un sobre nuevo con el mismo documento y los mismos firmantes, sin volver a teclear nada.
+El sobre pasa a expirado y la cifra Caducados de la cabecera lo cuenta. El plazo no se amplía: si el documento sigue haciendo falta firmado, se manda un sobre nuevo. Por eso conviene recordar a quien falta antes de que acabe el plazo.
 
 ## Las cuentas anuales necesitan la firma de todos los administradores
 
-En un sobre de cuentas anuales, Sttok propone como firmantes a todos los miembros del órgano de administración. Si alguno no firma, la ficha recuerda que hay que indicarlo con su causa. Lo exige el artículo 253.2 de la Ley de Sociedades de Capital. El historial deja constancia de cada envío, recordatorio y firma.
+Las cuentas anuales las firman todos los miembros del órgano de administración, y si alguno no firma hay que indicarlo con su causa. Lo exige el artículo 253.2 de la Ley de Sociedades de Capital. En el sobre se añaden como firmantes todos los administradores, y la cronología deja constancia de cada envío, recordatorio y firma.
 
 ## Preguntas frecuentes
 
@@ -57,16 +55,13 @@ En un sobre de cuentas anuales, Sttok propone como firmantes a todos los miembro
 En los planes Avanzado y Pro. El plan Básico no la incluye. Consulta los [precios](/precios).
 
 **¿Qué queda guardado de cada firma?**
-El historial del sobre registra con su fecha el envío, cada apertura, cada firma, los recordatorios, las ampliaciones de plazo y el cierre. La ficha muestra también la huella SHA-256 del documento.
+La cronología del sobre registra con su fecha el envío, los recordatorios, cada firma y el cierre.
 
-**¿Puede firmar alguien de fuera de la sociedad?**
-Sí. Un firmante puede ser una contraparte, como el arrendador de un contrato. Se añade con su papel y su correo.
-
-**¿Qué pasa con las firmas recibidas si cancelo un sobre?**
-Dejan de valer para ese sobre. La cancelación pide un motivo, que queda en el historial.
+**¿Quién puede firmar?**
+Las personas que constan en la sociedad: socios o accionistas, beneficiarios, acreedores y miembros del órgano de administración. Quien no tenga ninguno de esos papeles tiene que constar antes en la sociedad.
 
 **¿Se puede descargar el documento firmado?**
-Sí. Cuando el sobre está completado, la ficha ofrece Descargar firmado, con el certificado de firma.
+Sí. Desde la ficha del sobre, con Descargar PDF.
 
 **¿Sirve en Latinoamérica?**
 Las actas de la asamblea general de accionistas y de la junta directiva o el directorio se envían a firma igual. La plataforma se adapta a la denominación de cada país; la adecuación a la normativa de cada país se valora caso por caso.
