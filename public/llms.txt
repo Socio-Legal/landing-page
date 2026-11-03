@@ -28,7 +28,7 @@ Sttok no es una herramienta de cap table para simular rondas de inversión. Resu
 - **Grupos de sociedades.** Gestión de todas las sociedades de un grupo desde un mismo acceso.
 - **Portal del inversor.** Cada socio o accionista consulta su posición, su histórico y la documentación que la sociedad comparte.
 - **Mercado secundario.** Compraventa de participaciones entre socios.
-- **Sttok AI.** Generación de documentos, informes, listados y cálculos.
+- **Sttok AI.** Responde en lenguaje natural preguntas sobre el registro de una sociedad o de todo el grupo.
 
 ## Quién usa Sttok
 
@@ -85,7 +85,7 @@ Planes por sociedad y año, impuestos no incluidos, con comunicaciones incluidas
 
 **Sociedades con más de 50 socios y grupos de sociedades:** plan a medida. Es el caso más habitual entre los clientes de Sttok, e incluye accionariados de cientos y de miles de socios. Consultar en https://calendly.com/sttok/30min
 
-Funcionalidad con coste adicional: mercado secundario.
+Funcionalidades con coste adicional: mercado secundario y mercado de incentivos, que incluye las ventanas de liquidez.
 
 ## Páginas de producto
 
@@ -105,6 +105,10 @@ Funcionalidad con coste adicional: mercado secundario.
 - Migrar la gestión societaria a Sttok: https://www.sttok.com/soluciones/migrar
 - Inversores: https://www.sttok.com/inversores
 - Portal del inversor: https://www.sttok.com/portal-del-inversor
+- Jurisdicciones: https://www.sttok.com/jurisdicciones
+- Colombia: https://www.sttok.com/colombia
+- México: https://www.sttok.com/mexico
+- Chile: https://www.sttok.com/chile
 
 ## Recursos
 
@@ -172,7 +176,6 @@ Funcionalidad con coste adicional: mercado secundario.
 - Convocatoria de la junta general: https://www.sttok.com/funcionalidades/convocatoria-de-la-junta
 - Asistencia y quórum de la junta: https://www.sttok.com/funcionalidades/asistencia-y-quorum
 - Mayorías reforzadas y derecho de separación: https://www.sttok.com/funcionalidades/mayorias-y-derecho-de-separacion
-- Proyección de las votaciones en la sala: https://www.sttok.com/funcionalidades/proyeccion-en-la-sala
 - Acta de la junta general: https://www.sttok.com/funcionalidades/acta-de-la-junta
 - Certificación de acuerdos: https://www.sttok.com/funcionalidades/certificacion-de-acuerdos
 - Juntas presenciales, telemáticas e híbridas: https://www.sttok.com/funcionalidades/juntas-presenciales-telematicas-e-hibridas

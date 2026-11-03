@@ -36,7 +36,7 @@
       },
       {
         "q": "Which features have an extra cost?",
-        "a": "The shares or incentives marketplace (secondary market) is available as an additional module."
+        "a": "The shares marketplace (secondary market) and the incentives marketplace, from which liquidity windows are opened, are available as additional modules."
       },
       {
         "q": "How long does implementation take?",
