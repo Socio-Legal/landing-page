@@ -16,6 +16,8 @@ import LogoStrip from "@/components/shared/logo-strip";
 import FaqSection, { FaqItem } from "@/components/shared/faq-section";
 import CallToActionSection from "@/components/landing/cta-section";
 import { CATALOGO, Modulo, enIngles } from "@/lib/funcionalidades-catalogo";
+import { localizedHref } from "@/lib/localized-href";
+import { useLocale } from "@/lib/use-locale";
 
 type SituationRow = { situation: string; action: string; href?: string };
 type Figure = { value: string; label: string };
@@ -82,7 +84,8 @@ const ModulePage: FC<ModulePageProps> = ({ ns, modulos, seleccion }) => {
   const figures = asArray<Figure>(
     t("product-hero-section:figures.items", { returnObjects: true }),
   );
-  const allLink = en ? "" : t(`${ns}:includes.allLink`, { defaultValue: "" });
+  const locale = useLocale();
+  const allLink = t(`${ns}:includes.allLink`, { defaultValue: "" });
 
   return (
     <>
@@ -171,7 +174,7 @@ const ModulePage: FC<ModulePageProps> = ({ ns, modulos, seleccion }) => {
           </div>
           {allLink && (
             <p className="mt-10 text-sm">
-              <Link href="/funcionalidades" className={linkClass}>
+              <Link href={localizedHref("/funcionalidades", locale)} className={linkClass}>
                 {allLink}
                 <Arrow />
               </Link>

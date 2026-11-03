@@ -84,7 +84,8 @@
   },
   "includes": {
     "eyebrow": "What's included",
-    "title": "Everything the general meeting and the board cover"
+    "title": "Everything the general meeting and the board cover",
+    "allLink": "See all Sttok features"
   },
   "situations": {
     "eyebrow": "Common cases",

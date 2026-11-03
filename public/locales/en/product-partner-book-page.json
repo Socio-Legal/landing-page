@@ -77,7 +77,8 @@
   },
   "includes": {
     "eyebrow": "What's included",
-    "title": "Everything recorded in the shareholder register"
+    "title": "Everything recorded in the shareholder register",
+    "allLink": "See all Sttok features"
   },
   "situations": {
     "eyebrow": "Common cases",

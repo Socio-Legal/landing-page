@@ -22,13 +22,14 @@
         "The personal data provided to Sttok by the User will be used for:",
         "• In cases of service contracting or product purchase: to enable the maintenance, development, and management of the business relationship formalized by the contracting of products and/or services through this Website. The data processed for this purpose will be retained while this business relationship is maintained and, once terminated, during the legally established retention periods and statute of limitations. The legal basis for carrying out this data processing is the execution of the contractual obligations assumed by the User and Sttok on the Website. For requests made by a User who does not maintain a contractual relationship with Sttok, the legal basis is the User's implicit consent in their request for Sttok to address it.",
         "• In cases of information requests or contact: to address information requests and/or inquiries made by the User. The data processed for this purpose will be retained until the request is resolved and, once completed, during the legally established retention periods and statute of limitations. The legal basis for carrying out this data processing is the User's consent.",
-        "• To keep the User informed, including by electronic means, about Sttok's products, services, and news. The data processed for this purpose will be retained until the User withdraws their consent. The User may at any time expressly indicate whether or not they authorize such processing of their data. The legal basis for carrying out this data processing is the User's consent."
+        "• To keep the User informed, including by electronic means, about Sttok's products, services, and news. The data processed for this purpose will be retained until the User withdraws their consent. The User may at any time expressly indicate whether or not they authorize such processing of their data. The legal basis for carrying out this data processing is the User's consent.",
+        "• To measure the use of the Website to improve it and, if the User accepts it, the effectiveness of advertising campaigns, through the analytics and advertising cookies described in the Cookies Policy. This data is kept for the period of each cookie stated in that policy. The legal basis is the User's consent, which can be withdrawn at any time from «Cookie settings»."
       ]
     },
     {
       "title": "3. Recipients and Categories of Data Processors",
       "content": [
-        "The data may be communicated to Public Registries, for contract execution; Public Administrations for compliance with legal obligations; Banking Entities for managing collections and invoice payments; and to duly selected Data Processors. Data is processed within the European Union. Sttok does not carry out international data transfers."
+        "The data may be communicated to Public Registries, for contract execution; Public Administrations for compliance with legal obligations; Banking Entities for managing collections and invoice payments; and to duly selected Data Processors. Sttok processes the data within the European Union. Some providers of the Website may process it outside the European Economic Area: Vercel, which hosts the Website and measures its performance without cookies, and Google, for analytics and advertising if the User accepts them. In that case, the transfer is covered by the EU-US Data Privacy Framework or by the standard contractual clauses approved by the European Commission."
       ]
     },
     {
@@ -63,7 +64,11 @@
         "3. What cookies does this Website use and who uses them?",
         {
           "type": "table",
-          "headers": ["Typology", "Who manages them?", "Activity period"],
+          "headers": [
+            "Typology",
+            "Who manages them?",
+            "Activity period"
+          ],
           "rows": [
             [
               "Analysis or measurement: these are cookies that allow the person responsible for them to track and analyze the behavior of users of the websites to which they are linked, including quantifying the impacts of advertisements. The information collected through this type of cookies is used in the measurement of the activity of websites, applications or platforms, in order to introduce improvements based on the analysis of the usage data that users of the service make.",
@@ -85,7 +90,13 @@
         "4. How can I block or delete the cookies used by this Website?",
         "The user can allow, block or delete cookies through the configuration panel, which can be reopened at any time from the “Cookie settings” link in the footer. In addition, it should be noted that, if you accept third-party cookies, you can delete them from your browser options or from the system offered by the third party itself.",
         "Blocking the installation of cookies does not prevent the effective use of the Website by the user",
-        "You can find out about transfers to third countries that, where applicable, the third parties identified in the table above make in their respective policies. In the case of Google it would be: https://www.google.com/about/company/user-consent-policy-help/."
+        "You can find out about transfers to third countries that, where applicable, the third parties identified in the table above make in their respective policies. In the case of Google it would be: https://business.safety.google/privacy/."
+      ]
+    },
+    {
+      "title": "Last updated",
+      "content": [
+        "3 November 2026."
       ]
     }
   ]

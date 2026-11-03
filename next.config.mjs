@@ -55,6 +55,8 @@ const LANDINGS_RETIRADAS = {
   "/documentacion-societaria": "/producto",
   // Nunca fue una pagina: la seguridad vive en la politica de seguridad.
   "/seguridad": "/politica-seguridad",
+  // Ficha retirada: la app no proyecta la votacion en la sala.
+  "/funcionalidades/proyeccion-en-la-sala": "/funcionalidades/voto-electronico-en-juntas",
 };
 
 /**

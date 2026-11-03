@@ -409,9 +409,9 @@
             {
               "t": "options",
               "items": [
-                "Income tax",
+                "Income",
                 "Ownership",
-                "Wealth tax"
+                "Value"
               ],
               "selected": 0
             },
@@ -446,11 +446,11 @@
             {
               "t": "deck",
               "items": [
-                "E. Riba · Tax 2025",
-                "L. Puig · Tax 2025",
-                "R. Vallcorba · Tax 2025",
-                "J. Ferrer · Tax 2025",
-                "N. Soler · Tax 2025"
+                "E. Riba · Income 2025",
+                "L. Puig · Income 2025",
+                "R. Vallcorba · Income 2025",
+                "J. Ferrer · Income 2025",
+                "N. Soler · Income 2025"
               ]
             },
             {
@@ -522,7 +522,7 @@
           "who": "you",
           "time": "16:00:00",
           "event": "certificates.requested",
-          "data": "type=income_tax shareholders=48"
+          "data": "type=income shareholders=48"
         },
         {
           "step": 1,

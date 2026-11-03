@@ -11,6 +11,8 @@ import SectionHeading from "@/components/shared/section-heading";
 import LogoStrip from "@/components/shared/logo-strip";
 import FaqSection, { FaqItem } from "@/components/shared/faq-section";
 import CallToActionSection from "@/components/landing/cta-section";
+import { localizedHref } from "@/lib/localized-href";
+import { useLocale } from "@/lib/use-locale";
 
 /** `href`: página propia de la funcionalidad en /funcionalidades, si la tiene. */
 type ModuleItem = { title: string; description: string; href?: string };
@@ -55,7 +57,8 @@ const Page = () => {
   );
   const figures = asArray<Figure>(t("figures.items", { returnObjects: true }));
   const faq = asArray<FaqItem>(t("faq.items", { returnObjects: true }));
-  // Enlaces opcionales: llevan a páginas que solo existen en castellano.
+  // Enlaces opcionales: cada idioma decide en su JSON si los muestra.
+  const locale = useLocale();
   const allLink = t("modules.allLink", { defaultValue: "" });
   const onboardingLink = t("onboarding.link", { returnObjects: true }) as
     | { text: string; href: string }
@@ -127,7 +130,7 @@ const Page = () => {
 
           {allLink && (
             <p className="mt-10 text-sm">
-              <Link href="/funcionalidades" className={linkClass}>
+              <Link href={localizedHref("/funcionalidades", locale)} className={linkClass}>
                 {allLink}
                 <Arrow />
               </Link>
@@ -270,7 +273,7 @@ const Page = () => {
             ))}
             {onboardingHref?.href && (
               <p className="pt-2 text-sm">
-                <Link href={onboardingHref.href} className={linkClass}>
+                <Link href={localizedHref(onboardingHref.href, locale)} className={linkClass}>
                   {onboardingHref.text}
                   <Arrow />
                 </Link>

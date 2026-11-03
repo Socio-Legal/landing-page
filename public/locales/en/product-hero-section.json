@@ -217,7 +217,8 @@
           }
         ]
       }
-    ]
+    ],
+    "allLink": "See every feature, one by one"
   },
   "situations": {
     "eyebrow": "Common cases",
@@ -273,7 +274,11 @@
     "paragraphs": [
       "Setting up a company takes a few hours. For groups with many companies, the time depends on the number of companies.",
       "If the register is years out of date, Sttok rebuilds it from the deeds in a few minutes. If your data is in Excel, in another application or with your law firm, migration is part of the same process."
-    ]
+    ],
+    "link": {
+      "text": "How to migrate to Sttok",
+      "href": "/soluciones/migrar"
+    }
   },
   "figures": {
     "eyebrow": "Figures",

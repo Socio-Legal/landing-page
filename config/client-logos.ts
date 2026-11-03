@@ -58,6 +58,7 @@ const clientNames: Partial<Record<keyof typeof clientLogos, string>> = {
   Caballero: "Grupo Caballero",
   Cabiedes: "Cabiedes & Partners",
   DerechoCom: "Derecho.com",
+  Gazelle: "Gazelle Wind Power",
   LegalPigeon: "Legal Pigeon",
   Multiverse: "Multiverse Computing",
   PldSpace: "PLD Space",

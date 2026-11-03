@@ -56,7 +56,7 @@ const WhoUsesSttokSection: FC = () => {
           </p>
         </div>
 
-        {/* En filas, como una tabla: Hoy · Con Sttok · Caso real. No se parece a
+        {/* En filas, como una tabla: Hoy · Con Sttok · En la práctica. No se parece a
             ninguna otra sección de la home. */}
         <div className="mx-auto max-w-6xl overflow-hidden rounded-lg border border-border bg-card">
           <div className="hidden grid-cols-[1.15fr_1fr_1fr_1fr] gap-8 border-b border-border bg-muted/50 px-8 py-3 text-xs font-semibold uppercase tracking-widest text-muted-foreground md:grid">

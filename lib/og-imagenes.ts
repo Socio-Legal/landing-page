@@ -66,7 +66,6 @@ export const OG_IMAGENES: Record<string, string> = {
   "/funcionalidades/portal-del-accionista": "/og/funcionalidades-portal-del-accionista.jpg",
   "/funcionalidades/portal-del-beneficiario": "/og/funcionalidades-portal-del-beneficiario.jpg",
   "/funcionalidades/preparar-la-junta": "/og/funcionalidades-preparar-la-junta.jpg",
-  "/funcionalidades/proyeccion-en-la-sala": "/og/funcionalidades-proyeccion-en-la-sala.jpg",
   "/funcionalidades/reglas-de-la-sociedad": "/og/funcionalidades-reglas-de-la-sociedad.jpg",
   "/funcionalidades/reparto-de-dividendos": "/og/funcionalidades-reparto-de-dividendos.jpg",
   "/funcionalidades/representantes": "/og/funcionalidades-representantes.jpg",
