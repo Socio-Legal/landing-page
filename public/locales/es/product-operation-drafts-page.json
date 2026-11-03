@@ -1,13 +1,13 @@
 {
   "metadata": {
     "title": "Simulador de Operaciones",
-    "description": "Simula y calcula cualquier operación corporativa con precisión en segundos, incluyendo rondas de inversión, ampliaciones de capital y más.",
-    "keywords": "simulador de operaciones, rondas de inversión, ampliaciones de capital, notas convertibles, simulaciones corporativas"
+    "description": "Simula ampliaciones, reducciones de capital, compraventas, operaciones acordeón y notas convertibles sobre el libro de socios real, en pocos minutos y sin errores.",
+    "keywords": "simulador de operaciones societarias, ampliación de capital, reducción de capital, operación acordeón, compraventa de participaciones, notas convertibles, fully diluted"
   },
   "hero": {
     "slogan": "Simulador de operaciones",
-    "title": "Simulador de operaciones societarias: ampliaciones, compraventas y notas convertibles",
-    "description": "Sttok simula una ampliación, una reducción, una compraventa o la conversión de una nota sobre los datos reales del libro de socios. Encadena varias operaciones, calcula la cascada de liquidación y prepara los borradores de documentos.",
+    "title": "Simulador de operaciones societarias: ampliaciones, reducciones de capital, compraventas y más",
+    "description": "Sttok simula ampliaciones, reducciones de capital, compraventas, operaciones acordeón y conversiones de notas sobre los datos reales del libro de socios. En pocos minutos ves cómo queda el libro, cuánto aporta cada socio y los porcentajes resultantes, y la operación sale con sus borradores para el notario.",
     "button": {
       "text": "Solicitar demo",
       "link": "https://calendly.com/sttok/30min"
@@ -58,11 +58,11 @@
     "items": [
       {
         "q": "¿Qué operaciones puedo simular?",
-        "a": "Ampliaciones y reducciones de capital, compraventas y conversiones de notas convertibles, también encadenadas, y la cascada de liquidación de una venta."
+        "a": "Ampliaciones y reducciones de capital, compraventas, operaciones acordeón y conversiones de notas convertibles, también encadenadas, y la cascada de liquidación de una venta."
       },
       {
         "q": "¿Con qué datos calcula?",
-        "a": "Con el libro de socios real de la sociedad, con su numeración, sus clases y su capital a la fecha."
+        "a": "Con el libro de socios real de la sociedad: su numeración, sus rangos, sus clases y su capital a la fecha. Por eso el resultado sale sin errores y con los porcentajes exactos, fully diluted y non diluted."
       },
       {
         "q": "¿Una simulación cambia el libro de socios?",
@@ -85,6 +85,7 @@
   "includes": {
     "eyebrow": "Qué incluye",
     "title": "Qué se puede simular en Sttok",
+    "lede": "Sttok tiene el libro de socios al detalle: la numeración, los rangos, los titulares y los porcentajes exactos. Por eso calcula cualquier operación en pocos minutos y sin errores, enseña al momento cómo queda el libro de accionistas y encadena una operación tras otra: una ampliación, después una compraventa, otra ampliación o una operación acordeón.",
     "allLink": "Ver todas las funcionalidades de Sttok"
   },
   "situations": {
@@ -98,8 +99,21 @@
     "guideLabel": "Ver cómo",
     "rows": [
       {
+        "situation": "Hay que calcular con urgencia, al detalle y sin errores, dos escenarios de una ampliación o de varias operaciones seguidas",
+        "action": "Simula cada escenario sobre el libro real y enseña cómo quedaría el libro de socios, cuánto aporta cada socio, qué pasa si alguno no suscribe y los porcentajes fully diluted y non diluted."
+      },
+      {
+        "situation": "Hay que preparar la operación para ir al notario, rápido y sin errores",
+        "action": "La operación simulada sale con sus borradores en Word, con la numeración, las aportaciones y los porcentajes exactos del libro.",
+        "href": "/funcionalidades/borradores-de-documentos"
+      },
+      {
         "situation": "Entra un socio nuevo con una ampliación",
         "action": "Calcula el precio por acción, las acciones nuevas y la dilución de cada socio antes de convocar la junta."
+      },
+      {
+        "situation": "Hay que sanear pérdidas con una operación acordeón",
+        "action": "Encadena la reducción y la ampliación y muestra quién queda en la sociedad y con qué porcentaje."
       },
       {
         "situation": "Una rama familiar quiere comprar a otra",
@@ -112,10 +126,6 @@
       {
         "situation": "Se negocia la venta de la sociedad",
         "action": "La cascada de liquidación muestra qué recibe cada socio con las preferencias de cada clase."
-      },
-      {
-        "situation": "La operación tiene que ir al notario",
-        "action": "Prepara los borradores de documentos en Word con los datos de la simulación."
       }
     ]
   }
