@@ -237,8 +237,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageSimulador,
     meta: {
       en: {
-        title: "Transaction simulator: capital increases, share sales and notes",
-        description: "Simulate capital increases, reductions, share sales and convertible notes on the actual shareholder register, with liquidation waterfall and Word drafts.",
+        title: "Transaction simulator: capital increases, reductions and share sales",
+        description: "Simulate capital increases and reductions, share sales, accordion transactions and convertible notes on the actual shareholder register, in minutes and without errors, with Word drafts.",
       keywords: "operations simulator, investment rounds, capital increases, convertible notes, corporate simulations",
       },
     },
