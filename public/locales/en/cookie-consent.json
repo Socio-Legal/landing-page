@@ -56,6 +56,10 @@
     "_gcl_au": {
       "purpose": "Attributes visits and conversions to our ads.",
       "duration": "90 days"
+    },
+    "calendly": {
+      "purpose": "Only if you open the calendar to book a demo. Calendly sets the cookies needed for the booking and asks for consent to the others in its own window.",
+      "duration": "As set by Calendly"
     }
   }
 }

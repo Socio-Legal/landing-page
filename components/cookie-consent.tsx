@@ -2,6 +2,7 @@
 
 import { useEffect, useId, useRef, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
+import Script from "next/script";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Trans, useTranslation } from "react-i18next";
 import { Cross2Icon } from "@radix-ui/react-icons";
@@ -17,6 +18,7 @@ import {
   subscribeConsent,
   type ConsentCategories,
 } from "@/lib/cookie-consent";
+import { GOOGLE_ADS_ID } from "@/lib/google-ads";
 import { localizedHref } from "@/lib/localized-href";
 import { useLocale } from "@/lib/use-locale";
 
@@ -36,6 +38,7 @@ const CATEGORIES = [
     cookies: [
       { name: "sttok_consent", id: "sttok_consent", provider: "Sttok" },
       { name: "theme", id: "theme", provider: "Sttok" },
+      { name: "Calendly", id: "calendly", provider: "Calendly" },
     ],
   },
   {
@@ -60,12 +63,12 @@ const isLegacyConsentCookie = (name: string) =>
 
 /**
  * Banner de consentimiento propio (art. 22.2 LSSI y Guía de cookies de la
- * AEPD) y Google Analytics condicionado a él.
+ * AEPD), y Google Analytics y Google Ads condicionados a él.
  *
  * El layout raíz fija antes que nada el Consent Mode de Google en «denied».
- * Aquí se traslada a Google cada decisión y gtag solo se monta con las
- * analíticas aceptadas. Si se revocan, se borran las cookies de Google y se
- * recarga la página para descargar gtag.
+ * Aquí se traslada a Google cada decisión. Analytics solo se monta con las
+ * analíticas aceptadas y la etiqueta de Ads con la publicidad aceptada. Si se
+ * revoca una, se borran sus cookies y se recarga la página para descargarla.
  */
 export function CookieConsent({ gaId }: { gaId: string }) {
   const state = useSyncExternalStore(
@@ -78,6 +81,7 @@ export function CookieConsent({ gaId }: { gaId: string }) {
   const advertising = Boolean(record?.advertising);
   const hydrated = state !== null;
   const gaLoaded = useRef(false);
+  const adsLoaded = useRef(false);
 
   useEffect(() => deleteCookies(isLegacyConsentCookie), []);
 
@@ -89,13 +93,13 @@ export function CookieConsent({ gaId }: { gaId: string }) {
       ad_user_data: advertising ? "granted" : "denied",
       ad_personalization: advertising ? "granted" : "denied",
     });
+    const revoked =
+      (!analytics && gaLoaded.current) || (!advertising && adsLoaded.current);
     if (!advertising) deleteCookies(isAdvertisingCookie);
-    if (analytics) {
-      gaLoaded.current = true;
-    } else {
-      deleteCookies(isAnalyticsCookie);
-      if (gaLoaded.current) window.location.reload();
-    }
+    if (!analytics) deleteCookies(isAnalyticsCookie);
+    if (revoked) window.location.reload();
+    gaLoaded.current = analytics;
+    adsLoaded.current = advertising;
   }, [hydrated, analytics, advertising]);
 
   if (!state) return null;
@@ -103,11 +107,33 @@ export function CookieConsent({ gaId }: { gaId: string }) {
   return (
     <>
       {analytics && <GoogleAnalytics gaId={gaId} />}
+      {advertising && <GoogleAdsTag loadGtag={!analytics} />}
       {!record && <ConsentBanner />}
       <ConsentSettings
         open={state.settingsOpen}
         current={record ?? NONE}
       />
+    </>
+  );
+}
+
+/**
+ * Etiqueta de Google Ads. Con las analíticas aceptadas, gtag.js ya lo carga
+ * Google Analytics y basta con configurar Ads; si no, se carga con el ID de
+ * Ads, para no enviar nada a Analytics.
+ */
+function GoogleAdsTag({ loadGtag }: { loadGtag: boolean }) {
+  return (
+    <>
+      {loadGtag && (
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ADS_ID}`}
+          strategy="afterInteractive"
+        />
+      )}
+      <Script id="google-ads-config" strategy="afterInteractive">
+        {`${loadGtag ? "gtag('js', new Date());" : ""}gtag('config', '${GOOGLE_ADS_ID}');`}
+      </Script>
     </>
   );
 }
