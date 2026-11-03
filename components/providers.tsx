@@ -4,6 +4,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { I18nextProvider } from "react-i18next";
 
+import { CalendlyPopup } from "@/components/calendly-popup";
 import { CookieConsent } from "@/components/cookie-consent";
 
 import { getI18n } from "@/lib/i18n";
@@ -36,6 +37,7 @@ export default function Providers({
       <I18nextProvider i18n={getI18n(locale)}>
         {/* Antes que la página: es lo primero que se alcanza con el teclado. */}
         <CookieConsent gaId="G-LWNDHYBY2N" />
+        <CalendlyPopup />
         <MenuProvider>{children}</MenuProvider>
       </I18nextProvider>
 

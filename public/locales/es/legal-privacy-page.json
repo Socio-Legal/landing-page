@@ -29,7 +29,7 @@
     {
       "title": "3. Destinatarios y categorías de Encargados del tratamiento",
       "content": [
-        "Los datos podrán comunicarse a Registros Públicos, para la ejecución del contrato; Administraciones Públicas para el cumplimiento de obligaciones legales; Entidades bancarias para la gestión de cobros y pagos de facturas y a Encargados del tratamiento debidamente seleccionados. Sttok trata los datos dentro de la Unión Europea. Algunos proveedores del Sitio Web pueden tratarlos fuera del Espacio Económico Europeo: Vercel, que aloja el Sitio Web y mide su rendimiento sin cookies, y Google, para la analítica y la publicidad si el Usuario las acepta. En ese caso, la transferencia se ampara en el Marco de Privacidad de Datos UE-EE. UU. o en las cláusulas contractuales tipo aprobadas por la Comisión Europea."
+        "Los datos podrán comunicarse a Registros Públicos, para la ejecución del contrato; Administraciones Públicas para el cumplimiento de obligaciones legales; Entidades bancarias para la gestión de cobros y pagos de facturas y a Encargados del tratamiento debidamente seleccionados. Sttok trata los datos dentro de la Unión Europea. Algunos proveedores del Sitio Web pueden tratarlos fuera del Espacio Económico Europeo: Vercel, que aloja el Sitio Web y mide su rendimiento sin cookies, Google, para la analítica y la publicidad si el Usuario las acepta, y Calendly, que gestiona la reserva de las demos. En ese caso, la transferencia se ampara en el Marco de Privacidad de Datos UE-EE. UU. o en las cláusulas contractuales tipo aprobadas por la Comisión Europea."
       ]
     },
     {
@@ -82,8 +82,8 @@
             ],
             [
               "Técnicas: son aquéllas que permiten al usuario la navegación a través de una página web, plataforma o aplicación y la utilización de las diferentes opciones o servicios que en ella existan, incluyendo aquellas que el editor utiliza para permitir la gestión y operativa de la página web y habilitar sus funciones y servicios, como, por ejemplo, controlar el tráfico y la comunicación de datos, identificar la sesión, acceder a partes de acceso restringido, recordar los elementos que integran un pedido, realizar el proceso de compra de un pedido, gestionar el pago, controlar el fraude vinculado a la seguridad del servicio, realizar la solicitud de inscripción o participación en un evento, contar visitas a efectos de la facturación de licencias del software con el que funciona el servicio (sitio web, plataforma o aplicación), utilizar elementos de seguridad durante la navegación, almacenar contenidos para la difusión de vídeos o sonido, habilitar contenidos dinámicos (por ejemplo, animación de carga de un texto o imagen) o compartir contenidos a través de redes sociales.",
-              "sttok_consent – Sttok (guarda la decisión del usuario sobre las cookies; se comparte con ayuda.sttok.com) \n\ntheme – Sttok (almacenamiento local del navegador, no es una cookie: recuerda si el usuario elige el tema claro u oscuro)",
-              "13 meses \n\nHasta que el usuario lo borre"
+              "sttok_consent – Sttok (guarda la decisión del usuario sobre las cookies; se comparte con ayuda.sttok.com) \n\ntheme – Sttok (almacenamiento local del navegador, no es una cookie: recuerda si el usuario elige el tema claro u oscuro)\n\nCalendly – Calendly (solo al abrir el calendario de reserva de una demo; Calendly pide en su propia ventana el consentimiento para sus cookies opcionales)",
+              "13 meses \n\nHasta que el usuario lo borre\n\nLas que fije Calendly"
             ]
           ]
         },
