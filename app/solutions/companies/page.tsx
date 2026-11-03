@@ -21,7 +21,9 @@ const SELECCION = {
   "consejo": [
     "Convocar el consejo",
     "Acta y certificación",
-    "Cargos con vigencia",
+    "Cargos con vigencia"
+  ],
+  "apoderados": [
     "Apoderados y poderes"
   ],
   "grupos": [
