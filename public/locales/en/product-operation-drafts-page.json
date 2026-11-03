@@ -1,13 +1,13 @@
 {
   "metadata": {
     "title": "Operations Simulator",
-    "description": "Simulate and calculate any corporate operation with precision in seconds, including investment rounds, capital increases, and more.",
+    "description": "Simulate capital increases and reductions, share sales, accordion transactions and convertible notes on the actual shareholder register, in minutes and without errors.",
     "keywords": "operations simulator, investment rounds, capital increases, convertible notes, corporate simulations"
   },
   "hero": {
     "slogan": "Transaction simulator",
-    "title": "Corporate transaction simulator: capital increases, share sales and convertible notes",
-    "description": "Sttok simulates a capital increase, a reduction, a share sale or a note conversion on the actual data in the shareholder register. It chains several transactions, calculates the liquidation waterfall and prepares draft documents.",
+    "title": "Corporate transaction simulator: capital increases, reductions, share sales and more",
+    "description": "Sttok simulates capital increases and reductions, share sales, accordion transactions and note conversions on the actual data in the shareholder register. In minutes you see how the register ends up, what each shareholder contributes and the resulting percentages, and the transaction comes with its drafts for the notary.",
     "button": {
       "text": "Schedule demo",
       "link": "https://calendly.com/sttok/30min"
@@ -58,11 +58,11 @@
     "items": [
       {
         "q": "What transactions can I simulate?",
-        "a": "Capital increases and reductions, share sales and convertible note conversions, also chained together, and the liquidation waterfall of a sale."
+        "a": "Capital increases and reductions, share sales, accordion transactions and convertible note conversions, also chained, and the liquidation waterfall of a sale."
       },
       {
         "q": "What data does it use?",
-        "a": "The company's actual shareholder register, with its numbering, its classes and its capital as of the date."
+        "a": "With the company's actual shareholder register: its numbering, ranges, classes and share capital to date. That is why the result is error-free, with exact fully diluted and non-diluted percentages."
       },
       {
         "q": "Does a simulation change the register?",
@@ -85,6 +85,7 @@
   "includes": {
     "eyebrow": "What's included",
     "title": "What you can simulate in Sttok",
+    "lede": "Sttok holds the shareholder register in full detail: share numbers, ranges, holders and exact percentages. That is why it calculates any transaction in minutes and without errors, shows straight away how the register ends up and chains one transaction after another: a capital increase, then a share sale, another increase or an accordion transaction.",
     "allLink": "See all Sttok features"
   },
   "situations": {
@@ -98,8 +99,20 @@
     "guideLabel": "See how",
     "rows": [
       {
+        "situation": "Two scenarios for a capital increase or a chain of transactions have to be calculated urgently, in detail and without errors",
+        "action": "It simulates each scenario on the actual register and shows how the register would end up, what each shareholder contributes, what happens if someone does not subscribe, and the fully diluted and non-diluted percentages."
+      },
+      {
+        "situation": "The transaction has to be ready for the notary, quickly and without errors",
+        "action": "The simulated transaction comes with its Word drafts, with the exact numbering, contributions and percentages from the register."
+      },
+      {
         "situation": "A new shareholder comes in through a capital increase",
         "action": "Price per share, new shares and each shareholder's dilution are calculated before the meeting is called."
+      },
+      {
+        "situation": "Losses have to be cleared with an accordion transaction",
+        "action": "It chains the reduction and the increase and shows who remains in the company and with what percentage."
       },
       {
         "situation": "One family branch wants to buy from another",
@@ -112,10 +125,6 @@
       {
         "situation": "The sale of the company is being negotiated",
         "action": "The liquidation waterfall shows what each shareholder receives, with the preferences of each class."
-      },
-      {
-        "situation": "The transaction has to go to the notary",
-        "action": "Draft documents in Word are prepared with the simulation data."
       }
     ]
   }
