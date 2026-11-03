@@ -131,7 +131,7 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     meta: {
       en: {
         title: "Digital shareholder register with numbered share ranges",
-        description: "The shareholder register as the official record: transfers by share range, encumbrances, co-owners and certificates, exportable for legalisation.",
+        description: "The official shareholder register, kept by recording every transaction: transfers by share range, encumbrances, co-owners and certificates, exportable for legalisation.",
       keywords: "Shareholder Register, Shareholders, Registry, Operations, Excel",
       },
     },
