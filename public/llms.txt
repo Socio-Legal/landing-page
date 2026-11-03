@@ -175,7 +175,7 @@ Funcionalidades con coste adicional: mercado secundario y mercado de incentivos,
 - Preparar la junta general: orden del día, documentación y plazos: https://www.sttok.com/funcionalidades/preparar-la-junta
 - Convocatoria de la junta general: https://www.sttok.com/funcionalidades/convocatoria-de-la-junta
 - Asistencia y quórum de la junta: https://www.sttok.com/funcionalidades/asistencia-y-quorum
-- Mayorías reforzadas y derecho de separación: https://www.sttok.com/funcionalidades/mayorias-y-derecho-de-separacion
+- Mayorías y quórum reforzados: https://www.sttok.com/funcionalidades/mayorias-y-quorum-reforzados
 - Acta de la junta general: https://www.sttok.com/funcionalidades/acta-de-la-junta
 - Certificación de acuerdos: https://www.sttok.com/funcionalidades/certificacion-de-acuerdos
 - Juntas presenciales, telemáticas e híbridas: https://www.sttok.com/funcionalidades/juntas-presenciales-telematicas-e-hibridas

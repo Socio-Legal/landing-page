@@ -57,6 +57,7 @@ const LANDINGS_RETIRADAS = {
   "/seguridad": "/politica-seguridad",
   // Ficha retirada: la app no proyecta la votacion en la sala.
   "/funcionalidades/proyeccion-en-la-sala": "/funcionalidades/voto-electronico-en-juntas",
+  "/funcionalidades/mayorias-y-derecho-de-separacion": "/funcionalidades/mayorias-y-quorum-reforzados",
 };
 
 /**
