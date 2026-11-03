@@ -10,7 +10,7 @@ import { getConsentState } from "@/lib/cookie-consent";
 export const GOOGLE_ADS_ID = "AW-10842456774";
 
 /** Etiqueta de la acción de conversión «Reserva de demo» en Google Ads. */
-export const DEMO_CONVERSION_LABEL = "";
+export const DEMO_CONVERSION_LABEL = "X93HCMKAlrEdEMaFi7Io";
 
 export function trackDemoBooked() {
   if (typeof window === "undefined" || !window.gtag) return;
@@ -18,9 +18,11 @@ export function trackDemoBooked() {
   if (consent?.analytics) {
     window.gtag("event", "meeting_scheduled", { event_category: "calendly" });
   }
-  if (consent?.advertising && DEMO_CONVERSION_LABEL) {
+  if (consent?.advertising) {
     window.gtag("event", "conversion", {
       send_to: `${GOOGLE_ADS_ID}/${DEMO_CONVERSION_LABEL}`,
+      value: 1.0,
+      currency: "EUR",
     });
   }
 }
