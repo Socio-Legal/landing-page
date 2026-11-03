@@ -66,11 +66,10 @@
       },
       {
         "icon": "",
-        "logo": "Gazelle",
+        "logo": "MyInvestor",
         "title": "",
-        "description": "Floating offshore wind energy, with companies in Portugal and the United Kingdom.",
-        "alt": "Gazelle Wind Power, Sttok customer",
-        "case": false
+        "description": "Digital financial institution operating as an agent of Andbank.",
+        "alt": "MyInvestor, a Sttok customer"
       },
       {
         "icon": "",
@@ -96,10 +95,11 @@
       },
       {
         "icon": "",
-        "logo": "MyInvestor",
+        "logo": "Gazelle",
         "title": "",
-        "description": "Digital financial institution operating as an agent of Andbank.",
-        "alt": "MyInvestor, a Sttok customer"
+        "description": "Floating offshore wind energy, with companies in Portugal and the United Kingdom.",
+        "alt": "Gazelle Wind Power, Sttok customer",
+        "case": false
       }
     ]
   }

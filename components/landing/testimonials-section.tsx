@@ -3,6 +3,8 @@
 import React, { FC } from "react";
 import Image from "next/image";
 
+import { clientLogos, getClientName } from "@/config/client-logos";
+
 import SectionHeader from "../section-header";
 import { useTranslation } from "react-i18next";
 
@@ -10,6 +12,8 @@ type TestimonialCardProps = {
   name: string;
   role: string;
   img?: string;
+  /** Logo de la empresa (clave de clientLogos) cuando no hay foto ni icono. */
+  logo?: keyof typeof clientLogos;
   description: string;
   stars?: number;
   photoAlt?: string;
@@ -19,6 +23,7 @@ const TestimonialCard: FC<TestimonialCardProps> = ({
   description,
   name,
   img,
+  logo,
   role,
   photoAlt,
 }) => (
@@ -34,6 +39,13 @@ const TestimonialCard: FC<TestimonialCardProps> = ({
           width={32}
           height={32}
           className="h-8 w-8 rounded-full grayscale"
+        />
+      )}
+      {!img && logo && clientLogos[logo] && (
+        <Image
+          src={clientLogos[logo]}
+          alt={photoAlt ?? getClientName(logo)}
+          className="h-6 w-auto max-w-24 object-contain grayscale dark:invert"
         />
       )}
       <div className="text-sm">
@@ -68,7 +80,9 @@ const TestimonialsSection: FC = () => {
             <TestimonialCard
               {...card}
               photoAlt={
-                card.img?.includes("/logo-")
+                card.logo
+                  ? t("labels.logo", { name: getClientName(card.logo) })
+                  : card.img?.includes("/logo-")
                   ? // El logo es el de la empresa: va detrás de «|» en el cargo.
                     t("labels.logo", {
                       name: card.role.includes("|")
