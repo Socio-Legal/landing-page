@@ -21,6 +21,7 @@ import { useLocale } from "@/lib/use-locale";
 
 type SituationRow = { situation: string; action: string; href?: string };
 type Figure = { value: string; label: string };
+type SetupStep = { title: string; text: string };
 
 const asArray = <T,>(value: unknown): T[] =>
   Array.isArray(value) ? (value as T[]) : [];
@@ -86,6 +87,12 @@ const ModulePage: FC<ModulePageProps> = ({ ns, modulos, seleccion }) => {
   );
   const locale = useLocale();
   const allLink = t(`${ns}:includes.allLink`, { defaultValue: "" });
+  const setupSteps = asArray<SetupStep>(
+    t(`${ns}:setup.steps`, { returnObjects: true }),
+  );
+  const setupLink = t(`${ns}:setup.link`, { returnObjects: true }) as
+    | { text?: string; href?: string }
+    | string;
 
   return (
     <>
@@ -119,6 +126,45 @@ const ModulePage: FC<ModulePageProps> = ({ ns, modulos, seleccion }) => {
           />
         </div>
       </section>
+
+      {/* Cómo se monta: solo en las páginas que declaran setup.steps */}
+      {setupSteps.length > 0 && (
+        <section id="setup" className="border-t border-border">
+          <div className={SECTION}>
+            <SectionHeading
+              variant="plain"
+              eyebrow={t(`${ns}:setup.eyebrow`)}
+              title={t(`${ns}:setup.title`)}
+              lede={t(`${ns}:setup.lede`, { defaultValue: "" }) || undefined}
+            />
+            <ol className="grid grid-cols-1 gap-px border-y border-border bg-border md:grid-cols-3">
+              {setupSteps.map((step, i) => (
+                <li key={step.title} className="bg-background py-8 md:px-8 md:py-10 md:first:pl-0 md:last:pr-0">
+                  <span className="font-serif text-sm tabular-nums text-muted-foreground">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <h3 className="mt-3 text-[0.9375rem] font-semibold text-foreground">
+                    {step.title}
+                  </h3>
+                  <p className="mt-2 text-[0.9375rem] leading-relaxed text-muted-foreground">
+                    {step.text}
+                  </p>
+                </li>
+              ))}
+            </ol>
+            {typeof setupLink === "object" &&
+              setupLink?.text &&
+              setupLink.href?.startsWith("/") && (
+                <p className="mt-8 text-sm">
+                  <Link href={localizedHref(setupLink.href, locale)} className={linkClass}>
+                    {setupLink.text}
+                    <Arrow />
+                  </Link>
+                </p>
+              )}
+          </div>
+        </section>
+      )}
 
       {/* Qué incluye: las funcionalidades del módulo, del catálogo */}
       <section id="includes" className="border-t border-border">

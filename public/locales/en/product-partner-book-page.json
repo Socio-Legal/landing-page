@@ -7,7 +7,7 @@
   "hero": {
     "slogan": "Shareholder register",
     "title": "Digital shareholder register, with numbered share ranges and up-to-date certificates",
-    "description": "Sttok keeps the register of partners or of registered shares as the official record. Every transfer is recorded against numbered ranges, with its encumbrances and co-owners, and the register is exported in a format ready for legalisation.",
+    "description": "Sttok lets the company keep its register of partners or of registered shares by recording every transaction. Each transfer is recorded against numbered ranges, with its encumbrances and co-owners, and the register is generated automatically and exported in a format ready for legalisation.",
     "button": {
       "text": "Schedule demo",
       "link": "https://calendly.com/sttok/30min"
@@ -17,6 +17,29 @@
       "dark": "/animaciones/en/accionistas-dark-poster.webp"
     },
     "video": "/animaciones/en/accionistas"
+  },
+  "setup": {
+    "eyebrow": "How the register is built",
+    "title": "The register comes from the transactions, not from a spreadsheet",
+    "lede": "Sttok does not copy a list of shareholders: it rebuilds the company's history transaction by transaction. Each share has its number, its history and the documents behind it.",
+    "steps": [
+      {
+        "title": "Every transaction, since incorporation",
+        "text": "The company's transactions are recorded one after another since incorporation, such as capital increases, sales, inheritances or renumberings, each with its deed, minutes or agreement. Sttok reads the documents with AI and proposes each transaction."
+      },
+      {
+        "title": "Or from a checkpoint",
+        "text": "If not all the documents are available, the starting point is the share capital on a known date: five or ten years ago, or the last renumbering of the shares. The later transactions are recorded from there."
+      },
+      {
+        "title": "The register and records are generated",
+        "text": "With the transactions recorded, Sttok generates the register with the history of each share by its number, and fills in each shareholder's record: ranges, transactions, encumbrances and documents."
+      }
+    ],
+    "link": {
+      "text": "How to migrate to Sttok",
+      "href": "/soluciones/migrar"
+    }
   },
   "testimonials": {
     "title": "Testimonials",
@@ -42,6 +65,25 @@
         "img": "/logo-banktrack-mini.png",
         "description": "Now with Sttok you can perform simulations of capital increases or convertible notes. We also easily manage our team's phantom shares. Finally, as an investor, I have my investees organized and I clearly know what I have.",
         "stars": 5
+      },
+      {
+        "name": "Eric Gracia",
+        "role": "Lawyer | Derecho.com",
+        "img": "/logo-derechocom-mini.png",
+        "description": "Sttok has allowed me to have all the commercial documentation of the companies I manage at hand. Gone are the Excel sheets and folders where it was difficult to keep track. The best thing is its usability, very intuitive and user-friendly.",
+        "stars": 4
+      },
+      {
+        "name": "Legal Department",
+        "role": "MyInvestor",
+        "description": "Sttok has allowed us to digitise and automate all our corporate governance, from holding board meetings to keeping the shareholder register, ensuring maximum legal certainty in all our corporate processes.",
+        "stars": 5
+      },
+      {
+        "name": "Grupo Caballero",
+        "role": "Family business founded in 1830",
+        "description": "Sttok has been a key tool for managing our cap table and shareholders' meetings. It has let us automate manual tasks and save time generating documents and e-signatures.",
+        "stars": 5
       }
     ]
   },
@@ -50,8 +92,8 @@
     "title": "Frequently asked questions about the shareholder register",
     "items": [
       {
-        "q": "Does Sttok keep the official shareholder register?",
-        "a": "Yes. It keeps the register of partners or of registered shares as the official record and exports it in a format ready for legalisation. It can be filed electronically with the Companies Registry from Sttok, when the company decides to."
+        "q": "Can Sttok be used to keep the official shareholder register?",
+        "a": "Yes. Sttok lets the company keep its register of partners or of registered shares: with every transaction recorded, the register is generated up to date and exported in a format ready for legalisation. Keeping it remains the responsibility of the governing body, and it can be filed electronically with the Companies Registry from Sttok, when the company decides to."
       },
       {
         "q": "Can I migrate the register from Excel?",
@@ -63,11 +105,11 @@
       },
       {
         "q": "Can shareholders see their holding?",
-        "a": "Yes. Each shareholder logs in and sees their position, their certificates and the meetings they are called to."
+        "a": "Yes. Each shareholder logs in with their email address and sees their shares, their ranges and their documents, including their certificates. The portal also gives access to the meetings."
       },
       {
         "q": "Does it work for a public limited company (SA)?",
-        "a": "Yes. For an SA it keeps the register of registered shares, with the same numbering, classes and encumbrances."
+        "a": "Yes. For an SA it is used to keep the register of registered shares, with the same numbering, classes and encumbrances."
       },
       {
         "q": "Does it work for companies in Latin America?",
@@ -91,28 +133,32 @@
     "guideLabel": "See how",
     "rows": [
       {
-        "situation": "The bank asks for a certificate of ownership",
-        "action": "It is generated from the register with today's data, including encumbrances."
+        "situation": "The shareholder register is not up to date",
+        "action": "It is the usual case when it lives in a spreadsheet nobody updates. In Sttok each transaction is recorded with its documents and the register is generated automatically, always up to date."
+      },
+      {
+        "situation": "A shareholder asks for a certificate for wealth tax or income tax",
+        "action": "It is generated from the register on the date requested, with the year's transactions and any encumbrances, for one shareholder or for all of them at once."
       },
       {
         "situation": "A shareholder sells part of their shares",
         "action": "The transfer is recorded against the specific ranges and both positions are updated."
       },
       {
-        "situation": "A usufruct or a pledge is created",
-        "action": "The bare owner's and the usufructuary's positions are kept apart, or the pledge is recorded on the ranges affected."
+        "situation": "A shareholder dies",
+        "action": "The inheritance is recorded, the share numbers are split among the heirs and co-ownership is set up with its representative."
       },
       {
-        "situation": "The register has to be legalised",
-        "action": "It is exported in the format filed with the Companies Registry."
+        "situation": "A usufruct or a pledge is created",
+        "action": "The bare owner's and the usufructuary's positions are kept apart, or the pledge is recorded on the ranges affected."
       },
       {
         "situation": "The register is years out of date",
         "action": "It is rebuilt from the deeds in a few minutes, with any gaps in the history flagged."
       },
       {
-        "situation": "A shareholder dies",
-        "action": "The inheritance is recorded, the share numbers are split among the heirs and co-ownership is set up with its representative."
+        "situation": "The register has to be legalised",
+        "action": "It is exported in the format filed with the Companies Registry."
       }
     ]
   }

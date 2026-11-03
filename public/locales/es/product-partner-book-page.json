@@ -7,7 +7,7 @@
   "hero": {
     "slogan": "Libro de socios",
     "title": "Libro de socios digital, con numeración por rangos y certificados al día",
-    "description": "Sttok lleva el libro registro de socios o de acciones nominativas como registro oficial. Cada transmisión se anota sobre rangos numerados, con sus cargas y sus cotitulares, y el libro se exporta en formato legalizable.",
+    "description": "Sttok permite a la sociedad llevar el libro registro de socios o de acciones nominativas registrando cada transacción. Cada transmisión se anota sobre rangos numerados, con sus cargas y sus cotitulares, y el libro se genera solo y se exporta en formato legalizable.",
     "button": {
       "text": "Solicitar demo",
       "link": "https://calendly.com/sttok/30min"
@@ -17,6 +17,29 @@
       "dark": "/animaciones/accionistas-dark-poster.webp"
     },
     "video": "/animaciones/accionistas"
+  },
+  "setup": {
+    "eyebrow": "Cómo se monta el libro",
+    "title": "El libro sale de las operaciones, no de un Excel",
+    "lede": "Sttok no copia una lista de socios: reconstruye la historia de la sociedad operación a operación. Así cada acción o participación tiene su número, su historia y la documentación que la soporta.",
+    "steps": [
+      {
+        "title": "Cada operación, desde la constitución",
+        "text": "Se registran una tras otra las operaciones de la sociedad desde su constitución, como ampliaciones, compraventas, herencias o renumeraciones, cada una con su escritura, su acta o su contrato. Sttok lee los documentos con IA y propone cada operación."
+      },
+      {
+        "title": "O desde un punto de control",
+        "text": "Si no se tiene toda la documentación, se parte del capital a una fecha cierta: hace cinco o diez años, o la última renumeración de participaciones. Desde ahí se registran las operaciones siguientes."
+      },
+      {
+        "title": "El libro y las fichas se generan solos",
+        "text": "Con las operaciones registradas, Sttok genera el libro con la historia de cada acción o participación por su número, y completa la ficha de cada socio: rangos, operaciones, cargas y documentación."
+      }
+    ],
+    "link": {
+      "text": "Cómo se migra a Sttok",
+      "href": "/soluciones/migrar"
+    }
   },
   "testimonials": {
     "title": "Testimonios",
@@ -42,6 +65,25 @@
         "img": "/logo-banktrack-mini.png",
         "description": "Ahora con Sttok puedes realizar simulaciones de ampliaciones o notas convertibles. Además también gestionamos las phantoms de nuestro equipo fácilmente. Finalmente como inversor tengo organizadas mis participadas y conozco claramente qué es lo que tengo.",
         "stars": 5
+      },
+      {
+        "name": "Eric Gracia",
+        "role": "Abogado | Derecho.com",
+        "img": "/logo-derechocom-mini.png",
+        "description": "Sttok me ha permitido tener toda la documentación mercantil de las sociedades que gestiono a mano. Quedan atrás Excels y carpetas donde costaba hacer seguimiento. Lo mejor es su usabilidad, muy intuitivo y user-friendly.",
+        "stars": 4
+      },
+      {
+        "name": "Asesoría Jurídica",
+        "role": "MyInvestor",
+        "description": "Sttok nos ha permitido digitalizar y automatizar toda la gestión societaria, desde la celebración de consejos de administración hasta el mantenimiento del libro registro de socios, garantizando la máxima seguridad jurídica en todos nuestros procesos corporativos.",
+        "stars": 5
+      },
+      {
+        "name": "Grupo Caballero",
+        "role": "Empresa familiar fundada en 1830",
+        "description": "Sttok ha sido una herramienta clave para la gestión de nuestro Captable y Juntas de Socios. Nos ha permitido automatizar tareas manuales y ahorrar tiempo en la generación de documentos y firmas electrónicas.",
+        "stars": 5
       }
     ]
   },
@@ -50,8 +92,8 @@
     "title": "Preguntas frecuentes sobre el libro de socios",
     "items": [
       {
-        "q": "¿Sttok lleva el libro de socios oficial?",
-        "a": "Sí. Lleva el libro registro de socios o de acciones nominativas como registro oficial y lo exporta en formato legalizable. Desde Sttok se puede presentar por vía telemática en el Registro Mercantil, cuando la sociedad lo decide."
+        "q": "¿Sirve Sttok para llevar el libro de socios oficial?",
+        "a": "Sí. Sttok permite a la sociedad llevar el libro registro de socios o de acciones nominativas: con cada transacción registrada, el libro se genera al día y se exporta en formato legalizable. La llevanza sigue correspondiendo al órgano de administración, y desde Sttok se puede presentar el libro por vía telemática en el Registro Mercantil, cuando la sociedad lo decide."
       },
       {
         "q": "¿Puedo migrar el libro desde un Excel?",
@@ -63,11 +105,11 @@
       },
       {
         "q": "¿Los socios pueden consultar su participación?",
-        "a": "Sí. Cada socio entra con su usuario y ve su posición, sus certificados y las juntas a las que está convocado."
+        "a": "Sí. Cada socio entra con su correo electrónico y ve sus acciones o participaciones, sus rangos y su documentación, incluidos sus certificados. Desde el portal también accede a las juntas."
       },
       {
         "q": "¿Sirve para una sociedad anónima?",
-        "a": "Sí. En la sociedad anónima lleva el libro registro de acciones nominativas, con la misma numeración, clases y cargas."
+        "a": "Sí. En la sociedad anónima sirve para llevar el libro registro de acciones nominativas, con la misma numeración, clases y cargas."
       },
       {
         "q": "¿Sirve para sociedades de Latinoamérica?",
@@ -91,8 +133,13 @@
     "guideLabel": "Ver cómo",
     "rows": [
       {
-        "situation": "El banco pide un certificado de titularidad",
-        "action": "Lo genera desde el libro con los datos del día, incluidas las cargas.",
+        "situation": "El libro de socios no está al día",
+        "action": "Es lo habitual cuando vive en un Excel que nadie actualiza. En Sttok cada operación se registra con su documentación y el libro se genera solo, siempre al día.",
+        "href": "/funcionalidades/libro-registro-oficial"
+      },
+      {
+        "situation": "Un socio pide su certificado para el Impuesto sobre el Patrimonio o el IRPF",
+        "action": "Lo genera desde el libro a la fecha que se pida, con las operaciones del año y las cargas, para un socio o para todos a la vez.",
         "href": "/funcionalidades/certificados-de-titularidad-y-valor"
       },
       {
@@ -101,14 +148,14 @@
         "href": "/guias/derecho-de-adquisicion-preferente"
       },
       {
+        "situation": "Fallece un socio",
+        "action": "Registra la herencia, reparte la numeración entre los herederos y deja la cotitularidad con su representante.",
+        "href": "/guias/herencia-de-participaciones"
+      },
+      {
         "situation": "Se constituye un usufructo o una prenda",
         "action": "Separa la posición del nudo propietario y la del usufructuario, o anota la prenda sobre los rangos afectados.",
         "href": "/guias/cotitularidad-usufructo-nuda-propiedad"
-      },
-      {
-        "situation": "Toca legalizar el libro",
-        "action": "Lo exporta en el formato que se presenta en el Registro Mercantil.",
-        "href": "/guias/libro-registro-socios-legalizacion"
       },
       {
         "situation": "El libro lleva años sin actualizar",
@@ -116,9 +163,9 @@
         "href": "/guias/reconstruir-libro-de-socios"
       },
       {
-        "situation": "Fallece un socio",
-        "action": "Registra la herencia, reparte la numeración entre los herederos y deja la cotitularidad con su representante.",
-        "href": "/guias/herencia-de-participaciones"
+        "situation": "Toca legalizar el libro",
+        "action": "Lo exporta en el formato que se presenta en el Registro Mercantil.",
+        "href": "/guias/libro-registro-socios-legalizacion"
       }
     ]
   }
