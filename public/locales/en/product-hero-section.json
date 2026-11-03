@@ -48,7 +48,7 @@
           },
           {
             "title": "Ownership and value certificates",
-            "description": "The certificate the bank or the notary asks for, and the value of the shares according to the company's valuation."
+            "description": "Issue ownership and value certificates for the company's shares automatically, for tens, hundreds or thousands of shareholders."
           },
           {
             "title": "Onboarding from deeds",
@@ -56,7 +56,7 @@
           },
           {
             "title": "Shareholder portal",
-            "description": "Each shareholder logs in and sees their position, their certificates and the meetings they are called to."
+            "description": "Each shareholder logs in with their email address and sees their stake in the company: shares, ranges and documents. The portal also gives access to the meetings."
           },
           {
             "title": "Creditors and convertible notes",
@@ -66,7 +66,7 @@
       },
       {
         "title": "Governance: meetings and boards",
-        "summary": "The company's governing bodies, from the notice to the certified minutes.",
+        "summary": "Notices of general meetings and board meetings, proxies, voting, minutes and access to documents.",
         "href": "/en/shareholder-meetings",
         "items": [
           {
@@ -97,8 +97,8 @@
         "href": "/en/solutions/companies",
         "items": [
           {
-            "title": "All companies on one screen",
-            "description": "What is pending in each company of the group, sorted by deadline, with permissions per company."
+            "title": "The whole group at a glance",
+            "description": "Each company with its percentages, which company it depends on and its governing body. The whole group in one view."
           },
           {
             "title": "Group chart",
@@ -106,7 +106,7 @@
           },
           {
             "title": "Beneficial owner",
-            "description": "Who holds more than 25% of the capital or the votes at the end of the chain, calculated from the registers."
+            "description": "Who holds more than 25% of the capital or the votes, or any other threshold you set, at the end of the chain, calculated from the registers."
           },
           {
             "title": "New companies",
@@ -197,23 +197,23 @@
       },
       {
         "title": "Documents, signature and communications",
-        "summary": "What is signed and sent, filed by company.",
+        "summary": "Signing, sending and generating documents, filed by company.",
         "items": [
           {
-            "title": "Documents and minute books",
-            "description": "A repository per company with minute books by governing body and financial year, ready for legalisation."
+            "title": "Built-in electronic signature",
+            "description": "Minutes, certificates, letters and documents for shareholders are sent for signature straight from Sttok. Included in the Advanced and Pro plans."
           },
           {
-            "title": "Electronic signature",
-            "description": "Signature envelopes with reminders and deadlines. Included in the Advanced and Pro plans."
+            "title": "Built-in communications",
+            "description": "One click sends notices of general meetings and board meetings, and any other communication to shareholders, with proof of delivery."
           },
           {
-            "title": "Certified communications",
-            "description": "Every notice and every message is logged with its proof of delivery."
+            "title": "Document generation",
+            "description": "Notices, minutes, certificates and letters are generated automatically and filed in the company's repository."
           },
           {
             "title": "Sttok AI",
-            "description": "Questions about the register in plain language, with the source linked in every answer."
+            "description": "Questions in plain language about all of the company's information, and documents generated from it."
           }
         ]
       }
