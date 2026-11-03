@@ -95,9 +95,14 @@ function writeCookie(record: ConsentRecord) {
   // Fuera la copia antigua solo de este host, para que no quede una
   // decisión vieja al lado de la compartida.
   if (domain) document.cookie = `${CONSENT_COOKIE}=; Max-Age=0; Path=/`;
-  document.cookie = `${CONSENT_COOKIE}=${value}; Max-Age=${
-    CONSENT_MAX_AGE_DAYS * 24 * 60 * 60
-  }; Path=/${domain}; SameSite=Lax${secure}`;
+  // La cookie caduca a los 13 meses de la decisión, no de la última visita:
+  // al reescribirla se descuenta lo que ya ha pasado desde record.date.
+  const elapsed = Math.max(0, Date.now() - Date.parse(record.date)) || 0;
+  const maxAge = Math.max(
+    0,
+    Math.floor((CONSENT_MAX_AGE_DAYS * DAY_MS - elapsed) / 1000),
+  );
+  document.cookie = `${CONSENT_COOKIE}=${value}; Max-Age=${maxAge}; Path=/${domain}; SameSite=Lax${secure}`;
 }
 
 /**
