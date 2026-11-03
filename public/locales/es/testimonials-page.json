@@ -66,11 +66,10 @@
       },
       {
         "icon": "",
-        "logo": "Gazelle",
+        "logo": "MyInvestor",
         "title": "",
-        "description": "Energía eólica marina flotante, con sociedades en Portugal y Reino Unido.",
-        "alt": "Gazelle Wind Power, cliente de Sttok",
-        "case": false
+        "description": "Entidad financiera digital que opera como agente de Andbank.",
+        "alt": "MyInvestor, cliente de Sttok"
       },
       {
         "icon": "",
@@ -96,10 +95,11 @@
       },
       {
         "icon": "",
-        "logo": "MyInvestor",
+        "logo": "Gazelle",
         "title": "",
-        "description": "Entidad financiera digital que opera como agente de Andbank.",
-        "alt": "MyInvestor, cliente de Sttok"
+        "description": "Energía eólica marina flotante, con sociedades en Portugal y Reino Unido.",
+        "alt": "Gazelle Wind Power, cliente de Sttok",
+        "case": false
       }
     ]
   }
