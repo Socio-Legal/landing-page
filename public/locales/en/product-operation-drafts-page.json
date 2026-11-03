@@ -84,7 +84,8 @@
   },
   "includes": {
     "eyebrow": "What's included",
-    "title": "What you can simulate in Sttok"
+    "title": "What you can simulate in Sttok",
+    "allLink": "See all Sttok features"
   },
   "situations": {
     "eyebrow": "Common cases",

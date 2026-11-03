@@ -63,7 +63,8 @@
   },
   "includes": {
     "eyebrow": "What's included",
-    "title": "Everything an incentive plan covers in Sttok"
+    "title": "Everything an incentive plan covers in Sttok",
+    "allLink": "See all Sttok features"
   },
   "situations": {
     "eyebrow": "Common cases",
