@@ -1,13 +1,13 @@
 {
   "metadata": {
     "title": "Meetings and Boards",
-    "description": "Efficiently manage shareholder meetings and board meetings with Sttok, including notices, proxies, votes, and minutes.",
+    "description": "Run shareholder meetings and board meetings digitally: notice with proof of delivery, signed proxies, voting, quorum and minutes.",
     "keywords": "shareholder meetings, board meetings, digital meeting management, meeting notices, proxy voting, digital minutes"
   },
   "hero": {
     "slogan": "Meetings and boards",
-    "title": "General meetings and board of directors: notice, voting and minutes",
-    "description": "Sttok runs the general meeting and the board of directors from the notice to the certified minutes. It tracks proxies and quorum, collects early and live votes, and drafts the minutes with the result of each vote.",
+    "title": "Shareholder meetings and board meetings, run digitally",
+    "description": "You prepare the notice with the agenda, the items to vote on and the documents, review it and send it. Sttok certifies delivery and shows who has received it and who has not. Each shareholder logs in to their portal, sees the agenda and the documents, and appoints a proxy or votes if voting is open. Everything counts towards the quorum straight away.",
     "button": {
       "text": "Schedule demo",
       "link": "https://calendly.com/sttok/30min"
@@ -74,13 +74,36 @@
       },
       {
         "q": "Does it also cover the board of directors?",
-        "a": "Yes. It calls board meetings with their agenda, keeps the minutes, certifies resolutions and records officers with their terms."
+        "a": "Yes. It calls board meetings with their agenda and documents, keeps the minutes, certifies resolutions and records officers with their terms. It also handles attorneys and board committees."
       },
       {
         "q": "Does it work for companies in Latin America?",
         "a": "The platform adapts to each country's terminology: shareholder ledger, general shareholders' meeting, board of directors. Compliance with each country's regulations is assessed case by case."
       }
     ]
+  },
+  "setup": {
+    "eyebrow": "How it works",
+    "title": "A meeting in Sttok, from the notice to the vote",
+    "lede": "Board meetings are called the same way, with their agenda, their documents and a calendar invitation for each director.",
+    "steps": [
+      {
+        "title": "Prepare and review the notice",
+        "text": "The agenda, the items to vote on with the majority each needs, and the documents are prepared digitally. Everything is reviewed in a preview before sending."
+      },
+      {
+        "title": "Certified delivery",
+        "text": "Sttok sends the notice to each shareholder, certifies delivery and shows who has received it and who has not, so they can be reminded in time."
+      },
+      {
+        "title": "Appoint a proxy or vote from the portal",
+        "text": "The shareholder sees the items and the documents, chooses a proxy, says how to vote on each item and signs on screen. With tens, hundreds or thousands of shareholders, each proxy counts towards the quorum straight away."
+      }
+    ],
+    "link": {
+      "text": "How proxies and voting work (in Spanish)",
+      "href": "/funcionalidades/voto-electronico-en-juntas"
+    }
   },
   "includes": {
     "eyebrow": "What's included",
@@ -111,7 +134,7 @@
       },
       {
         "situation": "A resolution needs an enhanced majority",
-        "action": "The majority is derived for each item, with a warning when a resolution triggers withdrawal rights."
+        "action": "When the item is created, the majority needed to pass it is set, including an enhanced one above half plus one. Sttok applies it when voting closes."
       },
       {
         "situation": "The board meets every quarter",

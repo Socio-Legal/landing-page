@@ -1,13 +1,13 @@
 {
   "metadata": {
     "title": "Juntas y Consejos",
-    "description": "Gestiona juntas y consejos de administración de manera eficiente con Sttok, incluyendo convocatorias, delegaciones, votos y actas.",
+    "description": "Celebra en digital las juntas de socios y los consejos de administración: convocatoria con certificado de envío, delegaciones firmadas, voto, quórum y acta.",
     "keywords": "juntas de socios, consejos de administración, gestión digital de juntas, convocatorias, delegaciones de voto, actas digitales"
   },
   "hero": {
     "slogan": "Juntas y consejos",
-    "title": "Juntas de socios y consejos de administración: convocatoria, voto y acta",
-    "description": "Sttok lleva la junta general y el consejo de administración de la convocatoria al acta certificada. Controla delegaciones y quórum, recoge el voto anticipado y en vivo, y compone el acta con el resultado de cada votación.",
+    "title": "Juntas de socios y consejos de administración, en digital",
+    "description": "Preparas la convocatoria con el orden del día, los asuntos a votar y la documentación, la revisas y la envías. Sttok certifica el envío y muestra quién la ha recibido y quién no. Cada socio entra en su portal, ve el orden del día y los documentos, y delega su voto o vota si la votación está abierta. Todo cuenta al momento para el quórum.",
     "button": {
       "text": "Solicitar demo",
       "link": "https://calendly.com/sttok/30min"
@@ -74,13 +74,36 @@
       },
       {
         "q": "¿Sirve también para el consejo de administración?",
-        "a": "Sí. Convoca el consejo con su orden del día, lleva el acta y certifica los acuerdos, y registra los cargos con su vigencia."
+        "a": "Sí. Convoca el consejo con su orden del día y su documentación, lleva el acta y certifica los acuerdos, y registra los cargos con su vigencia. También lleva los apoderados y las comisiones del consejo."
       },
       {
         "q": "¿Sirve para sociedades de Latinoamérica?",
         "a": "La plataforma se adapta a la denominación de cada país: libro de accionistas, asamblea general de accionistas, junta directiva o directorio. La adecuación a la normativa de cada país se valora caso por caso."
       }
     ]
+  },
+  "setup": {
+    "eyebrow": "Cómo funciona",
+    "title": "Una junta en Sttok, de la convocatoria al voto",
+    "lede": "El consejo de administración se convoca igual, con su orden del día, su documentación y una cita de calendario para cada consejero.",
+    "steps": [
+      {
+        "title": "Preparar y revisar la convocatoria",
+        "text": "Se prepara en digital el orden del día, los asuntos a votar con la mayoría de cada uno y la documentación. Antes de enviarla se revisa todo en una vista previa."
+      },
+      {
+        "title": "Envío certificado",
+        "text": "Sttok envía la convocatoria a cada socio, certifica el envío y muestra quién la ha recibido y quién no, para recordárselo a tiempo."
+      },
+      {
+        "title": "Delegar o votar desde el portal",
+        "text": "El socio ve los asuntos y la documentación, elige en quién delega, indica en qué sentido vota cada punto y firma en la pantalla. Con decenas, cientos o miles de socios, cada delegación cuenta al momento para el quórum."
+      }
+    ],
+    "link": {
+      "text": "Cómo funcionan la delegación y el voto",
+      "href": "/funcionalidades/voto-electronico-en-juntas"
+    }
   },
   "includes": {
     "eyebrow": "Qué incluye",
@@ -114,7 +137,7 @@
       },
       {
         "situation": "Un acuerdo exige mayoría reforzada",
-        "action": "Deriva la mayoría de cada punto y avisa cuando un acuerdo abre el derecho de separación."
+        "action": "Al crear el punto se fija la mayoría con la que se aprueba, también una reforzada, superior a la mitad más uno. Sttok la aplica al cerrar la votación."
       },
       {
         "situation": "El consejo se reúne cada trimestre",
