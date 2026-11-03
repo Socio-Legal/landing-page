@@ -48,7 +48,7 @@
           },
           {
             "title": "Certificados de titularidad y de valor",
-            "description": "El certificado que pide el banco o el notario, y el valor de las participaciones según la valoración de la sociedad.",
+            "description": "Emite certificados de titularidad y de valor de las acciones o participaciones de forma automatizada, para decenas, centenares o miles de socios.",
             "href": "/funcionalidades/certificados-de-titularidad-y-valor"
           },
           {
@@ -58,7 +58,7 @@
           },
           {
             "title": "Portal del accionista",
-            "description": "Cada socio entra con su usuario y ve su posición, sus certificados y las juntas a las que está convocado.",
+            "description": "Cada socio entra con su correo electrónico y ve su participación en la sociedad: acciones o participaciones, rangos y documentación. Desde el portal también accede a las juntas.",
             "href": "/funcionalidades/portal-del-accionista"
           },
           {
@@ -99,15 +99,15 @@
             "href": "/funcionalidades/reglas-de-la-sociedad"
           }
         ],
-        "summary": "Los órganos de la sociedad, de la convocatoria al acta certificada."
+        "summary": "Convocatoria de juntas y consejos, delegaciones de voto, votaciones, actas y acceso a la documentación."
       },
       {
         "title": "Grupos de sociedades",
         "href": "/soluciones/grupos-de-sociedades",
         "items": [
           {
-            "title": "Todas las sociedades en una portada",
-            "description": "Lo pendiente de cada sociedad del grupo, ordenado por plazo, con permisos por sociedad.",
+            "title": "Todo el grupo en una vista",
+            "description": "Cada sociedad con sus porcentajes, de cuál depende y su órgano de administración. De un vistazo, todo el grupo.",
             "href": "/funcionalidades/portada-multisociedad"
           },
           {
@@ -117,7 +117,7 @@
           },
           {
             "title": "Titular real",
-            "description": "Quién supera el 25 % del capital o de los votos al final de la cadena, calculado desde los libros.",
+            "description": "Quién supera el 25 % del capital o de los votos, u otro umbral que se fije, al final de la cadena, calculado desde los libros.",
             "href": "/funcionalidades/titular-real"
           },
           {
@@ -204,15 +204,18 @@
           },
           {
             "title": "Ofertas de compra",
-            "description": "La sociedad o un socio lanza una oferta de compra a varios socios a la vez."
+            "description": "La sociedad o un socio lanza una oferta de compra a varios socios a la vez.",
+            "href": "/funcionalidades/ofertas-de-compra-y-venta-de-acciones"
           },
           {
             "title": "Libro de ofertas",
-            "description": "Precio medio, volumen y estado de cada oferta, con su histórico."
+            "description": "Precio medio, volumen y estado de cada oferta, con su histórico.",
+            "href": "/funcionalidades/ofertas-de-compra-y-venta-de-acciones"
           },
           {
             "title": "Registro en el libro",
-            "description": "Cada operación ejecutada se anota en el libro de socios con su documentación. Se contrata como módulo adicional."
+            "description": "Cada operación ejecutada se anota en el libro de socios con su documentación. Se contrata como módulo adicional.",
+            "href": "/funcionalidades/ofertas-de-compra-y-venta-de-acciones"
           }
         ],
         "summary": "Compraventas entre socios con su registro en el libro."
@@ -222,27 +225,27 @@
         "href": "/funcionalidades/documentacion-societaria",
         "items": [
           {
-            "title": "Documentos y libros de actas",
-            "description": "Repositorio por sociedad con los libros de actas por órgano y ejercicio, preparados para legalizar.",
-            "href": "/funcionalidades/libro-de-actas"
-          },
-          {
-            "title": "Firma electrónica",
-            "description": "Sobres de firma con recordatorios y plazos. Incluida en los planes Avanzado y Pro.",
+            "title": "Firma electrónica integrada",
+            "description": "Actas, certificados, cartas y documentos para los socios se envían a firmar directamente desde Sttok. Incluida en los planes Avanzado y Pro.",
             "href": "/funcionalidades/firma-electronica"
           },
           {
-            "title": "Comunicaciones certificadas",
-            "description": "Cada convocatoria y cada aviso queda registrado con su certificado de envío.",
+            "title": "Comunicaciones integradas",
+            "description": "Con un clic se envían las convocatorias de juntas y de consejos y cualquier otra comunicación a los socios, con su certificado de envío.",
             "href": "/funcionalidades/comunicaciones-a-socios"
           },
           {
+            "title": "Generación de documentos",
+            "description": "Convocatorias, actas, certificados y cartas se generan de forma automatizada y quedan en el repositorio de la sociedad.",
+            "href": "/funcionalidades/documentacion-societaria"
+          },
+          {
             "title": "Sttok AI",
-            "description": "Preguntas sobre el registro en lenguaje natural, con la fuente enlazada en cada respuesta.",
+            "description": "Preguntas en lenguaje natural sobre toda la información de la sociedad, y generación de documentación a partir de ella.",
             "href": "/funcionalidades/sttok-ai"
           }
         ],
-        "summary": "Lo que se firma y se envía, guardado por sociedad."
+        "summary": "Firma, envío y generación de documentos, guardados por sociedad."
       }
     ],
     "lede": "Todos los módulos trabajan sobre el mismo registro. Lo que cambia en el libro se refleja en la junta, en el certificado y en el diagrama del grupo.",
