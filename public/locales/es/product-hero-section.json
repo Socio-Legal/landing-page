@@ -152,7 +152,7 @@
           },
           {
             "title": "Portal del beneficiario",
-            "description": "Cada empleado ve su asignación, lo consolidado y los documentos que ha firmado.",
+            "description": "Cada empleado ve su plan desde el ordenador o el móvil: sus unidades, su valor estimado y su calendario de vesting, al día.",
             "href": "/funcionalidades/portal-del-beneficiario"
           },
           {
@@ -161,9 +161,9 @@
             "href": "/funcionalidades/liquidez-planes-de-incentivos"
           },
           {
-            "title": "Aviso al beneficiario",
-            "description": "Con cada tramo consolidado, Sttok avisa al beneficiario. En su ficha ve las unidades asignadas, las consolidadas y las pendientes.",
-            "href": "/funcionalidades/portal-del-beneficiario"
+            "title": "Cartas de invitación en bloque",
+            "description": "Con un Excel de beneficiarios, Sttok genera la carta personalizada de cada uno, de uno a mil, y la envía a firmar con DocuSign. Firmada, queda en la ficha del beneficiario.",
+            "href": "/funcionalidades/phantom-shares-y-stock-options"
           }
         ],
         "summary": "Los planes de empleados y directivos, conectados al libro."

@@ -7,7 +7,7 @@
   "hero": {
     "slogan": "Incentive plans",
     "title": "Incentive plans: phantom shares and stock options connected to the shareholder register",
-    "description": "Sttok manages each plan from the pool approved by the general meeting through to liquidity: grants, vesting, invitation letters and the beneficiary portal. Units are calculated on the actual capital in the shareholder register.",
+    "description": "Sttok manages each plan from the pool approved by the general meeting through to liquidity. It generates every beneficiary's invitation letter in one go, sends them for signature with DocuSign and gives each employee a portal with their units, their value and their vesting schedule. Units are calculated on the actual capital in the shareholder register.",
     "button": {
       "text": "Schedule demo",
       "link": "https://calendly.com/sttok/30min"
@@ -41,15 +41,15 @@
       },
       {
         "q": "What does each beneficiary see?",
-        "a": "Their granted units, what has vested, the next tranche, their documents and, if a window is open, what they can sell."
+        "a": "The page for their plan, on a computer or a phone: units granted, what has vested, the estimated value, the vesting schedule, updated month by month or quarter by quarter, their documents and, if a window is open, what they can sell."
       },
       {
         "q": "How are invitation letters handled?",
-        "a": "Each grant has its letter. The company sees which are accepted and which are pending, and pending units do not vest until the letter is accepted."
+        "a": "Upload a spreadsheet of beneficiaries and Sttok generates each one's personalised letter, with their details, units and vesting schedule, whether there is one or a thousand. It emails them for signature with DocuSign and, once signed, they are filed automatically in the documents and in the beneficiary's record. Units do not vest until the letter is signed."
       },
       {
         "q": "Does it calculate the plan's dilution?",
-        "a": "Yes. It shows the pool over fully diluted capital and the granted units over the pool, using the actual shareholder register."
+        "a": "Yes. It shows the pool and the units granted on a fully diluted basis, using the actual capital in the shareholder register, so you can see how the plans affect the cap table."
       },
       {
         "q": "Does it work for family businesses and groups?",
@@ -77,24 +77,32 @@
     "guideLabel": "See how",
     "rows": [
       {
-        "situation": "The general meeting approves a larger pool",
-        "action": "The resolution is recorded and the plan's available units are updated."
-      },
-      {
-        "situation": "A new executive joins with a plan",
-        "action": "The grant is created, the invitation letter is prepared and the vesting schedule starts."
+        "situation": "The plan has to be rolled out to dozens or hundreds of employees",
+        "action": "From a spreadsheet of beneficiaries it generates every personalised letter at once, sends them for signature with DocuSign and creates each beneficiary's record."
       },
       {
         "situation": "An employee asks how much has vested",
         "action": "They see it in their portal: what has vested, what is pending and the date of the next tranche."
       },
       {
-        "situation": "A beneficiary leaves the company",
-        "action": "Units that have not vested return to the plan's pool."
-      },
-      {
         "situation": "The company opens a liquidity window",
         "action": "Price, cap, withholding and net amount are calculated for each beneficiary."
+      },
+      {
+        "situation": "An investor asks for the fully diluted capital",
+        "action": "It shows the fully diluted cap table, with each plan's pool and grants on the actual capital in the shareholder register."
+      },
+      {
+        "situation": "A new executive joins with a plan",
+        "action": "The grant is created, the invitation letter is prepared and the vesting schedule starts."
+      },
+      {
+        "situation": "The general meeting approves a larger pool",
+        "action": "The resolution is recorded and the plan's available units are updated."
+      },
+      {
+        "situation": "A beneficiary leaves the company",
+        "action": "Units that have not vested return to the plan's pool."
       },
       {
         "situation": "Each payout has tax consequences",
