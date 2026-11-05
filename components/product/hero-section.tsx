@@ -23,6 +23,8 @@ export type HeroSectionProps = {
   };
   /** Ruta base de una animación en /animaciones: sustituye a la imagen. */
   video?: string;
+  /** Texto alternativo de la animación: qué se ve en ella. Sin él, el titular. */
+  videoAlt?: string;
 };
 
 /**
@@ -38,6 +40,7 @@ const HeroSection: FC<HeroSectionProps> = ({
   button,
   image,
   video,
+  videoAlt,
 }) => {
   const { t } = useTranslation("product-hero-section");
 
@@ -133,7 +136,7 @@ const HeroSection: FC<HeroSectionProps> = ({
                 {video ? (
                   <VideoTema
                     base={video}
-                    alt={t(title)}
+                    alt={t(videoAlt || title)}
                     prioridad
                     sizes="(max-width: 1024px) 100vw, 50vw"
                     className="rounded-[inherit]"
