@@ -1,37 +1,40 @@
 {
   "hero": {
     "slogan": "Secondary market",
-    "title": "Secondary market for shares: sales between shareholders recorded in the register",
-    "description": "Sttok organises sales between shareholders and purchase offers to several shareholders at once. Each completed transaction is entered in the shareholder register with its documents. It is an add-on module.",
+    "title": "Secondary market for shares and incentive plan units",
+    "description": "Sttok gives shareholders a platform to buy and sell shares or incentive plan units. It only works if the company’s directors switch it on, and they decide whether offers are made only by the company or by the shareholders too. Sttok does not arrange the sales: it is the software where offers are published, participants are validated with KYC and contracts are signed. It is an add-on module.",
     "button": {
       "text": "Schedule demo",
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/animaciones/en/compraventa-light-poster.webp",
-      "dark": "/animaciones/en/compraventa-dark-poster.webp"
-    },
-    "video": "/animaciones/en/compraventa"
+      "light": "/funcionalidades/ofertas-de-compra-y-venta-de-acciones-venta-light.png",
+      "dark": "/funcionalidades/ofertas-de-compra-y-venta-de-acciones-venta-dark.png"
+    }
   },
   "faq": {
     "eyebrow": "FAQ",
     "title": "Frequently asked questions about the secondary market",
     "items": [
       {
-        "q": "What is Sttok's secondary market?",
-        "a": "A module for organising share sales between shareholders and purchase offers to several shareholders at once."
+        "q": "What is the Sttok secondary market?",
+        "a": "A software platform where the company and, if it so decides, its shareholders publish buy and sell offers on shares or incentive plan units. Sttok does not arrange or broker the sales."
       },
       {
         "q": "Who can take part?",
-        "a": "Shareholders and investors authorised by the company, with the permissions it sets."
+        "a": "Only those the company authorises. The market is switched off until the directors switch it on, and they decide whether offers are made only by the company or by the shareholders too. Third parties have no access."
       },
       {
-        "q": "How is each transaction recorded?",
-        "a": "In the shareholder register, against the transferred ranges, with its documents."
+        "q": "How is a sale completed?",
+        "a": "Anyone interested in an offer says so on the platform, participants are validated with KYC and the contracts are signed and accepted there. The deal is then entered in the shareholder register."
+      },
+      {
+        "q": "Does it work for incentive plans?",
+        "a": "Yes. The company can make offers to buy vested units from plan beneficiaries, as liquidity windows."
       },
       {
         "q": "Is it included in the plans?",
-        "a": "No. It is an add-on module available on any plan."
+        "a": "No. It is an add-on module on top of any plan."
       },
       {
         "q": "Does it work for companies in Latin America?",
@@ -55,20 +58,20 @@
     "guideLabel": "See how",
     "rows": [
       {
-        "situation": "A shareholder wants to sell and cannot find a buyer",
-        "action": "They publish a sell offer to the shareholders the company authorises."
+        "situation": "The company wants to give shareholders or beneficiaries liquidity",
+        "action": "It switches the market on for itself only and publishes a buy offer with price, number of shares or units and deadline."
       },
       {
-        "situation": "The company wants to give several shareholders liquidity",
-        "action": "It makes a purchase offer to several shareholders at once, with price and deadline."
+        "situation": "A shareholder wants to sell",
+        "action": "If the company opens the market to shareholders, they publish a sell offer and interested shareholders say so."
       },
       {
-        "situation": "The articles provide for a pre-emption right",
-        "action": "The transfer follows the notices and deadlines set in the articles of association."
+        "situation": "The articles provide for a right of first refusal",
+        "action": "The transfer remains subject to the notices and deadlines set in the articles."
       },
       {
         "situation": "A sale is completed",
-        "action": "It is recorded in the register against the transferred ranges, with its documents."
+        "action": "Participants go through KYC, sign the contracts on the platform and the deal is entered in the shareholder register."
       }
     ]
   }

@@ -10,9 +10,9 @@ import {
 } from "@/lib/structured-data";
 
 const page = {
-  title: "Mercado secundario de participaciones entre socios",
+  title: "Mercado secundario de acciones, participaciones e incentivos",
   description:
-    "Compraventas entre socios y ofertas de compra a varios socios a la vez, registradas en el libro de socios con su documentación. Módulo con coste adicional.",
+    "Plataforma de ofertas de compra y venta de acciones, participaciones o unidades de planes de incentivos, que activa la sociedad. KYC y contratos firmados en la plataforma. Módulo con coste adicional.",
   keywords: "mercado secundario, acciones entre socios, compraventa de acciones",
 };
 

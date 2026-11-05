@@ -183,17 +183,15 @@ export const CATALOGO: Modulo[] = [
   {
     id: "secundario",
     titulo: "Mercado secundario",
-    resumen: "Compraventas entre socios con su registro en el libro.",
-    en: { titulo: "Secondary market", resumen: "Sales between shareholders, recorded in the register." },
+    resumen: "Una plataforma de ofertas de compra y venta de acciones, participaciones o unidades de incentivos, que activa la sociedad.",
+    en: { titulo: "Secondary market", resumen: "A platform for buy and sell offers on shares or incentive plan units, switched on by the company." },
     href: "/mercado-secundario",
     nota: "Módulo con coste adicional",
     funcionalidades: [
-      { titulo: "Ofertas de venta", descripcion: "Un socio publica cuántas acciones vende, a qué precio y en qué plazo.", href: `${F}/ofertas-de-compra-y-venta-de-acciones`, en: { titulo: "Sell offers", descripcion: "A shareholder publishes how many shares they are selling, at what price and by when." } },
-      { titulo: "Ofertas de compra", descripcion: "La sociedad o un socio lanza una oferta de compra a varios socios a la vez.", href: `${F}/ofertas-de-compra-y-venta-de-acciones`, en: { titulo: "Buy offers", descripcion: "The company or a shareholder makes a purchase offer to several shareholders at once." } },
-      { titulo: "Libro de ofertas", descripcion: "Precio medio, volumen y estado de cada oferta.", href: `${F}/ofertas-de-compra-y-venta-de-acciones`, en: { titulo: "Order book", descripcion: "Average price, volume and status of each offer." } },
-      { titulo: "Participantes autorizados", descripcion: "La sociedad decide quién puede comprar y vender.", href: `${F}/ofertas-de-compra-y-venta-de-acciones`, en: { titulo: "Authorised participants", descripcion: "The company decides who can buy and sell." } },
-      { titulo: "Seguimiento de cada operación", descripcion: "Estado de cada oferta y su histórico.", href: `${F}/ofertas-de-compra-y-venta-de-acciones`, en: { titulo: "Transaction tracking", descripcion: "The status of each offer and its history." } },
-      { titulo: "Registro en el libro", descripcion: "Cada operación ejecutada se anota en el libro con su documentación.", href: `${F}/ofertas-de-compra-y-venta-de-acciones`, en: { titulo: "Recorded in the register", descripcion: "Each completed transaction is entered in the register with its documents." } },
+      { titulo: "Lo activa la sociedad", descripcion: "Los administradores activan el mercado y deciden quién hace ofertas: solo la sociedad o también los socios. Sin activarlo, nadie accede; los terceros, nunca.", href: `${F}/ofertas-de-compra-y-venta-de-acciones`, en: { titulo: "Switched on by the company", descripcion: "The directors switch the market on and decide who can make offers: only the company or the shareholders too. Until then nobody has access, and third parties never do." } },
+      { titulo: "Ofertas de compra y de venta", descripcion: "La sociedad, o un socio si el mercado está abierto, publica cuántas acciones o unidades compra o vende, a qué precio y en qué plazo.", en: { titulo: "Buy and sell offers", descripcion: "The company, or a shareholder if the market is open, publishes how many shares or units it buys or sells, at what price and by when." } },
+      { titulo: "Listado de ofertas", descripcion: "Todas las ofertas de compra y de venta con su detalle. Cada socio decide si le interesa y lo manifiesta.", en: { titulo: "List of offers", descripcion: "Every buy and sell offer with its details. Each shareholder decides whether they are interested and says so." } },
+      { titulo: "Validación, KYC y contratos", descripcion: "Se validan los participantes con KYC y los contratos se firman y se aceptan en la plataforma. La operación cerrada pasa al libro de socios.", en: { titulo: "Validation, KYC and contracts", descripcion: "Participants are validated with KYC and the contracts are signed and accepted on the platform. The completed deal goes into the shareholder register." } },
     ],
   },
   {

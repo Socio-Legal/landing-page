@@ -1,17 +1,16 @@
 {
   "hero": {
     "slogan": "Mercado secundario",
-    "title": "Mercado secundario de participaciones: compraventas entre socios registradas en el libro",
-    "description": "Sttok organiza las compraventas entre socios y las ofertas de compra a varios socios a la vez. Cada operación ejecutada se anota en el libro de socios con su documentación. Es un módulo con coste adicional.",
+    "title": "Mercado secundario de acciones, participaciones y planes de incentivos",
+    "description": "Sttok pone a disposición de los socios una plataforma para comprar y vender acciones, participaciones o unidades de planes de incentivos. Solo funciona si los administradores de la sociedad la activan, y deciden si las ofertas las hace solo la sociedad o también los socios. Sttok no organiza las compraventas: es el software donde se publican las ofertas, se valida a los participantes con KYC y se firman los contratos. Es un módulo con coste adicional.",
     "button": {
       "text": "Solicitar demo",
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/animaciones/compraventa-light-poster.webp",
-      "dark": "/animaciones/compraventa-dark-poster.webp"
-    },
-    "video": "/animaciones/compraventa"
+      "light": "/funcionalidades/ofertas-de-compra-y-venta-de-acciones-venta-light.png",
+      "dark": "/funcionalidades/ofertas-de-compra-y-venta-de-acciones-venta-dark.png"
+    }
   },
   "faq": {
     "eyebrow": "FAQ",
@@ -19,15 +18,19 @@
     "items": [
       {
         "q": "¿Qué es el mercado secundario de Sttok?",
-        "a": "Un módulo para organizar compraventas de participaciones entre socios y ofertas de compra a varios socios a la vez."
+        "a": "Una plataforma de software donde la sociedad y, si ella lo decide, sus socios publican ofertas de compra y de venta de acciones, participaciones o unidades de planes de incentivos. Sttok no organiza ni intermedia las compraventas."
       },
       {
         "q": "¿Quién puede participar?",
-        "a": "Los socios e inversores que autoriza la sociedad, con los permisos que esta defina."
+        "a": "Solo quien autoriza la sociedad. El mercado está desactivado hasta que lo activan sus administradores, que deciden si las ofertas las hace solo la sociedad o también los socios. Los terceros no tienen acceso."
       },
       {
-        "q": "¿Cómo queda registrada cada operación?",
-        "a": "En el libro de socios, sobre los rangos transmitidos, con su documentación asociada."
+        "q": "¿Cómo se cierra una compraventa?",
+        "a": "Quien está interesado en una oferta lo manifiesta en la plataforma, se valida a los participantes con KYC y los contratos se firman y se aceptan allí. Después, la operación se anota en el libro de socios."
+      },
+      {
+        "q": "¿Sirve para los planes de incentivos?",
+        "a": "Sí. La sociedad puede hacer ofertas de compra de unidades consolidadas a los beneficiarios de un plan, como ventanas de liquidez."
       },
       {
         "q": "¿Está incluido en los planes?",
@@ -55,21 +58,22 @@
     "guideLabel": "Ver cómo",
     "rows": [
       {
-        "situation": "Un socio quiere vender y no encuentra comprador",
-        "action": "Publica su oferta de venta para los socios que la sociedad autoriza."
+        "situation": "La sociedad quiere dar liquidez a socios o beneficiarios",
+        "action": "Activa el mercado solo para ella y publica una oferta de compra con precio, número de acciones o unidades y plazo.",
+        "href": "/funcionalidades/liquidez-planes-de-incentivos"
       },
       {
-        "situation": "La sociedad quiere dar liquidez a varios socios",
-        "action": "Lanza una oferta de compra a varios socios a la vez, con precio y plazo."
+        "situation": "Un socio quiere vender",
+        "action": "Si la sociedad abre el mercado a los socios, publica su oferta de venta y los socios interesados lo manifiestan."
       },
       {
         "situation": "Los estatutos prevén un derecho de adquisición preferente",
-        "action": "La transmisión respeta las comunicaciones y los plazos que fijan los estatutos.",
+        "action": "La transmisión sigue sujeta a las comunicaciones y los plazos que fijan los estatutos.",
         "href": "/guias/derecho-de-adquisicion-preferente"
       },
       {
         "situation": "Se cierra una compraventa",
-        "action": "Se anota en el libro sobre los rangos transmitidos, con su documentación."
+        "action": "Los participantes pasan el KYC, firman los contratos en la plataforma y la operación se anota en el libro de socios."
       }
     ]
   }

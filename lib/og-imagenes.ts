@@ -53,7 +53,6 @@ export const OG_IMAGENES: Record<string, string> = {
   "/funcionalidades/libro-registro-oficial": "/og/funcionalidades-libro-registro-oficial.jpg",
   "/funcionalidades/liquidez-planes-de-incentivos": "/og/funcionalidades-liquidez-planes-de-incentivos.jpg",
   "/funcionalidades/numeracion-por-rangos": "/og/funcionalidades-numeracion-por-rangos.jpg",
-  "/funcionalidades/ofertas-de-compra-y-venta-de-acciones": "/og/funcionalidades-ofertas-de-compra-y-venta-de-acciones.jpg",
   "/funcionalidades/orden-del-dia-del-consejo": "/og/funcionalidades-orden-del-dia-del-consejo.jpg",
   "/funcionalidades/organo-de-administracion": "/og/funcionalidades-organo-de-administracion.jpg",
   "/funcionalidades/participadas": "/og/funcionalidades-participadas.jpg",
