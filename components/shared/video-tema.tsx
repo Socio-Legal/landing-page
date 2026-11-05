@@ -17,8 +17,20 @@ const ALTO: Record<string, number> = {
   "ampliaciones-y-reducciones-de-capital": 930, "asistencia-y-quorum": 930,
   "consejo-de-administracion": 930, "eleccion-de-consejeros": 930, "reparto-de-dividendos": 930,
   "comunicaciones-a-socios": 930, "acta-de-la-junta": 930,
+  // 920 × 800 px CSS: solo el área de contenido, para que se lea a media columna.
+  "simulador-ampliacion": 1113,
 };
 const altoDe = (base: string) => ALTO[base.split("/").pop() || ""] ?? 800;
+
+/**
+ * Animaciones con un encuadre propio para móvil: la app grabada a 640 px de
+ * ancho, en vertical, con su póster (<base>-<tema>-m-poster.webp). Alto a
+ * 1280 px de ancho. Las demás reducen en móvil el mismo encuadre de escritorio.
+ */
+const ALTO_MOVIL: Record<string, number> = {
+  "simulador-ampliacion": 1800,
+};
+const altoMovilDe = (base: string) => ALTO_MOVIL[base.split("/").pop() || ""];
 
 /**
  * Huella del contenido de la animación (scripts/version-animaciones.mjs, dentro
@@ -69,6 +81,7 @@ export default function VideoTema({
 }) {
   const width = 1280;
   const height = altoDe(base);
+  const altoMovil = altoMovilDe(base);
   const v = versionDe(base);
   const caja = useRef<HTMLDivElement>(null);
   const video = useRef<HTMLVideoElement>(null);
@@ -96,13 +109,22 @@ export default function VideoTema({
       connection?: { saveData?: boolean; effectiveType?: string };
     }).connection;
     const ahorro = !!red?.saveData || /(^|-)2g$/.test(red?.effectiveType || "");
-    setMovil(window.matchMedia("(max-width: 767px)").matches);
-    if (quieto || ahorro || !caja.current) return;
+    // Se sigue el ancho, no solo el de entrada: con encuadre propio para móvil,
+    // el vídeo estrecho sobre la caja de escritorio saldría recortado.
+    const estrecha = window.matchMedia("(max-width: 767px)");
+    const leerAncho = () => setMovil(estrecha.matches);
+    leerAncho();
+    estrecha.addEventListener("change", leerAncho);
+    const soltar = () => estrecha.removeEventListener("change", leerAncho);
+    if (quieto || ahorro || !caja.current) return soltar;
     const io = new IntersectionObserver(([e]) => setALaVista(e.isIntersecting), {
       rootMargin: "200px",
     });
     io.observe(caja.current);
-    return () => io.disconnect();
+    return () => {
+      io.disconnect();
+      soltar();
+    };
   }, []);
 
   // Se pide la primera vez que está a la vista Y es la pestaña activa: en el
@@ -130,7 +152,7 @@ export default function VideoTema({
     );
     io.observe(caja.current);
     return () => io.disconnect();
-  }, [cargar, activo, tema]);
+  }, [cargar, activo, tema, movil]);
 
   // Al volver a su pestaña, empieza desde el principio.
   useEffect(() => {
@@ -138,14 +160,14 @@ export default function VideoTema({
   }, [activo]);
 
   // Cambiar de tema cambia de vídeo: hasta que arranque el nuevo, se ve la imagen.
-  useEffect(() => setEnMarcha(false), [tema]);
+  useEffect(() => setEnMarcha(false), [tema, movil]);
 
-  const imagen = (t: "light" | "dark", visibleEn: string) => (
+  const imagen = (t: "light" | "dark", visibleEn: string, enMovil = false) => (
     <Image
-      src={`${base}-${t}-poster.webp${v}`}
+      src={`${base}-${t}${enMovil ? "-m" : ""}-poster.webp${v}`}
       alt={alt}
-      {...(rellenar ? { fill: true } : { width, height })}
-      sizes={sizes}
+      {...(rellenar ? { fill: true } : { width, height: enMovil ? altoMovil : height })}
+      sizes={enMovil ? "100vw" : sizes}
       priority={prioridad && t === "light"}
       className={cn(visibleEn, rellenar ? "object-cover object-top" : "h-auto w-full", className)}
     />
@@ -153,8 +175,24 @@ export default function VideoTema({
 
   return (
     <div ref={caja} className={rellenar ? "absolute inset-0" : "relative"}>
-      {imagen("light", "block dark:hidden")}
-      {imagen("dark", "hidden dark:block")}
+      {altoMovil && !rellenar ? (
+        // Por debajo de md (lo mismo que `movil`), el encuadre vertical.
+        <>
+          <div className="hidden md:block">
+            {imagen("light", "block dark:hidden")}
+            {imagen("dark", "hidden dark:block")}
+          </div>
+          <div className="md:hidden">
+            {imagen("light", "block dark:hidden", true)}
+            {imagen("dark", "hidden dark:block", true)}
+          </div>
+        </>
+      ) : (
+        <>
+          {imagen("light", "block dark:hidden")}
+          {imagen("dark", "hidden dark:block")}
+        </>
+      )}
       {cargar && tema && (
         <video
           key={tema + (movil ? "-m" : "")}

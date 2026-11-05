@@ -13,10 +13,11 @@
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/animaciones/en/simulador-light-poster.webp",
-      "dark": "/animaciones/en/simulador-dark-poster.webp"
+      "light": "/animaciones/en/simulador-ampliacion-light-poster.webp",
+      "dark": "/animaciones/en/simulador-ampliacion-dark-poster.webp"
     },
-    "video": "/animaciones/en/simulador"
+    "video": "/animaciones/en/simulador-ampliacion",
+    "videoAlt": "Sttok transaction simulator: a capital increase in Talleres Bergadà, SL, with sample data. Two shareholders, Anna Bergadà Solé and Ferran Costa Miró, subscribe and a new company, Vallès 2020, SL, comes in. Below, the resulting cap table with the new shares and each shareholder's percentage."
   },
   "testimonials": {
     "title": "What Our Clients Say",

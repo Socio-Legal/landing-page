@@ -9,7 +9,7 @@
  * saliendo viejo durante días. Con ella, cambiar el archivo cambia la URL.
  *
  * Una animación es el grupo <base>-<light|dark>[-m].<webm|mp4> y
- * <base>-<light|dark>-poster.webp; la clave es <base> relativa a la carpeta
+ * <base>-<light|dark>[-m]-poster.webp; la clave es <base> relativa a la carpeta
  * (`accionistas`, `en/accionistas`). Va dentro de `pnpm build`, así que lo
  * desplegado nunca lleva una huella atrasada; el JSON se versiona para que
  * `next dev` funcione sin compilar antes.
@@ -20,7 +20,7 @@ import { join, relative, sep } from "node:path";
 
 const RAIZ = join(process.cwd(), "public", "animaciones");
 const SALIDA = join(process.cwd(), "lib", "animaciones-version.json");
-const PIEZA = /^(.+)-(light|dark)(?:-m\.(?:webm|mp4)|\.(?:webm|mp4)|-poster\.webp)$/;
+const PIEZA = /^(.+)-(light|dark)(?:-m\.(?:webm|mp4)|\.(?:webm|mp4)|(?:-m)?-poster\.webp)$/;
 
 const archivos = (dir) =>
   readdirSync(dir, { withFileTypes: true }).flatMap((e) =>
