@@ -118,8 +118,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageJuntasConsejos,
     meta: {
       en: {
-        title: "General meetings and board: notice, voting and minutes",
-        description: "Notice, signed proxies, early and live voting, quorum, minutes and certification for the general meeting and the board of directors.",
+        title: "Shareholder meetings and board meetings, run digitally",
+        description: "Notice with certified delivery, proxies signed from the shareholder portal, voting, quorum, minutes and certification with signature, for the general meeting and the board of directors.",
         keywords: "shareholder meetings, board meetings, digital meeting management, meeting notices, proxy voting, digital minutes",
       },
     },
