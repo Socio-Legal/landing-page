@@ -123,6 +123,29 @@
         ]
       },
       {
+        "title": "Transaction simulator",
+        "summary": "The effect of a transaction before it is signed.",
+        "href": "/en/operation-drafts",
+        "items": [
+          {
+            "title": "Capital increases and reductions",
+            "description": "The effect of each transaction on the actual register, including the pool and note conversion."
+          },
+          {
+            "title": "Sales and convertible notes",
+            "description": "Who ends up with what percentage after each step, chaining several transactions."
+          },
+          {
+            "title": "Liquidation waterfall",
+            "description": "What each shareholder receives in a sale, with the preferences of each class."
+          },
+          {
+            "title": "Draft documents",
+            "description": "The simulated transaction comes with its drafts in Word for the notary or the law firm."
+          }
+        ]
+      },
+      {
         "title": "Incentive plans",
         "summary": "Employee and management plans, connected to the register.",
         "href": "/en/incentive-plans",
@@ -146,29 +169,6 @@
           {
             "title": "Invitation letters in bulk",
             "description": "From a spreadsheet of beneficiaries, Sttok generates each one's personalised letter, from one to a thousand, and sends it for signature with DocuSign. Once signed, it is filed in the beneficiary's record."
-          }
-        ]
-      },
-      {
-        "title": "Transaction simulator",
-        "summary": "The effect of a transaction before it is signed.",
-        "href": "/en/operation-drafts",
-        "items": [
-          {
-            "title": "Capital increases and reductions",
-            "description": "The effect of each transaction on the actual register, including the pool and note conversion."
-          },
-          {
-            "title": "Sales and convertible notes",
-            "description": "Who ends up with what percentage after each step, chaining several transactions."
-          },
-          {
-            "title": "Liquidation waterfall",
-            "description": "What each shareholder receives in a sale, with the preferences of each class."
-          },
-          {
-            "title": "Draft documents",
-            "description": "The simulated transaction comes with its drafts in Word for the notary or the law firm."
           }
         ]
       },

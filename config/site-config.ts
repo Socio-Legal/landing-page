@@ -5,7 +5,7 @@ export const BLUR_FADE_DELAY = 0.15;
 export const siteConfig = {
   name: "Sttok",
   description:
-    "Software de gestión de sociedades: captable, libro de socios, planes de incentivos, juntas y consejos, simulador y mercado secundario.",
+    "Software de gestión de sociedades: captable, libro de socios, juntas y consejos, simulador de operaciones, planes de incentivos y mercado secundario.",
   url: process.env.NEXT_PUBLIC_APP_URL || "https://www.sttok.com",
   keywords: [
     "software gestión de sociedades",
@@ -51,11 +51,6 @@ export const siteConfig = {
             description: "menu.Partnersdescription",
           },
           {
-            href: routes.PRODUCT_INCENTIVE_PLANS,
-            title: "menu.PlansTitle",
-            description: "menu.PlansDescription",
-          },
-          {
             href: routes.PRODUCT_SHAREHOLDER_MEETINGS,
             title: "menu.BoardsTitle",
             description: "menu.BoardsDescription",
@@ -64,6 +59,11 @@ export const siteConfig = {
             href: routes.PRODUCT_OPERATION_DRAFTS,
             title: "menu.DraftsTitle",
             description: "menu.DraftsDescription",
+          },
+          {
+            href: routes.PRODUCT_INCENTIVE_PLANS,
+            title: "menu.PlansTitle",
+            description: "menu.PlansDescription",
           },
           {
             href: routes.PRODUCT_SECONDARY_MARKET,
@@ -145,10 +145,10 @@ export const siteConfig = {
           alt: "Software para Libro de socios",
         },
         {
-          id: 2,
-          title: "menu.PlansTitle",
-          url: routes.PRODUCT_INCENTIVE_PLANS,
-          alt: "Software para Planes de incentivos",
+          id: 4,
+          title: "menu.BoardsTitle",
+          url: routes.PRODUCT_SHAREHOLDER_MEETINGS,
+          alt: "Software para Juntas de consejos",
         },
         {
           id: 3,
@@ -157,10 +157,10 @@ export const siteConfig = {
           alt: "Software para Simulador de operaciones",
         },
         {
-          id: 4,
-          title: "menu.BoardsTitle",
-          url: routes.PRODUCT_SHAREHOLDER_MEETINGS,
-          alt: "Software para Juntas de consejos",
+          id: 2,
+          title: "menu.PlansTitle",
+          url: routes.PRODUCT_INCENTIVE_PLANS,
+          alt: "Software para Planes de incentivos",
         },
         {
           id: 17,
