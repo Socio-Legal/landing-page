@@ -31,12 +31,15 @@ const Captura = ({
   alt,
   pie,
   video,
+  movil = false,
   locale = "es",
 }: {
   nombre: string;
   alt: string;
   pie?: string;
   video?: string;
+  /** Captura de móvil, en vertical: se enseña estrecha y centrada. */
+  movil?: boolean;
   locale?: Locale;
 }) => {
   const src = (variante: string, tema: string) =>
@@ -63,7 +66,7 @@ const Captura = ({
       alt={alt}
       width={dims.width}
       height={dims.height}
-      sizes={variante ? "100vw" : "(max-width: 1100px) 100vw, 64rem"}
+      sizes={movil ? "20rem" : variante ? "100vw" : "(max-width: 1100px) 100vw, 64rem"}
       className={`h-auto w-full ${visible}`}
     />
   );
@@ -71,7 +74,13 @@ const Captura = ({
   return (
     <figure className="my-14">
       <div className="overflow-hidden rounded-2xl bg-muted px-4 pt-4 sm:px-10 sm:pt-10 lg:px-14 lg:pt-14">
-        <div className="overflow-hidden rounded-t-lg ring-1 ring-black/5 dark:ring-white/10">
+        <div
+          className={
+            movil
+              ? "mx-auto max-w-[20rem] overflow-hidden rounded-t-[1.75rem] ring-1 ring-black/5 dark:ring-white/10"
+              : "overflow-hidden rounded-t-lg ring-1 ring-black/5 dark:ring-white/10"
+          }
+        >
           {video ? (
             <>
               {detalle ? (
