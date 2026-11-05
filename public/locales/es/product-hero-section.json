@@ -137,6 +137,31 @@
         "summary": "Todas las sociedades del grupo y quién controla cada una."
       },
       {
+        "title": "Simulador de operaciones",
+        "href": "/simulador",
+        "items": [
+          {
+            "title": "Ampliaciones y reducciones",
+            "description": "El efecto de cada operación sobre el libro real, incluidos el pool y la conversión de notas."
+          },
+          {
+            "title": "Compraventas y notas convertibles",
+            "description": "Quién queda con qué porcentaje después de cada paso, encadenando varias operaciones."
+          },
+          {
+            "title": "Cascada de liquidación",
+            "description": "Qué recibe cada socio en una venta, con las preferencias de cada clase.",
+            "href": "/funcionalidades/cascada-de-liquidacion"
+          },
+          {
+            "title": "Borradores de documentos",
+            "description": "La operación simulada sale con sus borradores en Word para el notario o el despacho.",
+            "href": "/funcionalidades/borradores-de-documentos"
+          }
+        ],
+        "summary": "El efecto de una operación antes de firmarla."
+      },
+      {
         "title": "Planes de incentivos",
         "href": "/planes-de-incentivos",
         "items": [
@@ -167,31 +192,6 @@
           }
         ],
         "summary": "Los planes de empleados y directivos, conectados al libro."
-      },
-      {
-        "title": "Simulador de operaciones",
-        "href": "/simulador",
-        "items": [
-          {
-            "title": "Ampliaciones y reducciones",
-            "description": "El efecto de cada operación sobre el libro real, incluidos el pool y la conversión de notas."
-          },
-          {
-            "title": "Compraventas y notas convertibles",
-            "description": "Quién queda con qué porcentaje después de cada paso, encadenando varias operaciones."
-          },
-          {
-            "title": "Cascada de liquidación",
-            "description": "Qué recibe cada socio en una venta, con las preferencias de cada clase.",
-            "href": "/funcionalidades/cascada-de-liquidacion"
-          },
-          {
-            "title": "Borradores de documentos",
-            "description": "La operación simulada sale con sus borradores en Word para el notario o el despacho.",
-            "href": "/funcionalidades/borradores-de-documentos"
-          }
-        ],
-        "summary": "El efecto de una operación antes de firmarla."
       },
       {
         "title": "Mercado secundario",
