@@ -148,6 +148,7 @@ Funcionalidades con coste adicional: mercado secundario y mercado de incentivos,
 - Portal del accionista: https://www.sttok.com/funcionalidades/portal-del-accionista
 - Lectura de escrituras con IA: https://www.sttok.com/funcionalidades/lectura-de-escrituras-con-ia
 - Voto electrónico en juntas: https://www.sttok.com/funcionalidades/voto-electronico-en-juntas
+- Delegación de voto: https://www.sttok.com/funcionalidades/delegacion-de-voto
 - Consejo de administración: https://www.sttok.com/funcionalidades/consejo-de-administracion
 - Libro de actas: https://www.sttok.com/funcionalidades/libro-de-actas
 - Diagrama del grupo de sociedades: https://www.sttok.com/funcionalidades/diagrama-del-grupo
@@ -187,7 +188,7 @@ Funcionalidades con coste adicional: mercado secundario y mercado de incentivos,
 - Vista del consejero: https://www.sttok.com/funcionalidades/vista-del-consejero
 - Registro de cargos con su vigencia: https://www.sttok.com/funcionalidades/cargos-con-vigencia
 - Comisiones y comités del consejo: https://www.sttok.com/funcionalidades/comites-del-consejo
-- Registro de auditores de cuentas: https://www.sttok.com/funcionalidades/auditores
+- Registro del auditor de cuentas: https://www.sttok.com/funcionalidades/auditores
 - Elección de consejeros con compromisos de apoyo: https://www.sttok.com/funcionalidades/eleccion-de-consejeros
 - Portada multisociedad: lo pendiente de todas las sociedades del grupo: https://www.sttok.com/funcionalidades/portada-multisociedad
 - Participadas del grupo por relación, nivel y país: https://www.sttok.com/funcionalidades/participadas

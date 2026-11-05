@@ -2,6 +2,7 @@ import { FC } from "react";
 import Image from "next/image";
 
 import { Testimonial } from "@/types/Testimonial";
+import { clientLogos, getClientName } from "@/config/client-logos";
 
 import SectionHeading from "@/components/shared/section-heading";
 
@@ -54,6 +55,15 @@ const TestimonialsSection: FC<TestimonialsSectionProps> = ({
                     className="rounded-full grayscale"
                   />
                 )}
+                {!testimonial.img &&
+                  testimonial.logo &&
+                  testimonial.logo in clientLogos && (
+                    <Image
+                      src={clientLogos[testimonial.logo as keyof typeof clientLogos]}
+                      alt={getClientName(testimonial.logo)}
+                      className="h-6 w-auto max-w-24 object-contain grayscale dark:invert"
+                    />
+                  )}
                 <div className="text-sm">
                   <span className="font-semibold text-foreground">
                     {testimonial.name}

@@ -93,6 +93,11 @@ const ModulePage: FC<ModulePageProps> = ({ ns, modulos, seleccion }) => {
   const setupLink = t(`${ns}:setup.link`, { returnObjects: true }) as
     | { text?: string; href?: string }
     | string;
+  // Varios enlaces (setup.links) o uno solo (setup.link).
+  const setupLinks = asArray<{ text?: string; href?: string }>(
+    t(`${ns}:setup.links`, { returnObjects: true }),
+  ).concat(typeof setupLink === "object" && setupLink ? [setupLink] : [])
+    .filter((l) => l.text && l.href?.startsWith("/"));
 
   return (
     <>
@@ -139,7 +144,7 @@ const ModulePage: FC<ModulePageProps> = ({ ns, modulos, seleccion }) => {
             />
             <ol className="grid grid-cols-1 gap-px border-y border-border bg-border md:grid-cols-3">
               {setupSteps.map((step, i) => (
-                <li key={step.title} className="bg-background py-8 md:px-8 md:py-10 md:first:pl-0 md:last:pr-0">
+                <li key={step.title} className="bg-background py-8 md:px-8 md:py-10 md:[&:nth-child(3n+1)]:pl-0 md:[&:nth-child(3n)]:pr-0">
                   <span className="font-serif text-sm tabular-nums text-muted-foreground">
                     {String(i + 1).padStart(2, "0")}
                   </span>
@@ -152,16 +157,16 @@ const ModulePage: FC<ModulePageProps> = ({ ns, modulos, seleccion }) => {
                 </li>
               ))}
             </ol>
-            {typeof setupLink === "object" &&
-              setupLink?.text &&
-              setupLink.href?.startsWith("/") && (
-                <p className="mt-8 text-sm">
-                  <Link href={localizedHref(setupLink.href, locale)} className={linkClass}>
-                    {setupLink.text}
+            {setupLinks.length > 0 && (
+              <p className="mt-8 flex flex-wrap gap-x-8 gap-y-3 text-sm">
+                {setupLinks.map((l) => (
+                  <Link key={l.href} href={localizedHref(l.href!, locale)} className={linkClass}>
+                    {l.text}
                     <Arrow />
                   </Link>
-                </p>
-              )}
+                ))}
+              </p>
+            )}
           </div>
         </section>
       )}
