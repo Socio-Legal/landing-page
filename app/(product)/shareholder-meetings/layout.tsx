@@ -1,4 +1,3 @@
-import RelatedPages from "@/components/shared/related-pages";
 import JsonLd from "@/components/shared/json-ld";
 import { SiteBanner } from "@/components/site-banner";
 import { SiteFooter } from "@/components/site-footer";
@@ -41,7 +40,6 @@ export default async function ShareholderMeetingsLayout({
       <SiteHeader />
       <main className="mx-auto flex-1 overflow-hidden">
         {children}
-        <RelatedPages path="/juntas-consejos" />
       </main>
       <SiteFooter />
     </>

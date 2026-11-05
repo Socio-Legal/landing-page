@@ -23,20 +23,6 @@ const RELACIONADAS: Record<string, { href: string; label: string }[]> = {
       label: "Cotitularidad, usufructo y nuda propiedad",
     },
   ],
-  "/juntas-consejos": [
-    {
-      href: "/guias/junta-general-telematica",
-      label: "Junta general telemática",
-    },
-    {
-      href: "/soluciones/secretaria-del-consejo",
-      label: "Secretaría del consejo de administración",
-    },
-    {
-      href: "/guias/plantillas-societarias",
-      label: "Convocatorias, actas y certificados",
-    },
-  ],
   "/simulador": [
     {
       href: "/guias/fiscalidad-phantom-shares-stock-options",
