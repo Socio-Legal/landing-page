@@ -113,11 +113,11 @@
       },
       {
         "situation": "Hay que sanear pérdidas con una operación acordeón",
-        "action": "Encadena la reducción y la ampliación y muestra quién queda en la sociedad y con qué porcentaje."
+        "action": "Simula primero la reducción de capital y, acto seguido, la ampliación, y muestra quién queda en la sociedad y con qué porcentaje."
       },
       {
         "situation": "Una rama familiar quiere comprar a otra",
-        "action": "Simula la compraventa y muestra la posición de cada socio después."
+        "action": "Simula la compraventa y enseña las participaciones o acciones exactas que se transmiten, con su numeración y su origen, y la posición de cada socio después."
       },
       {
         "situation": "Se convierte una nota convertible",
