@@ -112,11 +112,11 @@
       },
       {
         "situation": "Losses have to be cleared with an accordion transaction",
-        "action": "It chains the reduction and the increase and shows who remains in the company and with what percentage."
+        "action": "It simulates the capital reduction first and, straight after, the capital increase, and shows who remains in the company and with what percentage."
       },
       {
         "situation": "One family branch wants to buy from another",
-        "action": "The sale is simulated and each shareholder's position afterwards is shown."
+        "action": "It simulates the sale and shows the exact shares being transferred, with their numbering and their origin, and each shareholder's position afterwards."
       },
       {
         "situation": "A convertible note converts",
