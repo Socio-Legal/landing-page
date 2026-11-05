@@ -23,10 +23,9 @@ const SELECCION = {
     "Cascada de liquidación"
   ],
   "secundario": [
-    "Ofertas de venta",
-    "Ofertas de compra",
-    "Libro de ofertas",
-    "Registro en el libro"
+    "Ofertas de compra y de venta",
+    "Listado de ofertas",
+    "Validación, KYC y contratos"
   ]
 };
 

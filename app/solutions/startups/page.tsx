@@ -28,10 +28,9 @@ const SELECCION = {
     "Borradores de documentos"
   ],
   "secundario": [
-    "Ofertas de venta",
-    "Ofertas de compra",
-    "Participantes autorizados",
-    "Registro en el libro"
+    "Lo activa la sociedad",
+    "Ofertas de compra y de venta",
+    "Validación, KYC y contratos"
   ],
   "juntas": [
     "Convocatoria",

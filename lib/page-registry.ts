@@ -142,8 +142,8 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageMercadoSecundario,
     meta: {
       en: {
-        title: "Secondary market for shares between shareholders",
-        description: "Share sales between shareholders and purchase offers to several shareholders at once, recorded in the shareholder register with their documents. Add-on module.",
+        title: "Secondary market for shares and incentive units",
+        description: "A platform for buy and sell offers on shares or incentive plan units, switched on by the company. KYC and contracts signed on the platform. Add-on module.",
       keywords: "secondary market, share transfers, tender offer, liquidity",
       },
     },
