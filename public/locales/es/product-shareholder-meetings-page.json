@@ -23,6 +23,20 @@
     "description": "Lee testimonios de clientes satisfechos que usan Sttok para Juntas o Consejos.",
     "items": [
       {
+        "name": "Asesoría Jurídica",
+        "role": "MyInvestor",
+        "logo": "MyInvestor",
+        "description": "Sttok nos ha permitido digitalizar y automatizar toda la gestión societaria, desde la celebración de consejos de administración hasta el mantenimiento del libro registro de socios, garantizando la máxima seguridad jurídica en todos nuestros procesos corporativos.",
+        "stars": 5
+      },
+      {
+        "name": "Grupo Caballero",
+        "role": "Empresa familiar fundada en 1830",
+        "logo": "Caballero",
+        "description": "Sttok ha sido una herramienta clave para la gestión de nuestro Captable y Juntas de Socios. Nos ha permitido automatizar tareas manuales y ahorrar tiempo en la generación de documentos y firmas electrónicas.",
+        "stars": 5
+      },
+      {
         "name": "Johan Longo",
         "role": "Contract Manager | PLD Space",
         "img": "/logo-pldspace-mini.png",
@@ -34,20 +48,6 @@
         "role": "Head of Legal & Compliance | Factorial",
         "img": "/logo-factorial-mini.png",
         "description": "Sttok nos permite tener toda la información de socios y planes de incentivos centralizada y actualizada. Nos facilita la gestión de juntas y la relación con los inversores.",
-        "stars": 5
-      },
-      {
-        "name": "Oriol Miralbell",
-        "role": "CEO | Legalpigeon",
-        "img": "/logo-legalpigeon-mini.png",
-        "description": "Sttok te permite calcular valoraciones, rondas de inversión y simulaciones fácilmente. La interfaz de la aplicación es sencilla e intuitiva, lo que  te permite tomar decisiones de manera más ágil y eficaz.",
-        "stars": 4
-      },
-      {
-        "name": "Nacho González",
-        "role": "CEO y Fundador | Banktrack",
-        "img": "/logo-banktrack-mini.png",
-        "description": "Ahora con Sttok puedes realizar simulaciones de ampliaciones o notas convertibles. Además también gestionamos las phantoms de nuestro equipo fácilmente. Finalmente como inversor tengo organizadas mis participadas y conozco claramente qué es lo que tengo.",
         "stars": 5
       }
     ]
@@ -84,26 +84,44 @@
   },
   "setup": {
     "eyebrow": "Cómo funciona",
-    "title": "Una junta en Sttok, de la convocatoria al voto",
-    "lede": "El consejo de administración se convoca igual, con su orden del día, su documentación y una cita de calendario para cada consejero.",
+    "title": "Una junta en Sttok, de la convocatoria al acta firmada",
+    "lede": "El consejo de administración sigue el mismo recorrido, con su orden del día, su documentación y una cita de calendario para cada consejero.",
     "steps": [
       {
         "title": "Preparar y revisar la convocatoria",
-        "text": "Se prepara en digital el orden del día, los asuntos a votar con la mayoría de cada uno y la documentación. Antes de enviarla se revisa todo en una vista previa."
+        "text": "Se prepara en digital el orden del día, los asuntos a votar con la mayoría de cada uno y la documentación. Antes de enviarla se revisa todo y se puede mandar un correo de prueba."
       },
       {
         "title": "Envío certificado",
-        "text": "Sttok envía la convocatoria a cada socio, certifica el envío y muestra quién la ha recibido y quién no, para recordárselo a tiempo."
+        "text": "Sttok envía la convocatoria a cada socio y a sus representantes, certifica el envío y muestra quién la ha recibido y quién no, para mandar recordatorios a tiempo."
       },
       {
-        "title": "Delegar o votar desde el portal",
-        "text": "El socio ve los asuntos y la documentación, elige en quién delega, indica en qué sentido vota cada punto y firma en la pantalla. Con decenas, cientos o miles de socios, cada delegación cuenta al momento para el quórum."
+        "title": "Delegaciones y asistencia",
+        "text": "Desde el envío, cada socio delega desde su portal: elige representante, indica el sentido del voto y firma en la pantalla. Las delegaciones se registran solas y cuentan al momento para el quórum. El día de la junta se marca quién asiste."
+      },
+      {
+        "title": "Votación",
+        "text": "Durante la junta, el secretario abre y cierra la votación de cada punto. El socio vota desde su portal, también en el móvil, o el secretario registra el voto de quien está en la sala."
+      },
+      {
+        "title": "Acta y certificado",
+        "text": "Al terminar, Sttok genera el acta y la certificación de acuerdos con la asistencia y el resultado de cada votación. Se revisan y se mandan a firmar con DocuSign."
+      },
+      {
+        "title": "Todo queda archivado",
+        "text": "El acta y la certificación firmadas quedan en los documentos de la junta, y el registro guarda cada envío, delegación, voto y firma con su fecha y hora."
       }
     ],
-    "link": {
-      "text": "Cómo funcionan la delegación y el voto",
-      "href": "/funcionalidades/voto-electronico-en-juntas"
-    }
+    "links": [
+      {
+        "text": "Cómo funciona la delegación de voto",
+        "href": "/funcionalidades/delegacion-de-voto"
+      },
+      {
+        "text": "Cómo funciona la votación",
+        "href": "/funcionalidades/voto-electronico-en-juntas"
+      }
+    ]
   },
   "includes": {
     "eyebrow": "Qué incluye",
@@ -128,7 +146,7 @@
       {
         "situation": "Muchos socios no pueden asistir",
         "action": "Recoge delegaciones firmadas y votos anticipados, y calcula el quórum con lo ya comprometido.",
-        "href": "/funcionalidades/voto-electronico-en-juntas"
+        "href": "/funcionalidades/delegacion-de-voto"
       },
       {
         "situation": "La junta se celebra a distancia",
