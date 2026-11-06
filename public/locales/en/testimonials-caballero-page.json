@@ -46,7 +46,8 @@
       {
         "title": "About Grupo Caballero",
         "texts": [
-          "Grupo Caballero is a family business founded in 1830 in El Puerto de Santa María (Cádiz, Spain)."
+          "Grupo Caballero is a family business founded in 1830 in El Puerto de Santa María (Cádiz). It makes and distributes spirits and wines, with brands such as Ponche Caballero.",
+          "Almost two centuries later it is still a family business: many shareholders, several generations and meetings that must be called and documented properly."
         ]
       },
       {
@@ -58,6 +59,37 @@
           "4. Document generation and e-signature.",
           "5. Management of shareholders' meetings."
         ]
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/clientes/caballero-1932.jpg",
+        "alt": "The Caballero cellars in 1932"
+      },
+      {
+        "src": "/clientes/caballero.jpg",
+        "alt": "The Caballero staff in the cellar"
+      },
+      {
+        "src": "/clientes/caballero-botellas.jpg",
+        "alt": "Ponche Caballero bottles over the years"
+      }
+    ],
+    "uses": [
+      {
+        "title": "Its shareholder register, up to date",
+        "text": "Each shareholder with their holding and history, without spreadsheets.",
+        "image": "/animaciones/en/accionistas-light-poster.webp"
+      },
+      {
+        "title": "Shareholder meetings, digital",
+        "text": "Notice, attendance, votes and minutes, without paper.",
+        "image": "/animaciones/en/voto-electronico-en-juntas-light-poster.webp"
+      },
+      {
+        "title": "Documents and signatures",
+        "text": "Minutes and documents are generated and signed in Sttok.",
+        "image": "/animaciones/firma-electronica-light-poster.webp"
       }
     ]
   }

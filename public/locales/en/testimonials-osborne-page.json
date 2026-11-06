@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "title": "Osborne runs hundreds of family shareholders and four generations of shareholders with Sttok",
+    "description": "Osborne uses Sttok for shareholder register, meetings and documents.",
+    "keywords": "Osborne, Sttok, Sttok customers, shareholder register"
+  },
+  "summary": {
+    "client": "Osborne",
+    "title": "Osborne runs hundreds of family shareholders and four generations of shareholders with Sttok",
+    "description": "",
+    "button": {
+      "text": "Visit Osborne",
+      "link": "https://www.osborne.es/"
+    },
+    "features": [
+      {
+        "key": "Customer",
+        "value": "Osborne"
+      },
+      {
+        "key": "Sector",
+        "value": "Food and drink · founded in 1772"
+      },
+      {
+        "key": "Features",
+        "value": "Shareholder register, meetings and documents"
+      }
+    ]
+  },
+  "content": {
+    "title": "",
+    "sections": [
+      {
+        "title": "",
+        "texts": [
+          "Osborne is a family group founded in 1772 in El Puerto de Santa María. From its cellars it takes wines, brandies and Spanish gastronomy around the world, with brands such as Cinco Jotas and Montecillo.",
+          "Several hundred family shareholders and four generations of shareholders at once: every branch, every holding and every meeting must be in perfect order."
+        ]
+      }
+    ],
+    "image": {
+      "light": "/clientes/osborne.jpg",
+      "dark": "/clientes/osborne.jpg"
+    },
+    "gallery": [
+      {
+        "src": "/clientes/osborne-vino.jpg",
+        "alt": "A glass of Osborne wine"
+      },
+      {
+        "src": "/clientes/osborne-mesa.jpg",
+        "alt": "Ham and wine on the table"
+      }
+    ],
+    "uses": [
+      {
+        "title": "Hundreds of family shareholders",
+        "text": "Each shareholder with their holding and history, in the shareholder register.",
+        "image": "/animaciones/en/accionistas-light-poster.webp"
+      },
+      {
+        "title": "Four generations, by branch",
+        "text": "The capital of each family branch at a glance.",
+        "image": "/animaciones/en/panel-light-poster.webp"
+      },
+      {
+        "title": "Meetings with the whole family",
+        "text": "Notice, proxies and votes, also for those who cannot attend.",
+        "image": "/animaciones/en/voto-electronico-en-juntas-light-poster.webp"
+      }
+    ]
+  }
+}

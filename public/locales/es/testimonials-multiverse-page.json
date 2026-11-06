@@ -1,0 +1,63 @@
+{
+  "metadata": {
+    "title": "Multiverse Computing, pionera en inteligencia artificial y computación cuántica, con su libro de socios en Sttok",
+    "description": "Multiverse Computing usa Sttok para libro de socios, simulador de operaciones y documentación.",
+    "keywords": "Multiverse Computing, Sttok, clientes de Sttok, libro de socios"
+  },
+  "summary": {
+    "client": "Multiverse Computing",
+    "title": "Multiverse Computing, pionera en inteligencia artificial y computación cuántica, con su libro de socios en Sttok",
+    "description": "",
+    "button": {
+      "text": "Ir al sitio de Multiverse Computing",
+      "link": "https://multiversecomputing.com/"
+    },
+    "features": [
+      {
+        "key": "Cliente",
+        "value": "Multiverse Computing"
+      },
+      {
+        "key": "Sector",
+        "value": "Inteligencia artificial y computación cuántica"
+      },
+      {
+        "key": "Funcionalidades",
+        "value": "Libro de socios, simulador de operaciones y documentación"
+      }
+    ]
+  },
+  "content": {
+    "title": "",
+    "sections": [
+      {
+        "title": "",
+        "texts": [
+          "Multiverse Computing es una empresa de San Sebastián especializada en inteligencia artificial y computación cuántica, líder en la compresión de modelos de IA. CB Insights la incluyó en 2025 entre las 100 empresas de IA más prometedoras del mundo.",
+          "Una empresa que crece a este ritmo, con rondas de inversión internacionales, necesita un libro de socios impecable."
+        ]
+      }
+    ],
+    "image": {
+      "light": "/clientes/multiverse.jpg",
+      "dark": "/clientes/multiverse.jpg"
+    },
+    "uses": [
+      {
+        "title": "Un libro de socios impecable",
+        "text": "Cada inversor con sus acciones, su clase y su historia.",
+        "image": "/animaciones/accionistas-light-poster.webp"
+      },
+      {
+        "title": "Las rondas, antes de firmarlas",
+        "text": "El efecto de cada ampliación en el cap table, simulado antes de cerrarla.",
+        "image": "/animaciones/simulador-light-poster.webp"
+      },
+      {
+        "title": "Escrituras leídas con IA",
+        "text": "Cada operación se registra a partir de su escritura.",
+        "image": "/animaciones/lectura-de-escrituras-con-ia-light-poster.webp"
+      }
+    ]
+  }
+}

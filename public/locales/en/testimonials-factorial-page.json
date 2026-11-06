@@ -46,7 +46,8 @@
       {
         "title": "About Factorial",
         "texts": [
-          "Factorial is a human resources management software company, aimed mainly at small and medium-sized businesses."
+          "Factorial is the HR software of more than 17,000 companies, mostly SMEs. It is built by more than 1,500 people, with support in seven languages.",
+          "A team growing this fast needs an incentive plan that grows with it: every new hire with their letter, their signature and their units up to date."
         ]
       },
       {
@@ -63,7 +64,8 @@
     "uses": [
       {
         "title": "Letters come straight from the plan",
-        "text": "Each new hire gets their invitation letter and signs it, with no Word files or emails."
+        "text": "Each new hire gets their invitation letter and signs it, with no Word files or emails.",
+        "image": "/animaciones/firma-electronica-light-poster.webp"
       },
       {
         "title": "Each employee sees their own",
@@ -74,6 +76,16 @@
         "title": "The shareholder register, in the same place",
         "text": "Shareholders and incentive plan, always reconciled.",
         "image": "/animaciones/en/accionistas-light-poster.webp"
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/clientes/factorial-equipo.jpg",
+        "alt": "The Factorial team"
+      },
+      {
+        "src": "/clientes/factorial-evento.jpg",
+        "alt": "A Factorial event"
       }
     ]
   }

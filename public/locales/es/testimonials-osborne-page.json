@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "title": "Osborne lleva en Sttok a cientos de accionistas familiares y cuatro generaciones de socios",
+    "description": "Osborne usa Sttok para libro de socios, juntas y documentación.",
+    "keywords": "Osborne, Sttok, clientes de Sttok, libro de socios"
+  },
+  "summary": {
+    "client": "Osborne",
+    "title": "Osborne lleva en Sttok a cientos de accionistas familiares y cuatro generaciones de socios",
+    "description": "",
+    "button": {
+      "text": "Ir al sitio de Osborne",
+      "link": "https://www.osborne.es/"
+    },
+    "features": [
+      {
+        "key": "Cliente",
+        "value": "Osborne"
+      },
+      {
+        "key": "Sector",
+        "value": "Alimentación y bebidas · fundada en 1772"
+      },
+      {
+        "key": "Funcionalidades",
+        "value": "Libro de socios, juntas y documentación"
+      }
+    ]
+  },
+  "content": {
+    "title": "",
+    "sections": [
+      {
+        "title": "",
+        "texts": [
+          "Osborne es un grupo familiar fundado en 1772 en El Puerto de Santa María. Desde sus bodegas lleva por el mundo vinos, brandis y la gastronomía española, con marcas como Cinco Jotas o Montecillo.",
+          "Varios cientos de accionistas familiares y cuatro generaciones de socios a la vez: cada rama, cada participación y cada junta tienen que estar perfectamente ordenadas."
+        ]
+      }
+    ],
+    "image": {
+      "light": "/clientes/osborne.jpg",
+      "dark": "/clientes/osborne.jpg"
+    },
+    "gallery": [
+      {
+        "src": "/clientes/osborne-vino.jpg",
+        "alt": "Una copa de vino de Osborne"
+      },
+      {
+        "src": "/clientes/osborne-mesa.jpg",
+        "alt": "Jamón y vino en la mesa"
+      }
+    ],
+    "uses": [
+      {
+        "title": "Cientos de accionistas familiares",
+        "text": "Cada accionista con su participación y su historia, en el libro de socios.",
+        "image": "/animaciones/accionistas-light-poster.webp"
+      },
+      {
+        "title": "Cuatro generaciones, por ramas",
+        "text": "El capital de cada rama familiar, de un vistazo.",
+        "image": "/animaciones/panel-light-poster.webp"
+      },
+      {
+        "title": "Juntas con toda la familia",
+        "text": "Convocatoria, delegaciones y votaciones, también para quien no puede asistir.",
+        "image": "/animaciones/voto-electronico-en-juntas-light-poster.webp"
+      }
+    ]
+  }
+}

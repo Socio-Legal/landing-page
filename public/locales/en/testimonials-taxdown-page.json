@@ -42,8 +42,8 @@
       {
         "title": "About Taxdown",
         "texts": [
-          "Taxdown is a software company that helps people file their income tax return easily.",
-          "TaxDown uses Sttok to manage its incentive plans and its relationship with shareholders: general meetings and the shareholder register."
+          "TaxDown helps people file their income tax return easily, from their phone. In Spain it has already filed more than 1.3 million returns.",
+          "To attract and retain talent, its team has an incentive plan that must be kept up to date, together with the shareholder register."
         ]
       },
       {
@@ -55,6 +55,23 @@
           "4. Document generation and e-signature.",
           "5. Management of incentive plans."
         ]
+      }
+    ],
+    "uses": [
+      {
+        "title": "An efficient incentive plan",
+        "text": "Units, vesting and value for each beneficiary, without spreadsheets.",
+        "image": "/animaciones/en/liquidez-planes-de-incentivos-light-poster.webp"
+      },
+      {
+        "title": "Each beneficiary, in their portal",
+        "text": "They see their units, their schedule and their documents.",
+        "image": "/animaciones/en/portal-del-beneficiario-light-poster.webp"
+      },
+      {
+        "title": "The shareholder register, up to date",
+        "text": "Shareholders and incentives in the same place.",
+        "image": "/animaciones/en/accionistas-light-poster.webp"
       }
     ]
   }

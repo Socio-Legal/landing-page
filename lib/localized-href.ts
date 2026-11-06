@@ -34,6 +34,11 @@ export const ROUTE_MAP: Record<string, string> = {
   "/testimonios/Caballero": "/en/testimonials/Caballero",
   "/testimonios/Taxdown": "/en/testimonials/Taxdown",
   "/testimonios/MyInvestor": "/en/testimonials/MyInvestor",
+  "/testimonios/Axa": "/en/testimonials/Axa",
+  "/testimonios/Osborne": "/en/testimonials/Osborne",
+  "/testimonios/Fanalca": "/en/testimonials/Fanalca",
+  "/testimonios/Multiverse": "/en/testimonials/Multiverse",
+  "/testimonios/Sade": "/en/testimonials/Sade",
   // Sección de soluciones: content/soluciones ↔ content/en/soluciones.
   "/soluciones": "/en/solutions",
   "/soluciones/empresa-familiar": "/en/solutions/family-business",

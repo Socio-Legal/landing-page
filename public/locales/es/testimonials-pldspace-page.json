@@ -46,7 +46,8 @@
       {
         "title": "Un poco sobre PLD Space",
         "texts": [
-          "PLD Space es una empresa española que desarrolla cohetes reutilizables para poner satélites en órbita. Tiene su sede en Elche (Alicante)."
+          "PLD Space es la empresa española que desarrolla Miura 5, un cohete reutilizable para poner pequeños satélites en órbita. Tiene su sede en Elche (Alicante) y fabrica sus lanzadores en sus propias instalaciones.",
+          "Detrás de cada ronda hay inversores agrupados en varios vehículos, y cada uno tiene que estar al día de sus acciones, sus juntas y su documentación."
         ]
       },
       {
@@ -58,6 +59,37 @@
           "4. Por la generación de documentos y la firma electrónica.",
           "5. Por la gestión de Planes de Incentivos."
         ]
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/clientes/pld-cohete-orbita.jpg",
+        "alt": "Un cohete de PLD Space en órbita sobre la Tierra"
+      },
+      {
+        "src": "/clientes/pld-equipo.jpg",
+        "alt": "El equipo de PLD Space"
+      },
+      {
+        "src": "/clientes/pld-space-noche.jpg",
+        "alt": "Banco de pruebas de PLD Space de noche"
+      }
+    ],
+    "uses": [
+      {
+        "title": "El portal del inversor",
+        "text": "Cada inversor entra y ve su posición, sus documentos y sus juntas.",
+        "image": "/animaciones/portal-del-accionista-light-poster.webp"
+      },
+      {
+        "title": "Juntas con varios vehículos",
+        "text": "Convocatorias, delegaciones y votaciones centralizadas, sin tareas manuales.",
+        "image": "/animaciones/voto-electronico-en-juntas-light-poster.webp"
+      },
+      {
+        "title": "El plan de incentivos del equipo",
+        "text": "Cada persona ve sus unidades y su valor en su portal.",
+        "image": "/animaciones/liquidez-planes-de-incentivos-light-poster.webp"
       }
     ]
   }

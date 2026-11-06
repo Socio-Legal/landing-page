@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "title": "AXA runs its shareholders and the group certificates in Spain with Sttok",
+    "description": "AXA uses Sttok for shareholder register, certificates, group companies and documents.",
+    "keywords": "AXA, Sttok, Sttok customers, shareholder register"
+  },
+  "summary": {
+    "client": "AXA",
+    "title": "AXA runs its shareholders and the group certificates in Spain with Sttok",
+    "description": "",
+    "button": {
+      "text": "Visit AXA",
+      "link": "https://www.axa.es/"
+    },
+    "features": [
+      {
+        "key": "Customer",
+        "value": "AXA"
+      },
+      {
+        "key": "Sector",
+        "value": "Insurance"
+      },
+      {
+        "key": "Features",
+        "value": "Shareholder register, certificates, group companies and documents"
+      }
+    ]
+  },
+  "content": {
+    "title": "",
+    "sections": [
+      {
+        "title": "",
+        "texts": [
+          "AXA is one of the largest insurance groups in the world. In Spain it offers home, health, life, car and business insurance through its network of offices and agents.",
+          "A group of its size has shareholders and several companies in Spain that need their certificates up to date and error-free."
+        ]
+      }
+    ],
+    "image": {
+      "light": "/clientes/axa.jpg",
+      "dark": "/clientes/axa.jpg"
+    },
+    "gallery": [
+      {
+        "src": "/clientes/axa-letrero.jpg",
+        "alt": "The AXA logo"
+      }
+    ],
+    "uses": [
+      {
+        "title": "Its shareholders, in one place",
+        "text": "The shareholder register with each shareholder's position.",
+        "image": "/animaciones/en/accionistas-light-poster.webp"
+      },
+      {
+        "title": "Certificates on demand",
+        "text": "Certificates for shareholders and group companies, generated from the register.",
+        "image": "/animaciones/certificados-de-titularidad-y-valor-light-poster.webp"
+      },
+      {
+        "title": "The group companies",
+        "text": "Each group company in Spain, with its register and its documents.",
+        "image": "/animaciones/en/sociedades-light-poster.webp"
+      }
+    ]
+  }
+}

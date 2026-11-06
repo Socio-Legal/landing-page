@@ -13,6 +13,11 @@ import * as PldSpace from "@/config/testimonials/clients/PldSpace";
 import * as Taxdown from "@/config/testimonials/clients/Taxdown";
 import * as Caballero from "@/config/testimonials/clients/Caballero";
 import * as MyInvestor from "@/config/testimonials/clients/MyInvestor";
+import * as Axa from "@/config/testimonials/clients/Axa";
+import * as Osborne from "@/config/testimonials/clients/Osborne";
+import * as Fanalca from "@/config/testimonials/clients/Fanalca";
+import * as Multiverse from "@/config/testimonials/clients/Multiverse";
+import * as Sade from "@/config/testimonials/clients/Sade";
 
 import CallToActionSection from "@/components/landing/cta-section";
 import { clientLogos } from "@/config/client-logos";
@@ -53,6 +58,8 @@ type TestimonialContentProps = {
   }[];
   /** Cómo usan Sttok, con su pantalla si la hay. Opcional. */
   uses?: { title: string; text: string; image?: string }[];
+  /** Más fotos de su negocio, bajo «Qué hacen». Opcional. */
+  gallery?: { src: string; alt: string }[];
 };
 
 const testimonialPages = {
@@ -61,6 +68,11 @@ const testimonialPages = {
   Taxdown: Taxdown,
   Caballero: Caballero,
   MyInvestor: MyInvestor,
+  Axa: Axa,
+  Osborne: Osborne,
+  Fanalca: Fanalca,
+  Multiverse: Multiverse,
+  Sade: Sade,
 };
 
 /** Clave del cliente en clientLogos (TaxDown y PLD Space se escriben distinto). */
@@ -70,6 +82,11 @@ const LOGO: Record<string, keyof typeof clientLogos> = {
   Taxdown: "Taxdown",
   Caballero: "Caballero",
   MyInvestor: "MyInvestor",
+  Axa: "Axa",
+  Osborne: "Osborne",
+  Fanalca: "Fanalca",
+  Multiverse: "Multiverse",
+  Sade: "Sade",
 };
 
 const getOtherTestimonials = (client: string, n = 3): string[] =>
@@ -113,6 +130,7 @@ export const TestimonialCase: FC<TestimonialCaseProps> = ({ client }) => {
   const [about, why] = content.sections ?? [];
   const meta = (summary.features ?? []).filter((f) => f.value && f.value !== summary.client);
   const uses = Array.isArray(content.uses) ? content.uses : [];
+  const gallery = Array.isArray(content.gallery) ? content.gallery : [];
 
   return (
     <>
@@ -191,6 +209,19 @@ export const TestimonialCase: FC<TestimonialCaseProps> = ({ client }) => {
                 </a>
               )}
             </div>
+          </div>
+        </section>
+      )}
+
+      {/* Más fotos de su negocio */}
+      {gallery.length > 0 && (
+        <section className="container mx-auto px-4 pb-14 md:pb-16">
+          <div className={gallery.length > 2 ? "grid gap-4 md:grid-cols-3" : "grid gap-4 md:grid-cols-2"}>
+            {gallery.map((g) => (
+              <div key={g.src} className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+                <Image src={g.src} alt={g.alt} fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
+              </div>
+            ))}
           </div>
         </section>
       )}

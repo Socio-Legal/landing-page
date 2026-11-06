@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "title": "Sade, almost a century of cinemas and theatres in San Sebastián, with its companies in Sttok",
+    "description": "Sade uses Sttok for shareholder register, companies, meetings and documents.",
+    "keywords": "Sade, Sttok, Sttok customers, shareholder register"
+  },
+  "summary": {
+    "client": "Sade",
+    "title": "Sade, almost a century of cinemas and theatres in San Sebastián, with its companies in Sttok",
+    "description": "",
+    "button": {
+      "text": "",
+      "link": ""
+    },
+    "features": [
+      {
+        "key": "Customer",
+        "value": "Sade"
+      },
+      {
+        "key": "Sector",
+        "value": "Leisure, culture and hotels"
+      },
+      {
+        "key": "Features",
+        "value": "Shareholder register, companies, meetings and documents"
+      }
+    ]
+  },
+  "content": {
+    "title": "",
+    "sections": [
+      {
+        "title": "",
+        "texts": [
+          "Sade has been part of the cultural life of San Sebastián for almost a century, with historic cinemas and theatres such as the Príncipe and the Trueba. Today it also runs hotels.",
+          "A company with so much history has many shareholders and several companies to keep up to date."
+        ]
+      }
+    ],
+    "image": {
+      "light": "/clientes/sade.jpg",
+      "dark": "/clientes/sade.jpg"
+    },
+    "gallery": [
+      {
+        "src": "/clientes/sade-teatro.jpg",
+        "alt": "The Teatro del Príncipe in San Sebastián"
+      },
+      {
+        "src": "/clientes/sade-bellas-artes.jpg",
+        "alt": "The Bellas Artes building in an old postcard"
+      }
+    ],
+    "uses": [
+      {
+        "title": "Its shareholders, up to date",
+        "text": "The shareholder register with each position.",
+        "image": "/animaciones/en/accionistas-light-poster.webp"
+      },
+      {
+        "title": "Each company in its place",
+        "text": "Cinemas, theatres and hotels, each with its company and documents.",
+        "image": "/animaciones/en/sociedades-light-poster.webp"
+      },
+      {
+        "title": "Digital meetings",
+        "text": "Notice, votes and minutes without paper.",
+        "image": "/animaciones/en/voto-electronico-en-juntas-light-poster.webp"
+      }
+    ]
+  }
+}

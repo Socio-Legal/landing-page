@@ -41,7 +41,8 @@
       {
         "title": "Un poco sobre Grupo Caballero",
         "texts": [
-          "Grupo Caballero es una empresa familiar fundada en 1830 en El Puerto de Santa María (Cádiz)."
+          "Grupo Caballero es una empresa familiar fundada en 1830 en El Puerto de Santa María (Cádiz). Elabora y distribuye bebidas espirituosas y vinos, con marcas como Ponche Caballero.",
+          "Casi dos siglos después sigue siendo una empresa de familia: muchos socios, varias generaciones y juntas que hay que convocar y documentar bien."
         ]
       },
       {
@@ -53,6 +54,37 @@
           "4. Por la generación de documentos y la firma electrónica.",
           "5. Por la gestión de Juntas de Socios."
         ]
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/clientes/caballero-1932.jpg",
+        "alt": "Las bodegas de Caballero en 1932"
+      },
+      {
+        "src": "/clientes/caballero.jpg",
+        "alt": "La plantilla de Caballero en la bodega"
+      },
+      {
+        "src": "/clientes/caballero-botellas.jpg",
+        "alt": "Botellas de Ponche Caballero a lo largo de los años"
+      }
+    ],
+    "uses": [
+      {
+        "title": "Su libro de socios, al día",
+        "text": "Cada socio con su participación y su historia, sin hojas de cálculo.",
+        "image": "/animaciones/accionistas-light-poster.webp"
+      },
+      {
+        "title": "Juntas de socios en digital",
+        "text": "Convocatoria, asistencia, votaciones y acta, sin papel.",
+        "image": "/animaciones/voto-electronico-en-juntas-light-poster.webp"
+      },
+      {
+        "title": "Documentos y firmas",
+        "text": "Las actas y los documentos se generan y se firman en Sttok.",
+        "image": "/animaciones/firma-electronica-light-poster.webp"
       }
     ]
   }
