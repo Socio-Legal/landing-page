@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Multiverse Computing, pionera en inteligencia artificial y computación cuántica, con su libro de socios en Sttok",
-    "description": "Multiverse Computing usa Sttok para libro de socios, simulador de operaciones y documentación.",
+    "description": "Multiverse Computing usa Sttok para libro de socios, rondas de inversión y planes de incentivos.",
     "keywords": "Multiverse Computing, Sttok, clientes de Sttok, libro de socios"
   },
   "summary": {
@@ -23,7 +23,7 @@
       },
       {
         "key": "Funcionalidades",
-        "value": "Libro de socios, simulador de operaciones y documentación"
+        "value": "Libro de socios, rondas de inversión y planes de incentivos"
       }
     ]
   },
@@ -44,19 +44,19 @@
     },
     "uses": [
       {
-        "title": "Un libro de socios impecable",
+        "title": "Sus socios, al día",
         "text": "Cada inversor con sus acciones, su clase y su historia.",
         "image": "/animaciones/accionistas-light-poster.webp"
       },
       {
-        "title": "Las rondas, antes de firmarlas",
-        "text": "El efecto de cada ampliación en el cap table, simulado antes de cerrarla.",
+        "title": "Las rondas de inversión",
+        "text": "Cada ronda simulada antes de cerrarla y registrada después en el libro.",
         "image": "/animaciones/simulador-light-poster.webp"
       },
       {
-        "title": "Escrituras leídas con IA",
-        "text": "Cada operación se registra a partir de su escritura.",
-        "image": "/animaciones/lectura-de-escrituras-con-ia-light-poster.webp"
+        "title": "El plan de incentivos",
+        "text": "Cada persona del equipo ve sus unidades, su calendario y su valor.",
+        "image": "/animaciones/liquidez-planes-de-incentivos-light-poster.webp"
       }
     ]
   }
