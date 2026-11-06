@@ -1,106 +1,171 @@
 {
-  "readCase": "Leer el caso",
   "metadata": {
     "title": "Clientes de Sttok: casos de éxito y testimonios",
     "description": "Cómo llevan el libro de socios, las juntas y los planes de incentivos Factorial, PLD Space, Grupo Caballero, TaxDown y MyInvestor, y lo que dicen los clientes de Sttok.",
     "keywords": "clientes de Sttok, casos de éxito, testimonios, libro de socios, planes de incentivos, juntas"
   },
+  "readCase": "Leer el caso",
   "hero": {
-    "slogan": "Clientes",
-    "title": "Clientes de Sttok: casos de éxito y testimonios",
-    "description": "Más de 250 clientes gestionan más de 500 sociedades con Sttok, una media de dos por cliente que refleja el perfil de grupo. Estos son sus casos: cómo llevan el libro de socios, las juntas y los planes de incentivos, y qué dicen de la plataforma.",
-    "button": {
-      "text": "Solicitar demo",
-      "link": "https://calendly.com/sttok/30min"
-    }
+    "eyebrow": "Clientes",
+    "title": "Empresas que ya llevan sus socios, juntas y consejos en digital",
+    "description": "Empresas, grupos empresariales, entidades financieras y scale-ups. Más de 250 clientes ya trabajan así. Estas son algunas de sus historias."
   },
-  "features": {
-    "title": "Clientes",
-    "description": "Empresas que llevan su registro en Sttok",
+  "storyLink": "Lee su historia",
+  "stories": [
+    {
+      "client": "Factorial",
+      "logo": "Factorial",
+      "image": "/clientes/factorial.jpg",
+      "text": "Un plan de incentivos para cientos de empleados, sin hojas de cálculo",
+      "href": "/testimonios/Factorial",
+      "size": "big"
+    },
+    {
+      "client": "PLD Space",
+      "logo": "PldSpace",
+      "image": "/clientes/pld-space.jpg",
+      "text": "Las juntas de sus vehículos de inversores, sin tareas manuales",
+      "href": "/testimonios/PldSpace"
+    },
+    {
+      "client": "Osborne",
+      "logo": "Osborne",
+      "image": "/clientes/osborne.jpg",
+      "text": "Cientos de accionistas familiares y cuatro generaciones de socios a la vez",
+      "size": "big"
+    },
+    {
+      "client": "AXA",
+      "logo": "Axa",
+      "image": "/clientes/axa.jpg",
+      "text": "Sus accionistas y los certificados del grupo en España"
+    },
+    {
+      "client": "Grupo Caballero",
+      "logo": "Caballero",
+      "image": "/clientes/caballero.jpg",
+      "text": "Una empresa familiar desde 1830, con sus juntas en digital",
+      "href": "/testimonios/Caballero"
+    },
+    {
+      "client": "MyInvestor",
+      "logo": "MyInvestor",
+      "image": "/clientes/myinvestor.jpg",
+      "text": "Consejos, juntas y libro de socios de un banco digital",
+      "href": "/testimonios/MyInvestor"
+    },
+    {
+      "client": "Sade",
+      "logo": "Sade",
+      "image": "/clientes/sade.jpg",
+      "text": "Cines, teatros y hoteles con un siglo de historia"
+    },
+    {
+      "client": "Multiverse Computing",
+      "logo": "Multiverse",
+      "image": "/clientes/multiverse.jpg",
+      "text": "Software cuántico e inteligencia artificial, con sus socios al día"
+    },
+    {
+      "client": "TaxDown",
+      "logo": "Taxdown",
+      "text": "Su plan de incentivos y su libro de socios, en un sitio",
+      "href": "/testimonios/Taxdown"
+    }
+  ],
+  "segments": {
+    "eyebrow": "Empresas como la tuya",
+    "title": "Si un banco confía a Sttok sus socios y su consejo, tu empresa también puede",
+    "prev": "Anterior",
+    "next": "Siguiente",
     "items": [
       {
-        "icon": "",
-        "logo": "Axa",
-        "title": "",
-        "description": "Grupo asegurador. AXA es cliente de Sttok.",
-        "alt": "AXA, cliente de Sttok",
-        "case": false
+        "segment": "Empresas",
+        "logos": [
+          "Osborne"
+        ],
+        "image": "/clientes/osborne.jpg",
+        "text": "Cuatro generaciones de socios, sus ramas y sus juntas, sin perder el hilo.",
+        "sub": "También Grupo Caballero"
       },
       {
-        "icon": "",
-        "logo": "Factorial",
-        "title": "",
-        "description": "Software de recursos humanos para empresas.",
-        "alt": "Factorial, cliente de Sttok"
+        "segment": "Grupos de sociedades",
+        "logos": [
+          "Fanalca"
+        ],
+        "image": "/clientes/fanalca.jpg",
+        "text": "Todas las sociedades del grupo y sus filiales, con quién manda en cada una.",
+        "sub": "Grupo industrial con sede en Cali"
       },
       {
-        "icon": "",
-        "logo": "Multiverse",
-        "title": "",
-        "description": "Multiverse Computing, empresa española de software cuántico e inteligencia artificial.",
-        "alt": "Multiverse Computing, cliente de Sttok",
-        "case": false
+        "segment": "Entidades financieras",
+        "logos": [
+          "Andbank",
+          "MyInvestor"
+        ],
+        "image": "/clientes/andbank.jpg",
+        "text": "Consejos, juntas y libro de socios con la seguridad jurídica que pide un banco.",
+        "sub": "Andbank, banca privada desde Andorra, y su banco digital MyInvestor",
+        "href": "/testimonios/MyInvestor"
       },
       {
-        "icon": "",
-        "logo": "PldSpace",
-        "title": "",
-        "description": "Empresa española que desarrolla cohetes reutilizables para poner satélites en órbita.",
-        "alt": "PLD Space, cliente de Sttok"
+        "segment": "Multinacionales",
+        "logos": [
+          "Axa"
+        ],
+        "image": "/clientes/axa.jpg",
+        "text": "Sus accionistas y los certificados de las empresas del grupo en España."
       },
       {
-        "icon": "",
-        "logo": "Osborne",
-        "title": "",
-        "description": "Grupo familiar fundado en 1772, con varios cientos de accionistas familiares y cuatro generaciones de socios a la vez.",
-        "alt": "Osborne, cliente de Sttok",
-        "case": false
-      },
-      {
-        "icon": "",
-        "logo": "Fanalca",
-        "title": "",
-        "description": "Grupo industrial colombiano con sede en Cali. Utiliza Sttok para la gestión corporativa y societaria de su grupo de empresas y filiales.",
-        "alt": "Fanalca, cliente de Sttok",
-        "case": false
-      },
-      {
-        "icon": "",
-        "logo": "MyInvestor",
-        "title": "",
-        "description": "Entidad financiera digital que opera como agente de Andbank.",
-        "alt": "MyInvestor, cliente de Sttok"
-      },
-      {
-        "icon": "",
-        "logo": "Andbank",
-        "title": "",
-        "description": "Banca privada con sede en Andorra y presencia en Europa y América.",
-        "alt": "Andbank, cliente de Sttok",
-        "case": false
-      },
-      {
-        "icon": "",
-        "logo": "Caballero",
-        "title": "",
-        "description": "Grupo Caballero, empresa familiar fundada en 1830 en El Puerto de Santa María (Cádiz).",
-        "alt": "Grupo Caballero, cliente de Sttok"
-      },
-      {
-        "icon": "",
-        "logo": "Taxdown",
-        "title": "",
-        "description": "Software para hacer la declaración de la renta de forma sencilla.",
-        "alt": "TaxDown, cliente de Sttok"
-      },
-      {
-        "icon": "",
-        "logo": "Gazelle",
-        "title": "",
-        "description": "Energía eólica marina flotante, con sociedades en Portugal y Reino Unido.",
-        "alt": "Gazelle Wind Power, cliente de Sttok",
-        "case": false
+        "segment": "Scale-ups",
+        "logos": [
+          "Factorial"
+        ],
+        "image": "/clientes/factorial-persona.jpg",
+        "text": "Cientos de empleados con sus unidades, su calendario y su valor, cada uno en su portal.",
+        "sub": "También PLD Space, Multiverse Computing y TaxDown",
+        "href": "/testimonios/Factorial"
       }
     ]
+  },
+  "quote": {
+    "logo": "MyInvestor",
+    "text": "Sttok nos ha permitido digitalizar y automatizar toda la gestión societaria, desde la celebración de consejos de administración hasta el mantenimiento del libro registro de socios.",
+    "author": "Asesoría Jurídica · MyInvestor"
+  },
+  "figures": [
+    {
+      "value": "+250",
+      "label": "clientes"
+    },
+    {
+      "value": "+500",
+      "label": "sociedades"
+    },
+    {
+      "value": "+250.000",
+      "label": "socios y accionistas"
+    }
+  ],
+  "logosLabel": "Confían en Sttok",
+  "logos": [
+    "Axa",
+    "MyInvestor",
+    "Andbank",
+    "Osborne",
+    "Factorial",
+    "PldSpace",
+    "Caballero",
+    "Taxdown",
+    "Fanalca",
+    "Sade",
+    "Multiverse"
+  ],
+  "cta": {
+    "title": "Tu empresa puede ser la próxima historia",
+    "button": {
+      "text": "Solicitar demo personalizada",
+      "link": "https://calendly.com/sttok/30min"
+    }
   }
 }

@@ -39,8 +39,8 @@
   "content": {
     "title": "Factorial usa Sttok",
     "image": {
-      "light": "/hero/hero-testimonials-factorial.jpg",
-      "dark": "/hero/hero-testimonials-factorial.jpg"
+      "light": "/clientes/factorial.jpg",
+      "dark": "/clientes/factorial.jpg"
     },
     "sections": [
       {
@@ -58,6 +58,22 @@
           "4. Por la generación de documentos y la firma electrónica.",
           "5. Por la gestión de Planes de Incentivos."
         ]
+      }
+    ],
+    "uses": [
+      {
+        "title": "Las cartas salen del plan",
+        "text": "Cada incorporación recibe su carta de invitación y la firma, sin Word ni correos."
+      },
+      {
+        "title": "Cada empleado ve lo suyo",
+        "text": "Sus unidades, su calendario y su valor, en su portal.",
+        "image": "/animaciones/liquidez-planes-de-incentivos-light-poster.webp"
+      },
+      {
+        "title": "El libro de socios, en el mismo sitio",
+        "text": "Socios y plan de incentivos, siempre cuadrados.",
+        "image": "/animaciones/accionistas-light-poster.webp"
       }
     ]
   }

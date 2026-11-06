@@ -1,106 +1,171 @@
 {
-  "readCase": "Read the case",
   "metadata": {
     "title": "Sttok customers: case studies and testimonials",
     "description": "How Factorial, PLD Space, Grupo Caballero, TaxDown and MyInvestor run their shareholder register, meetings and incentive plans, and what Sttok customers say.",
     "keywords": "Sttok customers, case studies, testimonials, shareholder register, incentive plans, meetings"
   },
+  "readCase": "Read the case",
   "hero": {
-    "slogan": "Customers",
-    "title": "Sttok customers: case studies and testimonials",
-    "description": "More than 250 customers manage more than 500 companies with Sttok, an average of two each, which reflects the group profile. These are their stories: how they run the shareholder register, meetings and incentive plans, and what they say about the platform.",
-    "button": {
-      "text": "Book a demo",
-      "link": "https://calendly.com/sttok/30min"
-    }
+    "eyebrow": "Customers",
+    "title": "Companies that already run their shareholders, meetings and boards digitally",
+    "description": "Companies, corporate groups, financial institutions and scale-ups. More than 250 customers already work this way. These are some of their stories."
   },
-  "features": {
-    "title": "Customers",
-    "description": "Companies that keep their register in Sttok",
+  "storyLink": "Read their story",
+  "stories": [
+    {
+      "client": "Factorial",
+      "logo": "Factorial",
+      "image": "/clientes/factorial.jpg",
+      "text": "An incentive plan for hundreds of employees, without spreadsheets",
+      "href": "/testimonios/Factorial",
+      "size": "big"
+    },
+    {
+      "client": "PLD Space",
+      "logo": "PldSpace",
+      "image": "/clientes/pld-space.jpg",
+      "text": "Meetings across its investors' vehicles, with no manual work",
+      "href": "/testimonios/PldSpace"
+    },
+    {
+      "client": "Osborne",
+      "logo": "Osborne",
+      "image": "/clientes/osborne.jpg",
+      "text": "Hundreds of family shareholders and four generations of shareholders at once",
+      "size": "big"
+    },
+    {
+      "client": "AXA",
+      "logo": "Axa",
+      "image": "/clientes/axa.jpg",
+      "text": "Its shareholders and the group certificates in Spain"
+    },
+    {
+      "client": "Grupo Caballero",
+      "logo": "Caballero",
+      "image": "/clientes/caballero.jpg",
+      "text": "A family business since 1830, with its meetings run digitally",
+      "href": "/testimonios/Caballero"
+    },
+    {
+      "client": "MyInvestor",
+      "logo": "MyInvestor",
+      "image": "/clientes/myinvestor.jpg",
+      "text": "Board meetings, general meetings and the shareholder register of a digital bank",
+      "href": "/testimonios/MyInvestor"
+    },
+    {
+      "client": "Sade",
+      "logo": "Sade",
+      "image": "/clientes/sade.jpg",
+      "text": "Cinemas, theatres and hotels with a century of history"
+    },
+    {
+      "client": "Multiverse Computing",
+      "logo": "Multiverse",
+      "image": "/clientes/multiverse.jpg",
+      "text": "Quantum software and artificial intelligence, with its shareholders up to date"
+    },
+    {
+      "client": "TaxDown",
+      "logo": "Taxdown",
+      "text": "Its incentive plan and its shareholder register, in one place",
+      "href": "/testimonios/Taxdown"
+    }
+  ],
+  "segments": {
+    "eyebrow": "Companies like yours",
+    "title": "If a bank trusts Sttok with its shareholders and its board, so can your company",
+    "prev": "Previous",
+    "next": "Next",
     "items": [
       {
-        "icon": "",
-        "logo": "Axa",
-        "title": "",
-        "description": "Insurance group. AXA is a Sttok customer.",
-        "alt": "AXA, a Sttok customer",
-        "case": false
+        "segment": "Companies",
+        "logos": [
+          "Osborne"
+        ],
+        "image": "/clientes/osborne.jpg",
+        "text": "Four generations of shareholders, their family branches and their meetings, without losing track.",
+        "sub": "Also Grupo Caballero"
       },
       {
-        "icon": "",
-        "logo": "Factorial",
-        "title": "",
-        "description": "HR software for companies.",
-        "alt": "Factorial, a Sttok customer"
+        "segment": "Corporate groups",
+        "logos": [
+          "Fanalca"
+        ],
+        "image": "/clientes/fanalca.jpg",
+        "text": "Every company and subsidiary in the group, and who controls each one.",
+        "sub": "Industrial group based in Cali"
       },
       {
-        "icon": "",
-        "logo": "Multiverse",
-        "title": "",
-        "description": "Multiverse Computing, a Spanish quantum software and artificial intelligence company.",
-        "alt": "Multiverse Computing, a Sttok customer",
-        "case": false
+        "segment": "Financial institutions",
+        "logos": [
+          "Andbank",
+          "MyInvestor"
+        ],
+        "image": "/clientes/andbank.jpg",
+        "text": "Board meetings, general meetings and the shareholder register with the legal certainty a bank needs.",
+        "sub": "Andbank, private banking from Andorra, and its digital bank MyInvestor",
+        "href": "/testimonios/MyInvestor"
       },
       {
-        "icon": "",
-        "logo": "PldSpace",
-        "title": "",
-        "description": "Spanish company that develops reusable rockets to put satellites into orbit.",
-        "alt": "PLD Space, a Sttok customer"
+        "segment": "Multinationals",
+        "logos": [
+          "Axa"
+        ],
+        "image": "/clientes/axa.jpg",
+        "text": "Its shareholders and the certificates of the group companies in Spain."
       },
       {
-        "icon": "",
-        "logo": "Osborne",
-        "title": "",
-        "description": "Family group founded in 1772, with several hundred family shareholders and four generations of shareholders at once.",
-        "alt": "Osborne, a Sttok customer",
-        "case": false
-      },
-      {
-        "icon": "",
-        "logo": "Fanalca",
-        "title": "",
-        "description": "Colombian industrial group based in Cali. Uses Sttok for the corporate governance of its group of companies and subsidiaries.",
-        "alt": "Fanalca, Sttok customer",
-        "case": false
-      },
-      {
-        "icon": "",
-        "logo": "MyInvestor",
-        "title": "",
-        "description": "Digital financial institution operating as an agent of Andbank.",
-        "alt": "MyInvestor, a Sttok customer"
-      },
-      {
-        "icon": "",
-        "logo": "Andbank",
-        "title": "",
-        "description": "Private bank headquartered in Andorra, with a presence in Europe and the Americas.",
-        "alt": "Andbank, Sttok customer",
-        "case": false
-      },
-      {
-        "icon": "",
-        "logo": "Caballero",
-        "title": "",
-        "description": "Grupo Caballero, a family business founded in 1830 in El Puerto de Santa María (Cádiz).",
-        "alt": "Grupo Caballero, a Sttok customer"
-      },
-      {
-        "icon": "",
-        "logo": "Taxdown",
-        "title": "",
-        "description": "Software for filing income tax returns easily.",
-        "alt": "TaxDown, a Sttok customer"
-      },
-      {
-        "icon": "",
-        "logo": "Gazelle",
-        "title": "",
-        "description": "Floating offshore wind energy, with companies in Portugal and the United Kingdom.",
-        "alt": "Gazelle Wind Power, Sttok customer",
-        "case": false
+        "segment": "Scale-ups",
+        "logos": [
+          "Factorial"
+        ],
+        "image": "/clientes/factorial-persona.jpg",
+        "text": "Hundreds of employees with their units, their schedule and their value, each in their own portal.",
+        "sub": "Also PLD Space, Multiverse Computing and TaxDown",
+        "href": "/testimonios/Factorial"
       }
     ]
+  },
+  "quote": {
+    "logo": "MyInvestor",
+    "text": "Sttok has allowed us to digitise and automate all our corporate governance, from holding board meetings to keeping the shareholder register.",
+    "author": "Legal Department · MyInvestor"
+  },
+  "figures": [
+    {
+      "value": "250+",
+      "label": "customers"
+    },
+    {
+      "value": "500+",
+      "label": "companies"
+    },
+    {
+      "value": "250,000+",
+      "label": "shareholders"
+    }
+  ],
+  "logosLabel": "Trusted by",
+  "logos": [
+    "Axa",
+    "MyInvestor",
+    "Andbank",
+    "Osborne",
+    "Factorial",
+    "PldSpace",
+    "Caballero",
+    "Taxdown",
+    "Fanalca",
+    "Sade",
+    "Multiverse"
+  ],
+  "cta": {
+    "title": "Your company could be the next story",
+    "button": {
+      "text": "Book a personalised demo",
+      "link": "https://calendly.com/sttok/30min"
+    }
   }
 }

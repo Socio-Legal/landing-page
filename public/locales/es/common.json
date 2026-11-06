@@ -57,10 +57,15 @@
     "demo": "Solicitar demo"
   },
   "testimonials": {
-    "goBackToTestimonials": "Volver a Testimonios",
-    "related": "Testimonios relacionados",
-    "viewCase": "Ver Testimonio",
-    "imageAlt": "Web de {{client}}"
+    "goBackToTestimonials": "Todas las historias",
+    "home": "Clientes",
+    "related": "Más historias",
+    "viewCase": "Lee su historia",
+    "imageAlt": "{{client}}",
+    "whatTheyDo": "Qué hacen",
+    "howTheyUse": "Cómo usan Sttok",
+    "whyChose": "Por qué eligieron Sttok",
+    "visit": "Ir al sitio de {{client}}"
   },
   "sttokTitle": "Software de Gestión de Sociedades",
   "allRightsReserved": "Todos los derechos reservados",
