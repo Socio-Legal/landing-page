@@ -39,8 +39,8 @@
   "content": {
     "title": "Factorial uses Sttok",
     "image": {
-      "light": "/clientes/factorial.jpg",
-      "dark": "/clientes/factorial.jpg"
+      "light": "/clientes/factorial-fundadores.jpg",
+      "dark": "/clientes/factorial-fundadores.jpg"
     },
     "sections": [
       {
@@ -80,12 +80,16 @@
     ],
     "gallery": [
       {
-        "src": "/clientes/factorial-equipo.jpg",
-        "alt": "The Factorial team"
+        "src": "/clientes/factorial-producto.jpg",
+        "alt": "Factorial's logo and product"
       },
       {
         "src": "/clientes/factorial-evento.jpg",
         "alt": "A Factorial event"
+      },
+      {
+        "src": "/clientes/factorial-valla.jpg",
+        "alt": "A Factorial billboard in Madrid"
       }
     ]
   }
