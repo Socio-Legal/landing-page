@@ -32,13 +32,15 @@
       "logo": "Osborne",
       "image": "/clientes/osborne.jpg",
       "text": "Hundreds of family shareholders and four generations of shareholders at once",
-      "size": "big"
+      "size": "big",
+      "href": "/testimonios/Osborne"
     },
     {
       "client": "AXA",
       "logo": "Axa",
       "image": "/clientes/axa.jpg",
-      "text": "Its shareholders and the group certificates in Spain"
+      "text": "Its shareholders and the group certificates in Spain",
+      "href": "/testimonios/Axa"
     },
     {
       "client": "Grupo Caballero",
@@ -58,13 +60,15 @@
       "client": "Sade",
       "logo": "Sade",
       "image": "/clientes/sade.jpg",
-      "text": "Cinemas, theatres and hotels with a century of history"
+      "text": "Cinemas, theatres and hotels with a century of history",
+      "href": "/testimonios/Sade"
     },
     {
       "client": "Multiverse Computing",
       "logo": "Multiverse",
       "image": "/clientes/multiverse.jpg",
-      "text": "Quantum software and artificial intelligence, with its shareholders up to date"
+      "text": "Quantum software and artificial intelligence, with its shareholders up to date",
+      "href": "/testimonios/Multiverse"
     },
     {
       "client": "TaxDown",
@@ -86,7 +90,8 @@
         ],
         "image": "/clientes/osborne.jpg",
         "text": "Four generations of shareholders, their family branches and their meetings, without losing track.",
-        "sub": "Also Grupo Caballero"
+        "sub": "Also Grupo Caballero",
+        "href": "/testimonios/Osborne"
       },
       {
         "segment": "Corporate groups",
@@ -95,7 +100,8 @@
         ],
         "image": "/clientes/fanalca.jpg",
         "text": "Every company and subsidiary in the group, and who controls each one.",
-        "sub": "Industrial group based in Cali"
+        "sub": "Industrial group based in Cali",
+        "href": "/testimonios/Fanalca"
       },
       {
         "segment": "Financial institutions",
@@ -114,7 +120,8 @@
           "Axa"
         ],
         "image": "/clientes/axa.jpg",
-        "text": "Its shareholders and the certificates of the group companies in Spain."
+        "text": "Its shareholders and the certificates of the group companies in Spain.",
+        "href": "/testimonios/Axa"
       },
       {
         "segment": "Scale-ups",

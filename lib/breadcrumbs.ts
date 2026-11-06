@@ -131,6 +131,11 @@ const CLIENTS: Record<string, string> = {
   MyInvestor: "MyInvestor",
   PldSpace: "PLD Space",
   Taxdown: "Taxdown",
+  Axa: "AXA",
+  Osborne: "Osborne",
+  Fanalca: "Fanalca",
+  Multiverse: "Multiverse Computing",
+  Sade: "Sade",
 };
 
 /** Ruta inglesa -> ruta castellana, para normalizar antes de buscar en PAGES. */

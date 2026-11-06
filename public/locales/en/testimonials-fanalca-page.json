@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Fanalca runs the corporate management of its group of companies with Sttok",
+    "description": "Fanalca uses Sttok for group companies, group chart, governing bodies and documents.",
+    "keywords": "Fanalca, Sttok, Sttok customers, shareholder register"
+  },
+  "summary": {
+    "client": "Fanalca",
+    "title": "Fanalca runs the corporate management of its group of companies with Sttok",
+    "description": "",
+    "button": {
+      "text": "Visit Fanalca",
+      "link": "https://fanalca.com/"
+    },
+    "features": [
+      {
+        "key": "Customer",
+        "value": "Fanalca"
+      },
+      {
+        "key": "Sector",
+        "value": "Industry · Colombia"
+      },
+      {
+        "key": "Features",
+        "value": "Group companies, group chart, governing bodies and documents"
+      }
+    ]
+  },
+  "content": {
+    "title": "",
+    "sections": [
+      {
+        "title": "",
+        "texts": [
+          "Fanalca is a Colombian industrial group based in Cali. It manufactures and assembles motorcycles, auto parts and other industrial products, and has a foundation with educational programmes.",
+          "A group with several companies and subsidiaries needs to know at all times who owns what and keep the governing bodies of each company up to date."
+        ]
+      }
+    ],
+    "image": {
+      "light": "/clientes/fanalca-motos.jpg",
+      "dark": "/clientes/fanalca-motos.jpg"
+    },
+    "gallery": [
+      {
+        "src": "/clientes/fanalca-planta.jpg",
+        "alt": "A Fanalca plant"
+      },
+      {
+        "src": "/clientes/fanalca-sede.jpg",
+        "alt": "Fanalca headquarters in Cali"
+      },
+      {
+        "src": "/clientes/fanalca.jpg",
+        "alt": "The Fanalca team"
+      }
+    ],
+    "uses": [
+      {
+        "title": "Every company in the group",
+        "text": "What is pending in each company and subsidiary, on one screen.",
+        "image": "/animaciones/en/sociedades-light-poster.webp"
+      },
+      {
+        "title": "The group chart",
+        "text": "Subsidiaries and the chain of control, on any date.",
+        "image": "/animaciones/en/diagrama-del-grupo-light-poster.webp"
+      },
+      {
+        "title": "The governing bodies",
+        "text": "Board meetings, officers and minutes for each group company.",
+        "image": "/animaciones/en/consejo-de-administracion-light-poster.webp"
+      }
+    ]
+  }
+}

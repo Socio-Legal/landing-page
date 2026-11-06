@@ -46,7 +46,8 @@
       {
         "title": "About PLD Space",
         "texts": [
-          "PLD Space is a Spanish company that develops reusable rockets to put satellites into orbit. It is based in Elche (Alicante, Spain)."
+          "PLD Space is the Spanish company developing Miura 5, a reusable rocket to put small satellites into orbit. It is based in Elche (Alicante) and builds its launchers in its own facilities.",
+          "Behind each round there are investors grouped in several vehicles, and each one needs to be up to date with their shares, their meetings and their documents."
         ]
       },
       {
@@ -58,6 +59,37 @@
           "4. Document generation and e-signature.",
           "5. Management of incentive plans."
         ]
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/clientes/pld-cohete-orbita.jpg",
+        "alt": "A PLD Space rocket in orbit above the Earth"
+      },
+      {
+        "src": "/clientes/pld-equipo.jpg",
+        "alt": "The PLD Space team"
+      },
+      {
+        "src": "/clientes/pld-space-noche.jpg",
+        "alt": "PLD Space test bench at night"
+      }
+    ],
+    "uses": [
+      {
+        "title": "The investor portal",
+        "text": "Each investor logs in and sees their position, their documents and their meetings.",
+        "image": "/animaciones/en/portal-del-accionista-light-poster.webp"
+      },
+      {
+        "title": "Meetings across several vehicles",
+        "text": "Notices, proxies and votes in one place, with no manual work.",
+        "image": "/animaciones/en/voto-electronico-en-juntas-light-poster.webp"
+      },
+      {
+        "title": "The team's incentive plan",
+        "text": "Each person sees their units and their value in their portal.",
+        "image": "/animaciones/en/liquidez-planes-de-incentivos-light-poster.webp"
       }
     ]
   }

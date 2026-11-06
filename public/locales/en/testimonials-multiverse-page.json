@@ -1,0 +1,63 @@
+{
+  "metadata": {
+    "title": "Multiverse Computing, a pioneer in AI and quantum computing, keeps its shareholder register in Sttok",
+    "description": "Multiverse Computing uses Sttok for shareholder register, transaction simulator and documents.",
+    "keywords": "Multiverse Computing, Sttok, Sttok customers, shareholder register"
+  },
+  "summary": {
+    "client": "Multiverse Computing",
+    "title": "Multiverse Computing, a pioneer in AI and quantum computing, keeps its shareholder register in Sttok",
+    "description": "",
+    "button": {
+      "text": "Visit Multiverse Computing",
+      "link": "https://multiversecomputing.com/"
+    },
+    "features": [
+      {
+        "key": "Customer",
+        "value": "Multiverse Computing"
+      },
+      {
+        "key": "Sector",
+        "value": "Artificial intelligence and quantum computing"
+      },
+      {
+        "key": "Features",
+        "value": "Shareholder register, transaction simulator and documents"
+      }
+    ]
+  },
+  "content": {
+    "title": "",
+    "sections": [
+      {
+        "title": "",
+        "texts": [
+          "Multiverse Computing is a San Sebastián company specialised in artificial intelligence and quantum computing, and the leader in AI model compression. CB Insights named it one of the 100 most promising AI companies in the world in 2025.",
+          "A company growing at this pace, with international funding rounds, needs a flawless shareholder register."
+        ]
+      }
+    ],
+    "image": {
+      "light": "/clientes/multiverse.jpg",
+      "dark": "/clientes/multiverse.jpg"
+    },
+    "uses": [
+      {
+        "title": "A flawless shareholder register",
+        "text": "Each investor with their shares, their class and their history.",
+        "image": "/animaciones/en/accionistas-light-poster.webp"
+      },
+      {
+        "title": "Rounds, before they are signed",
+        "text": "The effect of each capital increase on the cap table, simulated before closing.",
+        "image": "/animaciones/en/simulador-light-poster.webp"
+      },
+      {
+        "title": "Deeds read with AI",
+        "text": "Each transaction is recorded from its deed.",
+        "image": "/animaciones/en/lectura-de-escrituras-con-ia-light-poster.webp"
+      }
+    ]
+  }
+}

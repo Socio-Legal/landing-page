@@ -42,8 +42,8 @@
       {
         "title": "Un poco sobre Taxdown",
         "texts": [
-          "Taxdown es una empresa de software que ayuda a las personas a hacer la declaración de la renta de forma sencilla.",
-          "TaxDown utiliza Sttok para gestionar sus planes de incentivos y la relación con sus socios: juntas y libro de socios."
+          "TaxDown ayuda a las personas a hacer la declaración de la renta de forma sencilla, desde el móvil. En España ya ha presentado más de 1,3 millones de declaraciones.",
+          "Para atraer y retener talento, su equipo tiene un plan de incentivos que hay que llevar al día, junto con el libro de socios."
         ]
       },
       {
@@ -55,6 +55,23 @@
           "4. Por la generación de documentos y la firma electrónica.",
           "5. Por la gestión de Planes de Incentivos."
         ]
+      }
+    ],
+    "uses": [
+      {
+        "title": "Un plan de incentivos eficiente",
+        "text": "Unidades, consolidación y valor de cada beneficiario, sin hojas de cálculo.",
+        "image": "/animaciones/liquidez-planes-de-incentivos-light-poster.webp"
+      },
+      {
+        "title": "Cada beneficiario, en su portal",
+        "text": "Ve sus unidades, su calendario y sus documentos.",
+        "image": "/animaciones/portal-del-beneficiario-light-poster.webp"
+      },
+      {
+        "title": "El libro de socios, al día",
+        "text": "Socios e incentivos en el mismo sitio.",
+        "image": "/animaciones/accionistas-light-poster.webp"
       }
     ]
   }

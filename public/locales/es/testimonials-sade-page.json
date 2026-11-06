@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "title": "Sade, casi un siglo de cines y teatros en San Sebastián, con sus sociedades en Sttok",
+    "description": "Sade usa Sttok para libro de socios, sociedades, juntas y documentación.",
+    "keywords": "Sade, Sttok, clientes de Sttok, libro de socios"
+  },
+  "summary": {
+    "client": "Sade",
+    "title": "Sade, casi un siglo de cines y teatros en San Sebastián, con sus sociedades en Sttok",
+    "description": "",
+    "button": {
+      "text": "",
+      "link": ""
+    },
+    "features": [
+      {
+        "key": "Cliente",
+        "value": "Sade"
+      },
+      {
+        "key": "Sector",
+        "value": "Ocio, cultura y hoteles"
+      },
+      {
+        "key": "Funcionalidades",
+        "value": "Libro de socios, sociedades, juntas y documentación"
+      }
+    ]
+  },
+  "content": {
+    "title": "",
+    "sections": [
+      {
+        "title": "",
+        "texts": [
+          "Sade lleva casi un siglo en la vida cultural de San Sebastián, con cines y teatros históricos como el Príncipe o el Trueba. Hoy también gestiona hoteles.",
+          "Una empresa con tanta historia tiene muchos socios y varias sociedades que llevar al día."
+        ]
+      }
+    ],
+    "image": {
+      "light": "/clientes/sade.jpg",
+      "dark": "/clientes/sade.jpg"
+    },
+    "gallery": [
+      {
+        "src": "/clientes/sade-teatro.jpg",
+        "alt": "El Teatro del Príncipe en San Sebastián"
+      },
+      {
+        "src": "/clientes/sade-bellas-artes.jpg",
+        "alt": "El edificio Bellas Artes en una postal antigua"
+      }
+    ],
+    "uses": [
+      {
+        "title": "Sus socios, al día",
+        "text": "El libro de socios con la posición de cada uno.",
+        "image": "/animaciones/accionistas-light-poster.webp"
+      },
+      {
+        "title": "Cada sociedad, en su sitio",
+        "text": "Cines, teatros y hoteles, cada uno con su sociedad y su documentación.",
+        "image": "/animaciones/sociedades-light-poster.webp"
+      },
+      {
+        "title": "Juntas en digital",
+        "text": "Convocatoria, votaciones y acta sin papel.",
+        "image": "/animaciones/voto-electronico-en-juntas-light-poster.webp"
+      }
+    ]
+  }
+}

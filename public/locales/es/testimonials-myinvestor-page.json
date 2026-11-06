@@ -46,7 +46,8 @@
       {
         "title": "Un poco sobre MyInvestor",
         "texts": [
-          "MyInvestor es una entidad financiera digital que opera como agente de Andbank. Ofrece servicios de inversión, hipotecas y cuentas corrientes."
+          "MyInvestor es el neobanco experto en inversión: cuentas, inversión e hipotecas, todo en digital. Opera como agente de Andbank, el grupo de banca privada con sede en Andorra.",
+          "Un banco necesita un gobierno corporativo impecable: cada consejo, cada junta y cada cambio en el libro de socios, con seguridad jurídica."
         ]
       },
       {
@@ -58,6 +59,29 @@
           "4. Por la automatización en la generación de documentación societaria y actas.",
           "6. Por la capacidad de gestionar de forma digital el libro registro de socios y la documentación corporativa."
         ]
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/clientes/andbank.jpg",
+        "alt": "La sede de Andbank en Andorra"
+      }
+    ],
+    "uses": [
+      {
+        "title": "Consejos de administración",
+        "text": "Convocatoria, orden del día, acta y certificación de cada reunión.",
+        "image": "/animaciones/consejo-de-administracion-light-poster.webp"
+      },
+      {
+        "title": "Juntas de accionistas",
+        "text": "Delegaciones y votaciones en digital, con el resultado en el acta.",
+        "image": "/animaciones/voto-electronico-en-juntas-light-poster.webp"
+      },
+      {
+        "title": "Libro registro de socios",
+        "text": "Cada cambio, registrado con su documentación.",
+        "image": "/animaciones/accionistas-light-poster.webp"
       }
     ]
   }

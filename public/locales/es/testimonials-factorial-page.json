@@ -46,7 +46,8 @@
       {
         "title": "Un poco sobre Factorial",
         "texts": [
-          "Factorial es una empresa de software para la gestión de recursos humanos, dirigido sobre todo a pequeñas y medianas empresas."
+          "Factorial es el software de recursos humanos de más de 17.000 empresas, sobre todo pymes. Lo construyen más de 1.500 personas, con soporte en siete idiomas.",
+          "Un equipo que crece tan rápido necesita un plan de incentivos que crezca con él: cada incorporación con su carta, su firma y sus unidades al día."
         ]
       },
       {
@@ -63,7 +64,8 @@
     "uses": [
       {
         "title": "Las cartas salen del plan",
-        "text": "Cada incorporación recibe su carta de invitación y la firma, sin Word ni correos."
+        "text": "Cada incorporación recibe su carta de invitación y la firma, sin Word ni correos.",
+        "image": "/animaciones/firma-electronica-light-poster.webp"
       },
       {
         "title": "Cada empleado ve lo suyo",
@@ -74,6 +76,16 @@
         "title": "El libro de socios, en el mismo sitio",
         "text": "Socios y plan de incentivos, siempre cuadrados.",
         "image": "/animaciones/accionistas-light-poster.webp"
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/clientes/factorial-equipo.jpg",
+        "alt": "El equipo de Factorial"
+      },
+      {
+        "src": "/clientes/factorial-evento.jpg",
+        "alt": "Un evento de Factorial"
       }
     ]
   }

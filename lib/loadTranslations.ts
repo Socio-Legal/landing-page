@@ -32,6 +32,11 @@ import testimonialsCaballeroPage from "../public/locales/es/testimonials-caballe
 import testimonialsPldspacePage from "../public/locales/es/testimonials-pldspace-page.json";
 import testimonialsTaxdownPage from "../public/locales/es/testimonials-taxdown-page.json";
 import testimonialsMyInvestorPage from "../public/locales/es/testimonials-myinvestor-page.json";
+import testimonialsAxaPage from "../public/locales/es/testimonials-axa-page.json";
+import testimonialsOsbornePage from "../public/locales/es/testimonials-osborne-page.json";
+import testimonialsFanalcaPage from "../public/locales/es/testimonials-fanalca-page.json";
+import testimonialsMultiversePage from "../public/locales/es/testimonials-multiverse-page.json";
+import testimonialsSadePage from "../public/locales/es/testimonials-sade-page.json";
 
 import pricingPage from "../public/locales/es/pricing-page.json";
 import resourcesGlossary from "../public/locales/es/resources-glossary.json";
@@ -77,6 +82,11 @@ import testimonialsCaballeroPageEN from "../public/locales/en/testimonials-cabal
 import testimonialsPldspacePageEN from "../public/locales/en/testimonials-pldspace-page.json";
 import testimonialsTaxdownPageEN from "../public/locales/en/testimonials-taxdown-page.json";
 import testimonialsMyInvestorPageEN from "../public/locales/en/testimonials-myinvestor-page.json";
+import testimonialsAxaPageEN from "../public/locales/en/testimonials-axa-page.json";
+import testimonialsOsbornePageEN from "../public/locales/en/testimonials-osborne-page.json";
+import testimonialsFanalcaPageEN from "../public/locales/en/testimonials-fanalca-page.json";
+import testimonialsMultiversePageEN from "../public/locales/en/testimonials-multiverse-page.json";
+import testimonialsSadePageEN from "../public/locales/en/testimonials-sade-page.json";
 
 import pricingPageEN from "../public/locales/en/pricing-page.json";
 import resourcesGlossaryEN from "../public/locales/en/resources-glossary.json";
@@ -124,6 +134,11 @@ const loadTranslations = (lang: "es" | "en") => {
       "testimonials-pldspace-page": testimonialsPldspacePage,
       "testimonials-taxdown-page": testimonialsTaxdownPage,
       "testimonials-myinvestor-page": testimonialsMyInvestorPage,
+      "testimonials-axa-page": testimonialsAxaPage,
+      "testimonials-osborne-page": testimonialsOsbornePage,
+      "testimonials-fanalca-page": testimonialsFanalcaPage,
+      "testimonials-multiverse-page": testimonialsMultiversePage,
+      "testimonials-sade-page": testimonialsSadePage,
 
       "pricing-page": pricingPage,
       "resources-glossary": resourcesGlossary,
@@ -171,6 +186,11 @@ const loadTranslations = (lang: "es" | "en") => {
     "testimonials-pldspace-page": testimonialsPldspacePageEN,
     "testimonials-taxdown-page": testimonialsTaxdownPageEN,
     "testimonials-myinvestor-page": testimonialsMyInvestorPageEN,
+    "testimonials-axa-page": testimonialsAxaPageEN,
+    "testimonials-osborne-page": testimonialsOsbornePageEN,
+    "testimonials-fanalca-page": testimonialsFanalcaPageEN,
+    "testimonials-multiverse-page": testimonialsMultiversePageEN,
+    "testimonials-sade-page": testimonialsSadePageEN,
 
     "pricing-page": pricingPageEN,
     "resources-glossary": resourcesGlossaryEN,

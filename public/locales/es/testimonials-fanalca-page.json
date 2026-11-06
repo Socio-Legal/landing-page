@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "title": "Fanalca lleva en Sttok la gestión societaria de su grupo de empresas",
+    "description": "Fanalca usa Sttok para sociedades del grupo, diagrama, órganos de administración y documentación.",
+    "keywords": "Fanalca, Sttok, clientes de Sttok, libro de socios"
+  },
+  "summary": {
+    "client": "Fanalca",
+    "title": "Fanalca lleva en Sttok la gestión societaria de su grupo de empresas",
+    "description": "",
+    "button": {
+      "text": "Ir al sitio de Fanalca",
+      "link": "https://fanalca.com/"
+    },
+    "features": [
+      {
+        "key": "Cliente",
+        "value": "Fanalca"
+      },
+      {
+        "key": "Sector",
+        "value": "Industria · Colombia"
+      },
+      {
+        "key": "Funcionalidades",
+        "value": "Sociedades del grupo, diagrama, órganos de administración y documentación"
+      }
+    ]
+  },
+  "content": {
+    "title": "",
+    "sections": [
+      {
+        "title": "",
+        "texts": [
+          "Fanalca es un grupo industrial colombiano con sede en Cali. Fabrica y ensambla motocicletas, autopartes y otros productos industriales, y tiene una fundación con programas educativos.",
+          "Un grupo con varias empresas y filiales necesita saber en todo momento quién es socio de quién y tener al día los órganos de cada sociedad."
+        ]
+      }
+    ],
+    "image": {
+      "light": "/clientes/fanalca-motos.jpg",
+      "dark": "/clientes/fanalca-motos.jpg"
+    },
+    "gallery": [
+      {
+        "src": "/clientes/fanalca-planta.jpg",
+        "alt": "Una planta de Fanalca"
+      },
+      {
+        "src": "/clientes/fanalca-sede.jpg",
+        "alt": "La sede de Fanalca en Cali"
+      },
+      {
+        "src": "/clientes/fanalca.jpg",
+        "alt": "El equipo de Fanalca"
+      }
+    ],
+    "uses": [
+      {
+        "title": "Todas las sociedades del grupo",
+        "text": "Lo pendiente de cada empresa y filial, en una sola pantalla.",
+        "image": "/animaciones/sociedades-light-poster.webp"
+      },
+      {
+        "title": "El diagrama del grupo",
+        "text": "Filiales y cadena de control, a cualquier fecha.",
+        "image": "/animaciones/diagrama-del-grupo-light-poster.webp"
+      },
+      {
+        "title": "Los órganos de cada sociedad",
+        "text": "Consejos, cargos y actas de cada empresa del grupo.",
+        "image": "/animaciones/consejo-de-administracion-light-poster.webp"
+      }
+    ]
+  }
+}

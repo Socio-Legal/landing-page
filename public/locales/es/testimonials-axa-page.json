@@ -1,0 +1,69 @@
+{
+  "metadata": {
+    "title": "AXA lleva en Sttok sus accionistas y los certificados del grupo en España",
+    "description": "AXA usa Sttok para libro de socios, certificados, sociedades del grupo y documentación.",
+    "keywords": "AXA, Sttok, clientes de Sttok, libro de socios"
+  },
+  "summary": {
+    "client": "AXA",
+    "title": "AXA lleva en Sttok sus accionistas y los certificados del grupo en España",
+    "description": "",
+    "button": {
+      "text": "Ir al sitio de AXA",
+      "link": "https://www.axa.es/"
+    },
+    "features": [
+      {
+        "key": "Cliente",
+        "value": "AXA"
+      },
+      {
+        "key": "Sector",
+        "value": "Seguros"
+      },
+      {
+        "key": "Funcionalidades",
+        "value": "Libro de socios, certificados, sociedades del grupo y documentación"
+      }
+    ]
+  },
+  "content": {
+    "title": "",
+    "sections": [
+      {
+        "title": "",
+        "texts": [
+          "AXA es uno de los mayores grupos aseguradores del mundo. En España ofrece seguros de hogar, salud, vida, coche y para empresas, a través de su red de oficinas y agentes.",
+          "Un grupo de su tamaño tiene accionistas y varias sociedades en España que necesitan sus certificados al día y sin errores."
+        ]
+      }
+    ],
+    "image": {
+      "light": "/clientes/axa.jpg",
+      "dark": "/clientes/axa.jpg"
+    },
+    "gallery": [
+      {
+        "src": "/clientes/axa-letrero.jpg",
+        "alt": "El logotipo de AXA"
+      }
+    ],
+    "uses": [
+      {
+        "title": "Sus accionistas, en un solo sitio",
+        "text": "El libro de socios con la posición de cada accionista.",
+        "image": "/animaciones/accionistas-light-poster.webp"
+      },
+      {
+        "title": "Certificados al instante",
+        "text": "Los certificados para los accionistas y las empresas del grupo, generados desde el libro.",
+        "image": "/animaciones/certificados-de-titularidad-y-valor-light-poster.webp"
+      },
+      {
+        "title": "Las empresas del grupo",
+        "text": "Cada sociedad del grupo en España, con su libro y su documentación.",
+        "image": "/animaciones/sociedades-light-poster.webp"
+      }
+    ]
+  }
+}

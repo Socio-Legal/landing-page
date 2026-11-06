@@ -46,7 +46,8 @@
       {
         "title": "About MyInvestor",
         "texts": [
-          "MyInvestor is a digital financial institution that operates as an agent of Andbank. It offers investment services, mortgages and current accounts."
+          "MyInvestor is the neobank specialised in investing: accounts, investments and mortgages, all digital. It operates as an agent of Andbank, the private banking group based in Andorra.",
+          "A bank needs flawless corporate governance: every board meeting, every general meeting and every change in the shareholder register, with legal certainty."
         ]
       },
       {
@@ -58,6 +59,29 @@
           "4. Automated generation of corporate documents and minutes.",
           "5. The ability to manage the shareholder register and corporate documents digitally."
         ]
+      }
+    ],
+    "gallery": [
+      {
+        "src": "/clientes/andbank.jpg",
+        "alt": "Andbank headquarters in Andorra"
+      }
+    ],
+    "uses": [
+      {
+        "title": "Board meetings",
+        "text": "Notice, agenda, minutes and certification for each meeting.",
+        "image": "/animaciones/en/consejo-de-administracion-light-poster.webp"
+      },
+      {
+        "title": "Shareholders' meetings",
+        "text": "Proxies and votes online, with the result in the minutes.",
+        "image": "/animaciones/en/voto-electronico-en-juntas-light-poster.webp"
+      },
+      {
+        "title": "Shareholder register",
+        "text": "Every change recorded with its documents.",
+        "image": "/animaciones/en/accionistas-light-poster.webp"
       }
     ]
   }

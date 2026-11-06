@@ -6,6 +6,11 @@ import casoFactorialEn from "@/public/locales/en/testimonials-factorial-page.jso
 import casoMyInvestorEn from "@/public/locales/en/testimonials-myinvestor-page.json";
 import casoPldSpaceEn from "@/public/locales/en/testimonials-pldspace-page.json";
 import casoTaxdownEn from "@/public/locales/en/testimonials-taxdown-page.json";
+import casoAxaEn from "@/public/locales/en/testimonials-axa-page.json";
+import casoOsborneEn from "@/public/locales/en/testimonials-osborne-page.json";
+import casoFanalcaEn from "@/public/locales/en/testimonials-fanalca-page.json";
+import casoMultiverseEn from "@/public/locales/en/testimonials-multiverse-page.json";
+import casoSadeEn from "@/public/locales/en/testimonials-sade-page.json";
 
 import PageHome from "@/app/(landing)/page";
 import PageAbogados from "@/app/solutions/lawyers/page";
@@ -299,6 +304,11 @@ function casos(): Record<string, PageEntry> {
     Caballero: casoCaballeroEn.metadata,
     Taxdown: casoTaxdownEn.metadata,
     MyInvestor: casoMyInvestorEn.metadata,
+    Axa: casoAxaEn.metadata,
+    Osborne: casoOsborneEn.metadata,
+    Fanalca: casoFanalcaEn.metadata,
+    Multiverse: casoMultiverseEn.metadata,
+    Sade: casoSadeEn.metadata,
   };
   return Object.fromEntries(
     Object.entries(meta).map(([client, en]) => {

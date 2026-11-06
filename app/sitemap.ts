@@ -36,6 +36,11 @@ const CASE_STUDIES = [
   "Taxdown",
   "Caballero",
   "MyInvestor",
+  "Axa",
+  "Osborne",
+  "Fanalca",
+  "Multiverse",
+  "Sade",
 ].map((client) => `/testimonios/${client}`);
 
 const LEGAL_ROUTES = ["/aviso-legal", "/privacidad", "/politica-seguridad"];

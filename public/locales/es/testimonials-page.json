@@ -32,13 +32,15 @@
       "logo": "Osborne",
       "image": "/clientes/osborne.jpg",
       "text": "Cientos de accionistas familiares y cuatro generaciones de socios a la vez",
-      "size": "big"
+      "size": "big",
+      "href": "/testimonios/Osborne"
     },
     {
       "client": "AXA",
       "logo": "Axa",
       "image": "/clientes/axa.jpg",
-      "text": "Sus accionistas y los certificados del grupo en España"
+      "text": "Sus accionistas y los certificados del grupo en España",
+      "href": "/testimonios/Axa"
     },
     {
       "client": "Grupo Caballero",
@@ -58,13 +60,15 @@
       "client": "Sade",
       "logo": "Sade",
       "image": "/clientes/sade.jpg",
-      "text": "Cines, teatros y hoteles con un siglo de historia"
+      "text": "Cines, teatros y hoteles con un siglo de historia",
+      "href": "/testimonios/Sade"
     },
     {
       "client": "Multiverse Computing",
       "logo": "Multiverse",
       "image": "/clientes/multiverse.jpg",
-      "text": "Software cuántico e inteligencia artificial, con sus socios al día"
+      "text": "Software cuántico e inteligencia artificial, con sus socios al día",
+      "href": "/testimonios/Multiverse"
     },
     {
       "client": "TaxDown",
@@ -86,7 +90,8 @@
         ],
         "image": "/clientes/osborne.jpg",
         "text": "Cuatro generaciones de socios, sus ramas y sus juntas, sin perder el hilo.",
-        "sub": "También Grupo Caballero"
+        "sub": "También Grupo Caballero",
+        "href": "/testimonios/Osborne"
       },
       {
         "segment": "Grupos de sociedades",
@@ -95,7 +100,8 @@
         ],
         "image": "/clientes/fanalca.jpg",
         "text": "Todas las sociedades del grupo y sus filiales, con quién manda en cada una.",
-        "sub": "Grupo industrial con sede en Cali"
+        "sub": "Grupo industrial con sede en Cali",
+        "href": "/testimonios/Fanalca"
       },
       {
         "segment": "Entidades financieras",
@@ -114,7 +120,8 @@
           "Axa"
         ],
         "image": "/clientes/axa.jpg",
-        "text": "Sus accionistas y los certificados de las empresas del grupo en España."
+        "text": "Sus accionistas y los certificados de las empresas del grupo en España.",
+        "href": "/testimonios/Axa"
       },
       {
         "segment": "Scale-ups",
