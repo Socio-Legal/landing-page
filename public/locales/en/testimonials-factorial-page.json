@@ -39,8 +39,8 @@
   "content": {
     "title": "Factorial uses Sttok",
     "image": {
-      "light": "/hero/hero-testimonials-factorial.jpg",
-      "dark": "/hero/hero-testimonials-factorial.jpg"
+      "light": "/clientes/factorial.jpg",
+      "dark": "/clientes/factorial.jpg"
     },
     "sections": [
       {
@@ -58,6 +58,22 @@
           "4. Document generation and e-signature.",
           "5. Management of incentive plans."
         ]
+      }
+    ],
+    "uses": [
+      {
+        "title": "Letters come straight from the plan",
+        "text": "Each new hire gets their invitation letter and signs it, with no Word files or emails."
+      },
+      {
+        "title": "Each employee sees their own",
+        "text": "Their units, their schedule and their value, in their portal.",
+        "image": "/animaciones/en/liquidez-planes-de-incentivos-light-poster.webp"
+      },
+      {
+        "title": "The shareholder register, in the same place",
+        "text": "Shareholders and incentive plan, always reconciled.",
+        "image": "/animaciones/en/accionistas-light-poster.webp"
       }
     ]
   }

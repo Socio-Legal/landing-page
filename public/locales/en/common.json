@@ -57,10 +57,15 @@
     "demo": "Schedule demo"
   },
   "testimonials": {
-    "goBackToTestimonials": "Go back to Testimonials",
-    "related": "Related case studies",
-    "viewCase": "View case study",
-    "imageAlt": "{{client}} website"
+    "goBackToTestimonials": "All stories",
+    "home": "Customers",
+    "related": "More stories",
+    "viewCase": "Read their story",
+    "imageAlt": "{{client}}",
+    "whatTheyDo": "What they do",
+    "howTheyUse": "How they use Sttok",
+    "whyChose": "Why they chose Sttok",
+    "visit": "Visit {{client}}"
   },
   "sttokTitle": "Company Management Software",
   "allRightsReserved": "All rights reserved",

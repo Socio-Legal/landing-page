@@ -6,13 +6,6 @@ import { useTranslation } from "react-i18next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
 import { ArrowLeft } from "lucide-react";
 
 import * as Factorial from "@/config/testimonials/clients/Factorial";
@@ -22,6 +15,7 @@ import * as Caballero from "@/config/testimonials/clients/Caballero";
 import * as MyInvestor from "@/config/testimonials/clients/MyInvestor";
 
 import CallToActionSection from "@/components/landing/cta-section";
+import { clientLogos } from "@/config/client-logos";
 import { getTestimonialNamespaces } from "@/lib/getTestimonialNamespaces";
 import { localizedHref } from "@/lib/localized-href";
 import { useLocale } from "@/lib/use-locale";
@@ -49,7 +43,7 @@ type TestimonialSummaryProps = {
 
 type TestimonialContentProps = {
   title: string;
-  image: {
+  image?: {
     light: string;
     dark: string;
   };
@@ -57,6 +51,8 @@ type TestimonialContentProps = {
     title: string;
     texts: string[];
   }[];
+  /** Cómo usan Sttok, con su pantalla si la hay. Opcional. */
+  uses?: { title: string; text: string; image?: string }[];
 };
 
 const testimonialPages = {
@@ -67,24 +63,25 @@ const testimonialPages = {
   MyInvestor: MyInvestor,
 };
 
-const getOther2Testimonials = (client: string): string[] => {
-  const keys = Object.keys(testimonialPages);
-  const index = keys.indexOf(client);
-
-  if (index === -1) {
-    return [];
-  }
-
-  const otherKeys = keys.filter((key) => key !== client);
-  const other2Keys = otherKeys.slice(0, 2);
-
-  return other2Keys;
+/** Clave del cliente en clientLogos (TaxDown y PLD Space se escriben distinto). */
+const LOGO: Record<string, keyof typeof clientLogos> = {
+  Factorial: "Factorial",
+  PldSpace: "PldSpace",
+  Taxdown: "Taxdown",
+  Caballero: "Caballero",
+  MyInvestor: "MyInvestor",
 };
+
+const getOtherTestimonials = (client: string, n = 3): string[] =>
+  Object.keys(testimonialPages).filter((key) => key !== client).slice(0, n);
+
+/** «1. Por la facilidad de uso.» → «Por la facilidad de uso.» */
+const sinNumero = (s: string) => s.replace(/^\d+\.\s*/, "");
 
 /**
  * Ficha de un caso de cliente, en castellano (/testimonios/<cliente>) o en
- * inglés (/en/testimonials/<cliente>). El texto sale de
- * testimonials-<cliente>-page.json del idioma activo.
+ * inglés (/en/testimonials/<cliente>): la foto de su negocio, qué hacen, cómo
+ * usan Sttok y su cita. El texto sale de testimonials-<cliente>-page.json.
  */
 export const TestimonialCase: FC<TestimonialCaseProps> = ({ client }) => {
   const locale = useLocale();
@@ -95,8 +92,11 @@ export const TestimonialCase: FC<TestimonialCaseProps> = ({ client }) => {
   if (!(client in testimonialPages)) notFound();
 
   const namespaces = getTestimonialNamespaces(client);
-
-  const { t } = useTranslation(namespaces);
+  const otros = getOtherTestimonials(client);
+  const { t } = useTranslation([
+    ...namespaces,
+    ...otros.map((o) => getTestimonialNamespaces(o)[1]),
+  ]);
 
   const namespace = namespaces.length > 1 ? namespaces[1] : "common";
 
@@ -108,160 +108,178 @@ export const TestimonialCase: FC<TestimonialCaseProps> = ({ client }) => {
     returnObjects: true,
   }) as TestimonialContentProps;
 
+  const logo = clientLogos[LOGO[client]];
+  // La primera sección es «Un poco sobre…»; la segunda, por qué eligieron Sttok.
+  const [about, why] = content.sections ?? [];
+  const meta = (summary.features ?? []).filter((f) => f.value && f.value !== summary.client);
+  const uses = Array.isArray(content.uses) ? content.uses : [];
+
   return (
     <>
-      <div className="flex flex-col md:flex-row min-h-screen container mx-auto px-4">
-        {/* Left sidebar */}
-        <div className="w-full md:w-2/5 border-border p-6 md:border-r overflow-y-auto">
-          <div className="sticky top-6">
-            <Link className="inline-flex items-center mb-8" href={localizedHref("/testimonios", locale)}>
-              <ArrowLeft className="h-6 w-6 mr-2" />
-              <span className="font-semibold">
-                {t("common:testimonials.goBackToTestimonials")}
-              </span>
-            </Link>
-            <h1 className="font-serif text-3xl font-normal tracking-tight text-balance sm:text-4xl mb-4">
+      {/* Migas */}
+      <nav aria-label="breadcrumb" className="border-b border-border">
+        <div className="container mx-auto flex flex-wrap items-center justify-between gap-4 px-4 py-3 text-sm">
+          <p className="text-muted-foreground">
+            <Link href={localizedHref("/testimonios", locale)} className="font-medium text-foreground hover:underline">
+              {t("common:testimonials.home")}
+            </Link>{" "}
+            / {summary.client}
+          </p>
+          <Link href={localizedHref("/testimonios", locale)} className="inline-flex items-center gap-1.5 font-medium text-foreground hover:underline">
+            <ArrowLeft className="h-4 w-4" />
+            {t("common:testimonials.goBackToTestimonials")}
+          </Link>
+        </div>
+      </nav>
+
+      {/* Cabecera: titular y la foto de su negocio */}
+      <section className="container mx-auto px-4 py-12 md:py-16">
+        <div className="grid items-center gap-10 lg:grid-cols-2">
+          <div>
+            {logo && <Image src={logo} alt={summary.client} className="h-8 w-auto max-w-44 object-contain object-left dark:invert" />}
+            <h1 className="mt-6 font-serif text-4xl font-normal leading-tight tracking-tight text-balance md:text-5xl lg:text-6xl">
               {summary.title}
             </h1>
-            {summary.description && (
-              <p className="text-gray-500 dark:text-gray-400 mb-6">
-                {summary.description}
+            {meta.length > 0 && (
+              <p className="mt-6 text-sm leading-relaxed text-muted-foreground">
+                {meta
+                  .map((f) =>
+                    /^(desde|since)$/i.test(f.key)
+                      ? `${locale === "en" ? "Customer since" : "Cliente desde"} ${f.value}`
+                      : f.value,
+                  )
+                  .join(" · ")}
               </p>
             )}
-            {summary.quote && (
-              <figure className="mb-6 border-l border-border pl-5">
-                <blockquote className="font-serif text-lg italic leading-relaxed text-foreground mb-3">
-                  “{summary.quote.text}”
-                </blockquote>
-                <figcaption className="text-sm">
-                  <span className="font-semibold">{summary.quote.author}</span>
-                  {summary.quote.position && (
-                    <>
-                      <br />
-                      <span className="text-muted-foreground">
-                        {summary.quote.position}
-                      </span>
-                    </>
-                  )}
-                </figcaption>
-              </figure>
-            )}
-            <div className="space-y-4">
-              <Link
-                className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground shadow hover:bg-primary/90 h-9 px-4 py-2 w-full"
-                href={summary.button?.link || ""}
-                target="_blank"
-              >
-                {summary.button?.text}
-              </Link>
-              {/* <Button variant="outline" className="w-full">
-                <Github className="mr-2 h-4 w-4" />
-                View on GitHub
-              </Button> */}
+          </div>
+          {content.image?.light ? (
+            <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
+              <Image
+                src={content.image.light}
+                alt={t("common:testimonials.imageAlt", { client: summary.client })}
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-cover"
+              />
             </div>
+          ) : null}
+        </div>
+      </section>
 
-            <div className="mt-8">
-              <ul className="space-y-2">
-                {summary.features?.map((feature, index) => (
-                  <li
-                    key={index}
-                    // add border bottom to all but the last item
-                    className={`flex justify-between items-center space-x-4 ${
-                      index < summary.features.length - 1
-                        ? "border-b border-gray-200 dark:border-gray-600 pb-2"
-                        : ""
-                    }`}
-                  >
-                    <span>{feature.key}</span>
-                    <span className="text-gray-500 dark:text-gray-400 text-right">
-                      {feature.value}
-                    </span>
+      {/* Qué hacen */}
+      {about && (
+        <section className="border-t border-border">
+          <div className="container mx-auto grid gap-8 px-4 py-14 md:grid-cols-[1fr_2fr] md:py-16">
+            <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground">
+              {t("common:testimonials.whatTheyDo")}
+            </p>
+            <div>
+              {about.texts.map((text, i) => (
+                <p key={i} className="font-serif text-2xl leading-snug md:text-3xl [&+&]:mt-4">
+                  {text}
+                </p>
+              ))}
+              {summary.button?.link && (
+                <a
+                  href={summary.button.link}
+                  target="_blank"
+                  rel="noopener"
+                  className="mt-6 inline-block text-sm font-medium underline-offset-4 hover:underline"
+                >
+                  {t("common:testimonials.visit", { client: summary.client })} →
+                </a>
+              )}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Cómo usan Sttok */}
+      {(uses.length > 0 || why) && (
+        <section className="border-t border-border bg-muted/40">
+          <div className="container mx-auto px-4 py-14 md:py-16">
+            <p className="text-xs uppercase tracking-[0.14em] text-muted-foreground">
+              {uses.length > 0 ? t("common:testimonials.howTheyUse") : t("common:testimonials.whyChose")}
+            </p>
+            {uses.length > 0 ? (
+              <div className="mt-8 grid gap-8 md:grid-cols-3">
+                {uses.map((u) => (
+                  <figure key={u.title}>
+                    {u.image ? (
+                      <div className="relative aspect-[16/10] overflow-hidden rounded-xl border border-border">
+                        <Image src={u.image} alt="" aria-hidden fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover object-top" />
+                      </div>
+                    ) : null}
+                    <figcaption className={u.image ? "mt-4" : ""}>
+                      <p className="font-semibold">{u.title}</p>
+                      <p className="mt-1.5 leading-relaxed text-muted-foreground">{u.text}</p>
+                    </figcaption>
+                  </figure>
+                ))}
+              </div>
+            ) : (
+              <ul className="mt-8 grid gap-x-10 gap-y-4 md:grid-cols-2">
+                {why!.texts.map((text, i) => (
+                  <li key={i} className="border-l border-border pl-4 text-lg leading-snug">
+                    {sinNumero(text)}
                   </li>
                 ))}
               </ul>
-            </div>
+            )}
           </div>
-        </div>
+        </section>
+      )}
 
-        {/* Main content */}
-        <main className="flex-1 p-6 overflow-y-auto">
-          <div className="max-w-3xl mx-auto">
-            <section className="mb-12">
-              <Image
-                src={content.image?.dark}
-                alt={t("common:testimonials.imageAlt", { client: summary.client })}
-                width={800}
-                height={400}
-                className="rounded-lg shadow-lg hidden dark:block"
-              />
-              <Image
-                src={content.image?.light}
-                alt={t("common:testimonials.imageAlt", { client: summary.client })}
-                width={800}
-                height={400}
-                className="rounded-lg shadow-lg block dark:hidden"
-              />
-            </section>
+      {/* La cita */}
+      {summary.quote?.text && (
+        <section className="bg-[#1D2433] text-white">
+          <figure className="container mx-auto max-w-4xl px-4 py-20 text-center md:py-24">
+            <blockquote className="font-serif text-3xl italic leading-snug md:text-4xl">
+              “{summary.quote.text.replace(/^'|'$/g, "")}”
+            </blockquote>
+            <figcaption className="mt-6 text-sm text-white/75">
+              {[summary.quote.author, summary.quote.position].filter(Boolean).join(" · ")}
+            </figcaption>
+          </figure>
+        </section>
+      )}
 
-            <section className="mb-12">
-              {content?.title && (
-                <h1 className="font-serif text-3xl font-normal mb-8">
-                  {content.title}
-                </h1>
-              )}
-
-              {content?.sections?.map((section, index) => (
-                <div className="mb-12" key={`section-content-${index}`}>
-                  <h2 className="font-serif text-2xl font-normal mb-4">
-                    {section?.title || ""}
-                  </h2>
-
-                  {section?.texts?.map((text, indexTexts) => (
-                    <p
-                      className="text-gray-600 dark:text-gray-300 mb-4"
-                      key={`section-texts-${index}-${indexTexts}`}
-                    >
-                      {text}
-                    </p>
-                  ))}
+      {/* Más historias */}
+      <section className="container mx-auto px-4 py-14 md:py-16">
+        <h2 className="font-serif text-3xl font-normal md:text-4xl">{t("common:testimonials.related")}</h2>
+        <div className="mt-8 grid gap-4 md:grid-cols-3">
+          {otros.map((otro) => {
+            const ns = getTestimonialNamespaces(otro)[1];
+            const resumen = t(`${ns}:summary`, { returnObjects: true }) as TestimonialSummaryProps;
+            const foto = (t(`${ns}:content`, { returnObjects: true }) as TestimonialContentProps).image?.light;
+            const suLogo = clientLogos[LOGO[otro]];
+            return (
+              <Link
+                key={otro}
+                href={localizedHref(`/testimonios/${otro}`, locale)}
+                className="relative flex h-64 flex-col justify-between overflow-hidden rounded-2xl text-white"
+              >
+                {foto ? (
+                  <>
+                    <Image src={foto} alt="" aria-hidden fill sizes="(max-width: 768px) 100vw, 33vw" className="object-cover" />
+                    <div className="absolute inset-0 bg-[rgba(13,18,30,0.45)]" />
+                  </>
+                ) : (
+                  <div className="absolute inset-0 bg-[#1D2433]" />
+                )}
+                <div className="relative p-5">
+                  {suLogo && <Image src={suLogo} alt={resumen.client} className="h-6 w-auto max-w-36 object-contain object-left brightness-0 invert" />}
                 </div>
-              ))}
-            </section>
-
-            <section className="mt-40 mb-6">
-              <h2 className="font-serif text-2xl font-normal mb-6">
-                {t("common:testimonials.related")}
-              </h2>
-              <div className="grid gap-6 md:grid-cols-2">
-                {getOther2Testimonials(client).map((otro) => {
-                  const ns = getTestimonialNamespaces(otro)[1];
-                  const resumen = t(`${ns}:summary`, {
-                    returnObjects: true,
-                  }) as TestimonialSummaryProps;
-                  return (
-                  <Card key={otro}>
-                    <CardHeader>
-                      <CardTitle>{resumen.client}</CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p>{resumen.title}</p>
-                    </CardContent>
-                    <CardFooter>
-                      <Link
-                        href={localizedHref(`/testimonios/${otro}`, locale)}
-                        className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-input bg-background shadow-sm hover:bg-accent hover:text-accent-foreground h-9 px-4 py-2 w-full"
-                      >
-                        {t("common:testimonials.viewCase")}
-                      </Link>
-                    </CardFooter>
-                  </Card>
-                  );
-                })}
-              </div>
-            </section>
-          </div>
-        </main>
-      </div>
+                <div className="relative p-5">
+                  <p className="font-semibold leading-snug">{resumen.title}</p>
+                  <p className="mt-2 text-sm text-white/85">{t("common:testimonials.viewCase")} →</p>
+                </div>
+              </Link>
+            );
+          })}
+        </div>
+      </section>
 
       <CallToActionSection />
     </>
