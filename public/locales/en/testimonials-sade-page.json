@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Sade, almost a century of cinemas and theatres in San Sebastián, with its companies in Sttok",
-    "description": "Sade uses Sttok for shareholder register, companies, meetings and documents.",
+    "description": "Sade uses Sttok for shareholder register, shareholder management, certificates and dividends.",
     "keywords": "Sade, Sttok, Sttok customers, shareholder register"
   },
   "summary": {
@@ -23,7 +23,7 @@
       },
       {
         "key": "Features",
-        "value": "Shareholder register, companies, meetings and documents"
+        "value": "Shareholder register, shareholder management, certificates and dividends"
       }
     ]
   },
@@ -54,19 +54,19 @@
     ],
     "uses": [
       {
-        "title": "Its shareholders, up to date",
-        "text": "The shareholder register with each position.",
+        "title": "Shareholder register and management",
+        "text": "Each shareholder with their position, details and history, always up to date.",
         "image": "/animaciones/en/accionistas-light-poster.webp"
       },
       {
-        "title": "Each company in its place",
-        "text": "Cinemas, theatres and hotels, each with its company and documents.",
-        "image": "/animaciones/en/sociedades-light-poster.webp"
+        "title": "Certificates",
+        "text": "Each shareholder's certificates, generated from the register.",
+        "image": "/animaciones/certificados-de-titularidad-y-valor-light-poster.webp"
       },
       {
-        "title": "Digital meetings",
-        "text": "Notice, votes and minutes without paper.",
-        "image": "/animaciones/en/voto-electronico-en-juntas-light-poster.webp"
+        "title": "Dividends and their tax forms",
+        "text": "Each distribution, with the dividend tax forms generated automatically.",
+        "image": "/animaciones/reparto-de-dividendos-light-poster.webp"
       }
     ]
   }

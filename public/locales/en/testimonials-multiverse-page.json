@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Multiverse Computing, a pioneer in AI and quantum computing, keeps its shareholder register in Sttok",
-    "description": "Multiverse Computing uses Sttok for shareholder register, transaction simulator and documents.",
+    "description": "Multiverse Computing uses Sttok for shareholder register, funding rounds and incentive plans.",
     "keywords": "Multiverse Computing, Sttok, Sttok customers, shareholder register"
   },
   "summary": {
@@ -23,7 +23,7 @@
       },
       {
         "key": "Features",
-        "value": "Shareholder register, transaction simulator and documents"
+        "value": "Shareholder register, funding rounds and incentive plans"
       }
     ]
   },
@@ -44,19 +44,19 @@
     },
     "uses": [
       {
-        "title": "A flawless shareholder register",
+        "title": "Its shareholders, up to date",
         "text": "Each investor with their shares, their class and their history.",
         "image": "/animaciones/en/accionistas-light-poster.webp"
       },
       {
-        "title": "Rounds, before they are signed",
-        "text": "The effect of each capital increase on the cap table, simulated before closing.",
+        "title": "Funding rounds",
+        "text": "Each round simulated before closing and then recorded in the register.",
         "image": "/animaciones/en/simulador-light-poster.webp"
       },
       {
-        "title": "Deeds read with AI",
-        "text": "Each transaction is recorded from its deed.",
-        "image": "/animaciones/en/lectura-de-escrituras-con-ia-light-poster.webp"
+        "title": "The incentive plan",
+        "text": "Each team member sees their units, their schedule and their value.",
+        "image": "/animaciones/en/liquidez-planes-de-incentivos-light-poster.webp"
       }
     ]
   }
