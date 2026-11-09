@@ -109,6 +109,17 @@ const nextConfig = {
         destination: "/startups",
         statusCode: 301,
       },
+      // La web antigua servia la portada tambien como /index.html, y Google
+      // la sigue pidiendo (404 en Search Console, nov-2026).
+      { source: "/index.html", destination: "/", statusCode: 301 },
+      // Los articulos del blog vivieron en www.sttok.com/recursos/<slug> y hoy
+      // estan en blog.sttok.com con el mismo slug. /recursos (sin slug) es el
+      // glosario de esta web y no se toca.
+      {
+        source: "/recursos/:slug",
+        destination: "https://blog.sttok.com/recursos/:slug/",
+        statusCode: 301,
+      },
       // Casos de exito retirados. Apuntan al indice de casos, que es el
       // contenido equivalente mas cercano: la home no lo es, y un 301 a la
       // home para una pagina retirada es un soft 404.
