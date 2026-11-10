@@ -92,56 +92,16 @@
         ]
       },
       {
-        "title": "Company groups",
-        "summary": "Every company in the group and who controls each one.",
-        "href": "/en/solutions/companies",
+        "title": "Communications and signatures",
+        "href": "/en/communications-and-signatures",
         "items": [
           {
-            "title": "The whole group at a glance",
-            "description": "Each company with its percentages, which company it depends on and its governing body. The whole group in one view."
+            "title": "Built-in electronic signature",
+            "description": "Minutes, certificates, letters and documents for shareholders are sent for signature straight from Sttok. Included in the Advanced and Pro plans."
           },
           {
-            "title": "Group chart",
-            "description": "Subsidiaries and the chain of control on any date. A group company can be a shareholder of another."
-          },
-          {
-            "title": "Beneficial owner",
-            "description": "Who holds more than 25% of the capital or the votes, or any other threshold you set, at the end of the chain, calculated from the registers."
-          },
-          {
-            "title": "New companies",
-            "description": "Each company comes in with its history. If it has just been incorporated, Sttok reads the deed of incorporation."
-          },
-          {
-            "title": "Access control and roles",
-            "description": "Who can enter each company and with which role. Partial access too, so other people only see the data opened to them."
-          },
-          {
-            "title": "Automatic documents",
-            "description": "Sttok generates the notices, minutes and certificates of each group company from its own data."
-          }
-        ]
-      },
-      {
-        "title": "Transaction simulator",
-        "summary": "The effect of a transaction before it is signed.",
-        "href": "/en/operation-drafts",
-        "items": [
-          {
-            "title": "Capital increases and reductions",
-            "description": "The effect of each transaction on the actual register, including the pool and note conversion."
-          },
-          {
-            "title": "Sales and convertible notes",
-            "description": "Who ends up with what percentage after each step, chaining several transactions."
-          },
-          {
-            "title": "Liquidation waterfall",
-            "description": "What each shareholder receives in a sale, with the preferences of each class."
-          },
-          {
-            "title": "Draft documents",
-            "description": "The simulated transaction comes with its drafts in Word for the notary or the law firm."
+            "title": "Built-in communications",
+            "description": "One click sends notices of general meetings and board meetings, and any other communication to shareholders, with proof of delivery."
           }
         ]
       },
@@ -173,6 +133,29 @@
         ]
       },
       {
+        "title": "Transaction simulator",
+        "summary": "The effect of a transaction before it is signed.",
+        "href": "/en/operation-drafts",
+        "items": [
+          {
+            "title": "Capital increases and reductions",
+            "description": "The effect of each transaction on the actual register, including the pool and note conversion."
+          },
+          {
+            "title": "Sales and convertible notes",
+            "description": "Who ends up with what percentage after each step, chaining several transactions."
+          },
+          {
+            "title": "Liquidation waterfall",
+            "description": "What each shareholder receives in a sale, with the preferences of each class."
+          },
+          {
+            "title": "Draft documents",
+            "description": "The simulated transaction comes with its drafts in Word for the notary or the law firm."
+          }
+        ]
+      },
+      {
         "title": "Secondary market",
         "summary": "Sales between shareholders, recorded in the register.",
         "href": "/en/secondary-market",
@@ -196,17 +179,40 @@
         ]
       },
       {
-        "title": "Documents, signature and communications",
-        "summary": "Signing, sending and generating documents, filed by company.",
+        "title": "Company groups",
+        "summary": "Every company in the group and who controls each one.",
+        "href": "/en/solutions/companies",
         "items": [
           {
-            "title": "Built-in electronic signature",
-            "description": "Minutes, certificates, letters and documents for shareholders are sent for signature straight from Sttok. Included in the Advanced and Pro plans."
+            "title": "The whole group at a glance",
+            "description": "Each company with its percentages, which company it depends on and its governing body. The whole group in one view."
           },
           {
-            "title": "Built-in communications",
-            "description": "One click sends notices of general meetings and board meetings, and any other communication to shareholders, with proof of delivery."
+            "title": "Group chart",
+            "description": "Subsidiaries and the chain of control on any date. A group company can be a shareholder of another."
           },
+          {
+            "title": "Beneficial owner",
+            "description": "Who holds more than 25% of the capital or the votes, or any other threshold you set, at the end of the chain, calculated from the registers."
+          },
+          {
+            "title": "New companies",
+            "description": "Each company comes in with its history. If it has just been incorporated, Sttok reads the deed of incorporation."
+          },
+          {
+            "title": "Access control and roles",
+            "description": "Who can enter each company and with which role. Partial access too, so other people only see the data opened to them."
+          },
+          {
+            "title": "Automatic documents",
+            "description": "Sttok generates the notices, minutes and certificates of each group company from its own data."
+          }
+        ]
+      },
+      {
+        "title": "Documents and Sttok AI",
+        "summary": "Signing, sending and generating documents, filed by company.",
+        "items": [
           {
             "title": "Document generation",
             "description": "Notices, minutes, certificates and letters are generated automatically and filed in the company's repository."

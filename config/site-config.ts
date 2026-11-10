@@ -56,14 +56,19 @@ export const siteConfig = {
             description: "menu.BoardsDescription",
           },
           {
-            href: routes.PRODUCT_OPERATION_DRAFTS,
-            title: "menu.DraftsTitle",
-            description: "menu.DraftsDescription",
+            href: routes.PRODUCT_COMMUNICATIONS,
+            title: "menu.CommsTitle",
+            description: "menu.CommsDescription",
           },
           {
             href: routes.PRODUCT_INCENTIVE_PLANS,
             title: "menu.PlansTitle",
             description: "menu.PlansDescription",
+          },
+          {
+            href: routes.PRODUCT_OPERATION_DRAFTS,
+            title: "menu.DraftsTitle",
+            description: "menu.DraftsDescription",
           },
           {
             href: routes.PRODUCT_SECONDARY_MARKET,
@@ -151,16 +156,22 @@ export const siteConfig = {
           alt: "Software para Juntas de consejos",
         },
         {
-          id: 3,
-          title: "menu.DraftsTitle",
-          url: routes.PRODUCT_OPERATION_DRAFTS,
-          alt: "Software para Simulador de operaciones",
+          id: 19,
+          title: "menu.CommsTitle",
+          url: routes.PRODUCT_COMMUNICATIONS,
+          alt: "Software para comunicaciones y firma electrónica",
         },
         {
           id: 2,
           title: "menu.PlansTitle",
           url: routes.PRODUCT_INCENTIVE_PLANS,
           alt: "Software para Planes de incentivos",
+        },
+        {
+          id: 3,
+          title: "menu.DraftsTitle",
+          url: routes.PRODUCT_OPERATION_DRAFTS,
+          alt: "Software para Simulador de operaciones",
         },
         {
           id: 17,

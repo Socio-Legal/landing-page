@@ -77,6 +77,10 @@ const PAGES: Record<string, { label: Label; section?: SectionKey }> = {
     label: { es: "Juntas y Consejos", en: "Shareholder Meetings" },
     section: "product",
   },
+  "/comunicaciones-y-firma": {
+    label: { es: "Comunicaciones y firma", en: "Communications and signatures" },
+    section: "product",
+  },
   "/simulador": {
     label: { es: "Simulador de Operaciones", en: "Operations Simulator" },
     section: "product",

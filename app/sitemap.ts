@@ -16,6 +16,7 @@ const MAIN_ROUTES = [
   "/libro-de-socios",
   "/planes-de-incentivos",
   "/juntas-consejos",
+  "/comunicaciones-y-firma",
   "/simulador",
   "/mercado-secundario",
   "/empresas",

@@ -39,7 +39,9 @@ const SELECCION = {
   "documentos": [
     "Libros de actas",
     "Legalización del libro registro",
-    "Reglas de la sociedad",
+    "Reglas de la sociedad"
+  ],
+  "comunicaciones": [
     "Firma electrónica"
   ]
 };
