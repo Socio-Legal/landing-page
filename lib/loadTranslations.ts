@@ -17,6 +17,7 @@ import productHeroSection from "../public/locales/es/product-hero-section.json";
 import productPartnerBookPage from "../public/locales/es/product-partner-book-page.json";
 import productIncentivePlansPage from "../public/locales/es/product-incentive-plans-page.json";
 import productShareholderMeetingsPage from "../public/locales/es/product-shareholder-meetings-page.json";
+import productCommunicationsSignaturesPage from "../public/locales/es/product-communications-signatures-page.json";
 import productOperationDraftsPage from "../public/locales/es/product-operation-drafts-page.json";
 import productSecondaryMarketPage from "../public/locales/es/product-secondary-market-page.json";
 
@@ -67,6 +68,7 @@ import productHeroSectionEN from "../public/locales/en/product-hero-section.json
 import productPartnerBookPageEN from "../public/locales/en/product-partner-book-page.json";
 import productIncentivePlansPageEN from "../public/locales/en/product-incentive-plans-page.json";
 import productShareholderMeetingsPageEN from "../public/locales/en/product-shareholder-meetings-page.json";
+import productCommunicationsSignaturesPageEN from "../public/locales/en/product-communications-signatures-page.json";
 import productOperationDraftsPageEN from "../public/locales/en/product-operation-drafts-page.json";
 import productSecondaryMarketPageEN from "../public/locales/en/product-secondary-market-page.json";
 
@@ -119,6 +121,7 @@ const loadTranslations = (lang: "es" | "en") => {
       "product-partner-book-page": productPartnerBookPage,
       "product-incentive-plans-page": productIncentivePlansPage,
       "product-shareholder-meetings-page": productShareholderMeetingsPage,
+      "product-communications-signatures-page": productCommunicationsSignaturesPage,
       "product-operation-drafts-page": productOperationDraftsPage,
       "product-secondary-market-page": productSecondaryMarketPage,
 
@@ -171,6 +174,7 @@ const loadTranslations = (lang: "es" | "en") => {
     "product-partner-book-page": productPartnerBookPageEN,
     "product-incentive-plans-page": productIncentivePlansPageEN,
     "product-shareholder-meetings-page": productShareholderMeetingsPageEN,
+    "product-communications-signatures-page": productCommunicationsSignaturesPageEN,
     "product-operation-drafts-page": productOperationDraftsPageEN,
     "product-secondary-market-page": productSecondaryMarketPageEN,
 

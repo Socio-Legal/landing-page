@@ -18,6 +18,7 @@ import PageAvisoLegal from "@/app/(legal)/disclaimer/page";
 import PageEmpresas from "@/app/solutions/companies/page";
 import PageInversores from "@/app/solutions/investors/page";
 import PageJuntasConsejos from "@/app/(product)/shareholder-meetings/page";
+import PageComunicacionesYFirma from "@/app/(product)/communications-signatures/page";
 import PageLibroDeSocios from "@/app/(product)/partners-book/page";
 import PageMercadoSecundario from "@/app/(product)/secondary-market/page";
 import PagePlanesDeIncentivos from "@/app/(product)/incentive-plans/page";
@@ -118,6 +119,18 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
       keywords: "investors, investees, portfolio, captable, shareholder register, investor",
       },
     },
+  },
+  "/comunicaciones-y-firma": {
+    Component: PageComunicacionesYFirma,
+    meta: {
+      en: {
+        title: "Built-in communications and e-signature",
+        description: "Notices and notifications emailed to shareholders and directors with proof of delivery, built-in DocuSign e-signature, automatic signature placement and automatic filing in the company records.",
+        keywords: "shareholder communications, meeting notice by email, proof of delivery, e-signature, DocuSign, signing minutes, minute book",
+      },
+    },
+    softwareApplication: true,
+    productModule: true,
   },
   "/juntas-consejos": {
     Component: PageJuntasConsejos,

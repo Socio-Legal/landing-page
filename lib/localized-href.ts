@@ -11,6 +11,7 @@ export const ROUTE_MAP: Record<string, string> = {
   "/libro-de-socios": "/en/partners-book",
   "/planes-de-incentivos": "/en/incentive-plans",
   "/juntas-consejos": "/en/shareholder-meetings",
+  "/comunicaciones-y-firma": "/en/communications-and-signatures",
   "/simulador": "/en/operation-drafts",
   "/mercado-secundario": "/en/secondary-market",
   "/empresas": "/en/solutions/companies",

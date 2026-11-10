@@ -18,6 +18,7 @@ const ES_TO_FOLDER = {
   "/libro-de-socios": "/partners-book",
   "/planes-de-incentivos": "/incentive-plans",
   "/juntas-consejos": "/shareholder-meetings",
+  "/comunicaciones-y-firma": "/communications-signatures",
   "/simulador": "/operation-drafts",
   "/mercado-secundario": "/secondary-market",
   // Soluciones

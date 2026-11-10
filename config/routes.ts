@@ -5,6 +5,7 @@ export const routes = {
   PRODUCT_PARTNERS_BOOK: "/libro-de-socios",
   PRODUCT_INCENTIVE_PLANS: "/planes-de-incentivos",
   PRODUCT_SHAREHOLDER_MEETINGS: "/juntas-consejos",
+  PRODUCT_COMMUNICATIONS: "/comunicaciones-y-firma",
   PRODUCT_OPERATION_DRAFTS: "/simulador",
   PRODUCT_SECONDARY_MARKET: "/mercado-secundario",
   SOLUTIONS: "/soluciones",

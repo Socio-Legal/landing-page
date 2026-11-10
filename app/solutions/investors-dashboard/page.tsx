@@ -16,11 +16,13 @@ const SELECCION = {
     "Voto anticipado",
     "Convocatoria"
   ],
-  "documentos": [
+  "comunicaciones": [
     "Comunicaciones certificadas",
-    "Repositorio de documentos",
     "Firma electrónica",
     "Remitente propio"
+  ],
+  "documentos": [
+    "Repositorio de documentos"
   ],
   "plataforma": [
     "Personalización",

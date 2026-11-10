@@ -102,6 +102,106 @@
         "summary": "Convocatoria de juntas y consejos, delegaciones de voto, votaciones, actas y acceso a la documentación."
       },
       {
+        "title": "Comunicaciones y firma",
+        "href": "/comunicaciones-y-firma",
+        "items": [
+          {
+            "title": "Firma electrónica integrada",
+            "description": "Actas, certificados, cartas y documentos para los socios se envían a firmar directamente desde Sttok. Incluida en los planes Avanzado y Pro.",
+            "href": "/funcionalidades/firma-electronica"
+          },
+          {
+            "title": "Comunicaciones integradas",
+            "description": "Con un clic se envían las convocatorias de juntas y de consejos y cualquier otra comunicación a los socios, con su certificado de envío.",
+            "href": "/funcionalidades/comunicaciones-a-socios"
+          }
+        ]
+      },
+      {
+        "title": "Planes de incentivos",
+        "href": "/planes-de-incentivos",
+        "items": [
+          {
+            "title": "Phantom shares y stock options",
+            "description": "Cada plan con sus instrumentos, su pool y el acuerdo de junta que lo aprueba.",
+            "href": "/funcionalidades/phantom-shares-y-stock-options"
+          },
+          {
+            "title": "Vesting y asignaciones",
+            "description": "Sttok consolida las unidades de cada beneficiario de forma automática, según su calendario, desde que firma su carta de invitación.",
+            "href": "/funcionalidades/phantom-shares-y-stock-options"
+          },
+          {
+            "title": "Portal del beneficiario",
+            "description": "Cada empleado ve su plan desde el ordenador o el móvil: sus unidades, su valor estimado y su calendario de vesting, al día.",
+            "href": "/funcionalidades/portal-del-beneficiario"
+          },
+          {
+            "title": "Tender offers y liquidez",
+            "description": "Ventanas de compra sobre los derechos consolidados, con su retención y su registro en el plan.",
+            "href": "/funcionalidades/liquidez-planes-de-incentivos"
+          },
+          {
+            "title": "Cartas de invitación en bloque",
+            "description": "Con un Excel de beneficiarios, Sttok genera la carta personalizada de cada uno, de uno a mil, y la envía a firmar con DocuSign. Firmada, queda en la ficha del beneficiario.",
+            "href": "/funcionalidades/phantom-shares-y-stock-options"
+          }
+        ],
+        "summary": "Los planes de empleados y directivos, conectados al libro."
+      },
+      {
+        "title": "Simulador de operaciones",
+        "href": "/simulador",
+        "items": [
+          {
+            "title": "Ampliaciones y reducciones",
+            "description": "El efecto de cada operación sobre el libro real, incluidos el pool y la conversión de notas."
+          },
+          {
+            "title": "Compraventas y notas convertibles",
+            "description": "Quién queda con qué porcentaje después de cada paso, encadenando varias operaciones."
+          },
+          {
+            "title": "Cascada de liquidación",
+            "description": "Qué recibe cada socio en una venta, con las preferencias de cada clase.",
+            "href": "/funcionalidades/cascada-de-liquidacion"
+          },
+          {
+            "title": "Borradores de documentos",
+            "description": "La operación simulada sale con sus borradores en Word para el notario o el despacho.",
+            "href": "/funcionalidades/borradores-de-documentos"
+          }
+        ],
+        "summary": "El efecto de una operación antes de firmarla."
+      },
+      {
+        "title": "Mercado secundario",
+        "href": "/mercado-secundario",
+        "items": [
+          {
+            "title": "Ofertas de venta",
+            "description": "Un socio publica cuántas acciones vende, a qué precio y en qué plazo.",
+            "href": "/funcionalidades/ofertas-de-compra-y-venta-de-acciones"
+          },
+          {
+            "title": "Ofertas de compra",
+            "description": "La sociedad o un socio lanza una oferta de compra a varios socios a la vez.",
+            "href": "/funcionalidades/ofertas-de-compra-y-venta-de-acciones"
+          },
+          {
+            "title": "Libro de ofertas",
+            "description": "Precio medio, volumen y estado de cada oferta, con su histórico.",
+            "href": "/funcionalidades/ofertas-de-compra-y-venta-de-acciones"
+          },
+          {
+            "title": "Registro en el libro",
+            "description": "Cada operación ejecutada se anota en el libro de socios con su documentación. Se contrata como módulo adicional.",
+            "href": "/funcionalidades/ofertas-de-compra-y-venta-de-acciones"
+          }
+        ],
+        "summary": "Compraventas entre socios con su registro en el libro."
+      },
+      {
         "title": "Grupos de sociedades",
         "href": "/soluciones/grupos-de-sociedades",
         "items": [
@@ -137,103 +237,9 @@
         "summary": "Todas las sociedades del grupo y quién controla cada una."
       },
       {
-        "title": "Simulador de operaciones",
-        "href": "/simulador",
-        "items": [
-          {
-            "title": "Ampliaciones y reducciones",
-            "description": "El efecto de cada operación sobre el libro real, incluidos el pool y la conversión de notas."
-          },
-          {
-            "title": "Compraventas y notas convertibles",
-            "description": "Quién queda con qué porcentaje después de cada paso, encadenando varias operaciones."
-          },
-          {
-            "title": "Cascada de liquidación",
-            "description": "Qué recibe cada socio en una venta, con las preferencias de cada clase.",
-            "href": "/funcionalidades/cascada-de-liquidacion"
-          },
-          {
-            "title": "Borradores de documentos",
-            "description": "La operación simulada sale con sus borradores en Word para el notario o el despacho.",
-            "href": "/funcionalidades/borradores-de-documentos"
-          }
-        ],
-        "summary": "El efecto de una operación antes de firmarla."
-      },
-      {
-        "title": "Planes de incentivos",
-        "href": "/planes-de-incentivos",
-        "items": [
-          {
-            "title": "Phantom shares y stock options",
-            "description": "Cada plan con sus instrumentos, su pool y el acuerdo de junta que lo aprueba.",
-            "href": "/funcionalidades/phantom-shares-y-stock-options"
-          },
-          {
-            "title": "Vesting y asignaciones",
-            "description": "Sttok consolida las unidades de cada beneficiario de forma automática, según su calendario, desde que firma su carta de invitación.",
-            "href": "/funcionalidades/phantom-shares-y-stock-options"
-          },
-          {
-            "title": "Portal del beneficiario",
-            "description": "Cada empleado ve su plan desde el ordenador o el móvil: sus unidades, su valor estimado y su calendario de vesting, al día.",
-            "href": "/funcionalidades/portal-del-beneficiario"
-          },
-          {
-            "title": "Tender offers y liquidez",
-            "description": "Ventanas de compra sobre los derechos consolidados, con su retención y su registro en el plan.",
-            "href": "/funcionalidades/liquidez-planes-de-incentivos"
-          },
-          {
-            "title": "Cartas de invitación en bloque",
-            "description": "Con un Excel de beneficiarios, Sttok genera la carta personalizada de cada uno, de uno a mil, y la envía a firmar con DocuSign. Firmada, queda en la ficha del beneficiario.",
-            "href": "/funcionalidades/phantom-shares-y-stock-options"
-          }
-        ],
-        "summary": "Los planes de empleados y directivos, conectados al libro."
-      },
-      {
-        "title": "Mercado secundario",
-        "href": "/mercado-secundario",
-        "items": [
-          {
-            "title": "Ofertas de venta",
-            "description": "Un socio publica cuántas acciones vende, a qué precio y en qué plazo.",
-            "href": "/funcionalidades/ofertas-de-compra-y-venta-de-acciones"
-          },
-          {
-            "title": "Ofertas de compra",
-            "description": "La sociedad o un socio lanza una oferta de compra a varios socios a la vez.",
-            "href": "/funcionalidades/ofertas-de-compra-y-venta-de-acciones"
-          },
-          {
-            "title": "Libro de ofertas",
-            "description": "Precio medio, volumen y estado de cada oferta, con su histórico.",
-            "href": "/funcionalidades/ofertas-de-compra-y-venta-de-acciones"
-          },
-          {
-            "title": "Registro en el libro",
-            "description": "Cada operación ejecutada se anota en el libro de socios con su documentación. Se contrata como módulo adicional.",
-            "href": "/funcionalidades/ofertas-de-compra-y-venta-de-acciones"
-          }
-        ],
-        "summary": "Compraventas entre socios con su registro en el libro."
-      },
-      {
-        "title": "Documentos, firma y comunicaciones",
+        "title": "Documentos y Sttok AI",
         "href": "/funcionalidades/documentacion-societaria",
         "items": [
-          {
-            "title": "Firma electrónica integrada",
-            "description": "Actas, certificados, cartas y documentos para los socios se envían a firmar directamente desde Sttok. Incluida en los planes Avanzado y Pro.",
-            "href": "/funcionalidades/firma-electronica"
-          },
-          {
-            "title": "Comunicaciones integradas",
-            "description": "Con un clic se envían las convocatorias de juntas y de consejos y cualquier otra comunicación a los socios, con su certificado de envío.",
-            "href": "/funcionalidades/comunicaciones-a-socios"
-          },
           {
             "title": "Generación de documentos",
             "description": "Convocatorias, actas, certificados y cartas se generan de forma automatizada y quedan en el repositorio de la sociedad.",

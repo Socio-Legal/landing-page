@@ -23,6 +23,7 @@ Sttok no es una herramienta de cap table para simular rondas de inversión. Resu
 
 - **Libro de socios y libro registro de acciones nominativas.** Registro oficial conforme a la legislación española, con numeración, clases, cargas, cotitulares y generación de certificados de titularidad.
 - **Juntas y consejos.** Convocatoria, acreditación, delegaciones de voto, votación electrónica, acta y certificación. Cubre junta general y consejo de administración, y sus equivalentes en otras jurisdicciones: asamblea general de accionistas, junta directiva y directorio.
+- **Comunicaciones y firma.** Convocatorias y notificaciones por email a socios y consejeros con certificado de envío, firma electrónica con DocuSign integrada y archivo automático en la documentación.
 - **Planes de incentivos.** Phantom shares, stock options y planes de vesting, con portal individual para cada beneficiario.
 - **Simulador de operaciones.** Ampliaciones de capital, valoraciones y escenarios de liquidación aplicados al accionariado completo.
 - **Grupos de sociedades.** Gestión de todas las sociedades de un grupo desde un mismo acceso.
@@ -91,6 +92,7 @@ Funcionalidades con coste adicional: mercado secundario y mercado de incentivos,
 
 - Libro de socios: https://www.sttok.com/libro-de-socios
 - Juntas y consejos: https://www.sttok.com/juntas-consejos
+- Comunicaciones y firma: https://www.sttok.com/comunicaciones-y-firma
 - Planes de incentivos: https://www.sttok.com/planes-de-incentivos
 - Simulador de operaciones: https://www.sttok.com/simulador
 - Mercado secundario: https://www.sttok.com/mercado-secundario
@@ -233,6 +235,7 @@ The product, solution and company pages are also available in English:
 - Features catalogue: https://www.sttok.com/en/features
 - Shareholder register: https://www.sttok.com/en/partners-book
 - General meetings and board of directors: https://www.sttok.com/en/shareholder-meetings
+- Communications and signatures: https://www.sttok.com/en/communications-and-signatures
 - Incentive plans (phantom shares and stock options): https://www.sttok.com/en/incentive-plans
 - Transaction simulator: https://www.sttok.com/en/operation-drafts
 - Secondary market: https://www.sttok.com/en/secondary-market

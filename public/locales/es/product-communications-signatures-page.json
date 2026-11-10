@@ -1,0 +1,136 @@
+{
+  "hero": {
+    "slogan": "Comunicaciones y firma",
+    "title": "Comunicaciones y firma electrónica integradas",
+    "description": "Sttok envía por email las convocatorias y las notificaciones a socios y consejeros, con su certificado de envío. Los documentos se firman con DocuSign sin salir de Sttok, las firmas se colocan solas encima de cada nombre y lo firmado queda archivado en la documentación de la sociedad. Todo queda registrado.",
+    "button": {
+      "text": "Solicitar demo",
+      "link": "https://calendly.com/sttok/30min"
+    },
+    "image": {
+      "light": "/animaciones/firma-y-comunicaciones-light-poster.webp",
+      "dark": "/animaciones/firma-y-comunicaciones-dark-poster.webp"
+    },
+    "video": "/animaciones/firma-y-comunicaciones"
+  },
+  "setup": {
+    "eyebrow": "Cómo funciona",
+    "title": "Comunicar, firmar y archivar, en la misma plataforma",
+    "lede": "Sin saltar entre el correo, la herramienta de firma y las carpetas: cada paso queda en la sociedad a la que pertenece.",
+    "steps": [
+      {
+        "title": "Comunicar",
+        "text": "Convocatorias, avisos y recordatorios a socios y consejeros, por email y con el remitente y el logo de la sociedad. Cada envío lleva su certificado: a quién, cuándo y con qué resultado."
+      },
+      {
+        "title": "Firmar",
+        "text": "Actas, certificaciones y cualquier documento se mandan a firmar con DocuSign. Sttok propone a los firmantes y coloca las firmas encima de cada nombre. Cada firmante firma desde el ordenador o el móvil."
+      },
+      {
+        "title": "Archivar",
+        "text": "Sttok muestra quién ha firmado y quién falta. Lo firmado queda en la documentación de la sociedad y el acta, en el libro de actas, sin subirlo a mano. El registro guarda cada envío y cada firma con su fecha y hora."
+      }
+    ],
+    "links": [
+      { "text": "Cómo funciona la firma electrónica", "href": "/funcionalidades/firma-electronica" },
+      { "text": "Cómo funcionan las comunicaciones", "href": "/funcionalidades/comunicaciones-a-socios" }
+    ]
+  },
+  "testimonials": {
+    "title": "Lo que dicen nuestros clientes",
+    "description": "Empresas que convocan, comunican y firman con Sttok.",
+    "items": [
+      {
+        "name": "Asesoría Jurídica",
+        "role": "MyInvestor",
+        "logo": "MyInvestor",
+        "description": "Sttok nos ha permitido digitalizar y automatizar toda la gestión societaria, desde la celebración de consejos de administración hasta el mantenimiento del libro registro de socios, garantizando la máxima seguridad jurídica en todos nuestros procesos corporativos.",
+        "stars": 5
+      },
+      {
+        "name": "Grupo Caballero",
+        "role": "Empresa familiar fundada en 1830",
+        "logo": "Caballero",
+        "description": "Sttok ha sido una herramienta clave para la gestión de nuestro Captable y Juntas de Socios. Nos ha permitido automatizar tareas manuales y ahorrar tiempo en la generación de documentos y firmas electrónicas.",
+        "stars": 5
+      }
+    ]
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Preguntas frecuentes sobre comunicaciones y firma",
+    "items": [
+      {
+        "q": "¿Hace falta tener una cuenta de DocuSign aparte?",
+        "a": "No. La firma con DocuSign está integrada en Sttok: el documento se manda a firmar desde la propia sociedad y cada firmante recibe el correo de DocuSign."
+      },
+      {
+        "q": "¿En qué planes está incluida la firma electrónica?",
+        "a": "En los planes Avanzado y Pro. Las comunicaciones por email y su certificado de envío están en todos los planes."
+      },
+      {
+        "q": "¿Los correos llegan en nombre de la sociedad?",
+        "a": "Sí. Las comunicaciones salen con la firma de correo y el logo de la sociedad, y el destinatario ve a quién responder."
+      },
+      {
+        "q": "¿Qué recoge el certificado de envío?",
+        "a": "A quién se envió, cuándo y con qué resultado: entregados y rebotados. Lo emite Sttok con el registro de cada envío, y se descarga en PDF."
+      },
+      {
+        "q": "¿Hay que colocar las firmas a mano en cada documento?",
+        "a": "No. Los documentos que genera Sttok, como el acta, ya saben dónde firma cada persona. En un PDF propio, Sttok busca el nombre de cada firmante y pone su firma encima; si no lo encuentra, lo dice y se coloca a mano."
+      },
+      {
+        "q": "¿Dónde queda lo firmado?",
+        "a": "En la documentación de la sociedad, junto a la junta, el consejo o la operación de la que sale. El acta firmada pasa al libro de actas con un clic."
+      }
+    ]
+  },
+  "includes": {
+    "eyebrow": "Qué incluye",
+    "title": "Todo lo que se comunica y se firma, en la sociedad",
+    "allLink": "Ver todas las funcionalidades de Sttok"
+  },
+  "situations": {
+    "eyebrow": "Casos habituales",
+    "title": "Situaciones habituales al comunicar y firmar",
+    "columns": {
+      "situation": "Situación",
+      "action": "Qué hace Sttok",
+      "guide": "Más información"
+    },
+    "guideLabel": "Ver cómo",
+    "rows": [
+      {
+        "situation": "Hay que convocar la junta",
+        "action": "Envía la convocatoria por email a cada socio y a sus representantes, con su certificado de envío y recordatorios a quien no responde.",
+        "href": "/funcionalidades/convocatoria-de-la-junta"
+      },
+      {
+        "situation": "El acta tiene que firmarse",
+        "action": "Manda el acta y la certificación a firmar con DocuSign al presidente y al secretario, y las archiva firmadas en el libro de actas.",
+        "href": "/funcionalidades/firma-electronica"
+      },
+      {
+        "situation": "Se reparte un dividendo",
+        "action": "Comunica el pago a todos los socios a la vez, en nombre de la sociedad, y guarda la prueba de cada envío.",
+        "href": "/funcionalidades/comunicaciones-a-socios"
+      },
+      {
+        "situation": "Toca convocar el consejo",
+        "action": "Envía la convocatoria a cada consejero con su documentación y una cita de calendario.",
+        "href": "/funcionalidades/consejo-de-administracion"
+      },
+      {
+        "situation": "Hay que firmar un PDF con varias personas",
+        "action": "Coloca solas las firmas encima de cada nombre y sigue quién ha firmado y quién falta.",
+        "href": "/funcionalidades/firma-electronica"
+      },
+      {
+        "situation": "Alguien dice que no recibió la convocatoria",
+        "action": "El certificado de envío y el registro dicen a quién se mandó, cuándo y si se entregó.",
+        "href": "/funcionalidades/comunicaciones-a-socios"
+      }
+    ]
+  }
+}
