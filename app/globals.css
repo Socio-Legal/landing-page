@@ -132,3 +132,16 @@
   cursor: pointer;
 }
 
+/*
+ * Ventana de Calendly (components/calendly-popup.tsx). Su CSS la deja en 900-1000 px,
+ * y a ese ancho Calendly apila el logo, los datos de la cita y el calendario: el
+ * calendario queda debajo y hay que hacer scroll. A partir de ~1.100 px pone los
+ * datos y el calendario en dos columnas y todo se ve de un vistazo. Por debajo de
+ * 976 px Calendly usa su propia ventana de móvil, que no se toca.
+ */
+@media (min-width: 976px) {
+  .calendly-overlay .calendly-popup {
+    width: 92% !important;
+    max-width: 1120px !important;
+  }
+}
