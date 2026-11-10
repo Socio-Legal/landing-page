@@ -138,10 +138,15 @@
  * calendario queda debajo y hay que hacer scroll. A partir de ~1.100 px pone los
  * datos y el calendario en dos columnas y todo se ve de un vistazo. Por debajo de
  * 976 px Calendly usa su propia ventana de móvil, que no se toca.
+ *
+ * También más alta: su máximo de 700 px deja el contenido unos píxeles más alto
+ * que la ventana y aparece una barra de scroll dentro de su página, que no se
+ * puede estilar (es de calendly.com). Con 820 px cabe y la barra no sale.
  */
 @media (min-width: 976px) {
-  .calendly-overlay .calendly-popup {
+  body .calendly-overlay .calendly-popup {
     width: 92% !important;
     max-width: 1120px !important;
+    max-height: 820px !important;
   }
 }
