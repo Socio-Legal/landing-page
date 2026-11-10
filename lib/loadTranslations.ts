@@ -10,6 +10,7 @@ import homeTestimonialsSection from "../public/locales/es/home-testimonials-sect
 import homeUsesSection from "../public/locales/es/home-uses-section.json";
 import homeNumbersSection from "../public/locales/es/home-numbers-section.json";
 import homeFlowsSection from "../public/locales/es/home-flows-section.json";
+import homeJuntaSection from "../public/locales/es/home-junta-section.json";
 import homeIntegrationsSection from "../public/locales/es/home-integrations-section.json";
 import homePricingAnchor from "../public/locales/es/home-pricing-anchor.json";
 
@@ -114,6 +115,7 @@ const loadTranslations = (lang: "es" | "en") => {
       "home-uses-section": homeUsesSection,
       "home-numbers-section": homeNumbersSection,
       "home-flows-section": homeFlowsSection,
+      "home-junta-section": homeJuntaSection,
       "home-integrations-section": homeIntegrationsSection,
       "home-pricing-anchor": homePricingAnchor,
 

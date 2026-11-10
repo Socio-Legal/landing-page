@@ -1,0 +1,38 @@
+{
+  "header": {
+    "slogan": "Juntas",
+    "title": "Preparación de la junta general",
+    "description": "Los socios delegan desde el correo de la convocatoria y Sttok cuenta esas delegaciones en el quórum. El acta sale a firmar y cada socio recibe su certificado."
+  },
+  "alt": "Una abogada prepara la junta general entre correos, el Excel del libro de socios y delegaciones en PDF. Con Sttok, el quórum sale calculado con las delegaciones, el acta se envía a firmar y los socios reciben su certificado.",
+  "note": "Datos de ejemplo.",
+  "prompt": "Prepara la junta",
+  "done": "Junta lista con Sttok",
+  "signals": {
+    "mailBefore": "RE: RE: Convocatoria junta",
+    "mailAfter": "Convocatoria enviada",
+    "sheetBefore": "libro_socios.xlsx",
+    "sheetAfter": "Libro de socios",
+    "total": "Total",
+    "totalBefore": "99,7 %",
+    "totalAfter": "100 %",
+    "quorum": "Quórum:",
+    "quorumAfter": "98,58 %",
+    "folderBefore": "2 sin anotar",
+    "folderAfter": "Anotadas",
+    "proxy": "DELEGACIÓN DE VOTO",
+    "proxyAfter": "Registrada",
+    "memberInitials": "LV",
+    "memberBefore": "¿Y mi certificado?",
+    "memberAfter": "Certificado enviado ✓"
+  },
+  "cards": [
+    "Quórum calculado, con las delegaciones",
+    "Acta generada y enviada a firmar",
+    "Certificados en un clic"
+  ],
+  "labels": {
+    "pause": "Pausar",
+    "play": "Reproducir"
+  }
+}

@@ -7,6 +7,7 @@ import HeroSection from "@/components/landing/hero-section";
 import ClientsSection from "@/components/landing/clients-section";
 import NumbersSection from "@/components/landing/numbers-section";
 import ProductsSection from "@/components/landing/products-section";
+import JuntaSection from "@/components/landing/junta-section";
 import FlowsSection from "@/components/landing/flows-section";
 import WhoUsesSttokSection from "@/components/landing/who-uses-sttok-section";
 import TestimonialsSection from "@/components/landing/testimonials-section";
@@ -19,6 +20,7 @@ export default function Page() {
     "home-clients-section",
     "home-numbers-section",
     "home-flows-section",
+    "home-junta-section",
     "home-cta-section",
     "home-hero-section",
     "home-products-section",
@@ -33,6 +35,7 @@ export default function Page() {
       <ClientsSection />
       <NumbersSection />
       <ProductsSection />
+      <JuntaSection />
       <FlowsSection />
       <WhoUsesSttokSection />
       <TestimonialsSection />
