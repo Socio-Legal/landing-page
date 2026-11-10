@@ -70,10 +70,10 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     Component: PageHome,
     meta: {
       en: {
-        title: "Sttok: cap table, shareholder register, meetings and incentives",
-        description: "Corporate governance software: shareholder register and cap table, incentive plans, general meetings, board and transaction simulator. ISO 27001 and GDPR.",
+        title: "Sttok: shareholder register, meetings and boards for companies and groups",
+        description: "Corporate governance software for companies and groups: shareholder register, meetings and boards with built-in communications and e-signature, and incentive plans. ISO 27001 and GDPR.",
         keywords:
-          "corporate management software, shareholder registry, cap table, incentive plans, shareholder meetings, corporate governance, equity management",
+          "corporate management software, corporate groups, shareholder registry, cap table, shareholder meetings, board of directors, incentive plans, corporate governance",
       },
     },
     // La portada emitia la ficha de producto desde app/en/page.tsx, no desde

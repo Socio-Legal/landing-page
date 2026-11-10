@@ -15,33 +15,6 @@
       "stars": 5
     },
     {
-      "name": "Oriol Miralbell",
-      "role": "CEO y Fundador | Legal Pigeon",
-      "img": "/logo-legalpigeon-mini.png",
-      "description": "Sttok es una aplicación que ha llegado para facilitar la vida de abogados, empresas, inversores y emprendedores. La interfaz de la aplicación es sencilla e intuitiva, lo que hace que el proceso de llevar un seguimiento de tu sociedad sea mucho más fácil.",
-      "stars": 5
-    },
-    {
-      "name": "Eric Gracia",
-      "role": "Abogado | Derecho.com",
-      "img": "/logo-derechocom-mini.png",
-      "description": "Sttok me ha permitido tener toda la documentación mercantil de las sociedades que gestiono a mano. Quedan atrás Excels y carpetas donde costaba hacer seguimiento. Lo mejor es su usabilidad, muy intuitivo y user-friendly.",
-      "stars": 4
-    },
-    {
-      "name": "Patricia Manca",
-      "role": "Socia responsable de NewLaw en PwC Tax & Legal",
-      "description": "Sttok permite la gestión digital de sociedades, libros de socios, planes de incentivos, juntas, etc. Sttok ha participado en el programa de aceleración de startups de PwC Tax & Legal, el 'Tax and Legal Tech Springboard' creado con el objetivo de impulsar, en el mercado español, soluciones legaltech y taxtech.",
-      "stars": 5
-    },
-    {
-      "name": "Nacho González",
-      "role": "CEO y Fundador | Banktrack",
-      "img": "/logo-banktrack-mini.png",
-      "description": "Ahora con Sttok puedes realizar simulaciones de ampliaciones o notas convertibles. Además también gestionamos las phantoms de nuestro equipo fácilmente. Finalmente como inversor tengo organizadas mis participadas y conozco claramente qué es lo que tengo.",
-      "stars": 5
-    },
-    {
       "name": "Asesoría Jurídica",
       "role": "MyInvestor",
       "description": "Sttok nos ha permitido digitalizar y automatizar toda la gestión societaria, desde la celebración de consejos de administración hasta el mantenimiento del libro registro de socios, garantizando la máxima seguridad jurídica en todos nuestros procesos corporativos.",
@@ -60,6 +33,19 @@
       "role": "Empresa aeroespacial española",
       "img": "/logo-pldspace-mini.png",
       "description": "Para gestionar la relación con nuestros socios e inversores utilizamos Sttok. Además de las principales funcionalidades como libro de socios, juntas de accionistas, planes de incentivos y consejo de administración, etc.",
+      "stars": 5
+    },
+    {
+      "name": "Eric Gracia",
+      "role": "Abogado | Derecho.com",
+      "img": "/logo-derechocom-mini.png",
+      "description": "Sttok me ha permitido tener toda la documentación mercantil de las sociedades que gestiono a mano. Quedan atrás Excels y carpetas donde costaba hacer seguimiento. Lo mejor es su usabilidad, muy intuitivo y user-friendly.",
+      "stars": 4
+    },
+    {
+      "name": "Patricia Manca",
+      "role": "Socia responsable de NewLaw en PwC Tax & Legal",
+      "description": "Sttok permite la gestión digital de sociedades, libros de socios, planes de incentivos, juntas, etc. Sttok ha participado en el programa de aceleración de startups de PwC Tax & Legal, el 'Tax and Legal Tech Springboard' creado con el objetivo de impulsar, en el mercado español, soluciones legaltech y taxtech.",
       "stars": 5
     }
   ],
