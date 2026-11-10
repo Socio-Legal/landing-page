@@ -24,16 +24,22 @@
       },
       {
         "title": "Firmar",
-        "text": "Actas, certificaciones y cualquier documento se mandan a firmar con DocuSign. Sttok propone a los firmantes y coloca las firmas encima de cada nombre. Cada firmante firma desde el ordenador o el móvil."
+        "text": "DocuSign está integrado en Sttok: actas, certificaciones y cualquier documento se mandan a firmar sin salir de Sttok. Sttok propone a los firmantes y coloca todas las firmas de un clic encima de cada nombre. Se ve quién ha firmado y quién no, y desde ahí mismo se recuerda a los pendientes."
       },
       {
         "title": "Archivar",
-        "text": "Sttok muestra quién ha firmado y quién falta. Lo firmado queda en la documentación de la sociedad y el acta, en el libro de actas, sin subirlo a mano. El registro guarda cada envío y cada firma con su fecha y hora."
+        "text": "Lo firmado se archiva solo en su carpeta: las actas, en el libro de actas; las delegaciones y los certificados, en la documentación de la sociedad. Cada envío lleva su certificado y el registro guarda cada envío y cada firma con su fecha y hora."
       }
     ],
     "links": [
-      { "text": "Cómo funciona la firma electrónica", "href": "/funcionalidades/firma-electronica" },
-      { "text": "Cómo funcionan las comunicaciones", "href": "/funcionalidades/comunicaciones-a-socios" }
+      {
+        "text": "Cómo funciona la firma electrónica",
+        "href": "/funcionalidades/firma-electronica"
+      },
+      {
+        "text": "Cómo funcionan las comunicaciones",
+        "href": "/funcionalidades/comunicaciones-a-socios"
+      }
     ]
   },
   "testimonials": {
@@ -88,7 +94,7 @@
   },
   "includes": {
     "eyebrow": "Qué incluye",
-    "title": "Todo lo que se comunica y se firma, en la sociedad",
+    "title": "Comunicaciones y firma electrónica, en la sociedad",
     "allLink": "Ver todas las funcionalidades de Sttok"
   },
   "situations": {

@@ -18,8 +18,10 @@ const SELECCION = {
   ],
   "comunicaciones": [
     "Comunicaciones certificadas",
-    "Firma electrónica",
     "Remitente propio"
+  ],
+  "firma": [
+    "Firma electrónica"
   ],
   "documentos": [
     "Repositorio de documentos"

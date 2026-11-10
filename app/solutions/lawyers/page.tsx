@@ -41,7 +41,7 @@ const SELECCION = {
     "Legalización del libro registro",
     "Reglas de la sociedad"
   ],
-  "comunicaciones": [
+  "firma": [
     "Firma electrónica"
   ]
 };

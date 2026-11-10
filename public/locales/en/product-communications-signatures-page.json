@@ -24,16 +24,22 @@
       },
       {
         "title": "Sign",
-        "text": "Minutes, certificates and any other document are sent for signature with DocuSign. Sttok suggests the signers and places the signatures above each name. Each signer signs from their computer or phone."
+        "text": "DocuSign is built into Sttok: minutes, certificates and any other document are sent for signature without leaving Sttok. Sttok suggests the signers and places every signature above each name in one click. You can see who has signed and who has not, and remind pending signers right there."
       },
       {
         "title": "File",
-        "text": "Sttok shows who has signed and who is missing. Signed documents are kept in the company records and the minutes go into the minute book, without uploading anything by hand. The log keeps every delivery and every signature with its date and time."
+        "text": "Signed documents are filed automatically in their folder: minutes in the minute book; proxies and certificates in the company records. Every delivery comes with its certificate and the log keeps every delivery and signature with its date and time."
       }
     ],
     "links": [
-      { "text": "How e-signature works (in Spanish)", "href": "/funcionalidades/firma-electronica" },
-      { "text": "How communications work (in Spanish)", "href": "/funcionalidades/comunicaciones-a-socios" }
+      {
+        "text": "How e-signature works (in Spanish)",
+        "href": "/funcionalidades/firma-electronica"
+      },
+      {
+        "text": "How communications work (in Spanish)",
+        "href": "/funcionalidades/comunicaciones-a-socios"
+      }
     ]
   },
   "testimonials": {
@@ -88,7 +94,7 @@
   },
   "includes": {
     "eyebrow": "What's included",
-    "title": "Everything that is communicated and signed, inside the company",
+    "title": "Communications and e-signature, inside the company",
     "allLink": "See all Sttok features"
   },
   "situations": {
