@@ -344,12 +344,7 @@ const ModulePage: FC<ModulePageProps> = ({ ns, modulos, seleccion }) => {
         items={faq}
       />
 
-      <CallToActionSection
-        secondary={{
-          text: t("product-hero-section:cta.secondaryText"),
-          link: t("product-hero-section:cta.secondaryLink"),
-        }}
-      />
+      <CallToActionSection />
     </>
   );
 };
