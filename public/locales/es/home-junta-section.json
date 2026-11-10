@@ -7,7 +7,7 @@
   "alt": "Una abogada prepara la junta general entre correos, el Excel del libro de socios y delegaciones en PDF. Con Sttok, el quórum sale calculado con las delegaciones, el acta se envía a firmar y los socios reciben su certificado.",
   "note": "Datos de ejemplo.",
   "prompt": "Prepara la junta",
-  "done": "Junta lista",
+  "done": "Junta lista con Sttok",
   "signals": {
     "mailBefore": "RE: RE: Convocatoria junta",
     "mailAfter": "Convocatoria enviada",
