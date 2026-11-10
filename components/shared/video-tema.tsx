@@ -16,7 +16,7 @@ const ALTO: Record<string, number> = {
   compraventa: 930, "convocatoria-de-la-junta": 930,
   "ampliaciones-y-reducciones-de-capital": 930, "asistencia-y-quorum": 930,
   "consejo-de-administracion": 930, "eleccion-de-consejeros": 930, "reparto-de-dividendos": 930,
-  "comunicaciones-a-socios": 930, "acta-de-la-junta": 930,
+  "acta-de-la-junta": 930,
   // 920 × 800 px CSS: solo el área de contenido, para que se lea a media columna.
   "simulador-ampliacion": 1113,
 };
