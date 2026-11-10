@@ -2,7 +2,7 @@
   "header": {
     "slogan": "Productos",
     "title": "Descubre nuestras funcionalidades",
-    "description": "Con Sttok, empresas, grupos societarios, abogados y startups llevan su libro de socios, sus juntas, su consejo y sus planes de incentivos.",
+    "description": "Empresas, grupos de sociedades, despachos y direcciones jurídicas llevan en Sttok el libro de socios, las juntas y el consejo, con las comunicaciones y la firma integradas, y sus planes de incentivos.",
     "buttonText": "Ver todas las funcionalidades",
     "buttonLink": "/funcionalidades"
   },
@@ -34,6 +34,19 @@
       "duracion": 25000
     },
     {
+      "id": 5,
+      "title": "Firma y comunicaciones",
+      "content": "Comunicaciones y firma electrónica integradas, con archivo automático en la documentación",
+      "alt": "Firma y comunicaciones en Sttok. Envío por email integrado de convocatorias y notificaciones. Firma electrónica integrada con DocuSign. Todo queda registrado, certificado y archivado.",
+      "image": {
+        "light": "/animaciones/firma-y-comunicaciones-light-poster.webp",
+        "dark": "/animaciones/firma-y-comunicaciones-dark-poster.webp"
+      },
+      "icon": "PenLine",
+      "video": "/animaciones/firma-y-comunicaciones",
+      "duracion": 26500
+    },
+    {
       "id": 2,
       "title": "Planes de Incentivos",
       "content": "Phantoms, stock options, vesting y portal del empleado",
@@ -45,19 +58,6 @@
       "icon": "Brain",
       "video": "/animaciones/liquidez-planes-de-incentivos",
       "duracion": 21500
-    },
-    {
-      "id": 4,
-      "title": "Simulador de Operaciones",
-      "content": "Ampliaciones, reducciones, compraventas y notas convertibles",
-      "alt": "Simulador de operaciones de Sttok: ampliación de capital con valoración pre-money, precio por acción, dilución e inversores",
-      "image": {
-        "light": "/animaciones/simulador-light-poster.webp",
-        "dark": "/animaciones/simulador-dark-poster.webp"
-      },
-      "icon": "FileText",
-      "video": "/animaciones/simulador",
-      "duracion": 16500
     }
   ]
 }

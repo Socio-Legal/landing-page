@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
-import { BarChart3, Brain, FileText, LineChart } from "lucide-react";
+import { BarChart3, Brain, FileText, LineChart, PenLine } from "lucide-react";
 
 import Features from "@/components/features-horizontal";
 
@@ -26,6 +26,7 @@ const ProductIcons = {
   FileText: <FileText className="h-5 w-5" />,
   BarChart3: <BarChart3 className="h-5 w-5" />,
   LineChart: <LineChart className="h-5 w-5" />,
+  PenLine: <PenLine className="h-5 w-5" />,
 };
 
 const ProductsHeader = () => {

@@ -2,7 +2,7 @@
   "header": {
     "slogan": "Products",
     "title": "Discover our features",
-    "description": "With Sttok, companies, corporate groups, law firms and startups keep their shareholder register and run their meetings, board and incentive plans.",
+    "description": "Companies, corporate groups, law firms and in-house legal teams run their shareholder register, meetings and board in Sttok, with built-in communications and e-signature, and their incentive plans.",
     "buttonText": "See all features",
     "buttonLink": "/en/features"
   },
@@ -34,6 +34,19 @@
       "duracion": 25500
     },
     {
+      "id": 5,
+      "title": "Signatures and communications",
+      "content": "Built-in communications and e-signature, with automatic filing in the company records",
+      "alt": "Signatures and communications in Sttok. Built-in email delivery of notices and notifications. Built-in e-signature with DocuSign. Everything is logged, certified and filed.",
+      "image": {
+        "light": "/animaciones/en/firma-y-comunicaciones-light-poster.webp",
+        "dark": "/animaciones/en/firma-y-comunicaciones-dark-poster.webp"
+      },
+      "icon": "PenLine",
+      "video": "/animaciones/en/firma-y-comunicaciones",
+      "duracion": 26500
+    },
+    {
       "id": 2,
       "title": "Incentive Plans",
       "content": "Phantoms, stock options, vesting and employee portal",
@@ -45,19 +58,6 @@
       "icon": "Brain",
       "video": "/animaciones/en/liquidez-planes-de-incentivos",
       "duracion": 23000
-    },
-    {
-      "id": 4,
-      "title": "Operations Simulator",
-      "content": "Capital increases, reductions, share transfers and convertible notes",
-      "alt": "Sttok operations simulator: capital increase with pre-money valuation, price per share, dilution and investors",
-      "image": {
-        "light": "/animaciones/en/simulador-light-poster.webp",
-        "dark": "/animaciones/en/simulador-dark-poster.webp"
-      },
-      "icon": "FileText",
-      "video": "/animaciones/en/simulador",
-      "duracion": 20000
     }
   ]
 }
