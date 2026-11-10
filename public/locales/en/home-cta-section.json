@@ -1,11 +1,12 @@
 {
   "header": {
     "slogan": "Talk to a corporate expert",
-    "title": "Book 30 minutes and we'll show you Sttok applied to your company",
-    "description": "No generic script. We'll show you how companies like Factorial, AXA, MyInvestor or Osborne manage their shareholders, meetings, boards and company documentation with Sttok.",
-    "buttonText": "Request personalized demo",
+    "title": "Book 30 minutes and we’ll show you Sttok applied to your companies",
+    "description": "Tell us about your company or group: how many companies and shareholders it has, how it holds general meetings and board meetings, and how it signs its documents and communicates with its shareholders. We’ll prepare a personalised demo with your cases.",
+    "buttonText": "Book my personalised demo",
     "buttonLink": "https://calendly.com/sttok/30min",
-    "secondaryButtonText": "See features",
-    "secondaryButtonLink": "/en/product"
+    "reassurance": "Pick a day and time in the calendar · No commitment",
+    "trustLabel": "Trusted by",
+    "trustFigure": "+€20bn of capital managed"
   }
 }

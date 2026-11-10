@@ -1,11 +1,12 @@
 {
   "header": {
     "slogan": "Habla con un experto societario",
-    "title": "Reserva 30 minutos y te enseñamos Sttok aplicado a tu empresa",
-    "description": "Ningún script genérico. Te enseñamos cómo empresas como Factorial, AXA, MyInvestor u Osborne gestionan sus socios, sus juntas y consejos y la documentación de sus sociedades con Sttok.",
-    "buttonText": "Solicitar demo personalizada",
+    "title": "Reserva 30 minutos y te enseñamos Sttok aplicado a tus sociedades",
+    "description": "Cuéntanos cómo es tu empresa o tu grupo: cuántas sociedades y socios tiene, cómo celebra juntas y consejos, y cómo firma sus documentos y se comunica con sus socios. Te preparamos una demo personalizada con tus casos.",
+    "buttonText": "Reservar mi demo personalizada",
     "buttonLink": "https://calendly.com/sttok/30min",
-    "secondaryButtonText": "Ver funcionalidades",
-    "secondaryButtonLink": "/producto"
+    "reassurance": "Eliges día y hora en el calendario · Sin compromiso",
+    "trustLabel": "Confían en Sttok",
+    "trustFigure": "+20.000 M€ de capital gestionado"
   }
 }

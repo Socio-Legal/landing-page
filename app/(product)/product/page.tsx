@@ -320,12 +320,7 @@ const Page = () => {
         items={faq}
       />
 
-      <CallToActionSection
-        secondary={{
-          text: t("cta.secondaryText"),
-          link: t("cta.secondaryLink"),
-        }}
-      />
+      <CallToActionSection />
     </>
   );
 };
