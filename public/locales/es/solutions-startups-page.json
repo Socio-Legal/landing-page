@@ -12,6 +12,10 @@
       "text": "Solicitar demo",
       "link": "https://calendly.com/sttok/30min"
     },
+    "download": {
+      "text": "Descargar ficha (PDF)",
+      "href": "/fichas/sttok-startups.pdf"
+    },
     "image": {
       "light": "/animaciones/portal-del-beneficiario-light-poster.webp",
       "dark": "/animaciones/portal-del-beneficiario-dark-poster.webp"

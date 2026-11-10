@@ -12,6 +12,10 @@
       "text": "Solicitar demo",
       "link": "https://calendly.com/sttok/30min"
     },
+    "download": {
+      "text": "Descargar ficha (PDF)",
+      "href": "/fichas/sttok-simulador.pdf"
+    },
     "image": {
       "light": "/animaciones/simulador-ampliacion-light-poster.webp",
       "dark": "/animaciones/simulador-ampliacion-dark-poster.webp"

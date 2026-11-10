@@ -10,7 +10,8 @@
     "build": "node scripts/ensure-git-history.mjs && node scripts/check-content-links.mjs && node scripts/version-animaciones.mjs && next build",
     "start": "next start",
     "lint": "eslint app components lib",
-    "check:orphans": "node scripts/check-orphans.mjs"
+    "check:orphans": "node scripts/check-orphans.mjs",
+    "fichas": "node scripts/fichas-pdf.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
@@ -60,6 +61,7 @@
     "autoprefixer": "^10.4.18",
     "eslint": "^9.39.5",
     "eslint-config-next": "15.5.20",
+    "playwright-core": "1.56.1",
     "postcss": "^8.5.16",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.9.3"

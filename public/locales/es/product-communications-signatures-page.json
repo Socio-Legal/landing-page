@@ -7,6 +7,10 @@
       "text": "Solicitar demo",
       "link": "https://calendly.com/sttok/30min"
     },
+    "download": {
+      "text": "Descargar ficha (PDF)",
+      "href": "/fichas/sttok-comunicaciones-y-firma.pdf"
+    },
     "image": {
       "light": "/animaciones/firma-y-comunicaciones-light-poster.webp",
       "dark": "/animaciones/firma-y-comunicaciones-dark-poster.webp"
