@@ -117,6 +117,7 @@ const PAGES: Record<string, { label: Label; section?: SectionKey }> = {
   "/precios": { label: { es: "Precios", en: "Pricing" } },
   "/recursos": { label: { es: "Recursos", en: "Resources" } },
   "/sobre-nosotros": { label: { es: "Sobre nosotros", en: "About" } },
+  "/demo": { label: { es: "Demo", en: "Demo" } },
   "/sttok-vs-excel": { label: "Sttok vs Excel" },
 
   // Legales

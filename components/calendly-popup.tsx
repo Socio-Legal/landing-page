@@ -6,7 +6,10 @@ import { trackDemoBooked } from "@/lib/google-ads";
 
 declare global {
   interface Window {
-    Calendly?: { initPopupWidget: (options: { url: string }) => void };
+    Calendly?: {
+      initPopupWidget: (options: { url: string }) => void;
+      initInlineWidget: (options: { url: string; parentElement: HTMLElement }) => void;
+    };
   }
 }
 
@@ -17,7 +20,7 @@ const WIDGET_CSS = "https://assets.calendly.com/assets/external/widget.css";
 let widget: Promise<void> | null = null;
 
 /** Carga el widget de Calendly la primera vez que alguien pide una demo. */
-function loadWidget(): Promise<void> {
+export function loadWidget(): Promise<void> {
   if (widget) return widget;
   widget = new Promise((resolve, reject) => {
     const css = document.createElement("link");
