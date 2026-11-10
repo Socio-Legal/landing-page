@@ -10,11 +10,11 @@ interface MarketingLayoutProps {
 }
 
 export const metadata = buildMetadata({
-  title: "Sttok — Software de gestión de sociedades: captable, juntas e incentivos",
+  title: "Sttok — Software de gestión de sociedades: libro de socios, juntas y consejos",
   description:
-    "Software de gestión de sociedades: libro de socios (captable), planes de incentivos, juntas, consejos y simulador de operaciones. ISO 27001 y RGPD. Más de 250 empresas confían en Sttok.",
+    "Software de gestión societaria para empresas y grupos: libro de socios, juntas y consejos con comunicaciones y firma electrónica, y planes de incentivos. ISO 27001 y RGPD. Más de 250 empresas confían en Sttok.",
   keywords:
-    "gestión sociedades, libro de socios, captable, juntas de accionistas, planes de incentivos, corporate governance, software empresarial, cumplimiento normativo",
+    "gestión sociedades, grupos de sociedades, libro de socios, captable, juntas de accionistas, consejo de administración, planes de incentivos, corporate governance, cumplimiento normativo",
   path: "/",
   pathEn: "/en",
 });

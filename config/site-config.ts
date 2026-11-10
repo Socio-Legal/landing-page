@@ -5,7 +5,7 @@ export const BLUR_FADE_DELAY = 0.15;
 export const siteConfig = {
   name: "Sttok",
   description:
-    "Software de gestión de sociedades: captable, libro de socios, juntas y consejos, simulador de operaciones, planes de incentivos y mercado secundario.",
+    "Software de gestión societaria para empresas y grupos: libro de socios, juntas y consejos con comunicaciones y firma electrónica, planes de incentivos y mercado secundario.",
   url: process.env.NEXT_PUBLIC_APP_URL || "https://www.sttok.com",
   keywords: [
     "software gestión de sociedades",
@@ -17,7 +17,7 @@ export const siteConfig = {
     "phantom shares software",
     "stock options gestión",
     "juntas de accionistas digital",
-    "simulador rondas financiación",
+    "software gestión grupos de sociedades",
     "mercado secundario participaciones",
     "software secretario del consejo",
     "gestión societaria abogados",

@@ -14,15 +14,15 @@
       "icon": "Building2"
     },
     {
-      "id": 2,
-      "title": "Startups and scale-ups with incentive plans",
-      "pain": "Phantom plans in spreadsheets, letters in Word, signatures by email, beneficiaries with no visibility on what they hold.",
-      "with": "Phantom plans always up to date, invitation letters generated, beneficiary records configured and DocuSign signing in minutes. Each employee accesses their portal and sees their own holdings.",
-      "case": "Factorial runs its global incentive plan for hundreds of employees on Sttok, saving hundreds of hours of plan administration.",
-      "icon": "Handshake",
+      "id": 5,
+      "title": "In-house lawyers and legal departments",
+      "pain": "Day-to-day corporate work is scattered across emails, spreadsheets and the external law firm. Little traceability and too much dependency on third parties.",
+      "with": "The group's entire corporate life in a single platform: shareholder registry, meetings, boards and documentation, with full traceability and role-based access. The team stops losing hours on admin work and spends its time on what really affects the business.",
+      "case": "MyInvestor's legal department holds its board meetings and keeps its shareholder register in Sttok. Osborne runs its meetings with hundreds of family shareholders.",
+      "icon": "BriefcaseBusiness",
       "caseLink": {
-        "text": "Read the Factorial case",
-        "href": "/en/testimonials/Factorial"
+        "text": "See the MyInvestor case",
+        "href": "/en/testimonials/MyInvestor"
       }
     },
     {
@@ -39,24 +39,28 @@
     },
     {
       "id": 4,
-      "title": "Corporate lawyers and advisors",
+      "title": "Law firms and corporate advisors",
       "pain": "Every client with their own spreadsheet, folder and criteria. Impossible to scale beyond a handful of companies without losing track.",
       "with": "Multi-company dashboard for all your clients, full history, auto-generated documents and access portal for clients and their shareholders. Fewer hours on repetitive tasks and more time for the advice that really matters to your clients.",
       "case": "Corporate law firms centralize their clients' corporate management on Sttok, in Spain and beyond. Zero spreadsheets, zero folders, always up to date.",
       "icon": "Scale"
     },
     {
-      "id": 5,
-      "title": "In-house lawyers and legal departments",
-      "pain": "Day-to-day corporate work is scattered across emails, spreadsheets and the external law firm. Little traceability and too much dependency on third parties.",
-      "with": "The group's entire corporate life in a single platform: shareholder registry, meetings, boards and documentation, with full traceability and role-based access. The team stops losing hours on admin work and spends its time on what really affects the business.",
-      "case": "In-house legal teams of corporate groups centralize in Sttok the shareholder registry, meetings and documentation of all their companies.",
-      "icon": "BriefcaseBusiness"
+      "id": 2,
+      "title": "Scale-ups with incentive plans",
+      "pain": "Phantom plans in spreadsheets, letters in Word, signatures by email, beneficiaries with no visibility on what they hold.",
+      "with": "Phantom plans always up to date, invitation letters generated, beneficiary records configured and DocuSign signing in minutes. Each employee accesses their portal and sees their own holdings.",
+      "case": "Factorial runs its global incentive plan for hundreds of employees on Sttok, saving hundreds of hours of plan administration.",
+      "icon": "Handshake",
+      "caseLink": {
+        "text": "Read the Factorial case",
+        "href": "/en/testimonials/Factorial"
+      }
     },
     {
       "id": 6,
-      "title": "Technology teams serving the legal department",
-      "pain": "The legal department needs a tool, and the alternative is internal developments or shared spreadsheets nobody wants to maintain.",
+      "title": "IT teams giving the legal department its digital infrastructure",
+      "pain": "The legal department needs a digital infrastructure for corporate governance, and the alternative is in-house builds or shared spreadsheets nobody wants to maintain.",
       "with": "A market-standard solution, ISO 27001 and GDPR certified, with SSO, OTP access and dedicated instances. Set up in a few hours with no maintenance debt.",
       "case": "IT teams roll out Sttok as the corporate standard for their legal and corporate departments, with security validated by their CISO.",
       "icon": "ServerCog"

@@ -2,7 +2,7 @@
   "header": {
     "slogan": "By the numbers",
     "title": "250 companies, 500 entities and 250,000 shareholders keep their register on Sttok",
-    "description": "Groups, family businesses, startups and law firms in Spain, Portugal, Andorra and Latin America trust their captable, shareholder meetings and incentive plans to Sttok."
+    "description": "Companies, corporate groups and family businesses, their legal departments and the law firms that advise them, in Spain, Portugal, Andorra and Latin America, trust Sttok with their shareholder register, meetings and boards."
   },
   "items": [
     {
@@ -18,8 +18,8 @@
       "label": "shareholders managed on the platform"
     },
     {
-      "value": "+5,000",
-      "label": "incentive plan beneficiaries"
+      "value": "+500",
+      "label": "entities managed on the platform"
     }
   ],
   "footnote": "NPS of 8.5 and setup in a few hours per company."
