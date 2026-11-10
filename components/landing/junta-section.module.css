@@ -118,10 +118,11 @@
   background: radial-gradient(closest-side, rgba(101,118,255,.55), rgba(140,110,255,.25) 55%, transparent); filter: blur(14px); transition: opacity .6s; opacity: .8; }
 .work .halo { animation: glow 1.4s ease-in-out infinite; }
 @keyframes glow { 50% { opacity: 1; transform: scale(1.06); } }
-.field { position: relative; display: flex; align-items: center; gap: 14px; height: 64px; background: #fff; border-radius: 999px; padding: 0 26px 0 14px;
-  box-shadow: 0 0 0 1.5px rgba(101,118,255,.5), 0 14px 36px rgba(40,50,120,.22); }
-.mark { flex: none; width: 38px; height: 38px; border-radius: 50%; background: var(--navy); color: #fff; display: grid; place-items: center; font-weight: 700; font-size: 17px; transition: background .4s; }
-.ok .mark { background: var(--ok); }
+.field { position: relative; display: flex; align-items: center; gap: 12px; height: 64px; background: #fff; border-radius: 999px; padding: 0 26px 0 22px;
+  box-shadow: 0 0 0 1.5px rgba(101,118,255,.5), 0 14px 36px rgba(40,50,120,.22); transition: box-shadow .4s; }
+.ok .field { box-shadow: 0 0 0 2px var(--ok), 0 14px 36px rgba(31,138,76,.22); }
+.logo { flex: none; height: 21px; width: auto; display: block; }
+.sep { flex: none; width: 1.5px; height: 28px; background: #e3e5ef; }
 .typed { font-size: 22px; font-weight: 500; color: var(--ink); white-space: nowrap; }
 .caret { display: inline-block; width: 2px; height: 26px; background: var(--ink); vertical-align: -5px; margin-left: 2px; animation: blink 1s steps(1) infinite; }
 .work .caret, .ok .caret { display: none; }

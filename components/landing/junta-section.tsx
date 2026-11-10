@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { Pause, Play } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
+import { Icons } from "@/components/icons";
 import SectionHeader from "@/components/section-header";
 import VERSION from "@/lib/animaciones-version.json";
 import { useLocale } from "@/lib/use-locale";
@@ -520,7 +521,9 @@ export default function JuntaSection() {
               <div ref={bar} className={s.bar}>
                 <div className={s.halo} />
                 <div className={s.field}>
-                  <span className={s.mark}>S</span>
+                  {/* El logo, para que se lea que la orden se le da a Sttok */}
+                  <Icons.logo className={s.logo} aria-hidden />
+                  <span className={s.sep} />
                   <span className={s.typed}>
                     <span ref={typed} />
                     <span className={s.caret} />
