@@ -78,9 +78,16 @@ const CROPS = [
   { src: "/funcionalidades/certificados-detalle-light.png", w: 952, h: 1008, r: [50, 474, 852, 150] },
 ] as const;
 
-/** El vídeo se congela en la sonrisa, antes de que cierre los ojos. */
+/**
+ * Tiempos del vídeo de la escena. Agobiada hasta el segundo 4; la sonrisa
+ * empieza hacia el 6,5. Mientras están las tarjetas (escena difuminada) el
+ * vídeo espera en HOLD; al irse, sigue hasta FREEZE, así que el paso del
+ * agobio a la sonrisa se ve a la vez que las señales vuelven resueltas.
+ * FREEZE es la sonrisa, antes de que cierre los ojos.
+ */
+const HOLD = 4.8;
 const FREEZE = 8.6;
-const END = 15600;
+const END = 16900;
 
 const v = (VERSION as Record<string, string>)["escena-junta"];
 const VIDEO = `/animaciones/escena-junta-light.mp4${v ? `?v=${v}` : ""}`;
@@ -198,6 +205,9 @@ export default function JuntaSection() {
         }
       });
 
+    // Hasta dónde puede avanzar el vídeo ahora: HOLD con las tarjetas, FREEZE después.
+    let limit = HOLD;
+
     const steps: { t: number; f: () => void }[] = [];
     steps.push({
       t: 0,
@@ -205,6 +215,7 @@ export default function JuntaSection() {
         try {
           video.currentTime = 0;
         } catch {}
+        limit = HOLD;
         play();
       },
     });
@@ -223,20 +234,28 @@ export default function JuntaSection() {
         f: () => {
           showRes(-1);
           st.classList.remove(s.app);
+          limit = FREEZE;
+          play();
+        },
+      },
+      // Primero se van las tarjetas; después, la barra en verde.
+      {
+        t: 11600,
+        f: () => {
           barEl.classList.remove(s.work);
           barEl.classList.add(s.ok);
           typedEl.textContent = done;
         },
       },
       ...ORDER.map((id, i) => ({
-        t: 11300 + i * 90,
+        t: 12000 + i * 250,
         f: () => {
           const n = sig(id);
           n.classList.add(s.done);
           n.classList.remove(s.suck);
         },
       })),
-      { t: 14900, f: () => st.classList.add(s.fade) },
+      { t: 16200, f: () => st.classList.add(s.fade) },
     );
     steps.sort((a, b) => a.t - b.t);
 
@@ -249,10 +268,10 @@ export default function JuntaSection() {
     };
 
     const freezeCheck = () => {
-      if (!video.paused && video.currentTime >= FREEZE) {
+      if (!video.paused && video.currentTime >= limit) {
         video.pause();
         try {
-          video.currentTime = FREEZE;
+          video.currentTime = limit;
         } catch {}
       }
     };
@@ -266,7 +285,7 @@ export default function JuntaSection() {
     const sync = () => {
       if (!running()) {
         if (!video.paused) video.pause();
-      } else if (next > 0 && video.paused && video.currentTime < FREEZE) play();
+      } else if (next > 0 && video.paused && video.currentTime < limit) play();
     };
     syncRef.current = sync;
 
