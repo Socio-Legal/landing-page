@@ -7,10 +7,6 @@
       "text": "Solicitar demo",
       "link": "https://calendly.com/sttok/30min"
     },
-    "download": {
-      "text": "Descargar ficha (PDF)",
-      "href": "/fichas/sttok-mercado-secundario.pdf"
-    },
     "image": {
       "light": "/funcionalidades/ofertas-de-compra-y-venta-de-acciones-venta-light.png",
       "dark": "/funcionalidades/ofertas-de-compra-y-venta-de-acciones-venta-dark.png"

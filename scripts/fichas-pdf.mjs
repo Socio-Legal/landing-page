@@ -30,20 +30,44 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const SALIDA = path.join(ROOT, "public", "fichas");
 const WEB = "https://www.sttok.com";
 
-/** Las páginas con ficha: su URL pública y su page.tsx. */
+/**
+ * Las páginas con ficha: su URL pública, su page.tsx y su testimonio (por
+ * `name`, de la propia página o de cualquier JSON de public/locales/es). Cada
+ * ficha lleva uno distinto, el que mejor habla de esa página.
+ *
+ * /mercado-secundario no tiene ficha todavía: con cuatro funcionalidades el
+ * PDF queda corto; se hará cuando se revise la página.
+ */
 const FICHAS = [
-  { url: "/libro-de-socios", page: "app/(product)/partners-book/page.tsx", tipo: "producto" },
-  { url: "/juntas-consejos", page: "app/(product)/shareholder-meetings/page.tsx", tipo: "producto" },
-  { url: "/comunicaciones-y-firma", page: "app/(product)/communications-signatures/page.tsx", tipo: "producto" },
-  { url: "/planes-de-incentivos", page: "app/(product)/incentive-plans/page.tsx", tipo: "producto" },
-  { url: "/simulador", page: "app/(product)/operation-drafts/page.tsx", tipo: "producto" },
-  { url: "/mercado-secundario", page: "app/(product)/secondary-market/page.tsx", tipo: "producto" },
-  { url: "/empresas", page: "app/solutions/companies/page.tsx", tipo: "solucion" },
-  { url: "/abogados", page: "app/solutions/lawyers/page.tsx", tipo: "solucion" },
-  { url: "/startups", page: "app/solutions/startups/page.tsx", tipo: "solucion" },
-  { url: "/inversores", page: "app/solutions/investors/page.tsx", tipo: "solucion" },
-  { url: "/portal-del-inversor", page: "app/solutions/investors-dashboard/page.tsx", tipo: "solucion" },
+  { url: "/libro-de-socios", page: "app/(product)/partners-book/page.tsx", tipo: "producto", testimonio: "Eric Gracia" },
+  { url: "/juntas-consejos", page: "app/(product)/shareholder-meetings/page.tsx", tipo: "producto", testimonio: "Asesoría Jurídica" },
+  { url: "/comunicaciones-y-firma", page: "app/(product)/communications-signatures/page.tsx", tipo: "producto", testimonio: "Grupo Caballero" },
+  { url: "/planes-de-incentivos", page: "app/(product)/incentive-plans/page.tsx", tipo: "producto", testimonio: "Lucía Bouzá" },
+  { url: "/simulador", page: "app/(product)/operation-drafts/page.tsx", tipo: "producto", testimonio: "Oriol Miralbell" },
+  { url: "/empresas", page: "app/solutions/companies/page.tsx", tipo: "solucion", testimonio: "Patricia Manca" },
+  { url: "/abogados", page: "app/solutions/lawyers/page.tsx", tipo: "solucion", testimonio: "Jose María Baños" },
+  { url: "/startups", page: "app/solutions/startups/page.tsx", tipo: "solucion", testimonio: "Johan Longo" },
+  { url: "/inversores", page: "app/solutions/investors/page.tsx", tipo: "solucion", testimonio: "Nacho González" },
+  { url: "/portal-del-inversor", page: "app/solutions/investors-dashboard/page.tsx", tipo: "solucion", testimonio: "PLD Space" },
 ];
+
+/** Un testimonio por su nombre: primero en la página, luego en el resto del sitio. */
+function testimonio(nombre, P) {
+  const propios = P.testimonials?.items || [];
+  const hallado = propios.find((t) => t.name === nombre);
+  if (hallado) return hallado;
+  const dir = path.join(ROOT, "public", "locales", "es");
+  const orden = ["home-testimonials-section.json", ...fs.readdirSync(dir).filter((f) => f.endsWith(".json"))];
+  for (const f of orden) {
+    let encontrado;
+    JSON.parse(fs.readFileSync(path.join(dir, f), "utf8"), (k, v) => {
+      if (!encontrado && v && typeof v === "object" && v.name === nombre && v.description) encontrado = v;
+      return v;
+    });
+    if (encontrado) return encontrado;
+  }
+  throw new Error(`No encuentro el testimonio «${nombre}»`);
+}
 
 /** Qué rótulo de home-pricing-section.json corresponde a cada módulo. */
 /** Y con qué nombre corto se cita el módulo en la ficha. */
@@ -181,7 +205,7 @@ function construir(f) {
 
   const t = P.hero.title;
   const tituloPortada = t.toLowerCase().startsWith(nombre.toLowerCase()) ? `<em>${esc(t.slice(0, nombre.length))}</em>${esc(t.slice(nombre.length))}` : esc(t);
-  const testi = (P.testimonials?.items || [])[0];
+  const testi = f.testimonio ? testimonio(f.testimonio, P) : (P.testimonials?.items || [])[0];
   const logoT = testi && logoTestimonio(testi);
   const pasos = P.setup?.steps || [];
   const faq = (P.faq?.items || []).slice(0, 3);
