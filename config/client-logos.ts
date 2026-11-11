@@ -20,6 +20,7 @@ import Osborne from "@/public/logo-osborne.svg";
 import PldSpace from "@/public/logo-pldspace.png";
 import Psonrie from "@/public/logo-psonrie.png";
 import Sade from "@/public/logo-sade.png";
+import Semidynamics from "@/public/logo-semidynamics.svg";
 import Shakers from "@/public/logo-shakers.png";
 import Taxdown from "@/public/logo-taxdown.png";
 
@@ -48,6 +49,7 @@ export const clientLogos = {
   PldSpace: PldSpace,
   Psonrie: Psonrie,
   Sade: Sade,
+  Semidynamics: Semidynamics,
   Shakers: Shakers,
   Taxdown: Taxdown,
 };
