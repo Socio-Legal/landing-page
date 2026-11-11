@@ -12,6 +12,10 @@
       "text": "Solicitar demo",
       "link": "https://calendly.com/sttok/30min"
     },
+    "download": {
+      "text": "Descargar ficha (PDF)",
+      "href": "/fichas/sttok-planes-de-incentivos.pdf"
+    },
     "image": {
       "light": "/animaciones/liquidez-planes-de-incentivos-light-poster.webp",
       "dark": "/animaciones/liquidez-planes-de-incentivos-dark-poster.webp"

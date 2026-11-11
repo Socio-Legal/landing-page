@@ -12,6 +12,10 @@
       "text": "Solicitar demo",
       "link": "https://calendly.com/sttok/30min"
     },
+    "download": {
+      "text": "Descargar ficha (PDF)",
+      "href": "/fichas/sttok-empresas.pdf"
+    },
     "image": {
       "light": "/animaciones/diagrama-del-grupo-light-poster.webp",
       "dark": "/animaciones/diagrama-del-grupo-dark-poster.webp"

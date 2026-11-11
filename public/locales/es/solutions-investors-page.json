@@ -12,6 +12,10 @@
       "text": "Solicitar demo",
       "link": "https://calendly.com/sttok/30min"
     },
+    "download": {
+      "text": "Descargar ficha (PDF)",
+      "href": "/fichas/sttok-inversores.pdf"
+    },
     "image": {
       "light": "/animaciones/participadas-light-poster.webp",
       "dark": "/animaciones/participadas-dark-poster.webp"

@@ -4,9 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { FC } from "react";
 import { useTranslation } from "react-i18next";
-import { ArrowDownIcon, ArrowRightIcon } from "@radix-ui/react-icons";
+import { ArrowDownIcon, ArrowRightIcon, DownloadIcon } from "@radix-ui/react-icons";
 
-import { trackDemoClick } from "@/lib/analytics";
+import { trackDemoClick, trackFichaDownload } from "@/lib/analytics";
 import VideoTema from "@/components/shared/video-tema";
 
 export type HeroSectionProps = {
@@ -25,6 +25,11 @@ export type HeroSectionProps = {
   video?: string;
   /** Texto alternativo de la animación: qué se ve en ella. Sin él, el titular. */
   videoAlt?: string;
+  /** Ficha descargable en PDF (public/fichas, `pnpm fichas`), junto a la demo. */
+  download?: {
+    text: string;
+    href: string;
+  };
 };
 
 /**
@@ -41,6 +46,7 @@ const HeroSection: FC<HeroSectionProps> = ({
   image,
   video,
   videoAlt,
+  download,
 }) => {
   const { t } = useTranslation("product-hero-section");
 
@@ -99,6 +105,17 @@ const HeroSection: FC<HeroSectionProps> = ({
                     {t(button.text)}
                     <ArrowRightIcon className="h-4 w-4" />
                   </Link>
+                )}
+                {download?.href && (
+                  <a
+                    href={download.href}
+                    download
+                    onClick={() => trackFichaDownload(download.href)}
+                    className="inline-flex items-center gap-2 rounded-md border border-border px-5 py-2.5 text-sm font-medium text-foreground transition-colors hover:bg-muted"
+                  >
+                    {t(download.text)}
+                    <DownloadIcon className="h-4 w-4" />
+                  </a>
                 )}
               </div>
             )}

@@ -12,6 +12,10 @@
       "text": "Solicitar demo",
       "link": "https://calendly.com/sttok/30min"
     },
+    "download": {
+      "text": "Descargar ficha (PDF)",
+      "href": "/fichas/sttok-juntas-consejos.pdf"
+    },
     "image": {
       "light": "/animaciones/voto-electronico-en-juntas-light-poster.webp",
       "dark": "/animaciones/voto-electronico-en-juntas-dark-poster.webp"

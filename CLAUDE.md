@@ -159,3 +159,12 @@ comprobarlo en producción tras el despliegue.
   en `public/locales/<idioma>/*.json`.
 - La lista de funcionalidades de `/funcionalidades`, de las páginas de módulo
   y de las de solución sale de un solo archivo, `lib/funcionalidades-catalogo.ts`.
+- **Las páginas de producto y de solución tienen ficha en PDF**
+  (`public/fichas/sttok-<slug>.pdf`, botón `hero.download` de su JSON), salvo
+  `/mercado-secundario`, pendiente de revisar la página. La genera
+  `pnpm fichas [slug]` con las mismas fuentes que la página: su JSON, el
+  catálogo (con la selección de cada solución, leída de su `page.tsx`), los
+  planes y las cifras. Necesita Chrome en local y **no corre en Vercel**: si
+  cambias el texto, las funcionalidades o los planes de una de esas páginas,
+  regenera su ficha y versiona el PDF en el mismo commit. El botón «Reservar
+  demo» del PDF lleva a `/demo` (Calendly incrustado, `noindex`).
