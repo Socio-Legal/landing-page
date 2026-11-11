@@ -40,11 +40,38 @@ const SELECCION = {
   ]
 };
 
+// Primero las scale-ups y las empresas tecnológicas.
+const LOGOS = {
+  primary: [
+    "Factorial",
+    "Multiverse",
+    "PldSpace",
+    "Semidynamics",
+    "Taxdown",
+    "MyInvestor",
+    "Axa",
+    "Andbank",
+    "Osborne",
+  ],
+  secondary: [
+    "Fanalca",
+    "Caballero",
+    "DerechoCom",
+    "Shakers",
+    "Cabiedes",
+    "LegalPigeon",
+    "Banktrack",
+    "Barkibu",
+    "Sade",
+  ],
+} as const;
+
 const Page = () => (
   <ModulePage
     ns="solutions-startups-page"
     modulos={Object.keys(SELECCION)}
     seleccion={SELECCION}
+    logos={{ primary: [...LOGOS.primary], secondary: [...LOGOS.secondary] }}
   />
 );
 

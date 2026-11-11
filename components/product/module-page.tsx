@@ -13,12 +13,14 @@ import TestimonialsSection, {
 } from "@/components/product/testimonials-section";
 import SectionHeading from "@/components/shared/section-heading";
 import LogoStrip from "@/components/shared/logo-strip";
+import { clientLogos } from "@/config/client-logos";
 import FaqSection, { FaqItem } from "@/components/shared/faq-section";
 import CallToActionSection from "@/components/landing/cta-section";
 import { CATALOGO, Modulo, enIngles } from "@/lib/funcionalidades-catalogo";
 import { localizedHref } from "@/lib/localized-href";
 import { useLocale } from "@/lib/use-locale";
 
+type LogoName = keyof typeof clientLogos;
 type SituationRow = { situation: string; action: string; href?: string };
 type Figure = { value: string; label: string };
 type SetupStep = { title: string; text: string };
@@ -48,6 +50,8 @@ type ModulePageProps = {
    * selección se muestran todas.
    */
   seleccion?: Record<string, string[]>;
+  /** Tira de logos propia de la página; sin ella, la de producto. */
+  logos?: { primary: LogoName[]; secondary: LogoName[] };
 };
 
 /**
@@ -56,7 +60,7 @@ type ModulePageProps = {
  * /producto. La lista de funcionalidades sale del catálogo, la misma fuente
  * que /funcionalidades, para que las dos páginas no se contradigan.
  */
-const ModulePage: FC<ModulePageProps> = ({ ns, modulos, seleccion }) => {
+const ModulePage: FC<ModulePageProps> = ({ ns, modulos, seleccion, logos }) => {
   const { t, i18n } = useTranslation([ns, "product-hero-section"]);
   const en = i18n.language === "en";
 
@@ -107,7 +111,7 @@ const ModulePage: FC<ModulePageProps> = ({ ns, modulos, seleccion }) => {
         <div className="container mx-auto px-4 py-14 md:py-16">
           <LogoStrip
             label={t("product-hero-section:clientsLabel")}
-            primary={[
+            primary={logos?.primary ?? [
               "Factorial",
               "Axa",
               "Andbank",
@@ -118,7 +122,7 @@ const ModulePage: FC<ModulePageProps> = ({ ns, modulos, seleccion }) => {
               "Fanalca",
               "Multiverse",
             ]}
-            secondary={[
+            secondary={logos?.secondary ?? [
               "Caballero",
               "DerechoCom",
               "Shakers",
