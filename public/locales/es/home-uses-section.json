@@ -1,74 +1,34 @@
 {
   "header": {
     "slogan": "Para quién",
-    "title": "Hecho para los equipos que llevan la sociedad",
-    "description": "Diseñado para los profesionales que cada día gestionan socios, juntas, incentivos y operaciones."
+    "title": "Para quién es Sttok"
   },
   "items": [
     {
-      "id": 1,
-      "title": "Empresas con muchos socios y grupos de sociedades",
-      "pain": "Excel desactualizado, certificados manuales, libros en carpetas. Cada cambio societario son horas de trabajo y riesgo de errores.",
-      "with": "Libro de socios oficial en tiempo real, ficha de cada socio con histórico de actas, certificados generados al instante y repositorio accesible para todos los stakeholders.",
-      "case": "AXA lleva en Sttok la gestión de sus accionistas y los certificados para los accionistas y las empresas del grupo en España.",
-      "icon": "Building2"
+      "title": "Empresas y grupos de sociedades",
+      "text": "Llevo el libro de socios, las juntas y los consejos de una empresa con muchos socios o de un grupo de sociedades.",
+      "href": "/empresas"
     },
     {
-      "id": 5,
-      "title": "Abogados in-house y direcciones jurídicas",
-      "pain": "El día a día societario se reparte entre correos, Excels y el despacho externo. Poca trazabilidad y demasiada dependencia de terceros.",
-      "with": "Toda la vida societaria del grupo en una sola plataforma: libro de socios, juntas, consejos y documentación, con trazabilidad completa y acceso por roles. El equipo deja de perder horas en tareas administrativas y dedica su tiempo a lo que de verdad afecta a la empresa.",
-      "case": "La asesoría jurídica de MyInvestor celebra en Sttok sus consejos de administración y lleva el libro registro de socios. Osborne, sus juntas con cientos de accionistas familiares.",
-      "icon": "BriefcaseBusiness",
-      "caseLink": {
-        "text": "Ver el caso de MyInvestor",
-        "href": "/testimonios/MyInvestor"
-      }
+      "title": "Despachos y abogados",
+      "text": "Llevo las sociedades de mis clientes: sus libros de socios, sus juntas y sus actas.",
+      "href": "/abogados"
     },
     {
-      "id": 3,
-      "title": "Secretarios del Consejo y juntas con múltiples accionistas",
-      "pain": "Convocatorias por email, delegaciones en papel, quórums calculados a mano, actas redactadas a posteriori.",
-      "with": "Convocatoria en un click, delegaciones digitales, cálculo automático de quórums, votaciones electrónicas y acta generada al instante.",
-      "case": "PLD Space optimiza sus juntas con múltiples vehículos de inversores: convocatorias, delegaciones y votaciones centralizadas, sin tareas manuales.",
-      "icon": "Vote",
-      "caseLink": {
-        "text": "Ver el caso de PLD Space",
-        "href": "/testimonios/PldSpace"
-      }
+      "title": "Scale-ups",
+      "text": "Tenemos varias rondas, muchos inversores y un plan de incentivos para la plantilla.",
+      "href": "/startups"
     },
     {
-      "id": 4,
-      "title": "Despachos y asesores mercantilistas",
-      "pain": "Cada cliente con su Excel, su carpeta, sus criterios. Imposible escalar más allá de un puñado de sociedades sin que algo se pierda.",
-      "with": "Panel multi-sociedad para todos tus clientes, histórico completo, documentos generados automáticamente y portal de acceso para clientes y sus socios. Menos horas en tareas repetitivas y más tiempo para el asesoramiento que de verdad importa a tus clientes.",
-      "case": "Despachos mercantilistas centralizan en Sttok la gestión societaria de sus clientes, en España y fuera. Cero Excels, cero carpetas, todo al día.",
-      "icon": "Scale"
+      "title": "Sociedades con muchos socios o inversores",
+      "text": "Quiero que los socios y los inversores vean su posición, sus documentos y las juntas sin tener que pedírmelos.",
+      "href": "/portal-del-inversor"
     },
     {
-      "id": 2,
-      "title": "Scale-ups con planes de incentivos",
-      "pain": "Excel de phantoms, cartas en Word, firmas por email, beneficiarios sin visibilidad sobre lo que tienen.",
-      "with": "Plan de phantoms al día, cartas de invitación generadas, ficha de cada beneficiario configurada y firma con DocuSign en minutos. Cada empleado accede a su portal y ve lo suyo.",
-      "case": "Factorial gestiona su plan de incentivos global para cientos de empleados con Sttok, ahorrando centenares de horas en administración del plan.",
-      "icon": "Handshake",
-      "caseLink": {
-        "text": "Ver el caso de Factorial",
-        "href": "/testimonios/Factorial"
-      }
-    },
-    {
-      "id": 6,
-      "title": "Equipos de IT que dan al área legal su infraestructura digital",
-      "pain": "El área legal necesita una infraestructura digital para la gestión societaria y corporativa, y la alternativa son desarrollos internos o Excels compartidos que nadie quiere mantener.",
-      "with": "Una solución estándar de mercado, certificada ISO 27001 y RGPD, con SSO, acceso OTP e instancias dedicadas. Se pone en marcha en unas horas y sin deuda de mantenimiento.",
-      "case": "Equipos de IT despliegan Sttok como estándar corporativo para su departamento jurídico y societario, con la seguridad validada por su CISO.",
-      "icon": "ServerCog"
+      "title": "Fondos, family offices y holdings",
+      "text": "Invierto en varias sociedades y quiero ver el capital y los documentos de las participadas en un solo sitio.",
+      "href": "/inversores"
     }
   ],
-  "labels": {
-    "today": "Hoy",
-    "withSttok": "Con Sttok",
-    "realCase": "En la práctica"
-  }
+  "link": "Ver todas las soluciones"
 }

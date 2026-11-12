@@ -1,29 +1,29 @@
 {
   "header": {
     "slogan": "Integrations and security",
-    "title": "Connected to your existing stack",
-    "description": "Sttok integrates with the tools you already use so you don't break your workflow."
+    "title": "Access, signature and security",
+    "description": "Sign-in with Google or Microsoft, one-time codes for shareholders and guests, dedicated instances and signature with DocuSign."
   },
   "items": [
     {
       "title": "Google and Microsoft SSO",
       "subtitle": "Corporate identity",
-      "description": "Secure access with the credentials your team already uses. No extra password to manage."
+      "description": "Your team signs in with their Google or Microsoft account."
     },
     {
       "title": "OTP access",
       "subtitle": "Two-step verification",
-      "description": "One-time-code access for partners, board members and guests, with no passwords to manage."
+      "description": "Shareholders, board members and guests sign in with a one-time code, without a password."
     },
     {
       "title": "Dedicated instances",
       "subtitle": "Private deployment",
-      "description": "If your compliance requires it, we offer dedicated instances with custom configuration."
+      "description": "An instance just for your company, if your compliance policy requires it."
     },
     {
       "title": "Integrated electronic signature",
       "subtitle": "DocuSign included",
-      "description": "Legally binding signatures for minutes, corporate documents and incentive plans. Included in the Advanced and Pro plans."
+      "description": "Legally valid e-signature for minutes, corporate documents and incentive plans. Included in the Advanced and Pro plans."
     }
   ],
   "trust": {

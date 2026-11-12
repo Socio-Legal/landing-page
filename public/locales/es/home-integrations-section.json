@@ -1,29 +1,29 @@
 {
   "header": {
     "slogan": "Integraciones y seguridad",
-    "title": "Conectado con tu stack actual",
-    "description": "Sttok se integra con las herramientas que ya usas para no romper tu flujo de trabajo."
+    "title": "Acceso, firma y seguridad",
+    "description": "Inicio de sesión con Google o Microsoft, código de un solo uso para socios e invitados, instancias dedicadas y firma con DocuSign."
   },
   "items": [
     {
       "title": "SSO Google y Microsoft",
       "subtitle": "Identidad corporativa",
-      "description": "Acceso seguro con las credenciales que ya usa tu equipo. Sin gestionar otra contraseña."
+      "description": "Tu equipo entra con su cuenta de Google o de Microsoft."
     },
     {
       "title": "Acceso OTP",
       "subtitle": "Verificación en dos pasos",
-      "description": "Acceso con código de un solo uso para socios, consejeros e invitados, sin contraseñas que gestionar."
+      "description": "Socios, consejeros e invitados entran con un código de un solo uso, sin contraseña."
     },
     {
       "title": "Instancias dedicadas",
       "subtitle": "Despliegue privado",
-      "description": "Si tu compliance lo requiere, ofrecemos instancias dedicadas con configuración personalizada."
+      "description": "Una instancia solo para tu empresa, si tu política de cumplimiento lo exige."
     },
     {
       "title": "Firma electrónica integrada",
       "subtitle": "DocuSign incluido",
-      "description": "Firma legalmente vinculante para actas, documentos societarios y planes de incentivos. Incluida en los planes Avanzado y Pro."
+      "description": "Firma electrónica con validez legal para actas, documentos societarios y planes de incentivos. Incluida en los planes Avanzado y Pro."
     }
   ],
   "trust": {
