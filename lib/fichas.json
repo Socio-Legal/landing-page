@@ -4,7 +4,7 @@
     "url": "/libro-de-socios",
     "tipo": "producto",
     "nombre": "Libro de socios",
-    "descripcion": "El registro oficial de quién es socio, con qué y desde cuándo.",
+    "descripcion": "Sttok permite a la sociedad llevar el libro registro de socios o de acciones nominativas registrando cada transacción. Cada transmisión se anota sobre rangos numerados, con sus cargas y sus cotitulares, y el libro se genera solo y se exporta en formato legalizable.",
     "paginas": 4,
     "pdf": "/fichas/sttok-libro-de-socios.pdf",
     "portada": "/fichas/sttok-libro-de-socios-portada.jpg"
@@ -14,7 +14,7 @@
     "url": "/juntas-consejos",
     "tipo": "producto",
     "nombre": "Juntas y consejos",
-    "descripcion": "La junta de socios o de accionistas, de la convocatoria al acta certificada.",
+    "descripcion": "Preparas la convocatoria con el orden del día, los asuntos a votar y la documentación, la revisas y la envías. Sttok certifica el envío y muestra quién la ha recibido y quién no. Cada socio entra en su portal, ve el orden del día y los documentos, y delega su voto o vota si la votación está abierta. Todo cuenta al momento para el quórum.",
     "paginas": 4,
     "pdf": "/fichas/sttok-juntas-consejos.pdf",
     "portada": "/fichas/sttok-juntas-consejos-portada.jpg"
@@ -24,7 +24,7 @@
     "url": "/comunicaciones-y-firma",
     "tipo": "producto",
     "nombre": "Comunicaciones y firma",
-    "descripcion": "Convocatorias y notificaciones por email a socios y consejeros, con certificado de envío.",
+    "descripcion": "Sttok envía por email las convocatorias y las notificaciones a socios y consejeros, con su certificado de envío. Los documentos se firman con DocuSign sin salir de Sttok, las firmas se colocan solas encima de cada nombre y lo firmado queda archivado en la documentación de la sociedad. Todo queda registrado.",
     "paginas": 4,
     "pdf": "/fichas/sttok-comunicaciones-y-firma.pdf",
     "portada": "/fichas/sttok-comunicaciones-y-firma-portada.jpg"
@@ -34,7 +34,7 @@
     "url": "/planes-de-incentivos",
     "tipo": "producto",
     "nombre": "Planes de incentivos",
-    "descripcion": "Los planes de empleados y directivos, conectados al libro.",
+    "descripcion": "Sttok gestiona cada plan desde el pool que aprueba la junta hasta la liquidez. Genera de una vez las cartas de invitación de todos los beneficiarios, las envía a firmar con DocuSign y da a cada empleado su portal con sus unidades, su valor y su calendario de vesting. Las unidades se calculan sobre el capital real del libro de socios.",
     "paginas": 4,
     "pdf": "/fichas/sttok-planes-de-incentivos.pdf",
     "portada": "/fichas/sttok-planes-de-incentivos-portada.jpg"
@@ -44,7 +44,7 @@
     "url": "/simulador",
     "tipo": "producto",
     "nombre": "Simulador de operaciones",
-    "descripcion": "El efecto de una operación antes de firmarla.",
+    "descripcion": "Sttok simula ampliaciones, reducciones de capital, compraventas, operaciones acordeón y conversiones de notas sobre los datos reales del libro de socios. En pocos minutos ves cómo queda el libro, cuánto aporta cada socio y los porcentajes resultantes, y la operación sale con sus borradores para el notario.",
     "paginas": 4,
     "pdf": "/fichas/sttok-simulador.pdf",
     "portada": "/fichas/sttok-simulador-portada.jpg"
@@ -54,7 +54,7 @@
     "url": "/empresas",
     "tipo": "solucion",
     "nombre": "Empresas y grupos de sociedades",
-    "descripcion": "Sttok lleva el registro societario de cada sociedad del grupo.",
+    "descripcion": "Sttok lleva el registro societario de cada sociedad del grupo: el libro de socios con sus cargas y cotitulares, la junta general y el consejo, los cargos con su vigencia y quién controla cada sociedad al final de la cadena. Cada persona ve solo las sociedades que le corresponden.",
     "paginas": 4,
     "pdf": "/fichas/sttok-empresas.pdf",
     "portada": "/fichas/sttok-empresas-portada.jpg"
@@ -64,7 +64,7 @@
     "url": "/abogados",
     "tipo": "solucion",
     "nombre": "Despachos y asesores",
-    "descripcion": "Sttok reúne en una portada todas las sociedades que lleva el despacho, con lo pendiente de cada una ordenado por plazo.",
+    "descripcion": "Sttok reúne en una portada todas las sociedades que lleva el despacho, con lo pendiente de cada una ordenado por plazo. Desde ahí se llevan los libros de socios y de actas, se convocan juntas, se emiten certificados y se legalizan los libros.",
     "paginas": 4,
     "pdf": "/fichas/sttok-abogados.pdf",
     "portada": "/fichas/sttok-abogados-portada.jpg"
@@ -74,7 +74,7 @@
     "url": "/startups",
     "tipo": "solucion",
     "nombre": "Scale-ups",
-    "descripcion": "Cada ronda suma inversores, clases de acciones y notas convertibles, y el plan de incentivos crece con la plantilla.",
+    "descripcion": "Cada ronda suma inversores, clases de acciones y notas convertibles, y el plan de incentivos crece con la plantilla. Sttok permite llevar el libro de socios oficial al día, simula cada operación sobre el libro real antes de firmarla y gestiona el plan de cada empleado, con tender offers para darle liquidez.",
     "paginas": 4,
     "pdf": "/fichas/sttok-startups.pdf",
     "portada": "/fichas/sttok-startups-portada.jpg"
@@ -84,7 +84,7 @@
     "url": "/inversores",
     "tipo": "solucion",
     "nombre": "Inversores y sociedades holding",
-    "descripcion": "Sttok reúne las participadas con su porcentaje, sus títulos y su valor, dibuja la cadena de control a cualquier fecha y simula cada operación antes de firmarla.",
+    "descripcion": "Sttok reúne las participadas con su porcentaje, sus títulos y su valor, dibuja la cadena de control a cualquier fecha y simula cada operación antes de firmarla: una ampliación, la conversión de una nota o el reparto de una venta.",
     "paginas": 4,
     "pdf": "/fichas/sttok-inversores.pdf",
     "portada": "/fichas/sttok-inversores-portada.jpg"
@@ -94,7 +94,7 @@
     "url": "/portal-del-inversor",
     "tipo": "solucion",
     "nombre": "Portal del inversor",
-    "descripcion": "Sttok da a cada socio e inversor su propio acceso, con la imagen de la sociedad.",
+    "descripcion": "Sttok da a cada socio e inversor su propio acceso, con la imagen de la sociedad. Ve su posición, descarga los certificados que la sociedad marca como visibles, responde a la convocatoria, delega o vota, y recibe cada comunicación con su certificado de envío.",
     "paginas": 4,
     "pdf": "/fichas/sttok-portal-del-inversor.pdf",
     "portada": "/fichas/sttok-portal-del-inversor-portada.jpg"

@@ -275,7 +275,8 @@ ${corta ? "" : `<section class="pag" id="p3">
   ${pie(TOTAL)}
 </section>
 </body></html>`;
-  const meta = { slug, url: f.url, tipo: f.tipo, nombre, descripcion: subtitulo, paginas: TOTAL, pdf: `/fichas/sttok-${slug}.pdf`, portada: `/fichas/sttok-${slug}-portada.jpg` };
+  // En el expositor, la misma descripción que abre la página (hero.description).
+  const meta = { slug, url: f.url, tipo: f.tipo, nombre, descripcion: P.hero.description, paginas: TOTAL, pdf: `/fichas/sttok-${slug}.pdf`, portada: `/fichas/sttok-${slug}-portada.jpg` };
   return { slug, html, nFuncs, planes: pl, meta };
 }
 

@@ -70,10 +70,18 @@ export function FichasExpositor({
         <div
           ref={fila}
           onScroll={medir}
-          className="relative -mx-4 flex snap-x snap-mandatory scroll-px-4 gap-6 overflow-x-auto px-4 pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
+          // La fila sale del contenedor por la derecha hasta el borde de la
+          // ventana: la última portada queda cortada y se ve que hay más.
+          className="relative -ml-4 mr-[calc(50%-50vw)] flex snap-x snap-mandatory scroll-px-4 gap-6 overflow-x-auto pb-2 pl-4 pr-8 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden"
         >
           {FICHAS.map((f: Ficha) => (
-            <article key={f.slug} data-ficha className="w-[220px] shrink-0 snap-start sm:w-[240px]">
+            // Ancho en vw para que a cualquier tamaño quepa un número de
+            // portadas con decimales: siempre asoma la siguiente.
+            <article
+              key={f.slug}
+              data-ficha
+              className="w-[70vw] max-w-[260px] shrink-0 snap-start sm:w-[40vw] md:w-[26vw] lg:w-[20.5vw] xl:w-[16.5vw]"
+            >
               <a
                 href={f.pdf}
                 download
@@ -91,12 +99,19 @@ export function FichasExpositor({
                 <h3 className="mt-4 font-serif text-xl font-normal leading-snug text-foreground">{f.nombre}</h3>
               </a>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{f.descripcion}</p>
-              <p className="mt-3 flex items-baseline justify-between gap-3 text-xs text-muted-foreground">
-                <span className="font-medium uppercase tracking-[0.12em]">
-                  {f.tipo === "producto" ? "Producto" : "Solución"} · {f.paginas} págs.
-                </span>
-                <Link href={f.url} className="shrink-0 underline-offset-4 hover:text-foreground hover:underline">
-                  Ver la página
+              <p className="mt-4 flex items-center justify-between gap-3 text-sm font-medium text-foreground">
+                <a
+                  href={f.pdf}
+                  download
+                  onClick={() => trackFichaDownload(`expositor:${f.pdf}`)}
+                  className="group/a inline-flex items-center gap-1.5 underline-offset-4 hover:underline"
+                >
+                  <DownloadIcon className="h-3.5 w-3.5" aria-hidden />
+                  Descargar
+                </a>
+                <Link href={f.url} className="group/a inline-flex items-center gap-1.5 underline-offset-4 hover:underline">
+                  Ir a la página
+                  <ArrowRightIcon className="h-3.5 w-3.5 transition-transform group-hover/a:translate-x-0.5" aria-hidden />
                 </Link>
               </p>
             </article>
