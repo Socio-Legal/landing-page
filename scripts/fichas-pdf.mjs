@@ -275,7 +275,9 @@ ${corta ? "" : `<section class="pag" id="p3">
   ${pie(TOTAL)}
 </section>
 </body></html>`;
-  return { slug, html, nFuncs, planes: pl };
+  // En el expositor, la misma descripción que abre la página (hero.description).
+  const meta = { slug, url: f.url, tipo: f.tipo, nombre, descripcion: P.hero.description, paginas: TOTAL, pdf: `/fichas/sttok-${slug}.pdf`, portada: `/fichas/sttok-${slug}-portada.jpg` };
+  return { slug, html, nFuncs, planes: pl, meta };
 }
 
 /**
@@ -429,8 +431,14 @@ function chrome() {
   const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "fichas-"));
   const browser = await chromium.launch({ executablePath: chrome(), headless: true, args: ["--allow-file-access-from-files"] });
   let malas = 0;
+  // lib/fichas.json: lo que lee el expositor de la web. Al generar una sola
+  // ficha se conservan las demás entradas.
+  const MANIFIESTO = path.join(ROOT, "lib", "fichas.json");
+  const previas = fs.existsSync(MANIFIESTO) ? JSON.parse(fs.readFileSync(MANIFIESTO, "utf8")) : [];
+  const metas = new Map(previas.map((m) => [m.slug, m]));
   for (const f of lista_) {
-    const { slug, html, nFuncs, planes: pl } = construir(f);
+    const { slug, html, nFuncs, planes: pl, meta } = construir(f);
+    metas.set(slug, meta);
     const htmlPath = path.join(tmp, slug + ".html");
     fs.writeFileSync(htmlPath, html);
     const page = await browser.newPage();
@@ -439,9 +447,11 @@ function chrome() {
     const { pasos, fallos } = await page.evaluate(ajustar);
     const out = path.join(SALIDA, `sttok-${slug}.pdf`);
     await page.pdf({ path: out, format: "A4", printBackground: true, preferCSSPageSize: true });
+    // La portada, como imagen para el expositor de fichas de la web.
+    await page.setViewportSize({ width: 794, height: 1123 });
+    await page.locator(".portada").screenshot({ path: path.join(SALIDA, `sttok-${slug}-portada.jpg`), type: "jpeg", quality: 84 });
     if (process.env.FOTOS) {
       const ps = await page.$$(".pag");
-      await page.setViewportSize({ width: 794, height: 1123 });
       for (let i = 0; i < ps.length; i++) await ps[i].screenshot({ path: path.join(process.env.FOTOS, `${slug}-p${i + 1}.png`) });
     }
     await page.close();
@@ -452,5 +462,8 @@ function chrome() {
   }
   await browser.close();
   fs.rmSync(tmp, { recursive: true, force: true });
+  const orden = FICHAS.map((f) => f.url.slice(1));
+  const manifiesto = orden.filter((s) => metas.has(s)).map((s) => metas.get(s));
+  fs.writeFileSync(MANIFIESTO, JSON.stringify(manifiesto, null, 2) + "\n");
   if (malas) process.exit(1);
 })();

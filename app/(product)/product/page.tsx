@@ -11,6 +11,7 @@ import SectionHeading from "@/components/shared/section-heading";
 import LogoStrip from "@/components/shared/logo-strip";
 import FaqSection, { FaqItem } from "@/components/shared/faq-section";
 import CallToActionSection from "@/components/landing/cta-section";
+import { FichasExpositor } from "@/components/shared/fichas-expositor";
 import { localizedHref } from "@/lib/localized-href";
 import { useLocale } from "@/lib/use-locale";
 
@@ -138,6 +139,9 @@ const Page = () => {
           )}
         </div>
       </section>
+
+      {/* Las fichas en PDF de cada producto y solución (solo castellano). */}
+      {locale === "es" && <FichasExpositor />}
 
       {/* Clientes por relevancia, los más potentes primero: 9 arriba y 8
           abajo, para que ninguna fila quede con un logo suelto */}
