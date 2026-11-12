@@ -1,0 +1,102 @@
+[
+  {
+    "slug": "libro-de-socios",
+    "url": "/libro-de-socios",
+    "tipo": "producto",
+    "nombre": "Libro de socios",
+    "descripcion": "El registro oficial de quién es socio, con qué y desde cuándo.",
+    "paginas": 4,
+    "pdf": "/fichas/sttok-libro-de-socios.pdf",
+    "portada": "/fichas/sttok-libro-de-socios-portada.jpg"
+  },
+  {
+    "slug": "juntas-consejos",
+    "url": "/juntas-consejos",
+    "tipo": "producto",
+    "nombre": "Juntas y consejos",
+    "descripcion": "La junta de socios o de accionistas, de la convocatoria al acta certificada.",
+    "paginas": 4,
+    "pdf": "/fichas/sttok-juntas-consejos.pdf",
+    "portada": "/fichas/sttok-juntas-consejos-portada.jpg"
+  },
+  {
+    "slug": "comunicaciones-y-firma",
+    "url": "/comunicaciones-y-firma",
+    "tipo": "producto",
+    "nombre": "Comunicaciones y firma",
+    "descripcion": "Convocatorias y notificaciones por email a socios y consejeros, con certificado de envío.",
+    "paginas": 4,
+    "pdf": "/fichas/sttok-comunicaciones-y-firma.pdf",
+    "portada": "/fichas/sttok-comunicaciones-y-firma-portada.jpg"
+  },
+  {
+    "slug": "planes-de-incentivos",
+    "url": "/planes-de-incentivos",
+    "tipo": "producto",
+    "nombre": "Planes de incentivos",
+    "descripcion": "Los planes de empleados y directivos, conectados al libro.",
+    "paginas": 4,
+    "pdf": "/fichas/sttok-planes-de-incentivos.pdf",
+    "portada": "/fichas/sttok-planes-de-incentivos-portada.jpg"
+  },
+  {
+    "slug": "simulador",
+    "url": "/simulador",
+    "tipo": "producto",
+    "nombre": "Simulador de operaciones",
+    "descripcion": "El efecto de una operación antes de firmarla.",
+    "paginas": 4,
+    "pdf": "/fichas/sttok-simulador.pdf",
+    "portada": "/fichas/sttok-simulador-portada.jpg"
+  },
+  {
+    "slug": "empresas",
+    "url": "/empresas",
+    "tipo": "solucion",
+    "nombre": "Empresas y grupos de sociedades",
+    "descripcion": "Sttok lleva el registro societario de cada sociedad del grupo.",
+    "paginas": 4,
+    "pdf": "/fichas/sttok-empresas.pdf",
+    "portada": "/fichas/sttok-empresas-portada.jpg"
+  },
+  {
+    "slug": "abogados",
+    "url": "/abogados",
+    "tipo": "solucion",
+    "nombre": "Despachos y asesores",
+    "descripcion": "Sttok reúne en una portada todas las sociedades que lleva el despacho, con lo pendiente de cada una ordenado por plazo.",
+    "paginas": 4,
+    "pdf": "/fichas/sttok-abogados.pdf",
+    "portada": "/fichas/sttok-abogados-portada.jpg"
+  },
+  {
+    "slug": "startups",
+    "url": "/startups",
+    "tipo": "solucion",
+    "nombre": "Scale-ups",
+    "descripcion": "Cada ronda suma inversores, clases de acciones y notas convertibles, y el plan de incentivos crece con la plantilla.",
+    "paginas": 4,
+    "pdf": "/fichas/sttok-startups.pdf",
+    "portada": "/fichas/sttok-startups-portada.jpg"
+  },
+  {
+    "slug": "inversores",
+    "url": "/inversores",
+    "tipo": "solucion",
+    "nombre": "Inversores y sociedades holding",
+    "descripcion": "Sttok reúne las participadas con su porcentaje, sus títulos y su valor, dibuja la cadena de control a cualquier fecha y simula cada operación antes de firmarla.",
+    "paginas": 4,
+    "pdf": "/fichas/sttok-inversores.pdf",
+    "portada": "/fichas/sttok-inversores-portada.jpg"
+  },
+  {
+    "slug": "portal-del-inversor",
+    "url": "/portal-del-inversor",
+    "tipo": "solucion",
+    "nombre": "Portal del inversor",
+    "descripcion": "Sttok da a cada socio e inversor su propio acceso, con la imagen de la sociedad.",
+    "paginas": 4,
+    "pdf": "/fichas/sttok-portal-del-inversor.pdf",
+    "portada": "/fichas/sttok-portal-del-inversor-portada.jpg"
+  }
+]
