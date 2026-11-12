@@ -1,8 +1,8 @@
 {
   "header": {
     "slogan": "How Sttok works",
-    "title": "In a single tool, Sttok does the work; you review and approve it",
-    "description": "Sttok builds the shareholder register from the deeds, takes the meeting through to the signed minutes and prepares each shareholder's certificates."
+    "title": "What Sttok does and what you do",
+    "description": "Sttok prepares the notice of meeting, calculates the quorum and generates the minutes and the certificates from the register data. You review and approve each step."
   },
   "labels": {
     "sttok": "Sttok",
@@ -22,166 +22,6 @@
     }
   },
   "flows": [
-    {
-      "tab": "Shareholder register",
-      "headline": "From the deeds to the shareholder register, in minutes",
-      "link": {
-        "text": "AI deed reading (in Spanish)",
-        "href": "/funcionalidades/lectura-de-escrituras-con-ia"
-      },
-      "steps": [
-        {
-          "who": "you",
-          "icon": "Upload",
-          "label": "You upload deeds, minutes or contracts",
-          "elements": [
-            {
-              "t": "deck",
-              "items": [
-                "2009 · Deed",
-                "2012 · Minutes",
-                "2014 · Contract",
-                "2017 · Deed",
-                "2020 · Minutes",
-                "2023 · Contract"
-              ]
-            },
-            {
-              "t": "note",
-              "text": "6 documents in PDF, in any order"
-            },
-            {
-              "t": "note",
-              "text": "Or the Excel file with your register"
-            }
-          ]
-        },
-        {
-          "who": "sttok",
-          "icon": "ScanText",
-          "label": "It extracts everything",
-          "elements": [
-            {
-              "t": "task",
-              "text": "Sorted by date"
-            },
-            {
-              "t": "task",
-              "text": "Shareholders and transactions"
-            },
-            {
-              "t": "task",
-              "text": "Directors and officers"
-            },
-            {
-              "t": "task",
-              "text": "Share number ranges"
-            },
-            {
-              "t": "task",
-              "text": "Encumbrances and co-ownership"
-            },
-            {
-              "t": "note",
-              "tone": "warn",
-              "text": "1 gap to review: shares 2,401 to 3,000"
-            }
-          ]
-        },
-        {
-          "who": "you",
-          "icon": "UserCheck",
-          "label": "You approve",
-          "elements": [
-            {
-              "t": "check",
-              "text": "Extracted data reviewed"
-            },
-            {
-              "t": "check",
-              "text": "Shares 2,401 to 3,000 resolved"
-            },
-            {
-              "t": "button",
-              "text": "Approve",
-              "done": "Approved"
-            }
-          ]
-        },
-        {
-          "who": "sttok",
-          "icon": "BookOpenCheck",
-          "label": "Register ready",
-          "elements": [
-            {
-              "t": "result",
-              "icon": "ArrowLeftRight",
-              "value": "312",
-              "text": "transactions recorded in detail",
-              "link": {
-                "text": "See an example (in Spanish)",
-                "href": "/funcionalidades/equity-story"
-              }
-            },
-            {
-              "t": "result",
-              "icon": "BookOpenCheck",
-              "text": "Shareholder register up to date",
-              "link": {
-                "text": "See an example (in Spanish)",
-                "href": "/funcionalidades/libro-registro-oficial"
-              }
-            },
-            {
-              "t": "result",
-              "icon": "Users",
-              "value": "48",
-              "text": "shareholder records updated",
-              "avatars": [
-                "ER",
-                "LP",
-                "RV",
-                "JF"
-              ],
-              "link": {
-                "text": "See an example (in Spanish)",
-                "href": "/funcionalidades/ficha-del-socio"
-              }
-            }
-          ]
-        }
-      ],
-      "log": [
-        {
-          "step": 0,
-          "who": "you",
-          "time": "10:30:02",
-          "event": "documents.uploaded",
-          "data": "n=6"
-        },
-        {
-          "step": 1,
-          "who": "sttok",
-          "time": "10:31:52",
-          "event": "history.extracted",
-          "data": "transactions=312"
-        },
-        {
-          "step": 2,
-          "who": "you",
-          "time": "10:41:15",
-          "event": "history.approved",
-          "data": "by=e.riba"
-        },
-        {
-          "step": 3,
-          "who": "sttok",
-          "time": "10:41:16",
-          "event": "register.built",
-          "data": "shareholders=48 records=48"
-        }
-      ]
-    },
     {
       "tab": "General meeting",
       "headline": "The meeting, from the notice to the signed minutes",
@@ -544,6 +384,166 @@
           "time": "16:00:20",
           "event": "task.closed",
           "data": "manual=0"
+        }
+      ]
+    },
+    {
+      "tab": "Register setup",
+      "headline": "Setup: the shareholder register built from the deeds",
+      "link": {
+        "text": "AI deed reading (in Spanish)",
+        "href": "/funcionalidades/lectura-de-escrituras-con-ia"
+      },
+      "steps": [
+        {
+          "who": "you",
+          "icon": "Upload",
+          "label": "You upload deeds, minutes or contracts",
+          "elements": [
+            {
+              "t": "deck",
+              "items": [
+                "2009 · Deed",
+                "2012 · Minutes",
+                "2014 · Contract",
+                "2017 · Deed",
+                "2020 · Minutes",
+                "2023 · Contract"
+              ]
+            },
+            {
+              "t": "note",
+              "text": "6 documents in PDF, in any order"
+            },
+            {
+              "t": "note",
+              "text": "Or the Excel file with your register"
+            }
+          ]
+        },
+        {
+          "who": "sttok",
+          "icon": "ScanText",
+          "label": "It extracts everything",
+          "elements": [
+            {
+              "t": "task",
+              "text": "Sorted by date"
+            },
+            {
+              "t": "task",
+              "text": "Shareholders and transactions"
+            },
+            {
+              "t": "task",
+              "text": "Directors and officers"
+            },
+            {
+              "t": "task",
+              "text": "Share number ranges"
+            },
+            {
+              "t": "task",
+              "text": "Encumbrances and co-ownership"
+            },
+            {
+              "t": "note",
+              "tone": "warn",
+              "text": "1 gap to review: shares 2,401 to 3,000"
+            }
+          ]
+        },
+        {
+          "who": "you",
+          "icon": "UserCheck",
+          "label": "You approve",
+          "elements": [
+            {
+              "t": "check",
+              "text": "Extracted data reviewed"
+            },
+            {
+              "t": "check",
+              "text": "Shares 2,401 to 3,000 resolved"
+            },
+            {
+              "t": "button",
+              "text": "Approve",
+              "done": "Approved"
+            }
+          ]
+        },
+        {
+          "who": "sttok",
+          "icon": "BookOpenCheck",
+          "label": "Register ready",
+          "elements": [
+            {
+              "t": "result",
+              "icon": "ArrowLeftRight",
+              "value": "312",
+              "text": "transactions recorded in detail",
+              "link": {
+                "text": "See an example (in Spanish)",
+                "href": "/funcionalidades/equity-story"
+              }
+            },
+            {
+              "t": "result",
+              "icon": "BookOpenCheck",
+              "text": "Shareholder register up to date",
+              "link": {
+                "text": "See an example (in Spanish)",
+                "href": "/funcionalidades/libro-registro-oficial"
+              }
+            },
+            {
+              "t": "result",
+              "icon": "Users",
+              "value": "48",
+              "text": "shareholder records updated",
+              "avatars": [
+                "ER",
+                "LP",
+                "RV",
+                "JF"
+              ],
+              "link": {
+                "text": "See an example (in Spanish)",
+                "href": "/funcionalidades/ficha-del-socio"
+              }
+            }
+          ]
+        }
+      ],
+      "log": [
+        {
+          "step": 0,
+          "who": "you",
+          "time": "10:30:02",
+          "event": "documents.uploaded",
+          "data": "n=6"
+        },
+        {
+          "step": 1,
+          "who": "sttok",
+          "time": "10:31:52",
+          "event": "history.extracted",
+          "data": "transactions=312"
+        },
+        {
+          "step": 2,
+          "who": "you",
+          "time": "10:41:15",
+          "event": "history.approved",
+          "data": "by=e.riba"
+        },
+        {
+          "step": 3,
+          "who": "sttok",
+          "time": "10:41:16",
+          "event": "register.built",
+          "data": "shareholders=48 records=48"
         }
       ]
     }

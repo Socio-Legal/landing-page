@@ -1,8 +1,8 @@
 {
   "header": {
     "slogan": "Cómo trabaja Sttok",
-    "title": "En una sola herramienta, Sttok hace el trabajo; tú lo revisas y lo validas",
-    "description": "Sttok monta el libro de socios a partir de las escrituras, lleva la junta hasta el acta firmada y prepara los certificados de cada socio."
+    "title": "Qué hace Sttok y qué haces tú",
+    "description": "Sttok prepara la convocatoria, calcula el quórum, genera el acta y los certificados con los datos del libro. Tú revisas y validas cada paso."
   },
   "labels": {
     "sttok": "Sttok",
@@ -22,166 +22,6 @@
     }
   },
   "flows": [
-    {
-      "tab": "Libro de socios",
-      "headline": "De las escrituras al libro de socios, en minutos",
-      "link": {
-        "text": "lectura de escrituras con IA",
-        "href": "/funcionalidades/lectura-de-escrituras-con-ia"
-      },
-      "steps": [
-        {
-          "who": "you",
-          "icon": "Upload",
-          "label": "Subes escrituras, actas o contratos",
-          "elements": [
-            {
-              "t": "deck",
-              "items": [
-                "2009 · Escritura",
-                "2012 · Acta de junta",
-                "2014 · Contrato",
-                "2017 · Escritura",
-                "2020 · Acta de junta",
-                "2023 · Contrato"
-              ]
-            },
-            {
-              "t": "note",
-              "text": "6 documentos en PDF, en cualquier orden"
-            },
-            {
-              "t": "note",
-              "text": "O el Excel de tu libro de socios"
-            }
-          ]
-        },
-        {
-          "who": "sttok",
-          "icon": "ScanText",
-          "label": "Extrae toda la información",
-          "elements": [
-            {
-              "t": "task",
-              "text": "Ordenadas por fecha"
-            },
-            {
-              "t": "task",
-              "text": "Socios y operaciones"
-            },
-            {
-              "t": "task",
-              "text": "Administradores y cargos"
-            },
-            {
-              "t": "task",
-              "text": "Rangos de numeración"
-            },
-            {
-              "t": "task",
-              "text": "Cargas y cotitularidades"
-            },
-            {
-              "t": "note",
-              "tone": "warn",
-              "text": "1 hueco por revisar: participaciones 2.401 a 3.000"
-            }
-          ]
-        },
-        {
-          "who": "you",
-          "icon": "UserCheck",
-          "label": "Validas",
-          "elements": [
-            {
-              "t": "check",
-              "text": "Datos extraídos revisados"
-            },
-            {
-              "t": "check",
-              "text": "Participaciones 2.401 a 3.000 resueltas"
-            },
-            {
-              "t": "button",
-              "text": "Validar",
-              "done": "Validado"
-            }
-          ]
-        },
-        {
-          "who": "sttok",
-          "icon": "BookOpenCheck",
-          "label": "Libro listo",
-          "elements": [
-            {
-              "t": "result",
-              "icon": "ArrowLeftRight",
-              "value": "312",
-              "text": "operaciones registradas con su detalle",
-              "link": {
-                "text": "Ver ejemplo",
-                "href": "/funcionalidades/equity-story"
-              }
-            },
-            {
-              "t": "result",
-              "icon": "BookOpenCheck",
-              "text": "Libro de socios actualizado",
-              "link": {
-                "text": "Ver ejemplo",
-                "href": "/funcionalidades/libro-registro-oficial"
-              }
-            },
-            {
-              "t": "result",
-              "icon": "Users",
-              "value": "48",
-              "text": "fichas de socio actualizadas",
-              "avatars": [
-                "ER",
-                "LP",
-                "RV",
-                "JF"
-              ],
-              "link": {
-                "text": "Ver ejemplo",
-                "href": "/funcionalidades/ficha-del-socio"
-              }
-            }
-          ]
-        }
-      ],
-      "log": [
-        {
-          "step": 0,
-          "who": "you",
-          "time": "10:30:02",
-          "event": "documentos.subidos",
-          "data": "n=6"
-        },
-        {
-          "step": 1,
-          "who": "sttok",
-          "time": "10:31:52",
-          "event": "historico.extraido",
-          "data": "operaciones=312"
-        },
-        {
-          "step": 2,
-          "who": "you",
-          "time": "10:41:15",
-          "event": "historico.validado",
-          "data": "por=e.riba"
-        },
-        {
-          "step": 3,
-          "who": "sttok",
-          "time": "10:41:16",
-          "event": "libro.generado",
-          "data": "socios=48 fichas=48"
-        }
-      ]
-    },
     {
       "tab": "Junta general",
       "headline": "La junta, de la convocatoria al acta firmada",
@@ -544,6 +384,166 @@
           "time": "16:00:20",
           "event": "tarea.cerrada",
           "data": "manual=0"
+        }
+      ]
+    },
+    {
+      "tab": "Alta del libro",
+      "headline": "El alta: el libro de socios a partir de las escrituras",
+      "link": {
+        "text": "lectura de escrituras con IA",
+        "href": "/funcionalidades/lectura-de-escrituras-con-ia"
+      },
+      "steps": [
+        {
+          "who": "you",
+          "icon": "Upload",
+          "label": "Subes escrituras, actas o contratos",
+          "elements": [
+            {
+              "t": "deck",
+              "items": [
+                "2009 · Escritura",
+                "2012 · Acta de junta",
+                "2014 · Contrato",
+                "2017 · Escritura",
+                "2020 · Acta de junta",
+                "2023 · Contrato"
+              ]
+            },
+            {
+              "t": "note",
+              "text": "6 documentos en PDF, en cualquier orden"
+            },
+            {
+              "t": "note",
+              "text": "O el Excel de tu libro de socios"
+            }
+          ]
+        },
+        {
+          "who": "sttok",
+          "icon": "ScanText",
+          "label": "Extrae toda la información",
+          "elements": [
+            {
+              "t": "task",
+              "text": "Ordenadas por fecha"
+            },
+            {
+              "t": "task",
+              "text": "Socios y operaciones"
+            },
+            {
+              "t": "task",
+              "text": "Administradores y cargos"
+            },
+            {
+              "t": "task",
+              "text": "Rangos de numeración"
+            },
+            {
+              "t": "task",
+              "text": "Cargas y cotitularidades"
+            },
+            {
+              "t": "note",
+              "tone": "warn",
+              "text": "1 hueco por revisar: participaciones 2.401 a 3.000"
+            }
+          ]
+        },
+        {
+          "who": "you",
+          "icon": "UserCheck",
+          "label": "Validas",
+          "elements": [
+            {
+              "t": "check",
+              "text": "Datos extraídos revisados"
+            },
+            {
+              "t": "check",
+              "text": "Participaciones 2.401 a 3.000 resueltas"
+            },
+            {
+              "t": "button",
+              "text": "Validar",
+              "done": "Validado"
+            }
+          ]
+        },
+        {
+          "who": "sttok",
+          "icon": "BookOpenCheck",
+          "label": "Libro listo",
+          "elements": [
+            {
+              "t": "result",
+              "icon": "ArrowLeftRight",
+              "value": "312",
+              "text": "operaciones registradas con su detalle",
+              "link": {
+                "text": "Ver ejemplo",
+                "href": "/funcionalidades/equity-story"
+              }
+            },
+            {
+              "t": "result",
+              "icon": "BookOpenCheck",
+              "text": "Libro de socios actualizado",
+              "link": {
+                "text": "Ver ejemplo",
+                "href": "/funcionalidades/libro-registro-oficial"
+              }
+            },
+            {
+              "t": "result",
+              "icon": "Users",
+              "value": "48",
+              "text": "fichas de socio actualizadas",
+              "avatars": [
+                "ER",
+                "LP",
+                "RV",
+                "JF"
+              ],
+              "link": {
+                "text": "Ver ejemplo",
+                "href": "/funcionalidades/ficha-del-socio"
+              }
+            }
+          ]
+        }
+      ],
+      "log": [
+        {
+          "step": 0,
+          "who": "you",
+          "time": "10:30:02",
+          "event": "documentos.subidos",
+          "data": "n=6"
+        },
+        {
+          "step": 1,
+          "who": "sttok",
+          "time": "10:31:52",
+          "event": "historico.extraido",
+          "data": "operaciones=312"
+        },
+        {
+          "step": 2,
+          "who": "you",
+          "time": "10:41:15",
+          "event": "historico.validado",
+          "data": "por=e.riba"
+        },
+        {
+          "step": 3,
+          "who": "sttok",
+          "time": "10:41:16",
+          "event": "libro.generado",
+          "data": "socios=48 fichas=48"
         }
       ]
     }
