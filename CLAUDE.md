@@ -151,7 +151,9 @@ comprobarlo en producción tras el despliegue.
   `lib/animaciones.ts` devuelve las URLs completas (webm, mp4 y pósteres de
   cada tema) y es lo único que recibe `<VideoTema fuentes>`. Una cadena
   `/animaciones/<nombre>` sin extensión en el HTML o el RSC la rastrea
-  Googlebot y da 404; el middleware responde 410 a esas rutas.
+  Googlebot y da 404; el middleware responde 301 a la página que la contiene
+  (`lib/animaciones-paginas.json`, que regenera `pnpm build` con
+  `scripts/animaciones-paginas.mjs`).
 - `htmlLimitedBots: /.*/` (next.config.mjs) desactiva el streaming de
   metadata: sin él, React completa dos Suspense vacíos con un script que
   contiene `"/$"`, que Googlebot también reporta como 404.
