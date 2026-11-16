@@ -20,7 +20,7 @@
       "light": "/animaciones/simulador-ampliacion-light-poster.webp",
       "dark": "/animaciones/simulador-ampliacion-dark-poster.webp"
     },
-    "video": "/animaciones/simulador-ampliacion",
+    "video": "simulador-ampliacion",
     "videoAlt": "Simulador de operaciones de Sttok: ampliación de capital de Talleres Bergadà, SL, con datos de ejemplo. Acuden dos socios, Anna Bergadà Solé y Ferran Costa Miró, y entra una sociedad nueva, Vallès 2020, SL. Debajo, el cap table resultante con las participaciones nuevas y el porcentaje de cada socio."
   },
   "testimonials": {

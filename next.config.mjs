@@ -1,3 +1,14 @@
+import { readFileSync } from "node:fs";
+
+/**
+ * Articulos y paginas vigentes del blog (blog.sttok.com/recursos), sacados de
+ * su wp-sitemap.xml. Solo esos slugs se redirigen al blog; el resto iria a un
+ * 404 alla (Search Console, nov-2026) y va al indice del blog.
+ */
+const BLOG_SLUGS = JSON.parse(
+  readFileSync(new URL("./config/blog-recursos.json", import.meta.url), "utf8"),
+).slugs;
+
 /**
  * Slug publico castellano -> carpeta interna de app/ (con nombre en ingles).
  *
@@ -71,6 +82,15 @@ const SIN_PAGINA = ["/solutions"];
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   /**
+   * Metadata sin streaming para todas las peticiones. Con streaming (por
+   * defecto desde Next 15.2, salvo para los bots de htmlLimitedBots), Next
+   * abre dos límites de Suspense vacíos en cada página y React los completa
+   * con un script en línea que contiene la cadena "/$"; Googlebot la toma por
+   * una URL y la reporta como 404 (Search Console, nov-2026). El renderizado
+   * sigue siendo dinámico: solo cambia que el <head> sale completo de entrada.
+   */
+  htmlLimitedBots: /.*/,
+  /**
    * La Captura de los MDX lee con fs los PNG de public/funcionalidades, y el
    * trazado de archivos mete por eso todo public/ en cada función: unos 250 MB,
    * el límite de Vercel. En tiempo de ejecución solo se leen esos PNG; vídeos,
@@ -115,10 +135,17 @@ const nextConfig = {
       { source: "/index.html", destination: "/", statusCode: 301 },
       // Los articulos del blog vivieron en www.sttok.com/recursos/<slug> y hoy
       // estan en blog.sttok.com con el mismo slug. /recursos (sin slug) es el
-      // glosario de esta web y no se toca.
+      // glosario de esta web y no se toca. Solo los slugs que existen en el
+      // blog (BLOG_SLUGS); los demas, a su indice, que es la pagina vigente
+      // mas cercana, en vez de a un 404 del blog.
+      {
+        source: `/recursos/:slug(${BLOG_SLUGS.join("|")})`,
+        destination: "https://blog.sttok.com/recursos/:slug/",
+        statusCode: 301,
+      },
       {
         source: "/recursos/:slug",
-        destination: "https://blog.sttok.com/recursos/:slug/",
+        destination: "https://blog.sttok.com/recursos/",
         statusCode: 301,
       },
       // Casos de exito retirados. Apuntan al indice de casos, que es el

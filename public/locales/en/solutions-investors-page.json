@@ -16,7 +16,7 @@
       "light": "/animaciones/en/participadas-light-poster.webp",
       "dark": "/animaciones/en/participadas-dark-poster.webp"
     },
-    "video": "/animaciones/en/participadas"
+    "video": "participadas"
   },
   "testimonials": {
     "title": "What our Clients say",

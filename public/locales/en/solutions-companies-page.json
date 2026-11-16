@@ -16,7 +16,7 @@
       "light": "/animaciones/en/diagrama-del-grupo-light-poster.webp",
       "dark": "/animaciones/en/diagrama-del-grupo-dark-poster.webp"
     },
-    "video": "/animaciones/en/diagrama-del-grupo"
+    "video": "diagrama-del-grupo"
   },
   "testimonials": {
     "title": "Client Testimonials",

@@ -14,6 +14,7 @@ import { cn } from "@/lib/utils";
 import { useLocale } from "@/lib/use-locale";
 import Image from "next/image";
 import VideoTema from "@/components/shared/video-tema";
+import { animacion } from "@/lib/animaciones";
 
 type AccordionItemProps = {
   children: React.ReactNode;
@@ -88,7 +89,7 @@ type CardDataProps = {
   /** Texto alternativo de la pantalla; si falta, se compone con título y texto. */
   alt?: string;
   image: ImageByThemeProps;
-  /** Ruta base de una animación en /animaciones, sin tema ni extensión. */
+  /** Nombre de una animación de public/animaciones («accionistas»), no una ruta. */
   video?: string;
   /** Cuánto se queda en pantalla (ms). Una animación necesita su duración entera. */
   duracion?: number;
@@ -109,7 +110,8 @@ export default function Features({
   data = [],
 }: FeaturesProps) {
   // Texto alternativo de cada pantalla, en el idioma de la página.
-  const enSttok = useLocale() === "en" ? "in Sttok" : "en Sttok";
+  const locale = useLocale();
+  const enSttok = locale === "en" ? "in Sttok" : "en Sttok";
 
   const [currentIndex, setCurrentIndex] = useState<number>(-1);
   // Cada pestaña dura lo suyo: una animación de 20 s no cabe en los 5 de una captura.
@@ -307,7 +309,7 @@ export default function Features({
                   >
                     {item.video ? (
                       <VideoTema
-                        base={item.video}
+                        fuentes={animacion(item.video, locale === "en")}
                         alt={item.alt ?? `${item.title} ${enSttok}: ${item.content}`}
                         activo={activa}
                         rellenar

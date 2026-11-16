@@ -20,7 +20,7 @@
       "light": "/animaciones/portal-del-accionista-light-poster.webp",
       "dark": "/animaciones/portal-del-accionista-dark-poster.webp"
     },
-    "video": "/animaciones/portal-del-accionista"
+    "video": "portal-del-accionista"
   },
   "testimonials": {
     "title": "Lo que dicen nuestros Clientes",

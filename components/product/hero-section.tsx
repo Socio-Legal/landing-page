@@ -8,6 +8,8 @@ import { ArrowDownIcon, ArrowRightIcon, DownloadIcon } from "@radix-ui/react-ico
 
 import { trackDemoClick, trackFichaDownload } from "@/lib/analytics";
 import VideoTema from "@/components/shared/video-tema";
+import { animacion } from "@/lib/animaciones";
+import { useLocale } from "@/lib/use-locale";
 
 export type HeroSectionProps = {
   slogan?: string;
@@ -21,7 +23,7 @@ export type HeroSectionProps = {
     light: string;
     dark: string;
   };
-  /** Ruta base de una animación en /animaciones: sustituye a la imagen. */
+  /** Nombre de una animación de public/animaciones («accionistas»), no una ruta: sustituye a la imagen. */
   video?: string;
   /** Texto alternativo de la animación: qué se ve en ella. Sin él, el titular. */
   videoAlt?: string;
@@ -49,6 +51,7 @@ const HeroSection: FC<HeroSectionProps> = ({
   download,
 }) => {
   const { t } = useTranslation("product-hero-section");
+  const locale = useLocale();
 
   const hasButton = !!(button?.text && button?.link);
   const hasImage = !!(video || image?.light || image?.dark);
@@ -152,7 +155,7 @@ const HeroSection: FC<HeroSectionProps> = ({
               <div className="relative overflow-hidden rounded-lg border border-border bg-card shadow-xl">
                 {video ? (
                   <VideoTema
-                    base={video}
+                    fuentes={animacion(video, locale === "en")}
                     alt={t(videoAlt || title)}
                     prioridad
                     sizes="(max-width: 1024px) 100vw, 50vw"

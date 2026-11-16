@@ -4,50 +4,15 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 import { cn } from "@/lib/utils";
-import VERSION from "@/lib/animaciones-version.json";
-
-/**
- * Alto de cada animación a 1280 px de ancho. Lo grabado a 1184 × 860 px CSS
- * sale a 930; lo de 1184 × 740, a 800. Declarado aquí para que la caja tenga
- * su tamaño antes de cargar (sin salto de maquetación).
- */
-const ALTO: Record<string, number> = {
-  panel: 930, sociedades: 930, participadas: 930, "portal-del-beneficiario": 930,
-  compraventa: 930, "convocatoria-de-la-junta": 930,
-  "ampliaciones-y-reducciones-de-capital": 930, "asistencia-y-quorum": 930,
-  "consejo-de-administracion": 930, "eleccion-de-consejeros": 930, "reparto-de-dividendos": 930,
-  "acta-de-la-junta": 930,
-  // 920 × 800 px CSS: solo el área de contenido, para que se lea a media columna.
-  "simulador-ampliacion": 1113,
-};
-const altoDe = (base: string) => ALTO[base.split("/").pop() || ""] ?? 800;
-
-/**
- * Animaciones con un encuadre propio para móvil: la app grabada a 640 px de
- * ancho, en vertical, con su póster (<base>-<tema>-m-poster.webp). Alto a
- * 1280 px de ancho. Las demás reducen en móvil el mismo encuadre de escritorio.
- */
-const ALTO_MOVIL: Record<string, number> = {
-  "simulador-ampliacion": 1800,
-};
-const altoMovilDe = (base: string) => ALTO_MOVIL[base.split("/").pop() || ""];
-
-/**
- * Huella del contenido de la animación (scripts/version-animaciones.mjs, dentro
- * de `pnpm build`). Va en la URL del vídeo y del póster: un archivo regrabado
- * con el mismo nombre cambia de URL y no se queda días en la caché.
- */
-const versionDe = (base: string) => {
-  const v = (VERSION as Record<string, string>)[base.replace(/^\/animaciones\//, "")];
-  return v ? `?v=${v}` : "";
-};
+import type { Animacion } from "@/lib/animaciones";
 
 /**
  * Una pantalla de la app en movimiento, en versión clara y oscura.
  *
- * `base` es la ruta sin tema ni extensión: /animaciones/simulador sirve
- * simulador-light.webm|mp4, simulador-dark.webm|mp4, su versión de 720 px para
- * móvil (<base>-<tema>-m.webm|mp4) y sus pósteres (<base>-<tema>-poster.webp).
+ * `fuentes` trae las URLs COMPLETAS de cada archivo (`animacion()` de
+ * lib/animaciones.ts): vídeo webm y mp4, su versión de 720 px para móvil y los
+ * pósteres, de cada tema. El componente no compone rutas: una ruta sin
+ * extensión en el HTML la rastrea Googlebot y da 404.
  *
  * Lo que se pinta de entrada es una IMAGEN con su `alt`, no un vídeo: es lo que
  * indexan los buscadores, lo que leen los lectores de pantalla y lo que se ve
@@ -61,7 +26,7 @@ const versionDe = (base: string) => {
  * muestra, así que nunca hay un hueco.
  */
 export default function VideoTema({
-  base,
+  fuentes,
   alt,
   className,
   activo = true,
@@ -69,7 +34,7 @@ export default function VideoTema({
   rellenar = false,
   sizes = "(max-width: 768px) 100vw, 64rem",
 }: {
-  base: string;
+  fuentes: Animacion;
   alt: string;
   className?: string;
   activo?: boolean;
@@ -80,15 +45,14 @@ export default function VideoTema({
   sizes?: string;
 }) {
   const width = 1280;
-  const height = altoDe(base);
-  const altoMovil = altoMovilDe(base);
-  const v = versionDe(base);
+  const height = fuentes.alto;
+  const altoMovil = fuentes.altoMovil;
   const caja = useRef<HTMLDivElement>(null);
   const video = useRef<HTMLVideoElement>(null);
   const [tema, setTema] = useState<"light" | "dark" | null>(null);
   const [cargar, setCargar] = useState(false);
   const [aLaVista, setALaVista] = useState(false);
-  // En pantallas estrechas, la versión de 720 px (<base>-<tema>-m.*): pesa un tercio.
+  // En pantallas estrechas, la versión de 720 px (`fuentes.<tema>.movil`): pesa un tercio.
   const [movil, setMovil] = useState(false);
   const [enMarcha, setEnMarcha] = useState(false);
 
@@ -164,7 +128,7 @@ export default function VideoTema({
 
   const imagen = (t: "light" | "dark", visibleEn: string, enMovil = false) => (
     <Image
-      src={`${base}-${t}${enMovil ? "-m" : ""}-poster.webp${v}`}
+      src={(enMovil && fuentes[t].movil.poster) || fuentes[t].poster}
       alt={alt}
       {...(rellenar ? { fill: true } : { width, height: enMovil ? altoMovil : height })}
       sizes={enMovil ? "100vw" : sizes}
@@ -212,8 +176,8 @@ export default function VideoTema({
           tabIndex={-1}
           onPlaying={() => setEnMarcha(true)}
         >
-          <source src={`${base}-${tema}${movil ? "-m" : ""}.webm${v}`} type="video/webm" />
-          <source src={`${base}-${tema}${movil ? "-m" : ""}.mp4${v}`} type="video/mp4" />
+          <source src={(movil ? fuentes[tema].movil : fuentes[tema]).webm} type="video/webm" />
+          <source src={(movil ? fuentes[tema].movil : fuentes[tema]).mp4} type="video/mp4" />
         </video>
       )}
     </div>

@@ -16,7 +16,7 @@
       "light": "/animaciones/en/voto-electronico-en-juntas-light-poster.webp",
       "dark": "/animaciones/en/voto-electronico-en-juntas-dark-poster.webp"
     },
-    "video": "/animaciones/en/voto-electronico-en-juntas"
+    "video": "voto-electronico-en-juntas"
   },
   "testimonials": {
     "title": "What Our Clients Say",
