@@ -15,7 +15,7 @@
       "light": "/animaciones/firma-y-comunicaciones-light-poster.webp",
       "dark": "/animaciones/firma-y-comunicaciones-dark-poster.webp"
     },
-    "video": "/animaciones/firma-y-comunicaciones"
+    "video": "firma-y-comunicaciones"
   },
   "setup": {
     "eyebrow": "Cómo funciona",

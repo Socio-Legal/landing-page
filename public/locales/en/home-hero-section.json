@@ -12,7 +12,7 @@
       "link": "/en/product"
     },
     "video": {
-      "base": "/animaciones/en/panel",
+      "nombre": "panel",
       "alt": "A company dashboard in Sttok: share capital, split between family branches, meetings, deadlines and a shareholder record"
     },
     "certifications": {

@@ -3,6 +3,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import VideoTema from "@/components/shared/video-tema";
+import { animacion } from "@/lib/animaciones";
+import { useLocale } from "@/lib/use-locale";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
@@ -11,6 +13,7 @@ import { trackDemoClick, trackMeetingClick } from "@/lib/analytics";
 
 export default function HeroSection() {
   const { t } = useTranslation(["common", "home-hero-section"]);
+  const locale = useLocale();
 
   return (
     <section id="hero" className="relative overflow-hidden">
@@ -79,7 +82,7 @@ export default function HeroSection() {
           <div className="relative animate-fade-up opacity-0 [--animation-delay:200ms]">
             <div className="relative rounded-xl border border-border bg-card shadow-xl overflow-hidden">
               <VideoTema
-                base={t("home-hero-section:hero.video.base")}
+                fuentes={animacion(t("home-hero-section:hero.video.nombre"), locale === "en")}
                 alt={t("home-hero-section:hero.video.alt")}
                 prioridad
                 sizes="(max-width: 768px) 100vw, 50vw"

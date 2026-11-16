@@ -141,11 +141,20 @@ comprobarlo en producción tras el despliegue.
   uses `git log` para fechas sin tener esto en cuenta.
 - **Las animaciones de `public/animaciones` se cachean un día** (y una semana
   más con `stale-while-revalidate`) con el mismo nombre de archivo. Por eso
-  `VideoTema` añade `?v=<huella del contenido>` a cada vídeo y póster, sacada
-  de `lib/animaciones-version.json`. `pnpm build` regenera ese JSON con
+  cada vídeo y póster lleva `?v=<huella del contenido>`, sacada de
+  `lib/animaciones-version.json`. `pnpm build` regenera ese JSON con
   `scripts/version-animaciones.mjs`. Si regrabas una animación, ejecuta el
   script y versiona el JSON junto a los vídeos, o `next dev` servirá la huella
   antigua.
+- **Una animación se cita por su nombre, nunca por su ruta.** Los JSON y los
+  MDX dicen `"video": "accionistas"`; `animacion(nombre, en)` de
+  `lib/animaciones.ts` devuelve las URLs completas (webm, mp4 y pósteres de
+  cada tema) y es lo único que recibe `<VideoTema fuentes>`. Una cadena
+  `/animaciones/<nombre>` sin extensión en el HTML o el RSC la rastrea
+  Googlebot y da 404; el middleware responde 410 a esas rutas.
+- `htmlLimitedBots: /.*/` (next.config.mjs) desactiva el streaming de
+  metadata: sin él, React completa dos Suspense vacíos con un script que
+  contiene `"/$"`, que Googlebot también reporta como 404.
 - **Todo el sitio es SSR dinámico**: el layout raíz llama a `headers()`, así que
   no hay prerenderizado ni caché de CDN en ninguna ruta.
 - El `marginTop: -56px` que sube el hero bajo la cabecera solo lo lleva la

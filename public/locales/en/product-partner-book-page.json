@@ -16,7 +16,7 @@
       "light": "/animaciones/en/accionistas-light-poster.webp",
       "dark": "/animaciones/en/accionistas-dark-poster.webp"
     },
-    "video": "/animaciones/en/accionistas"
+    "video": "accionistas"
   },
   "setup": {
     "eyebrow": "How the register is built",

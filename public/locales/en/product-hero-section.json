@@ -21,7 +21,7 @@
       "light": "/animaciones/en/sociedades-light-poster.webp",
       "dark": "/animaciones/en/sociedades-dark-poster.webp"
     },
-    "video": "/animaciones/en/sociedades"
+    "video": "sociedades"
   },
   "clientsLabel": "More than 250 clients keep their records in Sttok",
   "modules": {

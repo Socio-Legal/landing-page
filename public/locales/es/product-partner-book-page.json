@@ -20,7 +20,7 @@
       "light": "/animaciones/accionistas-light-poster.webp",
       "dark": "/animaciones/accionistas-dark-poster.webp"
     },
-    "video": "/animaciones/accionistas"
+    "video": "accionistas"
   },
   "setup": {
     "eyebrow": "Cómo se monta el libro",

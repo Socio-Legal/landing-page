@@ -5,6 +5,7 @@ import Image from "next/image";
 import CatalogoFuncionalidades from "@/components/shared/catalogo-funcionalidades";
 import Link from "next/link";
 import VideoTema from "@/components/shared/video-tema";
+import { animacion } from "@/lib/animaciones";
 import type { MDXComponents } from "mdx/types";
 
 import type { Locale } from "@/lib/locales";
@@ -90,7 +91,7 @@ const Captura = ({
                 </>
               ) : null}
               <div className={detalle ? "hidden sm:block" : undefined}>
-                <VideoTema base={`/animaciones/${en ? "en/" : ""}${video}`} alt={alt} sizes="(max-width: 1100px) 100vw, 64rem" />
+                <VideoTema fuentes={animacion(video, en)} alt={alt} sizes="(max-width: 1100px) 100vw, 64rem" />
               </div>
             </>
           ) : detalle ? (

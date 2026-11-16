@@ -12,8 +12,19 @@ import { localeFromPathname } from "@/lib/locales";
  * La regla de "a qué idioma pertenece esta ruta" vive en lib/locales, que la
  * deriva de LOCALE_PREFIX. Aquí no se compara contra "/en" a mano.
  */
+/**
+ * /animaciones/<nombre> sin extensión no es un archivo: era la ruta base que
+ * VideoTema completaba en el cliente y que Googlebot rastreó (404 en Search
+ * Console, nov-2026). 410 para que la retire del índice antes que con un 404.
+ */
+const ANIMACION_SIN_EXTENSION = /^\/animaciones\/(?:en\/)?[^/.]+\/?$/;
+
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+
+  if (ANIMACION_SIN_EXTENSION.test(pathname)) {
+    return new NextResponse(null, { status: 410 });
+  }
 
   const headers = new Headers(request.headers);
   headers.set("x-locale", localeFromPathname(pathname));

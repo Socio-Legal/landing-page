@@ -20,7 +20,7 @@
       "light": "/animaciones/sociedades-light-poster.webp",
       "dark": "/animaciones/sociedades-dark-poster.webp"
     },
-    "video": "/animaciones/sociedades"
+    "video": "sociedades"
   },
   "testimonials": {
     "title": "Lo que Dicen Nuestros Clientes",

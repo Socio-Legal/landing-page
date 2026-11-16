@@ -17,7 +17,7 @@
         "dark": "/animaciones/en/accionistas-dark-poster.webp"
       },
       "icon": "BarChart3",
-      "video": "/animaciones/en/accionistas",
+      "video": "accionistas",
       "duracion": 28000
     },
     {
@@ -30,7 +30,7 @@
         "dark": "/animaciones/en/voto-electronico-en-juntas-dark-poster.webp"
       },
       "icon": "LineChart",
-      "video": "/animaciones/en/voto-electronico-en-juntas",
+      "video": "voto-electronico-en-juntas",
       "duracion": 25500
     },
     {
@@ -43,7 +43,7 @@
         "dark": "/animaciones/en/firma-y-comunicaciones-dark-poster.webp"
       },
       "icon": "PenLine",
-      "video": "/animaciones/en/firma-y-comunicaciones",
+      "video": "firma-y-comunicaciones",
       "duracion": 26500
     },
     {
@@ -56,7 +56,7 @@
         "dark": "/animaciones/en/liquidez-planes-de-incentivos-dark-poster.webp"
       },
       "icon": "Brain",
-      "video": "/animaciones/en/liquidez-planes-de-incentivos",
+      "video": "liquidez-planes-de-incentivos",
       "duracion": 23000
     }
   ]

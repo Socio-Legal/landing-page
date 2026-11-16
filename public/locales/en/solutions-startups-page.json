@@ -16,7 +16,7 @@
       "light": "/animaciones/en/portal-del-beneficiario-light-poster.webp",
       "dark": "/animaciones/en/portal-del-beneficiario-dark-poster.webp"
     },
-    "video": "/animaciones/en/portal-del-beneficiario"
+    "video": "portal-del-beneficiario"
   },
   "testimonials": {
     "title": "Customer Testimonials",
