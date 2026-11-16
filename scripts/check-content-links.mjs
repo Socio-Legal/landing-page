@@ -124,6 +124,21 @@ let comprobados = 0;
       const ruta = `content/${seccion}/${archivo}`;
       const texto = fs.readFileSync(path.join(dir, archivo), "utf8");
 
+      // Una <Captura> lee su PNG del disco al renderizar: si no existe, la
+      // página entera da 500 (pasó con /guias/junta-general-telematica al
+      // renombrar una captura, nov-2026). Y su vídeo, si lo lleva, también.
+      for (const m of texto.matchAll(/<Captura\b[^>]*?\bnombre="([^"]+)"/g)) {
+        for (const tema of ["light", "dark"]) {
+          const png = path.join(ROOT, "public", "funcionalidades", `${m[1]}-${tema}.png`);
+          if (!fs.existsSync(png)) errores.push(`${ruta}: Captura "${m[1]}" sin public/funcionalidades/${m[1]}-${tema}.png`);
+        }
+      }
+      for (const m of texto.matchAll(/<Captura\b[^>]*?\bvideo="([^"]+)"/g)) {
+        const dirAnim = seccion.startsWith("en/") ? "animaciones/en" : "animaciones";
+        const webm = path.join(ROOT, "public", dirAnim, `${m[1]}-light.webm`);
+        if (!fs.existsSync(webm)) errores.push(`${ruta}: Captura con video "${m[1]}" sin public/${dirAnim}/${m[1]}-light.webm`);
+      }
+
       for (const destino of enlacesDe(texto)) {
         // Externos y anclas no se validan aqui.
         if (!destino.startsWith("/")) continue;

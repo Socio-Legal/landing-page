@@ -133,6 +133,10 @@ const nextConfig = {
       // La web antigua servia la portada tambien como /index.html, y Google
       // la sigue pidiendo (404 en Search Console, nov-2026).
       { source: "/index.html", destination: "/", statusCode: 301 },
+      // El resto de paginas de la web antigua iban en <slug>.html; el blog
+      // todavia enlaza /privacidad.html (404 en Search Console, nov-2026).
+      // Va despues de /index.html y /seedrocket.html, que tienen destino propio.
+      { source: "/:slug([a-z0-9-]+).html", destination: "/:slug", statusCode: 301 },
       // Los articulos del blog vivieron en www.sttok.com/recursos/<slug> y hoy
       // estan en blog.sttok.com con el mismo slug. /recursos (sin slug) es el
       // glosario de esta web y no se toca. Solo los slugs que existen en el
