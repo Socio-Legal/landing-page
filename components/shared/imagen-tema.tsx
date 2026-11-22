@@ -59,7 +59,9 @@ export default function ImagenTema({
       height: a.height,
       alt,
       sizes: s,
-      ...(prioridad ? { priority: true } : { loading: "lazy" as const }),
+      // getImageProps no pone fetchPriority con `priority` (lo hace <Image>):
+      // se declara aquí. Sin prioridad, diferida.
+      ...(prioridad ? { priority: true, fetchPriority: "high" as const } : { loading: "lazy" as const }),
     }).props;
 
   const movil = `(max-width: ${corteMovil}px)`;
@@ -97,7 +99,6 @@ export default function ImagenTema({
       <img
         {...base}
         className={cn("h-auto w-full", imgClassName)}
-        // React 19 acepta fetchPriority; getImageProps ya lo pone con priority.
       />
     </picture>
   );

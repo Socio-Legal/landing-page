@@ -3,7 +3,6 @@
 import { useEffect, useId, useRef, useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 import Script from "next/script";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import { Trans, useTranslation } from "react-i18next";
 import { Cross2Icon } from "@radix-ui/react-icons";
 
@@ -102,11 +101,21 @@ export function CookieConsent({ gaId }: { gaId: string }) {
     adsLoaded.current = advertising;
   }, [hydrated, analytics, advertising]);
 
-  if (!state) return null;
+  // Si la cookie existe pero no vale (caducada, otra versión), el banner
+  // tiene que verse: se quita la clase que lo ocultaba desde el <head>.
+  useEffect(() => {
+    if (hydrated && !record) document.documentElement.classList.remove("consentimiento-dado");
+  }, [hydrated, record]);
+
+  // En el servidor y al hidratar no se sabe si hay decisión: el banner va en
+  // el HTML (las páginas son estáticas) y lo oculta la clase
+  // «consentimiento-dado», que pone un script del <head> si ya hay cookie.
+  // Así se pinta con la página y no espera al JavaScript.
+  if (!state) return <ConsentBanner />;
 
   return (
     <>
-      {analytics && <GoogleAnalytics gaId={gaId} />}
+      {analytics && <GoogleAnalyticsTag gaId={gaId} />}
       {advertising && <GoogleAdsTag loadGtag={!analytics} />}
       {!record && <ConsentBanner />}
       <ConsentSettings
@@ -118,9 +127,26 @@ export function CookieConsent({ gaId }: { gaId: string }) {
 }
 
 /**
- * Etiqueta de Google Ads. Con las analíticas aceptadas, gtag.js ya lo carga
- * Google Analytics y basta con configurar Ads; si no, se carga con el ID de
- * Ads, para no enviar nada a Analytics.
+ * Google Analytics, solo con las analíticas aceptadas y en diferido
+ * (lazyOnload): gtag.js se descarga cuando la página ya ha cargado, para no
+ * competir con la imagen principal (LCP).
+ */
+function GoogleAnalyticsTag({ gaId }: { gaId: string }) {
+  return (
+    <>
+      <Script src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`} strategy="lazyOnload" />
+      <Script id="google-analytics-config" strategy="lazyOnload">
+        {`gtag('js', new Date());gtag('config', '${gaId}');`}
+      </Script>
+    </>
+  );
+}
+
+/**
+ * Etiqueta de Google Ads, solo con la publicidad aceptada y en diferido. Con
+ * las analíticas aceptadas, gtag.js ya lo carga Google Analytics y basta con
+ * configurar Ads; si no, se carga con el ID de Ads, para no enviar nada a
+ * Analytics.
  */
 function GoogleAdsTag({ loadGtag }: { loadGtag: boolean }) {
   return (
@@ -128,10 +154,10 @@ function GoogleAdsTag({ loadGtag }: { loadGtag: boolean }) {
       {loadGtag && (
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ADS_ID}`}
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
       )}
-      <Script id="google-ads-config" strategy="afterInteractive">
+      <Script id="google-ads-config" strategy="lazyOnload">
         {`${loadGtag ? "gtag('js', new Date());" : ""}gtag('config', '${GOOGLE_ADS_ID}');`}
       </Script>
     </>
@@ -151,7 +177,7 @@ function ConsentBanner() {
       aria-modal="false"
       aria-labelledby={titleId}
       aria-describedby={textId}
-      className="fixed inset-x-0 bottom-0 z-[60] p-3 sm:p-4"
+      className="banner-cookies fixed inset-x-0 bottom-0 z-[60] p-3 sm:p-4"
     >
       <div className="mx-auto max-w-3xl rounded-lg border border-border bg-background p-4 shadow-lg sm:p-5">
         <h2 id={titleId} className="text-sm font-semibold">

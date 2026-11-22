@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Migas from "@/components/shared/migas";
 
 import DocPage, { docMetadata } from "@/components/shared/doc-page";
 import JsonLd from "@/components/shared/json-ld";
@@ -72,6 +73,7 @@ export default async function Page({
   const meta = entrada.meta[r.locale]!;
   return (
     <>
+      <Migas ruta={localizedHref(r.esPath, r.locale)} />
       {entrada.softwareApplication && (
         <JsonLd data={softwareApplicationJsonLd(r.locale)} />
       )}

@@ -150,3 +150,15 @@
     max-height: 820px !important;
   }
 }
+
+/* Banner de cookies: va en el HTML estático; si ya hay decisión guardada,
+   un script del <head> pone esta clase en <html> y no llega a pintarse. */
+.consentimiento-dado .banner-cookies {
+  display: none;
+}
+
+/* Portada de cada idioma: el hero sube bajo la cabecera. Lo decide la propia
+   página (data-portada) y no el layout, que ya no lee la ruta de la petición. */
+main:has(> [data-portada]) {
+  margin-top: -56px;
+}

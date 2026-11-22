@@ -1,4 +1,3 @@
-import { sendGAEvent } from "@next/third-parties/google";
 
 type EventName =
   | "demo_click"
@@ -17,7 +16,10 @@ interface AnalyticsEvent {
 
 export function trackEvent({ event, ...params }: AnalyticsEvent) {
   if (typeof window === "undefined") return;
-  sendGAEvent("event", event, params);
+  // gtag lo define el script en línea del <head> (Consent Mode); los eventos
+  // se encolan en dataLayer hasta que gtag.js, cargado en diferido y solo con
+  // las analíticas aceptadas, los envía.
+  window.gtag?.("event", event, params);
 }
 
 export function trackDemoClick(label?: string) {
