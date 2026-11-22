@@ -8,6 +8,7 @@ import { ArrowDownIcon, ArrowRightIcon, DownloadIcon } from "@radix-ui/react-ico
 
 import { trackDemoClick, trackFichaDownload } from "@/lib/analytics";
 import VideoTema from "@/components/shared/video-tema";
+import ImagenTema from "@/components/shared/imagen-tema";
 import { animacion } from "@/lib/animaciones";
 import { useLocale } from "@/lib/use-locale";
 
@@ -22,6 +23,9 @@ export type HeroSectionProps = {
   image?: {
     light: string;
     dark: string;
+    /** Medidas del PNG (sin ellas, las de un póster: 2304 × 1440). */
+    width?: number;
+    height?: number;
   };
   /** Nombre de una animación de public/animaciones («accionistas»), no una ruta: sustituye a la imagen. */
   video?: string;
@@ -162,28 +166,16 @@ const HeroSection: FC<HeroSectionProps> = ({
                     className="rounded-[inherit]"
                   />
                 ) : image ? (
-                  <>
-                    <Image
-                      alt={t(title)}
-                      className="relative hidden h-auto w-full rounded-[inherit] dark:block"
-                      src={image.dark || image.light}
-                      height={0}
-                      width={0}
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      style={{ width: "100%", height: "auto" }}
-                      priority
-                    />
-                    <Image
-                      alt={t(title)}
-                      className="relative block h-auto w-full rounded-[inherit] dark:hidden"
-                      src={image.light || image.dark}
-                      height={0}
-                      width={0}
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                      style={{ width: "100%", height: "auto" }}
-                      priority
-                    />
-                  </>
+                  // Un solo <picture>: antes eran dos <img> con prioridad y se
+                  // descargaban las dos.
+                  <ImagenTema
+                    alt={t(title)}
+                    light={{ src: image.light || image.dark, width: image.width ?? 2304, height: image.height ?? 1440 }}
+                    dark={{ src: image.dark || image.light, width: image.width ?? 2304, height: image.height ?? 1440 }}
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    prioridad
+                    imgClassName="relative rounded-[inherit]"
+                  />
                 ) : null}
               </div>
             </div>

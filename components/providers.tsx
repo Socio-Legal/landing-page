@@ -6,6 +6,7 @@ import { I18nextProvider } from "react-i18next";
 
 import { CalendlyPopup } from "@/components/calendly-popup";
 import { CookieConsent } from "@/components/cookie-consent";
+import { TemaImagenes } from "@/components/tema-imagenes";
 
 import { getI18n } from "@/lib/i18n";
 import type { Locale } from "@/lib/locales";
@@ -38,6 +39,7 @@ export default function Providers({
         {/* Antes que la página: es lo primero que se alcanza con el teclado. */}
         <CookieConsent gaId="G-LWNDHYBY2N" />
         <CalendlyPopup />
+        <TemaImagenes />
         <MenuProvider>{children}</MenuProvider>
       </I18nextProvider>
 

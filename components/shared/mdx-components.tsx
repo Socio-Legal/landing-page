@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
-import Image from "next/image";
+import ImagenTema from "@/components/shared/imagen-tema";
 import CatalogoFuncionalidades from "@/components/shared/catalogo-funcionalidades";
 import Link from "next/link";
 import VideoTema from "@/components/shared/video-tema";
@@ -34,6 +34,7 @@ const Captura = ({
   video,
   movil = false,
   locale = "es",
+  prioridad = false,
 }: {
   nombre: string;
   alt: string;
@@ -42,6 +43,8 @@ const Captura = ({
   /** Captura de móvil, en vertical: se enseña estrecha y centrada. */
   movil?: boolean;
   locale?: Locale;
+  /** La primera captura de la página (la pone DocPage): es el LCP. */
+  prioridad?: boolean;
 }) => {
   const src = (variante: string, tema: string) =>
     `/funcionalidades/${nombre}${variante}-${tema}.png`;
@@ -56,21 +59,36 @@ const Captura = ({
       ? pngSize(src("-detalle", "light"))
       : null;
 
-  const img = (
-    variante: string,
-    tema: "light" | "dark",
-    dims: { width: number; height: number },
-    visible: string,
-  ) => (
-    <Image
-      src={src(variante, tema)}
+  // Un solo <picture>: claro u oscuro, y el recorte por debajo de sm (640 px)
+  // si existe. Ver ImagenTema.
+  const archivo = (variante: string, tema: "light" | "dark", dims: { width: number; height: number }) => ({
+    src: src(variante, tema),
+    ...dims,
+  });
+  const imagen = (conDetalle: boolean) => (
+    <ImagenTema
       alt={alt}
-      width={dims.width}
-      height={dims.height}
-      sizes={movil ? "20rem" : variante ? "100vw" : "(max-width: 1100px) 100vw, 64rem"}
-      className={`h-auto w-full ${visible}`}
+      light={archivo("", "light", { width, height })}
+      dark={archivo("", "dark", { width, height })}
+      {...(conDetalle && detalle
+        ? { movilLight: archivo("-detalle", "light", detalle), movilDark: archivo("-detalle", "dark", detalle) }
+        : {})}
+      sizes={movil ? "20rem" : "(max-width: 1100px) 100vw, 64rem"}
+      prioridad={prioridad}
     />
   );
+  // Solo el recorte de móvil (cuando encima va el vídeo desde sm).
+  const soloDetalle = () =>
+    detalle ? (
+      <ImagenTema
+        alt={alt}
+        light={archivo("-detalle", "light", detalle)}
+        dark={archivo("-detalle", "dark", detalle)}
+        sizes="100vw"
+        prioridad={prioridad}
+        soloMovil
+      />
+    ) : null;
 
   return (
     <figure className="my-14">
@@ -84,28 +102,18 @@ const Captura = ({
         >
           {video ? (
             <>
-              {detalle ? (
-                <>
-                  {img("-detalle", "light", detalle, "block sm:hidden dark:hidden")}
-                  {img("-detalle", "dark", detalle, "hidden dark:block dark:sm:hidden")}
-                </>
-              ) : null}
+              {detalle ? <div className="sm:hidden">{soloDetalle()}</div> : null}
               <div className={detalle ? "hidden sm:block" : undefined}>
-                <VideoTema fuentes={animacion(video, en)} alt={alt} sizes="(max-width: 1100px) 100vw, 64rem" />
+                <VideoTema
+                  fuentes={animacion(video, en)}
+                  alt={alt}
+                  sizes="(max-width: 1100px) 100vw, 64rem"
+                  prioridad={prioridad && !detalle}
+                />
               </div>
             </>
-          ) : detalle ? (
-            <>
-              {img("-detalle", "light", detalle, "block sm:hidden dark:hidden")}
-              {img("-detalle", "dark", detalle, "hidden dark:block dark:sm:hidden")}
-              {img("", "light", { width, height }, "hidden sm:block sm:dark:hidden")}
-              {img("", "dark", { width, height }, "hidden sm:dark:block")}
-            </>
           ) : (
-            <>
-              {img("", "light", { width, height }, "block dark:hidden")}
-              {img("", "dark", { width, height }, "hidden dark:block")}
-            </>
+            imagen(true)
           )}
         </div>
       </div>

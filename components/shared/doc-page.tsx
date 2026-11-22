@@ -41,7 +41,9 @@ export function docMetadata(doc: Doc): Metadata {
  */
 export default async function DocPage({ doc }: { doc: Doc }) {
   const { content } = await compileMDX({
-    source: doc.body,
+    // La primera <Captura> es la imagen grande de arriba de la página, el
+    // elemento LCP: va con prioridad (sin lazy y con fetchpriority alta).
+    source: doc.body.replace(/<Captura\b/, "<Captura prioridad"),
     components: mdxComponentsFor(doc.locale),
     options: {
       parseFrontmatter: false,
