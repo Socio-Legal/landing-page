@@ -6,22 +6,43 @@
   },
   "hero": {
     "slogan": "Companies and groups",
-    "title": "For companies with many shareholders and corporate groups",
-    "description": "Sttok keeps the corporate records of every company in the group: the shareholder register with its encumbrances and co-owners, the general meeting and the board, officers with their terms and who controls each company at the end of the chain. Each person sees only the companies they are responsible for.",
+    "title": "Corporate governance software for companies and groups of companies",
+    "description": "Sttok brings together on one platform the corporate management of each company and its group: the shareholder register, general meetings, governance with the board and attorneys, groups of companies, documents and e-signature. Each person sees only the companies they are responsible for.",
     "button": {
       "text": "Schedule demo",
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/animaciones/en/diagrama-del-grupo-light-poster.webp",
-      "dark": "/animaciones/en/diagrama-del-grupo-dark-poster.webp"
+      "light": "/animaciones/en/gestion-societaria-light-poster.webp",
+      "dark": "/animaciones/en/gestion-societaria-dark-poster.webp"
     },
-    "video": "diagrama-del-grupo"
+    "video": "gestion-societaria"
   },
   "testimonials": {
     "title": "Client Testimonials",
     "description": "Companies that have already improved their corporate management with Sttok.",
     "items": [
+      {
+        "name": "Legal Department",
+        "role": "MyInvestor",
+        "description": "Sttok has allowed us to digitise and automate all our corporate governance, from holding board meetings to keeping the shareholder register, ensuring maximum legal certainty in all our corporate processes.",
+        "stars": 5,
+        "logo": "MyInvestor"
+      },
+      {
+        "name": "Grupo Caballero",
+        "role": "Family business founded in 1830",
+        "description": "Sttok has been a key tool for managing our cap table and shareholders' meetings. It has let us automate manual tasks and save time generating documents and e-signatures.",
+        "stars": 5,
+        "logo": "Caballero"
+      },
+      {
+        "name": "PLD Space",
+        "role": "Spanish aerospace company",
+        "img": "/logo-pldspace-mini.png",
+        "description": "We use Sttok to manage our relationship with our shareholders and investors, along with its main features such as the shareholder register, general meetings, incentive plans and the board of directors.",
+        "stars": 5
+      },
       {
         "name": "Lucía Bouzá",
         "role": "Head of Legal & Compliance, Factorial",
@@ -33,37 +54,37 @@
   },
   "includes": {
     "eyebrow": "What's included",
-    "title": "What a company with many shareholders or a corporate group uses",
+    "title": "What a company or a group of companies uses",
     "allLink": "See all Sttok features"
   },
   "situations": {
     "eyebrow": "Common cases",
-    "title": "Common situations in companies with many shareholders and groups",
+    "title": "Common situations in companies and groups of companies",
     "guideLabel": "See how",
     "rows": [
       {
-        "situation": "A family shareholder dies",
-        "action": "The inheritance is recorded, the share numbers are split among the heirs and co-ownership is set up with its representative."
+        "situation": "The register has to be legalised",
+        "action": "It comes from the recorded transactions, up to date, and an assistant prepares it for filing with the Commercial Registry, company by company."
       },
       {
-        "situation": "The general meeting needs a quorum from hundreds of shareholders",
-        "action": "Signed proxies and early votes are collected, and the quorum is calculated with what is already committed."
+        "situation": "The general meeting has to be called and reach its quorum",
+        "action": "It sends the notice with its certificate, collects proxies and early votes and works out the quorum as it happens."
+      },
+      {
+        "situation": "A lot of documents need signing",
+        "action": "Minutes, certificates and proxies are signed with DocuSign without leaving Sttok: every signature in one click, and signed documents are filed automatically."
+      },
+      {
+        "situation": "Something has to be sent to every shareholder",
+        "action": "It emails the notice in the company's name, with a certificate of sending and delivery for each email."
       },
       {
         "situation": "A new subsidiary joins the group",
         "action": "The company comes in with its history and appears in the chart with its chain of control."
       },
       {
-        "situation": "The beneficial owner has to be identified",
-        "action": "It calculates who holds more than 25% of the capital or the votes at the end of the chain."
-      },
-      {
         "situation": "A director's term expires",
         "action": "It flags each expiring term and records the new appointment with its term."
-      },
-      {
-        "situation": "The articles set an annual valuation",
-        "action": "It issues the value certificate with the valuation the company has configured."
       }
     ],
     "columns": {

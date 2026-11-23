@@ -54,7 +54,7 @@
     "url": "/empresas",
     "tipo": "solucion",
     "nombre": "Empresas y grupos de sociedades",
-    "descripcion": "Sttok lleva el registro societario de cada sociedad del grupo: el libro de socios con sus cargas y cotitulares, la junta general y el consejo, los cargos con su vigencia y quién controla cada sociedad al final de la cadena. Cada persona ve solo las sociedades que le corresponden.",
+    "descripcion": "Sttok reúne en una plataforma la gestión societaria de cada sociedad y de su grupo: el libro de socios, las juntas, la gobernanza con el consejo y los apoderados, los grupos de sociedades, la documentación y la firma electrónica. Cada persona ve solo las sociedades que le corresponden.",
     "paginas": 4,
     "pdf": "/fichas/sttok-empresas.pdf",
     "portada": "/fichas/sttok-empresas-portada.jpg"

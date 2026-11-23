@@ -30,12 +30,13 @@ const F = "/funcionalidades";
 export const CATALOGO: Modulo[] = [
   {
     id: "socios",
-    titulo: "Socios y libro registro",
+    titulo: "Socios y libro de socios",
     resumen: "El registro oficial de quién es socio, con qué y desde cuándo.",
     en: { titulo: "Shareholders and register", resumen: "The official record of who owns what, and since when." },
     href: "/libro-de-socios",
     funcionalidades: [
       { titulo: "Libro de socios oficial", descripcion: "Libro registro de socios o de acciones nominativas, exportable en formato legalizable.", href: `${F}/libro-registro-oficial`, en: { titulo: "Official shareholder register", descripcion: "Register of partners or of registered shares, exportable in a format ready for legalisation." } },
+      { titulo: "Registro de todas las operaciones", descripcion: "Cada operación de la sociedad desde su constitución, con su escritura o su contrato: ampliaciones y reducciones, compraventas, herencias, donaciones, splits o canjes. El capital se sigue operación a operación.", href: `${F}/equity-story`, en: { titulo: "Record of every transaction", descripcion: "Every transaction since incorporation, with its deed or contract: capital increases and reductions, sales, inheritances, gifts, splits or exchanges. The share capital can be followed transaction by transaction." } },
       { titulo: "Libro registro de títulos", descripcion: "Si la sociedad emite títulos, como la anónima, su libro registro y los títulos, generados con cada operación.", href: `${F}/libro-registro-de-titulos`, en: { titulo: "Share certificate register", descripcion: "If the company issues share certificates, as a public limited company does, their register and the certificates, generated with each transaction." } },
       { titulo: "Numeración por rangos", descripcion: "Cada participación o acción con su número. Las transmisiones se anotan sobre rangos concretos.", href: `${F}/numeracion-por-rangos`, en: { titulo: "Numbered share ranges", descripcion: "Every share has its number. Transfers are recorded against specific ranges." } },
       { titulo: "Transmisiones", descripcion: "Compraventa, herencia, donación, endoso, split, renumeración, reclasificación y canje de títulos.", href: `${F}/transmisiones`, en: { titulo: "Transfers", descripcion: "Sale, inheritance, gift, endorsement, split, renumbering, reclassification and exchange of certificates." } },
