@@ -10,7 +10,6 @@ import { TemaImagenes } from "@/components/tema-imagenes";
 
 import { getI18n } from "@/lib/i18n";
 import type { Locale } from "@/lib/locales";
-import { Toaster } from "@/components/ui/sonner";
 import { MenuProvider } from "@/components/contexts/MenuContext";
 import { ThemeProvider } from "@/components/theme-provider";
 
@@ -45,7 +44,6 @@ export default function Providers({
 
       <SpeedInsights />
       <Analytics />
-      <Toaster />
     </ThemeProvider>
   );
 }

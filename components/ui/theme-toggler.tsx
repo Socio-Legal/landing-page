@@ -26,7 +26,7 @@ const ThemeToggler: React.FC = () => {
     >
       {montado && (
         <Icon
-          icon={oscuro ? "line-md:sunny-filled-loop" : "line-md:moon-filled-loop"}
+          icon={oscuro ? "tabler:sun" : "tabler:moon"}
           width="18"
           height="18"
         />
