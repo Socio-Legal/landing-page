@@ -28,7 +28,7 @@ Sttok no es una herramienta de cap table para simular rondas de inversión. Resu
 - **Simulador de operaciones.** Ampliaciones de capital, valoraciones y escenarios de liquidación aplicados al accionariado completo.
 - **Grupos de sociedades.** Gestión de todas las sociedades de un grupo desde un mismo acceso.
 - **Portal del inversor.** Cada socio o accionista consulta su posición, su histórico y la documentación que la sociedad comparte.
-- **Mercado secundario.** Compraventa de participaciones entre socios.
+- **Mercado secundario.** Módulo opcional que activa la sociedad: ofertas de compra y venta de acciones, participaciones o unidades de incentivos, que reciben los accionistas y cada uno decide si acude. También sirve para ofrecer a los socios sus derechos de adquisición o de suscripción preferente.
 - **Sttok AI.** Responde en lenguaje natural preguntas sobre el registro de una sociedad o de todo el grupo.
 
 ## Quién usa Sttok
