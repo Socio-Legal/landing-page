@@ -2,7 +2,6 @@ import { Inter as FontSans, Instrument_Serif as FontSerif } from "next/font/goog
 
 import { cn } from "@/lib/utils";
 import type { Locale } from "@/lib/locales";
-import Providers from "@/components/providers";
 import { CONSENT_COOKIE } from "@/lib/cookie-consent";
 
 import "@/app/globals.css";
@@ -24,7 +23,10 @@ const fontSerif = FontSerif({
  * app/(es)/layout.tsx (castellano, en la raíz) y app/[locale]/layout.tsx
  * (idiomas con prefijo). El idioma lo da la ruta, no la petición: sin
  * headers() ni cookies() el sitio se genera estático (SSG) y la CDN lo sirve.
- * Las migas (BreadcrumbList) las emite cada página con <Migas>.
+ * Las migas (BreadcrumbList) las emite cada página con <Migas>. Los
+ * proveedores (i18n, tema, cookies) los pone cada layout raíz con los textos
+ * de su idioma: si los importara este archivo, común a los dos, cada página
+ * cargaría los textos de los dos idiomas.
  */
 export default function Documento({
   locale,
@@ -106,7 +108,9 @@ export default function Documento({
           fontSerif.variable,
         )}
       >
-        <Providers locale={locale}>{children}</Providers>
+        {/* children llega ya envuelto en el proveedor de su idioma
+            (ProvidersES / ProvidersEN), que pone cada layout raíz. */}
+        {children}
       </body>
     </html>
   );

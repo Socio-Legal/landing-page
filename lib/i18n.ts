@@ -1,11 +1,13 @@
 import i18next, { i18n as I18nType } from "i18next";
 import { initReactI18next } from "react-i18next";
 
-import loadTranslations from "./loadTranslations";
 import { LOCALES, DEFAULT_LOCALE, type Locale } from "./locales";
 
 export { LOCALES, DEFAULT_LOCALE };
 export type { Locale };
+
+/** Textos de un idioma por namespace (lib/textos-<idioma>.ts). */
+export type Textos = Record<string, object>;
 
 /**
  * Dos instancias de i18next, una por idioma, con el idioma FIJADO e inmutable.
@@ -20,10 +22,10 @@ export type { Locale };
  */
 const instances: Partial<Record<Locale, I18nType>> = {};
 
-function createForLocale(locale: Locale): I18nType {
+function createForLocale(locale: Locale, textos: Textos): I18nType {
   const instance = i18next.createInstance();
   instance.use(initReactI18next).init({
-    resources: { [locale]: loadTranslations(locale) },
+    resources: { [locale]: textos },
     lng: locale,
     fallbackLng: locale, // sin fallback cruzado: cada instancia es de un idioma
     supportedLngs: [locale],
@@ -34,10 +36,14 @@ function createForLocale(locale: Locale): I18nType {
   return instance;
 }
 
-export function getI18n(locale: Locale): I18nType {
+/**
+ * Los textos los pasa el proveedor de cada idioma (components/providers-es.tsx,
+ * providers-en.tsx): así el bundle de una página solo lleva los de su idioma.
+ */
+export function getI18n(locale: Locale, textos: Textos): I18nType {
   const key: Locale = LOCALES.includes(locale) ? locale : DEFAULT_LOCALE;
   if (!instances[key]) {
-    instances[key] = createForLocale(key);
+    instances[key] = createForLocale(key, textos);
   }
   return instances[key] as I18nType;
 }

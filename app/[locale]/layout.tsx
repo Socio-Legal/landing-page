@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 
 import Documento from "@/components/shared/documento";
+import ProvidersEN from "@/components/providers-en";
 import { SiteBanner } from "@/components/site-banner";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -33,10 +34,14 @@ export default async function LocaleLayout({
 
   return (
     <Documento locale={locale}>
-      <SiteBanner />
-      <SiteHeader />
-      <main className="mx-auto flex-1 overflow-hidden">{children}</main>
-      <SiteFooter />
+      {/* Hoy el único idioma con prefijo es el inglés. Uno nuevo tendrá su
+          components/providers-<idioma>.tsx con sus textos. */}
+      <ProvidersEN>
+        <SiteBanner />
+        <SiteHeader />
+        <main className="mx-auto flex-1 overflow-hidden">{children}</main>
+        <SiteFooter />
+      </ProvidersEN>
     </Documento>
   );
 }

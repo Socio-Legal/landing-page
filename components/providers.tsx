@@ -8,7 +8,7 @@ import { CalendlyPopup } from "@/components/calendly-popup";
 import { CookieConsent } from "@/components/cookie-consent";
 import { TemaImagenes } from "@/components/tema-imagenes";
 
-import { getI18n } from "@/lib/i18n";
+import { getI18n, type Textos } from "@/lib/i18n";
 import type { Locale } from "@/lib/locales";
 import { MenuProvider } from "@/components/contexts/MenuContext";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -20,9 +20,11 @@ import { ThemeProvider } from "@/components/theme-provider";
  */
 export default function Providers({
   locale,
+  textos,
   children,
 }: {
   locale: Locale;
+  textos: Textos;
   children: React.ReactNode;
 }) {
   return (
@@ -34,7 +36,7 @@ export default function Providers({
       enableSystem
       disableTransitionOnChange
     >
-      <I18nextProvider i18n={getI18n(locale)}>
+      <I18nextProvider i18n={getI18n(locale, textos)}>
         {/* Antes que la página: es lo primero que se alcanza con el teclado. */}
         <CookieConsent gaId="G-LWNDHYBY2N" />
         <CalendlyPopup />
