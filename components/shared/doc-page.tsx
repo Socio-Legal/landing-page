@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { compileMDX } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
+import Migas from "@/components/shared/migas";
 
 import Breadcrumbs from "@/components/shared/breadcrumbs";
 import JsonLd from "@/components/shared/json-ld";
@@ -41,7 +42,9 @@ export function docMetadata(doc: Doc): Metadata {
  */
 export default async function DocPage({ doc }: { doc: Doc }) {
   const { content } = await compileMDX({
-    source: doc.body,
+    // La primera <Captura> es la imagen grande de arriba de la página, el
+    // elemento LCP: va con prioridad (sin lazy y con fetchpriority alta).
+    source: doc.body.replace(/<Captura\b/, "<Captura prioridad"),
     components: mdxComponentsFor(doc.locale),
     options: {
       parseFrontmatter: false,
@@ -70,6 +73,7 @@ export default async function DocPage({ doc }: { doc: Doc }) {
 
   return (
     <>
+      <Migas ruta={doc.url} />
       {faq.length > 0 && <JsonLd data={faqPageJsonLd(faq)} />}
       <article
         className={`container mx-auto ${ancho} px-4 pb-16 pt-16 md:pt-24${

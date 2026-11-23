@@ -9,7 +9,9 @@
     },
     "image": {
       "light": "/funcionalidades/ofertas-de-compra-y-venta-de-acciones-venta-light.png",
-      "dark": "/funcionalidades/ofertas-de-compra-y-venta-de-acciones-venta-dark.png"
+      "dark": "/funcionalidades/ofertas-de-compra-y-venta-de-acciones-venta-dark.png",
+      "width": 2368,
+      "height": 1718
     }
   },
   "faq": {

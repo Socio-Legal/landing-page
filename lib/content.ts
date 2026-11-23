@@ -181,8 +181,7 @@ export function getEnSectionDocs(section: Section): Doc[] {
 /**
  * Cache a nivel de modulo. El contenido son archivos del repositorio: no
  * cambia entre peticiones, asi que basta con leerlo una vez por instancia.
- * Importa porque el layout raiz llama a headers() y todas las rutas se
- * renderizan en cada peticion.
+ * Las paginas se generan estaticas en el build: se lee una vez por proceso.
  */
 let cache: Doc[] | null = null;
 

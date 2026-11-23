@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import ImagenTema from "@/components/shared/imagen-tema";
 import { useEffect, useRef, useState } from "react";
 
 import { cn } from "@/lib/utils";
@@ -126,37 +126,27 @@ export default function VideoTema({
   // Cambiar de tema cambia de vídeo: hasta que arranque el nuevo, se ve la imagen.
   useEffect(() => setEnMarcha(false), [tema, movil]);
 
-  const imagen = (t: "light" | "dark", visibleEn: string, enMovil = false) => (
-    <Image
-      src={(enMovil && fuentes[t].movil.poster) || fuentes[t].poster}
-      alt={alt}
-      {...(rellenar ? { fill: true } : { width, height: enMovil ? altoMovil : height })}
-      sizes={enMovil ? "100vw" : sizes}
-      priority={prioridad && t === "light"}
-      className={cn(visibleEn, rellenar ? "object-cover object-top" : "h-auto w-full", className)}
-    />
-  );
+  // El póster: un solo <picture> (claro/oscuro y, con encuadre propio, el de
+  // móvil por debajo de md). El navegador descarga una sola variante.
+  const poster = (t: "light" | "dark", m = false) => ({
+    src: (m && fuentes[t].movil.poster) || fuentes[t].poster,
+    width,
+    height: m && altoMovil ? altoMovil : height,
+  });
+  const conMovil = !!(altoMovil && !rellenar && fuentes.light.movil.poster);
 
   return (
     <div ref={caja} className={rellenar ? "absolute inset-0" : "relative"}>
-      {altoMovil && !rellenar ? (
-        // Por debajo de md (lo mismo que `movil`), el encuadre vertical.
-        <>
-          <div className="hidden md:block">
-            {imagen("light", "block dark:hidden")}
-            {imagen("dark", "hidden dark:block")}
-          </div>
-          <div className="md:hidden">
-            {imagen("light", "block dark:hidden", true)}
-            {imagen("dark", "hidden dark:block", true)}
-          </div>
-        </>
-      ) : (
-        <>
-          {imagen("light", "block dark:hidden")}
-          {imagen("dark", "hidden dark:block")}
-        </>
-      )}
+      <ImagenTema
+        alt={alt}
+        light={poster("light")}
+        dark={poster("dark")}
+        {...(conMovil ? { movilLight: poster("light", true), movilDark: poster("dark", true), corteMovil: 767 } : {})}
+        sizes={sizes}
+        prioridad={prioridad}
+        className={rellenar ? "absolute inset-0" : undefined}
+        imgClassName={cn(rellenar ? "absolute inset-0 h-full w-full object-cover object-top" : "h-auto w-full", className)}
+      />
       {cargar && tema && (
         <video
           key={tema + (movil ? "-m" : "")}

@@ -1,6 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
 
-import { localeFromPathname } from "@/lib/locales";
 import PAGINAS from "@/lib/animaciones-paginas.json";
 
 /**
@@ -22,14 +21,11 @@ function destinoAnimacion(pathname: string): string | null {
 }
 
 /**
- * Enrutado de idioma "solo por URL": el español vive en la raíz y el inglés
- * bajo /en/*. No hay redirecciones ni autodetección — la raíz es siempre
- * español. El middleware expone el locale y el pathname en cabeceras
- * para que el layout raíz (Server Component) pueda emitir el <html lang>
- * correcto y construir los enlaces alternativos hreflang.
- *
- * La regla de "a qué idioma pertenece esta ruta" vive en lib/locales, que la
- * deriva de LOCALE_PREFIX. Aquí no se compara contra "/en" a mano.
+ * El idioma se decide solo por la URL (castellano en la raíz, inglés bajo
+ * /en) y lo resuelve la estructura de app/: app/(es) y app/[locale] tienen
+ * cada uno su layout raíz. El middleware ya no pasa x-locale ni x-pathname:
+ * leer la petición en el layout obligaba a renderizar cada página en cada
+ * visita. Solo quedan las redirecciones de URLs antiguas.
  */
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
@@ -45,21 +41,11 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(new URL("/", request.url), 301);
   }
 
-  const headers = new Headers(request.headers);
-  headers.set("x-locale", localeFromPathname(pathname));
-  headers.set("x-pathname", pathname);
-
-  return NextResponse.next({ request: { headers } });
+  return NextResponse.next();
 }
 
 export const config = {
-  // Todo excepto assets estáticos, imágenes, y rutas internas de Next.
-  //
-  // El punto de la extensión va doblemente escapado: en una cadena JS "\."
-  // es solo ".", y con ese comodín el matcher excluía cualquier ruta
-  // terminada en ico, txt, xml, ttf... (/mexico acaba en "ico"), que se
-  // quedaba sin x-locale ni x-pathname y, por tanto, sin migas.
-  matcher: [
-    "/((?!_next/static|_next/image|favicon.ico|robots.txt|sitemap.xml|.*\\.(?:png|jpg|jpeg|gif|svg|ico|webp|pdf|txt|xml|woff|woff2|ttf)$).*)",
-  ],
+  // Solo las rutas que redirige: el resto de páginas son estáticas y no
+  // tienen por qué pasar por aquí.
+  matcher: ["/animaciones/:path*", "/:dolar(\\$|%24)"],
 };

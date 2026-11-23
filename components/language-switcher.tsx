@@ -73,11 +73,9 @@ const LanguageSwitcher = () => {
     };
   }, [closeMenu]);
 
-  // El idioma es la URL, resuelta en el servidor (layout raíz lee x-locale
-  // del middleware en cada petición). Una navegación de cliente (router.push)
-  // no vuelve a pedir el documento al servidor, así que el layout raíz no se
-  // re-ejecuta y el idioma servido no cambia aunque la URL sí lo haga. Forzamos
-  // una recarga completa para que el servidor resuelva el idioma correcto.
+  // El idioma es la URL: cada uno tiene su layout raíz (app/(es) y
+  // app/[locale]). Pasar de uno a otro cambia de layout raíz, y eso exige
+  // cargar el documento entero: forzamos una recarga completa.
   const changeLanguage = (lang: string) => {
     const target = (lang === "en" ? "en" : "es") as Locale;
     window.location.href = mirrorHref(pathname || "/", target);

@@ -1,39 +1,42 @@
-import { headers } from "next/headers";
+import { notFound } from "next/navigation";
 
+import Documento from "@/components/shared/documento";
 import { SiteBanner } from "@/components/site-banner";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
-import { LOCALE_PREFIX } from "@/lib/locales";
+import { localeFromSegment, localeSegment, PREFIXED_LOCALES } from "@/lib/locale-routing";
 
 /**
- * Chrome comun de los idiomas con prefijo. Sustituye a app/en/layout.tsx.
+ * Layout raíz de los idiomas con prefijo (/en). El castellano tiene el suyo
+ * en app/(es)/layout.tsx. El idioma sale del segmento de la URL, no de la
+ * petición: las páginas se generan estáticas.
  *
- * El marginTop negativo sube el hero de la portada por debajo de la cabecera,
- * igual que hace app/(landing)/layout.tsx en la home castellana. Solo lo lleva
- * la portada de cada idioma (/en): el resto de rutas queda como su gemela
- * castellana. La ruta publica sale de la cabecera x-pathname del middleware.
+ * La portada (/en) sube su hero bajo la cabecera con data-portada
+ * (globals.css), igual que app/(es)/(landing)/layout.tsx en castellano.
  */
+export const dynamicParams = false;
+
+export function generateStaticParams() {
+  return PREFIXED_LOCALES.map((l) => ({ locale: localeSegment(l) }));
+}
+
 export default async function LocaleLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }) {
-  const pathname = (await headers()).get("x-pathname") ?? "";
-  const portada = Object.values(LOCALE_PREFIX).some(
-    (prefijo) => prefijo !== "" && pathname.replace(/\/$/, "") === prefijo,
-  );
+  const { locale: segmento } = await params;
+  const locale = localeFromSegment(segmento);
+  if (!locale) notFound();
 
   return (
-    <>
+    <Documento locale={locale}>
       <SiteBanner />
       <SiteHeader />
-      <main
-        className="mx-auto flex-1 overflow-hidden"
-        style={portada ? { marginTop: "-56px" } : undefined}
-      >
-        {children}
-      </main>
+      <main className="mx-auto flex-1 overflow-hidden">{children}</main>
       <SiteFooter />
-    </>
+    </Documento>
   );
 }

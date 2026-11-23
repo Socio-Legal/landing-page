@@ -1,4 +1,6 @@
 import { notFound } from "next/navigation";
+import Migas from "@/components/shared/migas";
+import { LOCALE_PREFIX } from "@/lib/locales";
 
 import JsonLd from "@/components/shared/json-ld";
 import {
@@ -41,11 +43,13 @@ export default async function Page({
 
   const { Component } = entrada;
   return (
-    <>
+    // data-portada: el hero sube bajo la cabecera (globals.css).
+    <div data-portada="">
+      <Migas ruta={LOCALE_PREFIX[locale]} />
       {entrada.softwareApplication && (
         <JsonLd data={softwareApplicationJsonLd(locale)} />
       )}
       <Component />
-    </>
+    </div>
   );
 }

@@ -39,16 +39,16 @@ const WEB = "https://www.sttok.com";
  * PDF queda corto; se hará cuando se revise la página.
  */
 const FICHAS = [
-  { url: "/libro-de-socios", page: "app/(product)/partners-book/page.tsx", tipo: "producto", testimonio: "Eric Gracia" },
-  { url: "/juntas-consejos", page: "app/(product)/shareholder-meetings/page.tsx", tipo: "producto", testimonio: "Asesoría Jurídica" },
-  { url: "/comunicaciones-y-firma", page: "app/(product)/communications-signatures/page.tsx", tipo: "producto", testimonio: "Grupo Caballero" },
-  { url: "/planes-de-incentivos", page: "app/(product)/incentive-plans/page.tsx", tipo: "producto", testimonio: "Lucía Bouzá" },
-  { url: "/simulador", page: "app/(product)/operation-drafts/page.tsx", tipo: "producto", testimonio: "Oriol Miralbell" },
-  { url: "/empresas", page: "app/solutions/companies/page.tsx", tipo: "solucion", testimonio: "Patricia Manca" },
-  { url: "/abogados", page: "app/solutions/lawyers/page.tsx", tipo: "solucion", testimonio: "Jose María Baños" },
-  { url: "/startups", page: "app/solutions/startups/page.tsx", tipo: "solucion", testimonio: "Johan Longo" },
-  { url: "/inversores", page: "app/solutions/investors/page.tsx", tipo: "solucion", testimonio: "Nacho González" },
-  { url: "/portal-del-inversor", page: "app/solutions/investors-dashboard/page.tsx", tipo: "solucion", testimonio: "PLD Space" },
+  { url: "/libro-de-socios", page: "app/(es)/(product)/partners-book/page.tsx", tipo: "producto", testimonio: "Eric Gracia" },
+  { url: "/juntas-consejos", page: "app/(es)/(product)/shareholder-meetings/page.tsx", tipo: "producto", testimonio: "Asesoría Jurídica" },
+  { url: "/comunicaciones-y-firma", page: "app/(es)/(product)/communications-signatures/page.tsx", tipo: "producto", testimonio: "Grupo Caballero" },
+  { url: "/planes-de-incentivos", page: "app/(es)/(product)/incentive-plans/page.tsx", tipo: "producto", testimonio: "Lucía Bouzá" },
+  { url: "/simulador", page: "app/(es)/(product)/operation-drafts/page.tsx", tipo: "producto", testimonio: "Oriol Miralbell" },
+  { url: "/empresas", page: "app/(es)/solutions/companies/page.tsx", tipo: "solucion", testimonio: "Patricia Manca" },
+  { url: "/abogados", page: "app/(es)/solutions/lawyers/page.tsx", tipo: "solucion", testimonio: "Jose María Baños" },
+  { url: "/startups", page: "app/(es)/solutions/startups/page.tsx", tipo: "solucion", testimonio: "Johan Longo" },
+  { url: "/inversores", page: "app/(es)/solutions/investors/page.tsx", tipo: "solucion", testimonio: "Nacho González" },
+  { url: "/portal-del-inversor", page: "app/(es)/solutions/investors-dashboard/page.tsx", tipo: "solucion", testimonio: "PLD Space" },
 ];
 
 /** Un testimonio por su nombre: primero en la página, luego en el resto del sitio. */
