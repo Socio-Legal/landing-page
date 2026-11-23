@@ -17,10 +17,10 @@
       "href": "/fichas/sttok-empresas.pdf"
     },
     "image": {
-      "light": "/animaciones/diagrama-del-grupo-light-poster.webp",
-      "dark": "/animaciones/diagrama-del-grupo-dark-poster.webp"
+      "light": "/animaciones/gestion-societaria-light-poster.webp",
+      "dark": "/animaciones/gestion-societaria-dark-poster.webp"
     },
-    "video": "diagrama-del-grupo"
+    "video": "gestion-societaria"
   },
   "testimonials": {
     "title": "Testimonios de Clientes",

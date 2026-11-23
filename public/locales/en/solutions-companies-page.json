@@ -13,10 +13,10 @@
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/animaciones/en/diagrama-del-grupo-light-poster.webp",
-      "dark": "/animaciones/en/diagrama-del-grupo-dark-poster.webp"
+      "light": "/animaciones/en/gestion-societaria-light-poster.webp",
+      "dark": "/animaciones/en/gestion-societaria-dark-poster.webp"
     },
-    "video": "diagrama-del-grupo"
+    "video": "gestion-societaria"
   },
   "testimonials": {
     "title": "Client Testimonials",
