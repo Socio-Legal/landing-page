@@ -6,7 +6,7 @@ import ModulePage from "@/components/product/module-page";
 const SELECCION = {
   "socios": [
     "Libro de socios oficial",
-    "Transmisiones",
+    "Registro de todas las operaciones",
     "Cargas sobre participaciones",
     "Certificados de titularidad y de valor",
     "Portal del accionista",
@@ -23,8 +23,22 @@ const SELECCION = {
     "Acta y certificación",
     "Cargos con vigencia"
   ],
+  "comunicaciones": [
+    "Comunicaciones certificadas",
+    "Certificado de envío"
+  ],
+  "firma": [
+    "Firma electrónica",
+    "Todas las firmas de un clic",
+    "Archivo automático"
+  ],
+  "documentos": [
+    "Repositorio de documentos",
+    "Legalización del libro registro"
+  ],
   "apoderados": [
-    "Apoderados y poderes"
+    "Apoderados y poderes",
+    "Comisiones del consejo"
   ],
   "grupos": [
     "Todas las sociedades en una portada",

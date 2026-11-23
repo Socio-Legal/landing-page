@@ -6,8 +6,8 @@
   },
   "hero": {
     "slogan": "Empresas y grupos de sociedades",
-    "title": "Para empresas con muchos socios y grupos de sociedades",
-    "description": "Sttok lleva el registro societario de cada sociedad del grupo: el libro de socios con sus cargas y cotitulares, la junta general y el consejo, los cargos con su vigencia y quién controla cada sociedad al final de la cadena. Cada persona ve solo las sociedades que le corresponden.",
+    "title": "Gestión societaria para sociedades y grupos de sociedades",
+    "description": "Sttok reúne en una plataforma la gestión societaria de cada sociedad y de su grupo: el libro de socios, las juntas, la gobernanza con el consejo y los apoderados, los grupos de sociedades, la documentación y la firma electrónica. Cada persona ve solo las sociedades que le corresponden.",
     "button": {
       "text": "Solicitar demo",
       "link": "https://calendly.com/sttok/30min"
@@ -27,6 +27,27 @@
     "description": "Empresas que ya han mejorado su gestión societaria con Sttok.",
     "items": [
       {
+        "name": "Asesoría Jurídica",
+        "role": "MyInvestor",
+        "description": "Sttok nos ha permitido digitalizar y automatizar toda la gestión societaria, desde la celebración de consejos de administración hasta el mantenimiento del libro registro de socios, garantizando la máxima seguridad jurídica en todos nuestros procesos corporativos.",
+        "stars": 5,
+        "logo": "MyInvestor"
+      },
+      {
+        "name": "Grupo Caballero",
+        "role": "Empresa familiar fundada en 1830",
+        "description": "Sttok ha sido una herramienta clave para la gestión de nuestro Captable y Juntas de Socios. Nos ha permitido automatizar tareas manuales y ahorrar tiempo en la generación de documentos y firmas electrónicas.",
+        "stars": 5,
+        "logo": "Caballero"
+      },
+      {
+        "name": "PLD Space",
+        "role": "Empresa aeroespacial española",
+        "img": "/logo-pldspace-mini.png",
+        "description": "Para gestionar la relación con nuestros socios e inversores utilizamos Sttok. Además de las principales funcionalidades como libro de socios, juntas de accionistas, planes de incentivos y consejo de administración, etc.",
+        "stars": 5
+      },
+      {
         "name": "Lucía Bouzá",
         "role": "Head of Legal & Compliance, Factorial",
         "img": "/logo-factorial-mini.png",
@@ -37,23 +58,33 @@
   },
   "includes": {
     "eyebrow": "Qué incluye",
-    "title": "Lo que usa una empresa con muchos socios o un grupo de sociedades",
+    "title": "Lo que usa una sociedad o un grupo de sociedades",
     "allLink": "Ver todas las funcionalidades de Sttok"
   },
   "situations": {
     "eyebrow": "Casos habituales",
-    "title": "Situaciones habituales en empresas con muchos socios y grupos",
+    "title": "Situaciones habituales en sociedades y grupos de sociedades",
     "guideLabel": "Ver cómo",
     "rows": [
       {
-        "situation": "Fallece un accionista de la familia",
-        "action": "Registra la herencia, reparte la numeración entre los herederos y deja la cotitularidad con su representante.",
-        "href": "/guias/herencia-de-participaciones"
+        "situation": "Toca legalizar el libro registro",
+        "action": "Sale de las operaciones registradas, al día, y un asistente lo prepara para presentarlo en el Registro Mercantil, sociedad por sociedad.",
+        "href": "/funcionalidades/legalizacion-del-libro-registro"
       },
       {
-        "situation": "La junta necesita el quórum de cientos de socios",
-        "action": "Recoge delegaciones firmadas y votos anticipados, y calcula el quórum con lo ya comprometido.",
-        "href": "/funcionalidades/voto-electronico-en-juntas"
+        "situation": "Hay que convocar la junta y reunir el quórum",
+        "action": "Envía la convocatoria con su certificado, recoge delegaciones y votos anticipados y calcula el quórum al momento.",
+        "href": "/funcionalidades/convocatoria-de-la-junta"
+      },
+      {
+        "situation": "Hay mucha documentación que firmar",
+        "action": "Actas, certificaciones y delegaciones se firman con DocuSign sin salir de Sttok: todas las firmas de un clic, y lo firmado se archiva solo.",
+        "href": "/funcionalidades/firma-electronica"
+      },
+      {
+        "situation": "Hay que comunicar algo a todos los socios",
+        "action": "Envía la comunicación por email en nombre de la sociedad, con certificado de envío y entrega de cada correo.",
+        "href": "/funcionalidades/comunicaciones-a-socios"
       },
       {
         "situation": "Entra una filial nueva en el grupo",
@@ -61,19 +92,9 @@
         "href": "/funcionalidades/diagrama-del-grupo"
       },
       {
-        "situation": "Hay que identificar al titular real",
-        "action": "Calcula quién supera el 25 % del capital o de los votos al final de la cadena.",
-        "href": "/funcionalidades/titular-real"
-      },
-      {
         "situation": "Caduca el cargo de un consejero",
         "action": "Avisa de cada cargo que caduca y registra el nuevo nombramiento con su vigencia.",
         "href": "/funcionalidades/consejo-de-administracion"
-      },
-      {
-        "situation": "Los estatutos fijan una valoración anual",
-        "action": "Emite el certificado de valor con la valoración que la sociedad tenga configurada.",
-        "href": "/funcionalidades/certificados-de-titularidad-y-valor"
       }
     ],
     "columns": {
