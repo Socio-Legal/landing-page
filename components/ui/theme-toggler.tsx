@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Icon } from "@iconify/react/dist/iconify.js";
+import { Icon } from "@iconify/react";
+import "@/lib/iconos";
 import { useTheme } from "next-themes";
 
 /**

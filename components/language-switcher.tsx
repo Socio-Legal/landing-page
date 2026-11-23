@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import { Icon } from "@iconify/react";
+import "@/lib/iconos";
 import { useTranslation } from "react-i18next";
 import { useMenu } from "@/components/contexts/MenuContext";
 import { usePathname } from "next/navigation";
@@ -11,12 +12,12 @@ import type { Locale } from "@/lib/locales";
 const languages = [
   {
     code: "es",
-    icon: "emojione-v1:flag-for-spain",
+    icon: "emojione:flag-for-spain",
     label: "language.spanish",
   },
   {
     code: "en",
-    icon: "emojione-v1:flag-for-united-kingdom",
+    icon: "emojione:flag-for-united-kingdom",
     label: "language.english",
   },
 ];
