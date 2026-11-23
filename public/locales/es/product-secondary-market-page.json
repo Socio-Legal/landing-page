@@ -23,12 +23,20 @@
         "a": "Una plataforma de software donde la sociedad y, si ella lo decide, sus socios publican ofertas de compra y de venta de acciones, participaciones o unidades de planes de incentivos. Sttok no organiza ni intermedia las compraventas."
       },
       {
+        "q": "¿Es obligatorio usarlo?",
+        "a": "No. Es opcional y está desactivado hasta que los administradores lo activan. Las ofertas las reciben los accionistas y cada uno decide en el mercado si acude o no."
+      },
+      {
         "q": "¿Quién puede participar?",
         "a": "Solo quien autoriza la sociedad. El mercado está desactivado hasta que lo activan sus administradores, que deciden si las ofertas las hace solo la sociedad o también los socios. Los terceros no tienen acceso."
       },
       {
         "q": "¿Cómo se cierra una compraventa?",
         "a": "Quien está interesado en una oferta lo manifiesta en la plataforma, se valida a los participantes con KYC y los contratos se firman y se aceptan allí. Después, la operación se anota en el libro de socios."
+      },
+      {
+        "q": "¿Sirve para el derecho de adquisición o de suscripción preferente?",
+        "a": "Sí. La sociedad puede ofrecer en el mercado las acciones o participaciones sobre las que los socios tienen derecho de adquisición preferente, cuando uno vende, o de suscripción preferente, en una ampliación. Cada socio decide si ejerce su derecho. Los plazos y las comunicaciones son los que fijan la ley, los estatutos y el acuerdo."
       },
       {
         "q": "¿Sirve para los planes de incentivos?",
@@ -69,9 +77,13 @@
         "action": "Si la sociedad abre el mercado a los socios, publica su oferta de venta y los socios interesados lo manifiestan."
       },
       {
-        "situation": "Los estatutos prevén un derecho de adquisición preferente",
-        "action": "La transmisión sigue sujeta a las comunicaciones y los plazos que fijan los estatutos.",
+        "situation": "Un socio vende y los demás tienen derecho de adquisición preferente",
+        "action": "La sociedad publica la oferta en el mercado, la reciben los socios con derecho y cada uno decide si compra, en los plazos que fijan la ley y los estatutos.",
         "href": "/guias/derecho-de-adquisicion-preferente"
+      },
+      {
+        "situation": "Hay una ampliación con derecho de suscripción preferente",
+        "action": "Las nuevas acciones o participaciones se ofrecen a los socios en el mercado y cada uno decide si suscribe la parte que le corresponde, en el plazo que fija el acuerdo."
       },
       {
         "situation": "Se cierra una compraventa",

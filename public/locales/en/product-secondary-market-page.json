@@ -23,12 +23,20 @@
         "a": "A software platform where the company and, if it so decides, its shareholders publish buy and sell offers on shares or incentive plan units. Sttok does not arrange or broker the sales."
       },
       {
+        "q": "Is it mandatory?",
+        "a": "No. It is optional and stays switched off until the directors switch it on. Shareholders receive the offers and each one decides in the market whether to take part."
+      },
+      {
         "q": "Who can take part?",
         "a": "Only those the company authorises. The market is switched off until the directors switch it on, and they decide whether offers are made only by the company or by the shareholders too. Third parties have no access."
       },
       {
         "q": "How is a sale completed?",
         "a": "Anyone interested in an offer says so on the platform, participants are validated with KYC and the contracts are signed and accepted there. The deal is then entered in the shareholder register."
+      },
+      {
+        "q": "Does it work for rights of first refusal or pre-emptive subscription?",
+        "a": "Yes. The company can offer in the market the shares the shareholders have a right of first refusal over, when one of them sells, or a pre-emptive subscription right to, in a capital increase. Each shareholder decides whether to exercise their right. Deadlines and notices are those set by law, the articles and the resolution."
       },
       {
         "q": "Does it work for incentive plans?",
@@ -68,8 +76,12 @@
         "action": "If the company opens the market to shareholders, they publish a sell offer and interested shareholders say so."
       },
       {
-        "situation": "The articles provide for a right of first refusal",
-        "action": "The transfer remains subject to the notices and deadlines set in the articles."
+        "situation": "A shareholder sells and the others have a right of first refusal",
+        "action": "The company publishes the offer in the market, the shareholders with the right receive it and each one decides whether to buy, within the deadlines set by law and the articles."
+      },
+      {
+        "situation": "A capital increase carries pre-emptive subscription rights",
+        "action": "The new shares are offered to the shareholders in the market and each one decides whether to subscribe their share, within the period set by the resolution."
       },
       {
         "situation": "A sale is completed",
