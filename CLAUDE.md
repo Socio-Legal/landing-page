@@ -92,9 +92,12 @@ Instancias de i18next **fijas por idioma**, creadas en `lib/i18n.ts` con
 `lng` inmutable. No hay detector de idioma ni singleton mutable: en SSR, mutar
 el idioma global haría que peticiones concurrentes se pisaran.
 
-Las traducciones se importan **estáticamente** en `lib/loadTranslations.ts`, así
-que el texto está en el HTML del servidor desde el primer render. No se cargan
-por HTTP en tiempo de ejecución.
+Las traducciones se importan **estáticamente**, un módulo por idioma
+(`lib/textos-es.ts`, `lib/textos-en.ts`), así que el texto está en el HTML del
+servidor desde el primer render. No se cargan por HTTP en tiempo de ejecución.
+Cada layout raíz monta el proveedor de su idioma (`components/providers-es.tsx`,
+`providers-en.tsx`) y solo ese importa sus textos: una página no descarga los
+del otro idioma. Un namespace nuevo se añade al módulo de cada idioma.
 
 `lib/locales.ts` no importa nada: lo usan el middleware (edge), Server
 Components y Client Components, y tiene que funcionar en los tres. Los Server

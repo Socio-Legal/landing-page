@@ -1,4 +1,5 @@
 import Documento from "@/components/shared/documento";
+import ProvidersES from "@/components/providers-es";
 
 /**
  * Layout raíz del castellano, que vive en la raíz sin prefijo. Todas sus
@@ -9,5 +10,9 @@ import Documento from "@/components/shared/documento";
  * Así todas las páginas se generan estáticas en el build y las sirve la CDN.
  */
 export default function RootLayoutEs({ children }: { children: React.ReactNode }) {
-  return <Documento locale="es">{children}</Documento>;
+  return (
+    <Documento locale="es">
+      <ProvidersES>{children}</ProvidersES>
+    </Documento>
+  );
 }
