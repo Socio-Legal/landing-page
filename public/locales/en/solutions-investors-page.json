@@ -63,8 +63,18 @@
     "guideLabel": "See how",
     "rows": [
       {
-        "situation": "You need to know what you hold in each company",
-        "action": "Each investee appears with its percentage, its shares and its book value."
+        "situation": "You need to know exactly what you hold in each company",
+        "action": "Each investee with the detail of the stake: shares, ranges, class, percentage and value, with access to its documents and deeds.",
+        "href": "/funcionalidades/participadas"
+      },
+      {
+        "situation": "The information is in Excel and in folders of deeds",
+        "action": "Everything stays up to date in one working tool: after every transaction you can see whether the stake has been diluted and by how much."
+      },
+      {
+        "situation": "A holding company manages several companies",
+        "action": "Every company on one screen, with what is pending in each one and the group chart.",
+        "href": "/funcionalidades/portada-multisociedad"
       },
       {
         "situation": "An investee increases its capital",

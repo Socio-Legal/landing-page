@@ -4,20 +4,17 @@ import ModulePage from "@/components/product/module-page";
 
 // Por módulo, las funcionalidades del catálogo que importan a este perfil.
 const SELECCION = {
-  "grupos": [
+  "participadas": [
+    "Detalle de la participación",
+    "Ficha del accionista",
     "Participadas",
     "Diagrama del grupo",
-    "Comparar fechas",
-    "Cuentas depositadas"
-  ],
-  "participadas": [
-    "Ficha del accionista",
-    "Detalle de la participación",
     "Documentación y escrituras"
   ],
   "socios": [
+    "Libro de socios oficial",
     "Clases de acciones",
-    "Acreedores y notas convertibles",
+    "Registro de operaciones",
     "Certificados de titularidad y de valor"
   ],
   "simulador": [

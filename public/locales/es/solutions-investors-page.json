@@ -67,8 +67,18 @@
     "guideLabel": "Ver cómo",
     "rows": [
       {
-        "situation": "Hay que saber qué se tiene en cada sociedad",
-        "action": "Cada participada aparece con su porcentaje, sus títulos y su valor en libros."
+        "situation": "Hay que saber exactamente qué se tiene en cada sociedad",
+        "action": "Cada participada con el detalle de la participación: acciones, rangos, clase, porcentaje y valor, y con acceso a su documentación y sus escrituras.",
+        "href": "/funcionalidades/participadas"
+      },
+      {
+        "situation": "La información está en Excel y en carpetas de escrituras",
+        "action": "Todo queda en una herramienta de trabajo, al día: después de cada operación se ve si la participación se ha diluido y cuánto."
+      },
+      {
+        "situation": "Un holding lleva varias sociedades",
+        "action": "Todas las sociedades en una pantalla, con lo pendiente de cada una y el diagrama del grupo.",
+        "href": "/funcionalidades/portada-multisociedad"
       },
       {
         "situation": "Una participada amplía capital",
