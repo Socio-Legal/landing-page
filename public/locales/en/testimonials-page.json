@@ -7,7 +7,7 @@
   "readCase": "Read the case",
   "hero": {
     "eyebrow": "Customers",
-    "title": "Companies that already run their shareholders, meetings and boards digitally",
+    "title": "Companies that already run their corporate governance digitally",
     "description": "Companies, corporate groups, financial institutions and scale-ups. More than 250 customers already work this way. These are some of their stories."
   },
   "storyLink": "Read their story",
@@ -16,7 +16,7 @@
       "client": "Factorial",
       "logo": "Factorial",
       "image": "/clientes/factorial.jpg",
-      "text": "An incentive plan for hundreds of employees, without spreadsheets",
+      "text": "Shareholder register, transaction records and incentive plan management, without spreadsheets",
       "href": "/testimonios/Factorial",
       "size": "big"
     },

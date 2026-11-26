@@ -7,7 +7,7 @@
   "readCase": "Leer el caso",
   "hero": {
     "eyebrow": "Clientes",
-    "title": "Empresas que ya llevan sus socios, juntas y consejos en digital",
+    "title": "Empresas que ya llevan la gestión societaria digitalmente",
     "description": "Empresas, grupos empresariales, entidades financieras y scale-ups. Más de 250 clientes ya trabajan así. Estas son algunas de sus historias."
   },
   "storyLink": "Lee su historia",
@@ -16,7 +16,7 @@
       "client": "Factorial",
       "logo": "Factorial",
       "image": "/clientes/factorial.jpg",
-      "text": "Un plan de incentivos para cientos de empleados, sin hojas de cálculo",
+      "text": "Libro de accionistas, registro de operaciones y gestión del plan de incentivos, sin hojas de cálculo",
       "href": "/testimonios/Factorial",
       "size": "big"
     },
