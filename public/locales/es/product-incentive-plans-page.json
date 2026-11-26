@@ -32,6 +32,20 @@
         "img": "/logo-factorial-mini.png",
         "description": "Para gestionar toda la documentación de planes de incentivos nos ha ayudado a digitalizar el proceso de creación, firma y control de los beneficiarios.",
         "stars": 5
+      },
+      {
+        "name": "Johan Longo",
+        "role": "Contract Manager | PLD Space",
+        "img": "/logo-pldspace-mini.png",
+        "description": "Sttok nos sirve para poder tener organizada toda la información sobre socios, juntas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
+        "stars": 5
+      },
+      {
+        "name": "Asesoría Jurídica",
+        "role": "MyInvestor",
+        "description": "Sttok nos ha permitido digitalizar y automatizar toda la gestión societaria, desde la celebración de consejos de administración hasta el mantenimiento del libro registro de socios, garantizando la máxima seguridad jurídica en todos nuestros procesos corporativos.",
+        "stars": 5,
+        "logo": "MyInvestor"
       }
     ]
   },
