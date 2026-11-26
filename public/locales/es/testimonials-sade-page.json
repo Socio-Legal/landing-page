@@ -54,7 +54,7 @@
     ],
     "uses": [
       {
-        "title": "Libro y gestión de socios",
+        "title": "Libro de socios",
         "text": "Cada socio con su posición, sus datos y su historia, siempre al día.",
         "image": "/animaciones/accionistas-light-poster.webp"
       },
@@ -64,7 +64,7 @@
         "image": "/animaciones/certificados-de-titularidad-y-valor-light-poster.webp"
       },
       {
-        "title": "Dividendos y sus impuestos",
+        "title": "Reparto de dividendos y modelos fiscales",
         "text": "Cada reparto, con los formularios fiscales de los dividendos generados de forma automática.",
         "image": "/animaciones/reparto-de-dividendos-light-poster.webp"
       }

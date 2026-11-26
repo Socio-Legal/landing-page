@@ -89,8 +89,11 @@ const LOGO: Record<string, keyof typeof clientLogos> = {
   Sade: "Sade",
 };
 
+/** Los casos más relevantes primero: son los que se sugieren al pie. */
+const RELEVANTES = ["Osborne", "Axa", "Factorial", "PldSpace", "MyInvestor", "Multiverse"];
+
 const getOtherTestimonials = (client: string, n = 3): string[] =>
-  Object.keys(testimonialPages).filter((key) => key !== client).slice(0, n);
+  RELEVANTES.filter((key) => key !== client && key in testimonialPages).slice(0, n);
 
 /** «1. Por la facilidad de uso.» → «Por la facilidad de uso.» */
 const sinNumero = (s: string) => s.replace(/^\d+\.\s*/, "");

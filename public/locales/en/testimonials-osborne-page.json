@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "title": "Osborne runs hundreds of family shareholders and four generations of shareholders with Sttok",
-    "description": "Osborne uses Sttok for shareholder register, meetings and documents.",
+    "title": "Osborne runs its shareholder register, its board of directors and its shareholders' meetings with Sttok",
+    "description": "Osborne uses Sttok for the shareholder register, the board of directors, the election of directors and shareholders' meetings.",
     "keywords": "Osborne, Sttok, Sttok customers, shareholder register"
   },
   "summary": {
     "client": "Osborne",
-    "title": "Osborne runs hundreds of family shareholders and four generations of shareholders with Sttok",
+    "title": "Osborne runs its shareholder register, its board of directors and its shareholders' meetings with Sttok",
     "description": "",
     "button": {
       "text": "Visit Osborne",
@@ -23,7 +23,7 @@
       },
       {
         "key": "Features",
-        "value": "Shareholder register, meetings and documents"
+        "value": "Shareholder register, board of directors, election of directors and shareholders' meetings"
       }
     ]
   },
@@ -34,7 +34,7 @@
         "title": "",
         "texts": [
           "Osborne is a family group founded in 1772 in El Puerto de Santa María. From its cellars it takes wines, brandies and Spanish gastronomy around the world, with brands such as Cinco Jotas and Montecillo.",
-          "Several hundred family shareholders and four generations of shareholders at once: every branch, every holding and every meeting must be in perfect order."
+          "A group with several hundred family shareholders needs its shareholder register, its board and its meetings in perfect order."
         ]
       }
     ],
@@ -54,19 +54,19 @@
     ],
     "uses": [
       {
-        "title": "Hundreds of family shareholders",
-        "text": "Each shareholder with their holding and history, in the shareholder register.",
-        "image": "/animaciones/en/accionistas-light-poster.webp"
+        "title": "Shareholder register, transaction records and shareholder profile",
+        "text": "Each shareholder with their holding, the transactions that changed it and their profile.",
+        "image": "/animaciones/accionistas-light-poster.webp"
       },
       {
-        "title": "Four generations, by branch",
-        "text": "The capital of each family branch at a glance.",
-        "image": "/animaciones/en/panel-light-poster.webp"
+        "title": "Board of directors and election of directors",
+        "text": "Notice, minutes and certificate of each board meeting, and the election of directors at the general meeting.",
+        "image": "/animaciones/consejo-de-administracion-light-poster.webp"
       },
       {
-        "title": "Meetings with the whole family",
-        "text": "Notice, proxies and votes, also for those who cannot attend.",
-        "image": "/animaciones/en/voto-electronico-en-juntas-light-poster.webp"
+        "title": "General meeting of shareholders",
+        "text": "Notice, proxies and voting, also for those who cannot attend.",
+        "image": "/animaciones/voto-electronico-en-juntas-light-poster.webp"
       }
     ]
   }

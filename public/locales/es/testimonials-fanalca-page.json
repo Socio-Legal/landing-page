@@ -58,17 +58,17 @@
     ],
     "uses": [
       {
-        "title": "Todas las sociedades del grupo",
+        "title": "Gestión de las sociedades del grupo",
         "text": "Lo pendiente de cada empresa y filial, en una sola pantalla.",
         "image": "/animaciones/sociedades-light-poster.webp"
       },
       {
-        "title": "El diagrama del grupo",
+        "title": "Diagrama del grupo",
         "text": "Filiales y cadena de control, a cualquier fecha.",
         "image": "/animaciones/diagrama-del-grupo-light-poster.webp"
       },
       {
-        "title": "Los órganos de cada sociedad",
+        "title": "Consejos y cargos de cada sociedad",
         "text": "Consejos, cargos y actas de cada empresa del grupo.",
         "image": "/animaciones/consejo-de-administracion-light-poster.webp"
       }

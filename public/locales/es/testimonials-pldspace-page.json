@@ -63,8 +63,8 @@
     ],
     "gallery": [
       {
-        "src": "/clientes/pld-cohete-orbita.jpg",
-        "alt": "Un cohete de PLD Space en órbita sobre la Tierra"
+        "src": "/clientes/pld-primer-lanzamiento.jpg",
+        "alt": "Un cohete de PLD Space en la plataforma, antes de su primer lanzamiento"
       },
       {
         "src": "/clientes/pld-equipo.jpg",
@@ -77,17 +77,17 @@
     ],
     "uses": [
       {
-        "title": "El portal del inversor",
+        "title": "Portal del inversor",
         "text": "Cada inversor entra y ve su posición, sus documentos y sus juntas.",
         "image": "/animaciones/portal-del-accionista-light-poster.webp"
       },
       {
-        "title": "Juntas con varios vehículos",
+        "title": "Juntas con varios vehículos de inversión",
         "text": "Convocatorias, delegaciones y votaciones centralizadas, sin tareas manuales.",
         "image": "/animaciones/voto-electronico-en-juntas-light-poster.webp"
       },
       {
-        "title": "El plan de incentivos del equipo",
+        "title": "Plan de incentivos",
         "text": "Cada persona ve sus unidades y su valor en su portal.",
         "image": "/animaciones/liquidez-planes-de-incentivos-light-poster.webp"
       }

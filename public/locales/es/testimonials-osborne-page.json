@@ -1,12 +1,12 @@
 {
   "metadata": {
-    "title": "Osborne lleva en Sttok a cientos de accionistas familiares y cuatro generaciones de socios",
-    "description": "Osborne usa Sttok para libro de socios, juntas y documentación.",
+    "title": "Osborne lleva en Sttok su libro de socios, su consejo de administración y sus juntas",
+    "description": "Osborne usa Sttok para el libro de socios, el consejo de administración, la elección de consejeros y las juntas.",
     "keywords": "Osborne, Sttok, clientes de Sttok, libro de socios"
   },
   "summary": {
     "client": "Osborne",
-    "title": "Osborne lleva en Sttok a cientos de accionistas familiares y cuatro generaciones de socios",
+    "title": "Osborne lleva en Sttok su libro de socios, su consejo de administración y sus juntas",
     "description": "",
     "button": {
       "text": "Ir al sitio de Osborne",
@@ -23,7 +23,7 @@
       },
       {
         "key": "Funcionalidades",
-        "value": "Libro de socios, juntas y documentación"
+        "value": "Libro de socios, consejo de administración, elección de consejeros y juntas"
       }
     ]
   },
@@ -34,7 +34,7 @@
         "title": "",
         "texts": [
           "Osborne es un grupo familiar fundado en 1772 en El Puerto de Santa María. Desde sus bodegas lleva por el mundo vinos, brandis y la gastronomía española, con marcas como Cinco Jotas o Montecillo.",
-          "Varios cientos de accionistas familiares y cuatro generaciones de socios a la vez: cada rama, cada participación y cada junta tienen que estar perfectamente ordenadas."
+          "Un grupo con varios cientos de accionistas familiares necesita su libro de socios, su consejo y sus juntas perfectamente ordenados."
         ]
       }
     ],
@@ -54,17 +54,17 @@
     ],
     "uses": [
       {
-        "title": "Cientos de accionistas familiares",
-        "text": "Cada accionista con su participación y su historia, en el libro de socios.",
+        "title": "Libro de socios, registro de operaciones y ficha del accionista",
+        "text": "Cada accionista con su participación, las operaciones que la han movido y su ficha.",
         "image": "/animaciones/accionistas-light-poster.webp"
       },
       {
-        "title": "Cuatro generaciones, por ramas",
-        "text": "El capital de cada rama familiar, de un vistazo.",
-        "image": "/animaciones/panel-light-poster.webp"
+        "title": "Consejo de administración y elección de consejeros",
+        "text": "Convocatoria, acta y certificación de cada consejo, y la elección de consejeros en la junta.",
+        "image": "/animaciones/consejo-de-administracion-light-poster.webp"
       },
       {
-        "title": "Juntas con toda la familia",
+        "title": "Junta general de accionistas",
         "text": "Convocatoria, delegaciones y votaciones, también para quien no puede asistir.",
         "image": "/animaciones/voto-electronico-en-juntas-light-poster.webp"
       }

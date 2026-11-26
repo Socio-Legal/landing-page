@@ -58,17 +58,17 @@
     ],
     "uses": [
       {
-        "title": "Every company in the group",
+        "title": "Management of the group companies",
         "text": "What is pending in each company and subsidiary, on one screen.",
         "image": "/animaciones/en/sociedades-light-poster.webp"
       },
       {
-        "title": "The group chart",
+        "title": "Group chart",
         "text": "Subsidiaries and the chain of control, on any date.",
         "image": "/animaciones/en/diagrama-del-grupo-light-poster.webp"
       },
       {
-        "title": "The governing bodies",
+        "title": "Boards and officers of each company",
         "text": "Board meetings, officers and minutes for each group company.",
         "image": "/animaciones/en/consejo-de-administracion-light-poster.webp"
       }

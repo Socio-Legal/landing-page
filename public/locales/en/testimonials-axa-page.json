@@ -50,17 +50,17 @@
     ],
     "uses": [
       {
-        "title": "Its shareholders, in one place",
+        "title": "Shareholder register",
         "text": "The shareholder register with each shareholder's position.",
         "image": "/animaciones/en/accionistas-light-poster.webp"
       },
       {
-        "title": "Certificates on demand",
+        "title": "Ownership certificates",
         "text": "Certificates for shareholders and group companies, generated from the register.",
         "image": "/animaciones/certificados-de-titularidad-y-valor-light-poster.webp"
       },
       {
-        "title": "The group companies",
+        "title": "Group companies in Spain",
         "text": "Each group company in Spain, with its register and its documents.",
         "image": "/animaciones/en/sociedades-light-poster.webp"
       }

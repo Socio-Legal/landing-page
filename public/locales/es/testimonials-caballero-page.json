@@ -66,23 +66,23 @@
         "alt": "La plantilla de Caballero en la bodega"
       },
       {
-        "src": "/clientes/caballero-botellas.jpg",
-        "alt": "Botellas de Ponche Caballero a lo largo de los años"
+        "src": "/clientes/caballero-castillo.jpg",
+        "alt": "El castillo de San Marcos, en El Puerto de Santa María, de noche"
       }
     ],
     "uses": [
       {
-        "title": "Su libro de socios, al día",
+        "title": "Libro de socios",
         "text": "Cada socio con su participación y su historia, sin hojas de cálculo.",
         "image": "/animaciones/accionistas-light-poster.webp"
       },
       {
-        "title": "Juntas de socios en digital",
+        "title": "Juntas de socios",
         "text": "Convocatoria, asistencia, votaciones y acta, sin papel.",
         "image": "/animaciones/voto-electronico-en-juntas-light-poster.webp"
       },
       {
-        "title": "Documentos y firmas",
+        "title": "Generación de documentos y firma electrónica",
         "text": "Las actas y los documentos se generan y se firman en Sttok.",
         "image": "/animaciones/firma-electronica-light-poster.webp"
       }

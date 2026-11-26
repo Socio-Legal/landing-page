@@ -31,7 +31,7 @@
       "client": "Osborne",
       "logo": "Osborne",
       "image": "/clientes/osborne.jpg",
-      "text": "Hundreds of family shareholders and four generations of shareholders at once",
+      "text": "Shareholder register, board of directors and meetings of a family group founded in 1772",
       "size": "big",
       "href": "/testimonios/Osborne"
     },
@@ -74,7 +74,8 @@
       "client": "TaxDown",
       "logo": "Taxdown",
       "text": "Its incentive plan and its shareholder register, in one place",
-      "href": "/testimonios/Taxdown"
+      "href": "/testimonios/Taxdown",
+      "image": "/clientes/taxdown-anuncio.jpg"
     },
     {
       "client": "Fanalca",
@@ -96,7 +97,7 @@
           "Osborne"
         ],
         "image": "/clientes/osborne.jpg",
-        "text": "Four generations of shareholders, their family branches and their meetings, without losing track.",
+        "text": "Shareholder register, board and meetings of a group with hundreds of family shareholders.",
         "sub": "Also Grupo Caballero",
         "href": "/testimonios/Osborne"
       },
