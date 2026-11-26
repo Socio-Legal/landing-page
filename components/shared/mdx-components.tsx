@@ -6,6 +6,8 @@ import CatalogoFuncionalidades from "@/components/shared/catalogo-funcionalidade
 import Link from "next/link";
 import VideoTema from "@/components/shared/video-tema";
 import { animacion } from "@/lib/animaciones";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
+import { docLabel, getAllDocs } from "@/lib/content";
 import type { MDXComponents } from "mdx/types";
 
 import type { Locale } from "@/lib/locales";
@@ -127,6 +129,45 @@ const Captura = ({
 };
 
 /**
+ * Definición destacada: el primer párrafo de una entrada del glosario cuando ya
+ * define el término. Envuelve el texto tal cual, sin reescribirlo.
+ */
+const Definicion = ({ children }: { children: React.ReactNode }) => (
+  <div className="mb-6 max-w-[70ch] rounded-lg border-l-4 border-foreground bg-muted/50 px-5 pb-0.5 pt-5 [&_p]:text-foreground">
+    {children}
+  </div>
+);
+
+const TIPO_RELACIONADA: Record<string, string> = {
+  guias: "Guía",
+  funcionalidades: "Funcionalidad",
+  comparativas: "Comparativa",
+};
+
+/**
+ * Enlace destacado a la página de content/ que trata el mismo tema a fondo
+ * (una guía, una ficha o una comparativa). El build falla si la ruta no existe.
+ */
+const Relacionada = ({ ruta }: { ruta: string }) => {
+  const doc = getAllDocs().find((d) => d.url === ruta);
+  if (!doc) throw new Error(`<Relacionada>: no existe ${ruta} en content/`);
+  return (
+    <p className="mb-8 max-w-[70ch] rounded-lg border border-border px-4 py-3 text-sm">
+      <span className="mr-2 text-xs font-medium uppercase tracking-widest text-muted-foreground">
+        {TIPO_RELACIONADA[doc.section] ?? "Ver también"}
+      </span>
+      <Link
+        href={doc.url}
+        className="inline-flex items-center gap-1.5 font-medium text-foreground underline underline-offset-4"
+      >
+        {docLabel(doc)}
+        <ArrowRightIcon className="h-3.5 w-3.5" />
+      </Link>
+    </p>
+  );
+};
+
+/**
  * Estilos del contenido MDX. Siguen el mismo lenguaje visual que el resto
  * del sitio: titular serif, cuerpo en muted, medidas de linea cortas y
  * separadores por borde.
@@ -138,6 +179,8 @@ const Captura = ({
 export const mdxComponents: MDXComponents = {
   Captura,
   Catalogo: CatalogoFuncionalidades,
+  Definicion,
+  Relacionada,
   h1: (props) => (
     <h1
       className="mb-6 max-w-[22ch] font-serif text-4xl font-normal leading-tight tracking-tight text-balance text-foreground sm:text-5xl"

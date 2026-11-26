@@ -1,4 +1,5 @@
 import {
+  docLabel,
   EN_SECTIONS,
   getAllDocs,
   getEnDoc,
@@ -29,8 +30,6 @@ const SECTIONS_BY_PATH: Record<string, { name: string; path: string }> =
  * Etiqueta corta de un documento para la miga: el titulo hasta el primer ":",
  * porque los titulos del frontmatter llevan cola de SEO.
  */
-const docLabel = (doc: Doc): string =>
-  doc.frontmatter.title.split(":")[0].trim();
 
 type Label = string | Record<Locale, string>;
 

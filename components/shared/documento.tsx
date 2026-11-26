@@ -95,7 +95,7 @@ export default function Documento({
                 addressCountry: "ES",
               },
               // Unico perfil oficial enlazado desde las propiedades de Sttok
-              // (sttok.com y blog.sttok.com). No se añaden otros sin confirmar.
+              // (sttok.com). No se añaden otros sin confirmar.
               sameAs: ["https://www.linkedin.com/company/sttok/"],
             }),
           }}

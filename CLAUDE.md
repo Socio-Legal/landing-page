@@ -53,7 +53,8 @@ Las redirecciones usan `statusCode: 301` explícito. `permanent: true` emite
 
 ## Contenido en MDX
 
-Las secciones `/soluciones`, `/comparativas`, `/guias` y `/funcionalidades` son
+Las secciones `/soluciones`, `/comparativas`, `/guias`, `/funcionalidades` y
+`/glosario-societario` son
 carpetas castellanas reales, sin rewrite detrás y fuera de i18next. Tienen
 gemela inglesa:
 
@@ -160,6 +161,17 @@ comprobarlo en producción tras el despliegue.
 - `htmlLimitedBots: /.*/` (next.config.mjs) desactiva el streaming de
   metadata: sin él, React completa dos Suspense vacíos con un script que
   contiene `"/$"`, que Googlebot también reporta como 404.
+- **`/glosario-societario` viene del antiguo blog de WordPress**
+  (`blog.sttok.com/recursos`), con el mismo slug, H1 y texto, sin reescribir.
+  El texto está entre las marcas `texto-original` del MDX y
+  `node scripts/check-glosario.mjs [url]` lo compara con la copia de
+  `content-migration/recursos/`. No se distingue de `/recursos`, que es el
+  glosario breve de una frase por término.
+- **`blog.sttok.com` apunta a esta web** y el middleware responde a todas sus
+  URLs con un solo 301 a www (`lib/blog-redirecciones.ts` y `.json`). Para que
+  no haya cadena, `skipTrailingSlashRedirect` desactiva la barra final de Next
+  y el middleware la quita después (308), así que corre en todas las páginas.
+  `node scripts/check-blog-redirects.mjs [url]` lo comprueba.
 - **Todo el sitio es SSR dinámico**: el layout raíz llama a `headers()`, así que
   no hay prerenderizado ni caché de CDN en ninguna ruta.
 - El `marginTop: -56px` que sube el hero bajo la cabecera solo lo lleva la

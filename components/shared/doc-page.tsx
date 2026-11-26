@@ -10,6 +10,7 @@ import Link from "next/link";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 
 import {
+  docLabel,
   EN_SECTIONS,
   getEnSectionDocs,
   getSectionDocs,
@@ -18,7 +19,7 @@ import {
 } from "@/lib/content";
 import { extractFaq } from "@/lib/faq-from-mdx";
 import { buildMetadata } from "@/lib/seo";
-import { faqPageJsonLd } from "@/lib/structured-data";
+import { articleJsonLd, faqPageJsonLd } from "@/lib/structured-data";
 
 /**
  * Metadata de un documento de content/. `path` es siempre la ruta castellana:
@@ -75,6 +76,7 @@ export default async function DocPage({ doc }: { doc: Doc }) {
     <>
       <Migas ruta={doc.url} />
       {faq.length > 0 && <JsonLd data={faqPageJsonLd(faq)} />}
+      {doc.frontmatter.publicado && <JsonLd data={articleJsonLd(doc)} />}
       <article
         className={`container mx-auto ${ancho} px-4 pb-16 pt-16 md:pt-24${
           ficha ? " [&>*:not(figure):not(.catalogo)]:max-w-3xl [&_h1]:tracking-normal" : ""
@@ -97,7 +99,7 @@ export default async function DocPage({ doc }: { doc: Doc }) {
                   href={d.url}
                   className="inline-flex items-center gap-1.5 text-sm font-medium text-foreground underline-offset-4 hover:underline"
                 >
-                  {d.frontmatter.title.split(":")[0].trim()}
+                  {docLabel(d)}
                   <ArrowRightIcon className="h-3.5 w-3.5" />
                 </Link>
               ))}

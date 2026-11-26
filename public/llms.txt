@@ -115,7 +115,28 @@ Funcionalidades con coste adicional: mercado secundario y mercado de incentivos,
 ## Recursos
 
 - Precios y planes: https://www.sttok.com/precios
-- Glosario societario: https://www.sttok.com/recursos
+- Glosario societario breve (definiciones de una frase): https://www.sttok.com/recursos
+- Glosario societario (conceptos con ejemplos): https://www.sttok.com/glosario-societario
+- Glosario: ¿Qué es y cómo se calcula el derecho de adquisición preferente?: https://www.sttok.com/glosario-societario/que-es-y-como-se-calcula-el-derecho-de-adquisicion-preferente
+- Glosario: Plazo de los socios para responder al ejercicio del derecho de adquisición preferente: https://www.sttok.com/glosario-societario/cual-es-el-plazo-que-tienen-uno-socios-para-responder-al-ejercicio-de-su-derecho-de-adquisicion-preferente
+- Glosario: Derecho de adquisición preferente: ejemplo en una sociedad limitada: https://www.sttok.com/glosario-societario/derecho-de-adquisicion-preferente-ejemplo-sociedad-limitada
+- Glosario: Calcular una ampliación de capital: https://www.sttok.com/glosario-societario/calcular-una-ampliacion-de-capital
+- Glosario: Ampliación de capital con distintas valoraciones: https://www.sttok.com/glosario-societario/ampliacion-de-capital-con-distintas-valoraciones
+- Glosario: Calcular la dilución en una ampliación de capital: https://www.sttok.com/glosario-societario/calcular-la-dilucion-en-una-ampliacion-de-capital
+- Glosario: Dar cumplimiento al derecho de suscripción preferente: https://www.sttok.com/glosario-societario/dar-cumplimiento-al-derecho-de-suscripcion-preferente
+- Glosario: Cómo calcular el precio de una participación en una ronda de financiación: https://www.sttok.com/glosario-societario/como-calcular-el-precio-de-una-participacion-en-una-ronda-de-financiacion
+- Glosario: Diferencias entre una nota convertible y un préstamo participativo: https://www.sttok.com/glosario-societario/diferencias-entre-una-nota-convertible-y-un-prestamo-participativo
+- Glosario: Cómo se presenta el libro de socios al Registro Mercantil: https://www.sttok.com/glosario-societario/como-se-presenta-el-libro-de-socios-al-registro-mercantil
+- Glosario: Cómo preparar un libro de socios: https://www.sttok.com/glosario-societario/como-preparar-un-libro-de-socios
+- Glosario: Software para gestionar el libro de socios: https://www.sttok.com/glosario-societario/software-para-gestion-de-libro-de-socios-por-que-excel-ya-no-es-suficiente-para-gestionar-participaciones
+- Glosario: ¿Qué libros de actas tiene una empresa?: https://www.sttok.com/glosario-societario/que-libros-de-actas-tiene-una-empresa
+- Glosario: ¿Qué es el libro de actas de una empresa?: https://www.sttok.com/glosario-societario/que-es-el-libro-de-actas-de-una-empresa
+- Glosario: ¿Qué es el cliff?: https://www.sttok.com/glosario-societario/que-es-el-cliff
+- Glosario: Preparar un plan de phantom shares o stock options: https://www.sttok.com/glosario-societario/preparar-un-plan-de-phantom-shares-o-stock-options
+- Glosario: Modelo y condiciones de un plan de phantom shares y stock options: https://www.sttok.com/glosario-societario/modelo-y-condiciones-de-un-plan-de-phantom-shares-y-stock-options
+- Glosario: Diferencias y ventajas entre las phantom shares y las stock options: https://www.sttok.com/glosario-societario/diferencias-y-ventajas-entre-las-phantom-shares-y-las-stock-options
+- Glosario: Pactos de prohibición temporal de venta y cláusulas antibloqueo: https://www.sttok.com/glosario-societario/pactos-de-prohibicion-temporal-de-venta-y-clausulas-anti-bloqueo
+- Glosario: Aplicación del resultado: https://www.sttok.com/glosario-societario/aplicacion-de-resultado
 - Comparativa con Excel: https://www.sttok.com/sttok-vs-excel
 - Comparativas de software para libro de socios, juntas y consejo: https://www.sttok.com/comparativas
 - Comparativa con Carta: https://www.sttok.com/comparativas/sttok-vs-carta
@@ -209,7 +230,6 @@ Funcionalidades con coste adicional: mercado secundario y mercado de incentivos,
 - Borradores de escritura y certificación desde la operación simulada: https://www.sttok.com/funcionalidades/borradores-de-documentos
 - Ofertas de compra y venta de acciones entre socios: https://www.sttok.com/funcionalidades/ofertas-de-compra-y-venta-de-acciones
 - Equipo: https://www.sttok.com/sobre-nosotros
-- Blog: https://blog.sttok.com/recursos
 - Dossier comercial (español): https://www.sttok.com/docs/sttok-dossier-es.pdf
 - Sales dossier (English): https://www.sttok.com/docs/sttok-dossier-en.pdf
 
