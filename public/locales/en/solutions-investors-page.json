@@ -25,22 +25,22 @@
       {
         "name": "Lucía Bouzá",
         "role": "Head of Legal & Compliance, Factorial",
-        "img": "",
+        "img": "/logo-factorial-mini.png",
         "description": "Sttok helped us digitize the process of creating and signing documents for our incentive plans.",
         "stars": 5
+      },
+      {
+        "name": "Legal Department",
+        "role": "MyInvestor",
+        "description": "Sttok has allowed us to digitise and automate all our corporate governance, from holding board meetings to keeping the shareholder register, ensuring maximum legal certainty in all our corporate processes.",
+        "stars": 5,
+        "logo": "MyInvestor"
       },
       {
         "name": "Johan Longo",
         "role": "Contract Manager | PLD Space",
         "img": "/logo-pldspace-mini.png",
         "description": "Sttok helps us keep all the information about partners, meetings, and incentive plans of our company organized. It facilitates the management of the cap table and the relationship with investors.",
-        "stars": 5
-      },
-      {
-        "name": "Nacho González",
-        "role": "CEO and Founder | Banktrack",
-        "img": "/logo-banktrack-mini.png",
-        "description": "Now with Sttok you can perform simulations of capital increases or convertible notes. We also easily manage our team's phantom shares. Finally, as an investor, I have my investments organized and I clearly know what I have.",
         "stars": 5
       }
     ]
@@ -74,6 +74,11 @@
       {
         "situation": "The committee asks for the group picture at year-end",
         "action": "The chart shows the chain of control on any date and what changed between two year-ends."
+      },
+      {
+        "situation": "An SPV or a crowdfunding campaign brings in many shareholders",
+        "action": "Each investor has their own access: their position, their certificates and their documents.",
+        "href": "/funcionalidades/portal-del-accionista"
       }
     ],
     "columns": {
@@ -103,8 +108,8 @@
         "a": "Yes. Sttok requests them from the Companies Registry, at a cost per company."
       },
       {
-        "q": "Can shareholders buy and sell shares between them?",
-        "a": "Yes, with the secondary market, which is an add-on module."
+        "q": "Does it work for an SPV or an investment company?",
+        "a": "Yes: SPVs, SICAVs, SICCs, SCRs and real estate investment companies. Each investor has their exact position and, if the company opens it up, their own access; and the company runs its meetings, its board and its documents."
       },
       {
         "q": "Does it work for companies in Latin America?",

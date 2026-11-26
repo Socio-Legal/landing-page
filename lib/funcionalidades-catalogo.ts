@@ -154,6 +154,33 @@ export const CATALOGO: Modulo[] = [
     ],
   },
   {
+    id: "participadas",
+    titulo: "Sociedades participadas",
+    resumen: "Lo que el inversor tiene en cada sociedad en la que participa.",
+    en: { titulo: "Investee companies", resumen: "What the investor holds in each company it invests in." },
+    soloSoluciones: true,
+    funcionalidades: [
+      { titulo: "Ficha del accionista", descripcion: "En cada participada, la ficha del inversor como accionista: sus acciones o participaciones, su clase y las operaciones en las que ha participado.", href: `${F}/ficha-del-socio`, en: { titulo: "Shareholder record", descripcion: "In each investee, the investor's record as a shareholder: their shares, their class and the transactions they have taken part in." } },
+      { titulo: "Detalle de la participación", descripcion: "Los rangos, la clase, el porcentaje sobre el capital y el valor de lo que se tiene en cada sociedad.", href: `${F}/participadas`, en: { titulo: "Stake detail", descripcion: "The ranges, the class, the percentage of share capital and the value of what is held in each company." } },
+      { titulo: "Documentación y escrituras", descripcion: "Las escrituras y los documentos de cada operación, a mano en cada participada.", href: `${F}/documentacion-societaria`, en: { titulo: "Documents and deeds", descripcion: "The deeds and documents for each transaction, to hand for each investee." } },
+    ],
+  },
+  {
+    id: "vehiculos",
+    titulo: "Sociedades de inversión",
+    resumen: "Vehículos con muchos accionistas que necesitan saber exactamente qué tiene cada uno.",
+    en: { titulo: "Investment companies", resumen: "Vehicles with many shareholders that need to know exactly what each one holds." },
+    soloSoluciones: true,
+    funcionalidades: [
+      { titulo: "SPV (special purpose vehicle)", descripcion: "Se sabe exactamente lo que tiene cada inversor del vehículo, y cada uno puede tener acceso a su posición y a su documentación.", href: `${F}/portal-del-accionista`, en: { titulo: "SPV (special purpose vehicle)", descripcion: "You know exactly what each investor in the vehicle holds, and each one can have access to their position and documents." } },
+      { titulo: "SICAV", descripcion: "Sociedades de inversión de capital variable: juntas, consejo, actas y certificados para muchos accionistas.", en: { titulo: "SICAV", descripcion: "Variable capital investment companies: meetings, board, minutes and certificates for many shareholders." } },
+      { titulo: "SICC", descripcion: "Sociedades de inversión colectiva de tipo cerrado: los accionistas, las juntas y la documentación de cada inversor.", en: { titulo: "SICC", descripcion: "Closed-ended collective investment companies: the shareholders, the meetings and each investor's documents." } },
+      { titulo: "SCR", descripcion: "Sociedades de capital-riesgo: sus inversores, sus participadas y cada ampliación simulada antes de firmarla.", en: { titulo: "SCR", descripcion: "Venture capital companies: their investors, their investees and every capital increase simulated before it is signed." } },
+      { titulo: "Sociedades de inversión inmobiliaria", descripcion: "Los inversores de cada vehículo inmobiliario, con su posición, sus dividendos y sus certificados.", en: { titulo: "Real estate investment companies", descripcion: "The investors in each real estate vehicle, with their position, their dividends and their certificates." } },
+      { titulo: "Crowdfunding y SPV con muchos accionistas", descripcion: "Cientos o miles de accionistas, cada uno con su acceso, sus certificados y sus comunicaciones con certificado de envío.", href: `${F}/portal-del-accionista`, en: { titulo: "Crowdfunding and SPVs with many shareholders", descripcion: "Hundreds or thousands of shareholders, each with their own access, their certificates and their communications with proof of delivery." } },
+    ],
+  },
+  {
     id: "incentivos",
     titulo: "Planes de incentivos",
     resumen: "Los planes de empleados y directivos, conectados al libro.",

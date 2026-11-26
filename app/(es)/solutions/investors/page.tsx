@@ -10,8 +10,12 @@ const SELECCION = {
     "Comparar fechas",
     "Cuentas depositadas"
   ],
+  "participadas": [
+    "Ficha del accionista",
+    "Detalle de la participación",
+    "Documentación y escrituras"
+  ],
   "socios": [
-    "Ficha del socio",
     "Clases de acciones",
     "Acreedores y notas convertibles",
     "Certificados de titularidad y de valor"
@@ -22,10 +26,17 @@ const SELECCION = {
     "Operaciones encadenadas",
     "Cascada de liquidación"
   ],
-  "secundario": [
-    "Ofertas de compra y de venta",
-    "Listado de ofertas",
-    "Validación, KYC y contratos"
+  "firma": [
+    "Firma electrónica",
+    "Todas las firmas de un clic"
+  ],
+  "vehiculos": [
+    "SPV (special purpose vehicle)",
+    "SICAV",
+    "SICC",
+    "SCR",
+    "Sociedades de inversión inmobiliaria",
+    "Crowdfunding y SPV con muchos accionistas"
   ]
 };
 
