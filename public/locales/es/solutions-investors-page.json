@@ -46,6 +46,13 @@
         "img": "/logo-pldspace-mini.png",
         "description": "Sttok nos sirve para poder tener organizada toda la información sobre socios, juntas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
         "stars": 5
+      },
+      {
+        "name": "Multiverse Computing",
+        "role": "Inteligencia artificial y computación cuántica",
+        "description": "Multiverse Computing, pionera en inteligencia artificial y computación cuántica, utiliza Sttok para gestionar accionistas, beneficiarios de incentivos y libro de socios.",
+        "stars": 5,
+        "logo": "Multiverse"
       }
     ]
   },

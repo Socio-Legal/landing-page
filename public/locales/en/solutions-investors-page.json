@@ -42,6 +42,13 @@
         "img": "/logo-pldspace-mini.png",
         "description": "Sttok helps us keep all the information about partners, meetings, and incentive plans of our company organized. It facilitates the management of the cap table and the relationship with investors.",
         "stars": 5
+      },
+      {
+        "name": "Multiverse Computing",
+        "role": "Artificial intelligence and quantum computing",
+        "description": "Multiverse Computing, a pioneer in artificial intelligence and quantum computing, uses Sttok to manage its shareholders, incentive plan beneficiaries and shareholder register.",
+        "stars": 5,
+        "logo": "Multiverse"
       }
     ]
   },
