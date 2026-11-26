@@ -13,10 +13,10 @@
       "link": "https://calendly.com/sttok/30min"
     },
     "image": {
-      "light": "/animaciones/en/portal-del-beneficiario-light-poster.webp",
-      "dark": "/animaciones/en/portal-del-beneficiario-dark-poster.webp"
+      "light": "/animaciones/en/recorrido-scaleups-light-poster.webp",
+      "dark": "/animaciones/en/recorrido-scaleups-dark-poster.webp"
     },
-    "video": "portal-del-beneficiario"
+    "video": "recorrido-scaleups"
   },
   "testimonials": {
     "title": "Customer Testimonials",
