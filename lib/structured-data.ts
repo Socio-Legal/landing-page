@@ -1,3 +1,4 @@
+import type { Doc } from "@/lib/content";
 import type { Locale } from "@/lib/locales";
 
 const BASE_URL = "https://www.sttok.com";
@@ -16,6 +17,29 @@ export function faqPageJsonLd(items: { q: string; a: string }[]) {
       name: item.q,
       acceptedAnswer: { "@type": "Answer", text: item.a },
     })),
+  };
+}
+
+/**
+ * Article de un documento de content/ con fechas de publicación propias
+ * (el glosario migrado del blog conserva las de WordPress). El BreadcrumbList
+ * lo emite Migas.
+ */
+export function articleJsonLd(doc: Doc) {
+  const url = `${BASE_URL}${doc.url}`;
+  const sttok = { "@type": "Organization", name: "Sttok", url: BASE_URL };
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: doc.frontmatter.etiqueta ?? doc.frontmatter.title,
+    description: doc.frontmatter.description,
+    url,
+    mainEntityOfPage: url,
+    inLanguage: doc.locale,
+    datePublished: doc.frontmatter.publicado,
+    dateModified: doc.frontmatter.modificado ?? doc.frontmatter.publicado,
+    author: sttok,
+    publisher: sttok,
   };
 }
 

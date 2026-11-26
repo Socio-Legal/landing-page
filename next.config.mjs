@@ -1,14 +1,3 @@
-import { readFileSync } from "node:fs";
-
-/**
- * Articulos y paginas vigentes del blog (blog.sttok.com/recursos), sacados de
- * su wp-sitemap.xml. Solo esos slugs se redirigen al blog; el resto iria a un
- * 404 alla (Search Console, nov-2026) y va al indice del blog.
- */
-const BLOG_SLUGS = JSON.parse(
-  readFileSync(new URL("./config/blog-recursos.json", import.meta.url), "utf8"),
-).slugs;
-
 /**
  * Slug publico castellano -> carpeta interna de app/ (con nombre en ingles).
  *
@@ -91,6 +80,12 @@ const nextConfig = {
    */
   htmlLimitedBots: /.*/,
   /**
+   * La barra final la quita middleware.ts (308, como Next), pero DESPUES de
+   * las redirecciones de URLs antiguas: la de Next va antes que todas y
+   * encadenaba dos saltos en las URLs del blog, que acaban en «/».
+   */
+  skipTrailingSlashRedirect: true,
+  /**
    * La Captura de los MDX lee con fs los PNG de public/funcionalidades, y el
    * trazado de archivos mete por eso todo public/ en cada función: unos 250 MB,
    * el límite de Vercel. En tiempo de ejecución solo se leen esos PNG; vídeos,
@@ -121,7 +116,7 @@ const nextConfig = {
   },
 
   async redirects() {
-    return [
+    const redirecciones = [
       {
         // Landing heredada de la colaboracion con SeedRocket, la aceleradora.
         // El contenido equivalente hoy es la pagina de soluciones para
@@ -137,21 +132,8 @@ const nextConfig = {
       // todavia enlaza /privacidad.html (404 en Search Console, nov-2026).
       // Va despues de /index.html y /seedrocket.html, que tienen destino propio.
       { source: "/:slug([a-z0-9-]+).html", destination: "/:slug", statusCode: 301 },
-      // Los articulos del blog vivieron en www.sttok.com/recursos/<slug> y hoy
-      // estan en blog.sttok.com con el mismo slug. /recursos (sin slug) es el
-      // glosario de esta web y no se toca. Solo los slugs que existen en el
-      // blog (BLOG_SLUGS); los demas, a su indice, que es la pagina vigente
-      // mas cercana, en vez de a un 404 del blog.
-      {
-        source: `/recursos/:slug(${BLOG_SLUGS.join("|")})`,
-        destination: "https://blog.sttok.com/recursos/:slug/",
-        statusCode: 301,
-      },
-      {
-        source: "/recursos/:slug",
-        destination: "https://blog.sttok.com/recursos/",
-        statusCode: 301,
-      },
+      // Los articulos del blog (www.sttok.com/recursos/<slug> y todo
+      // blog.sttok.com) los redirige middleware.ts: lib/blog-redirecciones.ts.
       // Casos de exito retirados. Apuntan al indice de casos, que es el
       // contenido equivalente mas cercano: la home no lo es, y un 301 a la
       // home para una pagina retirada es un soft 404.
@@ -188,6 +170,13 @@ const nextConfig = {
         statusCode: 301,
       },
     ];
+    // blog.sttok.com lo resuelve entero el middleware con un solo 301 a www.
+    // Sin esta condicion, una regla de aqui (p. ej. /:slug.html) saltaria
+    // antes en ese host y encadenaria dos redirecciones.
+    return redirecciones.map((r) => ({
+      ...r,
+      missing: [{ type: "host", value: "blog\\.sttok\\.com" }],
+    }));
   },
 
   async rewrites() {

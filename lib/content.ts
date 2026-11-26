@@ -8,7 +8,7 @@ import { ROUTE_MAP } from "@/lib/localized-href";
 
 /**
  * Capa de contenido de las secciones castellanas (`/soluciones`,
- * `/comparativas`, `/guias`).
+ * `/comparativas`, `/guias`, `/glosario-societario`...).
  *
  * La URL la manda SIEMPRE la ruta del archivo, no el frontmatter:
  *   content/soluciones/index.mdx            -> /soluciones
@@ -30,6 +30,9 @@ export const SECTIONS = {
   comparativas: { label: "Comparativas", hasIndex: true },
   guias: { label: "Guías", hasIndex: true },
   funcionalidades: { label: "Funcionalidades", hasIndex: true },
+  // Entradas migradas del antiguo blog de WordPress (blog.sttok.com/recursos)
+  // con el mismo slug. Llevan las fechas originales en el frontmatter.
+  "glosario-societario": { label: "Glosario societario", hasIndex: true },
   // Las paginas de pais cuelgan de la portada /jurisdicciones pero viven en
   // la raiz (/colombia, no /jurisdicciones/colombia): son paginas de entrada
   // y la URL corta es la que se busca y se recuerda. Cada una tiene su
@@ -47,7 +50,18 @@ export type DocFrontmatter = {
   slug?: string;
   section?: string;
   canonical?: string;
+  /** Nombre corto para migas y enlaces entre hermanas; si falta, el title hasta los dos puntos. */
+  etiqueta?: string;
+  /** Fechas ISO de la publicación original (glosario migrado del blog). */
+  publicado?: string;
+  modificado?: string;
+  /** URL donde se publicó originalmente. */
+  original?: string;
 };
+
+/** Nombre corto de un documento: migas, enlaces entre hermanas. */
+export const docLabel = (doc: Doc): string =>
+  doc.frontmatter.etiqueta ?? doc.frontmatter.title.split(":")[0].trim();
 
 export type Doc = {
   section: Section;

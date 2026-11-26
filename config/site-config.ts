@@ -233,7 +233,8 @@ export const siteConfig = {
         {
           id: 121,
           title: "menu.Resources",
-          url: routes.APP_BLOG,
+          url: "/glosario-societario",
+          alt: "Glosario societario: conceptos de derecho de sociedades",
         },
         {
           // Externo y con su propia versión inglesa: localizedHref no la
