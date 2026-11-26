@@ -1,6 +1,6 @@
 ---
 title: "Acreedores y notas convertibles: quién ha prestado y qué tendría si convierte"
-description: "Sttok registra cada nota convertible con sus condiciones y sus suscriptores, calcula las acciones y el porcentaje del capital diluido de cada acreedor y avisa del vencimiento."
+description: "Sttok registra a quien ha financiado a la sociedad con una nota convertible, un SAFE, unas cuentas en participación u otro instrumento, con sus condiciones, y calcula las acciones y el porcentaje del capital diluido de cada acreedor."
 slug: "/funcionalidades/acreedores-y-notas-convertibles"
 section: "funcionalidades"
 canonical: "https://www.sttok.com/funcionalidades/acreedores-y-notas-convertibles"
@@ -8,7 +8,14 @@ canonical: "https://www.sttok.com/funcionalidades/acreedores-y-notas-convertible
 
 # Acreedores y notas convertibles
 
-Sttok lleva un listado de quien ha prestado dinero a la sociedad mediante una nota convertible. Cada nota guarda una sola vez su vencimiento, su interés, su techo de valoración, su descuento y el hecho que la dispara. Cada acreedor tiene su ficha, con lo prestado y las acciones que recibiría si la nota convirtiera hoy. Su efecto de dilución se ve en el cap table y en la ficha de cada socio.
+Sttok lleva un listado de quien ha prestado o aportado dinero a la sociedad sin ser todavía socio por esa aportación. El instrumento puede ser:
+
+- una nota convertible;
+- un SAFE;
+- un contrato de cuentas en participación;
+- un préstamo participativo u otro préstamo.
+
+Cada nota guarda una sola vez su vencimiento, su interés, su techo de valoración, su descuento y el hecho que la dispara. Cada acreedor tiene su ficha, con lo prestado y las acciones que recibiría si la nota convirtiera hoy. Su efecto de dilución se ve en el cap table y en la ficha de cada socio.
 
 <Captura
   nombre="acreedores-y-notas-convertibles"
@@ -27,13 +34,6 @@ Sttok lleva un listado de quien ha prestado dinero a la sociedad mediante una no
 | Descuento | Tarjeta y ficha del acreedor | La rebaja sobre el precio de la ronda, si la hay |
 | Hecho que la dispara | Tarjeta y ficha del acreedor | La operación que provoca la conversión |
 | Estado | Etiqueta de la nota | Viva, convertida o vencida |
-
-## Cómo se registra un acreedor
-
-1. En Socios, se abre Acreedores y se pulsa «+ Añadir acreedor».
-2. Se escribe el nombre o la razón social. Si el acreedor ya es socio, se elige de la lista y su ficha enlaza las dos posiciones.
-3. Se indican el NIF o CIF y la nota convertible que suscribe. Si la nota ya existe, el acreedor hereda sus condiciones.
-4. Se anotan la aportación y su fecha. El acreedor aparece en la tabla con las acciones que recibiría si convierte, su porcentaje del capital diluido y el precio por acción.
 
 ## Qué muestra la pantalla
 
@@ -73,6 +73,9 @@ El [simulador](/simulador) incluye las notas registradas al calcular el capital 
 
 **¿Un acreedor tiene porcentaje del capital?**
 No mientras la nota no convierta. Tiene un crédito contra la sociedad. Sttok solo muestra el porcentaje que tendría si convirtiera hoy, sobre el capital totalmente diluido.
+
+**¿Qué instrumentos se pueden registrar?**
+Notas convertibles, SAFE, contratos de cuentas en participación y préstamos, participativos o no. Cada acreedor figura con el instrumento, el importe, la fecha y las condiciones. Si el instrumento puede convertirse en capital, Sttok calcula las acciones que daría.
 
 **¿Varios acreedores pueden suscribir la misma nota?**
 Sí. La nota es una sola, con sus condiciones, y cada acreedor figura como suscriptor con su aportación y su fecha.

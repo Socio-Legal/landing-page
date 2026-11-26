@@ -1,6 +1,6 @@
 ---
 title: "Equity Story: la evolución del capital de la sociedad operación a operación"
-description: "La vista Equity Story del libro de socios de Sttok muestra, en una sola tabla, cuántas acciones tenía cada socio tras cada operación y qué porcentaje del capital sumaba."
+description: "La vista Equity Story del libro de socios de Sttok muestra, en una sola tabla, cuántas acciones tenía cada socio tras cada operación, qué porcentaje del capital sumaba y qué aportó en nominal y prima."
 slug: "/funcionalidades/equity-story"
 section: "funcionalidades"
 canonical: "https://www.sttok.com/funcionalidades/equity-story"
@@ -8,7 +8,7 @@ canonical: "https://www.sttok.com/funcionalidades/equity-story"
 
 # Equity Story: historial del capital por operación
 
-La Equity Story es una vista del libro de socios con la historia del capital en una sola tabla. Cada operación ocupa un grupo de columnas, por orden de fecha. Cada fila es una persona que ha tenido acciones alguna vez. Las celdas dicen cuántas acciones recibió o transmitió, con cuántas se quedó y qué porcentaje del capital tenía después. La tabla se exporta a Excel o PDF, y la sociedad decide si los socios pueden consultarla o no.
+La Equity Story es una vista del libro de socios con la historia del capital en una sola tabla. Cada operación ocupa un grupo de columnas, por orden de fecha. Cada fila es una persona que ha tenido acciones alguna vez. Las celdas dicen cuántas acciones recibió o transmitió, con cuántas se quedó y qué porcentaje del capital tenía después. En las operaciones con aportación, dicen también el nominal, la prima y el total aportado por cada socio. La tabla se exporta a Excel o PDF, y la sociedad decide si los socios pueden consultarla o no.
 
 <Captura
   nombre="equity-story"
@@ -30,13 +30,21 @@ La Equity Story recoge todas las operaciones que se registran en Sttok. El menú
 
 ## Qué columnas tiene cada operación
 
-| Operación | Columnas | Qué se lee en ellas |
-|---|---|---|
-| Constitución | Nuevas, % | Las acciones suscritas al fundar la sociedad y el reparto inicial |
-| Ampliación, split y reducción | Nuevas, Total, % | Las acciones que entran o salen, el total resultante y el nuevo porcentaje |
-| Compraventa | Origen, Post C-V, Total, % | Lo que tenía cada parte, lo que transmitió o recibió y cómo quedó |
-| Herencia | Origen, Post herencia, Total, % | Las acciones del causante y las que pasan a cada heredero |
-| Donación | Origen, Post donación, Total, % | Las acciones del donante y las que recibe el donatario |
+Cada operación del menú «Añadir operación» tiene su grupo de columnas. En las que llevan aportación, la Equity Story indica el valor nominal, la prima de emisión y el total aportado por cada socio, y el acumulado tras la operación.
+
+| Operación | Qué se lee en sus columnas |
+|---|---|
+| Constitución y alta de un nuevo socio | Las acciones que suscribe cada socio, su nominal, su prima y su aportación, y el reparto inicial del capital |
+| Ampliación de capital | Las acciones nuevas de cada suscriptor, con su nominal, su prima y lo que aporta; el total resultante y el nuevo porcentaje |
+| Reducción de capital | Las acciones que se amortizan, el nominal que se reduce, el total resultante y el nuevo porcentaje |
+| Split, renumeración y reclasificación | Cómo cambian el número, la numeración o la clase de las acciones de cada socio |
+| Compraventa, transmisión y endoso | Lo que tenía cada parte, lo que transmitió o recibió y cómo quedó |
+| Herencia | Las acciones del causante y las que pasan a cada heredero |
+| Donación | Las acciones del donante y las que recibe el donatario |
+| Canje de títulos | Los títulos que se entregan y los que se reciben |
+| Otras aportaciones | Lo que aporta cada socio sin recibir acciones nuevas |
+| Reparto de dividendos | El importe que corresponde a cada socio |
+| Operación informativa | Un hecho que se anota en el historial sin mover acciones |
 
 ## Cómo se consulta
 
@@ -75,6 +83,9 @@ Sí. La vista es el historial completo de quien ha tenido acciones alguna vez. U
 
 **¿Qué tipos de operación recoge?**
 Todas las que se registran en Sttok: constitución, nuevo socio, ampliaciones y reducciones de capital, compraventas, herencias, donaciones, endosos, transmisiones, splits, renumeraciones, reclasificaciones, repartos de dividendos, otras aportaciones, canjes de títulos y operaciones informativas.
+
+**¿Indica lo que aportó cada socio?**
+Sí. En la constitución, las ampliaciones y las demás operaciones con aportación, la tabla da el nominal, la prima y el total aportado por cada socio.
 
 **¿Se puede exportar?**
 Sí. La Equity Story se descarga en Excel o en PDF, como las demás vistas del libro de socios.

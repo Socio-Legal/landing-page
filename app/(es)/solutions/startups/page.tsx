@@ -14,7 +14,7 @@ const SELECCION = {
   ],
   "incentivos": [
     "Phantom shares y stock options",
-    "Cartas de invitación en bloque",
+    "Cartas de invitación automatizadas",
     "Vesting y cliff",
     "Tender offers",
     "Fully diluted y cap table",
@@ -22,6 +22,7 @@ const SELECCION = {
   ],
   "simulador": [
     "Ampliación de capital",
+    "Reducción de capital",
     "Nota convertible",
     "Operaciones encadenadas",
     "Cascada de liquidación",
