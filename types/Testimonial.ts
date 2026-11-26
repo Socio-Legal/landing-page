@@ -6,4 +6,10 @@ export type Testimonial = {
   logo?: string;
   description: string;
   stars?: number;
+  /**
+   * Caso de cliente: el texto no es una cita del cliente, así que va sin
+   * comillas y enlaza a su página de testimonio.
+   */
+  href?: string;
+  linkText?: string;
 };

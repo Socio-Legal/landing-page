@@ -46,6 +46,14 @@
         "description": "Sttok nos ha permitido digitalizar y automatizar toda la gestión societaria, desde la celebración de consejos de administración hasta el mantenimiento del libro registro de socios, garantizando la máxima seguridad jurídica en todos nuestros procesos corporativos.",
         "stars": 5,
         "logo": "MyInvestor"
+      },
+      {
+        "name": "Multiverse Computing",
+        "role": "IA y computación cuántica",
+        "description": "Multiverse Computing, pionera en inteligencia artificial y computación cuántica, con su libro de socios en Sttok",
+        "logo": "Multiverse",
+        "href": "/testimonios/Multiverse",
+        "linkText": "Ver el caso de Multiverse Computing"
       }
     ]
   },
