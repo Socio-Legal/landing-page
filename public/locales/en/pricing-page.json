@@ -1,14 +1,14 @@
 {
   "metadata": {
     "title": "Pricing",
-    "description": "Plans from €450 per company per year, taxes not included. Shareholder registry, incentive plans, shareholder and board meetings. No implementation cost, setup in a few hours per company.",
+    "description": "Sttok is billed per company per year, from €450 excluding taxes. A standard price for groups of more than 5 companies and special rates for companies with more than 50 shareholders.",
     "keywords": "plans, pricing, rates, costs, subscription, annual, shareholder registry, cap table"
   },
   "hero": {
     "slogan": "Pricing",
     "titleLead": "Plans",
     "titleEmphasis": "tailored to your needs",
-    "description": "Save time by automating manual tasks, avoid errors and keep your data always up to date. Add value to all stakeholders."
+    "description": "Sttok is billed per company per year. Groups of more than 5 companies have a standard price per company. Companies with more than 50 shareholders have special rates. Some clients manage thousands of shareholders and business groups of hundreds of companies with Sttok."
   },
   "plans": {
     "perYear": "per company, per year (taxes not included)",
@@ -28,7 +28,7 @@
     "items": [
       {
         "q": "How much does Sttok cost?",
-        "a": "From €450 per company per year on the Basic plan (up to 10 partners or beneficiaries). The Advanced plan is €650/year (up to 20) and Pro is €850/year (up to 50). Custom plans are available for company groups or larger needs. Prices exclude taxes."
+        "a": "Sttok is billed per company per year. The Basic plan costs €450 (up to 10 shareholders or beneficiaries), Advanced €650 (up to 20) and Pro €850 (up to 50). Groups of more than 5 companies have a standard price per company, and companies with more than 50 shareholders have special rates. Prices exclude taxes."
       },
       {
         "q": "What does every plan include?",

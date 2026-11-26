@@ -215,7 +215,7 @@ export const PAGE_REGISTRY: Record<string, PageEntry> = {
     meta: {
       en: {
         title: "Pricing — Sttok corporate management software",
-        description: "Plans from €450 per company per year. Shareholder register, incentive plans, meetings and board. No implementation cost, setup in a few hours per company.",
+        description: "Sttok is billed per company per year, from €450 excluding taxes. A standard price for groups of more than 5 companies and special rates for companies with more than 50 shareholders.",
       keywords: "corporate management pricing, cap table software pricing, shareholder registry software",
       },
     },

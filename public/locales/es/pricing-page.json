@@ -1,14 +1,14 @@
 {
   "metadata": {
     "title": "Precios",
-    "description": "Planes desde 450€ por sociedad al año, impuestos no incluidos. Libro de socios, planes de incentivos, juntas y consejos. Sin coste de implantación y con puesta en marcha en unas horas por sociedad.",
+    "description": "Sttok se factura por sociedad y al año, desde 450 € sin impuestos. Precio estándar para grupos de más de 5 sociedades y tarifas especiales para sociedades de más de 50 accionistas.",
     "keywords": "planes, precios, tarifas, costes, suscripción, anual, libro de socios, captable"
   },
   "hero": {
     "slogan": "Precios",
     "titleLead": "Planes",
     "titleEmphasis": "a tu medida",
-    "description": "Ahorra tiempo automatizando tareas manuales, evita errores y dispón de datos siempre actualizados. Aporta valor a todos los stakeholders."
+    "description": "Sttok se factura por sociedad y al año. Los grupos de más de 5 sociedades tienen un precio estándar por sociedad. Las sociedades con más de 50 accionistas tienen tarifas especiales. Hay clientes que gestionan con Sttok miles de accionistas y grupos empresariales de cientos de sociedades."
   },
   "plans": {
     "perYear": "por sociedad, al año (impuestos no incluidos)",
@@ -28,7 +28,7 @@
     "items": [
       {
         "q": "¿Cuánto cuesta Sttok?",
-        "a": "Desde 450€ por sociedad al año en el plan Básico (hasta 10 socios o beneficiarios). El plan Avanzado cuesta 650€/año (hasta 20) y el Pro 850€/año (hasta 50). Para grupos de sociedades o necesidades mayores hay planes personalizados. Los precios no incluyen impuestos."
+        "a": "Sttok se factura por sociedad y al año. El plan Básico cuesta 450 € (hasta 10 socios o beneficiarios), el Avanzado 650 € (hasta 20) y el Pro 850 € (hasta 50). Los grupos de más de 5 sociedades tienen un precio estándar por sociedad, y las sociedades con más de 50 accionistas, tarifas especiales. Los precios no incluyen impuestos."
       },
       {
         "q": "¿Qué incluyen todos los planes?",
