@@ -63,8 +63,8 @@
     ],
     "gallery": [
       {
-        "src": "/clientes/pld-cohete-orbita.jpg",
-        "alt": "A PLD Space rocket in orbit above the Earth"
+        "src": "/clientes/pld-primer-lanzamiento.jpg",
+        "alt": "A PLD Space rocket on the launch pad before its first launch"
       },
       {
         "src": "/clientes/pld-equipo.jpg",
@@ -77,17 +77,17 @@
     ],
     "uses": [
       {
-        "title": "The investor portal",
+        "title": "Investor portal",
         "text": "Each investor logs in and sees their position, their documents and their meetings.",
         "image": "/animaciones/en/portal-del-accionista-light-poster.webp"
       },
       {
-        "title": "Meetings across several vehicles",
+        "title": "Meetings with several investment vehicles",
         "text": "Notices, proxies and votes in one place, with no manual work.",
         "image": "/animaciones/en/voto-electronico-en-juntas-light-poster.webp"
       },
       {
-        "title": "The team's incentive plan",
+        "title": "Incentive plan",
         "text": "Each person sees their units and their value in their portal.",
         "image": "/animaciones/en/liquidez-planes-de-incentivos-light-poster.webp"
       }

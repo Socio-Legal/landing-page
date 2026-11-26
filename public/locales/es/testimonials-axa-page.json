@@ -50,17 +50,17 @@
     ],
     "uses": [
       {
-        "title": "Sus accionistas, en un solo sitio",
+        "title": "Libro de socios",
         "text": "El libro de socios con la posición de cada accionista.",
         "image": "/animaciones/accionistas-light-poster.webp"
       },
       {
-        "title": "Certificados al instante",
+        "title": "Certificados de titularidad",
         "text": "Los certificados para los accionistas y las empresas del grupo, generados desde el libro.",
         "image": "/animaciones/certificados-de-titularidad-y-valor-light-poster.webp"
       },
       {
-        "title": "Las empresas del grupo",
+        "title": "Sociedades del grupo en España",
         "text": "Cada sociedad del grupo en España, con su libro y su documentación.",
         "image": "/animaciones/sociedades-light-poster.webp"
       }

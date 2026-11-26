@@ -28,7 +28,7 @@
       },
       {
         "key": "Sector",
-        "value": "HR software"
+        "value": "AI business management software: HR, finance and IT"
       },
       {
         "key": "Features",
@@ -46,7 +46,7 @@
       {
         "title": "About Factorial",
         "texts": [
-          "Factorial is the HR software of more than 17,000 companies, mostly SMEs. It is built by more than 1,500 people, with support in seven languages.",
+          "Factorial is an AI-powered business management platform for SMEs. It connects HR, finance and IT processes in a single piece of software: payroll, time tracking, absences, talent, expenses and devices. More than 17,000 companies use it and more than 1,500 people build it, with offices in Barcelona, Mexico City and São Paulo.",
           "A team growing this fast needs an incentive plan that grows with it: every new hire with their letter, their signature and their units up to date."
         ]
       },
@@ -63,25 +63,25 @@
     ],
     "uses": [
       {
-        "title": "Letters come straight from the plan",
+        "title": "Invitation letters and signature",
         "text": "Each new hire gets their invitation letter and signs it, with no Word files or emails.",
         "image": "/animaciones/firma-electronica-light-poster.webp"
       },
       {
-        "title": "Each employee sees their own",
+        "title": "Beneficiary portal",
         "text": "Their units, their schedule and their value, in their portal.",
         "image": "/animaciones/en/liquidez-planes-de-incentivos-light-poster.webp"
       },
       {
-        "title": "The shareholder register, in the same place",
+        "title": "Shareholder register",
         "text": "Shareholders and incentive plan, always reconciled.",
         "image": "/animaciones/en/accionistas-light-poster.webp"
       }
     ],
     "gallery": [
       {
-        "src": "/clientes/factorial-producto.jpg",
-        "alt": "Factorial's logo and product"
+        "src": "/clientes/factorial-home.jpg",
+        "alt": "Factorial's home page"
       },
       {
         "src": "/clientes/factorial-evento.jpg",

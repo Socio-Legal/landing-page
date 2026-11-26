@@ -54,7 +54,7 @@
     ],
     "uses": [
       {
-        "title": "Shareholder register and management",
+        "title": "Shareholder register",
         "text": "Each shareholder with their position, details and history, always up to date.",
         "image": "/animaciones/en/accionistas-light-poster.webp"
       },
@@ -64,7 +64,7 @@
         "image": "/animaciones/certificados-de-titularidad-y-valor-light-poster.webp"
       },
       {
-        "title": "Dividends and their tax forms",
+        "title": "Dividend payments and tax forms",
         "text": "Each distribution, with the dividend tax forms generated automatically.",
         "image": "/animaciones/reparto-de-dividendos-light-poster.webp"
       }

@@ -71,23 +71,23 @@
         "alt": "The Caballero staff in the cellar"
       },
       {
-        "src": "/clientes/caballero-botellas.jpg",
-        "alt": "Ponche Caballero bottles over the years"
+        "src": "/clientes/caballero-castillo.jpg",
+        "alt": "The castle of San Marcos in El Puerto de Santa María at night"
       }
     ],
     "uses": [
       {
-        "title": "Its shareholder register, up to date",
+        "title": "Shareholder register",
         "text": "Each shareholder with their holding and history, without spreadsheets.",
         "image": "/animaciones/en/accionistas-light-poster.webp"
       },
       {
-        "title": "Shareholder meetings, digital",
+        "title": "Shareholders' meetings",
         "text": "Notice, attendance, votes and minutes, without paper.",
         "image": "/animaciones/en/voto-electronico-en-juntas-light-poster.webp"
       },
       {
-        "title": "Documents and signatures",
+        "title": "Document generation and e-signature",
         "text": "Minutes and documents are generated and signed in Sttok.",
         "image": "/animaciones/firma-electronica-light-poster.webp"
       }

@@ -44,17 +44,17 @@
     },
     "uses": [
       {
-        "title": "Sus socios, al día",
+        "title": "Libro de socios",
         "text": "Cada inversor con sus acciones, su clase y su historia.",
         "image": "/animaciones/accionistas-light-poster.webp"
       },
       {
-        "title": "Las rondas de inversión",
+        "title": "Simulación de rondas de inversión",
         "text": "Cada ronda simulada antes de cerrarla y registrada después en el libro.",
         "image": "/animaciones/simulador-light-poster.webp"
       },
       {
-        "title": "El plan de incentivos",
+        "title": "Plan de incentivos",
         "text": "Cada persona del equipo ve sus unidades, su calendario y su valor.",
         "image": "/animaciones/liquidez-planes-de-incentivos-light-poster.webp"
       }

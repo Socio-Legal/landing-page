@@ -31,7 +31,7 @@
       "client": "Osborne",
       "logo": "Osborne",
       "image": "/clientes/osborne.jpg",
-      "text": "Cientos de accionistas familiares y cuatro generaciones de socios a la vez",
+      "text": "Libro de socios, consejo de administración y juntas de un grupo familiar fundado en 1772",
       "size": "big",
       "href": "/testimonios/Osborne"
     },
@@ -74,7 +74,8 @@
       "client": "TaxDown",
       "logo": "Taxdown",
       "text": "Su plan de incentivos y su libro de socios, en un sitio",
-      "href": "/testimonios/Taxdown"
+      "href": "/testimonios/Taxdown",
+      "image": "/clientes/taxdown-anuncio.jpg"
     },
     {
       "client": "Fanalca",
@@ -96,7 +97,7 @@
           "Osborne"
         ],
         "image": "/clientes/osborne.jpg",
-        "text": "Cuatro generaciones de socios, sus ramas y sus juntas, sin perder el hilo.",
+        "text": "Libro de socios, consejo y juntas de un grupo con cientos de accionistas familiares.",
         "sub": "También Grupo Caballero",
         "href": "/testimonios/Osborne"
       },

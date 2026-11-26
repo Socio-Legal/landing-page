@@ -28,7 +28,7 @@
       },
       {
         "key": "Sector",
-        "value": "Software de RRHH"
+        "value": "Software de gestión empresarial con IA: RR. HH., finanzas e IT"
       },
       {
         "key": "Funcionalidades",
@@ -46,7 +46,7 @@
       {
         "title": "Un poco sobre Factorial",
         "texts": [
-          "Factorial es el software de recursos humanos de más de 17.000 empresas, sobre todo pymes. Lo construyen más de 1.500 personas, con soporte en siete idiomas.",
+          "Factorial es una plataforma de gestión empresarial con IA para pymes. Conecta en un solo software los procesos de recursos humanos, finanzas e IT: nóminas, control horario, ausencias, talento, gastos y dispositivos. Más de 17.000 empresas la usan y la construyen más de 1.500 personas, con oficinas en Barcelona, Ciudad de México y São Paulo.",
           "Un equipo que crece tan rápido necesita un plan de incentivos que crezca con él: cada incorporación con su carta, su firma y sus unidades al día."
         ]
       },
@@ -63,25 +63,25 @@
     ],
     "uses": [
       {
-        "title": "Las cartas salen del plan",
+        "title": "Cartas de invitación y firma",
         "text": "Cada incorporación recibe su carta de invitación y la firma, sin Word ni correos.",
         "image": "/animaciones/firma-electronica-light-poster.webp"
       },
       {
-        "title": "Cada empleado ve lo suyo",
+        "title": "Portal del beneficiario",
         "text": "Sus unidades, su calendario y su valor, en su portal.",
         "image": "/animaciones/liquidez-planes-de-incentivos-light-poster.webp"
       },
       {
-        "title": "El libro de socios, en el mismo sitio",
+        "title": "Libro de socios",
         "text": "Socios y plan de incentivos, siempre cuadrados.",
         "image": "/animaciones/accionistas-light-poster.webp"
       }
     ],
     "gallery": [
       {
-        "src": "/clientes/factorial-producto.jpg",
-        "alt": "El logo y el producto de Factorial"
+        "src": "/clientes/factorial-home.jpg",
+        "alt": "La página de inicio de Factorial"
       },
       {
         "src": "/clientes/factorial-evento.jpg",

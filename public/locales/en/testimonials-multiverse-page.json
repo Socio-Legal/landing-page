@@ -44,17 +44,17 @@
     },
     "uses": [
       {
-        "title": "Its shareholders, up to date",
+        "title": "Shareholder register",
         "text": "Each investor with their shares, their class and their history.",
         "image": "/animaciones/en/accionistas-light-poster.webp"
       },
       {
-        "title": "Funding rounds",
+        "title": "Funding round simulation",
         "text": "Each round simulated before closing and then recorded in the register.",
         "image": "/animaciones/en/simulador-light-poster.webp"
       },
       {
-        "title": "The incentive plan",
+        "title": "Incentive plan",
         "text": "Each team member sees their units, their schedule and their value.",
         "image": "/animaciones/en/liquidez-planes-de-incentivos-light-poster.webp"
       }
