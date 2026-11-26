@@ -379,7 +379,7 @@ h2 { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 27pt; 
 .muy-compacta .func h3 { font-size: 8.6pt; }
 .extra-compacta .func { padding: .8mm 0 .9mm; }
 .extra-compacta .func p { font-size: 7.4pt; line-height: 1.27; margin-top: .3mm; }
-.extra-compacta .grupo { margin-top: 1.6mm; }
+.extra-compacta .grupo { margin-top: 1.1mm; }
 .extra-compacta .func h3 { font-size: 8.4pt; }
 
 /* Testimonio, situaciones y cierre */
