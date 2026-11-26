@@ -7,13 +7,12 @@ const SELECCION = {
   "socios": [
     "Portal del accionista",
     "Certificados de titularidad y de valor",
-    "Ficha del socio",
-    "Equity Story"
+    "Ficha del socio"
   ],
   "juntas": [
     "Vista del socio",
     "Delegación de voto con firma",
-    "Voto anticipado",
+    "Asistencia y quórum",
     "Convocatoria"
   ],
   "comunicaciones": [
@@ -21,10 +20,11 @@ const SELECCION = {
     "Remitente propio"
   ],
   "firma": [
-    "Firma electrónica"
+    "Firma electrónica",
+    "Todas las firmas de un clic"
   ],
   "documentos": [
-    "Repositorio de documentos"
+    "Documentos de cada socio"
   ],
   "plataforma": [
     "Personalización",

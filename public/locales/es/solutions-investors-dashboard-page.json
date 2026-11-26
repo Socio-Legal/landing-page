@@ -6,8 +6,8 @@
   },
   "hero": {
     "slogan": "Portal del inversor",
-    "title": "Para sociedades que quieren tener informados a sus socios e inversores",
-    "description": "Sttok da a cada socio e inversor su propio acceso, con la imagen de la sociedad. Ve su posición, descarga los certificados que la sociedad marca como visibles, responde a la convocatoria, delega o vota, y recibe cada comunicación con su certificado de envío.",
+    "title": "Portal del inversor",
+    "description": "Las sociedades dan acceso a Sttok a sus socios e inversores, cada uno con su usuario, y personalizan el portal con su color de marca o como marca blanca. Cada socio ve su posición, descarga sus certificados y documentos, responde a la convocatoria, delega o vota, y recibe cada comunicación con su certificado de envío.",
     "button": {
       "text": "Solicitar demo",
       "link": "https://calendly.com/sttok/30min"
@@ -39,19 +39,12 @@
         "img": "/logo-pldspace-mini.png",
         "description": "Sttok nos sirve para poder tener organizada toda la información sobre socios, juntas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
         "stars": 5
-      },
-      {
-        "name": "Nacho González",
-        "role": "CEO y Fundador | Banktrack",
-        "img": "/logo-banktrack-mini.png",
-        "description": "Ahora con Sttok puedes realizar simulaciones de ampliaciones o notas convertibles. Además también gestionamos las phantoms de nuestro equipo fácilmente. Finalmente como inversor tengo organizadas mis participadas y conozco claramente qué es lo que tengo.",
-        "stars": 5
       }
     ]
   },
   "includes": {
     "eyebrow": "Qué incluye",
-    "title": "Lo que ve cada socio en su portal",
+    "title": "Funcionalidades del Portal del Inversor",
     "allLink": "Ver todas las funcionalidades de Sttok"
   },
   "situations": {
@@ -59,6 +52,11 @@
     "title": "Situaciones habituales con los socios",
     "guideLabel": "Ver cómo",
     "rows": [
+      {
+        "situation": "Queremos una sección en la web corporativa para dar acceso a los accionistas",
+        "action": "La sección enlaza al portal de Sttok: cada accionista entra con su usuario y ve solo lo suyo, con la imagen de la sociedad.",
+        "href": "/funcionalidades/portal-del-accionista"
+      },
       {
         "situation": "Un inversor pide su certificado",
         "action": "Lo descarga él mismo desde su portal, si la sociedad lo ha marcado como visible.",

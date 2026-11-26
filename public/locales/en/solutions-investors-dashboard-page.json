@@ -6,8 +6,8 @@
   },
   "hero": {
     "slogan": "Investor portal",
-    "title": "For companies that want to keep their shareholders and investors informed",
-    "description": "Sttok gives each shareholder and investor their own access, with the company's branding. They see their position, download the certificates the company makes visible, respond to the notice, appoint a proxy or vote, and receive every communication with its proof of delivery.",
+    "title": "Investor portal",
+    "description": "Companies give their shareholders and investors access to Sttok, each with their own login, and customise the portal with their brand colour or as a white label. Each shareholder sees their position, downloads their certificates and documents, responds to the notice of meeting, appoints a proxy or votes, and receives every communication with its delivery certificate.",
     "button": {
       "text": "Schedule demo",
       "link": "https://calendly.com/sttok/30min"
@@ -35,19 +35,12 @@
         "img": "/logo-pldspace-mini.png",
         "description": "Sttok helps us keep all the information about partners, meetings, and incentive plans of our company organized. It facilitates the management of the cap table and the relationship with investors.",
         "stars": 5
-      },
-      {
-        "name": "Nacho González",
-        "role": "CEO and Founder | Banktrack",
-        "img": "/logo-banktrack-mini.png",
-        "description": "Now with Sttok you can perform simulations of capital increases or convertible notes. We also easily manage our team's phantom shares. Finally, as an investor, I have my investments organized and I clearly know what I have.",
-        "stars": 5
       }
     ]
   },
   "includes": {
     "eyebrow": "What's included",
-    "title": "What each shareholder sees in their portal",
+    "title": "Investor Portal features",
     "allLink": "See all Sttok features"
   },
   "situations": {
@@ -55,6 +48,10 @@
     "title": "Common situations with shareholders",
     "guideLabel": "See how",
     "rows": [
+      {
+        "situation": "We want a section on our corporate website to give shareholders access",
+        "action": "The section links to the Sttok portal: each shareholder logs in and sees only their own data, with the company's branding."
+      },
       {
         "situation": "An investor asks for their certificate",
         "action": "They download it themselves from their portal, if the company has made it visible."
