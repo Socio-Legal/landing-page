@@ -94,7 +94,7 @@
     "url": "/portal-del-inversor",
     "tipo": "solucion",
     "nombre": "Portal del inversor",
-    "descripcion": "Sttok da a cada socio e inversor su propio acceso, con la imagen de la sociedad. Ve su posición, descarga los certificados que la sociedad marca como visibles, responde a la convocatoria, delega o vota, y recibe cada comunicación con su certificado de envío.",
+    "descripcion": "Las sociedades dan acceso a Sttok a sus socios e inversores, cada uno con su usuario, y personalizan el portal con su color de marca o como marca blanca. Cada socio ve su posición, descarga sus certificados y documentos, responde a la convocatoria, delega o vota, y recibe cada comunicación con su certificado de envío.",
     "paginas": 4,
     "pdf": "/fichas/sttok-portal-del-inversor.pdf",
     "portada": "/fichas/sttok-portal-del-inversor-portada.jpg"
