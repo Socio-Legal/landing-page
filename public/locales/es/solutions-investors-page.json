@@ -29,9 +29,16 @@
       {
         "name": "Lucía Bouzá",
         "role": "Head of Legal & Compliance, Factorial",
-        "img": "",
+        "img": "/logo-factorial-mini.png",
         "description": "Sttok nos ayudó a digitalizar el proceso de creación y firma de documentos para nuestros planes de incentivos.",
         "stars": 5
+      },
+      {
+        "name": "Asesoría Jurídica",
+        "role": "MyInvestor",
+        "description": "Sttok nos ha permitido digitalizar y automatizar toda la gestión societaria, desde la celebración de consejos de administración hasta el mantenimiento del libro registro de socios, garantizando la máxima seguridad jurídica en todos nuestros procesos corporativos.",
+        "stars": 5,
+        "logo": "MyInvestor"
       },
       {
         "name": "Johan Longo",
@@ -41,11 +48,11 @@
         "stars": 5
       },
       {
-        "name": "Nacho González",
-        "role": "CEO y Fundador | Banktrack",
-        "img": "/logo-banktrack-mini.png",
-        "description": "Ahora con Sttok puedes realizar simulaciones de ampliaciones o notas convertibles. Además también gestionamos las phantoms de nuestro equipo fácilmente. Finalmente como inversor tengo organizadas mis participadas y conozco claramente qué es lo que tengo.",
-        "stars": 5
+        "name": "Multiverse Computing",
+        "role": "Inteligencia artificial y computación cuántica",
+        "description": "Multiverse Computing, pionera en inteligencia artificial y computación cuántica, utiliza Sttok para gestionar accionistas, beneficiarios de incentivos y libro de socios.",
+        "stars": 5,
+        "logo": "Multiverse"
       }
     ]
   },
@@ -79,6 +86,11 @@
         "situation": "El comité pide la foto del grupo a cierre",
         "action": "El diagrama muestra la cadena de control a cualquier fecha y qué ha cambiado entre dos cierres.",
         "href": "/funcionalidades/diagrama-del-grupo"
+      },
+      {
+        "situation": "Una SPV o una campaña de crowdfunding suma muchos accionistas",
+        "action": "Cada inversor tiene su acceso: su posición, sus certificados y su documentación.",
+        "href": "/funcionalidades/portal-del-accionista"
       }
     ],
     "columns": {
@@ -108,8 +120,8 @@
         "a": "Sí. Sttok las pide al Registro Mercantil, con un coste por sociedad."
       },
       {
-        "q": "¿Puedo comprar o vender participaciones entre socios?",
-        "a": "Sí, con el mercado secundario, que se contrata como módulo adicional."
+        "q": "¿Sirve para una SPV o una sociedad de inversión?",
+        "a": "Sí: SPV, SICAV, SICC, SCR y sociedades de inversión inmobiliaria. Cada inversor tiene su posición exacta y, si la sociedad lo abre, su acceso; y la sociedad lleva sus juntas, su consejo y su documentación."
       },
       {
         "q": "¿Sirve para sociedades de Latinoamérica?",

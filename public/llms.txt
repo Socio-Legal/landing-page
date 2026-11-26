@@ -38,7 +38,7 @@ Sttok no es una herramienta de cap table para simular rondas de inversión. Resu
 - Entidades con base social amplia: mutuas, cooperativas y sociedades con cientos o miles de socios
 - Secretarías del consejo de administración y direcciones jurídicas in-house
 - Despachos y asesorías que gestionan la parte societaria de su cartera de clientes
-- Fondos e inversores con seguimiento de participadas
+- Fondos, inversores y sociedades de inversión (SPV, SICAV, SICC, SCR, inmobiliarias y crowdfunding) con seguimiento de participadas
 
 ## Sttok en cifras
 
