@@ -11,7 +11,8 @@
     "start": "next start",
     "lint": "eslint app components lib",
     "check:orphans": "node scripts/check-orphans.mjs",
-    "fichas": "node scripts/fichas-pdf.mjs"
+    "fichas": "node scripts/fichas-pdf.mjs",
+    "dossier": "node scripts/dossier-pdf.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
