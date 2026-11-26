@@ -17,10 +17,10 @@
       "href": "/fichas/sttok-abogados.pdf"
     },
     "image": {
-      "light": "/animaciones/sociedades-light-poster.webp",
-      "dark": "/animaciones/sociedades-dark-poster.webp"
+      "light": "/animaciones/despacho-light-poster.webp",
+      "dark": "/animaciones/despacho-dark-poster.webp"
     },
-    "video": "sociedades"
+    "video": "despacho"
   },
   "testimonials": {
     "title": "Lo que Dicen Nuestros Clientes",

@@ -23,7 +23,7 @@ const Arrow = () => (
  * funcionalidades van sin enlace: las fichas solo existen en castellano.
  */
 export default function CatalogoFuncionalidades({ en = false }: { en?: boolean }) {
-  const modulos = CATALOGO.map((m) => ({ id: m.id, nota: m.nota, ...enIngles(m, en) }));
+  const modulos = CATALOGO.filter((m) => !m.soloSoluciones).map((m) => ({ id: m.id, nota: m.nota, ...enIngles(m, en) }));
   const total = modulos.reduce((n, m) => n + m.total, 0);
   // Fichas distintas: varias funcionalidades pueden compartir la misma.
   const conFicha = new Set(
