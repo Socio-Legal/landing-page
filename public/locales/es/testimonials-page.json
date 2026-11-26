@@ -75,6 +75,13 @@
       "logo": "Taxdown",
       "text": "Su plan de incentivos y su libro de socios, en un sitio",
       "href": "/testimonios/Taxdown"
+    },
+    {
+      "client": "Fanalca",
+      "logo": "Fanalca",
+      "image": "/clientes/fanalca-planta.jpg",
+      "text": "Un grupo industrial de Cali, con todas sus sociedades y filiales en Sttok",
+      "href": "/testimonios/Fanalca"
     }
   ],
   "segments": {

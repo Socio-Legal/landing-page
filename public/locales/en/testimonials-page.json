@@ -75,6 +75,13 @@
       "logo": "Taxdown",
       "text": "Its incentive plan and its shareholder register, in one place",
       "href": "/testimonios/Taxdown"
+    },
+    {
+      "client": "Fanalca",
+      "logo": "Fanalca",
+      "image": "/clientes/fanalca-planta.jpg",
+      "text": "An industrial group in Cali, with all its companies and subsidiaries in Sttok",
+      "href": "/testimonios/Fanalca"
     }
   ],
   "segments": {
