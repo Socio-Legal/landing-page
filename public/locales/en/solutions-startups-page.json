@@ -35,6 +35,21 @@
         "img": "/logo-pldspace-mini.png",
         "description": "Sttok helps us keep all the information about partners, meetings, and incentive plans of our company organized. It facilitates the management of the cap table and the relationship with investors.",
         "stars": 5
+      },
+      {
+        "name": "Legal Department",
+        "role": "MyInvestor",
+        "description": "Sttok has allowed us to digitise and automate all our corporate governance, from holding board meetings to keeping the shareholder register, ensuring maximum legal certainty in all our corporate processes.",
+        "stars": 5,
+        "logo": "MyInvestor"
+      },
+      {
+        "name": "Multiverse Computing",
+        "role": "AI and quantum computing",
+        "description": "Multiverse Computing, a pioneer in AI and quantum computing, keeps its shareholder register in Sttok",
+        "logo": "Multiverse",
+        "href": "/en/testimonials/Multiverse",
+        "linkText": "See the Multiverse Computing case"
       }
     ]
   },
@@ -48,6 +63,11 @@
     "title": "Common situations at a scale-up",
     "guideLabel": "See how",
     "rows": [
+      {
+        "situation": "The stock option or phantom share plan has to be managed, and employees have to value what they receive",
+        "action": "It keeps each beneficiary's plan with its vesting and documents. Each employee sees in their portal their units, what has vested and what it is worth at the latest valuation.",
+        "href": "/planes-de-incentivos"
+      },
       {
         "situation": "A new investor comes in with a capital increase",
         "action": "It simulates the increase on the actual register, including the pool and note conversion, and prepares the drafts in Word.",
@@ -114,5 +134,11 @@
         "a": "Standard plans range from €450/year for up to 10 shareholders or beneficiaries to €850/year for up to 50. Above 50, there is a custom plan. See the pricing page. Prices exclude taxes."
       }
     ]
+  },
+  "modulos": {
+    "secundario": {
+      "titulo": "Secondary market (tender offers)",
+      "resumen": "For tender offers: the company offers to buy units from employees and former employees holding phantom shares or stock options, and shares from shareholders who want to sell."
+    }
   }
 }

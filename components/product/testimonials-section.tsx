@@ -1,5 +1,6 @@
 import { FC } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import { Testimonial } from "@/types/Testimonial";
 import { clientLogos, getClientName } from "@/config/client-logos";
@@ -42,9 +43,23 @@ const TestimonialsSection: FC<TestimonialsSectionProps> = ({
               key={index}
               className="flex flex-col justify-between gap-5 border-l border-border pl-6"
             >
-              <blockquote className="font-serif text-lg italic leading-relaxed text-foreground">
-                “{testimonial.description}”
-              </blockquote>
+              {testimonial.href ? (
+                <div>
+                  <p className="font-serif text-lg leading-relaxed text-foreground">
+                    {testimonial.description}
+                  </p>
+                  <Link
+                    href={testimonial.href}
+                    className="mt-2 inline-block text-sm font-medium text-brand underline-offset-4 hover:underline"
+                  >
+                    {testimonial.linkText ?? testimonial.name} →
+                  </Link>
+                </div>
+              ) : (
+                <blockquote className="font-serif text-lg italic leading-relaxed text-foreground">
+                  “{testimonial.description}”
+                </blockquote>
+              )}
               <figcaption className="flex items-center gap-3">
                 {testimonial.img && (
                   <Image

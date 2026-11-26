@@ -127,7 +127,7 @@
             "description": "Purchase windows on vested rights, with withholding and a record in the plan."
           },
           {
-            "title": "Invitation letters in bulk",
+            "title": "Automated invitation letters",
             "description": "From a spreadsheet of beneficiaries, Sttok generates each one's personalised letter, from one to a thousand, and sends it for signature with DocuSign. Once signed, it is filed in the beneficiary's record."
           }
         ]

@@ -17,10 +17,10 @@
       "href": "/fichas/sttok-startups.pdf"
     },
     "image": {
-      "light": "/animaciones/portal-del-beneficiario-light-poster.webp",
-      "dark": "/animaciones/portal-del-beneficiario-dark-poster.webp"
+      "light": "/animaciones/recorrido-scaleups-light-poster.webp",
+      "dark": "/animaciones/recorrido-scaleups-dark-poster.webp"
     },
-    "video": "portal-del-beneficiario"
+    "video": "recorrido-scaleups"
   },
   "testimonials": {
     "title": "Testimonios de Clientes",
@@ -39,6 +39,21 @@
         "img": "/logo-pldspace-mini.png",
         "description": "Sttok nos sirve para poder tener organizada toda la información sobre socios, juntas y planes de incentivos de nuestra empresa. Nos facilita la gestión del captable y la relación con los inversores.",
         "stars": 5
+      },
+      {
+        "name": "Asesoría Jurídica",
+        "role": "MyInvestor",
+        "description": "Sttok nos ha permitido digitalizar y automatizar toda la gestión societaria, desde la celebración de consejos de administración hasta el mantenimiento del libro registro de socios, garantizando la máxima seguridad jurídica en todos nuestros procesos corporativos.",
+        "stars": 5,
+        "logo": "MyInvestor"
+      },
+      {
+        "name": "Multiverse Computing",
+        "role": "IA y computación cuántica",
+        "description": "Multiverse Computing, pionera en inteligencia artificial y computación cuántica, con su libro de socios en Sttok",
+        "logo": "Multiverse",
+        "href": "/testimonios/Multiverse",
+        "linkText": "Ver el caso de Multiverse Computing"
       }
     ]
   },
@@ -52,6 +67,11 @@
     "title": "Situaciones habituales en una scale-up",
     "guideLabel": "Ver cómo",
     "rows": [
+      {
+        "situation": "Hay que gestionar el plan de stock options o phantom shares y que los empleados valoren lo que reciben",
+        "action": "Lleva el plan de cada beneficiario con su vesting y sus documentos. Cada empleado ve en su portal sus unidades, lo consolidado y lo que vale a la última valoración.",
+        "href": "/planes-de-incentivos"
+      },
       {
         "situation": "Entra un inversor nuevo con una ampliación",
         "action": "Simula la ampliación sobre el libro real, con el pool y la conversión de notas, y prepara los borradores en Word.",
@@ -118,5 +138,11 @@
         "a": "Los planes estándar van de 450 €/año hasta 10 socios o beneficiarios a 850 €/año hasta 50. Con más de 50, hay un plan a medida. Están en la página de precios. Los precios no incluyen impuestos."
       }
     ]
+  },
+  "modulos": {
+    "secundario": {
+      "titulo": "Mercado secundario (tender offers)",
+      "resumen": "Para hacer tender offers: la sociedad ofrece comprar sus unidades a los empleados y antiguos empleados con phantom shares o stock options, y sus acciones a los socios que quieren vender."
+    }
   }
 }

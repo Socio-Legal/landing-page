@@ -69,15 +69,23 @@ const ModulePage: FC<ModulePageProps> = ({ ns, modulos, seleccion, logos }) => {
     .map((id) => CATALOGO.find((m) => m.id === id))
     .filter((m): m is Modulo => Boolean(m))
     .map((m) => {
+      const propio = t(`${ns}:modulos.${m.id}`, { returnObjects: true, defaultValue: {} }) as
+        | { titulo?: string; resumen?: string }
+        | undefined;
+      const conPropio = <T extends { titulo: string; resumen: string }>(g: T): T => ({
+        ...g,
+        titulo: propio?.titulo || g.titulo,
+        resumen: propio?.resumen || g.resumen,
+      });
       const elegidas = seleccion?.[m.id];
-      if (!elegidas) return enIngles(m, en);
+      if (!elegidas) return conPropio(enIngles(m, en));
       const filtrado = {
         ...m,
         funcionalidades: elegidas
           .map((t) => m.funcionalidades.find((f) => f.titulo === t))
           .filter((f): f is Modulo["funcionalidades"][number] => Boolean(f)),
       };
-      return { ...enIngles(filtrado, en), total: m.funcionalidades.length };
+      return { ...conPropio(enIngles(filtrado, en)), total: m.funcionalidades.length };
     });
   const rows = asArray<SituationRow>(
     t(`${ns}:situations.rows`, { returnObjects: true }),

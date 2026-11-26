@@ -168,7 +168,7 @@ function construir(f) {
     .map((id) => CATALOGO.find((m) => m.id === id))
     .filter(Boolean)
     .map((m) => ({
-      titulo: m.titulo,
+      titulo: P.modulos?.[m.id]?.titulo || m.titulo,
       funcs: seleccion?.[m.id]
         ? seleccion[m.id].map((t) => m.funcionalidades.find((x) => x.titulo === t)).filter(Boolean)
         : m.funcionalidades,
