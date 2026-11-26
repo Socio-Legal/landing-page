@@ -5,7 +5,7 @@ import ModulePage from "@/components/product/module-page";
 // Por módulo, las funcionalidades del catálogo que importan a este perfil.
 const SELECCION = {
   "grupos": [
-    "Todas las sociedades en una portada",
+    "Portada multisociedad",
     "Trabajos en varias sociedades",
     "Colecciones de sociedades",
     "Permisos por sociedad"
@@ -13,7 +13,7 @@ const SELECCION = {
   "socios": [
     "Libro de socios oficial",
     "Lectura de escrituras con IA",
-    "Transmisiones",
+    "Registro de operaciones",
     "Certificados de titularidad y de valor"
   ],
   "juntas": [
@@ -28,10 +28,12 @@ const SELECCION = {
     "Cargos con vigencia"
   ],
   "apoderados": [
-    "Apoderados y poderes"
+    "Apoderados y poderes",
+    "Comisiones del consejo"
   ],
   "simulador": [
     "Ampliación de capital",
+    "Reducción de capital",
     "Compraventa",
     "Operaciones encadenadas",
     "Borradores de documentos"
@@ -42,7 +44,14 @@ const SELECCION = {
     "Reglas de la sociedad"
   ],
   "firma": [
-    "Firma electrónica"
+    "Firma electrónica",
+    "Todas las firmas de un clic"
+  ],
+  "clientes": [
+    "Para clientes exigentes y digitales",
+    "Acceso del cliente, opcional",
+    "Acceso de los socios del cliente, opcional",
+    "Con el logo del despacho, opcional"
   ]
 };
 

@@ -23,6 +23,11 @@ export type Modulo = {
   nota?: string;
   funcionalidades: Funcionalidad[];
   en?: { titulo: string; resumen: string };
+  /**
+   * No sale en /funcionalidades ni en /en/features: solo en las páginas de
+   * solución que lo eligen (p. ej. «Acceso de los clientes» en /abogados).
+   */
+  soloSoluciones?: boolean;
 };
 
 const F = "/funcionalidades";
@@ -36,7 +41,7 @@ export const CATALOGO: Modulo[] = [
     href: "/libro-de-socios",
     funcionalidades: [
       { titulo: "Libro de socios oficial", descripcion: "Libro registro de socios o de acciones nominativas, exportable en formato legalizable.", href: `${F}/libro-registro-oficial`, en: { titulo: "Official shareholder register", descripcion: "Register of partners or of registered shares, exportable in a format ready for legalisation." } },
-      { titulo: "Registro de todas las operaciones", descripcion: "Cada operación de la sociedad desde su constitución, con su escritura o su contrato: ampliaciones y reducciones, compraventas, herencias, donaciones, splits o canjes. El capital se sigue operación a operación.", href: `${F}/equity-story`, en: { titulo: "Record of every transaction", descripcion: "Every transaction since incorporation, with its deed or contract: capital increases and reductions, sales, inheritances, gifts, splits or exchanges. The share capital can be followed transaction by transaction." } },
+      { titulo: "Registro de operaciones", descripcion: "Cada operación de la sociedad desde su constitución, con su escritura o su contrato: ampliaciones y reducciones, compraventas, herencias, donaciones, splits o canjes. El capital se sigue operación a operación.", href: `${F}/equity-story`, en: { titulo: "Transaction record", descripcion: "Every transaction since incorporation, with its deed or contract: capital increases and reductions, sales, inheritances, gifts, splits or exchanges. The share capital can be followed transaction by transaction." } },
       { titulo: "Libro registro de títulos", descripcion: "Si la sociedad emite títulos, como la anónima, su libro registro y los títulos, generados con cada operación.", href: `${F}/libro-registro-de-titulos`, en: { titulo: "Share certificate register", descripcion: "If the company issues share certificates, as a public limited company does, their register and the certificates, generated with each transaction." } },
       { titulo: "Numeración por rangos", descripcion: "Cada participación o acción con su número. Las transmisiones se anotan sobre rangos concretos.", href: `${F}/numeracion-por-rangos`, en: { titulo: "Numbered share ranges", descripcion: "Every share has its number. Transfers are recorded against specific ranges." } },
       { titulo: "Transmisiones", descripcion: "Compraventa, herencia, donación, endoso, split, renumeración, reclasificación y canje de títulos.", href: `${F}/transmisiones`, en: { titulo: "Transfers", descripcion: "Sale, inheritance, gift, endorsement, split, renumbering, reclassification and exchange of certificates." } },
@@ -127,12 +132,25 @@ export const CATALOGO: Modulo[] = [
     en: { titulo: "E-signature", resumen: "DocuSign built into Sttok: sign, track and file without leaving the app. Included in Advanced and Pro." },
     href: "/comunicaciones-y-firma",
     funcionalidades: [
-      { titulo: "Firma electrónica", descripcion: "Actas, certificaciones y cualquier documento, firmados con DocuSign sin salir de Sttok. Incluida en los planes Avanzado y Pro.", href: `${F}/firma-electronica`, en: { titulo: "Electronic signature", descripcion: "Minutes, certificates and any other document, signed with DocuSign without leaving Sttok. Included in the Advanced and Pro plans." } },
-      { titulo: "Todas las firmas de un clic", descripcion: "Sttok busca el nombre de cada firmante en el PDF y coloca todas las firmas a la vez, sin colocarlas una a una.", href: `${F}/firma-electronica`, en: { titulo: "Every signature in one click", descripcion: "Sttok finds each signer's name in the PDF and places every signature at once, without placing them one by one." } },
+      { titulo: "Firma electrónica", descripcion: "Actas, certificaciones y cualquier documento, firmados con DocuSign sin salir de Sttok. Los socios y los miembros del órgano de administración ya están en Sttok con su correo: con un clic se colocan las firmas de todos y el documento sale desde Sttok. Incluida en los planes Avanzado y Pro.", href: `${F}/firma-electronica`, en: { titulo: "Electronic signature", descripcion: "Minutes, certificates and any other document, signed with DocuSign without leaving Sttok. Included in the Advanced and Pro plans." } },
+      { titulo: "Todas las firmas de un clic", descripcion: "Los firmantes y sus correos ya están en Sttok. Sttok busca el nombre de cada uno en el PDF, coloca todas las firmas a la vez y envía el documento a firmar.", href: `${F}/firma-electronica`, en: { titulo: "Every signature in one click", descripcion: "Sttok finds each signer's name in the PDF and places every signature at once, without placing them one by one." } },
       { titulo: "Firmantes propuestos", descripcion: "Presidente y secretario, el órgano de administración o los socios, según el documento.", href: `${F}/firma-electronica`, en: { titulo: "Suggested signers", descripcion: "Chair and secretary, the board or the shareholders, depending on the document." } },
       { titulo: "Quién ha firmado y quién no", descripcion: "El estado de cada sobre y de cada firmante: sin abrir, lo ha abierto o firmó.", href: `${F}/firma-electronica`, en: { titulo: "Who has signed and who has not", descripcion: "The status of each envelope and each signer: not opened, opened or signed." } },
       { titulo: "Recordar a los pendientes", descripcion: "Desde el propio sobre, un correo solo a quien falta por firmar.", href: `${F}/firma-electronica`, en: { titulo: "Remind pending signers", descripcion: "From the envelope itself, an email only to those still to sign." } },
       { titulo: "Archivo automático", descripcion: "Firmado, se archiva solo: las actas, en el libro de actas; las delegaciones y los certificados, en la documentación.", href: `${F}/documentacion-societaria`, en: { titulo: "Automatic filing", descripcion: "Once signed, it is filed automatically: minutes in the minute book; proxies and certificates in the company records." } },
+    ],
+  },
+  {
+    id: "clientes",
+    titulo: "Acceso de los clientes",
+    resumen: "Lo que ve cada cliente del despacho, y sus socios, si el despacho lo abre.",
+    en: { titulo: "Client access", resumen: "What each of the firm's clients, and their shareholders, can see if the firm opens it up." },
+    soloSoluciones: true,
+    funcionalidades: [
+      { titulo: "Para clientes exigentes y digitales", descripcion: "El cliente consulta su sociedad al día en Sttok: libro de socios, juntas, actas y documentación, sin pedirlos por correo.", en: { titulo: "For demanding, digital clients", descripcion: "Clients see their company up to date in Sttok: shareholder register, meetings, minutes and documents, without asking for them by email." } },
+      { titulo: "Acceso del cliente, opcional", descripcion: "El despacho decide si da acceso a cada cliente y con qué permisos: completo, solo consulta o por secciones, sociedad a sociedad.", href: `${F}/permisos-por-sociedad`, en: { titulo: "Client access, optional", descripcion: "The firm decides whether to give each client access and with what permissions: full, read-only or by section, company by company." } },
+      { titulo: "Acceso de los socios del cliente, opcional", descripcion: "Cada socio de la sociedad cliente puede entrar en su portal: su posición, sus certificados y sus juntas.", href: `${F}/portal-del-accionista`, en: { titulo: "Access for the client's shareholders, optional", descripcion: "Each shareholder of the client company can log in to their portal: their position, their certificates and their meetings." } },
+      { titulo: "Con el logo del despacho, opcional", descripcion: "Sttok se personaliza con el logo y los colores del despacho.", en: { titulo: "With the firm's logo, optional", descripcion: "Sttok is customised with the firm's logo and colours." } },
     ],
   },
   {
@@ -195,7 +213,7 @@ export const CATALOGO: Modulo[] = [
     en: { titulo: "Company groups", resumen: "Every company in the group and who controls each one." },
     href: "/soluciones/grupos-de-sociedades",
     funcionalidades: [
-      { titulo: "Todas las sociedades en una portada", descripcion: "Lo pendiente de cada sociedad del grupo, ordenado por plazo.", href: `${F}/portada-multisociedad`, en: { titulo: "All companies on one screen", descripcion: "What is pending in each company of the group, sorted by deadline." } },
+      { titulo: "Portada multisociedad", descripcion: "Lo pendiente de todas las sociedades en una pantalla, ordenado por plazo.", href: `${F}/portada-multisociedad`, en: { titulo: "All companies on one screen", descripcion: "What is pending in each company of the group, sorted by deadline." } },
       { titulo: "Diagrama del grupo", descripcion: "Participadas y cadena de control a cualquier fecha.", href: `${F}/diagrama-del-grupo`, en: { titulo: "Group chart", descripcion: "Subsidiaries and the chain of control on any date." } },
       { titulo: "Titular real", descripcion: "Quién supera el 25 % del capital o de los votos, u otro umbral que se fije, al final de la cadena.", href: `${F}/titular-real`, en: { titulo: "Beneficial owner", descripcion: "Who holds more than 25% of the capital or the votes, or any other threshold you set, at the end of the chain." } },
       { titulo: "Participadas", descripcion: "Cada participada por relación, nivel y país, en tarjetas o en tabla.", href: `${F}/participadas`, en: { titulo: "Subsidiaries and investees", descripcion: "Each investee by relationship, level and country, as cards or a table." } },

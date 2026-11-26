@@ -301,6 +301,7 @@ function ajustar() {
   if (p3 !== p4 && sobra(p3) > 0 && !inc.classList.contains("compacta")) { inc.classList.add("compacta"); pasos.push("p3 compacta"); }
   if (sobra(p3) > 0 && testi) { document.getElementById("hueco-testi").appendChild(testi); pasos.push("testimonio a p4"); }
   if (p3 !== p4 && sobra(p3) > 0) { inc.classList.add("muy-compacta"); pasos.push("p3 muy compacta"); }
+  if (p3 !== p4 && sobra(p3) > 0) { inc.classList.add("extra-compacta"); pasos.push("p3 extra compacta"); }
   // Si no cabe en la 4, a la 2, sobre la captura (que encoge); si tampoco, fuera.
   if (testi && p4.contains(testi) && sobra(p4) > 0) {
     const c2 = document.getElementById("captura");
@@ -376,6 +377,10 @@ h2 { font-family: 'Instrument Serif', serif; font-weight: 400; font-size: 27pt; 
 .muy-compacta .func { padding: 1.1mm 0 1.2mm; }
 .muy-compacta { columns: 3; column-gap: 6.5mm; }
 .muy-compacta .func h3 { font-size: 8.6pt; }
+.extra-compacta .func { padding: .8mm 0 .9mm; }
+.extra-compacta .func p { font-size: 7.4pt; line-height: 1.27; margin-top: .3mm; }
+.extra-compacta .grupo { margin-top: 1.6mm; }
+.extra-compacta .func h3 { font-size: 8.4pt; }
 
 /* Testimonio, situaciones y cierre */
 .testi { display: grid; grid-template-columns: 1fr auto; gap: 6mm; align-items: center; margin: 6mm 0; padding: 5mm 6mm; background: #fff; border-radius: 6px; flex-shrink: 0; }

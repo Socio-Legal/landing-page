@@ -10,6 +10,7 @@
     "consejo-de-administracion": "/funcionalidades/consejo-de-administracion",
     "convocatoria-de-la-junta": "/funcionalidades/convocatoria-de-la-junta",
     "delegacion-de-voto": "/funcionalidades/delegacion-de-voto",
+    "despacho": "/abogados",
     "diagrama-del-grupo": "/funcionalidades/diagrama-del-grupo",
     "eleccion-de-consejeros": "/funcionalidades/eleccion-de-consejeros",
     "equity-story": "/funcionalidades/equity-story",
@@ -30,7 +31,7 @@
     "reparto-de-dividendos": "/funcionalidades/reparto-de-dividendos",
     "simulador": "/simulador",
     "simulador-ampliacion": "/simulador",
-    "sociedades": "/abogados",
+    "sociedades": "/producto",
     "sttok-ai": "/funcionalidades/sttok-ai",
     "voto-electronico-en-juntas": "/funcionalidades/voto-electronico-en-juntas"
   },
@@ -38,6 +39,7 @@
     "accionistas": "/en/partners-book",
     "compraventa": "/en/product",
     "consejo-de-administracion": "/en/solutions/board-secretariat",
+    "despacho": "/en/solutions/lawyers",
     "diagrama-del-grupo": "/en/solutions/corporate-groups",
     "firma-electronica": "/en/communications-and-signatures",
     "firma-y-comunicaciones": "/en/communications-and-signatures",
@@ -50,7 +52,7 @@
     "portal-del-beneficiario": "/en/solutions/startups",
     "simulador": "/en/operation-drafts",
     "simulador-ampliacion": "/en/operation-drafts",
-    "sociedades": "/en/solutions/lawyers",
+    "sociedades": "/en/product",
     "voto-electronico-en-juntas": "/en/shareholder-meetings"
   }
 }

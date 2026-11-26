@@ -6,7 +6,7 @@ import ModulePage from "@/components/product/module-page";
 const SELECCION = {
   "socios": [
     "Libro de socios oficial",
-    "Registro de todas las operaciones",
+    "Registro de operaciones",
     "Cargas sobre participaciones",
     "Certificados de titularidad y de valor",
     "Portal del accionista",
@@ -41,7 +41,7 @@ const SELECCION = {
     "Comisiones del consejo"
   ],
   "grupos": [
-    "Todas las sociedades en una portada",
+    "Portada multisociedad",
     "Participadas",
     "Diagrama del grupo",
     "Titular real",
